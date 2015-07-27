@@ -20,7 +20,18 @@ $(function(){
 $(function(){
       function adjust(){
            var h = $(window).height(); //ウィンドウの高さ
-           $('.global_menu_inner').css('height', h); //可変部分の高さを適用
+           $('.global_menu_inner').css('height', h-53); //可変部分の高さを適用
+      }
+     adjust();
+     $(window).on('resize', function(){
+          adjust();
+     })
+});
+
+$(function(){
+      function adjust(){
+           var h = $(window).height(); //ウィンドウの高さ
+           $('.detail .file').css('height', h-53); //可変部分の高さを適用
       }
      adjust();
      $(window).on('resize', function(){

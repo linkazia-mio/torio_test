@@ -2,6 +2,7 @@
  File
 ---------------------------------------------------------------------------------------*/
 .file {
+  position: relative;
   .file_list {
     &.row {
       margin: 0 15px;
@@ -120,5 +121,13 @@
         }
       }
     }
+  }
+  .add_file {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    height: 50px;
+    width: 50px;
+    background: $torio_green;
   }
 }

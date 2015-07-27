@@ -1820,99 +1820,106 @@ header {
 /*---------------------------------------------------------------------------------------
  File
 ---------------------------------------------------------------------------------------*/
-.file .file_list.row {
-  margin: 0 15px; }
-  .file .file_list.row .col-lg-3 {
-    width: 250px; }
-
-.file .file_list .panel {
-  border: none; }
-  .file .file_list .panel .panel-body {
-    padding: 0; }
-    .file .file_list .panel .panel-body.type_image .file_img {
-      position: relative; }
-      .file .file_list .panel .panel-body.type_image .file_img img {
+.file {
+  position: relative; }
+  .file .file_list.row {
+    margin: 0 15px; }
+    .file .file_list.row .col-lg-3 {
+      width: 250px; }
+  .file .file_list .panel {
+    border: none; }
+    .file .file_list .panel .panel-body {
+      padding: 0; }
+      .file .file_list .panel .panel-body.type_image .file_img {
+        position: relative; }
+        .file .file_list .panel .panel-body.type_image .file_img img {
+          -webkit-border-top-left-radius: 4px;
+          -webkit-border-top-right-radius: 4px;
+          -moz-border-radius-topleft: 4px;
+          -moz-border-radius-topright: 4px;
+          width: 100%;
+          height: auto;
+          z-index: 1; }
+        .file .file_list .panel .panel-body.type_image .file_img .url {
+          font-size: 12px;
+          font-size: 1.2rem;
+          font-weight: bold;
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          line-height: 35px;
+          color: #fff;
+          width: 100%;
+          display: block;
+          padding: 0 10px 0 35px;
+          overflow: hidden;
+          background: -moz-linear-gradient(top, rgba(240, 240, 240, 0), rgba(24, 24, 24, 0.4));
+          background: -o-linear-gradient(rgba(240, 240, 240, 0), rgba(24, 24, 24, 0));
+          background: -webkit-gradient(linear, left top, left bottom, from(rgba(240, 240, 240, 0)), to(rgba(24, 24, 24, 0.4)));
+          background: linear-gradient(top, rgba(240, 240, 240, 0), rgba(24, 24, 24, 0));
+          z-index: 100; }
+          .file .file_list .panel .panel-body.type_image .file_img .url i {
+            position: absolute;
+            bottom: 5px;
+            left: 8px;
+            font-size: 24px;
+            font-size: 2.4rem; }
+      .file .file_list .panel .panel-body.type_file .excel {
+        font-size: 80px;
+        font-size: 8rem;
         -webkit-border-top-left-radius: 4px;
         -webkit-border-top-right-radius: 4px;
         -moz-border-radius-topleft: 4px;
         -moz-border-radius-topright: 4px;
+        color: #39865a;
+        text-align: center;
         width: 100%;
-        height: auto;
-        z-index: 1; }
-      .file .file_list .panel .panel-body.type_image .file_img .url {
+        padding: 20% 0;
+        background: #33c16f; }
+      .file .file_list .panel .panel-body .file_name {
         font-size: 12px;
         font-size: 1.2rem;
-        font-weight: bold;
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        line-height: 35px;
-        color: #fff;
-        width: 100%;
-        display: block;
-        padding: 0 10px 0 35px;
-        overflow: hidden;
-        background: -moz-linear-gradient(top, rgba(240, 240, 240, 0), rgba(24, 24, 24, 0.4));
-        background: -o-linear-gradient(rgba(240, 240, 240, 0), rgba(24, 24, 24, 0));
-        background: -webkit-gradient(linear, left top, left bottom, from(rgba(240, 240, 240, 0)), to(rgba(24, 24, 24, 0.4)));
-        background: linear-gradient(top, rgba(240, 240, 240, 0), rgba(24, 24, 24, 0));
-        z-index: 100; }
-        .file .file_list .panel .panel-body.type_image .file_img .url i {
-          position: absolute;
-          bottom: 5px;
-          left: 8px;
-          font-size: 24px;
-          font-size: 2.4rem; }
-    .file .file_list .panel .panel-body.type_file .excel {
-      font-size: 80px;
-      font-size: 8rem;
-      -webkit-border-top-left-radius: 4px;
-      -webkit-border-top-right-radius: 4px;
-      -moz-border-radius-topleft: 4px;
-      -moz-border-radius-topright: 4px;
-      color: #39865a;
-      text-align: center;
-      width: 100%;
-      padding: 20% 0;
-      background: #33c16f; }
-    .file .file_list .panel .panel-body .file_name {
-      font-size: 12px;
-      font-size: 1.2rem;
-      padding: 15px 15px 10px 15px;
-      font-weight: bold; }
-    .file .file_list .panel .panel-body .count {
-      font-size: 10px;
-      font-size: 1rem;
-      color: #999999;
-      padding: 0 15px; }
-    .file .file_list .panel .panel-body .info {
-      position: relative;
-      border-top: 1px solid #eeeeee;
-      margin-top: 15px;
-      padding: 10px 15px;
-      height: 43px; }
-      .file .file_list .panel .panel-body .info p {
-        font-size: 23px;
-        font-size: 2.3rem;
+        padding: 15px 15px 10px 15px;
+        font-weight: bold; }
+      .file .file_list .panel .panel-body .count {
+        font-size: 10px;
+        font-size: 1rem;
         color: #999999;
-        display: inline-block;
-        margin: 0 2% 0 0; }
-        .file .file_list .panel .panel-body .info p:hover {
-          color: #50bcb6;
-          cursor: pointer; }
-        .file .file_list .panel .panel-body .info p.like .icon-favorite-outline {
-          display: block; }
-        .file .file_list .panel .panel-body .info p.like .icon-favorite {
-          display: none; }
-        .file .file_list .panel .panel-body .info p.like.active .icon-favorite-outline {
-          display: none; }
-        .file .file_list .panel .panel-body .info p.like.active .icon-favorite {
-          color: #db4c3f;
-          display: block; }
-      .file .file_list .panel .panel-body .info .user_image {
-        position: absolute;
-        right: 15px;
-        top: 10px; }
-        .file .file_list .panel .panel-body .info .user_image img {
-          height: 20px;
-          width: 20px; }
+        padding: 0 15px; }
+      .file .file_list .panel .panel-body .info {
+        position: relative;
+        border-top: 1px solid #eeeeee;
+        margin-top: 15px;
+        padding: 10px 15px;
+        height: 43px; }
+        .file .file_list .panel .panel-body .info p {
+          font-size: 23px;
+          font-size: 2.3rem;
+          color: #999999;
+          display: inline-block;
+          margin: 0 2% 0 0; }
+          .file .file_list .panel .panel-body .info p:hover {
+            color: #50bcb6;
+            cursor: pointer; }
+          .file .file_list .panel .panel-body .info p.like .icon-favorite-outline {
+            display: block; }
+          .file .file_list .panel .panel-body .info p.like .icon-favorite {
+            display: none; }
+          .file .file_list .panel .panel-body .info p.like.active .icon-favorite-outline {
+            display: none; }
+          .file .file_list .panel .panel-body .info p.like.active .icon-favorite {
+            color: #db4c3f;
+            display: block; }
+        .file .file_list .panel .panel-body .info .user_image {
+          position: absolute;
+          right: 15px;
+          top: 10px; }
+          .file .file_list .panel .panel-body .info .user_image img {
+            height: 20px;
+            width: 20px; }
+  .file .add_file {
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    height: 50px;
+    width: 50px; }
