@@ -1826,25 +1826,31 @@ header {
   border: none; }
   .file .file_list .panel .panel-body {
     padding: 0; }
-    .file .file_list .panel .panel-body.type_image .file_img img {
-      -webkit-border-top-left-radius: 4px;
-      -webkit-border-top-right-radius: 4px;
-      -moz-border-radius-topleft: 4px;
-      -moz-border-radius-topright: 4px;
-      width: 100%;
-      height: auto;
-      z-index: 1; }
-    .file .file_list .panel .panel-body.type_image .file_img .url {
-      color: #fff;
-      display: block;
-      background: -moz-linear-gradient(top, rgba(240, 240, 240, 0), rgba(24, 24, 24, 0.4));
-      background: -o-linear-gradient(rgba(240, 240, 240, 0), rgba(24, 24, 24, 0));
-      background: -webkit-gradient(linear, left top, left bottom, from(rgba(240, 240, 240, 0.3)), to(rgba(24, 24, 24, 0.4)));
-      background: linear-gradient(top, rgba(240, 240, 240, 0), rgba(24, 24, 24, 0));
-      z-index: 100; }
-      .file .file_list .panel .panel-body.type_image .file_img .url i {
-        font-size: 20px;
-        font-size: 2rem; }
+    .file .file_list .panel .panel-body.type_image .file_img {
+      position: relative; }
+      .file .file_list .panel .panel-body.type_image .file_img img {
+        -webkit-border-top-left-radius: 4px;
+        -webkit-border-top-right-radius: 4px;
+        -moz-border-radius-topleft: 4px;
+        -moz-border-radius-topright: 4px;
+        width: 100%;
+        height: auto;
+        z-index: 1; }
+      .file .file_list .panel .panel-body.type_image .file_img .url {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        color: #fff;
+        width: 100%;
+        display: block;
+        background: -moz-linear-gradient(top, rgba(240, 240, 240, 0), rgba(24, 24, 24, 0.4));
+        background: -o-linear-gradient(rgba(240, 240, 240, 0), rgba(24, 24, 24, 0));
+        background: -webkit-gradient(linear, left top, left bottom, from(rgba(240, 240, 240, 0.3)), to(rgba(24, 24, 24, 0.4)));
+        background: linear-gradient(top, rgba(240, 240, 240, 0), rgba(24, 24, 24, 0));
+        z-index: 100; }
+        .file .file_list .panel .panel-body.type_image .file_img .url i {
+          font-size: 20px;
+          font-size: 2rem; }
     .file .file_list .panel .panel-body.type_file .excel {
       font-size: 80px;
       font-size: 8rem;
