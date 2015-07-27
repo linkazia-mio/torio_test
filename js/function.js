@@ -135,15 +135,13 @@ window.onload=function(){
   $(function(){
       $('#masonry').masonry({
           itemSelector: '.grid',
-          isFitWidth: true,
-          isAnimated: true
+          transitionDuration: 0
       });
   });
   jQuery(window).resize(function(){
     $('#masonry').masonry({
         itemSelector: '.grid',
-        isFitWidth: true,
-        isAnimated: true
+        transitionDuration: 0
     });
   });
 

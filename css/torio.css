@@ -1092,6 +1092,9 @@ a:hover {
 ul li {
   list-style: none; }
 
+p {
+  margin: 0; }
+
 .clearfix, .alart .account {
   *zoom: 1; }
   .clearfix:after, .alart .account:after {
@@ -1837,20 +1840,29 @@ header {
         height: auto;
         z-index: 1; }
       .file .file_list .panel .panel-body.type_image .file_img .url {
+        font-size: 12px;
+        font-size: 1.2rem;
+        font-weight: bold;
         position: absolute;
         bottom: 0;
         left: 0;
+        line-height: 35px;
         color: #fff;
         width: 100%;
         display: block;
+        padding: 0 10px 0 35px;
+        overflow: hidden;
         background: -moz-linear-gradient(top, rgba(240, 240, 240, 0), rgba(24, 24, 24, 0.4));
         background: -o-linear-gradient(rgba(240, 240, 240, 0), rgba(24, 24, 24, 0));
-        background: -webkit-gradient(linear, left top, left bottom, from(rgba(240, 240, 240, 0.3)), to(rgba(24, 24, 24, 0.4)));
+        background: -webkit-gradient(linear, left top, left bottom, from(rgba(240, 240, 240, 0)), to(rgba(24, 24, 24, 0.4)));
         background: linear-gradient(top, rgba(240, 240, 240, 0), rgba(24, 24, 24, 0));
         z-index: 100; }
         .file .file_list .panel .panel-body.type_image .file_img .url i {
-          font-size: 20px;
-          font-size: 2rem; }
+          position: absolute;
+          bottom: 5px;
+          left: 8px;
+          font-size: 24px;
+          font-size: 2.4rem; }
     .file .file_list .panel .panel-body.type_file .excel {
       font-size: 80px;
       font-size: 8rem;
@@ -1876,7 +1888,9 @@ header {
     .file .file_list .panel .panel-body .info {
       position: relative;
       border-top: 1px solid #eeeeee;
-      padding: 10px 15px; }
+      margin-top: 15px;
+      padding: 10px 15px;
+      height: 43px; }
       .file .file_list .panel .panel-body .info p {
         font-size: 23px;
         font-size: 2.3rem;

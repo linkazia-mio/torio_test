@@ -26,19 +26,27 @@
               z-index: 1;
             }
             .url {
+              @include fontsize(1.2);
+              font-weight: bold;
               position: absolute;
               bottom: 0;
               left: 0;
+              line-height: 35px;
               color: #fff;
               width: 100%;
               display: block;
+              padding: 0 10px 0 35px;
+              overflow: hidden;
               background: -moz-linear-gradient(top,rgba(240,240,240,0.0),rgba(24,24,24,0.4));
               background: -o-linear-gradient(rgba(240,240,240,0.0),rgba(24,24,24,0.0));
-              background: -webkit-gradient(linear,left top,left bottom,from(rgba(240,240,240,0.3)),to(rgba(24,24,24,0.4)));
+              background: -webkit-gradient(linear,left top,left bottom,from(rgba(240,240,240,0.0)),to(rgba(24,24,24,0.4)));
               background: linear-gradient(top,rgba(240,240,240,0.0),rgba(24,24,24,0.0));
               z-index: 100;
               i {
-                @include fontsize(2.0);
+                position: absolute;
+                bottom: 5px;
+                left: 8px;
+                @include fontsize(2.4);
               }
             }
           }
@@ -70,7 +78,9 @@
         .info {
           position: relative;
           border-top: 1px solid $border_white_gray;
+          margin-top: 15px;
           padding: 10px 15px;
+          height: 43px;
           p {
             @include fontsize(2.3);
             color: $white_brack;
