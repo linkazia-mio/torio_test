@@ -1318,7 +1318,8 @@ header {
     .global_menu .global_menu_inner h3 {
       margin: 0 20px 5px 20px;
       font-size: 13px;
-      font-size: 1.3rem; }
+      font-size: 1.3rem;
+      font-weight: bold; }
       .global_menu .global_menu_inner h3:first-child {
         margin-top: 2rem; }
     .global_menu .global_menu_inner ul {
