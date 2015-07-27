@@ -1,0 +1,109 @@
+/*---------------------------------------------------------------------------------------
+ File
+---------------------------------------------------------------------------------------*/
+.file {
+  .file_list {
+    &.row {
+      margin: 0 15px;
+      .col-lg-3 {
+        width: 250px;
+      }
+    }
+    .panel {
+      border: none;
+      .panel-body {
+        padding: 0;
+        &.type_image {
+          .file_img {
+            img {
+              -webkit-border-top-left-radius: 4px;
+              -webkit-border-top-right-radius: 4px;
+              -moz-border-radius-topleft: 4px;
+              -moz-border-radius-topright: 4px;
+              width: 100%;
+              height: auto;
+              z-index: 1;
+            }
+            .url {
+              color: #fff;
+              display: block;
+              background: -moz-linear-gradient(top,rgba(240,240,240,0.0),rgba(24,24,24,0.4));
+              background: -o-linear-gradient(rgba(240,240,240,0.0),rgba(24,24,24,0.0));
+              background: -webkit-gradient(linear,left top,left bottom,from(rgba(240,240,240,0.3)),to(rgba(24,24,24,0.4)));
+              background: linear-gradient(top,rgba(240,240,240,0.0),rgba(24,24,24,0.0));
+              z-index: 100;
+              i {
+                @include fontsize(2.0);
+              }
+            }
+          }
+        }
+        &.type_file {
+          .excel {
+            @include fontsize(8.0);
+            -webkit-border-top-left-radius: 4px;
+            -webkit-border-top-right-radius: 4px;
+            -moz-border-radius-topleft: 4px;
+            -moz-border-radius-topright: 4px;
+            color: #39865a;
+            text-align: center;
+            width: 100%;
+            padding: 20% 0;
+            background: #33c16f;
+          }
+        }
+        .file_name {
+          @include fontsize(1.2);
+          padding: 15px 15px 10px 15px;
+          font-weight: bold;
+        }
+        .count {
+          @include fontsize(1.0);
+          color: $white_brack;
+          padding: 0 15px;
+        }
+        .info {
+          position: relative;
+          border-top: 1px solid $border_white_gray;
+          padding: 10px 15px;
+          p {
+            @include fontsize(2.3);
+            color: $white_brack;
+            display: inline-block;
+            margin: 0 2% 0 0;
+            &:hover {
+              color: $link_green;
+              cursor: pointer;
+            }
+            &.like {
+              .icon-favorite-outline {
+                display: block;
+              }
+              .icon-favorite {
+                display: none;
+              }
+              &.active {
+                .icon-favorite-outline {
+                  display: none;
+                }
+                .icon-favorite {
+                  color: $dark_red;
+                  display: block;
+                }
+              }
+            }
+          }
+          .user_image {
+            position: absolute;
+            right: 15px;
+            top: 10px;
+            img {
+              height: 20px;
+              width: 20px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

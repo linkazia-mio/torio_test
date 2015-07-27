@@ -1,0 +1,523 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TORIO</title>
+    <script type="text/javascript" src="js/jquery-1.11.3.js"></script>
+    <script type="text/javascript" src="js/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="js/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/jquery.mCustomScrollbar.js"></script>
+    <script type="text/javascript" src="js/chart.js"></script>
+    <script type="text/javascript" src="js/function.js"></script>
+    <script type="text/javascript" src="js/content.js"></script>
+    <script type="text/javascript" src="js/masonry.pkgd.min.js"></script>
+    <link rel="stylesheet" href="css/jquery.mCustomScrollbar.css">
+    <link rel="stylesheet" href="css/jquery-ui.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/torio.css">
+  </head>
+  <body>
+    <div class="wrapper">
+      <!--Header/-->
+      <header>
+        <div class="header_inner">
+          <div class="header_line">
+          </div>
+           <p class="global_menu_btn"><i class="icon-automation-arrow"></i></p>
+           <div class="search">
+             <form method="post">
+               <input type="search"><input type="submit" value="送信する"><i class="icon-search"></i>
+             </form>
+           </div>
+           <div class="alart">
+             <div class="task">
+               <p class="icon"><i class="icon-inbox-task-outline"></i></p>
+             </div>
+             <div class="activity">
+               <p class="icon"><i class="icon-notifications-outline"></i></p>
+             </div>
+             <div class="account">
+               <a href="">
+                 <p class="image"><span class="noimage">KO</span></p>
+                 <p class="name">小松 健太</p>
+               </a>
+             </div>
+           </div>
+         </div>
+         <!--Activity_box/-->
+         <div class="activity_box popover">
+           <h3 class="icon">アクティビティ</h3>
+           すべて
+           あなた
+           <ul>
+             <li>小松健太さんが、家選びネットにノート：議事録を投稿しました。</li>
+             <li>小松健太さんが、家選びネットにノート：議事録を投稿しました。</li>
+             <li>小松健太さんが、家選びネットにノート：議事録を投稿しました。</li>
+             <li>小松健太さんが、家選びネットにノート：議事録を投稿しました。</li>
+           </ul>
+         </div>
+         <!--/Activity_box-->
+      </header>
+      <!--/Header-->
+      <!--Main/-->
+      <div class="main">
+        <!--Global_menu/-->
+        <div class="global_menu ui-widget-content">
+          <div class="global_menu_inner">
+            <h3>お気に入り</h3>
+            <ul>
+              <li><a href="" class="unread"><span class="global_list_noimage"></span>星野リゾート</a></li>
+              <li><a href=""><span class="global_list_image"><img src="http://placehold.it/100x100"></span>ZUTTO</a></li>
+              <li><a href="" class="unread"><span class="global_list_noimage"></span>トヨタホームタウンガイド</a></li>
+            </ul>
+            <div class="groups">
+              <h3>グループ</h3>
+      			    	<p class="add icon" data-toggle="modal" data-target="#add_group"><i class="icon-add-circle-outline"></i></p>
+              <ul>
+                <li><a href=""><span class="global_list_noimage"></span>トヨタホームタウンガイド</a></li>
+                <li><a href="" class="unread"><span class="global_list_image"><img src="http://placehold.it/100x100"></span>ZUTTO</a></li>
+                <li><a href="" class="unread"><span class="global_list_noimage"></span>星野リゾート</a></li>
+                <li><a href=""><span class="global_list_image"><img src="http://placehold.it/100x100"></span>家選びネット</a></li>
+                <li><a href="" class="selected"><span class="global_list_noimage"></span>アスニカ</a></li>
+                <li><a href="" class="unread"><span class="global_list_image"><img src="http://placehold.it/100x100"></span>FOOD FRIENDS FABRIC</a></li>
+                <li><a href="" class="unread"><span class="global_list_image"><img src="http://placehold.it/100x100"></span>企画部屋</a></li>
+                <li><a href="" class="unread"><span class="global_list_image"><img src="http://placehold.it/100x100"></span>社内インフォメーション</a></li>
+              </ul>
+            </div>
+            <div class="member">
+              <h3>メンバー</h3>
+              <p class="add icon" data-toggle="modal" data-target="#add_member"><i class="icon-add-circle-outline"></i></p>
+              <ul>
+                <li><a href="" class="unread"><span class="noimage">KO</span>小松 健太</a></li>
+                <li><a href=""><span class="user_image"><img src="http://placehold.it/100x100"></span>大石 未央</a></li>
+                <li><a href="" class="unread"><span class="noimage">KO</span>原戸 陵至</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!--/Global_menu-->
+        <!--Page_menu/-->
+        <div class="page_menu ui-widget-content">
+          <div class="config">
+            <p class="title">All page<span>2</span></p>
+            <p class="check"><i class="icon-expand-more"></i></p>
+            <p class="favorite"><i class="icon-star-outline"></i></p>
+            <p class="viewers" data-toggle="modal" data-target="#viewers_box"><i class="icon-person-outline"></i><span class="number">2</span></p>
+            <p class="option"><i class="icon-more-horiz"></i></p>
+            <!--<div class="small-button"><i class="icon-add"></i>Add images</div>-->
+            <div class="check_box popover">
+              <ul>
+                <li><a href="">仮の内容です</a></li>
+                <li><a href="">仮の内容です</a></li>
+                <li><a href="">仮の内容です</a></li>
+              </ul>
+            </div>
+            <div class="option_box popover">
+              <ul>
+                <li><a href="">日付の新しい順</a></li>
+                <li><a href="">日付の古い順</a></li>
+                <li><a href="">割り当てた人順</a></li>
+              </ul>
+            </div>
+          </div>
+          <!--Page_menu_inner/-->
+          <div class="page_menu_inner">
+            <!--note/-->
+            <div class="item note">
+              <span class="check"></span>
+              <a href="">
+                <p class="title">エネルギー関連の記事</p>
+                <p class="text">電力会社の電気はいりません！独立型の自家発電で、晴耕雨読の日々をおくる佐藤隆電で、晴耕雨読の日々をおくる佐藤隆</p>
+              </a>
+            </div>
+            <!--/note-->
+            <!--task/-->
+            <div class="item task">
+              <a href="" class="unread">
+                <p class="title">役割分担</p>
+                <ul>
+                  <li><span class="name">未対応タスク</span><span class="value">：25件</span></li>
+                  <li><span class="name">期限が近いタスク</span><span class="value">：10件</span></li>
+                </ul>
+                <div class="graph green">
+                  <canvas id="task_graph_green" height="50" width="50"></canvas>
+                  <div class="number">
+                    <p>60%</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <!--/task-->
+            <!--note/-->
+            <div class="item note">
+              <a href="">
+                <p class="title">エネルギー関連の記事</p>
+                <p class="text">電力会社の電気はいりません！独立型の自家発電で、晴耕雨読の日々をおくる佐藤隆電で、晴耕雨読の日々をおくる佐藤隆</p>
+              </a>
+            </div>
+            <!--/note-->
+            <!--task/-->
+            <div class="item task">
+              <a href="">
+                <p class="title">PCリニューアル</p>
+                <ul>
+                  <li><span class="name">未対応タスク</span><span class="value">：25件</span></li>
+                  <li><span class="name">期限が近いタスク</span><span class="value">：10件</span></li>
+                </ul>
+                <div class="graph red">
+                  <canvas id="task_graph_red" height="50" width="50"></canvas>
+                  <div class="number">
+                    <p>10%</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <!--/task-->
+            <!--file/-->
+            <div class="item file">
+              <a href="" class="unread">
+                <p class="title">デザインサンプル</p>
+                <ul>
+                  <li><img src="http://placehold.it/100x100"></li>
+                  <li><img src="http://placehold.it/100x100"></li>
+                  <li><img src="http://placehold.it/100x100"></li>
+                  <li><img src="http://placehold.it/100x100"></li>
+                </ul>
+              </a>
+            </div>
+            <!--/file-->
+            <!--task/-->
+            <div class="item task">
+              <a href="">
+                <p class="title">PCリニューアル</p>
+                <ul>
+                  <li><span class="name">未対応タスク</span><span class="value">：25件</span></li>
+                  <li><span class="name">期限が近いタスク</span><span class="value">：10件</span></li>
+                </ul>
+                <div class="graph yellow">
+                  <canvas id="task_graph_yellow" height="50" width="50"></canvas>
+                  <div class="number">
+                    <p>40%</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <!--/task-->
+          </div>
+          <!--/Page_menu_inner-->
+          <div class="page_menu_footer">
+            <p class="icon-add"></p>
+            <div class="add_page popover">
+              <ul>
+                <li class="add_page_note"><a href=""><i class="icon-note-outline"></i>ノート</a></li>
+                <li class="add_page_task"><a href=""><i class="icon-inbox-task-outline"></i>タスク</a></li>
+                <li class="add_page_file"><a href=""><i class="icon-drive-file-outline"></i>ファイル</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!--/Page_menu-->
+        <!--Detail/-->
+        <div class="detail ui-widget-content">
+          <div class="file">
+            <!--Title/-->
+            <div class="title">
+              <h1>デザインサンプル</h1>
+              <p class="check"><i class="icon-expand-more"></i></p>
+              <p class="bookmark"><i class="icon-bookmark-outline"></i><i class="icon-bookmark"></i></p>
+              <p class="website"><i class="icon-language"></i></p>
+              <p class="option"><i class="icon-more-horiz"></i></p>
+            </div>
+            <!--/Title-->
+            <div class="row file_list" id="masonry">
+           <!--File list/-->
+            <div class="col-lg-3 col-md-4 col-sm-2 grid">
+             <div class="panel">
+              <div class="panel-body type_image">
+                <a href="">
+                  <div class="file_img">
+                    <img src="https://s-media-cache-ak0.pinimg.com/736x/f8/15/68/f815689b00e25c4606fa71d27f6cf0d6.jpg">
+                    <p class="url"><i class="icon-swap-horiz"></i>theultralinx.com</p>
+                  </div>
+                  <p class="file_name">15 Innovative Dashboard Concepts</p>
+                  <p class="count">いいね！11件・コメント1件</p>
+                  <div class="info">
+                    <p class="like active"><i class="icon-favorite-outline"></i><i class="icon-favorite"></i></p>
+                    <p class="comment"><i class="icon-comment-outline"></i></p>
+                    <p class="download"><i class="icon-file-download-outline"></i></p>
+                    <p class="user_image"><img src="http://placehold.it/100x100"></p>
+                  </div>
+                </a>
+              </div>
+             </div>
+            </div>
+           <!--/File list-->
+           <!--File list/-->
+            <div class="col-lg-3 col-md-4 col-sm-2 grid">
+             <div class="panel">
+              <div class="panel-body type_file">
+                <a href="">
+                  <div class="excel"><i class="icon-drive-ms-excel"></i></div>
+                  <p class="file_name">デザインパターンリスト</p>
+                  <p class="count">いいね！11件・コメント1件</p>
+                  <div class="info">
+                    <p class="like"><i class="icon-favorite-outline"></i><i class="icon-favorite"></i></p>
+                    <p class="comment"><i class="icon-comment-outline"></i></p>
+                    <p class="download"><i class="icon-file-download-outline"></i></p>
+                    <p class="user_image"><img src="http://placehold.it/100x100"></p>
+                  </div>
+                </a>
+              </div>
+             </div>
+            </div>
+           <!--/File list-->
+           <!--File list/-->
+            <div class="col-lg-3 col-md-4 col-sm-2 grid">
+             <div class="panel">
+              <div class="panel-body type_image">
+                <a href="">
+                  <div class="file_img">
+                    <img src="https://s-media-cache-ak0.pinimg.com/736x/5c/d1/c1/5cd1c1366764626f563678c440928afe.jpg">
+                    <p class="url"><i class="icon-swap-horiz"></i>theultralinx.com</p>
+                  </div>
+                  <p class="file_name">15 Innovative Dashboard Concepts</p>
+                  <p class="count">いいね！11件・コメント1件</p>
+                  <div class="info">
+                    <p class="like"><i class="icon-favorite-outline"></i><i class="icon-favorite"></i></p>
+                    <p class="comment"><i class="icon-comment-outline"></i></p>
+                    <p class="download"><i class="icon-file-download-outline"></i></p>
+                    <p class="user_image"><img src="http://placehold.it/100x100"></p>
+                  </div>
+                </a>
+              </div>
+             </div>
+            </div>
+           <!--/File list-->
+           <!--File list/-->
+            <div class="col-lg-3 col-md-4 col-sm-2 grid">
+             <div class="panel">
+              <div class="panel-body type_image">
+                <a href="">
+                  <div class="file_img">
+                    <img src="https://s-media-cache-ak0.pinimg.com/736x/fc/a2/15/fca215b2fdecc31635e22f90bdd0d1dc.jpg">
+                  </div>
+                  <p class="file_name">15 Innovative Dashboard Concepts</p>
+                  <p class="count">いいね！11件・コメント1件</p>
+                  <div class="info">
+                    <p class="like"><i class="icon-favorite-outline"></i><i class="icon-favorite"></i></p>
+                    <p class="comment"><i class="icon-comment-outline"></i></p>
+                    <p class="download"><i class="icon-file-download-outline"></i></p>
+                    <p class="user_image"><img src="http://placehold.it/100x100"></p>
+                  </div>
+                </a>
+              </div>
+             </div>
+            </div>
+           <!--/File list-->
+           <!--File list/-->
+            <div class="col-lg-3 col-md-4 col-sm-2 grid">
+             <div class="panel">
+               <div class="panel-body type_image">
+                 <a href="">
+                   <div class="file_img">
+                     <img src="https://s-media-cache-ak0.pinimg.com/736x/df/ff/2d/dfff2d77a046a7279661e57a27648173.jpg">
+                   </div>
+                   <p class="file_name">15 Innovative Dashboard Concepts</p>
+                   <p class="count">いいね！11件・コメント1件</p>
+                  <div class="info">
+                    <p class="like"><i class="icon-favorite-outline"></i><i class="icon-favorite"></i></p>
+                    <p class="comment"><i class="icon-comment-outline"></i></p>
+                    <p class="download"><i class="icon-file-download-outline"></i></p>
+                    <p class="user_image"><img src="http://placehold.it/100x100"></p>
+                  </div>
+                </a>
+              </div>
+             </div>
+            </div>
+           <!--/File list-->
+           <!--File list/-->
+            <div class="col-lg-3 col-md-4 col-sm-2 grid">
+             <div class="panel">
+              <div class="panel-body type_image">
+                <a href="">
+                  <div class="file_img">
+                    <img src="https://s-media-cache-ak0.pinimg.com/736x/ce/1c/12/ce1c12804736a5c6b25b98255c4a0814.jpg">
+                  </div>
+                  <p class="file_name">15 Innovative Dashboard Concepts</p>
+                  <p class="count">いいね！11件・コメント1件</p>
+                  <div class="info">
+                    <p class="like"><i class="icon-favorite-outline"></i><i class="icon-favorite"></i></p>
+                    <p class="comment"><i class="icon-comment-outline"></i></p>
+                    <p class="download"><i class="icon-file-download-outline"></i></p>
+                    <p class="user_image"><img src="http://placehold.it/100x100"></p>
+                  </div>
+                </a>
+              </div>
+             </div>
+            </div>
+           <!--/File list-->
+           <!--File list/-->
+            <div class="col-lg-3 col-md-4 col-sm-2 grid">
+             <div class="panel">
+              <div class="panel-body type_image">
+                <a href="">
+                  <div class="file_img">
+                    <img src="https://s-media-cache-ak0.pinimg.com/736x/1d/73/a1/1d73a1b1c37abdff6befea9f27c0b535.jpg">
+                  </div>
+                  <p class="file_name">15 Innovative Dashboard Concepts</p>
+                  <p class="count">いいね！11件・コメント1件</p>
+                  <div class="info">
+                    <p class="like active"><i class="icon-favorite-outline"></i><i class="icon-favorite"></i></p>
+                    <p class="comment"><i class="icon-comment-outline"></i></p>
+                    <p class="download"><i class="icon-file-download-outline"></i></p>
+                    <p class="user_image"><img src="http://placehold.it/100x100"></p>
+                  </div>
+                </a>
+              </div>
+             </div>
+            </div>
+           <!--/File list-->
+           <!--File list/-->
+            <div class="col-lg-3 col-md-4 col-sm-2 grid">
+             <div class="panel">
+              <div class="panel-body type_image">
+                <a href="">
+                  <div class="file_img">
+                    <img src="https://s-media-cache-ak0.pinimg.com/736x/a6/30/8e/a6308e2bef56bf87e2af1303fa5657bf.jpg">
+                  </div>
+                  <p class="file_name">15 Innovative Dashboard Concepts</p>
+                  <p class="count">いいね！11件・コメント1件</p>
+                  <div class="info">
+                    <p class="like"><i class="icon-favorite-outline"></i><i class="icon-favorite"></i></p>
+                    <p class="comment"><i class="icon-comment-outline"></i></p>
+                    <p class="download"><i class="icon-file-download-outline"></i></p>
+                    <p class="user_image"><img src="http://placehold.it/100x100"></p>
+                  </div>
+                </a>
+              </div>
+             </div>
+            </div>
+           <!--/File list-->
+           <!--File list/-->
+            <div class="col-lg-3 col-md-4 col-sm-2 grid">
+             <div class="panel">
+              <div class="panel-body type_image">
+                <a href="">
+                  <div class="file_img">
+                    <img src="https://s-media-cache-ak0.pinimg.com/736x/bf/47/3c/bf473c6b4295e7b7804b23068ca18cc1.jpg">
+                  </div>
+                  <p class="file_name">デザインパターンリスト</p>
+                  <p class="count">いいね！11件・コメント1件</p>
+                  <div class="info">
+                    <p class="like"><i class="icon-favorite-outline"></i><i class="icon-favorite"></i></p>
+                    <p class="comment"><i class="icon-comment-outline"></i></p>
+                    <p class="download"><i class="icon-file-download-outline"></i></p>
+                    <p class="user_image"><img src="http://placehold.it/100x100"></p>
+                  </div>
+                </a>
+              </div>
+             </div>
+            </div>
+           <!--/File list-->
+           </div>
+          </div>
+        </div>
+        <!--/Detail-->
+      </div>
+      <!--/Main-->
+      <!--Viewers/-->
+      <div class="modal fade" id="viewers_box" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title" id="myModalLabel">この投稿を見た人</h4>
+            </div>
+            <div class="modal-body">
+              <div class="viewers_list">
+      					<dl>
+                  <dt><span class="user_image"><img src="http://placehold.it/100x100"></span></dt>
+      						<dd><p class="name">小松健太<a href="">友達になる</a></p></dd>
+      					</dl>
+                <dl>
+                  <dt><span class="noimage">KO</span></dt>
+      						<dd><p class="name">小松健太<a href="">友達になる</a></p></dd>
+      					</dl>
+                <dl>
+                  <dt><span class="user_image"><img src="http://placehold.it/100x100"></span></dt>
+      						<dd><p class="name">小松健太<a href="">友達になる</a></p></dd>
+      					</dl>
+                <dl>
+                  <dt><span class="noimage">KO</span></dt>
+      						<dd><p class="name">小松健太<a href="">友達になる</a></p></dd>
+      					</dl>
+                <dl>
+                  <dt><span class="noimage">KO</span></dt>
+      						<dd><p class="name">小松健太<a href="">友達になる</a></p></dd>
+      					</dl>
+                <dl>
+                  <dt><span class="user_image"><img src="http://placehold.it/100x100"></span></dt>
+      						<dd><p class="name">小松健太<a href="">友達になる</a></p></dd>
+      					</dl>
+                <dl>
+                  <dt><span class="noimage">KO</span></dt>
+      						<dd><p class="name">小松健太<a href="">友達になる</a></p></dd>
+      					</dl>
+                <dl>
+                  <dt><span class="user_image"><img src="http://placehold.it/100x100"></span></dt>
+      						<dd><p class="name">小松健太<a href="">友達になる</a></p></dd>
+      					</dl>
+                <dl>
+                  <dt><span class="user_image"><img src="http://placehold.it/100x100"></span></dt>
+      						<dd><p class="name">小松健太<a href="">友達になる</a></p></dd>
+      					</dl>
+      				</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--/Viewers-->
+      <!--Add group/-->
+      <div class="modal fade" id="add_group" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title" id="myModalLabel">グループを新規作成</h4>
+            </div>
+            <div class="modal-body">
+              ...
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--/Add group-->
+      <!--Add member/-->
+      <div class="modal fade" id="add_member" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title" id="myModalLabel">メンバーを新規作成</h4>
+            </div>
+            <div class="modal-body">
+              ...
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--/Add member-->
+    </div>
+  </body>
+
+</html>
