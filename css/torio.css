@@ -1483,7 +1483,7 @@ header {
       font-size: 2.3rem;
       color: #999999;
       position: absolute;
-      right: 83px;
+      right: 93px;
       top: 15px;
       font-weight: 700; }
       .page_menu .config .favorite:hover {
@@ -1491,7 +1491,7 @@ header {
     .page_menu .config .viewers {
       color: #999999;
       position: absolute;
-      right: 43px;
+      right: 49px;
       top: 0; }
       .page_menu .config .viewers i {
         font-size: 22px;
@@ -1561,11 +1561,11 @@ header {
       border-bottom: 1px solid #f5f5f5; }
       .page_menu .page_menu_inner .item .check {
         position: absolute;
-        right: 14px;
+        right: 16px;
         top: 0;
         width: 0;
         height: 0;
-        border-top: 20px solid #db4c3f;
+        border-top: 12px solid #db4c3f;
         border-right: 8px solid #db4c3f;
         border-bottom: 7px solid #fff;
         border-left: 8px solid #db4c3f; }
@@ -1659,7 +1659,7 @@ header {
             width: 70%; }
       .page_menu .page_menu_inner .item.task .graph {
         position: absolute;
-        right: 13px;
+        right: 16px;
         bottom: 20px;
         height: 50px;
         font-family: 'Helvetica neue',Helvetica,Arial,sans-serif; }
@@ -1750,20 +1750,20 @@ header {
       display: inline-block;
       line-height: 28px; }
     .detail .title p {
-      font-size: 28px;
-      font-size: 2.8rem;
+      font-size: 26px;
+      font-size: 2.6rem;
       line-height: 28px;
       position: absolute;
       color: #999999;
-      top: 0; }
+      top: 3px; }
       .detail .title p:hover {
         color: #50bcb6;
         cursor: pointer; }
       .detail .title p.check {
-        position: static;
+        /*position: static;*/
         display: inline-block; }
       .detail .title p.bookmark {
-        right: 100px; }
+        right: 95px; }
         .detail .title p.bookmark .icon-bookmark-outline {
           display: block; }
         .detail .title p.bookmark .icon-bookmark {
@@ -1774,7 +1774,7 @@ header {
           color: #db4c3f;
           display: block; }
       .detail .title p.website {
-        right: 50px; }
+        right: 45px; }
       .detail .title p.option, .detail .title .carousel .carousel-inner .item .modal-header p.download, .carousel .carousel-inner .item .modal-header .detail .title p.download, .detail .title .carousel .carousel-inner .item .modal-header p.like, .carousel .carousel-inner .item .modal-header .detail .title p.like {
         right: 0; }
     .detail .title .detail_option_box {

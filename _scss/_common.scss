@@ -475,7 +475,7 @@ header {
       @include fontsize(2.3);
       color: $white_brack;
       position: absolute;
-      right: 83px;
+      right: 93px;
       top: 15px;
       font-weight: 700;
       &:hover {
@@ -485,7 +485,7 @@ header {
     .viewers {
       color: $white_brack;
       position: absolute;
-      right: 43px;
+      right: 49px;
       top: 0;
       i {
         @include fontsize(2.2);
@@ -563,11 +563,11 @@ header {
       border-bottom: 1px solid $border_white_gray;
       .check {
         position: absolute;
-        right: 14px;
+        right: 16px;
         top: 0;
        	width: 0;
        	height: 0;
-       	border-top: 20px solid $dark_red;
+       	border-top: 12px solid $dark_red;
        	border-right: 8px solid $dark_red;
        	border-bottom: 7px solid #fff;
        	border-left: 8px solid $dark_red;
@@ -681,7 +681,7 @@ header {
         }
         .graph {
           position: absolute;
-          right: 13px;
+          right: 16px;
           bottom: 20px;
           height: 50px;
           font-family: 'Helvetica neue',Helvetica,Arial,sans-serif;
@@ -822,21 +822,21 @@ header {
       line-height: 28px;
     }
     p {
-      @include fontsize(2.8);
+      @include fontsize(2.6);
       line-height: 28px;
       position: absolute;
       color: $white_brack;
-      top: 0;
+      top: 3px;
       &:hover {
         color: $link_green;
         cursor: pointer;
       }
       &.check {
-        position: static;
+        /*position: static;*/
         display: inline-block;
       }
       &.bookmark {
-        right: 100px;
+        right: 95px;
         .icon-bookmark-outline {
           display: block;
         }
@@ -854,7 +854,7 @@ header {
         }
       }
       &.website {
-        right: 50px;
+        right: 45px;
       }
       &.option {
         right: 0;
