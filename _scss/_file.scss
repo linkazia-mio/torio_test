@@ -134,7 +134,7 @@
       }
     }
   }
-  .add_file {
+  .add_file_btn {
     @include border_radius(100px);
     @include fontsize(4.5);
     color: #fff;
@@ -144,9 +144,197 @@
     height: 45px;
     width: 45px;
     background: $torio_green;
-    -webkit-transform: translateZ(0);
-    transform: translateZ(0);
-    -webkit-box-shadow: 0 1px 2px 0 rgba(0,0,0,0.22);
-    box-shadow: 0 1px 2px 0 rgba(0,0,0,0.22);
+    -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+/*---------------------------------------------------------------------------------------
+ Modal
+---------------------------------------------------------------------------------------*/
+
+/*Add File*/
+#add_file {
+  .modal-body {
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+    .local_up {
+      @include fontsize(1.4);
+      width: 50%;
+      height: 200px;
+      padding-top: 50px;
+      display: table-cell;
+      text-align: center;
+      border-right: 1px solid $border_white_gray;
+      a {
+        color: $white_brack;
+        display: block;
+      }
+      i {
+        @include fontsize(5.0);
+        @include border_radius(100px);
+        height: 70px;
+        width: 70px;
+        color: $white_brack;
+        border: 2px solid $white_brack;
+        padding: 8px;
+      }
+      .title {
+        margin-top: 20px;
+        font-weight: bold;
+      }
+      .note {
+        @include fontsize(1.2);
+      }
+    }
+    .web_up {
+      @extend .local_up;
+      border-right: none;
+    }
+  }
+}
+
+/*Carousel*/
+.carousel {
+  margin: 30px auto;
+  width: 760px;
+  position: relative;
+  .carousel-inner {
+    @include border_radius();
+    background: #fff;
+    -webkit-box-shadow: 0 0 17px rgba(0,0,0,.3);
+    box-shadow: 0 0 17px rgba(0,0,0,.3);
+    margin: 30px auto;
+    width: 600px;
+    .image {
+      background: $white_gray;
+      text-align: center;
+      img {
+        width: 80%;
+        height: auto;
+      }
+    }
+    .item {
+      .modal-header {
+        .user_image {
+          float: left;
+          margin-right: 15px;
+          img {
+            height: 40px;
+            width: 40px;
+          }
+        }
+        .modal-title {
+          @include fontsize(1.4);
+          font-weight: bold;
+        }
+        .link {
+          position: relative;
+          padding-left: 75px;
+          a {
+            color: $white_brack;
+          }
+          i {
+            @include fontsize(2.6);
+            position: absolute;
+            top: 0;
+            left: 50px;
+          }
+        }
+      }
+    }
+    .modal-footer {
+      border-top: 1px solid $border_white_gray;
+      padding: 20px;
+      .comment {
+        text-align: left;
+        border-bottom: 1px solid $border_white_gray;
+        margin-bottom: 20px;
+        .comment_inner {
+          display: table;
+          width: 100%;
+          table-layout: fixed;
+          margin-bottom: 20px;
+          .user_image {
+            display: table-cell;
+            width: 45px;
+            img {
+              width: 30px;
+              height: 30px;
+              vertical-align: top;
+              margin-top: 5px;
+            }
+          }
+          .user_comment {
+            display: table-cell;
+            p {
+              @include fontsize(1.3);
+              &.name {
+                font-weight: bold;
+                .time {
+                  margin-left: 10px;
+                  font-weight: normal;
+                  color: $white_brack;
+                }
+              }
+              &.memo {
+              }
+            }
+          }
+        }
+      }
+      textarea {
+        @include border_radius();
+        width: 100%;
+        height: 60px;
+        padding: 10px 15px;
+        margin-bottom: 20px;
+        border: 1px solid $border_white_gray;
+        resize: none;
+        outline: none;
+      }
+      button {
+        width: 130px;
+        &.btn-default {
+          border-color: $border_white_gray;
+          background: $white_gray;
+          &:hover {
+            opacity: 0.7;
+          }
+        }
+        &.btn-primary {
+          border-color: $dark_green;
+          background: $icon_green;
+          &:hover {
+            opacity: 0.7;
+          }
+        }
+      }
+    }
+  }
+  .carousel-control {
+    width: 60px;
+    background: none;
+    &.left {
+      i {
+        left: 25%;
+      }
+    }
+    &.right {
+      i {
+        right: 25%;
+      }
+    }
+    i {
+      @include fontsize(6.0);
+      color: $dark_brack;
+      text-shadow: none;
+      position: fixed;
+      top: 300px;
+    }
   }
 }

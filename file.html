@@ -286,28 +286,33 @@
               <p class="bookmark"><i class="icon-bookmark-outline"></i><i class="icon-bookmark"></i></p>
               <p class="website"><i class="icon-language"></i></p>
               <p class="option"><i class="icon-more-horiz"></i></p>
+              <div class="detail_option_box popover">
+                <ul>
+                  <li><a href="">日付の新しい順</a></li>
+                  <li><a href="">日付の古い順</a></li>
+                  <li><a href="">割り当てた人順</a></li>
+                </ul>
+              </div>
             </div>
             <!--/Title-->
             <!--Masonry/-->
             <div class="row file_list" id="masonry">
              <!--File list/-->
-              <div class="col-lg-3 col-md-4 col-sm-2 grid">
+              <div class="col-lg-3 col-md-4 col-sm-2 grid" data-toggle="modal" data-target="#file_detail">
                <div class="panel">
                 <div class="panel-body type_image">
-                  <a href="">
-                    <div class="file_img">
-                      <img src="https://s-media-cache-ak0.pinimg.com/736x/f8/15/68/f815689b00e25c4606fa71d27f6cf0d6.jpg">
-                      <p class="url"><i class="icon-swap-horiz"></i>theultralinx.com</p>
-                    </div>
-                    <p class="file_name">15 Innovative Dashboard Concepts</p>
-                    <p class="count">いいね！11件・コメント1件</p>
-                    <div class="info">
-                      <p class="like active"><i class="icon-favorite-outline"></i><i class="icon-favorite"></i></p>
-                      <p class="comment"><i class="icon-comment-outline"></i></p>
-                      <p class="download"><i class="icon-file-download-outline"></i></p>
-                      <p class="user_image"><img src="http://placehold.it/100x100"></p>
-                    </div>
-                  </a>
+                  <div class="file_img">
+                    <img src="https://s-media-cache-ak0.pinimg.com/736x/f8/15/68/f815689b00e25c4606fa71d27f6cf0d6.jpg">
+                    <p class="url"><i class="icon-swap-horiz"></i>theultralinx.com</p>
+                  </div>
+                  <p class="file_name">15 Innovative Dashboard Concepts</p>
+                  <p class="count">いいね！11件・コメント1件</p>
+                  <div class="info">
+                    <p class="like active"><i class="icon-favorite-outline"></i><i class="icon-favorite"></i></p>
+                    <p class="comment"><i class="icon-comment-outline"></i></p>
+                    <p class="download"><i class="icon-file-download-outline"></i></p>
+                    <p class="user_image"><img src="http://placehold.it/100x100"></p>
+                  </div>
                 </div>
                </div>
               </div>
@@ -586,7 +591,7 @@
              <!--/File list-->
              </div>
              <!--/Masonry-->
-             <p class="add_file"><i class="icon-add"></i></p>
+             <p class="add_file_btn" data-toggle="modal" data-target="#add_file"><i class="icon-add"></i></p>
           </div>
           <!--/File-->
         </div>
@@ -683,6 +688,83 @@
         </div>
       </div>
       <!--/Add member-->
+      <!--Add File/-->
+      <div class="modal fade" id="add_file" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+          <!--modal-content_1/-->
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title" id="myModalLabel">新規作成</h4>
+            </div>
+            <div class="modal-body">
+              <div class="local_up">
+                <a href="">
+                  <i class="icon-file-upload-outline"></i>
+                  <p class="title">画像、動画、ファイルを追加</p>
+                  <p class="note">クリックまたはドラッグ&ドロップ</p>
+                </a>
+              </div>
+              <div class="web_up">
+                <a href="">
+                  <i class="icon-public-outline"></i>
+                  <p class="title">ウェブサイトから追加</p>
+                </a>
+              </div>
+            </div>
+            <!--/modal-content_1-->
+            <div class="modal-footer">
+              <textarea class="description" placeholder="説明を入力してください"></textarea>
+              <button type="button" class="btn btn-default" data-dismiss="modal">キャンセル</button>
+              <button type="button" class="btn btn-primary">作成する</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--/Add File-->
+      <!--File detail/-->
+      <div class="modal fade" id="file_detail" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="false">
+          <div class="carousel-inner">
+            <div class="item active">
+              <div class="modal-header">
+                <span class="user_image"><img src="http://placehold.it/100x100"></span><h4 class="modal-title" id="myModalLabel">15 Innovative Dashboard Concepts</h4>
+                <p class="link"><a href=""><i class="icon-swap-horiz"></i>theultralinx.com</a></p>
+                <p class="bookmark"><i class="icon-bookmark-outline"></i></p>
+                <p class="website"><i class="icon-language"></i></p>
+                <p class="option"><i class="icon-more-horiz"></i></p>
+              </div>
+              <div class="image">
+                <img src="https://s-media-cache-ak0.pinimg.com/736x/f8/15/68/f815689b00e25c4606fa71d27f6cf0d6.jpg" alt="First slide">
+              </div>
+              <div class="modal-footer">
+                <div class="comment">
+                  <div class="comment_inner">
+                    <div class="user_image"><img src="http://placehold.it/100x100"></div>
+                    <div class="user_comment">
+                      <p class="name">小松 健太<span class="time">３時間前</span></p>
+                      <p class="memo">本題からは大きく外れますが、ドローンなどに使うキャパシタ（バッテリー）がキャパシタ（コンデンサー）であることを最近知って驚きました。</p>
+                    </div>
+                  </div>
+                  <div class="comment_inner">
+                    <div class="user_image"><img src="http://placehold.it/100x100"></div>
+                    <div class="user_comment">
+                      <p class="name">小松 健太<span class="time">３時間前</span></p>
+                      <p class="memo">キャパシタ（コンデンサー）であることを知ってました。</p>
+                    </div>
+                  </div>
+                </div>
+                <textarea class="description" placeholder="説明を入力してください"></textarea>
+                <button type="button" class="btn btn-primary">コメント</button>
+              </div>
+            </div>
+          </div>
+          <!-- カルーセルの[次へ][前へ]を操作するコントロールボタン -->
+          <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev"><i class="icon-chevron-left"></i></a>
+          <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next"><i class="icon-chevron-right"></i></a>
+        </div><!-- /.carousel -->
+      </div>
+      <!--/File detail-->
     </div>
   </body>
 
