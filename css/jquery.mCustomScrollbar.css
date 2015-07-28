@@ -315,19 +315,19 @@ yx-axis
 }
 .mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
 	background-color: #fff;
-	background-color: rgba(000,000,000,0.4);
+	background-color: rgba(000,000,000,0.1);
 	filter: "alpha(opacity=10)";
 	-ms-filter: "alpha(opacity=1)";
 }
 .mCSB_scrollTools .mCSB_dragger:hover .mCSB_dragger_bar {
 	background-color: #fff;
-	background-color: rgba(000,000,000,0.4);
+	background-color: rgba(000,000,000,0.3);
 	filter: "alpha(opacity=100)";
 	-ms-filter: "alpha(opacity=100)";
 }
 .mCSB_scrollTools .mCSB_dragger:active .mCSB_dragger_bar, .mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar {
 	background-color: #fff;
-	background-color: rgba(000,000,000,0.4);
+	background-color: rgba(000,000,000,0.3);
 	filter: "alpha(opacity=85)";
 	-ms-filter: "alpha(opacity=85)";
 }
