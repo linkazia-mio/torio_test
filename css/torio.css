@@ -1826,7 +1826,9 @@ header {
   .file .file_list.row {
     margin: 0 15px; }
     .file .file_list.row .col-lg-3 {
-      width: 250px; }
+      width: 250px;
+      padding-right: 10px;
+      padding-left: 10px; }
   .file .file_list .panel {
     border: none; }
     .file .file_list .panel .panel-body {
