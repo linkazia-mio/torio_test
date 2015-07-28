@@ -105,13 +105,14 @@ header {
   .header_inner {
     height: 55px;
     position: relative;
-    background: #f6f6f6;
+    background: #FFFFFF;
+    /*background: #f6f6f6;
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFFFFFFF', endColorstr='#FFEEEEEE', GradientType=0);
     background: linear-gradient(to bottom,#fff,#eee);
     background: -moz-linear-gradient(top,#fff,#eee);
     background: -webkit-linear-gradient(top,#fff,#eee);
     background: -o-linear-gradient(top,#fff,#eee);
-    background: -ms-linear-gradient(top,#fff,#eee);
+    background: -ms-linear-gradient(top,#fff,#eee);*/
   }
   .global_menu_btn {
     @include fontsize(2.5);
@@ -282,11 +283,11 @@ header {
   .global_menu_inner {
     overflow: hidden;
     h3 {
-      margin: 0 20px 5px 20px;
+      margin: 0 20px 8px 20px;
       @include fontsize(1.3);
       font-weight: bold;
       &:first-child {
-        margin-top: 2rem;
+        margin-top: 2.4rem;
       }
     }
     ul {
@@ -359,7 +360,7 @@ header {
       .add {
         position: absolute;
         right: 17px;
-        top : -2px;
+        top : -5px;
         @include fontsize(2.2);
         color: $white_brack;
         button  {
@@ -559,7 +560,7 @@ header {
     .item {
       @include fontsize(1.2);
       position: relative;
-      padding: 16px 10px 16px 20px;
+      padding: 18px 10px 18px 20px;
       color: $brack;
       border-bottom: 1px solid $border_white_gray;
       .check {
@@ -577,7 +578,7 @@ header {
         @include fontsize(1.5);
         color: $dark_brack;
         font-weight: bold;
-        margin-bottom: 8px;
+        margin-bottom: 10px;
         overflow: hidden;
         white-space: nowrap;
         text-overflow: ellipsis;
@@ -589,7 +590,7 @@ header {
             &:before {
               @include border_radius(3px);
               position: absolute;
-              top: 29px;
+              top: 30px;
               left: 9px;
               margin-top: -3px;
               z-index: 1000;
@@ -603,6 +604,8 @@ header {
       }
       &.file {
         ul {
+          margin: 0;
+          padding: 0;
           li {
             @include border_radius(2px);
             display: inline-block;
@@ -612,7 +615,7 @@ header {
             -webkit-box-shadow: 0 1px 2px rgba(0,0,0,0.07);
             -moz-box-shadow: 0 1px 2px rgba(0,0,0,0.07);
             box-shadow: 0 1px 1px rgba(0,0,0,0.1);
-            margin-right: 3px;
+            margin: 0 3px 0 0;
             img {
               width: 50px;
               height: auto;
@@ -622,10 +625,10 @@ header {
         }
       }
       &.note {
-        height: 115px;
+        height: 120px;
         .text {
-          height: 45px;
-          line-height: 1.4;
+          height: 50px;
+          line-height: 1.5;
           overflow: hidden;
           text-overflow: ellipsis;
           &::after {
@@ -658,7 +661,7 @@ header {
         .graph {
           position: absolute;
           right: 13px;
-          bottom: 16px;
+          bottom: 20px;
           height: 50px;
           font-family: 'Helvetica neue',Helvetica,Arial,sans-serif;
           &.green {
@@ -780,7 +783,7 @@ header {
 .detail {
   -webkit-box-flex: 1;
   -moz-box-flex: 1;
-  background: $dark_gray;
+  background: $white_gray;
   width: 100%;
   height: 100%;
   &.ui-widget-content {
