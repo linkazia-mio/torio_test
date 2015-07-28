@@ -60,10 +60,9 @@ p {
 ---------------------------------------------------------------------------------------*/
 .noimage {
   @include border_radius(100px);
-  background: white;
-  border: 1px solid $torio_green;
+  background: $torio_green;
   text-align: center;
-  color: $torio_green;
+  color: #FFF;
   font-family: 'Helvetica neue',Helvetica,Arial,sans-serif;
   display: block;
   font-weight: bold;
@@ -246,7 +245,6 @@ header {
         line-height: 28px;
         width: 30px;
         height: 30px;
-        background: none;
       }
     }
     .name{
@@ -305,8 +303,8 @@ header {
           white-space: nowrap;
           text-overflow: ellipsis;
           padding-right: 20px;
-          height: 42px;
-          line-height: 45px;
+          height: 47px;
+          line-height: 50px;
           span {
             margin: 9px 8px 9px 12px;
           }
@@ -336,20 +334,20 @@ header {
           }
         }
         .global_list_noimage {
-          @include border_radius(2px);
+          /*@include border_radius(2px);*/
           display: block;
           float: left;
           background: $torio_green;
-          width: 25px;
-          height: 25px;
+          width: 30px;
+          height: 30px;
           margin-left: 30px;
         }
         .global_list_image {
           float: left;
           margin-left: 30px;
           img {
-            @include border_radius(2px);
-            width: 25px;
+            /*@include border_radius(2px);*/
+            width: 30px;
             height: auto;
           }
         }
@@ -398,20 +396,17 @@ header {
       .noimage {
         @include font_eng;
         @include fontsize(1.0);
-        line-height: 23px;
-        background: white;
-        border: 1px solid $torio_green;
+        line-height: 30px;
         text-align: center;
-        color: $torio_green;
         margin-left: 30px;
-        width: 25px;
+        width: 30px;
         float: left;
       }
       .user_image {
         float: left;
         margin-left: 30px;
         img {
-          width: 25px;
+          width: 30px;
           height: auto;
         }
       }
@@ -607,18 +602,41 @@ header {
           margin: 0;
           padding: 0;
           li {
-            @include border_radius(2px);
+            /*@include border_radius(2px);*/
             display: inline-block;
             height: 50px;
             overflow: hidden;
-            border: 2px solid #fff;
+            /*border: 2px solid #fff;
             -webkit-box-shadow: 0 1px 2px rgba(0,0,0,0.07);
             -moz-box-shadow: 0 1px 2px rgba(0,0,0,0.07);
-            box-shadow: 0 1px 1px rgba(0,0,0,0.1);
-            margin: 0 3px 0 0;
+            box-shadow: 0 1px 1px rgba(0,0,0,0.1);*/
+            margin: 0 2.5px 0 0;
+            position: relative;
+            ._52d9{
+              background-color: rgba(0, 0, 0, .4);
+              bottom: 0;
+              color: #fff;
+              font-size: 15px;
+              font-family: 'Helvetica neue',Helvetica,Arial,sans-serif;
+              font-weight: bold;
+              left: 0;
+              position: absolute;
+              right: 0;
+              top: 0;
+              ._52da{
+                display: table;
+                height: 100%;
+                width: 100%;
+                ._52db{
+                  display: table-cell;
+                  text-align: center;
+                  vertical-align: middle;
+                }
+              }
+            }
             img {
               width: 50px;
-              height: auto;
+              height: 50px;
               vertical-align: middle;
             }
           }

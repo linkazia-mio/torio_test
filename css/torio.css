@@ -1111,10 +1111,9 @@ p {
   -moz-border-radius: 100px;
   -ms-border-radius: 100px;
   border-radius: 100px;
-  background: white;
-  border: 1px solid #39bcb5;
+  background: #00a4bb;
   text-align: center;
-  color: #39bcb5;
+  color: #FFF;
   font-family: 'Helvetica neue',Helvetica,Arial,sans-serif;
   display: block;
   font-weight: bold; }
@@ -1197,7 +1196,7 @@ header {
   .header_line:after {
     content: '';
     position: absolute;
-    border-top: 2px solid #39bcb5;
+    border-top: 2px solid #00a4bb;
     width: 33%;
     right: 0; }
 
@@ -1285,8 +1284,7 @@ header {
         font-size: 1rem;
         line-height: 28px;
         width: 30px;
-        height: 30px;
-        background: none; }
+        height: 30px; }
     .alart .account .name {
       font-size: 12px;
       font-size: 1.2rem;
@@ -1339,12 +1337,12 @@ header {
           white-space: nowrap;
           text-overflow: ellipsis;
           padding-right: 20px;
-          height: 42px;
-          line-height: 45px; }
+          height: 47px;
+          line-height: 50px; }
           .global_menu .global_menu_inner ul li a span {
             margin: 9px 8px 9px 12px; }
           .global_menu .global_menu_inner ul li a.unread {
-            color: #43aea8;
+            color: #006f8e;
             font-weight: bold; }
             .global_menu .global_menu_inner ul li a.unread:before {
               -webkit-border-radius: 3px;
@@ -1359,33 +1357,27 @@ header {
               content: "";
               width: 5px;
               height: 5px;
-              background: #39bcb5; }
+              background: #00a4bb; }
           .global_menu .global_menu_inner ul li a.selected {
-            background: #39bcb5;
+            background: #00a4bb;
             color: #fff;
             font-weight: bold; }
             .global_menu .global_menu_inner ul li a.selected .global_list_noimage {
               background: #fff; }
         .global_menu .global_menu_inner ul li .global_list_noimage {
-          -webkit-border-radius: 2px;
-          -moz-border-radius: 2px;
-          -ms-border-radius: 2px;
-          border-radius: 2px;
+          /*@include border_radius(2px);*/
           display: block;
           float: left;
-          background: #39bcb5;
-          width: 25px;
-          height: 25px;
+          background: #00a4bb;
+          width: 30px;
+          height: 30px;
           margin-left: 30px; }
         .global_menu .global_menu_inner ul li .global_list_image {
           float: left;
           margin-left: 30px; }
           .global_menu .global_menu_inner ul li .global_list_image img {
-            -webkit-border-radius: 2px;
-            -moz-border-radius: 2px;
-            -ms-border-radius: 2px;
-            border-radius: 2px;
-            width: 25px;
+            /*@include border_radius(2px);*/
+            width: 30px;
             height: auto; }
     .global_menu .global_menu_inner .groups, .global_menu .global_menu_inner .member {
       position: relative; }
@@ -1421,19 +1413,16 @@ header {
       font-family: 'Helvetica neue',Helvetica,Arial,sans-serif;
       font-size: 10px;
       font-size: 1rem;
-      line-height: 23px;
-      background: white;
-      border: 1px solid #39bcb5;
+      line-height: 30px;
       text-align: center;
-      color: #39bcb5;
       margin-left: 30px;
-      width: 25px;
+      width: 30px;
       float: left; }
     .global_menu .global_menu_inner .member .user_image {
       float: left;
       margin-left: 30px; }
       .global_menu .global_menu_inner .member .user_image img {
-        width: 25px;
+        width: 30px;
         height: auto; }
 
 /*Page Menu*/
@@ -1518,7 +1507,7 @@ header {
           display: block;
           height: 40px; }
           .page_menu .config .option_box ul li a:hover, .page_menu .config .check_box ul li a:hover {
-            background: #39bcb5;
+            background: #00a4bb;
             color: white;
             cursor: pointer; }
     .page_menu .config .small-button {
@@ -1584,7 +1573,7 @@ header {
         white-space: nowrap;
         text-overflow: ellipsis; }
       .page_menu .page_menu_inner .item a.unread .title {
-        color: #43aea8; }
+        color: #006f8e; }
         .page_menu .page_menu_inner .item a.unread .title:before {
           -webkit-border-radius: 3px;
           -moz-border-radius: 3px;
@@ -1598,26 +1587,43 @@ header {
           content: "";
           width: 5px;
           height: 5px;
-          background: #39bcb5; }
+          background: #00a4bb; }
       .page_menu .page_menu_inner .item.file ul {
         margin: 0;
         padding: 0; }
         .page_menu .page_menu_inner .item.file ul li {
-          -webkit-border-radius: 2px;
-          -moz-border-radius: 2px;
-          -ms-border-radius: 2px;
-          border-radius: 2px;
+          /*@include border_radius(2px);*/
           display: inline-block;
           height: 50px;
           overflow: hidden;
-          border: 2px solid #fff;
-          -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07);
-          -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07);
-          box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
-          margin: 0 3px 0 0; }
+          /*border: 2px solid #fff;
+            -webkit-box-shadow: 0 1px 2px rgba(0,0,0,0.07);
+            -moz-box-shadow: 0 1px 2px rgba(0,0,0,0.07);
+            box-shadow: 0 1px 1px rgba(0,0,0,0.1);*/
+          margin: 0 2.5px 0 0;
+          position: relative; }
+          .page_menu .page_menu_inner .item.file ul li ._52d9 {
+            background-color: rgba(0, 0, 0, 0.4);
+            bottom: 0;
+            color: #fff;
+            font-size: 15px;
+            font-family: 'Helvetica neue',Helvetica,Arial,sans-serif;
+            font-weight: bold;
+            left: 0;
+            position: absolute;
+            right: 0;
+            top: 0; }
+            .page_menu .page_menu_inner .item.file ul li ._52d9 ._52da {
+              display: table;
+              height: 100%;
+              width: 100%; }
+              .page_menu .page_menu_inner .item.file ul li ._52d9 ._52da ._52db {
+                display: table-cell;
+                text-align: center;
+                vertical-align: middle; }
           .page_menu .page_menu_inner .item.file ul li img {
             width: 50px;
-            height: auto;
+            height: 50px;
             vertical-align: middle; }
       .page_menu .page_menu_inner .item.note {
         height: 120px; }
@@ -1652,7 +1658,7 @@ header {
         height: 50px;
         font-family: 'Helvetica neue',Helvetica,Arial,sans-serif; }
         .page_menu .page_menu_inner .item.task .graph.green .number p {
-          color: #43aea8; }
+          color: #006f8e; }
         .page_menu .page_menu_inner .item.task .graph.yellow .number p {
           color: #feb22e; }
         .page_menu .page_menu_inner .item.task .graph.red .number p {
@@ -1671,7 +1677,7 @@ header {
   .page_menu .page_menu_footer {
     font-size: 40px;
     font-size: 4rem;
-    color: #43aea8;
+    color: #006f8e;
     display: block;
     z-index: 1000;
     position: absolute;
@@ -1714,7 +1720,7 @@ header {
               top: 6px;
               left: 15px; }
             .page_menu .page_menu_footer .add_page ul li a:hover {
-              background: #39bcb5;
+              background: #00a4bb;
               color: white; }
 
 /*detail*/
@@ -1936,4 +1942,4 @@ header {
     right: 30px;
     height: 50px;
     width: 50px;
-    background: #39bcb5; }
+    background: #00a4bb; }
