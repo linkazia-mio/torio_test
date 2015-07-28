@@ -721,7 +721,6 @@ header {
         text-align: left;
         li {
           @include fontsize(1.4);
-          /*font-weight: bold;*/
           line-height: 38px;
           position: relative;
           &.add_page_note {

@@ -194,7 +194,7 @@
 /*Carousel*/
 .carousel {
   margin: 30px auto;
-  width: 800px;
+  width: 760px;
   position: relative;
   .carousel-inner {
     @include border_radius();
@@ -203,6 +203,43 @@
     box-shadow: 0 0 17px rgba(0,0,0,.3);
     margin: 30px auto;
     width: 600px;
+    .image {
+      background: $white_gray;
+      text-align: center;
+      img {
+        width: 80%;
+        height: auto;
+      }
+    }
+    .item {
+      .modal-header {
+        .user_image {
+          float: left;
+          margin-right: 15px;
+          img {
+            height: 40px;
+            width: 40px;
+          }
+        }
+        .modal-title {
+          @include fontsize(1.4);
+          font-weight: bold;
+        }
+        .link {
+          position: relative;
+          padding-left: 75px;
+          a {
+            color: $white_brack;
+          }
+          i {
+            @include fontsize(2.6);
+            position: absolute;
+            top: 0;
+            left: 50px;
+          }
+        }
+      }
+    }
     .modal-footer {
       border-top: 1px solid $border_white_gray;
       padding: 20px;
@@ -236,14 +273,24 @@
     }
   }
   .carousel-control {
+    width: 60px;
     background: none;
+    &.left {
+      i {
+        left: 25%;
+      }
+    }
+    &.right {
+      i {
+        right: 25%;
+      }
+    }
     i {
       @include fontsize(6.0);
       color: $dark_brack;
       text-shadow: none;
-      position: absolute;
-      top: 50%;
-      margin-top: -20px;
+      position: fixed;
+      top: 300px;
     }
   }
 }

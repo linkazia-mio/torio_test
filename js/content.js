@@ -5,6 +5,5 @@ $(function (){
   	}
   );
   $('.carousel').carousel({
-    data-interval="false";
   });
 });
