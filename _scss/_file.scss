@@ -213,6 +213,7 @@
     }
     .item {
       .modal-header {
+        position: relative;
         .user_image {
           float: left;
           margin-right: 15px;
@@ -237,6 +238,23 @@
             top: 0;
             left: 50px;
           }
+        }
+        .option {
+          position: absolute;
+          top: 21px;
+          right: 8px;
+          color: $white_brack;
+          i {
+            @include fontsize(2.8);
+          }
+        }
+        .download {
+          @extend .option;
+          right: 40px;
+        }
+        .like {
+          @extend .option;
+          right: 120px;
         }
       }
     }
