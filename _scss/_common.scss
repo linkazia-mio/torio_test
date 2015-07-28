@@ -151,7 +151,7 @@ header {
 }
 
 /*Torio Line*/
-.header_line {
+/*.header_line {
   position: relative;
   background: $torio_red;
   height: 2px;
@@ -170,7 +170,7 @@ header {
     width: 33%;
     right: 0;
   }
-}
+}*/
 
 /*Search*/
 .search {
@@ -180,7 +180,7 @@ header {
   height: 32px;
   border: 1px solid $border_gray;
   background: #fff;
-  top: 50%;
+  top: 48%;
   left: 55%;
   margin: -15px 0 0 -30%;
   .icon-search {
@@ -437,6 +437,7 @@ header {
   width: 315px;
   height: 100%;
   background: #fff;
+  overflow: hidden;
   &.ui-widget-content {
     border: none;
     border-right: 1px solid $border_gray;
@@ -445,7 +446,9 @@ header {
     position: relative;
     height: 55px;
     padding: 0 13px;
-    border-bottom: 1px solid $border_gray;
+    /*border-bottom: 1px solid $border_gray;*/
+    -webkit-box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+    box-shadow: 0 1px 2px rgba(0,0,0,0.1);
     line-height: 55px;
     .title {
       @include fontsize(1.3);
@@ -723,14 +726,16 @@ header {
   }
   .page_menu_footer {
     @include fontsize(4.0);
-    color: $green;
+    color: $torio_green;
     display: block;
     z-index: 1000;
     position: absolute;
     right: 0;
     left: 0;
     height: 55px;
-    border-top: 1px solid $border_gray;
+    /*border-top: 1px solid $border_gray;*/
+    -webkit-box-shadow: 0 -1px 2px rgba(0,0,0,0.15),inset 0 1px 0 rgba(255,255,255,0.5);
+    box-shadow: 0 -1px 2px rgba(0,0,0,0.15),inset 0 1px 0 rgba(255,255,255,0.5);
     background: #fff;
     text-align: center;
     padding-top: 6px;
@@ -807,9 +812,9 @@ header {
   }
   .title {
     position: relative;
-    margin: 30px 30px 40px 30px;
+    margin: 30px 30px 30px 30px;
     h1 {
-      @include fontsize(2.4);
+      @include fontsize(2.2);
       margin: 0 0 0 0;
       font-weight: bold;
       display: inline-block;

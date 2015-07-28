@@ -1196,24 +1196,26 @@ header {
     top: 60px; }
 
 /*Torio Line*/
-.header_line {
+/*.header_line {
   position: relative;
-  background: #ed6d44;
+  background: $torio_red;
   height: 2px;
-  width: 100%; }
-  .header_line:before {
+  width: 100%;
+  &:before {
     content: '';
     position: absolute;
-    border-top: 2px solid #feb22e;
+    border-top: 2px solid $torio_yellow;
     width: 33%;
-    left: 0; }
-  .header_line:after {
+    left: 0;
+  }
+  &:after {
     content: '';
     position: absolute;
-    border-top: 2px solid #00a4bb;
+    border-top: 2px solid $torio_green;
     width: 33%;
-    right: 0; }
-
+    right: 0;
+  }
+}*/
 /*Search*/
 .search {
   -webkit-border-radius: 2px;
@@ -1225,7 +1227,7 @@ header {
   height: 32px;
   border: 1px solid #e2e2e2;
   background: #fff;
-  top: 50%;
+  top: 48%;
   left: 55%;
   margin: -15px 0 0 -30%; }
   .search .icon-search {
@@ -1443,7 +1445,8 @@ header {
   /*width: 20%;*/
   width: 315px;
   height: 100%;
-  background: #fff; }
+  background: #fff;
+  overflow: hidden; }
   .page_menu.ui-widget-content {
     border: none;
     border-right: 1px solid #e2e2e2; }
@@ -1451,7 +1454,9 @@ header {
     position: relative;
     height: 55px;
     padding: 0 13px;
-    border-bottom: 1px solid #e2e2e2;
+    /*border-bottom: 1px solid $border_gray;*/
+    -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
     line-height: 55px; }
     .page_menu .config .title {
       font-size: 13px;
@@ -1678,14 +1683,16 @@ header {
   .page_menu .page_menu_footer {
     font-size: 40px;
     font-size: 4rem;
-    color: #006f8e;
+    color: #00a4bb;
     display: block;
     z-index: 1000;
     position: absolute;
     right: 0;
     left: 0;
     height: 55px;
-    border-top: 1px solid #e2e2e2;
+    /*border-top: 1px solid $border_gray;*/
+    -webkit-box-shadow: 0 -1px 2px rgba(0, 0, 0, 0.15), inset 0 1px 0 rgba(255, 255, 255, 0.5);
+    box-shadow: 0 -1px 2px rgba(0, 0, 0, 0.15), inset 0 1px 0 rgba(255, 255, 255, 0.5);
     background: #fff;
     text-align: center;
     padding-top: 6px; }
@@ -1733,10 +1740,10 @@ header {
     border: none; }
   .detail .title {
     position: relative;
-    margin: 30px 30px 40px 30px; }
+    margin: 30px 30px 30px 30px; }
     .detail .title h1 {
-      font-size: 24px;
-      font-size: 2.4rem;
+      font-size: 22px;
+      font-size: 2.2rem;
       margin: 0 0 0 0;
       font-weight: bold;
       display: inline-block;
@@ -1888,16 +1895,26 @@ header {
       padding-right: 10px;
       padding-left: 10px; }
   .file .file_list .panel {
-    border: none; }
+    border: none;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    border-radius: 2px;
+    /*-webkit-box-shadow: 0 1px 1px rgba(0,0,0,.05);
+      box-shadow: 0 1px 1px rgba(0,0,0,.05);
+      border: 1px solid $border_gray;*/
+    border: 1px solid #ededf0;
+    border-bottom: 1px solid #dcdce0;
+    box-shadow: none; }
     .file .file_list .panel .panel-body {
       padding: 0; }
       .file .file_list .panel .panel-body.type_image .file_img {
         position: relative; }
         .file .file_list .panel .panel-body.type_image .file_img img {
-          -webkit-border-top-left-radius: 4px;
-          -webkit-border-top-right-radius: 4px;
-          -moz-border-radius-topleft: 4px;
-          -moz-border-radius-topright: 4px;
+          -webkit-border-top-left-radius: 2px;
+          -webkit-border-top-right-radius: 2px;
+          -moz-border-radius-topleft: 2px;
+          -moz-border-radius-topright: 2px;
           width: 100%;
           height: auto;
           z-index: 1; }
@@ -1928,10 +1945,10 @@ header {
       .file .file_list .panel .panel-body.type_file .excel {
         font-size: 80px;
         font-size: 8rem;
-        -webkit-border-top-left-radius: 4px;
-        -webkit-border-top-right-radius: 4px;
-        -moz-border-radius-topleft: 4px;
-        -moz-border-radius-topright: 4px;
+        -webkit-border-top-left-radius: 2px;
+        -webkit-border-top-right-radius: 2px;
+        -moz-border-radius-topleft: 2px;
+        -moz-border-radius-topright: 2px;
         color: #39865a;
         text-align: center;
         width: 100%;
@@ -1983,14 +2000,14 @@ header {
     -moz-border-radius: 100px;
     -ms-border-radius: 100px;
     border-radius: 100px;
-    font-size: 50px;
-    font-size: 5rem;
+    font-size: 45px;
+    font-size: 4.5rem;
     color: #fff;
     position: fixed;
     bottom: 30px;
     right: 30px;
-    height: 50px;
-    width: 50px;
+    height: 45px;
+    width: 45px;
     background: #00a4bb;
     -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
     -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
