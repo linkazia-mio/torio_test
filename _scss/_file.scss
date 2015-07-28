@@ -194,7 +194,7 @@
 /*Carousel*/
 .carousel {
   margin: 30px auto;
-  width: 760px;
+  width: 840px;
   position: relative;
   .carousel-inner {
     @include border_radius();
@@ -202,7 +202,7 @@
     -webkit-box-shadow: 0 0 17px rgba(0,0,0,.3);
     box-shadow: 0 0 17px rgba(0,0,0,.3);
     margin: 30px auto;
-    width: 600px;
+    width: 700px;
     .image {
       background: $white_gray;
       text-align: center;
@@ -231,6 +231,9 @@
           padding-left: 75px;
           a {
             color: $white_brack;
+            &:hover {
+              color: $link_green;
+            }
           }
           i {
             @include fontsize(2.6);
@@ -242,19 +245,33 @@
         .option {
           position: absolute;
           top: 21px;
-          right: 8px;
+          right: 36px;
           color: $white_brack;
           i {
-            @include fontsize(2.8);
+            position: absolute;
+            @include fontsize(2.6);
+            top: -3px;
+            left: 0;
+          }
+          a {
+            color: $white_brack;
+            &:hover {
+              color: $link_green;
+            }
           }
         }
         .download {
           @extend .option;
-          right: 40px;
+          padding-left: 30px;
+          right: 45px;
         }
         .like {
           @extend .option;
-          right: 120px;
+          padding-left: 30px;
+          right: 170px;
+          i {
+            color: $dark_red;
+          }
         }
       }
     }
@@ -332,12 +349,12 @@
     background: none;
     &.left {
       i {
-        left: 25%;
+        left: 20%;
       }
     }
     &.right {
       i {
-        right: 25%;
+        right: 20%;
       }
     }
     i {
