@@ -60,7 +60,7 @@ $(document).ready(function(){
   $(".activity p").click(function () {
     $(".activity_box").toggle( 'fade', '', 100 );
     event.stopPropagation();
-    $('.add_page,.check_box,.option_box').hide();
+    $('.add_page,.check_box,.option_box,.detail_option_box').hide();
   });
 });
 
@@ -69,7 +69,7 @@ $(document).ready(function(){
   $(".config .check").click(function () {
     $(".check_box").toggle( 'fade', '', 100 );
     event.stopPropagation();
-    $('.add_page,.activity_box,.option_box').hide();
+    $('.add_page,.activity_box,.option_box,.detail_option_box').hide();
   });
 });
 
@@ -78,7 +78,7 @@ $(document).ready(function(){
   $(".config .option").click(function () {
     $(".option_box").toggle( 'fade', '', 100 );
     event.stopPropagation();
-    $('.add_page,.activity_box,.check_box').hide();
+    $('.add_page,.activity_box,.check_box,.detail_option_box').hide();
   });
 });
 
@@ -87,7 +87,16 @@ $(document).ready(function(){
   $(".page_menu_footer p").click(function () {
     $(".add_page").toggle( 'fade', '', 100 );
     event.stopPropagation();
-    $('.option_box,.activity_box,.check_box').hide();
+    $('.option_box,.activity_box,.check_box,.detail_option_box').hide();
+  });
+});
+
+//Detail_option_box
+$(document).ready(function(){
+  $(".detail .option").click(function () {
+    $(".detail_option_box").toggle( 'fade', '', 100 );
+    event.stopPropagation();
+    $('.option_box,.activity_box,.check_box,.add_page').hide();
   });
 });
 

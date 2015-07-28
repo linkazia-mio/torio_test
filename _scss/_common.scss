@@ -44,6 +44,11 @@ ul {
 p {
   margin: 0;
 }
+button {
+  &:focus {
+    outline: none;
+  }
+}
 .clearfix{
   *zoom:1;
   &:after{
@@ -77,6 +82,7 @@ p {
 .popover {
   @include border_radius();
   display: none;
+  width: 250px;
   position: absolute;
   z-index: 1000;
   background: #fff;
@@ -89,6 +95,19 @@ p {
   padding: 10px 0;
   ul {
     margin-bottom: 0;
+    li {
+      line-height: 40px;
+      a {
+        padding: 0 20px;
+        display: block;
+        height: 40px;
+        &:hover {
+          background: $torio_green;
+          color: white;
+          cursor: pointer;
+        }
+      }
+    }
   }
 }
 .modal-backdrop {
@@ -366,9 +385,6 @@ header {
           &:hover {
             cursor: pointer;
           }
-          &:focus {
-            outline: none;
-          }
         }
         .md-trigger {
           width: 12px;
@@ -495,26 +511,10 @@ header {
       }
     }
     .option_box {
-      width: 250px;
       height: auto;
       left: 190px;
       top: 45px;
       z-index: 1000;
-      ul {
-        li {
-          line-height: 40px;
-          a {
-            padding: 0 20px;
-            display: block;
-            height: 40px;
-            &:hover {
-              background: $torio_green;
-              color: white;
-              cursor: pointer;
-            }
-          }
-        }
-      }
     }
     .small-button {
       -webkit-transition: all 0.3s ease-in-out;
@@ -714,7 +714,6 @@ header {
     text-align: center;
     padding-top: 6px;
     .add_page {
-      width: 250px;
       left: 105px;
       top: -118px;
       padding-top: 10px;
@@ -835,13 +834,70 @@ header {
         right: 0;
       }
     }
+    .detail_option_box {
+      left: 75%;
+      top: 36px;
+    }
   }
 }
 
 /*---------------------------------------------------------------------------------------
  Modal
 ---------------------------------------------------------------------------------------*/
-
+.modal {
+  .modal-dialog {
+    .modal-content {
+      @include border_radius();
+      -webkit-box-shadow: 0 0 17px rgba(0,0,0,.3);
+      box-shadow: 0 0 17px rgba(0,0,0,.3);
+      border: none;
+      .modal-header {
+        border-bottom: 1px solid $border_white_gray;
+        .modal-title {
+          @include fontsize(1.4);
+          font-weight: bold;
+        }
+        .close {
+          margin-top: -8px;
+        }
+      }
+      .modal-body {
+        background: $white_gray;
+      }
+      .modal-footer {
+        border-top: 1px solid $border_white_gray;
+        padding: 20px;
+        textarea {
+          @include border_radius();
+          width: 100%;
+          height: 60px;
+          padding: 10px 15px;
+          margin-bottom: 20px;
+          border: 1px solid $border_white_gray;
+          resize: none;
+          outline: none;
+        }
+        button {
+          width: 130px;
+          &.btn-default {
+            border-color: $border_white_gray;
+            background: $white_gray;
+            &:hover {
+              opacity: 0.7;
+            }
+          }
+          &.btn-primary {
+            border-color: $dark_green;
+            background: $icon_green;
+            &:hover {
+              opacity: 0.7;
+            }
+          }
+        }
+      }
+    }
+  }
+}
 #viewers_box {
 	div {
 		@include clearfix;

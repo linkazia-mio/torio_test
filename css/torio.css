@@ -1094,6 +1094,9 @@ ul li {
 p {
   margin: 0; }
 
+button:focus {
+  outline: none; }
+
 .clearfix, .alart .account {
   *zoom: 1; }
   .clearfix:after, .alart .account:after {
@@ -1132,6 +1135,7 @@ p {
   -ms-border-radius: 4px;
   border-radius: 4px;
   display: none;
+  width: 250px;
   position: absolute;
   z-index: 1000;
   background: #fff;
@@ -1144,6 +1148,16 @@ p {
   padding: 10px 0; }
   .popover ul {
     margin-bottom: 0; }
+    .popover ul li {
+      line-height: 40px; }
+      .popover ul li a {
+        padding: 0 20px;
+        display: block;
+        height: 40px; }
+        .popover ul li a:hover {
+          background: #39bcb5;
+          color: white;
+          cursor: pointer; }
 
 .modal-backdrop {
   background: #fff; }
@@ -1397,8 +1411,6 @@ header {
         color: #999999; }
         .global_menu .global_menu_inner .groups .add button:hover, .global_menu .global_menu_inner .member .add button:hover {
           cursor: pointer; }
-        .global_menu .global_menu_inner .groups .add button:focus, .global_menu .global_menu_inner .member .add button:focus {
-          outline: none; }
         .global_menu .global_menu_inner .groups .add .md-trigger, .global_menu .global_menu_inner .member .add .md-trigger {
           width: 12px; }
           .global_menu .global_menu_inner .groups .add .md-trigger span, .global_menu .global_menu_inner .member .add .md-trigger span {
@@ -1505,21 +1517,10 @@ header {
       .page_menu .config .option:hover {
         color: #50bcb6; }
     .page_menu .config .option_box, .page_menu .config .check_box {
-      width: 250px;
       height: auto;
       left: 190px;
       top: 45px;
       z-index: 1000; }
-      .page_menu .config .option_box ul li, .page_menu .config .check_box ul li {
-        line-height: 40px; }
-        .page_menu .config .option_box ul li a, .page_menu .config .check_box ul li a {
-          padding: 0 20px;
-          display: block;
-          height: 40px; }
-          .page_menu .config .option_box ul li a:hover, .page_menu .config .check_box ul li a:hover {
-            background: #39bcb5;
-            color: white;
-            cursor: pointer; }
     .page_menu .config .small-button {
       -webkit-transition: all 0.3s ease-in-out;
       -moz-transition: all 0.3s ease-in-out;
@@ -1679,7 +1680,6 @@ header {
     text-align: center;
     padding-top: 6px; }
     .page_menu .page_menu_footer .add_page {
-      width: 250px;
       left: 105px;
       top: -118px;
       padding-top: 10px; }
@@ -1760,10 +1760,59 @@ header {
         right: 50px; }
       .detail .title p.option {
         right: 0; }
+    .detail .title .detail_option_box {
+      left: 75%;
+      top: 36px; }
 
 /*---------------------------------------------------------------------------------------
  Modal
 ---------------------------------------------------------------------------------------*/
+.modal .modal-dialog .modal-content {
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  border-radius: 4px;
+  -webkit-box-shadow: 0 0 17px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 17px rgba(0, 0, 0, 0.3);
+  border: none; }
+  .modal .modal-dialog .modal-content .modal-header {
+    border-bottom: 1px solid #eeeeee; }
+    .modal .modal-dialog .modal-content .modal-header .modal-title {
+      font-size: 14px;
+      font-size: 1.4rem;
+      font-weight: bold; }
+    .modal .modal-dialog .modal-content .modal-header .close {
+      margin-top: -8px; }
+  .modal .modal-dialog .modal-content .modal-body {
+    background: #f5f5f5; }
+  .modal .modal-dialog .modal-content .modal-footer {
+    border-top: 1px solid #eeeeee;
+    padding: 20px; }
+    .modal .modal-dialog .modal-content .modal-footer textarea {
+      -webkit-border-radius: 4px;
+      -moz-border-radius: 4px;
+      -ms-border-radius: 4px;
+      border-radius: 4px;
+      width: 100%;
+      height: 60px;
+      padding: 10px 15px;
+      margin-bottom: 20px;
+      border: 1px solid #eeeeee;
+      resize: none;
+      outline: none; }
+    .modal .modal-dialog .modal-content .modal-footer button {
+      width: 130px; }
+      .modal .modal-dialog .modal-content .modal-footer button.btn-default {
+        border-color: #eeeeee;
+        background: #f5f5f5; }
+        .modal .modal-dialog .modal-content .modal-footer button.btn-default:hover {
+          opacity: 0.7; }
+      .modal .modal-dialog .modal-content .modal-footer button.btn-primary {
+        border-color: #339999;
+        background: #50bcb6; }
+        .modal .modal-dialog .modal-content .modal-footer button.btn-primary:hover {
+          opacity: 0.7; }
+
 #viewers_box div {
   *zoom: 1; }
   #viewers_box div:after {
@@ -1919,7 +1968,7 @@ header {
           .file .file_list .panel .panel-body .info .user_image img {
             height: 20px;
             width: 20px; }
-  .file .add_file {
+  .file .add_file_btn {
     -webkit-border-radius: 100px;
     -moz-border-radius: 100px;
     -ms-border-radius: 100px;
@@ -1932,4 +1981,50 @@ header {
     right: 30px;
     height: 50px;
     width: 50px;
-    background: #39bcb5; }
+    background: #39bcb5;
+    -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2); }
+    .file .add_file_btn:hover {
+      cursor: pointer; }
+
+/*---------------------------------------------------------------------------------------
+ Modal
+---------------------------------------------------------------------------------------*/
+/*Add File*/
+#add_file .modal-body {
+  display: table;
+  table-layout: fixed;
+  width: 100%; }
+  #add_file .modal-body .local_up, #add_file .modal-body .web_up {
+    font-size: 14px;
+    font-size: 1.4rem;
+    width: 50%;
+    height: 200px;
+    padding-top: 50px;
+    display: table-cell;
+    text-align: center;
+    border-right: 1px solid #eeeeee; }
+    #add_file .modal-body .local_up a, #add_file .modal-body .web_up a {
+      color: #999999;
+      display: block; }
+    #add_file .modal-body .local_up i, #add_file .modal-body .web_up i {
+      font-size: 50px;
+      font-size: 5rem;
+      -webkit-border-radius: 100px;
+      -moz-border-radius: 100px;
+      -ms-border-radius: 100px;
+      border-radius: 100px;
+      height: 70px;
+      width: 70px;
+      color: #999999;
+      border: 2px solid #999999;
+      padding: 8px; }
+    #add_file .modal-body .local_up .title, #add_file .modal-body .web_up .title {
+      margin-top: 20px;
+      font-weight: bold; }
+    #add_file .modal-body .local_up .note, #add_file .modal-body .web_up .note {
+      font-size: 12px;
+      font-size: 1.2rem; }
+  #add_file .modal-body .web_up {
+    border-right: none; }
