@@ -2084,6 +2084,34 @@ header {
     .carousel .carousel-inner .modal-footer {
       border-top: 1px solid #f5f5f5;
       padding: 20px; }
+      .carousel .carousel-inner .modal-footer .comment {
+        text-align: left;
+        border-bottom: 1px solid #f5f5f5;
+        margin-bottom: 20px; }
+        .carousel .carousel-inner .modal-footer .comment .comment_inner {
+          display: table;
+          width: 100%;
+          table-layout: fixed;
+          margin-bottom: 20px; }
+          .carousel .carousel-inner .modal-footer .comment .comment_inner .user_image {
+            display: table-cell;
+            width: 45px; }
+            .carousel .carousel-inner .modal-footer .comment .comment_inner .user_image img {
+              width: 30px;
+              height: 30px;
+              vertical-align: top;
+              margin-top: 5px; }
+          .carousel .carousel-inner .modal-footer .comment .comment_inner .user_comment {
+            display: table-cell; }
+            .carousel .carousel-inner .modal-footer .comment .comment_inner .user_comment p {
+              font-size: 13px;
+              font-size: 1.3rem; }
+              .carousel .carousel-inner .modal-footer .comment .comment_inner .user_comment p.name {
+                font-weight: bold; }
+                .carousel .carousel-inner .modal-footer .comment .comment_inner .user_comment p.name .time {
+                  margin-left: 10px;
+                  font-weight: normal;
+                  color: #999999; }
       .carousel .carousel-inner .modal-footer textarea {
         -webkit-border-radius: 4px;
         -moz-border-radius: 4px;

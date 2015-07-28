@@ -243,6 +243,43 @@
     .modal-footer {
       border-top: 1px solid $border_white_gray;
       padding: 20px;
+      .comment {
+        text-align: left;
+        border-bottom: 1px solid $border_white_gray;
+        margin-bottom: 20px;
+        .comment_inner {
+          display: table;
+          width: 100%;
+          table-layout: fixed;
+          margin-bottom: 20px;
+          .user_image {
+            display: table-cell;
+            width: 45px;
+            img {
+              width: 30px;
+              height: 30px;
+              vertical-align: top;
+              margin-top: 5px;
+            }
+          }
+          .user_comment {
+            display: table-cell;
+            p {
+              @include fontsize(1.3);
+              &.name {
+                font-weight: bold;
+                .time {
+                  margin-left: 10px;
+                  font-weight: normal;
+                  color: $white_brack;
+                }
+              }
+              &.memo {
+              }
+            }
+          }
+        }
+      }
       textarea {
         @include border_radius();
         width: 100%;
