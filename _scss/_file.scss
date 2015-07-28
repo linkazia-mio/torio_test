@@ -350,7 +350,14 @@
         }
       }
     }
+    .add_member {
+      @include fontsize(2.6);
+    }
+    .add_emoji {
+      @include fontsize(2.6);
+    }
   }
+  /*Carousel Control*/
   .carousel-control {
     width: 60px;
     background: none;
