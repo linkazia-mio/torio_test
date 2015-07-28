@@ -1483,7 +1483,7 @@ header {
       font-size: 2.3rem;
       color: #999999;
       position: absolute;
-      right: 83px;
+      right: 93px;
       top: 15px;
       font-weight: 700; }
       .page_menu .config .favorite:hover {
@@ -1491,7 +1491,7 @@ header {
     .page_menu .config .viewers {
       color: #999999;
       position: absolute;
-      right: 43px;
+      right: 49px;
       top: 0; }
       .page_menu .config .viewers i {
         font-size: 22px;
@@ -1561,11 +1561,11 @@ header {
       border-bottom: 1px solid #f5f5f5; }
       .page_menu .page_menu_inner .item .check {
         position: absolute;
-        right: 14px;
+        right: 16px;
         top: 0;
         width: 0;
         height: 0;
-        border-top: 20px solid #db4c3f;
+        border-top: 12px solid #db4c3f;
         border-right: 8px solid #db4c3f;
         border-bottom: 7px solid #fff;
         border-left: 8px solid #db4c3f; }
@@ -1659,7 +1659,7 @@ header {
             width: 70%; }
       .page_menu .page_menu_inner .item.task .graph {
         position: absolute;
-        right: 13px;
+        right: 16px;
         bottom: 20px;
         height: 50px;
         font-family: 'Helvetica neue',Helvetica,Arial,sans-serif; }
