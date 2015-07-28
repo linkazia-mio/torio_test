@@ -822,21 +822,21 @@ header {
       line-height: 28px;
     }
     p {
-      @include fontsize(2.8);
+      @include fontsize(2.6);
       line-height: 28px;
       position: absolute;
       color: $white_brack;
-      top: 0;
+      top: 3px;
       &:hover {
         color: $link_green;
         cursor: pointer;
       }
       &.check {
-        position: static;
+        /*position: static;*/
         display: inline-block;
       }
       &.bookmark {
-        right: 100px;
+        right: 95px;
         .icon-bookmark-outline {
           display: block;
         }
@@ -854,7 +854,7 @@ header {
         }
       }
       &.website {
-        right: 50px;
+        right: 45px;
       }
       &.option {
         right: 0;
