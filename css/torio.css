@@ -2108,7 +2108,7 @@ header {
         font-size: 13px;
         font-size: 1.3rem;
         position: absolute;
-        top: 21px;
+        top: 25px;
         right: 36px;
         color: #999999; }
         .carousel .carousel-inner .item .modal-header .option i, .carousel .carousel-inner .item .modal-header .download i, .carousel .carousel-inner .item .modal-header .like i {
@@ -2130,7 +2130,8 @@ header {
           color: #db4c3f; }
     .carousel .carousel-inner .modal-footer {
       border-top: 1px solid #f5f5f5;
-      padding: 20px; }
+      padding: 20px;
+      position: relative; }
       .carousel .carousel-inner .modal-footer .comment {
         text-align: left;
         border-bottom: 1px solid #f5f5f5;
@@ -2185,10 +2186,18 @@ header {
             opacity: 0.7; }
     .carousel .carousel-inner .add_member {
       font-size: 26px;
-      font-size: 2.6rem; }
+      font-size: 2.6rem;
+      color: #999999;
+      position: absolute;
+      right: 216px;
+      bottom: 24px; }
     .carousel .carousel-inner .add_emoji {
       font-size: 26px;
-      font-size: 2.6rem; }
+      font-size: 2.6rem;
+      color: #999999;
+      position: absolute;
+      right: 170px;
+      bottom: 24px; }
   .carousel .carousel-control {
     width: 60px;
     background: none; }

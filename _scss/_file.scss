@@ -252,7 +252,7 @@
         .option {
           @include fontsize(1.3);
           position: absolute;
-          top: 21px;
+          top: 25px;
           right: 36px;
           color: $white_brack;
           i {
@@ -285,6 +285,7 @@
     .modal-footer {
       border-top: 1px solid $border_white_gray;
       padding: 20px;
+      position: relative;
       .comment {
         text-align: left;
         border-bottom: 1px solid $border_white_gray;
@@ -352,9 +353,17 @@
     }
     .add_member {
       @include fontsize(2.6);
+      color: $white_brack;
+      position: absolute;
+      right: 216px;
+      bottom: 24px;
     }
     .add_emoji {
       @include fontsize(2.6);
+      color: $white_brack;
+      position: absolute;
+      right: 170px;
+      bottom: 24px;
     }
   }
   /*Carousel Control*/
