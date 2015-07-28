@@ -4,4 +4,7 @@ $(function (){
   		$(".bookmark").toggleClass("active");
   	}
   );
+  $('.carousel').carousel({
+    data-interval="false";
+  });
 });

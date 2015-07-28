@@ -853,6 +853,7 @@ header {
       border: none;
       .modal-header {
         border-bottom: 1px solid $border_white_gray;
+        background: #fff;
         .modal-title {
           @include fontsize(1.4);
           font-weight: bold;
