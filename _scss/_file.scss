@@ -250,6 +250,7 @@
           }
         }
         .option {
+          @include fontsize(1.3);
           position: absolute;
           top: 21px;
           right: 36px;
@@ -269,13 +270,12 @@
         }
         .download {
           @extend .option;
-          padding-left: 30px;
+          padding-left: 27px;
           right: 45px;
         }
         .like {
-          @extend .option;
-          padding-left: 30px;
-          right: 170px;
+          @extend .download;
+          right: 160px;
           i {
             color: $dark_red;
           }
