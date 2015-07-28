@@ -3,6 +3,9 @@
 ---------------------------------------------------------------------------------------*/
 .file {
   position: relative;
+  #masonry {
+    margin: 0 auto;
+  }
   .file_list {
     &.row {
       margin: 0 15px;

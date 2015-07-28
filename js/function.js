@@ -146,7 +146,9 @@ window.onload=function(){
   $(function(){
       $('#masonry').masonry({
           itemSelector: '.grid',
-          transitionDuration: 0
+          transitionDuration: 0,
+          columnWidth: 250, 
+          isFitWidth: true
       });
   });
   jQuery(window).resize(function(){

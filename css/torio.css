@@ -1823,6 +1823,8 @@ header {
 ---------------------------------------------------------------------------------------*/
 .file {
   position: relative; }
+  .file #masonry {
+    margin: 0 auto; }
   .file .file_list.row {
     margin: 0 15px; }
     .file .file_list.row .col-lg-3 {
