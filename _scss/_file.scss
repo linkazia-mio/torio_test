@@ -129,6 +129,7 @@
   }
   .add_file {
     @include border_radius(100px);
+    @include fontsize(5.0);
     color: #fff;
     position: fixed;
     bottom: 30px;

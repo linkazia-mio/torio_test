@@ -13,7 +13,6 @@ html {
 }
 body {
   font-family:'ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro','メイリオ',Meiryo,'ＭＳ Ｐゴシック','MS PGothic',sans-serif;
-  /*font-family: "Helvetica Neue",Helvetica,"ヒラギノ角ゴ ProN W3","Hiragino Kaku Gothic ProN","メイリオ",Meiryo,sans-serif;*/
   @include fontsize(1.4);
   line-height: 1.6;
   color: $dark_brack;
@@ -82,11 +81,12 @@ p {
   z-index: 1000;
   background: #fff;
   box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+  border: none;
   line-height: 1.42857143;
   text-align: left;
   white-space: normal;
   opacity: 1;
-  padding: 10px 1px;
+  padding: 10px 0;
   ul {
     margin-bottom: 0;
   }
@@ -290,7 +290,6 @@ header {
       }
     }
     ul {
-      /*margin: 0 0 41px -10px;*/
       margin: 0 0 2rem -10px;
       @include fontsize(1.2);
       li {
@@ -500,7 +499,6 @@ header {
       height: auto;
       left: 190px;
       top: 45px;
-      padding: 10px 0;
       z-index: 1000;
       ul {
         li {
@@ -518,7 +516,7 @@ header {
         }
       }
     }
-    .small-button{
+    .small-button {
       -webkit-transition: all 0.3s ease-in-out;
       -moz-transition: all 0.3s ease-in-out;
       -ms-transition: all 0.3s ease-in-out;
@@ -717,9 +715,8 @@ header {
     padding-top: 6px;
     .add_page {
       width: 250px;
-      /*height: 140px;*/
       left: 105px;
-      bottom: 40px;
+      top: -118px;
       padding-top: 10px;
       ul {
         text-align: left;

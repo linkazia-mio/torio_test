@@ -50,8 +50,9 @@ $(function(){
      })
 });
 
+//エリア外をクリックしたらpopoverを消す
 $(document).click(function() {
-  $('.option_box,.add_page,.activity_box,.check_box').hide();
+  $('.popover').hide();
 });
 
 //Activity
@@ -86,7 +87,7 @@ $(document).ready(function(){
   $(".page_menu_footer p").click(function () {
     $(".add_page").toggle( 'fade', '', 100 );
     event.stopPropagation();
-    $('.option_box,.activity_box').hide();
+    $('.option_box,.activity_box,.check_box').hide();
   });
 });
 
@@ -133,7 +134,7 @@ $(function(){
   });
 });
 
-//ボックス非表示
+//global_menu 非表示
 $(document).ready(function(){
   $(".global_menu_btn").click(function () {
     jQuery( '.global_menu' ).toggle( 'fade', '', 100 );
@@ -147,7 +148,7 @@ window.onload=function(){
       $('#masonry').masonry({
           itemSelector: '.grid',
           transitionDuration: 0,
-          columnWidth: 250, 
+          columnWidth: 250,
           isFitWidth: true
       });
   });
