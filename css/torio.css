@@ -1398,7 +1398,7 @@ header {
 
 /*Global Menu*/
 .global_menu {
-  width: 220px;
+  width: 200px;
   min-width: 100px;
   background: #fff; }
   .global_menu.ui-widget-content {
@@ -1519,7 +1519,7 @@ header {
 .page_menu {
   position: relative;
   /*width: 20%;*/
-  width: 315px;
+  width: 310px;
   height: 100%;
   background: #fff;
   overflow: hidden; }
@@ -1682,7 +1682,7 @@ header {
             -webkit-box-shadow: 0 1px 2px rgba(0,0,0,0.07);
             -moz-box-shadow: 0 1px 2px rgba(0,0,0,0.07);
             box-shadow: 0 1px 1px rgba(0,0,0,0.1);*/
-          margin: 0 2.5px 0 0;
+          margin: 0 1.7px 0 0;
           position: relative; }
           .page_menu .page_menu_inner .item.file ul li ._52d9 {
             background-color: rgba(0, 0, 0, 0.4);
