@@ -1,4 +1,4 @@
-<html>
+<html style="overflow: inherit !important;">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -33,7 +33,7 @@
        <p><i class="icon-clear"></i></p>
     </div>
     <div class="success message_bar">
-      <h3>ようこそ！TORIOをお楽しみください。</h3>
+      <h3>ようこそ！新しいプロジェクト管理ツールTORIOをお楽しみください。</h3>
       <p><i class="icon-clear"></i></p>
     </div>
     <div class="wrapper">
@@ -50,12 +50,6 @@
       </header>
       <!--Front/-->
       <div class="front">
-        <ul id="trigger-list">
-        	 <li><a href="#" class="trigger info-trigger">Info</a></li>
-       		 <li><a href="#" class="trigger error-trigger">Error</a></li>
-       		 <li><a href="#" class="trigger warning-trigger">Warning</a></li>
-       		 <li><a href="#" class="trigger success-trigger">Success</a></li>
-        </ul>
         <div class="branding">
           <h1>TORIOにログインする</h1>
           <p>あなたのアカウントを入力してログインをしてください。</p>
@@ -81,7 +75,16 @@
         </div>
       </div>
     </div>
+    <!-- メッセージのトリガーはこのクラスです -->
+    <ul id="trigger-list">
+    	 <li><a href="#" class="trigger info-trigger">Info</a></li>
+   		 <li><a href="#" class="trigger error-trigger">Error</a></li>
+   		 <li><a href="#" class="trigger warning-trigger">Warning</a></li>
+   		 <li><a href="#" class="trigger success-trigger">Success</a></li>
+    </ul>
+    <!-- メッセージのトリガーはこのクラスです -->
     <script>
+      // message_bar
       var myMessages = ['info','warning','error','success']; // define the messages types		 
       function hideAllMessages()
       {
