@@ -2669,10 +2669,10 @@ header {
     text-align: center; }
 
 .task .task_create {
-  -webkit-border-radius: 2px;
-  -moz-border-radius: 2px;
-  -ms-border-radius: 2px;
-  border-radius: 2px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  border-radius: 4px;
   position: relative;
   border: 1px solid #006f8e;
   margin: 30px;
@@ -2690,3 +2690,22 @@ header {
   .task .task_create input {
     width: 90%;
     padding-left: 30px; }
+
+.task .person_charge {
+  margin: 30px; }
+  .task .person_charge .task_list {
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    border-radius: 4px;
+    position: relative;
+    border: 1px solid #e2e2e2;
+    height: 50px;
+    background: #fff; }
+    .task .person_charge .task_list .user_image {
+      position: absolute;
+      top: 15px;
+      right: 15px; }
+      .task .person_charge .task_list .user_image img {
+        height: 20px;
+        width: 20px; }
