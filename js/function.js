@@ -49,6 +49,7 @@ $(function(){
      })
 });
 
+
 //エリア外をクリックしたらpopoverを消す
 $(document).click(function() {
   $('.popover').hide();
@@ -234,4 +235,5 @@ window.onload=function(){
   getContext("2d")).Doughnut(Dougnut_data_red,options);
   var myDoughnut = new Chart(document.getElementById("task_graph_yellow").
   getContext("2d")).Doughnut(Dougnut_data_yellow,options);
-}
+
+};

@@ -1502,14 +1502,14 @@ header {
         color: #999999; }
       .page_menu .config .viewers:hover {
         color: #50bcb6; }
-    .page_menu .config .option, .page_menu .config .carousel .carousel-inner .item .modal-header .download, .carousel .carousel-inner .item .modal-header .page_menu .config .download, .page_menu .config .carousel .carousel-inner .item .modal-header .like, .carousel .carousel-inner .item .modal-header .page_menu .config .like {
+    .page_menu .config .option, .page_menu .config .bx-wrapper .bx-viewport .file_slide .item .modal-header .download, .bx-wrapper .bx-viewport .file_slide .item .modal-header .page_menu .config .download, .page_menu .config .bx-wrapper .bx-viewport .file_slide .item .modal-header .like, .bx-wrapper .bx-viewport .file_slide .item .modal-header .page_menu .config .like, .page_menu .config .carousel .carousel-inner .item .modal-header .download, .carousel .carousel-inner .item .modal-header .page_menu .config .download, .page_menu .config .carousel .carousel-inner .item .modal-header .like, .carousel .carousel-inner .item .modal-header .page_menu .config .like {
       font-size: 28px;
       font-size: 2.8rem;
       color: #999999;
       position: absolute;
       right: 7px;
       top: 13px; }
-      .page_menu .config .option:hover, .page_menu .config .carousel .carousel-inner .item .modal-header .download:hover, .carousel .carousel-inner .item .modal-header .page_menu .config .download:hover, .page_menu .config .carousel .carousel-inner .item .modal-header .like:hover, .carousel .carousel-inner .item .modal-header .page_menu .config .like:hover {
+      .page_menu .config .option:hover, .page_menu .config .bx-wrapper .bx-viewport .file_slide .item .modal-header .download:hover, .bx-wrapper .bx-viewport .file_slide .item .modal-header .page_menu .config .download:hover, .page_menu .config .bx-wrapper .bx-viewport .file_slide .item .modal-header .like:hover, .bx-wrapper .bx-viewport .file_slide .item .modal-header .page_menu .config .like:hover, .page_menu .config .carousel .carousel-inner .item .modal-header .download:hover, .carousel .carousel-inner .item .modal-header .page_menu .config .download:hover, .page_menu .config .carousel .carousel-inner .item .modal-header .like:hover, .carousel .carousel-inner .item .modal-header .page_menu .config .like:hover {
         color: #50bcb6; }
     .page_menu .config .option_box, .page_menu .config .check_box {
       height: auto;
@@ -1775,7 +1775,7 @@ header {
           display: block; }
       .detail .title p.website {
         right: 45px; }
-      .detail .title p.option, .detail .title .carousel .carousel-inner .item .modal-header p.download, .carousel .carousel-inner .item .modal-header .detail .title p.download, .detail .title .carousel .carousel-inner .item .modal-header p.like, .carousel .carousel-inner .item .modal-header .detail .title p.like {
+      .detail .title p.option, .detail .title .bx-wrapper .bx-viewport .file_slide .item .modal-header p.download, .bx-wrapper .bx-viewport .file_slide .item .modal-header .detail .title p.download, .detail .title .bx-wrapper .bx-viewport .file_slide .item .modal-header p.like, .bx-wrapper .bx-viewport .file_slide .item .modal-header .detail .title p.like, .detail .title .carousel .carousel-inner .item .modal-header p.download, .carousel .carousel-inner .item .modal-header .detail .title p.download, .detail .title .carousel .carousel-inner .item .modal-header p.like, .carousel .carousel-inner .item .modal-header .detail .title p.like {
         right: 0; }
     .detail .title .detail_option_box {
       left: 75%;
@@ -2069,6 +2069,163 @@ header {
   #add_file .modal-body .web_up {
     border-right: none; }
 
+/*bx-wrapper*/
+.bx-wrapper {
+  position: relative; }
+  .bx-wrapper .bx-controls .bx-pager {
+    display: none; }
+  .bx-wrapper .bx-controls .bx-controls-direction {
+    font-family: 'torio_icon'; }
+    .bx-wrapper .bx-controls .bx-controls-direction .bx-prev {
+      position: fixed;
+      top: 300px;
+      left: -70px;
+      height: 60px;
+      width: 60px;
+      overflow: hidden; }
+      .bx-wrapper .bx-controls .bx-controls-direction .bx-prev:before {
+        font-size: 60px;
+        font-size: 6rem;
+        content: "\e62d"; }
+    .bx-wrapper .bx-controls .bx-controls-direction .bx-next {
+      position: fixed;
+      top: 300px;
+      right: -70px;
+      height: 60px;
+      width: 60px;
+      overflow: hidden; }
+      .bx-wrapper .bx-controls .bx-controls-direction .bx-next:before {
+        font-size: 60px;
+        font-size: 6rem;
+        content: "\e62e"; }
+  .bx-wrapper .bx-viewport .file_slide .item {
+    width: 100% !important; }
+    .bx-wrapper .bx-viewport .file_slide .item .modal-header {
+      position: relative; }
+      .bx-wrapper .bx-viewport .file_slide .item .modal-header .user_image {
+        float: left;
+        margin-right: 15px; }
+        .bx-wrapper .bx-viewport .file_slide .item .modal-header .user_image img {
+          height: 40px;
+          width: 40px; }
+      .bx-wrapper .bx-viewport .file_slide .item .modal-header .modal-title {
+        font-size: 14px;
+        font-size: 1.4rem;
+        font-weight: bold; }
+      .bx-wrapper .bx-viewport .file_slide .item .modal-header .link {
+        position: relative;
+        padding-left: 75px; }
+        .bx-wrapper .bx-viewport .file_slide .item .modal-header .link a {
+          color: #999999; }
+          .bx-wrapper .bx-viewport .file_slide .item .modal-header .link a:hover {
+            color: #50bcb6; }
+        .bx-wrapper .bx-viewport .file_slide .item .modal-header .link i {
+          font-size: 26px;
+          font-size: 2.6rem;
+          position: absolute;
+          top: 0;
+          left: 50px; }
+      .bx-wrapper .bx-viewport .file_slide .item .modal-header .option, .bx-wrapper .bx-viewport .file_slide .item .modal-header .download, .bx-wrapper .bx-viewport .file_slide .item .modal-header .like {
+        font-size: 13px;
+        font-size: 1.3rem;
+        position: absolute;
+        top: 25px;
+        right: 36px;
+        color: #999999; }
+        .bx-wrapper .bx-viewport .file_slide .item .modal-header .option i, .bx-wrapper .bx-viewport .file_slide .item .modal-header .download i, .bx-wrapper .bx-viewport .file_slide .item .modal-header .like i {
+          position: absolute;
+          font-size: 26px;
+          font-size: 2.6rem;
+          top: -3px;
+          left: 0; }
+        .bx-wrapper .bx-viewport .file_slide .item .modal-header .option a, .bx-wrapper .bx-viewport .file_slide .item .modal-header .download a, .bx-wrapper .bx-viewport .file_slide .item .modal-header .like a {
+          color: #999999; }
+          .bx-wrapper .bx-viewport .file_slide .item .modal-header .option a:hover, .bx-wrapper .bx-viewport .file_slide .item .modal-header .download a:hover, .bx-wrapper .bx-viewport .file_slide .item .modal-header .like a:hover {
+            color: #50bcb6; }
+      .bx-wrapper .bx-viewport .file_slide .item .modal-header .download, .bx-wrapper .bx-viewport .file_slide .item .modal-header .like {
+        padding-left: 27px;
+        right: 45px; }
+      .bx-wrapper .bx-viewport .file_slide .item .modal-header .like {
+        right: 160px; }
+        .bx-wrapper .bx-viewport .file_slide .item .modal-header .like i {
+          color: #db4c3f; }
+    .bx-wrapper .bx-viewport .file_slide .item .image {
+      text-align: center;
+      background: #f5f5f5; }
+      .bx-wrapper .bx-viewport .file_slide .item .image img {
+        width: 80%;
+        height: auto; }
+    .bx-wrapper .bx-viewport .file_slide .item .modal-footer {
+      border-top: 1px solid #f5f5f5;
+      padding: 20px;
+      position: relative; }
+      .bx-wrapper .bx-viewport .file_slide .item .modal-footer .comment {
+        text-align: left;
+        border-bottom: 1px solid #f5f5f5;
+        margin-bottom: 20px; }
+        .bx-wrapper .bx-viewport .file_slide .item .modal-footer .comment .comment_inner {
+          display: table;
+          width: 100%;
+          table-layout: fixed;
+          margin-bottom: 20px; }
+          .bx-wrapper .bx-viewport .file_slide .item .modal-footer .comment .comment_inner .user_image {
+            display: table-cell;
+            width: 45px; }
+            .bx-wrapper .bx-viewport .file_slide .item .modal-footer .comment .comment_inner .user_image img {
+              width: 30px;
+              height: 30px;
+              vertical-align: top;
+              margin-top: 5px; }
+          .bx-wrapper .bx-viewport .file_slide .item .modal-footer .comment .comment_inner .user_comment {
+            display: table-cell; }
+            .bx-wrapper .bx-viewport .file_slide .item .modal-footer .comment .comment_inner .user_comment p {
+              font-size: 13px;
+              font-size: 1.3rem; }
+              .bx-wrapper .bx-viewport .file_slide .item .modal-footer .comment .comment_inner .user_comment p.name {
+                font-weight: bold; }
+                .bx-wrapper .bx-viewport .file_slide .item .modal-footer .comment .comment_inner .user_comment p.name .time {
+                  margin-left: 10px;
+                  font-weight: normal;
+                  color: #999999; }
+      .bx-wrapper .bx-viewport .file_slide .item .modal-footer textarea {
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+        -ms-border-radius: 4px;
+        border-radius: 4px;
+        width: 100%;
+        height: 60px;
+        padding: 10px 15px;
+        margin-bottom: 20px;
+        border: 1px solid #f5f5f5;
+        resize: none;
+        outline: none; }
+      .bx-wrapper .bx-viewport .file_slide .item .modal-footer button {
+        width: 130px; }
+        .bx-wrapper .bx-viewport .file_slide .item .modal-footer button.btn-default {
+          border-color: #f5f5f5;
+          background: #f5f5f5; }
+          .bx-wrapper .bx-viewport .file_slide .item .modal-footer button.btn-default:hover {
+            opacity: 0.7; }
+        .bx-wrapper .bx-viewport .file_slide .item .modal-footer button.btn-primary {
+          border-color: #339999;
+          background: #50bcb6; }
+          .bx-wrapper .bx-viewport .file_slide .item .modal-footer button.btn-primary:hover {
+            opacity: 0.7; }
+    .bx-wrapper .bx-viewport .file_slide .item .add_member {
+      font-size: 26px;
+      font-size: 2.6rem;
+      color: #999999;
+      position: absolute;
+      right: 216px;
+      bottom: 24px; }
+    .bx-wrapper .bx-viewport .file_slide .item .add_emoji {
+      font-size: 26px;
+      font-size: 2.6rem;
+      color: #999999;
+      position: absolute;
+      right: 170px;
+      bottom: 24px; }
+
 /*Carousel*/
 .carousel {
   margin: 30px auto;
@@ -2117,24 +2274,24 @@ header {
             position: absolute;
             top: 0;
             left: 50px; }
-        .carousel .carousel-inner .item .modal-header .option, .carousel .carousel-inner .item .modal-header .download, .carousel .carousel-inner .item .modal-header .like {
+        .carousel .carousel-inner .item .modal-header .option, .carousel .carousel-inner .bx-wrapper .bx-viewport .file_slide .item .modal-header .download, .bx-wrapper .bx-viewport .file_slide .carousel .carousel-inner .item .modal-header .download, .carousel .carousel-inner .item .modal-header .download, .carousel .carousel-inner .bx-wrapper .bx-viewport .file_slide .item .modal-header .like, .bx-wrapper .bx-viewport .file_slide .carousel .carousel-inner .item .modal-header .like, .carousel .carousel-inner .item .modal-header .like {
           font-size: 13px;
           font-size: 1.3rem;
           position: absolute;
           top: 25px;
           right: 36px;
           color: #999999; }
-          .carousel .carousel-inner .item .modal-header .option i, .carousel .carousel-inner .item .modal-header .download i, .carousel .carousel-inner .item .modal-header .like i {
+          .carousel .carousel-inner .item .modal-header .option i, .carousel .carousel-inner .bx-wrapper .bx-viewport .file_slide .item .modal-header .download i, .bx-wrapper .bx-viewport .file_slide .carousel .carousel-inner .item .modal-header .download i, .carousel .carousel-inner .item .modal-header .download i, .carousel .carousel-inner .bx-wrapper .bx-viewport .file_slide .item .modal-header .like i, .bx-wrapper .bx-viewport .file_slide .carousel .carousel-inner .item .modal-header .like i, .carousel .carousel-inner .item .modal-header .like i {
             position: absolute;
             font-size: 26px;
             font-size: 2.6rem;
             top: -3px;
             left: 0; }
-          .carousel .carousel-inner .item .modal-header .option a, .carousel .carousel-inner .item .modal-header .download a, .carousel .carousel-inner .item .modal-header .like a {
+          .carousel .carousel-inner .item .modal-header .option a, .carousel .carousel-inner .bx-wrapper .bx-viewport .file_slide .item .modal-header .download a, .bx-wrapper .bx-viewport .file_slide .carousel .carousel-inner .item .modal-header .download a, .carousel .carousel-inner .item .modal-header .download a, .carousel .carousel-inner .bx-wrapper .bx-viewport .file_slide .item .modal-header .like a, .bx-wrapper .bx-viewport .file_slide .carousel .carousel-inner .item .modal-header .like a, .carousel .carousel-inner .item .modal-header .like a {
             color: #999999; }
             .carousel .carousel-inner .item .modal-header .option a:hover, .carousel .carousel-inner .item .modal-header .download a:hover, .carousel .carousel-inner .item .modal-header .like a:hover {
               color: #50bcb6; }
-        .carousel .carousel-inner .item .modal-header .download, .carousel .carousel-inner .item .modal-header .like {
+        .carousel .carousel-inner .item .modal-header .download, .carousel .carousel-inner .bx-wrapper .bx-viewport .file_slide .item .modal-header .like, .bx-wrapper .bx-viewport .file_slide .carousel .carousel-inner .item .modal-header .like, .carousel .carousel-inner .item .modal-header .like {
           padding-left: 27px;
           right: 45px; }
         .carousel .carousel-inner .item .modal-header .like {
