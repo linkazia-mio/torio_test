@@ -1173,6 +1173,8 @@ header {
     height: 55px;
     position: relative;
     background: #FFFFFF;
+    opacity: 0.9;
+    filter: alpha(opacity=90);
     /*background: #f6f6f6;
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFFFFFFF', endColorstr='#FFEEEEEE', GradientType=0);
     background: linear-gradient(to bottom,#fff,#eee);
