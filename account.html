@@ -1,0 +1,56 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>新規登録｜TORIO</title>
+    <link rel="stylesheet" href="css/torio.css">
+  </head>
+  <body>
+    <div class="wrapper">
+      <!--Header/-->
+      <header>
+        <div class="header_inner">
+          <div class="header_line">
+          </div>
+          <div class="account">
+            <p class="new"><a href=""><span>無料アカウントを作成</span></a></p>
+            <p class="login"><a href=""><span>ログイン</span></a></p>
+          </div>
+        </div>
+      </header>
+      <!--Front/-->
+      <div class="front">
+        <div class="branding">
+          <h1>30 日間の無料トライアルで今すぐはじめよう</h1>
+          <p>今なら、<a href="#">Proプラン</a>のすべての機能を無料でお試しいただけます。<br>
+無料トライアル終了後はFreeプランをご利用いただけます。</p>
+        </div>
+        <div class="card login">
+          <form action="/login" method="POST" class="auth-form login">
+            <div class="row name">
+              <span class="icon person"><i class="icon-person-outline"></i></span>
+              <input type="text" name="name" value="" required="" autofocus="" placeholder="名前（山田 太郎）" title="姓名を入力して下さい。">
+            </div>
+            <div class="row email">
+              <span class="icon email"><i class="icon-mail-outline"></i></span>
+              <input type="email" name="email" value="" required="" autofocus="" pattern="^[^\s@＠=]+[@|＠][^\.\s@＠]+(\.[^\.\s@＠]+)+$" title="有効なメールアドレスを入力してください。" placeholder="メールアドレス">
+            </div>
+            <div class="row password">
+              <span class="icon padlock"><i class="icon-lock-outline"></i></span>
+              <input type="password" name="password" required="" placeholder="パスワード">
+            </div>
+            <div class="row submit">
+              <input type="submit" class="button big blue" value="無料アカウントを作成">
+            </div>
+            <span class="link plan">
+              <a href="/plan">またはいますぐ購入</a>
+            </span>
+          </form>
+          <p class="link sign-up"><a href="#">すでにアカウントをお持ちですか？</a></p>
+          <p class="link privacy">無料アカウントを作成ボタンをクリックすると、<br>
+<a href="#">利用規約</a>および<a href="#">プライバシーポリシー</a>に同意したものとします。</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

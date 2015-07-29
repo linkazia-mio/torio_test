@@ -1,0 +1,123 @@
+/*---------------------------------------------------------------------------------------
+ Front
+---------------------------------------------------------------------------------------*/
+.front {
+  width: 100%;
+  margin: 0 auto;
+  a{
+    color: $torio_green;
+  }
+}
+
+/*---------------------------------------------------------------------------------------
+ Account
+---------------------------------------------------------------------------------------*/
+.branding{
+  margin: 40px auto 0 auto;
+  h1{
+    @include fontsize(3.8);
+    font-weight: 300;
+    color: $dark_brack;
+    text-align: center;
+  }
+  p{
+    text-align: center;
+    @include fontsize(2.0);
+    color: $white_brack;
+    margin: 5px 0 0 0 ;
+  }
+}
+
+.card{
+  max-width: 400px;
+  min-width: 300px;
+  margin: 40px auto 20px auto;
+  padding: 0 10px;
+  .auth-form{
+    /*height: 235px;*/
+    padding-bottom: 10px;
+    background-color: #fff;
+    border: 1px solid $border_gray;
+    /*-webkit-box-shadow: 0 1px 3px rgba(50,50,50,0.08);
+    box-shadow: 0 1px 3px rgba(50,50,50,0.08);*/
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    font-size: 16px;
+    .row{
+      height: 60px;
+      margin: 0;
+      border-bottom: 1px solid $border_white_gray;
+      &.submit{
+        border-bottom: none;
+        padding: 0 15px;
+      }
+      .icon{
+        width: 21px;
+        height: 25px;
+        display: inline-block;
+        margin: 0 11px 0 16px;
+        @include fontsize(3.4);
+        color: $torio_green;
+      }
+      input{
+        -webkit-box-flex: 1;
+        -moz-box-flex: 1;
+        -o-box-flex: 1;
+        box-flex: 1;
+        -webkit-flex: 1;
+        -ms-flex: 1;
+        flex: 1;
+        border: 0 none;
+        font-size: 16px;
+        padding: 20px 8px;
+        margin-right: 2px;
+        color: #666;
+        outline: none;
+        letter-spacing: normal;
+        &.button{
+          display: block;
+          width: 100%;
+          font-size: 16px;
+          padding: 11px 10px;
+          -webkit-border-radius: 3px;
+          border-radius: 3px;
+          margin: 18px auto;
+          font-weight: bold;
+          cursor: pointer;
+          -webkit-transition: 0.1s -webkit-transform ease-in-out;
+          -moz-transition: 0.1s -moz-transform ease-in-out;
+          -o-transition: 0.1s -o-transform ease-in-out;
+          -ms-transition: 0.1s -ms-transform ease-in-out;
+          transition: 0.1s transform ease-in-out;
+        }
+        &.blue{
+          border: 0 none;
+          background-color: $torio_green;
+          color: #fff;
+        }
+      }
+    }
+  }
+  .link{
+    &.forgot-password{
+      font-size: 14px;
+      display: block;
+      text-align: center;
+    }
+    &.plan{
+      font-size: 14px;
+      display: block;
+      text-align: center;
+    }
+    &.sign-up{
+      font-size: 15px;
+      padding: 15px 0 10px 0;
+      margin: 10px 0;
+      text-align: center;
+    }
+    &.privacy{
+      font-size: 13px;
+      text-align: center;
+    }
+  }
+}

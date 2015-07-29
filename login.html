@@ -1,0 +1,49 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ログイン｜TORIO</title>
+    <link rel="stylesheet" href="css/torio.css">
+  </head>
+  <body>
+    <div class="wrapper">
+      <!--Header/-->
+      <header>
+        <div class="header_inner">
+          <div class="header_line">
+          </div>
+          <div class="account">
+            <p class="new"><a href=""><span>無料アカウントを作成</span></a></p>
+            <p class="login"><a href=""><span>ログイン</span></a></p>
+          </div>
+        </div>
+      </header>
+      <!--Front/-->
+      <div class="front">
+        <div class="branding">
+          <h1>TORIOにログインする</h1>
+          <p>あなたのアカウントを入力してログインをしてください。</p>
+        </div>
+        <div class="card login">
+          <form action="/login" method="POST" class="auth-form login">
+            <div class="row email">
+              <span class="icon email"><i class="icon-mail-outline"></i></span>
+              <input type="email" name="email" value="" required="" autofocus="" pattern="^[^\s@＠=]+[@|＠][^\.\s@＠]+(\.[^\.\s@＠]+)+$" title="有効なメールアドレスを入力してください。" placeholder="メールアドレス">
+            </div>
+            <div class="row password">
+              <span class="icon padlock"><i class="icon-lock-outline"></i></span>
+              <input type="password" name="password" required="" placeholder="パスワード">
+            </div>
+            <div class="row submit">
+              <input type="submit" class="button big blue" value="ログイン">
+            </div>
+            <span class="link forgot-password">
+              <a href="/forgotpassword">パスワードをお忘れですか？</a>
+            </span>
+          </form>
+          <p class="link sign-up"><a href="#">アカウントをお持ちではありませんか？</a></p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
