@@ -2708,7 +2708,8 @@ header {
     border: 1px solid #e2e2e2;
     height: 50px;
     background: #fff;
-    color: #999999; }
+    color: #999999;
+    clear: both; }
     .task .person_charge .task_list i {
       font-size: 20px;
       font-size: 2rem; }
@@ -2735,7 +2736,8 @@ input[type="checkbox"] {
   input[type="checkbox"] + label {
     display: block;
     cursor: pointer;
-    margin: 20px;
+    float: left;
+    margin: 18px 10px 18px 15px;
     /*通常時の見た目*/
     /*hover時の見た目*/ }
     input[type="checkbox"] + label::before {

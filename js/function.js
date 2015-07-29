@@ -132,6 +132,14 @@ $(function(){
           updateOnContentResize: true
         }
      });
+     $(".detail .task").mCustomScrollbar({
+       autoHideScrollbar: true,
+       scrollInertia: 0,
+       advanced:{
+          autoScrollOnFocus: true,
+          updateOnContentResize: true
+        }
+     });
      $(".viewers_list").mCustomScrollbar({
        autoHideScrollbar: true,
        scrollInertia: 0,
