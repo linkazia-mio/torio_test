@@ -22,12 +22,32 @@
   }
   .person_charge {
     margin: 30px;
+    .task_title {
+      @include fontsize(1.3);
+      color: $brack;
+      font-weight: bold;
+      line-height: 50px;
+    }
     .task_list {
       @include border_radius();
       position: relative;
       border: 1px solid $border_gray;
       height: 50px;
       background: #fff;
+      color: $white_brack;
+      i {
+        @include fontsize(2.0);
+      }
+      .time {
+        position: absolute;
+        top: 15px;
+        right: 75px;
+      }
+      .comment {
+        position: absolute;
+        top: 15px;
+        right: 45px;
+      }
       .user_image {
         position: absolute;
         top: 15px;
@@ -37,6 +57,55 @@
           width: 20px;
         }
       }
+    }
+  }
+}
+
+/* Checkbox ------------------------------------------------*/
+input[type="checkbox"] {
+  display: none;
+  & + label {
+    display: block;
+    cursor: pointer;
+    margin: 20px;
+    /*通常時の見た目*/
+    &::before {
+      font-family: 'torio_icon';
+      width: 18px;
+      height: 18px;
+      line-height: 18px;
+      display: inline-block;
+      vertical-align: middle;
+      text-align: center;
+      content: "\e649";
+      color: transparent;
+      padding: 0;
+      border-radius: 5px;
+      border: 1px solid #dddddd;
+      background: #fff;
+      margin: -2px 5px 0 0;
+      -webkit-transition: .1s;
+      transition: .1s;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+    }
+    /*hover時の見た目*/
+    &:hover {
+      color: $torio_green;
+    &::before {
+          background-color: $white_gray;
+      }
+    }
+  }
+  /*checked時の見た目*/
+  &:checked + label {
+    color: $blue;
+  &::before {
+    @include fontsize(1.5);
+    background: $torio_green !important;
+    border-color: $blue !important;
+    color: #fff !important;
     }
   }
 }
