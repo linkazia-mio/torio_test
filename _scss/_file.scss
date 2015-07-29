@@ -204,12 +204,8 @@
   width: 840px;
   position: relative;
   .carousel-inner {
-    @include border_radius();
-    background: #fff;
-    -webkit-box-shadow: 0 0 17px rgba(0,0,0,.3);
-    box-shadow: 0 0 17px rgba(0,0,0,.3);
-    margin: 30px auto;
     width: 700px;
+    margin: 0 auto;
     .image {
       background: $white_gray;
       text-align: center;
@@ -219,6 +215,10 @@
       }
     }
     .item {
+      @include border_radius();
+      background: #fff;
+      -webkit-box-shadow: 0 0 17px rgba(0,0,0,.3);
+      box-shadow: 0 0 17px rgba(0,0,0,.3);
       .modal-header {
         position: relative;
         .user_image {

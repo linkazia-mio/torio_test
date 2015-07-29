@@ -2064,70 +2064,71 @@ header {
   position: relative;
   /*Carousel Control*/ }
   .carousel .carousel-inner {
-    -webkit-border-radius: 4px;
-    -moz-border-radius: 4px;
-    -ms-border-radius: 4px;
-    border-radius: 4px;
-    background: #fff;
-    -webkit-box-shadow: 0 0 17px rgba(0, 0, 0, 0.3);
-    box-shadow: 0 0 17px rgba(0, 0, 0, 0.3);
-    margin: 30px auto;
-    width: 700px; }
+    width: 700px;
+    margin: 0 auto; }
     .carousel .carousel-inner .image {
       background: #f5f5f5;
       text-align: center; }
       .carousel .carousel-inner .image img {
         width: 80%;
         height: auto; }
-    .carousel .carousel-inner .item .modal-header {
-      position: relative; }
-      .carousel .carousel-inner .item .modal-header .user_image {
-        float: left;
-        margin-right: 15px; }
-        .carousel .carousel-inner .item .modal-header .user_image img {
-          height: 40px;
-          width: 40px; }
-      .carousel .carousel-inner .item .modal-header .modal-title {
-        font-size: 14px;
-        font-size: 1.4rem;
-        font-weight: bold; }
-      .carousel .carousel-inner .item .modal-header .link {
-        position: relative;
-        padding-left: 75px; }
-        .carousel .carousel-inner .item .modal-header .link a {
-          color: #999999; }
-          .carousel .carousel-inner .item .modal-header .link a:hover {
-            color: #50bcb6; }
-        .carousel .carousel-inner .item .modal-header .link i {
-          font-size: 26px;
-          font-size: 2.6rem;
+    .carousel .carousel-inner .item {
+      -webkit-border-radius: 4px;
+      -moz-border-radius: 4px;
+      -ms-border-radius: 4px;
+      border-radius: 4px;
+      background: #fff;
+      -webkit-box-shadow: 0 0 17px rgba(0, 0, 0, 0.3);
+      box-shadow: 0 0 17px rgba(0, 0, 0, 0.3); }
+      .carousel .carousel-inner .item .modal-header {
+        position: relative; }
+        .carousel .carousel-inner .item .modal-header .user_image {
+          float: left;
+          margin-right: 15px; }
+          .carousel .carousel-inner .item .modal-header .user_image img {
+            height: 40px;
+            width: 40px; }
+        .carousel .carousel-inner .item .modal-header .modal-title {
+          font-size: 14px;
+          font-size: 1.4rem;
+          font-weight: bold; }
+        .carousel .carousel-inner .item .modal-header .link {
+          position: relative;
+          padding-left: 75px; }
+          .carousel .carousel-inner .item .modal-header .link a {
+            color: #999999; }
+            .carousel .carousel-inner .item .modal-header .link a:hover {
+              color: #50bcb6; }
+          .carousel .carousel-inner .item .modal-header .link i {
+            font-size: 26px;
+            font-size: 2.6rem;
+            position: absolute;
+            top: 0;
+            left: 50px; }
+        .carousel .carousel-inner .item .modal-header .option, .carousel .carousel-inner .item .modal-header .download, .carousel .carousel-inner .item .modal-header .like {
+          font-size: 13px;
+          font-size: 1.3rem;
           position: absolute;
-          top: 0;
-          left: 50px; }
-      .carousel .carousel-inner .item .modal-header .option, .carousel .carousel-inner .item .modal-header .download, .carousel .carousel-inner .item .modal-header .like {
-        font-size: 13px;
-        font-size: 1.3rem;
-        position: absolute;
-        top: 25px;
-        right: 36px;
-        color: #999999; }
-        .carousel .carousel-inner .item .modal-header .option i, .carousel .carousel-inner .item .modal-header .download i, .carousel .carousel-inner .item .modal-header .like i {
-          position: absolute;
-          font-size: 26px;
-          font-size: 2.6rem;
-          top: -3px;
-          left: 0; }
-        .carousel .carousel-inner .item .modal-header .option a, .carousel .carousel-inner .item .modal-header .download a, .carousel .carousel-inner .item .modal-header .like a {
+          top: 25px;
+          right: 36px;
           color: #999999; }
-          .carousel .carousel-inner .item .modal-header .option a:hover, .carousel .carousel-inner .item .modal-header .download a:hover, .carousel .carousel-inner .item .modal-header .like a:hover {
-            color: #50bcb6; }
-      .carousel .carousel-inner .item .modal-header .download, .carousel .carousel-inner .item .modal-header .like {
-        padding-left: 27px;
-        right: 45px; }
-      .carousel .carousel-inner .item .modal-header .like {
-        right: 160px; }
-        .carousel .carousel-inner .item .modal-header .like i {
-          color: #db4c3f; }
+          .carousel .carousel-inner .item .modal-header .option i, .carousel .carousel-inner .item .modal-header .download i, .carousel .carousel-inner .item .modal-header .like i {
+            position: absolute;
+            font-size: 26px;
+            font-size: 2.6rem;
+            top: -3px;
+            left: 0; }
+          .carousel .carousel-inner .item .modal-header .option a, .carousel .carousel-inner .item .modal-header .download a, .carousel .carousel-inner .item .modal-header .like a {
+            color: #999999; }
+            .carousel .carousel-inner .item .modal-header .option a:hover, .carousel .carousel-inner .item .modal-header .download a:hover, .carousel .carousel-inner .item .modal-header .like a:hover {
+              color: #50bcb6; }
+        .carousel .carousel-inner .item .modal-header .download, .carousel .carousel-inner .item .modal-header .like {
+          padding-left: 27px;
+          right: 45px; }
+        .carousel .carousel-inner .item .modal-header .like {
+          right: 160px; }
+          .carousel .carousel-inner .item .modal-header .like i {
+            color: #db4c3f; }
     .carousel .carousel-inner .modal-footer {
       border-top: 1px solid #f5f5f5;
       padding: 20px;
