@@ -2212,33 +2212,32 @@ header {
 #add_file .modal-body {
   display: table;
   table-layout: fixed;
-  width: 100%; }
+  width: 100%;
+  padding: 30px 0; }
   #add_file .modal-body .local_up, #add_file .modal-body .web_up {
-    font-size: 14px;
-    font-size: 1.4rem;
+    font-size: 15px;
+    font-size: 1.5rem;
     width: 50%;
     height: 200px;
-    padding-top: 50px;
+    padding-top: 70px;
     display: table-cell;
     text-align: center;
-    border-right: 1px solid #f5f5f5; }
+    border-right: 1px solid #e2e2e2; }
     #add_file .modal-body .local_up a, #add_file .modal-body .web_up a {
       color: #8a959e;
       display: block; }
     #add_file .modal-body .local_up i, #add_file .modal-body .web_up i {
-      font-size: 50px;
-      font-size: 5rem;
+      font-size: 40px;
+      font-size: 4rem;
       -webkit-border-radius: 100px;
       -moz-border-radius: 100px;
       -ms-border-radius: 100px;
       border-radius: 100px;
-      height: 70px;
-      width: 70px;
       color: #8a959e;
-      border: 2px solid #8a959e;
-      padding: 8px; }
+      border: 1px solid #8a959e;
+      padding: 15px; }
     #add_file .modal-body .local_up .title, #add_file .modal-body .web_up .title {
-      margin-top: 20px;
+      margin-top: 25px;
       font-weight: bold; }
     #add_file .modal-body .local_up .note, #add_file .modal-body .web_up .note {
       font-size: 12px;
@@ -2718,7 +2717,7 @@ header {
     border: 1px solid #e2e2e2;
     height: 50px;
     background: #fff;
-    color: #999999;
+    color: #8a959e;
     clear: both; }
     .task .person_charge .task_list i {
       font-size: 20px;
@@ -2773,7 +2772,7 @@ input[type="checkbox"] {
       -moz-box-sizing: border-box;
       box-sizing: border-box; }
     input[type="checkbox"] + label:hover {
-      color: #00a4bb; }
+      color: #3A87BC; }
       input[type="checkbox"] + label:hover::before {
         background-color: #f5f5f5; }
   input[type="checkbox"]:checked + label {
@@ -2781,6 +2780,6 @@ input[type="checkbox"] {
     input[type="checkbox"]:checked + label::before {
       font-size: 15px;
       font-size: 1.5rem;
-      background: #00a4bb !important;
+      background: #3A87BC !important;
       border-color: #3595e1 !important;
       color: #fff !important; }
