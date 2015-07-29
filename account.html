@@ -1,0 +1,82 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>新規登録｜TORIO</title>
+    <link rel="stylesheet" href="css/torio.css">
+  </head>
+  <body>
+    <div class="wrapper">
+      <!--Header/-->
+      <header>
+        <div class="header_inner">
+          <div class="header_line">
+          </div>
+          <!--<p class="global_menu_btn"><i class="icon-automation-arrow"></i></p>-->
+          <!--<div class="search">
+            <form method="post">
+              <input type="search"><input type="submit" value="送信する"><i class="icon-search"></i>
+            </form>
+          </div>-->
+          <!--<div class="alart">
+            <div class="task">
+              <p class="icon"><i class="icon-inbox-task"></i></p>
+            </div>
+            <div class="activity">
+              <p class="icon"><i class="icon-notifications-outline"></i></p>
+            </div>
+            <div class="me">
+              <a href="">
+                <p class="image"><span class="noimage">KO</span></p>
+                <p class="name">小松 健太</p>
+              </a>
+            </div>
+          </div>-->
+          <div class="account">
+            <p class="new"><a href=""><span>無料アカウントを作成</span></a></p>
+            <p class="login"><a href=""><span>ログイン</span></a></p>
+          </div>
+        </div>
+        <!--Activity_box/-->
+        <div class="activity_box popover">
+          <h3 class="icon">アクティビティ</h3>
+          すべて
+          あなた
+          <ul>
+            <li>小松健太さんが、家選びネットにノート：議事録を投稿しました。</li>
+            <li>小松健太さんが、家選びネットにノート：議事録を投稿しました。</li>
+            <li>小松健太さんが、家選びネットにノート：議事録を投稿しました。</li>
+            <li>小松健太さんが、家選びネットにノート：議事録を投稿しました。</li>
+          </ul>
+        </div>
+        <!--/Activity_box-->
+      </header>
+      <!--Main/-->
+      <div class="front">
+        <div class="branding">
+          <h1>TORIOにログインする</h1>
+          <p>あなたのアカウントを入力してログインをしてください。</p>
+        </div>
+        <div class="card login">
+          <form action="/login" method="POST" class="auth-form login">
+            <div class="row email">
+              <span class="icon email"><svg width="21px" height="18px" viewBox="0 0 21 18" version="1.1" xmlns="http://www.w3.org/2000/svg"></svg></span>
+              <input type="email" name="email" value="" required="" autofocus="" pattern="^[^\s@＠=]+[@|＠][^\.\s@＠]+(\.[^\.\s@＠]+)+$" title="有効なメールアドレスを入力してください。" placeholder="メール">
+            </div>
+            <div class="row password">
+              <span class="icon padlock"><svg width="21px" height="25px" viewBox="0 0 21 25" version="1.1" xmlns="http://www.w3.org/2000/svg"></svg></span>
+              <input type="password" name="password" required="" placeholder="パスワード">
+            </div>
+            <div class="row submit">
+              <input type="submit" class="button big blue" value="サインイン">
+            </div>
+            <span class="link forgot-password">
+              <a href="/forgotpassword">パスワードをお忘れですか？</a>
+            </span>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+
+</html>

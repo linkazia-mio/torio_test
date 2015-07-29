@@ -1,0 +1,97 @@
+/*---------------------------------------------------------------------------------------
+ Front
+---------------------------------------------------------------------------------------*/
+.front {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.branding{
+  margin: 18px auto 0 auto;
+  h1{
+    @include fontsize(4.2);
+    font-weight: 300;
+    color: $dark_brack;
+    text-align: center;
+  }
+  p{
+    color: $torio_green;
+  }
+}
+
+.card{
+  max-width: 370px;
+  min-width: 300px;
+  margin: 40px auto 20px auto;
+  padding: 0 10px;
+  .auth-form{
+    height: 230px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    -webkit-box-shadow: 0 1px 3px rgba(50,50,50,0.08);
+    box-shadow: 0 1px 3px rgba(50,50,50,0.08);
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    font-size: 16px;
+    .row{
+      height: 60px;
+      margin: 0;
+      border-bottom: 1px solid #eee;
+      &.submit{
+        border-bottom: none;
+        padding: 0 15px;
+      }
+      .icon{
+        width: 21px;
+        height: 18px;
+        margin-top: 20px;
+        display: inline-block;
+        margin: 0 11px 0 16px;
+      }
+      input{
+        -webkit-box-flex: 1;
+        -moz-box-flex: 1;
+        -o-box-flex: 1;
+        box-flex: 1;
+        -webkit-flex: 1;
+        -ms-flex: 1;
+        flex: 1;
+        border: 0 none;
+        font-size: 16px;
+        padding: 20px 8px;
+        margin-right: 2px;
+        color: #666;
+        outline: none;
+        letter-spacing: normal;
+        &.button{
+          display: block;
+          width: 100%;
+          font-size: 16px;
+          padding: 11px 10px;
+          -webkit-border-radius: 3px;
+          border-radius: 3px;
+          margin: 18px auto;
+          font-weight: bold;
+          cursor: pointer;
+          -webkit-transition: 0.1s -webkit-transform ease-in-out;
+          -moz-transition: 0.1s -moz-transform ease-in-out;
+          -o-transition: 0.1s -o-transform ease-in-out;
+          -ms-transition: 0.1s -ms-transform ease-in-out;
+          transition: 0.1s transform ease-in-out;
+        }
+        &.blue{
+          border: 0 none;
+          background-color: #2b88d9;
+          color: #fff;
+        }
+      }
+    }
+    .link{
+      &.forgot-password{
+        font-size: 14px;
+        display: block;
+        text-align: center;
+      }
+    }
+  }
+}
