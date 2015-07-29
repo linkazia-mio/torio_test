@@ -1,0 +1,23 @@
+.task{
+  .task_create {
+    @include border_radius(2px);
+    position: relative;
+    border: 1px solid $green;
+    margin: 30px;
+    vertical-align: top;
+    line-height: 26px;
+    padding: 10px 15px;
+    background: #fff;
+    color: $white_brack;
+    i {
+      @include fontsize(2.6);
+      position: absolute;
+      left: 12px;
+      top: 10px;
+    }
+    input {
+      width: 90%;
+      padding-left: 30px;
+    }
+  }
+}

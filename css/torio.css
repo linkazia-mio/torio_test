@@ -2656,3 +2656,26 @@ header {
   .card .link.privacy {
     font-size: 13px;
     text-align: center; }
+
+.task .task_create {
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  border-radius: 2px;
+  position: relative;
+  border: 1px solid #006f8e;
+  margin: 30px;
+  vertical-align: top;
+  line-height: 26px;
+  padding: 10px 15px;
+  background: #fff;
+  color: #999999; }
+  .task .task_create i {
+    font-size: 26px;
+    font-size: 2.6rem;
+    position: absolute;
+    left: 12px;
+    top: 10px; }
+  .task .task_create input {
+    width: 90%;
+    padding-left: 30px; }
