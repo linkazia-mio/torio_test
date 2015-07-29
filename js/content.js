@@ -3,7 +3,7 @@ $(window).on('load resize', function(){
     jQuery('.file_slide').bxSlider({
       mode: 'fade',
       adaptiveHeight: 'true'
-      
+
     });
     $(".bookmark").click(
       function(){
@@ -11,4 +11,8 @@ $(window).on('load resize', function(){
       }
     );
   });
+});
+$(".persons").nestable({
+    listNodeName    : 'person_charge',
+    itemIdAttribute : 'data-id'
 });
