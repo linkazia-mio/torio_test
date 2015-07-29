@@ -4,49 +4,60 @@
 .front {
   width: 100%;
   margin: 0 auto;
+  a{
+    color: $torio_green;
+  }
 }
 
+/*---------------------------------------------------------------------------------------
+ Account
+---------------------------------------------------------------------------------------*/
 .branding{
-  margin: 18px auto 0 auto;
+  margin: 40px auto 0 auto;
   h1{
-    @include fontsize(4.2);
+    @include fontsize(3.8);
     font-weight: 300;
     color: $dark_brack;
     text-align: center;
   }
   p{
-    color: $torio_green;
+    text-align: center;
+    @include fontsize(2.0);
+    color: $white_brack;
+    margin: 5px 0 0 0 ;
   }
 }
 
 .card{
-  max-width: 370px;
+  max-width: 400px;
   min-width: 300px;
   margin: 40px auto 20px auto;
   padding: 0 10px;
   .auth-form{
-    height: 230px;
+    /*height: 235px;*/
+    padding-bottom: 10px;
     background-color: #fff;
-    border: 1px solid #ddd;
-    -webkit-box-shadow: 0 1px 3px rgba(50,50,50,0.08);
-    box-shadow: 0 1px 3px rgba(50,50,50,0.08);
+    border: 1px solid $border_gray;
+    /*-webkit-box-shadow: 0 1px 3px rgba(50,50,50,0.08);
+    box-shadow: 0 1px 3px rgba(50,50,50,0.08);*/
     -webkit-border-radius: 4px;
     border-radius: 4px;
     font-size: 16px;
     .row{
       height: 60px;
       margin: 0;
-      border-bottom: 1px solid #eee;
+      border-bottom: 1px solid $border_white_gray;
       &.submit{
         border-bottom: none;
         padding: 0 15px;
       }
       .icon{
         width: 21px;
-        height: 18px;
-        margin-top: 20px;
+        height: 25px;
         display: inline-block;
         margin: 0 11px 0 16px;
+        @include fontsize(3.4);
+        color: $torio_green;
       }
       input{
         -webkit-box-flex: 1;
@@ -81,17 +92,32 @@
         }
         &.blue{
           border: 0 none;
-          background-color: #2b88d9;
+          background-color: $torio_green;
           color: #fff;
         }
       }
     }
-    .link{
-      &.forgot-password{
-        font-size: 14px;
-        display: block;
-        text-align: center;
-      }
+  }
+  .link{
+    &.forgot-password{
+      font-size: 14px;
+      display: block;
+      text-align: center;
+    }
+    &.plan{
+      font-size: 14px;
+      display: block;
+      text-align: center;
+    }
+    &.sign-up{
+      font-size: 15px;
+      padding: 15px 0 10px 0;
+      margin: 10px 0;
+      text-align: center;
+    }
+    &.privacy{
+      font-size: 13px;
+      text-align: center;
     }
   }
 }

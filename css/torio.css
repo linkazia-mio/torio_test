@@ -1097,9 +1097,9 @@ p {
 button:focus {
   outline: none; }
 
-.clearfix, .alart .me {
+.clearfix, .alart .me, .account {
   *zoom: 1; }
-  .clearfix:after, .alart .me:after {
+  .clearfix:after, .alart .me:after, .account:after {
     content: ".";
     display: block;
     clear: both;
@@ -2308,45 +2308,57 @@ header {
 .front {
   width: 100%;
   margin: 0 auto; }
+  .front a {
+    color: #00a4bb; }
 
+/*---------------------------------------------------------------------------------------
+ Account
+---------------------------------------------------------------------------------------*/
 .branding {
-  margin: 18px auto 0 auto; }
+  margin: 40px auto 0 auto; }
   .branding h1 {
-    font-size: 42px;
-    font-size: 4.2rem;
+    font-size: 38px;
+    font-size: 3.8rem;
     font-weight: 300;
     color: #333333;
     text-align: center; }
   .branding p {
-    color: #00a4bb; }
+    text-align: center;
+    font-size: 20px;
+    font-size: 2rem;
+    color: #999999;
+    margin: 5px 0 0 0; }
 
 .card {
-  max-width: 370px;
+  max-width: 400px;
   min-width: 300px;
   margin: 40px auto 20px auto;
   padding: 0 10px; }
   .card .auth-form {
-    height: 230px;
+    /*height: 235px;*/
+    padding-bottom: 10px;
     background-color: #fff;
-    border: 1px solid #ddd;
-    -webkit-box-shadow: 0 1px 3px rgba(50, 50, 50, 0.08);
-    box-shadow: 0 1px 3px rgba(50, 50, 50, 0.08);
+    border: 1px solid #e2e2e2;
+    /*-webkit-box-shadow: 0 1px 3px rgba(50,50,50,0.08);
+    box-shadow: 0 1px 3px rgba(50,50,50,0.08);*/
     -webkit-border-radius: 4px;
     border-radius: 4px;
     font-size: 16px; }
     .card .auth-form .row {
       height: 60px;
       margin: 0;
-      border-bottom: 1px solid #eee; }
+      border-bottom: 1px solid #f5f5f5; }
       .card .auth-form .row.submit {
         border-bottom: none;
         padding: 0 15px; }
       .card .auth-form .row .icon {
         width: 21px;
-        height: 18px;
-        margin-top: 20px;
+        height: 25px;
         display: inline-block;
-        margin: 0 11px 0 16px; }
+        margin: 0 11px 0 16px;
+        font-size: 34px;
+        font-size: 3.4rem;
+        color: #00a4bb; }
       .card .auth-form .row input {
         -webkit-box-flex: 1;
         -moz-box-flex: 1;
@@ -2379,9 +2391,21 @@ header {
           transition: 0.1s transform ease-in-out; }
         .card .auth-form .row input.blue {
           border: 0 none;
-          background-color: #2b88d9;
+          background-color: #00a4bb;
           color: #fff; }
-    .card .auth-form .link.forgot-password {
-      font-size: 14px;
-      display: block;
-      text-align: center; }
+  .card .link.forgot-password {
+    font-size: 14px;
+    display: block;
+    text-align: center; }
+  .card .link.plan {
+    font-size: 14px;
+    display: block;
+    text-align: center; }
+  .card .link.sign-up {
+    font-size: 15px;
+    padding: 15px 0 10px 0;
+    margin: 10px 0;
+    text-align: center; }
+  .card .link.privacy {
+    font-size: 13px;
+    text-align: center; }
