@@ -20,17 +20,21 @@
     <link rel="stylesheet" href="css/torio.css">
   </head>
   <body>
-    <div class="info message">
-      <h3>FYI, something just happened!</h3>
+    <div class="info message_bar">
+       <h3>メールアドレス認証を完了させてください。<a href="">メール再送信</a></h3>
+       <p><i class="icon-clear"></i></p>
     </div>
-    <div class="error message">
-      <h3>メールアドレス、またはパスワードが間違っています。</h3>
+    <div class="error message_bar">
+       <h3>メールアドレス、またはパスワードが間違っています。</h3>
+       <p><i class="icon-clear"></i></p>
     </div>
-    <div class="warning message">
-      <h3>Wait, I must warn you!</h3>
+    <div class="warning message_bar">
+       <h3>システムエラーが発生しております。</h3>
+       <p><i class="icon-clear"></i></p>
     </div>
-    <div class="success message">
-     <h3>Congrats, you did it!</h3>
+    <div class="success message_bar">
+      <h3>ようこそ！TORIOをお楽しみください。</h3>
+      <p><i class="icon-clear"></i></p>
     </div>
     <div class="wrapper">
       <!--Header/-->
@@ -46,12 +50,12 @@
       </header>
       <!--Front/-->
       <div class="front">
-       <ul id="trigger-list">
-		 <li><a href="#" class="trigger info-trigger">Info</a></li>
-		 <li><a href="#" class="trigger error-trigger">Error</a></li>
-		 <li><a href="#" class="trigger warning-trigger">Warning</a></li>
-		 <li><a href="#" class="trigger success-trigger">Success</a></li>
-</ul>
+        <ul id="trigger-list">
+        	 <li><a href="#" class="trigger info-trigger">Info</a></li>
+       		 <li><a href="#" class="trigger error-trigger">Error</a></li>
+       		 <li><a href="#" class="trigger warning-trigger">Warning</a></li>
+       		 <li><a href="#" class="trigger success-trigger">Success</a></li>
+        </ul>
         <div class="branding">
           <h1>TORIOにログインする</h1>
           <p>あなたのアカウントを入力してログインをしてください。</p>
@@ -110,7 +114,7 @@
       		 }
       		 
       		 // When message is clicked, hide it
-      		 $('.message').click(function(){			  
+      		 $('.message_bar').click(function(){			  
       				  $(this).animate({top: -$(this).outerHeight()}, 500);
       		  });		 
       		 
