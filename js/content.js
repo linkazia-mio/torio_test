@@ -11,7 +11,8 @@ $(window).on('load resize', function(){
       }
     );
   });
-  $(function(){
-  	$('.person_charge').sortable();
+  $(".persons").nestable({
+      listNodeName    : 'person_charge',
+      itemIdAttribute : 'data-id'
   });
 });
