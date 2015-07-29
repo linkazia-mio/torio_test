@@ -2177,6 +2177,10 @@ header {
   .bx-wrapper .bx-viewport .file_slide .item {
     width: 100% !important; }
     .bx-wrapper .bx-viewport .file_slide .item .modal-header {
+      -webkit-border-radius: 4px;
+      -moz-border-radius: 4px;
+      -ms-border-radius: 4px;
+      border-radius: 4px;
       position: relative; }
       .bx-wrapper .bx-viewport .file_slide .item .modal-header .user_image {
         float: left;

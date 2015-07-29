@@ -250,6 +250,7 @@
       .item {
         width: 100% !important;
         .modal-header {
+          @include border_radius();
           position: relative;
           .user_image {
             float: left;
