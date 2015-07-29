@@ -75,15 +75,25 @@
         </div>
       </div>
     </div>
-    <!-- メッセージのトリガーはこのクラスです -->
+    <!-- メッセージのトリガーはこのクラスです// -->
     <ul id="trigger-list">
     	 <li><a href="#" class="trigger info-trigger">Info</a></li>
    		 <li><a href="#" class="trigger error-trigger">Error</a></li>
    		 <li><a href="#" class="trigger warning-trigger">Warning</a></li>
    		 <li><a href="#" class="trigger success-trigger">Success</a></li>
     </ul>
-    <!-- メッセージのトリガーはこのクラスです -->
-    <script>
+    <!-- //メッセージのトリガーはこのクラスです -->
+    <script type="text/javascript">
+      $(function() {
+          $(window).on('load scroll', function(){
+              if ($(window).scrollTop() > 55) {
+                  $('header').addClass('fixed');
+              } else {
+                  $('header').removeClass('fixed');
+              }
+          });
+      }); 
+
       // message_bar
       var myMessages = ['info','warning','error','success']; // define the messages types		 
       function hideAllMessages()

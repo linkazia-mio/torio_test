@@ -148,6 +148,12 @@ header {
     left: 76%;
     top: 60px;
   }
+  &.fixed{
+    position: fixed !important;
+    left: 0;
+    top: 0;
+    z-index: 9000 !important;
+  }
 }
 
 /*Torio Line*/

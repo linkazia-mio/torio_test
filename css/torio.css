@@ -1194,6 +1194,11 @@ header {
     width: 400px;
     left: 76%;
     top: 60px; }
+  header.fixed {
+    position: fixed !important;
+    left: 0;
+    top: 0;
+    z-index: 9000 !important; }
 
 /*Torio Line*/
 /*.header_line {
