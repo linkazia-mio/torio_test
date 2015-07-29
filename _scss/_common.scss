@@ -112,7 +112,7 @@ button {
 .modal-backdrop {
   background: #fff;
   &.in {
-    @include opacity(0.8);
+    @include opacity(0.95);
   }
 }
 /*Header*/
@@ -1072,15 +1072,16 @@ header {
   .modal-dialog {
     .modal-content {
       @include border_radius();
-      -webkit-box-shadow: 0 0 17px rgba(0,0,0,.3);
-      box-shadow: 0 0 17px rgba(0,0,0,.3);
+      /*-webkit-box-shadow: 0 0 17px rgba(0,0,0,.3);
+      box-shadow: 0 0 17px rgba(0,0,0,.3);*/
+      box-shadow: 0px 0px 17px 0px rgba(0,0,0,0.11);
       border: none;
       .modal-header {
-        border-bottom: 1px solid $border_white_gray;
+        border-bottom: none;
         background: #fff;
+        padding: 30px;
         .modal-title {
-          @include fontsize(1.4);
-          font-weight: bold;
+          @include fontsize(1.8);
         }
         .close {
           margin-top: -8px;
@@ -1090,30 +1091,38 @@ header {
         background: $white_gray;
       }
       .modal-footer {
-        border-top: 1px solid $border_white_gray;
-        padding: 20px;
+        border-top: none;
+        padding: 30px;
         textarea {
-          @include border_radius();
+          @include border_radius(4);
           width: 100%;
-          height: 60px;
-          padding: 10px 15px;
-          margin-bottom: 20px;
-          border: 1px solid $border_white_gray;
+          height: 70px;
+          margin-bottom: 30px;
+          border: 1px solid $border_gray;
           resize: none;
           outline: none;
+          padding: 13px 22px;
         }
         button {
-          width: 130px;
+          width: 150px;
+          height: 40px;
+          line-height: 43px;
+          @include fontsize(1.3);
           &.btn-default {
-            border-color: $border_white_gray;
             background: $white_gray;
+            border: none;
+            margin-right: 10px;
+            padding: 0;
+            font-weight: 700;
             &:hover {
               opacity: 0.7;
             }
           }
           &.btn-primary {
-            border-color: $dark_green;
-            background: $icon_green;
+            background: #23bf64;
+            border: none;
+            padding: 0;
+            font-weight: 700;
             &:hover {
               opacity: 0.7;
             }

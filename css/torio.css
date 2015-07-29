@@ -1114,7 +1114,7 @@ button:focus {
   -moz-border-radius: 100px;
   -ms-border-radius: 100px;
   border-radius: 100px;
-  background: #00a4bb;
+  background: #3A87BC;
   text-align: center;
   color: #FFF;
   font-family: 'Helvetica neue',Helvetica,Arial,sans-serif;
@@ -1154,15 +1154,15 @@ button:focus {
         display: block;
         height: 40px; }
         .popover ul li a:hover {
-          background: #00a4bb;
+          background: #3A87BC;
           color: white;
           cursor: pointer; }
 
 .modal-backdrop {
   background: #fff; }
   .modal-backdrop.in {
-    opacity: 0.8;
-    filter: alpha(opacity=80); }
+    opacity: 0.95;
+    filter: alpha(opacity=95); }
 
 /*Header*/
 header {
@@ -1188,7 +1188,7 @@ header {
     position: absolute;
     top: 16px;
     left: 15px;
-    color: #999999; }
+    color: #8a959e; }
     header .global_menu_btn:hover {
       color: #50bcb6;
       cursor: pointer; }
@@ -1240,7 +1240,7 @@ header {
   .search .icon-search {
     font-size: 26px;
     font-size: 2.6rem;
-    color: #999999;
+    color: #8a959e;
     position: absolute;
     right: 3px;
     top: 3px; }
@@ -1285,7 +1285,7 @@ header {
       width: 15px;
       font-size: 26px;
       font-size: 2.6rem;
-      color: #999999; }
+      color: #8a959e; }
   .alart .activity {
     display: inline-block;
     margin-left: 14%; }
@@ -1294,7 +1294,7 @@ header {
       width: 15px;
       font-size: 26px;
       font-size: 2.6rem;
-      color: #999999; }
+      color: #8a959e; }
   .alart .me {
     position: absolute;
     top: -3px;
@@ -1419,11 +1419,11 @@ header {
     .message_bar.warning h3 a:hover {
       color: #feb22e; }
   .message_bar.success {
-    background-color: #00a4bb;
+    background-color: #3A87BC;
     opacity: 0.9;
     filter: alpha(opacity=90); }
     .message_bar.success h3 a:hover {
-      color: #00a4bb; }
+      color: #3A87BC; }
   .message_bar h3 {
     margin: 0;
     padding: 0;
@@ -1525,7 +1525,7 @@ header {
           .global_menu .global_menu_inner ul li a span {
             margin: 9px 8px 9px 12px; }
           .global_menu .global_menu_inner ul li a.unread {
-            color: #006f8e;
+            color: #2e6b95;
             font-weight: bold; }
             .global_menu .global_menu_inner ul li a.unread:before {
               -webkit-border-radius: 3px;
@@ -1540,9 +1540,9 @@ header {
               content: "";
               width: 5px;
               height: 5px;
-              background: #00a4bb; }
+              background: #3A87BC; }
           .global_menu .global_menu_inner ul li a.selected {
-            background: #00a4bb;
+            background: #3A87BC;
             color: #fff;
             font-weight: bold; }
             .global_menu .global_menu_inner ul li a.selected .global_list_noimage {
@@ -1551,7 +1551,7 @@ header {
           /*@include border_radius(2px);*/
           display: block;
           float: left;
-          background: #00a4bb;
+          background: #3A87BC;
           width: 30px;
           height: 30px;
           margin-left: 30px; }
@@ -1570,7 +1570,7 @@ header {
         top: -5px;
         font-size: 22px;
         font-size: 2.2rem;
-        color: #999999; }
+        color: #8a959e; }
         .global_menu .global_menu_inner .groups .add button:hover, .global_menu .global_menu_inner .member .add button:hover {
           cursor: pointer; }
         .global_menu .global_menu_inner .groups .add .md-trigger, .global_menu .global_menu_inner .member .add .md-trigger {
@@ -1637,18 +1637,18 @@ header {
         font-weight: normal;
         padding-left: 10px;
         font-family: 'Helvetica neue',Helvetica,Arial,sans-serif;
-        color: #999999; }
+        color: #8a959e; }
     .page_menu .config .check {
       font-size: 22px;
       font-size: 2.2rem;
-      color: #999999;
+      color: #8a959e;
       position: absolute;
       left: 83px;
       top: 16px; }
     .page_menu .config .favorite {
       font-size: 23px;
       font-size: 2.3rem;
-      color: #999999;
+      color: #8a959e;
       position: absolute;
       right: 93px;
       top: 15px;
@@ -1656,7 +1656,7 @@ header {
       .page_menu .config .favorite:hover {
         color: #feb22e; }
     .page_menu .config .viewers {
-      color: #999999;
+      color: #8a959e;
       position: absolute;
       right: 49px;
       top: 0; }
@@ -1666,13 +1666,13 @@ header {
       .page_menu .config .viewers .number {
         vertical-align: super;
         font-family: 'Helvetica neue',Helvetica,Arial,sans-serif;
-        color: #999999; }
+        color: #8a959e; }
       .page_menu .config .viewers:hover {
         color: #50bcb6; }
     .page_menu .config .option, .page_menu .config .bx-wrapper .bx-viewport .file_slide .item .modal-header .download, .bx-wrapper .bx-viewport .file_slide .item .modal-header .page_menu .config .download, .page_menu .config .bx-wrapper .bx-viewport .file_slide .item .modal-header .like, .bx-wrapper .bx-viewport .file_slide .item .modal-header .page_menu .config .like, .page_menu .config .carousel .carousel-inner .item .modal-header .download, .carousel .carousel-inner .item .modal-header .page_menu .config .download, .page_menu .config .carousel .carousel-inner .item .modal-header .like, .carousel .carousel-inner .item .modal-header .page_menu .config .like {
       font-size: 28px;
       font-size: 2.8rem;
-      color: #999999;
+      color: #8a959e;
       position: absolute;
       right: 7px;
       top: 13px; }
@@ -1746,7 +1746,7 @@ header {
         white-space: nowrap;
         text-overflow: ellipsis; }
       .page_menu .page_menu_inner .item a.unread .title {
-        color: #006f8e; }
+        color: #2e6b95; }
         .page_menu .page_menu_inner .item a.unread .title:before {
           -webkit-border-radius: 3px;
           -moz-border-radius: 3px;
@@ -1760,7 +1760,7 @@ header {
           content: "";
           width: 5px;
           height: 5px;
-          background: #00a4bb; }
+          background: #3A87BC; }
       .page_menu .page_menu_inner .item.file ul {
         margin: 0;
         padding: 0; }
@@ -1831,7 +1831,7 @@ header {
         height: 50px;
         font-family: 'Helvetica neue',Helvetica,Arial,sans-serif; }
         .page_menu .page_menu_inner .item.task .graph.green .number p {
-          color: #006f8e; }
+          color: #2e6b95; }
         .page_menu .page_menu_inner .item.task .graph.yellow .number p {
           color: #feb22e; }
         .page_menu .page_menu_inner .item.task .graph.red .number p {
@@ -1850,7 +1850,7 @@ header {
   .page_menu .page_menu_footer {
     font-size: 40px;
     font-size: 4rem;
-    color: #00a4bb;
+    color: #3A87BC;
     display: block;
     z-index: 1000;
     position: absolute;
@@ -1894,7 +1894,7 @@ header {
               top: 6px;
               left: 15px; }
             .page_menu .page_menu_footer .add_page ul li a:hover {
-              background: #00a4bb;
+              background: #3A87BC;
               color: white; }
 
 /*detail*/
@@ -1921,7 +1921,7 @@ header {
       font-size: 2.6rem;
       line-height: 28px;
       position: absolute;
-      color: #999999;
+      color: #8a959e;
       top: 3px; }
       .detail .title p:hover {
         color: #50bcb6;
@@ -1956,45 +1956,55 @@ header {
   -moz-border-radius: 4px;
   -ms-border-radius: 4px;
   border-radius: 4px;
-  -webkit-box-shadow: 0 0 17px rgba(0, 0, 0, 0.3);
-  box-shadow: 0 0 17px rgba(0, 0, 0, 0.3);
+  /*-webkit-box-shadow: 0 0 17px rgba(0,0,0,.3);
+      box-shadow: 0 0 17px rgba(0,0,0,.3);*/
+  box-shadow: 0px 0px 17px 0px rgba(0, 0, 0, 0.11);
   border: none; }
   .modal .modal-dialog .modal-content .modal-header {
-    border-bottom: 1px solid #f5f5f5;
-    background: #fff; }
+    border-bottom: none;
+    background: #fff;
+    padding: 30px; }
     .modal .modal-dialog .modal-content .modal-header .modal-title {
-      font-size: 14px;
-      font-size: 1.4rem;
-      font-weight: bold; }
+      font-size: 18px;
+      font-size: 1.8rem; }
     .modal .modal-dialog .modal-content .modal-header .close {
       margin-top: -8px; }
   .modal .modal-dialog .modal-content .modal-body {
     background: #f5f5f5; }
   .modal .modal-dialog .modal-content .modal-footer {
-    border-top: 1px solid #f5f5f5;
-    padding: 20px; }
+    border-top: none;
+    padding: 30px; }
     .modal .modal-dialog .modal-content .modal-footer textarea {
-      -webkit-border-radius: 4px;
-      -moz-border-radius: 4px;
-      -ms-border-radius: 4px;
-      border-radius: 4px;
+      -webkit-border-radius: 4;
+      -moz-border-radius: 4;
+      -ms-border-radius: 4;
+      border-radius: 4;
       width: 100%;
-      height: 60px;
-      padding: 10px 15px;
-      margin-bottom: 20px;
-      border: 1px solid #f5f5f5;
+      height: 70px;
+      margin-bottom: 30px;
+      border: 1px solid #e2e2e2;
       resize: none;
-      outline: none; }
+      outline: none;
+      padding: 13px 22px; }
     .modal .modal-dialog .modal-content .modal-footer button {
-      width: 130px; }
+      width: 150px;
+      height: 40px;
+      line-height: 43px;
+      font-size: 13px;
+      font-size: 1.3rem; }
       .modal .modal-dialog .modal-content .modal-footer button.btn-default {
-        border-color: #f5f5f5;
-        background: #f5f5f5; }
+        background: #f5f5f5;
+        border: none;
+        margin-right: 10px;
+        padding: 0;
+        font-weight: 700; }
         .modal .modal-dialog .modal-content .modal-footer button.btn-default:hover {
           opacity: 0.7; }
       .modal .modal-dialog .modal-content .modal-footer button.btn-primary {
-        border-color: #339999;
-        background: #50bcb6; }
+        background: #23bf64;
+        border: none;
+        padding: 0;
+        font-weight: 700; }
         .modal .modal-dialog .modal-content .modal-footer button.btn-primary:hover {
           opacity: 0.7; }
 
@@ -2141,7 +2151,7 @@ header {
       .file .file_list .panel .panel-body .count {
         font-size: 12px;
         font-size: 1.2rem;
-        color: #999999;
+        color: #8a959e;
         padding: 0 15px; }
       .file .file_list .panel .panel-body .info {
         position: relative;
@@ -2152,7 +2162,7 @@ header {
         .file .file_list .panel .panel-body .info p {
           font-size: 23px;
           font-size: 2.3rem;
-          color: #999999;
+          color: #8a959e;
           display: inline-block;
           margin: 0 2% 0 0; }
           .file .file_list .panel .panel-body .info p:hover {
@@ -2188,7 +2198,7 @@ header {
     right: 30px;
     height: 45px;
     width: 45px;
-    background: #00a4bb;
+    background: #3A87BC;
     -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
     -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2); }
@@ -2213,7 +2223,7 @@ header {
     text-align: center;
     border-right: 1px solid #f5f5f5; }
     #add_file .modal-body .local_up a, #add_file .modal-body .web_up a {
-      color: #999999;
+      color: #8a959e;
       display: block; }
     #add_file .modal-body .local_up i, #add_file .modal-body .web_up i {
       font-size: 50px;
@@ -2224,8 +2234,8 @@ header {
       border-radius: 100px;
       height: 70px;
       width: 70px;
-      color: #999999;
-      border: 2px solid #999999;
+      color: #8a959e;
+      border: 2px solid #8a959e;
       padding: 8px; }
     #add_file .modal-body .local_up .title, #add_file .modal-body .web_up .title {
       margin-top: 20px;
@@ -2287,7 +2297,7 @@ header {
         position: relative;
         padding-left: 75px; }
         .bx-wrapper .bx-viewport .file_slide .item .modal-header .link a {
-          color: #999999; }
+          color: #8a959e; }
           .bx-wrapper .bx-viewport .file_slide .item .modal-header .link a:hover {
             color: #50bcb6; }
         .bx-wrapper .bx-viewport .file_slide .item .modal-header .link i {
@@ -2302,7 +2312,7 @@ header {
         position: absolute;
         top: 25px;
         right: 36px;
-        color: #999999; }
+        color: #8a959e; }
         .bx-wrapper .bx-viewport .file_slide .item .modal-header .option i, .bx-wrapper .bx-viewport .file_slide .item .modal-header .download i, .bx-wrapper .bx-viewport .file_slide .item .modal-header .like i {
           position: absolute;
           font-size: 26px;
@@ -2310,7 +2320,7 @@ header {
           top: -3px;
           left: 0; }
         .bx-wrapper .bx-viewport .file_slide .item .modal-header .option a, .bx-wrapper .bx-viewport .file_slide .item .modal-header .download a, .bx-wrapper .bx-viewport .file_slide .item .modal-header .like a {
-          color: #999999; }
+          color: #8a959e; }
           .bx-wrapper .bx-viewport .file_slide .item .modal-header .option a:hover, .bx-wrapper .bx-viewport .file_slide .item .modal-header .download a:hover, .bx-wrapper .bx-viewport .file_slide .item .modal-header .like a:hover {
             color: #50bcb6; }
       .bx-wrapper .bx-viewport .file_slide .item .modal-header .download, .bx-wrapper .bx-viewport .file_slide .item .modal-header .like {
@@ -2357,7 +2367,7 @@ header {
                 .bx-wrapper .bx-viewport .file_slide .item .modal-footer .comment .comment_inner .user_comment p.name .time {
                   margin-left: 10px;
                   font-weight: normal;
-                  color: #999999; }
+                  color: #8a959e; }
       .bx-wrapper .bx-viewport .file_slide .item .modal-footer textarea {
         -webkit-border-radius: 4px;
         -moz-border-radius: 4px;
@@ -2385,14 +2395,14 @@ header {
     .bx-wrapper .bx-viewport .file_slide .item .add_member {
       font-size: 26px;
       font-size: 2.6rem;
-      color: #999999;
+      color: #8a959e;
       position: absolute;
       right: 216px;
       bottom: 24px; }
     .bx-wrapper .bx-viewport .file_slide .item .add_emoji {
       font-size: 26px;
       font-size: 2.6rem;
-      color: #999999;
+      color: #8a959e;
       position: absolute;
       right: 170px;
       bottom: 24px; }
@@ -2436,7 +2446,7 @@ header {
           position: relative;
           padding-left: 75px; }
           .carousel .carousel-inner .item .modal-header .link a {
-            color: #999999; }
+            color: #8a959e; }
             .carousel .carousel-inner .item .modal-header .link a:hover {
               color: #50bcb6; }
           .carousel .carousel-inner .item .modal-header .link i {
@@ -2451,7 +2461,7 @@ header {
           position: absolute;
           top: 25px;
           right: 36px;
-          color: #999999; }
+          color: #8a959e; }
           .carousel .carousel-inner .item .modal-header .option i, .carousel .carousel-inner .bx-wrapper .bx-viewport .file_slide .item .modal-header .download i, .bx-wrapper .bx-viewport .file_slide .carousel .carousel-inner .item .modal-header .download i, .carousel .carousel-inner .item .modal-header .download i, .carousel .carousel-inner .bx-wrapper .bx-viewport .file_slide .item .modal-header .like i, .bx-wrapper .bx-viewport .file_slide .carousel .carousel-inner .item .modal-header .like i, .carousel .carousel-inner .item .modal-header .like i {
             position: absolute;
             font-size: 26px;
@@ -2459,7 +2469,7 @@ header {
             top: -3px;
             left: 0; }
           .carousel .carousel-inner .item .modal-header .option a, .carousel .carousel-inner .bx-wrapper .bx-viewport .file_slide .item .modal-header .download a, .bx-wrapper .bx-viewport .file_slide .carousel .carousel-inner .item .modal-header .download a, .carousel .carousel-inner .item .modal-header .download a, .carousel .carousel-inner .bx-wrapper .bx-viewport .file_slide .item .modal-header .like a, .bx-wrapper .bx-viewport .file_slide .carousel .carousel-inner .item .modal-header .like a, .carousel .carousel-inner .item .modal-header .like a {
-            color: #999999; }
+            color: #8a959e; }
             .carousel .carousel-inner .item .modal-header .option a:hover, .carousel .carousel-inner .item .modal-header .download a:hover, .carousel .carousel-inner .item .modal-header .like a:hover {
               color: #50bcb6; }
         .carousel .carousel-inner .item .modal-header .download, .carousel .carousel-inner .bx-wrapper .bx-viewport .file_slide .item .modal-header .like, .bx-wrapper .bx-viewport .file_slide .carousel .carousel-inner .item .modal-header .like, .carousel .carousel-inner .item .modal-header .like {
@@ -2500,7 +2510,7 @@ header {
                 .carousel .carousel-inner .modal-footer .comment .comment_inner .user_comment p.name .time {
                   margin-left: 10px;
                   font-weight: normal;
-                  color: #999999; }
+                  color: #8a959e; }
       .carousel .carousel-inner .modal-footer textarea {
         -webkit-border-radius: 4px;
         -moz-border-radius: 4px;
@@ -2528,14 +2538,14 @@ header {
     .carousel .carousel-inner .add_member {
       font-size: 26px;
       font-size: 2.6rem;
-      color: #999999;
+      color: #8a959e;
       position: absolute;
       right: 216px;
       bottom: 24px; }
     .carousel .carousel-inner .add_emoji {
       font-size: 26px;
       font-size: 2.6rem;
-      color: #999999;
+      color: #8a959e;
       position: absolute;
       right: 170px;
       bottom: 24px; }
@@ -2561,7 +2571,7 @@ header {
   width: 100%;
   margin: 0 auto; }
   .front a {
-    color: #00a4bb; }
+    color: #3A87BC; }
 
 /*---------------------------------------------------------------------------------------
  Account
@@ -2578,7 +2588,7 @@ header {
     text-align: center;
     font-size: 20px;
     font-size: 2rem;
-    color: #999999;
+    color: #8a959e;
     margin: 5px 0 0 0; }
 
 .card {
@@ -2612,7 +2622,7 @@ header {
         margin: 0 11px 0 16px;
         font-size: 34px;
         font-size: 3.4rem;
-        color: #00a4bb; }
+        color: #3A87BC; }
       .card .auth-form .row input {
         -webkit-box-flex: 1;
         -moz-box-flex: 1;
@@ -2645,7 +2655,7 @@ header {
           transition: 0.1s transform ease-in-out; }
         .card .auth-form .row input.blue {
           border: 0 none;
-          background-color: #00a4bb;
+          background-color: #3A87BC;
           color: #fff; }
   .card .link.forgot-password {
     font-size: 14px;
@@ -2674,13 +2684,13 @@ header {
   -ms-border-radius: 4px;
   border-radius: 4px;
   position: relative;
-  border: 1px solid #006f8e;
+  border: 1px solid #2e6b95;
   margin: 30px;
   vertical-align: top;
   line-height: 26px;
   padding: 10px 15px;
   background: #fff;
-  color: #999999; }
+  color: #8a959e; }
   .task .task_create i {
     font-size: 26px;
     font-size: 2.6rem;
