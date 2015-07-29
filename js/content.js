@@ -5,5 +5,6 @@ $(function (){
   	}
   );
   $('.carousel').carousel({
+    mode: 'fade'
   });
 });
