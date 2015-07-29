@@ -2741,6 +2741,8 @@ input[type="checkbox"] {
     /*通常時の見た目*/
     /*hover時の見た目*/ }
     input[type="checkbox"] + label::before {
+      font-size: 30px;
+      font-size: 3rem;
       font-family: 'torio_icon';
       width: 18px;
       height: 18px;
