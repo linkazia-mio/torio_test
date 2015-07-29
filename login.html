@@ -3,9 +3,35 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ログイン｜TORIO</title>
+    <script type="text/javascript" src="js/jquery-1.11.3.js"></script>
+    <script type="text/javascript" src="js/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="js/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/jquery.mCustomScrollbar.js"></script>
+    <script type="text/javascript" src="js/chart.js"></script>
+    <script type="text/javascript" src="js/function.js"></script>
+    <script type="text/javascript" src="js/content.js"></script>
+    <script type="text/javascript" src="js/masonry.pkgd.min.js"></script>
+    <script type="text/javascript" src="js/jquery.bxslider.min.js"></script>
+    <link rel="stylesheet" href="css/jquery.mCustomScrollbar.css">
+    <link rel="stylesheet" href="css/jquery-ui.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/torio.css">
   </head>
   <body>
+    <div class="info message">
+      <h3>FYI, something just happened!</h3>
+    </div>
+    <div class="error message">
+      <h3>メールアドレス、またはパスワードが間違っています。</h3>
+    </div>
+    <div class="warning message">
+      <h3>Wait, I must warn you!</h3>
+    </div>
+    <div class="success message">
+     <h3>Congrats, you did it!</h3>
+    </div>
     <div class="wrapper">
       <!--Header/-->
       <header>
@@ -20,6 +46,12 @@
       </header>
       <!--Front/-->
       <div class="front">
+       <ul id="trigger-list">
+		 <li><a href="#" class="trigger info-trigger">Info</a></li>
+		 <li><a href="#" class="trigger error-trigger">Error</a></li>
+		 <li><a href="#" class="trigger warning-trigger">Warning</a></li>
+		 <li><a href="#" class="trigger success-trigger">Success</a></li>
+</ul>
         <div class="branding">
           <h1>TORIOにログインする</h1>
           <p>あなたのアカウントを入力してログインをしてください。</p>
@@ -45,5 +77,44 @@
         </div>
       </div>
     </div>
+    <script>
+      var myMessages = ['info','warning','error','success']; // define the messages types		 
+      function hideAllMessages()
+      {
+      		 var messagesHeights = new Array(); // this array will store height for each
+      	 
+      		 for (i=0; i<myMessages.length; i++)
+      		 {
+      				  messagesHeights[i] = $('.' + myMessages[i]).outerHeight();
+      				  $('.' + myMessages[i]).css('top', -messagesHeights[i]); //move element outside viewport	  
+      		 }
+      }
+      
+      function showMessage(type)
+      {
+      	$('.'+ type +'-trigger').click(function(){
+      		  hideAllMessages();				  
+      		  $('.'+type).animate({top:"0"}, 500);
+      	});
+      }
+      
+      $(document).ready(function(){
+      		 
+      		 // Initially, hide them all
+      		 hideAllMessages();
+      		 
+      		 // Show message
+      		 for(var i=0;i<myMessages.length;i++)
+      		 {
+      			showMessage(myMessages[i]);
+      		 }
+      		 
+      		 // When message is clicked, hide it
+      		 $('.message').click(function(){			  
+      				  $(this).animate({top: -$(this).outerHeight()}, 500);
+      		  });		 
+      		 
+      });
+    </script>
   </body>
 </html>

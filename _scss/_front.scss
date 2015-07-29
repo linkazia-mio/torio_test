@@ -9,6 +9,55 @@
   }
 }
 
+.message{
+  width: 100%;
+  color: #fff;
+  padding: 0;
+  position: fixed;
+  _position: absolute;
+  text-shadow: 0 1px 0 rgba(0,0,0,.5);
+  animation: animate-bg 5s linear infinite;
+  z-index: 1000;
+  text-align: center;
+  height: 55px;
+}
+
+.info{
+  background-color: #4ea5cd;
+  border-color: #3b8eb5;
+}
+
+.error{
+   background-color: #de4343;
+   border-color: #c43d3d;
+}
+     
+.warning{
+   background-color: #db4c3f;
+}
+
+.success{
+   background-color: #61b832;
+   border-color: #55a12c;
+}
+
+.message h3{
+   margin: 0 0 5px 0;                                                  
+}
+
+.message p{
+   margin: 0;                                                  
+}
+
+@keyframes animate-bg {
+  from {
+    background-position: 0 0;
+  }
+  to {
+   background-position: -80px 0;
+  }
+}
+
 /*---------------------------------------------------------------------------------------
  Account
 ---------------------------------------------------------------------------------------*/
@@ -103,6 +152,8 @@
       font-size: 14px;
       display: block;
       text-align: center;
+      margin: 17px 0 0 0 ;
+      padding: 0;
     }
     &.plan{
       font-size: 14px;
