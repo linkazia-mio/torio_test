@@ -2877,10 +2877,33 @@ input[type="checkbox"] {
     font-size: 1.3rem;
     color: #555555;
     font-weight: bold;
-    line-height: 50px; }
+    line-height: 30px; }
   .task_replacement .task_title_edit {
     line-height: 50px;
     width: 80%; }
+
+.task_list {
+  position: relative;
+  color: #8a959e;
+  clear: both; }
+  .task_list i {
+    font-size: 20px;
+    font-size: 2rem; }
+  .task_list .time {
+    position: absolute;
+    top: 15px;
+    right: 75px; }
+  .task_list .comment {
+    position: absolute;
+    top: 15px;
+    right: 45px; }
+  .task_list .user_image {
+    position: absolute;
+    top: 15px;
+    right: 15px; }
+    .task_list .user_image img {
+      height: 20px;
+      width: 20px; }
 
 .dd-item,
 .dd-empty,
@@ -2888,7 +2911,7 @@ input[type="checkbox"] {
   display: block;
   position: relative;
   padding: 0;
-  min-height: 60px;
+  min-height: 50px;
   line-height: 20px; }
 
 .dd-handle {
@@ -2902,32 +2925,6 @@ input[type="checkbox"] {
   -moz-box-sizing: border-box; }
   .dd-handle:hover {
     cursor: pointer; }
-  .dd-handle .task_list {
-    -webkit-border-radius: 4px;
-    -moz-border-radius: 4px;
-    -ms-border-radius: 4px;
-    border-radius: 4px;
-    position: relative;
-    color: #8a959e;
-    clear: both; }
-    .dd-handle .task_list i {
-      font-size: 20px;
-      font-size: 2rem; }
-    .dd-handle .task_list .time {
-      position: absolute;
-      top: 15px;
-      right: 75px; }
-    .dd-handle .task_list .comment {
-      position: absolute;
-      top: 15px;
-      right: 45px; }
-    .dd-handle .task_list .user_image {
-      position: absolute;
-      top: 15px;
-      right: 15px; }
-      .dd-handle .task_list .user_image img {
-        height: 20px;
-        width: 20px; }
 
 .dd-item > button {
   display: none; }
@@ -2994,20 +2991,13 @@ input[type="checkbox"] {
  * Nestable Draggable Handles
  */
 .dd3-content {
+  position: absolute;
+  width: 100%;
+  bottom: 0px;
+  left: 0;
   display: block;
   height: 30px;
-  margin: 5px 0;
-  padding: 5px 10px 5px 40px;
-  color: #333;
   text-decoration: none;
-  font-weight: bold;
-  border: 1px solid #ccc;
-  background: #fafafa;
-  background: -webkit-linear-gradient(top, #fafafa 0%, #eee 100%);
-  background: -moz-linear-gradient(top, #fafafa 0%, #eee 100%);
-  background: linear-gradient(top, #fafafa 0%, #eee 100%);
-  -webkit-border-radius: 3px;
-  border-radius: 3px;
   box-sizing: border-box;
   -moz-box-sizing: border-box; }
 
