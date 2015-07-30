@@ -2216,6 +2216,14 @@ header {
           .file .file_list .panel .panel-body .info .user_image img {
             height: 25px;
             width: 25px; }
+          .file .file_list .panel .panel-body .info .user_image .noimage {
+            font-family: 'Helvetica neue',Helvetica,Arial,sans-serif;
+            font-size: 10px;
+            font-size: 1rem;
+            line-height: 25px;
+            text-align: center;
+            margin-left: 25px;
+            width: 25px; }
   .file .add_file_btn {
     -webkit-border-radius: 100px;
     -moz-border-radius: 100px;
