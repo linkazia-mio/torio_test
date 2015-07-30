@@ -601,10 +601,10 @@
       <!--/Main-->
       <!--Viewers/-->
       <div class="modal fade" id="viewers_box" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <div class="modal-dialog" role="document">
           <div class="modal-content">
             <div class="modal-header">
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
               <h4 class="modal-title" id="myModalLabel">この投稿を見た人</h4>
             </div>
             <div class="modal-body">
@@ -653,10 +653,10 @@
       <!--/Viewers-->
       <!--Add group/-->
       <div class="modal fade" id="add_group" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <button type="button" class="modal_close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <div class="modal-dialog" role="document">
           <div class="modal-content">
             <div class="modal-header">
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
               <h4 class="modal-title" id="myModalLabel">グループを新規作成</h4>
             </div>
             <div class="modal-body">
@@ -672,10 +672,10 @@
       <!--/Add group-->
       <!--Add member/-->
       <div class="modal fade" id="add_member" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <button type="button" class="modal_close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <div class="modal-dialog" role="document">
           <div class="modal-content">
             <div class="modal-header">
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
               <h4 class="modal-title" id="myModalLabel">メンバーを新規作成</h4>
             </div>
             <div class="modal-body">
@@ -691,11 +691,11 @@
       <!--/Add member-->
       <!--Add File/-->
       <div class="modal fade" id="add_file" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <button type="button" class="modal_close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <div class="modal-dialog" role="document">
           <!--modal-content_1/-->
           <div class="modal-content">
             <div class="modal-header">
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
               <h4 class="modal-title" id="myModalLabel">新規作成</h4>
             </div>
             <div class="modal-body">
@@ -713,16 +713,72 @@
                 </a>
               </div>
             </div>
-            <!--/modal-content_1-->
             <div class="modal-footer">
               <textarea class="description" placeholder="説明を入力してください"></textarea>
               <button type="button" class="btn btn-default" data-dismiss="modal">キャンセル</button>
               <button type="button" class="btn btn-primary">作成する</button>
             </div>
           </div>
+          <!--/modal-content_1-->
         </div>
       </div>
       <!--/Add File-->
+      <!--Add File2/-->
+      <div class="modal fade" id="add_file2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <button type="button" class="modal_close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <div class="modal-dialog" role="document">
+          <!--modal-content_2/-->
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title" id="myModalLabel">新規作成</h4>
+            </div>
+            <div class="modal-body">
+              <div class="web_up">
+                <i class="icon-public"></i>
+                <div class="field">
+                  <input name="url" type="text" placeholder="http://..." autofocus="" class="">
+                  <button type="button" class="btn btn-primary" type="submit">次へ</button>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <textarea class="description" placeholder="説明を入力してください"></textarea>
+              <button type="button" class="btn btn-default" data-dismiss="modal">キャンセル</button>
+              <button type="button" class="btn btn-primary">作成する</button>
+            </div>
+          </div>
+          <!--/modal-content_2-->
+        </div>
+      </div>
+      <!--/Add File2-->
+      <!--Add File3/-->
+      <div class="modal fade" id="add_file2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <button type="button" class="modal_close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <div class="modal-dialog" role="document">
+          <!--modal-content_3/-->
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title" id="myModalLabel">新規作成</h4>
+            </div>
+            <div class="modal-body">
+              <div class="web_up">
+                <i class="icon-public"></i>
+                <div class="field">
+                  <input name="url" type="text" placeholder="http://..." autofocus="" class="">
+                  <button type="button" class="btn btn-primary" type="submit">次へ</button>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <textarea class="description" placeholder="説明を入力してください"></textarea>
+              <button type="button" class="btn btn-default" data-dismiss="modal">キャンセル</button>
+              <button type="button" class="btn btn-primary">作成する</button>
+            </div>
+          </div>
+          <!--/modal-content_3-->
+        </div>
+      </div>
+      <!--/Add File3-->
       <!--File detail/-->
       <div class="modal fade" id="file_detail" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
         <div class="modal-dialog" role="document">
