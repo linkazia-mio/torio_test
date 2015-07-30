@@ -1797,7 +1797,10 @@ header {
           margin: 0 1.7px 0 0;
           position: relative; }
           .page_menu .page_menu_inner .item.file ul li ._52d9 {
-            background-color: rgba(0, 0, 0, 0.4);
+            /*background-color: rgba(0, 0, 0, .4);*/
+            background: #1f2532;
+            opacity: 0.5;
+            filter: alpha(opacity=50);
             bottom: 0;
             color: #fff;
             font-size: 15px;
