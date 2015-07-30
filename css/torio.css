@@ -2235,7 +2235,8 @@ header {
     right: 30px;
     height: 45px;
     width: 45px;
-    background: #3A87BC;
+    /*background: $torio_green;*/
+    background: #f36;
     -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
     -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2); }
