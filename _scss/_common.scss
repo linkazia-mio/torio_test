@@ -967,6 +967,26 @@ header {
     background: #fff;
     text-align: center;
     padding-top: 6px;
+    cursor: pointer;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    font-weight: normal;
+    font-style: normal;
+    text-decoration: none;
+    &:hover{
+      outline:0;
+      background: $torio_green;
+      color: white;
+    }
     .add_page {
       left: 105px;
       top: -118px;
