@@ -197,7 +197,12 @@ input[type="checkbox"] {
     background-position: 0 0, 30px 30px;
 }
 
-.dd-dragel { position: absolute; pointer-events: none; z-index: 9999; transform: rotate(-0.5deg); }
+.dd-dragel {
+  position: absolute;
+  pointer-events: none;
+  z-index: 9999;
+  transform: rotate(-0.5deg);
+ }
 .dd-dragel > .dd-item .dd-handle { margin-top: 0; }
 
 
