@@ -15,6 +15,8 @@ $(window).on('load resize', function(){
         $('.favorite').toggleClass('active');
       }
     );
-    $('#nestable').nestable();
+    jQuery('#sortable-div').sortable();
+    jQuery('#nestable1').nestable();
+    jQuery('#nestable2').nestable();
   });
 });

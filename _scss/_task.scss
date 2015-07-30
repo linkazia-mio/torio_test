@@ -80,11 +80,17 @@ input[type="checkbox"] {
 ---------------------------------------------------------------------------------------*/
 .task_replacement {
   margin: 30px;
+  .task_title {
+    @include fontsize(1.3);
+    color: $brack;
+    font-weight: bold;
+    line-height: 30px;
+  }
   .dd {
     @include fontsize(1.3);
     position: relative;
     display: block;
-    margin: 0;
+    margin-bottom: 30px;
     padding: 0;
     list-style: none;
     line-height: 20px;
@@ -96,23 +102,12 @@ input[type="checkbox"] {
       padding: 0;
       list-style: none;
       .dd-item {
-        margin-bottom: 40px;
-      }
-      .dd-list {
-        .dd-item {
-          margin-bottom: 10px;
-        }
+        margin-bottom: 5px;
       }
     }
     .dd-collapsed .dd-list {
       display: none;
     }
-  }
-  .task_title {
-    @include fontsize(1.3);
-    color: $brack;
-    font-weight: bold;
-    line-height: 30px;
   }
   .task_title_edit {
     line-height: 50px;
@@ -192,7 +187,7 @@ input[type="checkbox"] {
     min-height: 100px;
     background-color: $dark_gray;
     background-size: 60px 60px;
-    background-position: 0 0, 30px 30px;
+
 }
 
 .dd-dragel {
@@ -207,21 +202,6 @@ input[type="checkbox"] {
   // box-shadow: 0 -1px 2px rgba(0, 0, 0, 0.15), inset 0 1px 0 rgba(255, 255, 255, 0.5);
  }
 
-
-
-/**
- * Nestable Extras
- */
-
-.nestable-lists { display: block; clear: both; padding: 30px 0; width: 100%; border: 0; border-top: 2px solid #ddd; border-bottom: 2px solid #ddd; }
-
-#nestable-menu { padding: 0; margin: 20px 0; }
-
-#nestable-output,
-#nestable2-output { width: 100%; height: 7em; font-size: 0.75em; line-height: 1.333333em; font-family: Consolas, monospace; padding: 5px; box-sizing: border-box; -moz-box-sizing: border-box; }
-
-
-.dd-hover > .dd-handle { background: #2ea8e5 !important; }
 
 /**
  * Nestable Draggable Handles
