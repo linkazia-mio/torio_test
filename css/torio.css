@@ -2014,7 +2014,11 @@ header {
   .modal .modal-dialog .modal-content .modal-header {
     border-bottom: none;
     background: #fff;
-    padding: 25px; }
+    padding: 25px;
+    -webkit-border-radius: 4 4 0 0;
+    -moz-border-radius: 4 4 0 0;
+    -ms-border-radius: 4 4 0 0;
+    border-radius: 4 4 0 0; }
     .modal .modal-dialog .modal-content .modal-header .modal-title {
       font-size: 16px;
       font-size: 1.6rem; }
@@ -2069,10 +2073,10 @@ header {
         .modal .modal-dialog .modal-content .modal-footer .link a i {
           font-size: 24px;
           font-size: 2.4rem;
-          -webkit-border-radius: 0px;
-          -moz-border-radius: 0px;
-          -ms-border-radius: 0px;
-          border-radius: 0px;
+          -webkit-border-radius: 0;
+          -moz-border-radius: 0;
+          -ms-border-radius: 0;
+          border-radius: 0;
           color: #8a959e;
           border: none;
           padding: 0;
@@ -2089,7 +2093,11 @@ header {
 
 #viewers_box .modal-body {
   background: #FFFFFF;
-  padding: 10px 25px 0px 25px; }
+  padding: 10px 25px 0px 25px;
+  -webkit-border-radius: 0 0 4 4;
+  -moz-border-radius: 0 0 4 4;
+  -ms-border-radius: 0 0 4 4;
+  border-radius: 0 0 4 4; }
   #viewers_box .modal-body .view_group_member {
     border-bottom: 1px solid #f5f5f5;
     width: 100%;
