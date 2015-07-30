@@ -679,6 +679,21 @@ header {
       &:hover {
         color: $yellow;
       }
+      .icon-star-outline{
+        display: block;
+      }
+      .icon-star{
+        display: none;
+      }
+      &.active {
+        .icon-star-outline{
+          display: none;
+        }
+        .icon-star{
+          display: block;
+          color: $yellow;
+        }
+      }
     }
     .viewers {
       color: $white_brack;

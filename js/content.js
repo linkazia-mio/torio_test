@@ -10,6 +10,11 @@ $(window).on('load resize', function(){
         $('.bookmark').toggleClass('active');
       }
     );
+    $('.favorite').click(
+      function(){
+        $('.favorite').toggleClass('active');
+      }
+    );
     $('#nestable').nestable();
   });
 });

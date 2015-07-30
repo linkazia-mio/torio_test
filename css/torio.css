@@ -1655,6 +1655,15 @@ header {
       font-weight: 700; }
       .page_menu .config .favorite:hover {
         color: #feb22e; }
+      .page_menu .config .favorite .icon-star-outline {
+        display: block; }
+      .page_menu .config .favorite .icon-star {
+        display: none; }
+      .page_menu .config .favorite.active .icon-star-outline {
+        display: none; }
+      .page_menu .config .favorite.active .icon-star {
+        display: block;
+        color: #feb22e; }
     .page_menu .config .viewers {
       color: #8a959e;
       position: absolute;
