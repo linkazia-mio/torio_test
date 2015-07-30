@@ -281,4 +281,6 @@ input[type="checkbox"] {
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
 }
-.dd3-handle:hover { background: #ddd; }
+.dd3-handle:hover {
+  background: $white_gray;
+}
