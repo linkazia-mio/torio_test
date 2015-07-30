@@ -10,6 +10,8 @@ $(window).on('load resize', function(){
         $('.bookmark').toggleClass('active');
       }
     );
-    $('#nestable').nestable();
+    $('#nestable').nestable({
+      maxdepth: 2
+    });
   });
 });

@@ -2805,6 +2805,11 @@ input[type="checkbox"] {
       margin: 0;
       padding: 0;
       list-style: none; }
+      .task_replacement .dd .dd-list .dd-list .dd-list .dd-item button {
+        display: none; }
+      .task_replacement .dd .dd-list .dd-list .dd-list .dd-item .dd-handle {
+        height: 50px;
+        margin-bottom: 10px; }
     .task_replacement .dd .dd-collapsed .dd-list {
       display: none; }
   .task_replacement .task_title {
@@ -2833,13 +2838,6 @@ input[type="checkbox"] {
   color: #333;
   text-decoration: none;
   font-weight: bold;
-  border: 1px solid #ccc;
-  background: #fafafa;
-  background: -webkit-linear-gradient(top, #fafafa 0%, #eee 100%);
-  background: -moz-linear-gradient(top, #fafafa 0%, #eee 100%);
-  background: linear-gradient(top, #fafafa 0%, #eee 100%);
-  -webkit-border-radius: 3px;
-  border-radius: 3px;
   box-sizing: border-box;
   -moz-box-sizing: border-box; }
 
@@ -2848,7 +2846,7 @@ input[type="checkbox"] {
   background: #fff; }
 
 .dd-item > button {
-  display: block;
+  display: none;
   position: relative;
   cursor: pointer;
   float: left;
@@ -2865,17 +2863,6 @@ input[type="checkbox"] {
   line-height: 1;
   text-align: center;
   font-weight: bold; }
-
-.dd-item > button:before {
-  content: '+';
-  display: block;
-  position: absolute;
-  width: 100%;
-  text-align: center;
-  text-indent: 0; }
-
-.dd-item > button[data-action="collapse"]:before {
-  content: '-'; }
 
 .dd-placeholder,
 .dd-empty {
