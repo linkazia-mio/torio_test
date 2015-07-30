@@ -2767,8 +2767,6 @@ input[type="checkbox"] {
       margin: 0;
       padding: 0;
       list-style: none; }
-      .task_replacement .dd .dd-list .dd-list {
-        padding: 0; }
     .task_replacement .dd .dd-collapsed .dd-list {
       display: none; }
   .task_replacement .task_title {
@@ -2947,7 +2945,7 @@ input[type="checkbox"] {
   left: 0;
   top: 0;
   cursor: pointer;
-  width: 30px;
+  width: 100%;
   text-indent: 100%;
   white-space: nowrap;
   overflow: hidden;
@@ -2958,19 +2956,6 @@ input[type="checkbox"] {
   background: linear-gradient(top, #ddd 0%, #bbb 100%);
   border-top-right-radius: 0;
   border-bottom-right-radius: 0; }
-
-.dd3-handle:before {
-  content: '≡';
-  display: block;
-  position: absolute;
-  left: 0;
-  top: 3px;
-  width: 100%;
-  text-align: center;
-  text-indent: 0;
-  color: #fff;
-  font-size: 20px;
-  font-weight: normal; }
 
 .dd3-handle:hover {
   background: #ddd; }
