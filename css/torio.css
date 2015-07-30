@@ -1190,7 +1190,7 @@ header {
     left: 15px;
     color: #8a959e; }
     header .global_menu_btn:hover {
-      color: #50bcb6;
+      color: #3A87BC;
       cursor: pointer; }
   header .activity_box {
     width: 400px;
@@ -1277,7 +1277,7 @@ header {
     transition: opacity 0.5s ease-out;
     display: block; }
     .alart p:hover {
-      color: #50bcb6;
+      color: #3A87BC;
       cursor: pointer; }
   .alart .task {
     display: inline-block; }
@@ -1287,6 +1287,9 @@ header {
       font-size: 26px;
       font-size: 2.6rem;
       color: #8a959e; }
+      .alart .task p.icon:hover {
+        color: #3A87BC;
+        cursor: pointer; }
   .alart .activity {
     display: inline-block;
     margin-left: 14%; }
@@ -1296,6 +1299,9 @@ header {
       font-size: 26px;
       font-size: 2.6rem;
       color: #8a959e; }
+      .alart .activity p.icon:hover {
+        color: #3A87BC;
+        cursor: pointer; }
   .alart .me {
     position: absolute;
     top: -3px;
@@ -1571,9 +1577,10 @@ header {
         top: -5px;
         font-size: 22px;
         font-size: 2.2rem;
-        color: #8a959e; }
-        .global_menu .global_menu_inner .groups .add button:hover, .global_menu .global_menu_inner .member .add button:hover {
-          cursor: pointer; }
+        color: #8a959e;
+        cursor: pointer; }
+        .global_menu .global_menu_inner .groups .add:hover, .global_menu .global_menu_inner .member .add:hover {
+          color: #3A87BC; }
         .global_menu .global_menu_inner .groups .add .md-trigger, .global_menu .global_menu_inner .member .add .md-trigger {
           width: 12px; }
           .global_menu .global_menu_inner .groups .add .md-trigger span, .global_menu .global_menu_inner .member .add .md-trigger span {
@@ -1646,6 +1653,8 @@ header {
       position: absolute;
       left: 83px;
       top: 16px; }
+      .page_menu .config .check:hover {
+        cursor: pointer; }
     .page_menu .config .favorite {
       font-size: 23px;
       font-size: 2.3rem;
@@ -1655,7 +1664,8 @@ header {
       top: 15px;
       font-weight: 700; }
       .page_menu .config .favorite:hover {
-        color: #feb22e; }
+        color: #feb22e;
+        cursor: pointer; }
       .page_menu .config .favorite .icon-star-outline {
         display: block; }
       .page_menu .config .favorite .icon-star {
@@ -1678,7 +1688,8 @@ header {
         font-family: 'Helvetica neue',Helvetica,Arial,sans-serif;
         color: #8a959e; }
       .page_menu .config .viewers:hover {
-        color: #50bcb6; }
+        color: #3A87BC;
+        cursor: pointer; }
     .page_menu .config .option, .page_menu .config .bx-wrapper .bx-viewport .file_slide .item .modal-header .download, .bx-wrapper .bx-viewport .file_slide .item .modal-header .page_menu .config .download, .page_menu .config .bx-wrapper .bx-viewport .file_slide .item .modal-header .like, .bx-wrapper .bx-viewport .file_slide .item .modal-header .page_menu .config .like, .page_menu .config .carousel .carousel-inner .item .modal-header .download, .carousel .carousel-inner .item .modal-header .page_menu .config .download, .page_menu .config .carousel .carousel-inner .item .modal-header .like, .carousel .carousel-inner .item .modal-header .page_menu .config .like {
       font-size: 28px;
       font-size: 2.8rem;
@@ -1687,7 +1698,8 @@ header {
       right: 7px;
       top: 13px; }
       .page_menu .config .option:hover, .page_menu .config .bx-wrapper .bx-viewport .file_slide .item .modal-header .download:hover, .bx-wrapper .bx-viewport .file_slide .item .modal-header .page_menu .config .download:hover, .page_menu .config .bx-wrapper .bx-viewport .file_slide .item .modal-header .like:hover, .bx-wrapper .bx-viewport .file_slide .item .modal-header .page_menu .config .like:hover, .page_menu .config .carousel .carousel-inner .item .modal-header .download:hover, .carousel .carousel-inner .item .modal-header .page_menu .config .download:hover, .page_menu .config .carousel .carousel-inner .item .modal-header .like:hover, .carousel .carousel-inner .item .modal-header .page_menu .config .like:hover {
-        color: #50bcb6; }
+        color: #3A87BC;
+        cursor: pointer; }
     .page_menu .config .option_box, .page_menu .config .check_box {
       height: auto;
       left: 190px;
