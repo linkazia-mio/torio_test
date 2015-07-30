@@ -1159,7 +1159,7 @@ button:focus {
           cursor: pointer; }
 
 .modal-backdrop {
-  background: #fff; }
+  background: #323A45; }
   .modal-backdrop.in {
     opacity: 0.96;
     filter: alpha(opacity=96); }
