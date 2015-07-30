@@ -1163,9 +1163,13 @@ header {
   }
 }
 #viewers_box {
+  .modal-header{
+    border-bottom: 1px solid $border_white_gray;
+    padding: 25px 25px 20px 25px;
+  }
   .modal-body {
     background: #FFFFFF;
-    padding: 0 25px;
+    padding: 10px 25px 0px 25px;
     .view_group_member{
       border-bottom: 1px solid $border_white_gray;
       @extend .clearfix;
