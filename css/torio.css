@@ -2894,11 +2894,18 @@ input[type="checkbox"] {
 ---------------------------------------------------------------------------------------*/
 .task_replacement {
   margin: 30px; }
-  .task_replacement .task_title {
+  .task_replacement .task_people {
     font-size: 13px;
     font-size: 1.3rem;
-    color: #555555;
-    font-weight: bold;
+    margin-bottom: 20px;
+    color: #8a959e;
+    font-weight: bold; }
+    .task_replacement .task_people span {
+      font-size: 11px;
+      font-size: 1.1rem;
+      font-weight: normal;
+      padding-left: 10px; }
+  .task_replacement .task_title {
     line-height: 30px; }
   .task_replacement .dd {
     font-size: 13px;
@@ -2933,15 +2940,23 @@ input[type="checkbox"] {
     font-size: 2rem; }
   .task_list .time {
     position: absolute;
-    top: 15px;
-    right: 75px; }
+    top: 5px;
+    right: 90px; }
+    .task_list .time i {
+      position: absolute;
+      top: -1px;
+      left: -25px; }
   .task_list .comment {
     position: absolute;
-    top: 15px;
-    right: 45px; }
+    top: 5px;
+    right: 48px; }
+    .task_list .comment i {
+      position: absolute;
+      top: -1px;
+      left: -25px; }
   .task_list .user_image {
     position: absolute;
-    top: 15px;
+    top: 5px;
     right: 15px; }
     .task_list .user_image img {
       height: 20px;
@@ -2980,6 +2995,10 @@ input[type="checkbox"] {
   -moz-box-sizing: border-box; }
 
 .dd-empty {
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  border-radius: 4px;
   margin-top: 10px;
   border: 1px dashed #bbb;
   min-height: 100px;
