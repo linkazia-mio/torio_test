@@ -679,6 +679,21 @@ header {
       &:hover {
         color: $yellow;
       }
+      .icon-star-outline{
+        display: block;
+      }
+      .icon-star{
+        display: none;
+      }
+      &.active {
+        .icon-star-outline{
+          display: none;
+        }
+        .icon-star{
+          display: block;
+          color: $yellow;
+        }
+      }
     }
     .viewers {
       color: $white_brack;
@@ -1100,6 +1115,7 @@ header {
       .modal-footer {
         border-top: none;
         padding: 25px;
+        position: relative;
         textarea {
           @include border_radius(4);
           width: 100%;
@@ -1135,56 +1151,79 @@ header {
             }
           }
         }
+        .link{
+          position: absolute;
+          left: 25px;
+          bottom: 36px;
+          a{
+            padding: 0 0 0 25px;
+            color: $white_brack;
+            i{
+              @include fontsize(2.4);
+              @include border_radius(0px);
+              color: $white_brack;
+              border: none;
+              padding: 0;
+              position: absolute;
+              top: 0;
+              left: 0;
+            }
+            span{
+              @include fontsize(1.3);
+            }
+          }
+        }
       }
     }
   }
 }
 #viewers_box {
-	div {
-		@include clearfix;
-		.viewers_list {
-			overflow: hidden;
-			height: auto;
-			dl {
-				@include border_radius(6px);
-				display: table;
-				table-layout: fixed;
-				float: left;
-				padding: 0 14px;
-				border: 1px solid #fff;
-				width: 280px;
-				&:hover {
-					background: $white_gray;
-					border: 1px solid $border_white_gray;
-				}
-				dt {
-					display: table-cell;
-					vertical-align: middle;
-					width: 54px;
-					img {
-						@include border_radius(20px);
-						width: 40px;
-						height: auto;
-					}
-					.noimage {
-						height: 40px;
-						width: 40px;
-						line-height: 38px;
-					}
-				}
-				dd {
-					@include fontsize(1.3);
-					display: table-cell;
-					.name {
-						font-weight: bold;
-						a {
-							margin-top: 5px;
-							color: $link_green;
-							display: block;
-						}
-					}
-				}
-			}
-		}
-	}
+  .modal-header{
+    border-bottom: 1px solid $border_white_gray;
+    padding: 25px 25px 20px 25px;
+  }
+  .modal-body {
+    background: #FFFFFF;
+    padding: 10px 25px 0px 25px;
+    .view_group_member{
+      border-bottom: 1px solid $border_white_gray;
+      @extend .clearfix;
+      width: 100%;
+      position: relative;
+      padding: 15px 0 15px 0;
+      margin: 0;
+      &:first-child{
+        padding: 15px 0 15px 0;
+      }
+      &:last-child{
+        padding: 15px 0 25px 0;
+      }
+      dt{
+        float: left;
+        width: 40px;
+        .noimage {
+          @include font_eng;
+          @include fontsize(1.0);
+          line-height: 38px;
+          text-align: center;
+        }
+        .user_image {
+          img {
+            width: 40px;
+            height: auto;
+          }
+        }
+      }
+      dd{
+        float: left;
+        line-height: 40px;
+        margin-left: 10px;
+        .user_friends{
+          position: absolute;
+          top: 15px;
+          right: 0;
+        }
+      }
+    }
+  }
 }

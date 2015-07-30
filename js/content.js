@@ -25,5 +25,11 @@ $(window).on('load resize', function(){
         .text($('#task_edit_1').val())
         .css( 'display', '');
       });
+    $('.favorite').click(
+      function(){
+        $('.favorite').toggleClass('active');
+      }
+    );
+    $('#nestable').nestable();
   });
 });
