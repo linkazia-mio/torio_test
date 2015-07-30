@@ -2746,40 +2746,37 @@ input[type="checkbox"] {
       border-color: #3595e1 !important;
       color: #fff !important; }
 
-/**
- * Nestable
- */
-#nestable {
-  margin: 30px;
-  width: 100%; }
-  #nestable .task_title {
+/*---------------------------------------------------------------------------------------
+ task_replacement
+---------------------------------------------------------------------------------------*/
+.task_replacement {
+  margin: 30px; }
+  .task_replacement .dd {
+    font-size: 13px;
+    font-size: 1.3rem;
+    position: relative;
+    display: block;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    line-height: 20px;
+    width: 100%; }
+    .task_replacement .dd .dd-list {
+      display: block;
+      position: relative;
+      margin: 0;
+      padding: 0;
+      list-style: none; }
+      .task_replacement .dd .dd-list .dd-list {
+        padding: 0; }
+    .task_replacement .dd .dd-collapsed .dd-list {
+      display: none; }
+  .task_replacement .task_title {
     font-size: 13px;
     font-size: 1.3rem;
     color: #555555;
     font-weight: bold;
     line-height: 50px; }
-
-.dd {
-  position: relative;
-  display: block;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  font-size: 13px;
-  line-height: 20px; }
-
-.dd-list {
-  display: block;
-  position: relative;
-  margin: 0;
-  padding: 0;
-  list-style: none; }
-
-.dd-list .dd-list {
-  padding-left: 30px; }
-
-.dd-collapsed .dd-list {
-  display: none; }
 
 .dd-item,
 .dd-empty,
