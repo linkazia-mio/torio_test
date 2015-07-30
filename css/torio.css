@@ -2409,72 +2409,85 @@ header {
       text-align: center;
       background: #f5f5f5; }
       .bx-wrapper .bx-viewport .file_slide .item .image img {
-        width: 80%;
+        width: 100%;
         height: auto; }
     .bx-wrapper .bx-viewport .file_slide .item .modal-footer {
       border-top: 1px solid #f5f5f5;
-      padding: 20px;
+      padding: 25px 0;
       position: relative; }
       .bx-wrapper .bx-viewport .file_slide .item .modal-footer .comment {
         text-align: left;
         border-bottom: 1px solid #f5f5f5;
-        margin-bottom: 20px; }
+        margin-bottom: 25px;
+        padding: 0 25px; }
         .bx-wrapper .bx-viewport .file_slide .item .modal-footer .comment .comment_inner {
           display: table;
           width: 100%;
           table-layout: fixed;
-          margin-bottom: 20px; }
+          margin-bottom: 25px; }
           .bx-wrapper .bx-viewport .file_slide .item .modal-footer .comment .comment_inner .user_image {
             display: table-cell;
-            width: 45px; }
+            width: 50px; }
             .bx-wrapper .bx-viewport .file_slide .item .modal-footer .comment .comment_inner .user_image img {
-              width: 30px;
-              height: 30px;
+              width: 40px;
+              height: 40px;
               vertical-align: top;
-              margin-top: 5px; }
+              margin-top: 3px; }
           .bx-wrapper .bx-viewport .file_slide .item .modal-footer .comment .comment_inner .user_comment {
             display: table-cell; }
             .bx-wrapper .bx-viewport .file_slide .item .modal-footer .comment .comment_inner .user_comment p {
-              font-size: 13px;
-              font-size: 1.3rem; }
+              font-size: 15px;
+              font-size: 1.5rem; }
               .bx-wrapper .bx-viewport .file_slide .item .modal-footer .comment .comment_inner .user_comment p.name {
-                font-weight: bold; }
+                font-weight: bold;
+                padding-bottom: 1px; }
                 .bx-wrapper .bx-viewport .file_slide .item .modal-footer .comment .comment_inner .user_comment p.name .time {
                   margin-left: 10px;
                   font-weight: normal;
-                  color: #8a959e; }
-      .bx-wrapper .bx-viewport .file_slide .item .modal-footer textarea {
-        -webkit-border-radius: 4px;
-        -moz-border-radius: 4px;
-        -ms-border-radius: 4px;
-        border-radius: 4px;
-        width: 100%;
-        height: 60px;
-        padding: 10px 15px;
-        margin-bottom: 20px;
-        border: 1px solid #e2e2e2;
-        resize: none;
-        outline: none; }
-      .bx-wrapper .bx-viewport .file_slide .item .modal-footer button {
-        width: 130px; }
-        .bx-wrapper .bx-viewport .file_slide .item .modal-footer button.btn-default {
-          border-color: #f5f5f5;
-          background: #f5f5f5; }
-          .bx-wrapper .bx-viewport .file_slide .item .modal-footer button.btn-default:hover {
-            opacity: 0.7; }
-        .bx-wrapper .bx-viewport .file_slide .item .modal-footer button.btn-primary {
-          width: 100px;
-          height: 40px;
-          line-height: 43px;
-          font-size: 13px;
-          font-size: 1.3rem; }
-          .bx-wrapper .bx-viewport .file_slide .item .modal-footer button.btn-primary.btn-primary {
-            background: #3A87BC;
-            border: none;
-            padding: 0;
-            font-weight: 700; }
-            .bx-wrapper .bx-viewport .file_slide .item .modal-footer button.btn-primary.btn-primary:hover {
+                  color: #8a959e;
+                  font-size: 13px;
+                  font-size: 1.3rem; }
+              .bx-wrapper .bx-viewport .file_slide .item .modal-footer .comment .comment_inner .user_comment p.memo {
+                font-size: 15px;
+                font-size: 1.5rem;
+                word-wrap: break-word;
+                color: #000000; }
+      .bx-wrapper .bx-viewport .file_slide .item .modal-footer .comment_entry {
+        width: 790px;
+        min-width: 550px;
+        margin: 0 auto; }
+        .bx-wrapper .bx-viewport .file_slide .item .modal-footer .comment_entry textarea {
+          -webkit-border-radius: 4px;
+          -moz-border-radius: 4px;
+          -ms-border-radius: 4px;
+          border-radius: 4px;
+          width: 100%;
+          height: 60px;
+          padding: 10px 15px;
+          margin-bottom: 20px;
+          border: 1px solid #e2e2e2;
+          resize: none;
+          outline: none; }
+        .bx-wrapper .bx-viewport .file_slide .item .modal-footer .comment_entry button {
+          width: 130px; }
+          .bx-wrapper .bx-viewport .file_slide .item .modal-footer .comment_entry button.btn-default {
+            border-color: #f5f5f5;
+            background: #f5f5f5; }
+            .bx-wrapper .bx-viewport .file_slide .item .modal-footer .comment_entry button.btn-default:hover {
               opacity: 0.7; }
+          .bx-wrapper .bx-viewport .file_slide .item .modal-footer .comment_entry button.btn-primary {
+            width: 100px;
+            height: 40px;
+            line-height: 43px;
+            font-size: 13px;
+            font-size: 1.3rem; }
+            .bx-wrapper .bx-viewport .file_slide .item .modal-footer .comment_entry button.btn-primary.btn-primary {
+              background: #3A87BC;
+              border: none;
+              padding: 0;
+              font-weight: 700; }
+              .bx-wrapper .bx-viewport .file_slide .item .modal-footer .comment_entry button.btn-primary.btn-primary:hover {
+                opacity: 0.7; }
     .bx-wrapper .bx-viewport .file_slide .item .add_member {
       font-size: 26px;
       font-size: 2.6rem;
