@@ -2316,6 +2316,11 @@ header {
       #add_file .modal-body .web_up .image img, #add_file2 .modal-body .web_up .image img, #add_file3 .modal-body .web_up .image img {
         width: 80%; }
 
+#file_detail .modal-dialog {
+  min-width: 600px;
+  width: 840px;
+  margin: 90px auto; }
+
 /*bx-wrapper*/
 .bx-wrapper {
   position: relative; }
@@ -2447,7 +2452,7 @@ header {
         height: 60px;
         padding: 10px 15px;
         margin-bottom: 20px;
-        border: 1px solid #f5f5f5;
+        border: 1px solid #e2e2e2;
         resize: none;
         outline: none; }
       .bx-wrapper .bx-viewport .file_slide .item .modal-footer button {
@@ -2458,10 +2463,18 @@ header {
           .bx-wrapper .bx-viewport .file_slide .item .modal-footer button.btn-default:hover {
             opacity: 0.7; }
         .bx-wrapper .bx-viewport .file_slide .item .modal-footer button.btn-primary {
-          border-color: #339999;
-          background: #50bcb6; }
-          .bx-wrapper .bx-viewport .file_slide .item .modal-footer button.btn-primary:hover {
-            opacity: 0.7; }
+          width: 100px;
+          height: 40px;
+          line-height: 43px;
+          font-size: 13px;
+          font-size: 1.3rem; }
+          .bx-wrapper .bx-viewport .file_slide .item .modal-footer button.btn-primary.btn-primary {
+            background: #3A87BC;
+            border: none;
+            padding: 0;
+            font-weight: 700; }
+            .bx-wrapper .bx-viewport .file_slide .item .modal-footer button.btn-primary.btn-primary:hover {
+              opacity: 0.7; }
     .bx-wrapper .bx-viewport .file_slide .item .add_member {
       font-size: 26px;
       font-size: 2.6rem;
