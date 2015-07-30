@@ -2217,12 +2217,12 @@ header {
  Modal
 ---------------------------------------------------------------------------------------*/
 /*Add File*/
-#add_file .modal-body, #add_file2 .modal-body {
+#add_file .modal-body, #add_file2 .modal-body, #add_file3 .modal-body {
   display: table;
   table-layout: fixed;
   width: 100%;
   padding: 30px 0; }
-  #add_file .modal-body .local_up, #add_file .modal-body .web_up, #add_file2 .modal-body .local_up, #add_file2 .modal-body .web_up {
+  #add_file .modal-body .local_up, #add_file .modal-body .web_up, #add_file2 .modal-body .local_up, #add_file2 .modal-body .web_up, #add_file3 .modal-body .local_up, #add_file3 .modal-body .web_up {
     font-size: 15px;
     font-size: 1.5rem;
     width: 50%;
@@ -2231,10 +2231,10 @@ header {
     display: table-cell;
     text-align: center;
     border-right: 1px solid #e2e2e2; }
-    #add_file .modal-body .local_up a, #add_file .modal-body .web_up a, #add_file2 .modal-body .local_up a, #add_file2 .modal-body .web_up a {
+    #add_file .modal-body .local_up a, #add_file .modal-body .web_up a, #add_file2 .modal-body .local_up a, #add_file2 .modal-body .web_up a, #add_file3 .modal-body .local_up a, #add_file3 .modal-body .web_up a {
       color: #8a959e;
       display: block; }
-    #add_file .modal-body .local_up i, #add_file .modal-body .web_up i, #add_file2 .modal-body .local_up i, #add_file2 .modal-body .web_up i {
+    #add_file .modal-body .local_up i, #add_file .modal-body .web_up i, #add_file2 .modal-body .local_up i, #add_file2 .modal-body .web_up i, #add_file3 .modal-body .local_up i, #add_file3 .modal-body .web_up i {
       font-size: 40px;
       font-size: 4rem;
       -webkit-border-radius: 100px;
@@ -2244,17 +2244,17 @@ header {
       color: #8a959e;
       border: 1px solid #8a959e;
       padding: 15px; }
-    #add_file .modal-body .local_up .title, #add_file .modal-body .web_up .title, #add_file2 .modal-body .local_up .title, #add_file2 .modal-body .web_up .title {
+    #add_file .modal-body .local_up .title, #add_file .modal-body .web_up .title, #add_file2 .modal-body .local_up .title, #add_file2 .modal-body .web_up .title, #add_file3 .modal-body .local_up .title, #add_file3 .modal-body .web_up .title {
       margin-top: 25px;
       font-weight: bold;
       color: #8a959e; }
-    #add_file .modal-body .local_up .note, #add_file .modal-body .web_up .note, #add_file2 .modal-body .local_up .note, #add_file2 .modal-body .web_up .note {
+    #add_file .modal-body .local_up .note, #add_file .modal-body .web_up .note, #add_file2 .modal-body .local_up .note, #add_file2 .modal-body .web_up .note, #add_file3 .modal-body .local_up .note, #add_file3 .modal-body .web_up .note {
       font-size: 12px;
       font-size: 1.2rem; }
-    #add_file .modal-body .local_up .field, #add_file .modal-body .web_up .field, #add_file2 .modal-body .local_up .field, #add_file2 .modal-body .web_up .field {
+    #add_file .modal-body .local_up .field, #add_file .modal-body .web_up .field, #add_file2 .modal-body .local_up .field, #add_file2 .modal-body .web_up .field, #add_file3 .modal-body .local_up .field, #add_file3 .modal-body .web_up .field {
       /*@extend .clearfix;*/
       margin-top: 40px; }
-      #add_file .modal-body .local_up .field input, #add_file .modal-body .web_up .field input, #add_file2 .modal-body .local_up .field input, #add_file2 .modal-body .web_up .field input {
+      #add_file .modal-body .local_up .field input, #add_file .modal-body .web_up .field input, #add_file2 .modal-body .local_up .field input, #add_file2 .modal-body .web_up .field input, #add_file3 .modal-body .local_up .field input, #add_file3 .modal-body .web_up .field input {
         -webkit-border-radius: 4;
         -moz-border-radius: 4;
         -ms-border-radius: 4;
@@ -2267,20 +2267,20 @@ header {
         outline: none;
         padding: 0 13px;
         height: 40px; }
-      #add_file .modal-body .local_up .field button, #add_file .modal-body .web_up .field button, #add_file2 .modal-body .local_up .field button, #add_file2 .modal-body .web_up .field button {
+      #add_file .modal-body .local_up .field button, #add_file .modal-body .web_up .field button, #add_file2 .modal-body .local_up .field button, #add_file2 .modal-body .web_up .field button, #add_file3 .modal-body .local_up .field button, #add_file3 .modal-body .web_up .field button {
         width: 100px;
         height: 40px;
         line-height: 43px;
         font-size: 13px;
         font-size: 1.3rem; }
-        #add_file .modal-body .local_up .field button.btn-primary, #add_file .modal-body .web_up .field button.btn-primary, #add_file2 .modal-body .local_up .field button.btn-primary, #add_file2 .modal-body .web_up .field button.btn-primary {
+        #add_file .modal-body .local_up .field button.btn-primary, #add_file .modal-body .web_up .field button.btn-primary, #add_file2 .modal-body .local_up .field button.btn-primary, #add_file2 .modal-body .web_up .field button.btn-primary, #add_file3 .modal-body .local_up .field button.btn-primary, #add_file3 .modal-body .web_up .field button.btn-primary {
           background: #3A87BC;
           border: none;
           padding: 0;
           font-weight: 700; }
-          #add_file .modal-body .local_up .field button.btn-primary:hover, #add_file .modal-body .web_up .field button.btn-primary:hover, #add_file2 .modal-body .local_up .field button.btn-primary:hover, #add_file2 .modal-body .web_up .field button.btn-primary:hover {
+          #add_file .modal-body .local_up .field button.btn-primary:hover, #add_file .modal-body .web_up .field button.btn-primary:hover, #add_file2 .modal-body .local_up .field button.btn-primary:hover, #add_file2 .modal-body .web_up .field button.btn-primary:hover, #add_file3 .modal-body .local_up .field button.btn-primary:hover, #add_file3 .modal-body .web_up .field button.btn-primary:hover {
             opacity: 0.7; }
-  #add_file .modal-body .web_up, #add_file2 .modal-body .web_up {
+  #add_file .modal-body .web_up, #add_file2 .modal-body .web_up, #add_file3 .modal-body .web_up {
     border-right: none; }
 
 /*bx-wrapper*/
