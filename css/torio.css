@@ -1951,6 +1951,14 @@ header {
 /*---------------------------------------------------------------------------------------
  Modal
 ---------------------------------------------------------------------------------------*/
+.modal .modal_close {
+  position: absolute;
+  top: 0px;
+  right: 15px;
+  color: #8a959e;
+  font-size: 30px;
+  font-size: 3rem; }
+
 .modal .modal-dialog .modal-content {
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
@@ -1963,17 +1971,17 @@ header {
   .modal .modal-dialog .modal-content .modal-header {
     border-bottom: none;
     background: #fff;
-    padding: 30px; }
+    padding: 25px; }
     .modal .modal-dialog .modal-content .modal-header .modal-title {
-      font-size: 18px;
-      font-size: 1.8rem; }
+      font-size: 16px;
+      font-size: 1.6rem; }
     .modal .modal-dialog .modal-content .modal-header .close {
       margin-top: -8px; }
   .modal .modal-dialog .modal-content .modal-body {
     background: #f5f5f5; }
   .modal .modal-dialog .modal-content .modal-footer {
     border-top: none;
-    padding: 30px; }
+    padding: 25px; }
     .modal .modal-dialog .modal-content .modal-footer textarea {
       -webkit-border-radius: 4;
       -moz-border-radius: 4;
@@ -1981,13 +1989,13 @@ header {
       border-radius: 4;
       width: 100%;
       height: 70px;
-      margin-bottom: 30px;
+      margin-bottom: 25px;
       border: 1px solid #e2e2e2;
       resize: none;
       outline: none;
-      padding: 13px 22px; }
+      padding: 13px 13px; }
     .modal .modal-dialog .modal-content .modal-footer button {
-      width: 150px;
+      width: 130px;
       height: 40px;
       line-height: 43px;
       font-size: 13px;
@@ -2001,7 +2009,7 @@ header {
         .modal .modal-dialog .modal-content .modal-footer button.btn-default:hover {
           opacity: 0.7; }
       .modal .modal-dialog .modal-content .modal-footer button.btn-primary {
-        background: #23bf64;
+        background: #3A87BC;
         border: none;
         padding: 0;
         font-weight: 700; }
@@ -2209,24 +2217,24 @@ header {
  Modal
 ---------------------------------------------------------------------------------------*/
 /*Add File*/
-#add_file .modal-body {
+#add_file .modal-body, #add_file2 .modal-body {
   display: table;
   table-layout: fixed;
   width: 100%;
   padding: 30px 0; }
-  #add_file .modal-body .local_up, #add_file .modal-body .web_up {
+  #add_file .modal-body .local_up, #add_file .modal-body .web_up, #add_file2 .modal-body .local_up, #add_file2 .modal-body .web_up {
     font-size: 15px;
     font-size: 1.5rem;
     width: 50%;
     height: 200px;
-    padding-top: 70px;
+    padding-top: 60px;
     display: table-cell;
     text-align: center;
     border-right: 1px solid #e2e2e2; }
-    #add_file .modal-body .local_up a, #add_file .modal-body .web_up a {
+    #add_file .modal-body .local_up a, #add_file .modal-body .web_up a, #add_file2 .modal-body .local_up a, #add_file2 .modal-body .web_up a {
       color: #8a959e;
       display: block; }
-    #add_file .modal-body .local_up i, #add_file .modal-body .web_up i {
+    #add_file .modal-body .local_up i, #add_file .modal-body .web_up i, #add_file2 .modal-body .local_up i, #add_file2 .modal-body .web_up i {
       font-size: 40px;
       font-size: 4rem;
       -webkit-border-radius: 100px;
@@ -2236,13 +2244,43 @@ header {
       color: #8a959e;
       border: 1px solid #8a959e;
       padding: 15px; }
-    #add_file .modal-body .local_up .title, #add_file .modal-body .web_up .title {
+    #add_file .modal-body .local_up .title, #add_file .modal-body .web_up .title, #add_file2 .modal-body .local_up .title, #add_file2 .modal-body .web_up .title {
       margin-top: 25px;
-      font-weight: bold; }
-    #add_file .modal-body .local_up .note, #add_file .modal-body .web_up .note {
+      font-weight: bold;
+      color: #8a959e; }
+    #add_file .modal-body .local_up .note, #add_file .modal-body .web_up .note, #add_file2 .modal-body .local_up .note, #add_file2 .modal-body .web_up .note {
       font-size: 12px;
       font-size: 1.2rem; }
-  #add_file .modal-body .web_up {
+    #add_file .modal-body .local_up .field, #add_file .modal-body .web_up .field, #add_file2 .modal-body .local_up .field, #add_file2 .modal-body .web_up .field {
+      /*@extend .clearfix;*/
+      margin-top: 40px; }
+      #add_file .modal-body .local_up .field input, #add_file .modal-body .web_up .field input, #add_file2 .modal-body .local_up .field input, #add_file2 .modal-body .web_up .field input {
+        -webkit-border-radius: 4;
+        -moz-border-radius: 4;
+        -ms-border-radius: 4;
+        border-radius: 4;
+        width: 430px;
+        margin: 0 10px 30px 0;
+        border: 1px solid #e2e2e2;
+        background: #ffffff;
+        resize: none;
+        outline: none;
+        padding: 0 13px;
+        height: 40px; }
+      #add_file .modal-body .local_up .field button, #add_file .modal-body .web_up .field button, #add_file2 .modal-body .local_up .field button, #add_file2 .modal-body .web_up .field button {
+        width: 100px;
+        height: 40px;
+        line-height: 43px;
+        font-size: 13px;
+        font-size: 1.3rem; }
+        #add_file .modal-body .local_up .field button.btn-primary, #add_file .modal-body .web_up .field button.btn-primary, #add_file2 .modal-body .local_up .field button.btn-primary, #add_file2 .modal-body .web_up .field button.btn-primary {
+          background: #3A87BC;
+          border: none;
+          padding: 0;
+          font-weight: 700; }
+          #add_file .modal-body .local_up .field button.btn-primary:hover, #add_file .modal-body .web_up .field button.btn-primary:hover, #add_file2 .modal-body .local_up .field button.btn-primary:hover, #add_file2 .modal-body .web_up .field button.btn-primary:hover {
+            opacity: 0.7; }
+  #add_file .modal-body .web_up, #add_file2 .modal-body .web_up {
     border-right: none; }
 
 /*bx-wrapper*/
