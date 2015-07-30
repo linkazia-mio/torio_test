@@ -5,14 +5,11 @@ $(window).on('load resize', function(){
       adaptiveHeight: 'true'
 
     });
-    $(".bookmark").click(
+    $('.bookmark').click(
       function(){
-        $(".bookmark").toggleClass("active");
+        $('.bookmark').toggleClass('active');
       }
     );
+    $('#nestable').nestable();
   });
-});
-$(".persons").nestable({
-    listNodeName    : 'person_charge',
-    itemIdAttribute : 'data-id'
 });

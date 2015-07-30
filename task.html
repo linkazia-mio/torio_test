@@ -9,7 +9,7 @@
     <script type="text/javascript" src="js/jquery.mCustomScrollbar.js"></script>
     <script type="text/javascript" src="js/masonry.pkgd.min.js"></script>
     <script type="text/javascript" src="js/jquery.bxslider.min.js"></script>
-    <script type="text/javascript" src="jquery.nestable.js"></script>
+    <script type="text/javascript" src="js/jquery.nestable.js"></script>
     <script type="text/javascript" src="js/chart.js"></script>
     <script type="text/javascript" src="js/function.js"></script>
     <script type="text/javascript" src="js/content.js"></script>
@@ -302,74 +302,50 @@
               <i class="icon-list-ul"></i><input type="text" placeholder="リストを作成する"><button>作成</button>
             </div>
             <!--/Task create-->
-            <!--Persons/-->
-            <div class="persons" id="nestable">
-              <!--Person_charge/-->
-              <div class="person_charge">
-                <p>小松の担当<span class="">5</span></p>
-                <!--Task List/-->
-                <div class="task_list">
-                  <input type="checkbox" id="c1"><label for="c1"></label><p class="task_title">プラン選択・プロモーションページ</p>
-                  <p class="time"><i class="icon-access-time"></i>あと10日</p>
-                  <p class="comment"><i class="icon-comment-outline"></i>3</p>
-                  <p><span class="user_image"><img src="http://placehold.it/100x100"></span></p>
-                </div>
-                <!--/Task List-->
-                <!--Task List/-->
-                <div class="task_list">
-                  <input type="checkbox" id="c2"><label for="c2"></label><p class="task_title">プラン選択・プロモーションページ</p>
-                  <p class="time"><i class="icon-access-time"></i>あと10日</p>
-                  <p class="comment"><i class="icon-comment-outline"></i>3</p>
-                  <p><span class="user_image"><img src="http://placehold.it/100x100"></span></p>
-                </div>
-                <!--/Task List-->
-                <!--Task List/-->
-                <div class="task_list">
-                  <input type="checkbox" id="c3"><label for="c3"></label><p class="task_title">プラン選択・プロモーションページ</p>
-                  <p class="time"><i class="icon-access-time"></i>あと10日</p>
-                  <p class="comment"><i class="icon-comment-outline"></i>3</p>
-                  <p><span class="user_image"><img src="http://placehold.it/100x100"></span></p>
-                </div>
-                <!--/Task List-->
-              </div>
-              <!--/Person_charge-->
-              <!--Person_charge/-->
-              <div class="person_charge">
-                <p>小松の担当<span class="">5</span></p>
-                <!--Task List/-->
-                <div class="task_list">
-                  <input type="checkbox" id="c4"><label for="c4"></label><p class="task_title">プラン選択・プロモーションページ</p>
-                  <p class="time"><i class="icon-access-time"></i>あと10日</p>
-                  <p class="comment"><i class="icon-comment-outline"></i>3</p>
-                  <p><span class="user_image"><img src="http://placehold.it/100x100"></span></p>
-                </div>
-                <!--/Task List-->
-                <!--Task List/-->
-                <div class="task_list">
-                  <input type="checkbox" id="c5"><label for="c5"></label><p class="task_title">プラン選択・プロモーションページ</p>
-                  <p class="time"><i class="icon-access-time"></i>あと10日</p>
-                  <p class="comment"><i class="icon-comment-outline"></i>3</p>
-                  <p><span class="user_image"><img src="http://placehold.it/100x100"></span></p>
-                </div>
-                <!--/Task List-->
-                <!--Task List/-->
-                <div class="task_list">
-                  <input type="checkbox" id="c6"><label for="c6"></label><p class="task_title">プラン選択・プロモーションページ</p>
-                  <p class="time"><i class="icon-access-time"></i>あと10日</p>
-                  <p class="comment"><i class="icon-comment-outline"></i>3</p>
-                  <p><span class="user_image"><img src="http://placehold.it/100x100"></span></p>
-                </div>
-                <!--/Task List-->
-              </div>
-              <!--/Person_charge-->
+
+            <div class="dd" id="nestable">
+                <ol class="dd-list">
+                    <li class="dd-item dd3-item" data-id="13">
+                        <div class="dd-handle dd3-handle">Drag</div>
+                        <div class="dd3-content">
+                          <p>小松の担当<span class="">5</span></p>
+                        </div>
+                    </li>
+                    <li class="dd-item dd3-item" data-id="14">
+                        <div class="dd-handle dd3-handle">Drag</div><div class="dd3-content">Item 14</div>
+                    </li>
+                    <li class="dd-item dd3-item" data-id="15">
+                        <div class="dd-handle"><p>小松の担当<span class="">3</span></p></div>
+                        <ol class="dd-list">
+                            <li class="dd-item dd3-item" data-id="16">
+                                <div class="dd-handle dd3-handle">Drag</div>
+                                <!--Task List/-->
+                                <div class="task_list">
+                                  <input type="checkbox" id="c4"><label for="c4"></label><p class="task_title">プラン選択・プロモーションページ</p>
+                                  <p class="time"><i class="icon-access-time"></i>あと10日</p>
+                                  <p class="comment"><i class="icon-comment-outline"></i>3</p>
+                                  <p><span class="user_image"><img src="http://placehold.it/100x100"></span></p>
+                                </div>
+                                <!--/Task List-->
+                            </li>
+                            <li class="dd-item dd3-item" data-id="17">
+                                <div class="dd-handle dd3-handle">Drag</div><div class="dd3-content">Item 17</div>
+                            </li>
+                            <li class="dd-item dd3-item" data-id="18">
+                                <div class="dd-handle dd3-handle">Drag</div><div class="dd3-content">Item 18</div>
+                            </li>
+                        </ol>
+                    </li>
+                </ol>
             </div>
-            <!--/Persons-->
+
           </div>
           <!--/File-->
         </div>
         <!--/Detail-->
       </div>
       <!--/Main-->
+
       <!--Viewers/-->
       <div class="modal fade" id="viewers_box" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
         <div class="modal-dialog" role="document">
