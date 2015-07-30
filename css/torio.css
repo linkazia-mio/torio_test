@@ -1161,8 +1161,8 @@ button:focus {
 .modal-backdrop {
   background: #fff; }
   .modal-backdrop.in {
-    opacity: 0.95;
-    filter: alpha(opacity=95); }
+    opacity: 0.96;
+    filter: alpha(opacity=96); }
 
 /*Header*/
 header {
@@ -1172,7 +1172,7 @@ header {
   header .header_inner {
     height: 55px;
     position: relative;
-    background: #FFFFFF;
+    background: #1f2532;
     opacity: 0.9;
     filter: alpha(opacity=90);
     /*background: #f6f6f6;
@@ -1232,7 +1232,7 @@ header {
   position: absolute;
   width: 50%;
   height: 32px;
-  border: 1px solid #e2e2e2;
+  border: 1px solid #fff;
   background: #fff;
   top: 48%;
   left: 55%;
@@ -1250,7 +1250,8 @@ header {
     width: 100%;
     height: 32px;
     padding: 0 10px;
-    line-height: 32px; }
+    line-height: 32px;
+    color: #ffffff; }
   .search input[type="submit"] {
     position: absolute;
     right: 1px;
@@ -1312,7 +1313,7 @@ header {
       font-size: 12px;
       font-size: 1.2rem;
       display: inline-block;
-      color: #333333; }
+      color: #8a959e; }
 
 .account .login {
   float: right;
@@ -2330,22 +2331,24 @@ header {
     font-family: 'torio_icon'; }
     .bx-wrapper .bx-controls .bx-controls-direction .bx-prev {
       position: fixed;
-      top: 300px;
-      left: -70px;
+      top: 350px;
+      left: -100px;
       height: 60px;
       width: 60px;
-      overflow: hidden; }
+      overflow: hidden;
+      color: #555555; }
       .bx-wrapper .bx-controls .bx-controls-direction .bx-prev:before {
         font-size: 60px;
         font-size: 6rem;
         content: "\e62d"; }
     .bx-wrapper .bx-controls .bx-controls-direction .bx-next {
       position: fixed;
-      top: 300px;
-      right: -70px;
+      top: 350px;
+      right: -100px;
       height: 60px;
       width: 60px;
-      overflow: hidden; }
+      overflow: hidden;
+      color: #555555; }
       .bx-wrapper .bx-controls .bx-controls-direction .bx-next:before {
         font-size: 60px;
         font-size: 6rem;
