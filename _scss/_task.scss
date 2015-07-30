@@ -48,7 +48,7 @@ input[type="checkbox"] {
       border-radius: 5px;
       border: 1px solid #dddddd;
       background: #fff;
-      margin: -2px 5px 0 0;
+      margin: -12px 0px 0 0;
       -webkit-transition: .1s;
       transition: .1s;
       -webkit-box-sizing: border-box;
@@ -229,11 +229,9 @@ input[type="checkbox"] {
   text-decoration: none;
   box-sizing: border-box; -moz-box-sizing: border-box;
 }
-.dd3-content:hover { color: #2ea8e5; background: #fff; }
 
 .dd-dragel > .dd3-item > .dd3-content { margin: 0; }
 
-.dd3-item > button { margin-left: 30px; }
 
 .dd3-handle {
     @include border_radius();
