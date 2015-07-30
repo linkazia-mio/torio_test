@@ -96,7 +96,7 @@ input[type="checkbox"] {
       padding: 0;
       list-style: none;
       .dd-item {
-        margin-bottom: 20px;
+        margin-bottom: 40px;
       }
       .dd-list {
         .dd-item {
@@ -158,6 +158,7 @@ input[type="checkbox"] {
   line-height: 20px;
 }
 
+
 .dd-handle {
   display: block;
   height: 30px;
@@ -176,9 +177,9 @@ input[type="checkbox"] {
 }
 
 
-.dd-placeholder,
-.dd-empty {
-  margin: 5px 0; padding: 0;
+.dd-placeholder {
+  margin: 5px 0;
+  padding: 0;
   min-height: 30px;
   // border: 1px dashed $border_gray;
   background: $dark_gray;
@@ -186,13 +187,10 @@ input[type="checkbox"] {
   -moz-box-sizing: border-box;
 }
 .dd-empty {
-    border: 1px dashed #bbb; min-height: 100px; background-color: #e5e5e5;
-    background-image: -webkit-linear-gradient(45deg, #fff 25%, transparent 25%, transparent 75%, #fff 75%, #fff),
-                      -webkit-linear-gradient(45deg, #fff 25%, transparent 25%, transparent 75%, #fff 75%, #fff);
-    background-image:    -moz-linear-gradient(45deg, #fff 25%, transparent 25%, transparent 75%, #fff 75%, #fff),
-                         -moz-linear-gradient(45deg, #fff 25%, transparent 25%, transparent 75%, #fff 75%, #fff);
-    background-image:         linear-gradient(45deg, #fff 25%, transparent 25%, transparent 75%, #fff 75%, #fff),
-                              linear-gradient(45deg, #fff 25%, transparent 25%, transparent 75%, #fff 75%, #fff);
+    margin-top: 10px;
+    border: 1px dashed #bbb;
+    min-height: 100px;
+    background-color: $dark_gray;
     background-size: 60px 60px;
     background-position: 0 0, 30px 30px;
 }
@@ -200,10 +198,15 @@ input[type="checkbox"] {
 .dd-dragel {
   position: absolute;
   pointer-events: none;
+  padding: 0;
+  margin-top: 0;
   z-index: 9999;
   transform: rotate(-0.5deg);
+  // background: $dark_gray;
+  // -webkit-box-shadow: 0 -1px 2px rgba(0, 0, 0, 0.15), inset 0 1px 0 rgba(255, 255, 255, 0.5);
+  // box-shadow: 0 -1px 2px rgba(0, 0, 0, 0.15), inset 0 1px 0 rgba(255, 255, 255, 0.5);
  }
-.dd-dragel > .dd-item .dd-handle { margin-top: 0; }
+
 
 
 /**
@@ -227,7 +230,7 @@ input[type="checkbox"] {
 .dd3-content {
   position: absolute;
   width: 100%;
-  bottom: 0px;
+  bottom: 10px;
   left: 0;
   display: block;
   height: 30px;
@@ -241,7 +244,7 @@ input[type="checkbox"] {
 .dd3-handle {
     @include border_radius();
     position: absolute;
-    margin: 10px 0;
+    margin: 0;
     left: 0; top: 0; cursor: pointer;
     width: 100%;
     border: 1px solid $border_gray;
