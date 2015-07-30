@@ -320,6 +320,14 @@
               width: 40px;
             }
           }
+          .noimage {
+            @include font_eng;
+            @include fontsize(1.2);
+            line-height: 40px;
+            text-align: center;
+            width: 40px;
+            float: left;
+          }
           .modal-title {
             @include fontsize(1.6);
             font-weight: bold;
@@ -352,6 +360,7 @@
           .like {
             @extend .download;
             right: 180px;
+            @include font_eng;
             i {
               color: $dark_red;
             }
@@ -412,9 +421,17 @@
                   vertical-align: top;
                   margin-top: 2px;
                 }
+                .noimage {
+                  @include font_eng;
+                  @include fontsize(1.2);
+                  line-height: 40px;
+                  text-align: center;
+                  width: 40px;
+                }
               }
               .user_comment {
                 display: table-cell;
+                vertical-align: top;
                 p {
                   @include fontsize(1.4);
                   &.name {
