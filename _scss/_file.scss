@@ -164,7 +164,8 @@
     right: 30px;
     height: 45px;
     width: 45px;
-    background: $torio_green;
+    /*background: $torio_green;*/
+    background: #f36;
     -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
     -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
@@ -276,11 +277,12 @@
       font-family: 'torio_icon';
       .bx-prev {
         position: fixed;
-        top: 300px;
-        left: -70px;
+        top: 350px;
+        left: -100px;
         height: 60px;
         width: 60px;
         overflow: hidden;
+        color: $brack;
         &:before {
           @include fontsize(6.0);
           content: "\e62d";
@@ -288,11 +290,12 @@
       }
       .bx-next {
         position: fixed;
-        top: 300px;
-        right: -70px;
+        top: 350px;
+        right: -100px;
         height: 60px;
         width: 60px;
         overflow: hidden;
+        color: $brack;
         &:before {
           @include fontsize(6.0);
           content: "\e62e";
@@ -307,39 +310,35 @@
         .modal-header {
           @include border_radius();
           position: relative;
+          padding: 30px 25px 25px;
+          border-bottom: 1px solid $border_white_gray;
+          @extend .clearfix;
           .user_image {
             float: left;
-            margin-right: 15px;
+            margin-right: 8px;
             img {
               height: 40px;
               width: 40px;
             }
           }
-          .modal-title {
-            @include fontsize(1.4);
-            font-weight: bold;
+          .noimage {
+            @include font_eng;
+            @include fontsize(1.2);
+            line-height: 40px;
+            text-align: center;
+            width: 40px;
+            float: left;
           }
-          .link {
-            position: relative;
-            padding-left: 75px;
-            a {
-              color: $white_brack;
-              &:hover {
-                color: $link_green;
-              }
-            }
-            i {
-              @include fontsize(2.6);
-              position: absolute;
-              top: 0;
-              left: 50px;
-            }
+          .modal-title {
+            @include fontsize(1.6);
+            font-weight: bold;
+            padding: 10px 0 0 0;
           }
           .option {
             @include fontsize(1.3);
             position: absolute;
-            top: 25px;
-            right: 36px;
+            top: 42px;
+            right: 45px;
             color: $white_brack;
             i {
               position: absolute;
@@ -357,11 +356,12 @@
           .download {
             @extend .option;
             padding-left: 27px;
-            right: 45px;
+            right: 60px;
           }
           .like {
             @extend .download;
-            right: 160px;
+            right: 180px;
+            @include font_eng;
             i {
               color: $dark_red;
             }
@@ -375,9 +375,33 @@
             height: auto;
           }
         }
+        .link {
+          position: relative;
+          padding: 15px 0 15px 50px;
+          @include fontsize(1.3);
+          line-height: 2.1;
+          display: block;
+          border-top: 1px solid $border_white_gray;
+          a {
+            color: $white_brack;
+            &:hover {
+              color: $link_green;
+            }
+            i {
+              @include fontsize(2.6);
+              position: absolute;
+              top: 15px;
+              left: 23px;
+              color: $white_brack;
+              &.icon-swap-horiz{
+                color: $white_brack;
+              }
+            }
+          }
+        }
         .modal-footer {
           border-top: 1px solid $border_white_gray;
-          padding: 25px 0;
+          padding: 35px 0 25px 0;
           position: relative;
           .comment {
             text-align: left;
@@ -396,13 +420,21 @@
                   width: 40px;
                   height: 40px;
                   vertical-align: top;
-                  margin-top: 3px;
+                  margin-top: 2px;
+                }
+                .noimage {
+                  @include font_eng;
+                  @include fontsize(1.2);
+                  line-height: 40px;
+                  text-align: center;
+                  width: 40px;
                 }
               }
               .user_comment {
                 display: table-cell;
+                vertical-align: top;
                 p {
-                  @include fontsize(1.5);
+                  @include fontsize(1.4);
                   &.name {
                     font-weight: bold;
                     padding-bottom: 1px;
@@ -410,11 +442,11 @@
                       margin-left: 10px;
                       font-weight: normal;
                       color: $white_brack;
-                      @include fontsize(1.3);
+                      @include fontsize(1.2);
                     }
                   }
                   &.memo {
-                    @include fontsize(1.5);
+                    @include fontsize(1.4);
                     word-wrap: break-word;
                     color: #000000;
                   }
@@ -446,7 +478,7 @@
                 }
               }
               &.btn-primary {
-                width: 100px;
+                width: 130px;
                 height: 40px;
                 line-height: 43px;
                 @include fontsize(1.3);
