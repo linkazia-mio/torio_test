@@ -302,19 +302,60 @@
               <i class="icon-list-ul"></i><input type="text" placeholder="リストを作成する"><button>作成</button>
             </div>
             <!--/Task create-->
-            <!--Task Replacement/-->
+            <!--Task Replacement 動かないもの/-->
             <div class="task_replacement">
-              <div class="dd" id="nestable">
+              <div class="dd">
                   <ol class="dd-list">
                     <!--dd-item/-->
                     <li class="dd-item dd3-item" data-id="15">
-                        <div class="dd-handle"><p>小松の担当<span class="">3</span></p></div>
+                        <div class="dd-handle"><p>原戸の担当（動かない）<span class="">5</span></p></div>
                         <ol class="dd-list">
                             <li class="dd-item dd3-item" data-id="16">
                                 <div class="dd-handle dd3-handle">
                                   <!--Task List/-->
                                   <div class="task_list">
-                                    <input type="checkbox" id="c4"><label for="c4"></label><p class="task_title">プラン選択・プロモーションページ</p>
+                                    <input type="checkbox" id="c4"><label for="c4"></label>
+                                    <p class="task_title" id="task_1">プラン選択・プロモーションページ</p>
+                                    <input class="task_title_edit" id="task_edit_1" name="task_title" style="display:none;"></input>
+                                    <p class="time"><i class="icon-access-time"></i>あと10日</p>
+                                    <p class="comment"><i class="icon-comment-outline"></i>3</p>
+                                    <p><span class="user_image"><img src="http://placehold.it/100x100"></span></p>
+                                  </div>
+                                  <!--/Task List-->
+                                </div>
+                            </li>
+                            <li class="dd-item dd3-item" data-id="16">
+                                <div class="dd-handle dd3-handle">
+                                  <!--Task List/-->
+                                  <div class="task_list">
+                                    <input type="checkbox" id="c5"><label for="c5"></label>
+                                    <p class="task_title" id="task_2">プラン選択・プロモーションページ</p>
+                                    <input class="task_title_edit" id="task_edit_2" name="task_title" style="display:none;"></input>
+                                    <p class="time"><i class="icon-access-time"></i>あと10日</p>
+                                    <p class="comment"><i class="icon-comment-outline"></i>3</p>
+                                    <p><span class="user_image"><img src="http://placehold.it/100x100"></span></p>
+                                  </div>
+                                  <!--/Task List-->
+                                </div>
+                            </li>
+                        </ol>
+                    </li>
+                    <!--/dd-item-->
+                  </ol>
+              </div>
+              <div class="dd" id="nestable">
+                  <ol class="dd-list">
+                    <!--dd-item/-->
+                    <li class="dd-item dd3-item" data-id="15">
+                        <div class="dd-handle"><p>原戸の担当<span class="">5</span></p></div>
+                        <ol class="dd-list">
+                            <li class="dd-item dd3-item" data-id="16">
+                                <div class="dd-handle dd3-handle"></div>
+                                <div class="dd3-content">
+                                  <!--Task List/-->
+                                  <div class="task_list">
+                                    <input type="checkbox" id="c1"><label for="c1"></label>
+                                    <p class="task_title"  data-toggle="modal" data-target="#task_detail">プラン選択・プロモーションページ</p>
                                     <p class="time"><i class="icon-access-time"></i>あと10日</p>
                                     <p class="comment"><i class="icon-comment-outline"></i>3</p>
                                     <p><span class="user_image"><img src="http://placehold.it/100x100"></span></p>
@@ -527,125 +568,28 @@
         </div>
       </div>
       <!--/Add File-->
-      <!--File detail/-->
-      <div class="modal fade" id="file_detail" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <!--Task Detail/-->
+      <div class="modal fade" id="task_detail" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
         <div class="modal-dialog" role="document">
           <!--modal-content_1/-->
           <div class="modal-content">
-            <div class="file_slide">
-              <!--Item/-->
-              <div class="item">
-                <div class="modal-header">
-                  <span class="user_image"><img src="http://placehold.it/100x100"></span><h4 class="modal-title" id="myModalLabel">15 Innovative Dashboard Concepts</h4>
-                  <p class="link"><a href=""><i class="icon-swap-horiz"></i>theultralinx.com</a></p>
-                  <p class="like"><i class="icon-favorite"></i>2</p>
-                  <p class="download"><a href=""><i class="icon-file-download-outline"></i>ダウンロード</a></p>
-                  <p class="option"><a href=""><i class="icon-more-horiz"></i></a></p>
-                </div>
-                <div class="image">
-                  <img src="https://s-media-cache-ak0.pinimg.com/736x/f8/15/68/f815689b00e25c4606fa71d27f6cf0d6.jpg" class="mCS_img_loaded">
-                </div>
-                <div class="modal-footer">
-                  <div class="comment">
-                    <div class="comment_inner">
-                      <div class="user_image"><img src="http://placehold.it/100x100"></div>
-                      <div class="user_comment">
-                        <p class="name">小松 健太<span class="time">3時間前</span></p>
-                        <p class="memo">本題からは大きく外れますが、ドローンなどに使うキャパシタ（バッテリー）がキャパシタ（コンデンサー）であることを最近知って驚きました。</p>
-                      </div>
-                    </div>
-                    <div class="comment_inner">
-                      <div class="user_image"><img src="http://placehold.it/100x100"></div>
-                      <div class="user_comment">
-                        <p class="name">小松 健太<span class="time">3時間前</span></p>
-                        <p class="memo">キャパシタ（コンデンサー）であることを知ってました。</p>
-                      </div>
-                    </div>
-                  </div>
-                  <textarea class="description" placeholder="コメントを入力してください…"></textarea>
-                  <p class="add_member"><i class="icon-person-plus-outline"></i></p>
-                  <p class="add_emoji"><i class="icon-emoji-outline"></i></p>
-                  <button type="button" class="btn btn-primary">コメント</button>
-                </div>
-              </div>
-              <!--/Item-->
-              <!--Item/-->
-              <div class="item">
-                <div class="modal-header">
-                  <span class="user_image"><img src="http://placehold.it/100x100"></span><h4 class="modal-title" id="myModalLabel">15 Innovative Dashboard Concepts</h4>
-                  <p class="link"><a href=""><i class="icon-swap-horiz"></i>theultralinx.com</a></p>
-                  <p class="like"><i class="icon-favorite"></i>2</p>
-                  <p class="download"><a href=""><i class="icon-file-download-outline"></i>ダウンロード</a></p>
-                  <p class="option"><a href=""><i class="icon-more-horiz"></i></a></p>
-                </div>
-                <div class="image">
-                  <img src="https://s-media-cache-ak0.pinimg.com/736x/ce/1c/12/ce1c12804736a5c6b25b98255c4a0814.jpg" alt="First slide">
-                </div>
-                <div class="modal-footer">
-                  <div class="comment">
-                    <div class="comment_inner">
-                      <div class="user_image"><img src="http://placehold.it/100x100"></div>
-                      <div class="user_comment">
-                        <p class="name">小松 健太<span class="time">3時間前</span></p>
-                        <p class="memo">本題からは大きく外れますが、ドローンなどに使うキャパシタ（バッテリー）がキャパシタ（コンデンサー）であることを最近知って驚きました。</p>
-                      </div>
-                    </div>
-                    <div class="comment_inner">
-                      <div class="user_image"><img src="http://placehold.it/100x100"></div>
-                      <div class="user_comment">
-                        <p class="name">小松 健太<span class="time">3時間前</span></p>
-                        <p class="memo">キャパシタ（コンデンサー）であることを知ってました。</p>
-                      </div>
-                    </div>
-                  </div>
-                  <textarea class="description" placeholder="コメントを入力してください…"></textarea>
-                  <p class="add_member"><i class="icon-person-plus-outline"></i></p>
-                  <p class="add_emoji"><i class="icon-emoji-outline"></i></p>
-                  <button type="button" class="btn btn-primary">コメント</button>
-                </div>
-              </div>
-              <!--/Item-->
-              <!--Item/-->
-              <div class="item">
-                <div class="modal-header">
-                  <span class="user_image"><img src="http://placehold.it/100x100"></span><h4 class="modal-title" id="myModalLabel">テスト投稿です</h4>
-                  <p class="link"><a href=""><i class="icon-swap-horiz"></i>theultralinx.com</a></p>
-                  <p class="like"><i class="icon-favorite"></i>2</p>
-                  <p class="download"><a href=""><i class="icon-file-download-outline"></i>ダウンロード</a></p>
-                  <p class="option"><a href=""><i class="icon-more-horiz"></i></a></p>
-                </div>
-                <div class="image">
-                  <img src="https://s-media-cache-ak0.pinimg.com/736x/5c/d1/c1/5cd1c1366764626f563678c440928afe.jpg" class="mCS_img_loaded">
-                </div>
-                <div class="modal-footer">
-                  <div class="comment">
-                    <div class="comment_inner">
-                      <div class="user_image"><img src="http://placehold.it/100x100"></div>
-                      <div class="user_comment">
-                        <p class="name">小松 健太<span class="time">3時間前</span></p>
-                        <p class="memo">本題からは大きく外れますが、ドローンなどに使うキャパシタ（バッテリー）がキャパシタ（コンデンサー）であることを最近知って驚きました。</p>
-                      </div>
-                    </div>
-                    <div class="comment_inner">
-                      <div class="user_image"><img src="http://placehold.it/100x100"></div>
-                      <div class="user_comment">
-                        <p class="name">小松 健太<span class="time">3時間前</span></p>
-                        <p class="memo">キャパシタ（コンデンサー）であることを知ってました。</p>
-                      </div>
-                    </div>
-                  </div>
-                  <textarea class="description" placeholder="コメントを入力してください…"></textarea>
-                  <p class="add_member"><i class="icon-person-plus-outline"></i></p>
-                  <p class="add_emoji"><i class="icon-emoji-outline"></i></p>
-                  <button type="button" class="btn btn-primary">コメント</button>
-                </div>
-              </div>
-              <!--/Item-->
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title" id="myModalLabel">新規作成</h4>
+            </div>
+            <div class="modal-body">
+              タスクの詳細が個々に入ります
+            </div>
+            <!--/modal-content_1-->
+            <div class="modal-footer">
+              <textarea class="description" placeholder="説明を入力してください"></textarea>
+              <button type="button" class="btn btn-default" data-dismiss="modal">キャンセル</button>
+              <button type="button" class="btn btn-primary">作成する</button>
             </div>
           </div>
         </div>
       </div>
-      <!--/File detail-->
+      <!--/ask Detail-->
     </div>
   </body>
 
