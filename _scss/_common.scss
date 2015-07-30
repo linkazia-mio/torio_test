@@ -140,7 +140,7 @@ header {
     left: 15px;
     color: $white_brack;
     &:hover {
-      color: $link_green;
+      color: $torio_green;
       cursor: pointer;
     }
   }
@@ -232,7 +232,7 @@ header {
     @include easeout;
     display: block;
     &:hover {
-      color: $link_green;
+      color: $torio_green;
       cursor: pointer;
     }
   }
@@ -244,6 +244,10 @@ header {
         width: 15px;
         @include fontsize(2.6);
         color: $white_brack;
+        &:hover {
+          color: $torio_green;
+          cursor: pointer;
+        }
       }
     }
   }
@@ -256,6 +260,10 @@ header {
         width: 15px;
         @include fontsize(2.6);
         color: $white_brack;
+        &:hover {
+          color: $torio_green;
+          cursor: pointer;
+        }
       }
     }
   }
@@ -579,10 +587,9 @@ header {
         top : -5px;
         @include fontsize(2.2);
         color: $white_brack;
-        button  {
-          &:hover {
-            cursor: pointer;
-          }
+        cursor: pointer;
+        &:hover {
+          color: $torio_green;
         }
         .md-trigger {
           width: 12px;
@@ -669,6 +676,9 @@ header {
       position: absolute;
       left: 83px;
       top: 16px;
+      &:hover {
+        cursor: pointer;
+      }
     }
     .favorite {
       @include fontsize(2.3);
@@ -679,6 +689,7 @@ header {
       font-weight: 700;
       &:hover {
         color: $yellow;
+        cursor: pointer;
       }
       .icon-star-outline{
         display: block;
@@ -710,7 +721,8 @@ header {
         color:$white_brack;
       }
       &:hover {
-        color: $link_green;
+        color: $torio_green;
+        cursor: pointer;
       }
     }
     .option {
@@ -720,7 +732,8 @@ header {
       right: 7px;
       top: 13px;
       &:hover {
-        color: $link_green;
+        color: $torio_green;
+        cursor: pointer;
       }
     }
     .option_box {
