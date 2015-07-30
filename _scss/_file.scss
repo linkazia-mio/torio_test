@@ -170,7 +170,7 @@
  Modal
 ---------------------------------------------------------------------------------------*/
 /*Add File*/
-#add_file,#add_file2 {
+#add_file,#add_file2,#add_file3 {
   .modal-body {
     display: table;
     table-layout: fixed;
@@ -237,6 +237,13 @@
     .web_up {
       @extend .local_up;
       border-right: none;
+      .image{
+        text-align: center;
+        margin: -60px 0 0 0;
+        img{
+          width: 80%;
+        }
+      }
     }
   }
 }
