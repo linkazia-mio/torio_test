@@ -195,7 +195,7 @@ window.onload=function(){
   var Dougnut_data = [
     {
       value: 60,
-      color:"#43aea8"
+      color:"#3A87BC"
     },
     {
       value: 40,

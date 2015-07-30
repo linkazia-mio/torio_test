@@ -1250,8 +1250,7 @@ header {
     width: 100%;
     height: 32px;
     padding: 0 10px;
-    line-height: 32px;
-    color: #ffffff; }
+    line-height: 32px; }
   .search input[type="submit"] {
     position: absolute;
     right: 1px;
@@ -1853,7 +1852,7 @@ header {
         height: 50px;
         font-family: 'Helvetica neue',Helvetica,Arial,sans-serif; }
         .page_menu .page_menu_inner .item.task .graph.green .number p {
-          color: #2e6b95; }
+          color: #3A87BC; }
         .page_menu .page_menu_inner .item.task .graph.yellow .number p {
           color: #feb22e; }
         .page_menu .page_menu_inner .item.task .graph.red .number p {
