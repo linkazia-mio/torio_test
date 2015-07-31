@@ -19,6 +19,9 @@ $(window).on('load resize', function(){
       cursor : 'move',
       handle : '.handle'
     });
+    jQuery('.task_lists').sortable({
+      cursor : 'move'
+    });
     jQuery('#nestable1').nestable();
     jQuery('#nestable2').nestable();
   });
