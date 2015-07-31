@@ -20,7 +20,8 @@ $(window).on('load resize', function(){
       handle : '.handle'
     });
     jQuery('.task_lists').sortable({
-      cursor : 'move'
+      cursor : 'move',
+      connectWith : '.task_lists'
     });
     jQuery('#nestable1').nestable();
     jQuery('#nestable2').nestable();
