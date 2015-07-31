@@ -39,6 +39,28 @@ $(function(){
 });
 
 $(function(){
+      function adjust(){
+           var h = $(window).height(); //ウィンドウの高さ
+           $('.detail .task').css('height', h-53); //可変部分の高さを適用
+      }
+     adjust();
+     $(window).on('resize', function(){
+          adjust();
+     })
+});
+
+$(function(){
+      function adjust(){
+           var h = $(window).height(); //ウィンドウの高さ
+           $('.detail .note').css('height', h-53); //可変部分の高さを適用
+      }
+     adjust();
+     $(window).on('resize', function(){
+          adjust();
+     })
+});
+
+$(function(){
      function adjust(){
           var h = $(window).height(); //ウィンドウの高さ
           $('.viewers_list').css('max-height', h/2); //可変部分の高さを適用
@@ -285,7 +307,7 @@ window.onload=function(){
     });
   });
 
-  
+
   var editor = new MediumEditor('.editable', {
       buttonLabels: 'fontawesome',
       buttons: [
@@ -351,5 +373,4 @@ window.onload=function(){
       }
     });
   });
-
 };
