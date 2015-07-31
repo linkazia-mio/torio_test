@@ -21,7 +21,14 @@ $(window).on('load resize', function(){
         $('.favorite').toggleClass('active');
       }
     );
-    jQuery('#sortable-div').sortable();
+    jQuery('#sortable-div').sortable({
+      cursor : 'move',
+      handle : '.handle'
+    });
+    jQuery('.task_lists').sortable({
+      cursor : 'move',
+      connectWith : '.task_lists'
+    });
     jQuery('#nestable1').nestable();
     jQuery('#nestable2').nestable();
   });
