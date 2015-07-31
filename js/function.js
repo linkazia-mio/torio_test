@@ -129,7 +129,7 @@ $(function(){
 });
 
 $(function(){
-  $(window).load(function(){
+  $(window).on('load resize', function(){
      $(".global_menu_inner").mCustomScrollbar({
        autoHideScrollbar: true,
        scrollInertia: 0,
