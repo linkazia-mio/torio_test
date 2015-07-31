@@ -2157,7 +2157,8 @@ header {
     .file .file_list .panel .panel-body {
       padding: 0; }
       .file .file_list .panel .panel-body.type_image .file_img {
-        position: relative; }
+        position: relative;
+        cursor: pointer; }
         .file .file_list .panel .panel-body.type_image .file_img:before {
           background: url(../images/bg_shadow.png) repeat-x left bottom;
           bottom: 0;
@@ -2200,29 +2201,36 @@ header {
             left: 8px;
             font-size: 24px;
             font-size: 2.4rem; }
-      .file .file_list .panel .panel-body.type_file .excel {
-        font-size: 80px;
-        font-size: 8rem;
-        -webkit-border-top-left-radius: 2px;
-        -webkit-border-top-right-radius: 2px;
-        -moz-border-radius-topleft: 2px;
-        -moz-border-radius-topright: 2px;
-        color: #39865a;
-        text-align: center;
-        width: 100%;
-        padding: 20% 0;
-        background: #33c16f; }
+          .file .file_list .panel .panel-body.type_image .file_img .url a {
+            color: #ffffff; }
+      .file .file_list .panel .panel-body.type_file {
+        cursor: pointer; }
+        .file .file_list .panel .panel-body.type_file .excel {
+          font-size: 80px;
+          font-size: 8rem;
+          -webkit-border-top-left-radius: 2px;
+          -webkit-border-top-right-radius: 2px;
+          -moz-border-radius-topleft: 2px;
+          -moz-border-radius-topright: 2px;
+          color: #39865a;
+          text-align: center;
+          width: 100%;
+          padding: 20% 0;
+          background: #33c16f; }
       .file .file_list .panel .panel-body .file_name {
         font-size: 14px;
         font-size: 1.4rem;
         padding: 15px 15px 10px 15px;
         font-weight: bold;
-        line-height: 1.5; }
+        line-height: 1.5;
+        cursor: pointer; }
       .file .file_list .panel .panel-body .count {
         font-size: 12px;
         font-size: 1.2rem;
         color: #8a959e;
         padding: 0 15px; }
+        .file .file_list .panel .panel-body .count a {
+          color: #8a959e; }
       .file .file_list .panel .panel-body .info {
         position: relative;
         border-top: 1px solid #f5f5f5;
