@@ -162,7 +162,7 @@ $(function(){
 //global_menu 非表示
 $(document).ready(function(){
   $(".global_menu_btn").click(function () {
-    jQuery( '.global_menu' ).toggle( 'fade', '', 100 );
+    jQuery( '.global_menu' ).toggle();
   });
 });
 
