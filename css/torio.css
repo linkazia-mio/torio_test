@@ -2879,7 +2879,7 @@ input[type="checkbox"] {
     cursor: pointer;
     float: left;
     width: 30px;
-    margin: 18px 10px 18px 15px;
+    margin: 28px 10px 18px 15px;
     /*通常時の見た目*/
     /*hover時の見た目*/ }
     input[type="checkbox"] + label::before {
@@ -2934,8 +2934,6 @@ input[type="checkbox"] {
       font-size: 1.1rem;
       font-weight: normal;
       padding-left: 10px; }
-    .task_replacement .task_people .task_title {
-      line-height: 30px; }
     .task_replacement .task_people .task_lists {
       min-height: 30px; }
     .task_replacement .task_people .task_list {
@@ -2944,10 +2942,7 @@ input[type="checkbox"] {
       -ms-border-radius: 4px;
       border-radius: 4px;
       margin: 0;
-      left: 0;
-      top: 0;
-      cursor: pointer;
-      width: 100%;
+      line-height: 50px;
       border: 1px solid #e2e2e2;
       height: 50px;
       background: #fff;
