@@ -90,9 +90,24 @@ input[type="checkbox"] {
       font-weight: normal;
       padding-left: 10px;
     }
-  }
-  .task_title {
-    line-height: 30px;
+    .task_title {
+      line-height: 30px;
+    }
+    .task_lists {
+      min-height: 30px;
+    }
+    .task_list {
+      @include border_radius();
+      margin: 0;
+      left: 0; top: 0; cursor: pointer;
+      width: 100%;
+      border: 1px solid $border_gray;
+      height: 50px;
+      background: #fff;
+      color: $white_brack;
+      clear: both;
+      border-top-right-radius: 0;
+    }
   }
   .dd {
     @include fontsize(1.3);

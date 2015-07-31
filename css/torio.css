@@ -2934,8 +2934,26 @@ input[type="checkbox"] {
       font-size: 1.1rem;
       font-weight: normal;
       padding-left: 10px; }
-  .task_replacement .task_title {
-    line-height: 30px; }
+    .task_replacement .task_people .task_title {
+      line-height: 30px; }
+    .task_replacement .task_people .task_lists {
+      min-height: 30px; }
+    .task_replacement .task_people .task_list {
+      -webkit-border-radius: 4px;
+      -moz-border-radius: 4px;
+      -ms-border-radius: 4px;
+      border-radius: 4px;
+      margin: 0;
+      left: 0;
+      top: 0;
+      cursor: pointer;
+      width: 100%;
+      border: 1px solid #e2e2e2;
+      height: 50px;
+      background: #fff;
+      color: #8a959e;
+      clear: both;
+      border-top-right-radius: 0; }
   .task_replacement .dd {
     font-size: 13px;
     font-size: 1.3rem;

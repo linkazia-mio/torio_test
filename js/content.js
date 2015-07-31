@@ -15,7 +15,7 @@ $(window).on('load resize', function(){
         $('.favorite').toggleClass('active');
       }
     );
-    jQuery('#sortable-div').sortable({
+    jQuery('.task_replacement').sortable({
       cursor : 'move',
       handle : '.handle'
     });
@@ -23,7 +23,5 @@ $(window).on('load resize', function(){
       cursor : 'move',
       connectWith : '.task_lists'
     });
-    jQuery('#nestable1').nestable();
-    jQuery('#nestable2').nestable();
   });
 });
