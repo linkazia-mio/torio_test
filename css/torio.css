@@ -2378,7 +2378,7 @@ header {
 
 #file_detail .modal-dialog {
   min-width: 600px;
-  width: 840px;
+  width: 800px;
   margin: 90px auto; }
 
 /*bx-wrapper*/
@@ -2543,8 +2543,8 @@ header {
                 word-wrap: break-word;
                 color: #000000; }
       .bx-wrapper .bx-viewport .file_slide .item .modal-footer .comment_entry {
-        width: 790px;
-        min-width: 550px;
+        width: 750px;
+        min-width: 510px;
         margin: 0 auto; }
         .bx-wrapper .bx-viewport .file_slide .item .modal-footer .comment_entry textarea {
           -webkit-border-radius: 4px;
