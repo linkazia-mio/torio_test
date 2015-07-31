@@ -29,6 +29,7 @@
         &.type_image {
           .file_img {
             position: relative;
+            cursor: pointer;
             &:before{
               background:url(#{$img_path}bg_shadow.png) repeat-x left bottom;
               bottom: 0;
@@ -72,10 +73,14 @@
                 left: 8px;
                 @include fontsize(2.4);
               }
+              a{
+                color: #ffffff;
+              }
             }
           }
         }
         &.type_file {
+          cursor: pointer;
           .excel {
             @include fontsize(8.0);
             -webkit-border-top-left-radius: 2px;
@@ -94,11 +99,15 @@
           padding: 15px 15px 10px 15px;
           font-weight: bold;
           line-height: 1.5;
+          cursor: pointer;
         }
         .count {
           @include fontsize(1.2);
           color: $white_brack;
           padding: 0 15px;
+          a{
+           color: $white_brack;
+          }
         }
         .info {
           position: relative;
