@@ -58,19 +58,19 @@ input[type="checkbox"] {
     /*hover時の見た目*/
     &:hover {
       color: $torio_green;
-    &::before {
-          background-color: $white_gray;
+      &::before {
+        background-color: $white_gray;
       }
     }
   }
   /*checked時の見た目*/
   &:checked + label {
     color: $blue;
-  &::before {
-    @include fontsize(1.5);
-    background: $torio_green !important;
-    border-color: $blue !important;
-    color: #fff !important;
+    &::before {
+      @include fontsize(1.5);
+      background: $torio_green !important;
+      border-color: $blue !important;
+      color: #fff !important;
     }
   }
 }
@@ -97,12 +97,15 @@ input[type="checkbox"] {
       @include border_radius();
       margin: 0;
       line-height: 50px;
-      border: 1px solid $border_gray;
+      /*border: 1px solid $border_gray;*/
       height: 50px;
       background: #fff;
       color: $white_brack;
       clear: both;
       border-top-right-radius: 0;
+      border: 1px solid #ededf0;
+      border-bottom: 1px solid #dcdce0;
+      box-shadow: none;
     }
   }
   .dd {
@@ -190,7 +193,8 @@ input[type="checkbox"] {
   color: $white_brack;
   text-decoration: none;
   font-weight: bold;
-  box-sizing: border-box; -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
   &:hover {
     cursor: pointer;
   }
@@ -212,12 +216,11 @@ input[type="checkbox"] {
 }
 .dd-empty {
   @include border_radius();
-    margin-top: 10px;
-    border: 1px dashed #bbb;
-    min-height: 100px;
-    background-color: $dark_gray;
-    background-size: 60px 60px;
-
+  margin-top: 10px;
+  border: 1px dashed #bbb;
+  min-height: 100px;
+  background-color: $dark_gray;
+  background-size: 60px 60px;
 }
 
 .dd-dragel {
@@ -232,7 +235,6 @@ input[type="checkbox"] {
   // box-shadow: 0 -1px 2px rgba(0, 0, 0, 0.15), inset 0 1px 0 rgba(255, 255, 255, 0.5);
  }
 
-
 /**
  * Nestable Draggable Handles
  */
@@ -245,25 +247,26 @@ input[type="checkbox"] {
   display: block;
   height: 30px;
   text-decoration: none;
-  box-sizing: border-box; -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
 }
 
 .dd-dragel > .dd3-item > .dd3-content { margin: 0; }
 
 
 .dd3-handle {
-    @include border_radius();
-    position: absolute;
-    margin: 0;
-    left: 0; top: 0; cursor: pointer;
-    width: 100%;
-    border: 1px solid $border_gray;
-    height: 50px;
-    background: #fff;
-    color: $white_brack;
-    clear: both;
-    border-top-right-radius: 0;
-    border-bottom-right-radius: 0;
+  @include border_radius();
+  position: absolute;
+  margin: 0;
+  left: 0; top: 0; cursor: pointer;
+  width: 100%;
+  border: 1px solid $border_gray;
+  height: 50px;
+  background: #fff;
+  color: $white_brack;
+  clear: both;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
 }
 .dd3-handle:hover {
   background: $white_gray;

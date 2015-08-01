@@ -2961,12 +2961,15 @@ input[type="checkbox"] {
       border-radius: 4px;
       margin: 0;
       line-height: 50px;
-      border: 1px solid #e2e2e2;
+      /*border: 1px solid $border_gray;*/
       height: 50px;
       background: #fff;
       color: #8a959e;
       clear: both;
-      border-top-right-radius: 0; }
+      border-top-right-radius: 0;
+      border: 1px solid #ededf0;
+      border-bottom: 1px solid #dcdce0;
+      box-shadow: none; }
   .task_replacement .dd {
     font-size: 13px;
     font-size: 1.3rem;
