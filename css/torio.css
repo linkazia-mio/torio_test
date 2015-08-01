@@ -1968,7 +1968,7 @@ header {
       color: #8a959e;
       top: 3px; }
       .detail .title p:hover {
-        color: #50bcb6;
+        color: #3A87BC;
         cursor: pointer; }
       .detail .title p.check {
         /*position: static;*/
@@ -2251,7 +2251,7 @@ header {
           display: inline-block;
           margin: 0 2% 0 0; }
           .file .file_list .panel .panel-body .info p:hover {
-            color: #50bcb6;
+            color: #3A87BC;
             cursor: pointer; }
           .file .file_list .panel .panel-body .info p.like .icon-favorite-outline {
             display: block; }
@@ -2380,7 +2380,7 @@ header {
 #file_detail .modal-dialog {
   min-width: 600px;
   width: 800px;
-  margin: 90px auto; }
+  margin: 60px auto; }
 
 /*bx-wrapper*/
 .bx-wrapper {
@@ -2458,7 +2458,7 @@ header {
         .bx-wrapper .bx-viewport .file_slide .item .modal-header .option a, .bx-wrapper .bx-viewport .file_slide .item .modal-header .download a, .bx-wrapper .bx-viewport .file_slide .item .modal-header .like a {
           color: #8a959e; }
           .bx-wrapper .bx-viewport .file_slide .item .modal-header .option a:hover, .bx-wrapper .bx-viewport .file_slide .item .modal-header .download a:hover, .bx-wrapper .bx-viewport .file_slide .item .modal-header .like a:hover {
-            color: #50bcb6; }
+            color: #3A87BC; }
       .bx-wrapper .bx-viewport .file_slide .item .modal-header .download, .bx-wrapper .bx-viewport .file_slide .item .modal-header .like {
         padding-left: 27px;
         right: 60px; }
@@ -2484,7 +2484,7 @@ header {
       .bx-wrapper .bx-viewport .file_slide .item .link a {
         color: #8a959e; }
         .bx-wrapper .bx-viewport .file_slide .item .link a:hover {
-          color: #50bcb6; }
+          color: #3A87BC; }
         .bx-wrapper .bx-viewport .file_slide .item .link a i {
           font-size: 26px;
           font-size: 2.6rem;
@@ -2635,7 +2635,7 @@ header {
           .carousel .carousel-inner .item .modal-header .link a {
             color: #8a959e; }
             .carousel .carousel-inner .item .modal-header .link a:hover {
-              color: #50bcb6; }
+              color: #3A87BC; }
           .carousel .carousel-inner .item .modal-header .link i {
             font-size: 26px;
             font-size: 2.6rem;
@@ -2658,7 +2658,7 @@ header {
           .carousel .carousel-inner .item .modal-header .option a, .carousel .carousel-inner .bx-wrapper .bx-viewport .file_slide .item .modal-header .download a, .bx-wrapper .bx-viewport .file_slide .carousel .carousel-inner .item .modal-header .download a, .carousel .carousel-inner .item .modal-header .download a, .carousel .carousel-inner .bx-wrapper .bx-viewport .file_slide .item .modal-header .like a, .bx-wrapper .bx-viewport .file_slide .carousel .carousel-inner .item .modal-header .like a, .carousel .carousel-inner .item .modal-header .like a {
             color: #8a959e; }
             .carousel .carousel-inner .item .modal-header .option a:hover, .carousel .carousel-inner .item .modal-header .download a:hover, .carousel .carousel-inner .item .modal-header .like a:hover {
-              color: #50bcb6; }
+              color: #3A87BC; }
         .carousel .carousel-inner .item .modal-header .download, .carousel .carousel-inner .bx-wrapper .bx-viewport .file_slide .item .modal-header .like, .bx-wrapper .bx-viewport .file_slide .carousel .carousel-inner .item .modal-header .like, .carousel .carousel-inner .item .modal-header .like {
           padding-left: 27px;
           right: 45px; }

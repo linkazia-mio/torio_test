@@ -121,7 +121,7 @@
             display: inline-block;
             margin: 0 2% 0 0;
             &:hover {
-              color: $link_green;
+              color: $torio_green;
               cursor: pointer;
             }
             &.like {
@@ -275,7 +275,7 @@
   .modal-dialog{
     min-width: 600px;
     width: 800px;
-    margin: 90px auto;
+    margin: 60px auto;
   }
 }
 
@@ -362,7 +362,7 @@
             a {
               color: $white_brack;
               &:hover {
-                color: $link_green;
+                color: $torio_green;
               }
             }
           }
@@ -398,7 +398,7 @@
           a {
             color: $white_brack;
             &:hover {
-              color: $link_green;
+              color: $torio_green;
             }
             i {
               @include fontsize(2.6);
@@ -568,7 +568,7 @@
           a {
             color: $white_brack;
             &:hover {
-              color: $link_green;
+              color: $torio_green;
             }
           }
           i {
@@ -593,7 +593,7 @@
           a {
             color: $white_brack;
             &:hover {
-              color: $link_green;
+              color: $torio_green;
             }
           }
         }
