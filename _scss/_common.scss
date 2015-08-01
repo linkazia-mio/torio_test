@@ -538,16 +538,16 @@ header {
             color: $green;
             font-weight: bold;
             &:before {
-              @include border_radius(3px);
+              @include border_radius(70px);
               position: absolute;
               top: 52%;
-              left: 18px;
+              left: 17px;
               margin-top: -3px;
               z-index: 1000;
               content: "";
-              width: 5px;
-              height: 5px;
-              background: $torio_green;
+              width: 7px;
+              height: 7px;
+              background: #2aaef5;
             }
           }
           &.selected {
@@ -813,16 +813,16 @@ header {
           .title {
             color: $green;
             &:before {
-              @include border_radius(3px);
+              @include border_radius(70px);
               position: absolute;
-              top: 30px;
-              left: 9px;
+              top: 29px;
+              left: 7px;
               margin-top: -3px;
               z-index: 1000;
               content: "";
-              width: 5px;
-              height: 5px;
-              background: $torio_green;
+              width: 7px;
+              height: 7px;
+              background: #2aaef5;
             }
           }
         }
