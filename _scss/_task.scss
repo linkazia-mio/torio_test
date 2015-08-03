@@ -173,8 +173,12 @@ input[type="checkbox"] {
           }
         }
         .task_add_member {
+          @include border_radius();
           right: 143px;
           top: -130px;
+          input {
+            margin: 20px 15px;
+          }
           ul {
             li {
               position: relative;
@@ -198,7 +202,7 @@ input[type="checkbox"] {
       i {
        @include fontsize(2.0);
      }
-      button {
+      .btn_add_task {
         @include border_radius();
         position: absolute;
         right: 15px;

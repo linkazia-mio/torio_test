@@ -83,35 +83,41 @@ $(document).ready(function(){
   $(".task_member").click(function () {
     $(".task_add_member").toggle( 'fade', '', 100 );
     event.stopPropagation();
-    $('.add_page,.check_box,.option_box,.detail_option_box').hide();
+    $('.add_page,.check_box,.option_box,.detail_option_box,.detail_check_box').hide();
   });
   //Activity
   $(".activity p").click(function () {
     $(".activity_box").toggle( 'fade', '', 100 );
     event.stopPropagation();
-    $('.add_page,.check_box,.option_box,.detail_option_box').hide();
+    $('.add_page,.check_box,.option_box,.detail_option_box,.detail_check_box').hide();
   });
   //Check box
   $(".config .check").click(function () {
     $(".check_box").toggle( 'fade', '', 100 );
     event.stopPropagation();
-    $('.add_page,.activity_box,.option_box,.detail_option_box').hide();
+    $('.add_page,.activity_box,.option_box,.detail_option_box,.detail_check_box').hide();
   });
   //Option box
   $(".config .option").click(function () {
     $(".option_box").toggle( 'fade', '', 100 );
     event.stopPropagation();
-    $('.add_page,.activity_box,.check_box,.detail_option_box').hide();
+    $('.add_page,.activity_box,.check_box,.detail_option_box,.detail_check_box').hide();
   });
   //Add page
   $(".page_menu_footer p").click(function () {
     $(".add_page").toggle( 'fade', '', 100 );
     event.stopPropagation();
-    $('.option_box,.activity_box,.check_box,.detail_option_box').hide();
+    $('.option_box,.activity_box,.check_box,.detail_option_box,.detail_check_box').hide();
   });
   //Detail_option_box
   $(".detail .option").click(function () {
     $(".detail_option_box").toggle( 'fade', '', 100 );
+    event.stopPropagation();
+    $('.option_box,.activity_box,.check_box,.add_page,.detail_check_box').hide();
+  });
+  //Detail_option_box
+  $(".detail .title .check").click(function () {
+    $(".detail_check_box").toggle( 'fade', '', 100 );
     event.stopPropagation();
     $('.option_box,.activity_box,.check_box,.add_page').hide();
   });
@@ -209,7 +215,7 @@ window.onload=function(){
           maxWidth: 400
       });
       jQuery( '.page_menu' ).resizable({
-          minWidth: 150,
+          minWidth: 280,
           maxWidth: 600
       });
       jQuery( '.detail' ).resizable({

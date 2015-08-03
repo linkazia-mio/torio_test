@@ -15,7 +15,8 @@ $(document).ready(function(){
   $('.task_input').each(function(){
     autosize(this);
   });
-
-  
+  $('.task_add_member button').click(function () {
+    $(this).toggleClass("checked");
+  });
 
 });

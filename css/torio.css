@@ -1157,6 +1157,28 @@ button:focus {
           background: #3A87BC;
           color: white;
           cursor: pointer; }
+      .popover ul li button {
+        position: relative;
+        padding: 0 20px;
+        display: block;
+        text-align: left;
+        width: 100%;
+        height: 40px; }
+        .popover ul li button:hover {
+          background: #3A87BC;
+          color: white;
+          cursor: pointer; }
+          .popover ul li button:hover .noimage {
+            color: #3A87BC;
+            background: #fff; }
+        .popover ul li button.checked:after {
+          font-size: 20px;
+          font-size: 2rem;
+          position: absolute;
+          right: 15px;
+          text-align: right;
+          font-family: 'torio_icon';
+          content: "\e649"; }
 
 .modal-backdrop {
   background: #323A45; }
@@ -1640,7 +1662,11 @@ header {
       color: #333333;
       font-weight: bold;
       float: left;
-      margin-bottom: 0; }
+      margin-bottom: 0;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      max-width: 47%; }
       .page_menu .config .title span {
         font-weight: normal;
         padding-left: 10px;
@@ -1650,9 +1676,8 @@ header {
       font-size: 22px;
       font-size: 2.2rem;
       color: #8a959e;
-      position: absolute;
-      left: 83px;
-      top: 11px; }
+      float: left;
+      margin-top: 12px; }
       .page_menu .config .check:hover {
         cursor: pointer; }
     .page_menu .config .favorite {
@@ -1737,7 +1762,7 @@ header {
         font-size: 24px;
         font-size: 2.4rem; }
     .page_menu .config .check_box {
-      left: 50px; }
+      left: 20px; }
   .page_menu .page_menu_inner {
     overflow: hidden;
     width: 100%; }
@@ -3038,8 +3063,14 @@ input[type="checkbox"] {
           .task_replacement .task_people .task_list.made textarea:focus {
             outline: none; }
         .task_replacement .task_people .task_list.made .task_add_member {
+          -webkit-border-radius: 4px;
+          -moz-border-radius: 4px;
+          -ms-border-radius: 4px;
+          border-radius: 4px;
           right: 143px;
           top: -130px; }
+          .task_replacement .task_people .task_list.made .task_add_member input {
+            margin: 20px 15px; }
           .task_replacement .task_people .task_list.made .task_add_member ul li {
             position: relative; }
             .task_replacement .task_people .task_list.made .task_add_member ul li .user_image {
@@ -3055,7 +3086,7 @@ input[type="checkbox"] {
       .task_replacement .task_people .task_list i {
         font-size: 20px;
         font-size: 2rem; }
-      .task_replacement .task_people .task_list button {
+      .task_replacement .task_people .task_list .btn_add_task {
         -webkit-border-radius: 4px;
         -moz-border-radius: 4px;
         -ms-border-radius: 4px;
