@@ -77,44 +77,39 @@ $(document).click(function() {
   $('.popover').hide();
 });
 
-//Activity
+
 $(document).ready(function(){
+  //Task Add Member
+  $(".task_member").click(function () {
+    $(".task_add_member").toggle( 'fade', '', 100 );
+    event.stopPropagation();
+    $('.add_page,.check_box,.option_box,.detail_option_box').hide();
+  });
+  //Activity
   $(".activity p").click(function () {
     $(".activity_box").toggle( 'fade', '', 100 );
     event.stopPropagation();
     $('.add_page,.check_box,.option_box,.detail_option_box').hide();
   });
-});
-
-//Check box
-$(document).ready(function(){
+  //Check box
   $(".config .check").click(function () {
     $(".check_box").toggle( 'fade', '', 100 );
     event.stopPropagation();
     $('.add_page,.activity_box,.option_box,.detail_option_box').hide();
   });
-});
-
-//Option box
-$(document).ready(function(){
+  //Option box
   $(".config .option").click(function () {
     $(".option_box").toggle( 'fade', '', 100 );
     event.stopPropagation();
     $('.add_page,.activity_box,.check_box,.detail_option_box').hide();
   });
-});
-
-//Add page
-$(document).ready(function(){
+  //Add page
   $(".page_menu_footer p").click(function () {
     $(".add_page").toggle( 'fade', '', 100 );
     event.stopPropagation();
     $('.option_box,.activity_box,.check_box,.detail_option_box').hide();
   });
-});
-
-//Detail_option_box
-$(document).ready(function(){
+  //Detail_option_box
   $(".detail .option").click(function () {
     $(".detail_option_box").toggle( 'fade', '', 100 );
     event.stopPropagation();
@@ -130,6 +125,7 @@ $(function(){
 
 $(function(){
   $(window).on('load resize', function(){
+
      $(".global_menu_inner").mCustomScrollbar({
        autoHideScrollbar: true,
        scrollInertia: 0,

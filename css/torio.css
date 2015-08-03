@@ -1702,7 +1702,7 @@ header {
         cursor: pointer; }
     .page_menu .config .option_box, .page_menu .config .check_box {
       height: auto;
-      left: 190px;
+      right: 15px;
       top: 45px;
       z-index: 1000; }
     .page_menu .config .small-button {
@@ -1909,7 +1909,7 @@ header {
       background: #3A87BC;
       color: white; }
     .page_menu .page_menu_footer .add_page {
-      left: 105px;
+      right: 15px;
       top: -118px;
       padding-top: 10px; }
       .page_menu .page_menu_footer .add_page ul {
@@ -2013,6 +2013,10 @@ header {
   box-shadow: 0px 0px 17px 0px rgba(0, 0, 0, 0.11);
   border: none; }
   .modal .modal-dialog .modal-content .modal-header {
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    border-radius: 4px;
     border-bottom: none;
     background: #fff;
     padding: 25px;
@@ -2088,7 +2092,7 @@ header {
           font-size: 13px;
           font-size: 1.3rem; }
 
-#viewers_box .modal-header {
+#viewers_box .made {
   border-bottom: 1px solid #f5f5f5;
   padding: 30px 30px 20px 30px; }
 
@@ -2865,44 +2869,42 @@ header {
     font-size: 13px;
     text-align: center; }
 
-.task {
-  padding-bottom: 30px; }
-  .task .task_create {
+.task .task_create {
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  border-radius: 4px;
+  position: relative;
+  border: 1px solid #2e6b95;
+  margin: 30px;
+  vertical-align: top;
+  line-height: 26px;
+  padding: 10px 15px;
+  background: #fff;
+  color: #8a959e; }
+  .task .task_create i {
+    font-size: 26px;
+    font-size: 2.6rem;
+    position: absolute;
+    left: 12px;
+    top: 10px; }
+  .task .task_create input {
+    width: 90%;
+    padding-left: 30px; }
+  .task .task_create button {
     -webkit-border-radius: 4px;
     -moz-border-radius: 4px;
     -ms-border-radius: 4px;
     border-radius: 4px;
-    position: relative;
-    border: 1px solid #2e6b95;
-    margin: 30px;
-    vertical-align: top;
-    line-height: 26px;
-    padding: 10px 15px;
-    background: #fff;
-    color: #8a959e; }
-    .task .task_create i {
-      font-size: 26px;
-      font-size: 2.6rem;
-      position: absolute;
-      left: 12px;
-      top: 10px; }
-    .task .task_create input {
-      width: 90%;
-      padding-left: 30px; }
-    .task .task_create button {
-      -webkit-border-radius: 4px;
-      -moz-border-radius: 4px;
-      -ms-border-radius: 4px;
-      border-radius: 4px;
-      font-size: 13px;
-      font-size: 1.3rem;
-      position: absolute;
-      right: 15px;
-      top: 10px;
-      width: 80px;
-      color: #fff;
-      font-weight: bold;
-      background: #3A87BC; }
+    font-size: 13px;
+    font-size: 1.3rem;
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    width: 80px;
+    color: #fff;
+    font-weight: bold;
+    background: #3A87BC; }
 
 /* Checkbox ------------------------------------------------*/
 input[type="checkbox"] {
@@ -2977,6 +2979,20 @@ input[type="checkbox"] {
     font-weight: bold; }
     .task_replacement .task_people .handle {
       margin-bottom: 15px; }
+    .task_replacement .task_people .finish {
+      font-size: 12px;
+      font-size: 1.2rem;
+      position: relative;
+      margin-top: 10px;
+      font-weight: normal;
+      line-height: 20px; }
+      .task_replacement .task_people .finish i {
+        font-size: 18px;
+        font-size: 1.8rem;
+        position: absolute;
+        top: 0; }
+      .task_replacement .task_people .finish span {
+        margin-left: 10px; }
     .task_replacement .task_people .placeholder {
       background: #e9e9e9;
       height: 50px;
@@ -3004,11 +3020,40 @@ input[type="checkbox"] {
       box-shadow: none;
       position: relative;
       color: #8a959e; }
+      .task_replacement .task_people .task_list.made {
+        height: auto;
+        min-height: 50px; }
+        .task_replacement .task_people .task_list.made textarea {
+          width: 75%;
+          border: none;
+          height: 35px;
+          margin-bottom: -18px;
+          overflow: hidden;
+          resize: none;
+          outline: none;
+          padding: 15px 0 15px 0;
+          line-height: 1.5;
+          resize: vertical; }
+          .task_replacement .task_people .task_list.made textarea:focus {
+            outline: none; }
+        .task_replacement .task_people .task_list.made .task_add_member {
+          right: 143px;
+          top: -130px; }
+          .task_replacement .task_people .task_list.made .task_add_member ul li {
+            position: relative; }
+            .task_replacement .task_people .task_list.made .task_add_member ul li .user_image {
+              position: static;
+              display: inline-block;
+              padding: 0 10px 0 0; }
+            .task_replacement .task_people .task_list.made .task_add_member ul li .noimage {
+              position: static;
+              display: inline-block;
+              margin-right: 10px; }
+        .task_replacement .task_people .task_list.made .task_button {
+          display: none; }
       .task_replacement .task_people .task_list i {
         font-size: 20px;
         font-size: 2rem; }
-      .task_replacement .task_people .task_list input[type] {
-        width: 85%; }
       .task_replacement .task_people .task_list button {
         -webkit-border-radius: 4px;
         -moz-border-radius: 4px;
@@ -3016,11 +3061,19 @@ input[type="checkbox"] {
         border-radius: 4px;
         position: absolute;
         right: 15px;
-        top: 11px;
+        bottom: 11px;
         line-height: 26px;
         width: 80px;
         color: #fff;
         background: #3A87BC; }
+      .task_replacement .task_people .task_list .time_create {
+        position: absolute;
+        right: 115px;
+        bottom: 13px; }
+      .task_replacement .task_people .task_list .task_member {
+        position: absolute;
+        right: 150px;
+        bottom: 13px; }
       .task_replacement .task_people .task_list .task_title {
         color: #555555;
         width: 70%; }
@@ -3049,6 +3102,15 @@ input[type="checkbox"] {
         .task_replacement .task_people .task_list .user_image img {
           height: 20px;
           width: 20px; }
+      .task_replacement .task_people .task_list .noimage {
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        width: 20px;
+        height: 20px;
+        line-height: 20px;
+        text-align: center;
+        padding: 0; }
   .task_replacement .dd {
     font-size: 13px;
     font-size: 1.3rem;

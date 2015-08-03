@@ -9,7 +9,15 @@
     <script type="text/javascript" src="js/jquery.mCustomScrollbar.js"></script>
     <script type="text/javascript" src="js/masonry.pkgd.min.js"></script>
     <script type="text/javascript" src="js/jquery.bxslider.min.js"></script>
+    <script type="text/javascript" src="js/medium-editor/jquery.ui.widget.js"></script>
+    <script type="text/javascript" src="js/medium-editor/jquery.iframe-transport.js"></script>
+    <script type="text/javascript" src="js/medium-editor/jquery.fileupload.js"></script>
+    <script type="text/javascript" src="js/medium-editor/medium-editor.min.js"></script>
+    <script type="text/javascript" src="js/medium-editor/handlebars.runtime.min.js"></script>
+    <script type="text/javascript" src="js/medium-editor/jquery-sortable-min.js"></script>
+    <script type="text/javascript" src="js/medium-editor/medium-editor-insert-plugin.min.js"></script>
     <script type="text/javascript" src="js/chart.js"></script>
+    <script type="text/javascript" src="js/autosize.min.js"></script>
     <script type="text/javascript" src="js/function.js"></script>
     <script type="text/javascript" src="js/content.js"></script>
     <link rel="stylesheet" href="css/jquery.mCustomScrollbar.css">
@@ -103,7 +111,7 @@
           <div class="config">
             <p class="title">All page<span>2</span></p>
             <p class="check"><i class="icon-expand-more"></i></p>
-            <p class="favorite"><i class="icon-star-outline"></i></p>
+            <p class="favorite"><i class="icon-star-outline"></i><i class="icon-star"></i></p>
             <p class="viewers" data-toggle="modal" data-target="#viewers_box"><i class="icon-person-outline"></i><span class="number">2</span></p>
             <p class="option"><i class="icon-more-horiz"></i></p>
             <!--<div class="small-button"><i class="icon-add"></i>Add images</div>-->
@@ -339,6 +347,7 @@
                   <input type="text" placeholder="タスクを追加する"><button>作成</button>
                 </div>
                 <!--/Task List Made-->
+                <p class="finish"><i class="icon-done"></i><span>2件のタスクが完了しました</span></p>
               </div>
               <!--/Task People/-->
               <!--Task People/-->
@@ -399,6 +408,7 @@
                   <input type="text" placeholder="タスクを追加する"><button>作成</button>
                 </div>
                 <!--/Task List Made-->
+                <p class="finish"><i class="icon-done"></i><span>2件のタスクが完了しました</span></p>
               </div>
               <!--/Task People/-->
               <!--Task People/-->
@@ -412,7 +422,7 @@
                     <p class="task_title"  data-toggle="modal" data-target="#task_detail">プラン選択・プロモーションページ</p>
                     <p class="time"><i class="icon-access-time"></i>あと30日</p>
                     <p class="comment"><i class="icon-comment-outline"></i>3</p>
-                    <p><span class="user_image"><img src="http://placehold.it/100x100"></span></p>
+                    <p><span class="noimage">TO</span></p>
                   </div>
                   <!--/Task List-->
                   <!--Task List/-->
@@ -427,14 +437,24 @@
                 </div>
                 <!--/Task Lists-->
                 <!--Task List Made/-->
-                <div class="task_list">
+                <div class="task_list made">
                   <input type="checkbox" id="c15"><label for="c15"></label>
-                  <p class="time"><i class="icon-access-time"></i></p>
-                  <p class="comment"><i class="icon-comment-outline"></i>3</p>
-                  <input type="text" placeholder="タスクを追加する"><button>追加する</button>
+                  <textarea class="task_input" placeholder="タスクを追加する"></textarea>
+                  <div class="task_button">
+                    <p class="time_create"><i class="icon-access-time"></i></p>
+                    <p class="task_member"><i class="icon-person-plus-outline"></i></p>
+                    <button>追加する</button>
+                  </div>
+                  <div class="task_add_member popover">
+                    <ul>
+                      <li><a href=""><span class="user_image"><img src="http://placehold.it/100x100"></span>小松 健太</a></li>
+                      <li><a href=""><span class="user_image"><img src="http://placehold.it/100x100"></span>原戸 陵至</a></li>
+                      <li><a href=""><span class="noimage">TO</span>大崎 太加彦</a></li>
+                    </ul>
+                  </div>
                 </div>
                 <!--/Task List Made-->
-                <i class="icon-access-time"></i>2件のタスクが完了しました
+                <p class="finish"><i class="icon-done"></i><span>2件のタスクが完了しました</span></p>
               </div>
               <!--/Task People/-->
             </div>

@@ -1,5 +1,4 @@
 .task {
-  padding-bottom: 30px;
   .task_create {
     @include border_radius();
     position: relative;
@@ -113,6 +112,21 @@ input[type="checkbox"] {
     .handle {
       margin-bottom: 15px;
     }
+    .finish {
+      @include fontsize(1.2);
+      position: relative;
+      margin-top: 10px;
+      font-weight: normal;
+      line-height: 20px;
+      i {
+        @include fontsize(1.8);
+        position: absolute;
+        top: 0;
+      }
+      span {
+        margin-left: 10px;
+      }
+    }
     .placeholder {
       background: $dark_gray;
       height: 50px;
@@ -139,23 +153,69 @@ input[type="checkbox"] {
       box-shadow: none;
       position: relative;
       color: $white_brack;
-      i {
-       @include fontsize(2.0);
-      }
-      input {
-        &[type] {
-          width: 85%;
+      &.made {
+        height: auto;
+        min-height: 50px;
+        textarea {
+          width: 75%;
+          border: none;
+          height: 35px;
+          margin-bottom: -18px;
+          overflow: hidden;
+          resize: none;
+          outline: none;
+          padding: 15px 0 15px 0;
+          line-height: 1.5;
+          resize: vertical;
+          &:focus {
+            outline: none;
+          }
+        }
+        .task_add_member {
+          right: 143px;
+          top: -130px;
+          ul {
+            li {
+              position: relative;
+              .user_image {
+               position: static;
+               display: inline-block;
+               padding: 0 10px 0 0;
+              }
+              .noimage {
+                position: static;
+                display: inline-block;
+                margin-right: 10px;
+              }
+            }
+          }
+        }
+        .task_button {
+          display: none;
         }
       }
+      i {
+       @include fontsize(2.0);
+     }
       button {
         @include border_radius();
         position: absolute;
         right: 15px;
-        top: 11px;
+        bottom: 11px;
         line-height: 26px;
         width: 80px;
         color: #fff;
         background: $torio_green;
+      }
+      .time_create {
+        position: absolute;
+        right: 115px;
+        bottom: 13px;
+      }
+      .task_member {
+        position: absolute;
+        right: 150px;
+        bottom: 13px;
       }
       .task_title {
         color: $brack;
@@ -192,6 +252,16 @@ input[type="checkbox"] {
          height: 20px;
          width: 20px;
        }
+      }
+      .noimage {
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        width: 20px;
+        height: 20px;
+        line-height: 20px;
+        text-align: center;
+        padding: 0;
       }
     }
   }
