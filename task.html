@@ -307,7 +307,15 @@
             <!--/Title-->
             <!--Task create/-->
             <div class="task_create">
-              <i class="icon-list-ul"></i><input type="text" placeholder="リストを作成する"><button>作成</button>
+              <p class="task_add_list_btn"><i class="icon-list-ul"></i></p><input type="text" placeholder="リストを作成する"><button class="btn_add_task">作成</button>
+              <div class="task_add_list_member popover">
+                <input type="text" placeholder="メンバーを探す"></input>
+                <ul>
+                  <li><button><span class="user_image"><img src="http://placehold.it/100x100"></span>小松 健太</button></li>
+                  <li><button><span class="user_image"><img src="http://placehold.it/100x100"></span>原戸 陵至</button></li>
+                  <li><button><span class="noimage">TO</span>大崎 太加彦</button></li>
+                </ul>
+              </div>
             </div>
             <!--/Task create-->
             <!--Task none/-->
@@ -455,10 +463,12 @@
                     </ul>
                   </div>
                   <div class="task_add_time popover">
-                    <input type="text" id="date"/>
-                    繰返しなし
-                    キャンセル
-                    保存する
+                    <div class="calendar">
+                      <input type="text" id="date"/>
+                    </div>
+                    <p>繰返しなし</p>
+                    <p>キャンセル</p>
+                    <p>保存する</p>
                   </div>
                 </div>
                 <!--/Task List Made-->

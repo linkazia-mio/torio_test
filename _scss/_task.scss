@@ -19,7 +19,7 @@
       width: 90%;
       padding-left: 30px;
     }
-    button {
+    .btn_add_task {
       @include border_radius();
       @include fontsize(1.3);
       position: absolute;
@@ -29,6 +29,42 @@
       color: #fff;
       font-weight: bold;
       background: $torio_green;
+    }
+    .task_add_list_member {
+      @include border_radius();
+      left: 0;
+      top: 40px;
+      input {
+        @include border_radius();
+        @include fontsize(1.3);
+        width: 220px;
+        margin: 10px 15px;
+        padding: 5px;
+        border: 1px solid $border_gray;
+      }
+      ul {
+        li {
+          position: relative;
+          .user_image {
+           position: static;
+           display: inline-block;
+           padding: 0 10px 0 0;
+           img {
+             width: 20px;
+             height: 20px;
+           }
+          }
+          .noimage {
+            @include fontsize(1.2);
+            position: static;
+            display: inline-block;
+            margin-right: 10px;
+            height: 20px;
+            width: 20px;
+            line-height: 20px;
+          }
+        }
+      }
     }
   }
 }
@@ -202,7 +238,8 @@ input[type="checkbox"] {
         }
         .task_add_time {
           right: 120px;
-          top: -190px;
+          top: -260px;
+          height: 360px;
           input {
             @include border_radius();
             @include fontsize(1.3);
@@ -315,89 +352,110 @@ input[type="checkbox"] {
     width: 80%;
   }
 }
-//Callender
-#ui-datepicker-div .ui-state-default,
-#ui-datepicker-div .ui-widget-content .ui-state-default,
-#ui-datepicker-div .ui-widget-header .ui-state-default {
-  border: none !important;
-  background: none;
-  font-weight: bold;
-  color: #1c94c4;
-}
-#ui-datepicker-div {
-  top: 0 !important;
-  &.ui-datepicker {
-    width: 220px;
-  }
-  &.ui-widget {
 
+/*---------------------------------------------------------------------------------------
+ Callender
+---------------------------------------------------------------------------------------*/
+.calendar {
+  text-align: center;
+  @include font_eng;
+  .ui-datepicker {
+      margin: 0 auto;
+      width: 220px;
   }
-  &.ui-widget-content {
-
+  .ui-state-hover {
+    &:hover {
+      background: $white_gray !important;
+    }
   }
-  &.ui-helper-clearfix {
-
+  .ui-datepicker-inline {
+    .ui-widget-header {
+      background: none;
+      border: none;
+      color: $brack;
+    }
+    .ui-datepicker-calendar {
+      a {
+        &.ui-state-active {
+          &:hover {
+            background: $green;
+          }
+        }
+        &.ui-state-hover {
+          &:hover {
+            background: $white_gray;
+          }
+        }
+      }
+    }
   }
-  &.ui-corner-all {
-
+  .ui-datepicker {
+    td {
+      a {
+        text-align: center;
+      }
+    }
+  }
+  .ui-widget {}
+  .ui-widget-content {
+    background: none;
+    border: none;
+  }
+  .ui-helper-clearfix {}
+  .ui-corner-all {}
+  .ui-datepicker-week-end,.ui-datepicker-unselectable,.ui-state-disabled {
+    span {
+      @include fontsize(1.3);
+      text-align: center;
+      padding: 0;
+    }
   }
   .ui-state-default,.ui-state-highlight {
-    border: none !important;
-  }
-  .ui-state-default,.ui-widget-content,.ui-widget-header {
+      border: none;
+    }
+    .ui-state-default,.ui-widget-content,.ui-widget-header {
+      .ui-state-default {
+        border: none;
+        background: none;
+        font-weight: bold;
+        color: $brack;
+      }
+    }
     .ui-state-default {
-      border: none
+      border: none;
       background: none;
       font-weight: bold;
       color: $brack;
     }
-  }
-  .ui-state-default {
+    .ui-state-highlight,.ui-widget-content .ui-state-highlight,.ui-widget-header .ui-state-highlight {
+      border: none;
+      background: $green !important;
+      color: $brack;
+    }
+    .ui-state-default,.ui-widget-content .ui-state-default,.ui-widget-header .ui-state-default {
     border: none;
     background: none;
     font-weight: bold;
     color: $brack;
   }
-  .ui-state-highlight,.ui-widget-content .ui-state-highlight,.ui-widget-header .ui-state-highlight {
-    border: none;
-    background: $green;
-    color: $brack;
-  }
-  .ui-state-default,.ui-widget-content .ui-state-default,.ui-widget-header .ui-state-default {
-  border: none;
-  background: none;
-  font-weight: bold;
-  color: #1c94c4; }
-  .ui-state-highlight, .ui-widget-content .ui-state-highlight, .ui-widget-header .ui-state-highlight {
-    border: none
-    background: $green;
-    color: #363636;
-  }
-  .ui-datepicker-week-end {
-    .ui-state-default {
+    .ui-state-highlight, .ui-widget-content .ui-state-highlight, .ui-widget-header .ui-state-highlight {
       border: none;
-      background: none;
+      background: $green;
+      color: #fff;
     }
-    .ui-datepicker-days-cell-over {
-      .ui-state-highlight {
-        background: $green;
+    .ui-datepicker-week-end {
+      .ui-state-default {
+        border: none;
+        background: none;
+      }
+      .ui-datepicker-days-cell-over {
+        .ui-state-highlight {
+          background: $green;
+        }
       }
     }
-  }
-  &.ui-widget-content {
-    border: none;
-    background: #fff;
-  }
-  .ui-datepicker-header,.ui-widget-header,.ui-helper-clearfix,.ui-corner-all {
-      border: 1px solid #e78f08;
-      background: none !important;
-      color: #fff;
-      font-weight: bold;
-  }
-}
-.ui-widget-header {
-  background: none !important;
-}
-.ui-widget-content {
-  border: none !important;
+    &.ui-widget-content {
+      border: none;
+      background: #fff;
+    }
 }

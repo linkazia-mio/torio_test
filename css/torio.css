@@ -2916,7 +2916,7 @@ header {
   .task .task_create input {
     width: 90%;
     padding-left: 30px; }
-  .task .task_create button {
+  .task .task_create .btn_add_task {
     -webkit-border-radius: 4px;
     -moz-border-radius: 4px;
     -ms-border-radius: 4px;
@@ -2930,6 +2930,42 @@ header {
     color: #fff;
     font-weight: bold;
     background: #3A87BC; }
+  .task .task_create .task_add_list_member {
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    border-radius: 4px;
+    left: 0;
+    top: 40px; }
+    .task .task_create .task_add_list_member input {
+      -webkit-border-radius: 4px;
+      -moz-border-radius: 4px;
+      -ms-border-radius: 4px;
+      border-radius: 4px;
+      font-size: 13px;
+      font-size: 1.3rem;
+      width: 220px;
+      margin: 10px 15px;
+      padding: 5px;
+      border: 1px solid #e2e2e2; }
+    .task .task_create .task_add_list_member ul li {
+      position: relative; }
+      .task .task_create .task_add_list_member ul li .user_image {
+        position: static;
+        display: inline-block;
+        padding: 0 10px 0 0; }
+        .task .task_create .task_add_list_member ul li .user_image img {
+          width: 20px;
+          height: 20px; }
+      .task .task_create .task_add_list_member ul li .noimage {
+        font-size: 12px;
+        font-size: 1.2rem;
+        position: static;
+        display: inline-block;
+        margin-right: 10px;
+        height: 20px;
+        width: 20px;
+        line-height: 20px; }
 
 /* Checkbox ------------------------------------------------*/
 input[type="checkbox"] {
@@ -3092,7 +3128,8 @@ input[type="checkbox"] {
               margin-right: 10px; }
         .task_replacement .task_people .task_list.made .task_add_time {
           right: 120px;
-          top: -190px; }
+          top: -260px;
+          height: 360px; }
           .task_replacement .task_people .task_list.made .task_add_time input {
             -webkit-border-radius: 4px;
             -moz-border-radius: 4px;
@@ -3190,29 +3227,68 @@ input[type="checkbox"] {
     line-height: 50px;
     width: 80%; }
 
-#ui-datepicker-div.ui-datepicker {
-  width: 220px; }
-
-#ui-datepicker-div .ui-state-default, #ui-datepicker-div .ui-widget-content .ui-state-default, #ui-datepicker-div .ui-widget-header .ui-state-default {
-  border: 1px solid #ccc;
-  background: none;
-  font-weight: bold;
-  color: #1c94c4; }
-
-#ui-datepicker-div .ui-state-highlight, #ui-datepicker-div .ui-widget-content .ui-state-highlight, #ui-datepicker-div .ui-widget-header .ui-state-highlight {
-  border: 1px solid #fed22f;
-  background: #ffe45c url("images/ui-bg_highlight-soft_75_ffe45c_1x100.png") 50% top repeat-x;
-  color: #363636; }
-
-#ui-datepicker-div .ui-datepicker-week-end .ui-state-default {
-  border: none;
-  background: none; }
-
-#ui-datepicker-div .ui-datepicker-week-end .ui-datepicker-days-cell-over .ui-state-highlight {
-  background: #2e6b95; }
-
-#ui-datepicker-div.ui-widget-content {
-  background: #fff; }
+/*---------------------------------------------------------------------------------------
+ Callender
+---------------------------------------------------------------------------------------*/
+.calendar {
+  text-align: center;
+  font-family: 'Helvetica neue',Helvetica,Arial,sans-serif; }
+  .calendar .ui-datepicker {
+    margin: 0 auto;
+    width: 220px; }
+  .calendar .ui-state-hover:hover {
+    background: #f5f5f5 !important; }
+  .calendar .ui-datepicker-inline .ui-widget-header {
+    background: none;
+    border: none;
+    color: #555555; }
+  .calendar .ui-datepicker-inline .ui-datepicker-calendar a.ui-state-active:hover {
+    background: #2e6b95; }
+  .calendar .ui-datepicker-inline .ui-datepicker-calendar a.ui-state-hover:hover {
+    background: #f5f5f5; }
+  .calendar .ui-datepicker td a {
+    text-align: center; }
+  .calendar .ui-widget-content {
+    background: none;
+    border: none; }
+  .calendar .ui-datepicker-week-end span, .calendar .ui-datepicker-unselectable span, .calendar .ui-state-disabled span {
+    font-size: 13px;
+    font-size: 1.3rem;
+    text-align: center;
+    padding: 0; }
+  .calendar .ui-state-default, .calendar .ui-state-highlight {
+    border: none; }
+  .calendar .ui-state-default .ui-state-default, .calendar .ui-widget-content .ui-state-default, .calendar .ui-widget-header .ui-state-default {
+    border: none;
+    background: none;
+    font-weight: bold;
+    color: #555555; }
+  .calendar .ui-state-default {
+    border: none;
+    background: none;
+    font-weight: bold;
+    color: #555555; }
+  .calendar .ui-state-highlight, .calendar .ui-widget-content .ui-state-highlight, .calendar .ui-widget-header .ui-state-highlight {
+    border: none;
+    background: #2e6b95 !important;
+    color: #555555; }
+  .calendar .ui-state-default, .calendar .ui-widget-content .ui-state-default, .calendar .ui-widget-header .ui-state-default {
+    border: none;
+    background: none;
+    font-weight: bold;
+    color: #555555; }
+  .calendar .ui-state-highlight, .calendar .ui-widget-content .ui-state-highlight, .calendar .ui-widget-header .ui-state-highlight {
+    border: none;
+    background: #2e6b95;
+    color: #fff; }
+  .calendar .ui-datepicker-week-end .ui-state-default {
+    border: none;
+    background: none; }
+  .calendar .ui-datepicker-week-end .ui-datepicker-days-cell-over .ui-state-highlight {
+    background: #2e6b95; }
+  .calendar.ui-widget-content {
+    border: none;
+    background: #fff; }
 
 /*---------------------------------------------------------------------------------------
  Note
