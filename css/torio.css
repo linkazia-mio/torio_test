@@ -2974,6 +2974,7 @@ input[type="checkbox"] {
   .task_replacement .task_people {
     font-size: 13px;
     font-size: 1.3rem;
+    left: 0;
     margin-bottom: 30px;
     color: #8a959e;
     font-weight: bold; }

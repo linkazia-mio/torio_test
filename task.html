@@ -9,13 +9,7 @@
     <script type="text/javascript" src="js/jquery.mCustomScrollbar.js"></script>
     <script type="text/javascript" src="js/masonry.pkgd.min.js"></script>
     <script type="text/javascript" src="js/jquery.bxslider.min.js"></script>
-    <script type="text/javascript" src="js/medium-editor/jquery.ui.widget.js"></script>
-    <script type="text/javascript" src="js/medium-editor/jquery.iframe-transport.js"></script>
-    <script type="text/javascript" src="js/medium-editor/jquery.fileupload.js"></script>
-    <script type="text/javascript" src="js/medium-editor/medium-editor.min.js"></script>
-    <script type="text/javascript" src="js/medium-editor/handlebars.runtime.min.js"></script>
-    <script type="text/javascript" src="js/medium-editor/jquery-sortable-min.js"></script>
-    <script type="text/javascript" src="js/medium-editor/medium-editor-insert-plugin.min.js"></script>
+    
     <script type="text/javascript" src="js/chart.js"></script>
     <script type="text/javascript" src="js/autosize.min.js"></script>
     <script type="text/javascript" src="js/function.js"></script>
@@ -468,51 +462,37 @@
 
       <!--Viewers/-->
       <div class="modal fade" id="viewers_box" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <button type="button" class="modal_close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <div class="modal-dialog" role="document">
           <div class="modal-content">
             <div class="modal-header">
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-              <h4 class="modal-title" id="myModalLabel">この投稿を見た人</h4>
+              <h4 class="modal-title" id="myModalLabel">このグループのメンバー</h4>
             </div>
             <div class="modal-body">
-              <div class="viewers_list">
-      					<dl>
-                  <dt><span class="user_image"><img src="http://placehold.it/100x100"></span></dt>
-      						<dd><p class="name">小松健太<a href="">友達になる</a></p></dd>
-      					</dl>
-                <dl>
-                  <dt><span class="noimage">KO</span></dt>
-      						<dd><p class="name">小松健太<a href="">友達になる</a></p></dd>
-      					</dl>
-                <dl>
-                  <dt><span class="user_image"><img src="http://placehold.it/100x100"></span></dt>
-      						<dd><p class="name">小松健太<a href="">友達になる</a></p></dd>
-      					</dl>
-                <dl>
-                  <dt><span class="noimage">KO</span></dt>
-      						<dd><p class="name">小松健太<a href="">友達になる</a></p></dd>
-      					</dl>
-                <dl>
-                  <dt><span class="noimage">KO</span></dt>
-      						<dd><p class="name">小松健太<a href="">友達になる</a></p></dd>
-      					</dl>
-                <dl>
-                  <dt><span class="user_image"><img src="http://placehold.it/100x100"></span></dt>
-      						<dd><p class="name">小松健太<a href="">友達になる</a></p></dd>
-      					</dl>
-                <dl>
-                  <dt><span class="noimage">KO</span></dt>
-      						<dd><p class="name">小松健太<a href="">友達になる</a></p></dd>
-      					</dl>
-                <dl>
-                  <dt><span class="user_image"><img src="http://placehold.it/100x100"></span></dt>
-      						<dd><p class="name">小松健太<a href="">友達になる</a></p></dd>
-      					</dl>
-                <dl>
-                  <dt><span class="user_image"><img src="http://placehold.it/100x100"></span></dt>
-      						<dd><p class="name">小松健太<a href="">友達になる</a></p></dd>
-      					</dl>
-      				</div>
+              <dl class="view_group_member">
+                <dt><p class="user_image"><img src="http://placehold.it/100x100"></p></dt>
+                <dd><p class="user_name">小松 健太</p><p class="user_friends"><a href="">友達になる</a></dd>
+              </dl>
+              <dl class="view_group_member">
+                <dt><p class="user_image"><span class="noimage">KO</span></p></dt>
+                <dd><p class="user_name">小松 健太</p><p class="user_friends"><a href="">友達になる</a></dd>
+              </dl>
+              <dl class="view_group_member">
+                <dt><p class="user_image"><img src="http://placehold.it/100x100"></p></dt>
+                <dd><p class="user_name">小松 健太</p><p class="user_friends"><a href="">友達になる</a></dd>
+              </dl>
+              <dl class="view_group_member">
+                <dt><p class="user_image"><span class="noimage">KO</span></p></dt>
+                <dd><p class="user_name">小松 健太</p><p class="user_friends"><a href="">友達になる</a></dd>
+              </dl>
+              <dl class="view_group_member">
+                <dt><p class="user_image"><span class="noimage">KO</span></p></dt>
+                <dd><p class="user_name">小松 健太</p><p class="user_friends"><a href="">友達になる</a></dd>
+              </dl>
+              <dl class="view_group_member">
+                <dt><p class="user_image"><span class="noimage">KO</span></p></dt>
+                <dd><p class="user_name">小松 健太</p><p class="user_friends"><a href="">友達になる</a></dd>
+              </dl>
             </div>
           </div>
         </div>
