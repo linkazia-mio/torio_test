@@ -3068,9 +3068,18 @@ input[type="checkbox"] {
           -ms-border-radius: 4px;
           border-radius: 4px;
           right: 143px;
-          top: -130px; }
+          top: -190px; }
           .task_replacement .task_people .task_list.made .task_add_member input {
-            margin: 20px 15px; }
+            -webkit-border-radius: 4px;
+            -moz-border-radius: 4px;
+            -ms-border-radius: 4px;
+            border-radius: 4px;
+            font-size: 13px;
+            font-size: 1.3rem;
+            width: 220px;
+            margin: 10px 15px;
+            padding: 5px;
+            border: 1px solid #e2e2e2; }
           .task_replacement .task_people .task_list.made .task_add_member ul li {
             position: relative; }
             .task_replacement .task_people .task_list.made .task_add_member ul li .user_image {

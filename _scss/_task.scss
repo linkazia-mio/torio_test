@@ -175,9 +175,14 @@ input[type="checkbox"] {
         .task_add_member {
           @include border_radius();
           right: 143px;
-          top: -130px;
+          top: -190px;
           input {
-            margin: 20px 15px;
+            @include border_radius();
+            @include fontsize(1.3);
+            width: 220px;
+            margin: 10px 15px;
+            padding: 5px;
+            border: 1px solid $border_gray;
           }
           ul {
             li {
