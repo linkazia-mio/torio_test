@@ -297,13 +297,15 @@ window.onload=function(){
         $('.favorite').toggleClass('active');
       }
     );
+    //タスク入れ替え
     jQuery('.task_replacement').sortable({
       cursor : 'move',
       handle : '.handle'
     });
     jQuery('.task_lists').sortable({
       cursor : 'move',
-      connectWith : '.task_lists'
+      connectWith : '.task_lists',
+      placeholder: 'placeholder'
     });
   });
 
