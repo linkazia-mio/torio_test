@@ -2014,7 +2014,7 @@ header {
       .detail .title p.option, .detail .title .bx-wrapper .bx-viewport .file_slide .item .modal-header p.download, .bx-wrapper .bx-viewport .file_slide .item .modal-header .detail .title p.download, .detail .title .bx-wrapper .bx-viewport .file_slide .item .modal-header p.like, .bx-wrapper .bx-viewport .file_slide .item .modal-header .detail .title p.like, .detail .title .carousel .carousel-inner .item .modal-header p.download, .carousel .carousel-inner .item .modal-header .detail .title p.download, .detail .title .carousel .carousel-inner .item .modal-header p.like, .carousel .carousel-inner .item .modal-header .detail .title p.like {
         right: 0; }
     .detail .title .detail_option_box {
-      left: 75%;
+      right: 0;
       top: 36px; }
 
 /*---------------------------------------------------------------------------------------
@@ -3090,6 +3090,20 @@ input[type="checkbox"] {
               position: static;
               display: inline-block;
               margin-right: 10px; }
+        .task_replacement .task_people .task_list.made .task_add_time {
+          right: 120px;
+          top: -190px; }
+          .task_replacement .task_people .task_list.made .task_add_time input {
+            -webkit-border-radius: 4px;
+            -moz-border-radius: 4px;
+            -ms-border-radius: 4px;
+            border-radius: 4px;
+            font-size: 13px;
+            font-size: 1.3rem;
+            width: 220px;
+            margin: 10px 15px;
+            padding: 5px;
+            border: 1px solid #e2e2e2; }
         .task_replacement .task_people .task_list.made .task_button {
           display: none; }
       .task_replacement .task_people .task_list i {
@@ -3175,6 +3189,30 @@ input[type="checkbox"] {
   .task_replacement .task_title_edit {
     line-height: 50px;
     width: 80%; }
+
+#ui-datepicker-div.ui-datepicker {
+  width: 220px; }
+
+#ui-datepicker-div .ui-state-default, #ui-datepicker-div .ui-widget-content .ui-state-default, #ui-datepicker-div .ui-widget-header .ui-state-default {
+  border: 1px solid #ccc;
+  background: none;
+  font-weight: bold;
+  color: #1c94c4; }
+
+#ui-datepicker-div .ui-state-highlight, #ui-datepicker-div .ui-widget-content .ui-state-highlight, #ui-datepicker-div .ui-widget-header .ui-state-highlight {
+  border: 1px solid #fed22f;
+  background: #ffe45c url("images/ui-bg_highlight-soft_75_ffe45c_1x100.png") 50% top repeat-x;
+  color: #363636; }
+
+#ui-datepicker-div .ui-datepicker-week-end .ui-state-default {
+  border: none;
+  background: none; }
+
+#ui-datepicker-div .ui-datepicker-week-end .ui-datepicker-days-cell-over .ui-state-highlight {
+  background: #2e6b95; }
+
+#ui-datepicker-div.ui-widget-content {
+  background: #fff; }
 
 /*---------------------------------------------------------------------------------------
  Note

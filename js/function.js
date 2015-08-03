@@ -1,196 +1,151 @@
 $(window).on('resize', function(){});
-$(function(){
-     function adjust(){
-          var h = $(window).height(); //ウィンドウの高さ
-          $('.main').css('height', h); //可変部分の高さを適用
-     };
-     function adjust(){
-          var h = $(window).height(); //ウィンドウの高さ
-          var h1= $('.page_menu .config').height(); //他要素の高さ
-          var h2= $('.page_menu .page_menu_footer').height(); //他要素の高さ
-          $('.page_menu_inner').css('height', h-h1-h2-53); //可変部分の高さを適用
-     }
-     adjust();
-     $(window).on('resize', function(){
-          adjust();
-     })
-});
-
-$(function(){
-      function adjust(){
-           var h = $(window).height(); //ウィンドウの高さ
-           $('.global_menu_inner').css('height', h-53); //可変部分の高さを適用
-      }
-     adjust();
-     $(window).on('resize', function(){
-          adjust();
-     })
-});
-
-$(function(){
-      function adjust(){
-           var h = $(window).height(); //ウィンドウの高さ
-           $('.detail .file').css('height', h-53); //可変部分の高さを適用
-      }
-     adjust();
-     $(window).on('resize', function(){
-          adjust();
-     })
-});
-
-$(function(){
-      function adjust(){
-           var h = $(window).height(); //ウィンドウの高さ
-           $('.detail .task').css('height', h-53); //可変部分の高さを適用
-      }
-     adjust();
-     $(window).on('resize', function(){
-          adjust();
-     })
-});
-
-$(function(){
-      function adjust(){
-           var h = $(window).height(); //ウィンドウの高さ
-           $('.detail .note').css('height', h-53); //可変部分の高さを適用
-      }
-     adjust();
-     $(window).on('resize', function(){
-          adjust();
-     })
-});
-
-$(function(){
-     function adjust(){
-          var h = $(window).height(); //ウィンドウの高さ
-          $('.viewers_list').css('max-height', h/2); //可変部分の高さを適用
-     }
-     adjust();
-     $(window).on('resize', function(){
-          adjust();
-     })
-});
-
-
-//エリア外をクリックしたらpopoverを消す
-$(document).click(function() {
-  $('.popover').hide();
-});
-
-
-$(document).ready(function(){
-  //Task Add Member
-  $(".task_member").click(function () {
-    $(".task_add_member").toggle( 'fade', '', 100 );
-    event.stopPropagation();
-    $('.add_page,.check_box,.option_box,.detail_option_box,.detail_check_box').hide();
-  });
-  //Activity
-  $(".activity p").click(function () {
-    $(".activity_box").toggle( 'fade', '', 100 );
-    event.stopPropagation();
-    $('.add_page,.check_box,.option_box,.detail_option_box,.detail_check_box').hide();
-  });
-  //Check box
-  $(".config .check").click(function () {
-    $(".check_box").toggle( 'fade', '', 100 );
-    event.stopPropagation();
-    $('.add_page,.activity_box,.option_box,.detail_option_box,.detail_check_box').hide();
-  });
-  //Option box
-  $(".config .option").click(function () {
-    $(".option_box").toggle( 'fade', '', 100 );
-    event.stopPropagation();
-    $('.add_page,.activity_box,.check_box,.detail_option_box,.detail_check_box').hide();
-  });
-  //Add page
-  $(".page_menu_footer p").click(function () {
-    $(".add_page").toggle( 'fade', '', 100 );
-    event.stopPropagation();
-    $('.option_box,.activity_box,.check_box,.detail_option_box,.detail_check_box').hide();
-  });
-  //Detail_option_box
-  $(".detail .option").click(function () {
-    $(".detail_option_box").toggle( 'fade', '', 100 );
-    event.stopPropagation();
-    $('.option_box,.activity_box,.check_box,.add_page,.detail_check_box').hide();
-  });
-  //Detail_option_box
-  $(".detail .title .check").click(function () {
-    $(".detail_check_box").toggle( 'fade', '', 100 );
-    event.stopPropagation();
-    $('.option_box,.activity_box,.check_box,.add_page').hide();
-  });
-});
-
-$(function(){
-  $('#add_member,#add_group,#viewers_box').on('shown.bs.modal', function () {
-    $('#myInput').focus()
-  });
-});
-
-$(function(){
-  $(window).on('load resize', function(){
-
-     $(".global_menu_inner").mCustomScrollbar({
-       autoHideScrollbar: true,
-       scrollInertia: 0,
-       advanced:{
-          autoScrollOnFocus: true,
-          updateOnContentResize: true
-        }
-     });
-     $(".page_menu_inner").mCustomScrollbar({
-       autoHideScrollbar: true,
-       scrollInertia: 0,
-       advanced:{
-          autoScrollOnFocus: true,
-          updateOnContentResize: true
-        }
-     });
-     $(".detail .file").mCustomScrollbar({
-       autoHideScrollbar: true,
-       scrollInertia: 0,
-       advanced:{
-          autoScrollOnFocus: true,
-          updateOnContentResize: true
-        }
-     });
-     $(".detail .task").mCustomScrollbar({
-       autoHideScrollbar: true,
-       scrollInertia: 0,
-       advanced:{
-          autoScrollOnFocus: true,
-          updateOnContentResize: true
-        }
-     });
-     $(".detail .note").mCustomScrollbar({
-       autoHideScrollbar: true,
-       scrollInertia: 0,
-       advanced:{
-          autoScrollOnFocus: true,
-          updateOnContentResize: true
-        }
-     });
-     $(".viewers_list").mCustomScrollbar({
-       autoHideScrollbar: true,
-       scrollInertia: 0,
-       advanced:{
-          autoScrollOnFocus: true,
-          updateOnContentResize: true
-        }
-     });
-  });
-});
-
-//global_menu 非表示
-$(document).ready(function(){
-  $(".global_menu_btn").click(function () {
-    jQuery( '.global_menu' ).toggle();
-  });
-});
 
 window.onload=function(){
+
+  $(function(){
+       function adjust(){
+            var h = $(window).height(); //ウィンドウの高さ
+            $('.main').css('height', h); //可変部分の高さを適用
+       };
+       function adjust(){
+            var h = $(window).height(); //ウィンドウの高さ
+            var h1= $('.page_menu .config').height(); //他要素の高さ
+            var h2= $('.page_menu .page_menu_footer').height(); //他要素の高さ
+            $('.page_menu_inner').css('height', h-h1-h2-53); //可変部分の高さを適用
+       }
+       adjust();
+       $(window).on('resize', function(){
+            adjust();
+       })
+  });
+
+  $(function(){
+        function adjust(){
+             var h = $(window).height(); //ウィンドウの高さ
+             $('.global_menu_inner').css('height', h-53); //可変部分の高さを適用
+        }
+       adjust();
+       $(window).on('resize', function(){
+            adjust();
+       })
+  });
+
+  $(function(){
+        function adjust(){
+             var h = $(window).height(); //ウィンドウの高さ
+             $('.detail .file').css('height', h-53); //可変部分の高さを適用
+        }
+       adjust();
+       $(window).on('resize', function(){
+            adjust();
+       })
+  });
+
+  $(function(){
+        function adjust(){
+             var h = $(window).height(); //ウィンドウの高さ
+             $('.detail .task').css('height', h-53); //可変部分の高さを適用
+        }
+       adjust();
+       $(window).on('resize', function(){
+            adjust();
+       })
+  });
+
+  $(function(){
+        function adjust(){
+             var h = $(window).height(); //ウィンドウの高さ
+             $('.detail .note').css('height', h-53); //可変部分の高さを適用
+        }
+       adjust();
+       $(window).on('resize', function(){
+            adjust();
+       })
+  });
+
+  $(function(){
+       function adjust(){
+            var h = $(window).height(); //ウィンドウの高さ
+            $('.viewers_list').css('max-height', h/2); //可変部分の高さを適用
+       }
+       adjust();
+       $(window).on('resize', function(){
+            adjust();
+       })
+  });
+
+
+  //エリア外をクリックしたらpopoverを消す
+  $(document).click(function() {
+    $('.popover').hide();
+  });
+
+
+  $(document).ready(function(){
+    //Task Add Member
+    $(".task_member").click(function () {
+      $(".task_add_member").toggle( 'fade', '', 100 );
+      event.stopPropagation();
+      $('.add_page,.check_box,.option_box,.detail_option_box,.detail_check_box,.time_create').hide();
+    });
+    //Activity
+    $(".activity p").click(function () {
+      $(".activity_box").toggle( 'fade', '', 100 );
+      event.stopPropagation();
+      $('.add_page,.check_box,.option_box,.detail_option_box,.detail_check_box,.time_create').hide();
+    });
+    //Check box
+    $(".config .check").click(function () {
+      $(".check_box").toggle( 'fade', '', 100 );
+      event.stopPropagation();
+      $('.add_page,.activity_box,.option_box,.detail_option_box,.detail_check_box,.task_add_time').hide();
+    });
+    //Option box
+    $(".config .option").click(function () {
+      $(".option_box").toggle( 'fade', '', 100 );
+      event.stopPropagation();
+      $('.add_page,.activity_box,.check_box,.detail_option_box,.detail_check_box,.task_add_time').hide();
+    });
+    //Add page
+    $(".page_menu_footer p").click(function () {
+      $(".add_page").toggle( 'fade', '', 100 );
+      event.stopPropagation();
+      $('.option_box,.activity_box,.check_box,.detail_option_box,.detail_check_box,.task_add_time').hide();
+    });
+    //Detail_option_box
+    $(".detail .option").click(function () {
+      $(".detail_option_box").toggle( 'fade', '', 100 );
+      event.stopPropagation();
+      $('.option_box,.activity_box,.check_box,.add_page,.detail_check_box,.task_add_time').hide();
+    });
+    //Detail_option_box
+    $(".detail .check").click(function () {
+      $(".detail_check_box").toggle( 'fade', '', 100 );
+      event.stopPropagation();
+      $('.option_box,.activity_box,.check_box,.add_page,.detail_option_box,.task_add_time').hide();
+    });
+    //Detail_option_box
+    $(".time_create").click(function () {
+      $(".task_add_time").toggle( 'fade', '', 100 );
+      event.stopPropagation();
+      $('.option_box,.activity_box,.check_box,.add_page,.detail_option_box').hide();
+    });
+  });
+
+  $(function(){
+    $('#add_member,#add_group,#viewers_box').on('shown.bs.modal', function () {
+      $('#myInput').focus()
+    });
+  });
+
+
+  //global_menu 非表示
+  $(document).ready(function(){
+    $(".global_menu_btn").click(function () {
+      jQuery( '.global_menu' ).toggle();
+    });
+  });
+
 
   //File可変グリッド
   $(function(){
@@ -211,11 +166,11 @@ window.onload=function(){
   //画面幅移動
   jQuery(function() {
       jQuery( '.global_menu' ).resizable({
-          minWidth: 100,
+          minWidth: 200,
           maxWidth: 400
       });
       jQuery( '.page_menu' ).resizable({
-          minWidth: 280,
+          minWidth: 310,
           maxWidth: 600
       });
       jQuery( '.detail' ).resizable({
@@ -312,3 +267,58 @@ window.onload=function(){
     );
   });
 };
+
+$(function(){
+	actCustomScrollbar();
+});
+
+function actCustomScrollbar(){
+     $(".global_menu_inner").mCustomScrollbar({
+       autoHideScrollbar: true,
+       scrollInertia: 0,
+       advanced:{
+          autoScrollOnFocus: true,
+          updateOnContentResize: true
+        }
+     });
+     $(".page_menu_inner").mCustomScrollbar({
+       autoHideScrollbar: true,
+       scrollInertia: 0,
+       advanced:{
+          autoScrollOnFocus: true,
+          updateOnContentResize: true
+        }
+     });
+     $(".detail .file").mCustomScrollbar({
+       autoHideScrollbar: true,
+       scrollInertia: 0,
+       advanced:{
+          autoScrollOnFocus: true,
+          updateOnContentResize: true
+        }
+     });
+     $(".detail .task").mCustomScrollbar({
+       autoHideScrollbar: true,
+       scrollInertia: 0,
+       advanced:{
+          autoScrollOnFocus: true,
+          updateOnContentResize: true
+        }
+     });
+     $(".detail .note").mCustomScrollbar({
+       autoHideScrollbar: true,
+       scrollInertia: 0,
+       advanced:{
+          autoScrollOnFocus: true,
+          updateOnContentResize: true
+        }
+     });
+     $(".viewers_list").mCustomScrollbar({
+       autoHideScrollbar: true,
+       scrollInertia: 0,
+       advanced:{
+          autoScrollOnFocus: true,
+          updateOnContentResize: true
+        }
+     });
+}

@@ -4,9 +4,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TORIO</title>
     <script type="text/javascript" src="js/jquery-1.11.3.js"></script>
+    <script type="text/javascript" src="js/jquery.mCustomScrollbar.js"></script>
     <script type="text/javascript" src="js/jquery-ui.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="js/jquery.mCustomScrollbar.js"></script>
     <script type="text/javascript" src="js/masonry.pkgd.min.js"></script>
     <script type="text/javascript" src="js/jquery.bxslider.min.js"></script>
 
@@ -454,6 +454,12 @@
                       <li><button><span class="noimage">TO</span>大崎 太加彦</button></li>
                     </ul>
                   </div>
+                  <div class="task_add_time popover">
+                    <input type="text" id="date"/>
+                    繰返しなし
+                    キャンセル
+                    保存する
+                  </div>
                 </div>
                 <!--/Task List Made-->
                 <p class="finish"><i class="icon-done"></i><span>2件のタスクが完了しました</span></p>
@@ -585,6 +591,7 @@
           <div class="modal-content">
             <div class="modal-header">
               <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <input type="checkbox" id="c20"><label for="c20"></label>
               <h4 class="modal-title" id="myModalLabel">オンラインのグローバルナビの追加修正</h4>
             </div>
             <div class="modal-body">

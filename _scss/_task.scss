@@ -200,6 +200,18 @@ input[type="checkbox"] {
             }
           }
         }
+        .task_add_time {
+          right: 120px;
+          top: -190px;
+          input {
+            @include border_radius();
+            @include fontsize(1.3);
+            width: 220px;
+            margin: 10px 15px;
+            padding: 5px;
+            border: 1px solid $border_gray;
+          }
+        }
         .task_button {
           display: none;
         }
@@ -302,4 +314,90 @@ input[type="checkbox"] {
     line-height: 50px;
     width: 80%;
   }
+}
+//Callender
+#ui-datepicker-div .ui-state-default,
+#ui-datepicker-div .ui-widget-content .ui-state-default,
+#ui-datepicker-div .ui-widget-header .ui-state-default {
+  border: none !important;
+  background: none;
+  font-weight: bold;
+  color: #1c94c4;
+}
+#ui-datepicker-div {
+  top: 0 !important;
+  &.ui-datepicker {
+    width: 220px;
+  }
+  &.ui-widget {
+
+  }
+  &.ui-widget-content {
+
+  }
+  &.ui-helper-clearfix {
+
+  }
+  &.ui-corner-all {
+
+  }
+  .ui-state-default,.ui-state-highlight {
+    border: none !important;
+  }
+  .ui-state-default,.ui-widget-content,.ui-widget-header {
+    .ui-state-default {
+      border: none
+      background: none;
+      font-weight: bold;
+      color: $brack;
+    }
+  }
+  .ui-state-default {
+    border: none;
+    background: none;
+    font-weight: bold;
+    color: $brack;
+  }
+  .ui-state-highlight,.ui-widget-content .ui-state-highlight,.ui-widget-header .ui-state-highlight {
+    border: none;
+    background: $green;
+    color: $brack;
+  }
+  .ui-state-default,.ui-widget-content .ui-state-default,.ui-widget-header .ui-state-default {
+  border: none;
+  background: none;
+  font-weight: bold;
+  color: #1c94c4; }
+  .ui-state-highlight, .ui-widget-content .ui-state-highlight, .ui-widget-header .ui-state-highlight {
+    border: none
+    background: $green;
+    color: #363636;
+  }
+  .ui-datepicker-week-end {
+    .ui-state-default {
+      border: none;
+      background: none;
+    }
+    .ui-datepicker-days-cell-over {
+      .ui-state-highlight {
+        background: $green;
+      }
+    }
+  }
+  &.ui-widget-content {
+    border: none;
+    background: #fff;
+  }
+  .ui-datepicker-header,.ui-widget-header,.ui-helper-clearfix,.ui-corner-all {
+      border: 1px solid #e78f08;
+      background: none !important;
+      color: #fff;
+      font-weight: bold;
+  }
+}
+.ui-widget-header {
+  background: none !important;
+}
+.ui-widget-content {
+  border: none !important;
 }

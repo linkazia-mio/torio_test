@@ -18,5 +18,17 @@ $(document).ready(function(){
   $('.task_add_member button').click(function () {
     $(this).toggleClass("checked");
   });
-
+  //カレンダー
+  $("#date").datepicker({
+    beforeShow: function(input, inst) {
+          var calendar = inst.dpDiv;
+          setTimeout(function() {
+              calendar.position({
+                  my: 'left bottom',
+                  at: 'left top',
+                  of: input
+              });
+          }, 1);
+      }
+  });
 });
