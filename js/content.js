@@ -26,8 +26,6 @@ $(document).ready(function(){
       $('.calendar').datepicker({
   		showOtherMonths: true,
   		minDate: 0,
-  		dateFormat:'yy-mm-dd',
-  		dayNamesMin:['S','M','T','W','T','F','S'],
   		onSelect: function(dateText, inst) {
   			$('#date').val(dateText);
   		}
@@ -35,20 +33,17 @@ $(document).ready(function(){
   });
   (function( factory ) {
     	if ( typeof define === "function" && define.amd ) {
-
     		// AMD. Register as an anonymous module.
     		define([ "../datepicker" ], factory );
     	} else {
-
     		// Browser globals
     		factory( jQuery.datepicker );
     	}
     }(function( datepicker ) {
-
     datepicker.regional['ja'] = {
     	closeText: '閉じる',
-    	prevText: '&#x3C;前',
-    	nextText: '次&#x3E;',
+    	prevText: '',
+    	nextText: '',
     	currentText: '今日',
     	monthNames: ['1月','2月','3月','4月','5月','6月',
     	'7月','8月','9月','10月','11月','12月'],
@@ -63,8 +58,7 @@ $(document).ready(function(){
     	isRTL: false,
     	showMonthAfterYear: true,
     	yearSuffix: '年'};
-    datepicker.setDefaults(datepicker.regional['ja']);
-    return datepicker.regional['ja'];
+      datepicker.setDefaults(datepicker.regional['ja']);
+      return datepicker.regional['ja'];
     }));
-    $.datepicker.setDefaults($.datepicker.regional['ja']);
 });

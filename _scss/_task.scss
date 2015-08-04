@@ -29,6 +29,9 @@
       color: #fff;
       font-weight: bold;
       background: $torio_green;
+      &:hover {
+        @include opacity(0.8);
+      }
     }
     .task_add_list_member {
       @include border_radius();
@@ -237,9 +240,8 @@ input[type="checkbox"] {
           }
         }
         .task_add_time {
-          right: 120px;
-          top: -260px;
-          height: 360px;
+          right: 115px;
+          top: -415px;
           input {
             @include border_radius();
             @include fontsize(1.3);
@@ -247,6 +249,45 @@ input[type="checkbox"] {
             margin: 10px 15px;
             padding: 5px;
             border: 1px solid $border_gray;
+          }
+          .select_box {
+            position: relative;
+            select {
+              width: 220px;
+              margin: 20px 15px;
+              -webkit-appearance: none;
+              -moz-appearance: none;
+              appearance: none;
+              border: 1px solid $border_gray;
+              padding: 5px 10px;
+              &:focus {
+                outline: none;
+              }
+            }
+            &:after {
+              @include fontsize(2.6);
+              position: absolute;
+              right: 20px;
+              top: 19px;
+              font-family: 'torio_icon';
+              content: "\e666";
+              color: $dark_gray;
+            }
+          }
+          .task_add_time_footer {
+            border-top: 1px solid $border_gray;
+            height: 46px;
+            .btn_cancel {
+              position: absolute;
+              right: 110px;
+              bottom: 9px;
+              line-height: 26px;
+              width: 80px;
+              color: $torio_green;
+              &:hover {
+                @include opacity(0.7);
+              }
+            }
           }
         }
         .task_button {
@@ -265,6 +306,9 @@ input[type="checkbox"] {
         width: 80px;
         color: #fff;
         background: $torio_green;
+        &:hover {
+          @include opacity(0.8);
+        }
       }
       .time_create {
         position: absolute;
@@ -360,30 +404,104 @@ input[type="checkbox"] {
   text-align: center;
   @include font_eng;
   .ui-datepicker {
-      margin: 0 auto;
-      width: 220px;
+    margin: 0 auto;
+    width: 220px;
+    th {
+      @include fontsize(1.3);
+      span {
+        @include fontsize(1.3);
+        padding: 0;
+      }
+    }
+    td {
+      &.ui-datepicker-today {
+        a {
+          background: $green !important;
+          color: #fff;
+        }
+      }
+    }
+    a {
+      color: $brack;
+    }
   }
   .ui-state-hover {
     &:hover {
-      background: $white_gray !important;
+      background: $white_gray;
     }
   }
   .ui-datepicker-inline {
+    position: relative;
     .ui-widget-header {
       background: none;
       border: none;
       color: $brack;
+      .ui-state-hover {
+        border: none;
+        background: none;
+        font-weight: normal;
+      }
+      .ui-icon {
+        background: none;
+        text-indent: 0;
+        overflow: visible;
+        &.ui-icon-circle-triangle-e {
+          &:before {
+            @include fontsize(2.6);
+            font-family: 'torio_icon';
+            content: "\e62e";
+            position: absolute;
+            right: -15px;
+            top: -8px;
+            color: $dark_gray;
+          }
+          &:hover {
+
+          }
+        }
+        &.ui-icon-circle-triangle-w {
+          &:before {
+            @include fontsize(2.6);
+            position: absolute;
+            left: -15px;
+            top: -8px;
+            font-family: 'torio_icon';
+            content: "\e62d";
+          }
+        }
+      }
+      a {
+        display: block;
+        color: $brack;
+        &.ui-datepicker-prev {
+          font-family: 'torio_icon';
+          color: $brack;
+        }
+        &.ui-datepicker-prev-hover {
+          font-family: 'torio_icon';
+          color: $brack;
+        }
+        &.ui-datepicker-next {
+          font-family: 'torio_icon';
+        }
+      }
+      .ui-datepicker-title {
+        font-weight: lighter;
+        span {
+          @include fontsize(1.3);
+          padding: 0;
+        }
+      }
     }
     .ui-datepicker-calendar {
       a {
         &.ui-state-active {
-          &:hover {
-            background: $green;
-          }
+          background: $white_green;
         }
         &.ui-state-hover {
           &:hover {
-            background: $white_gray;
+            background: $white_green;
+            border: none;
           }
         }
       }
@@ -396,13 +514,10 @@ input[type="checkbox"] {
       }
     }
   }
-  .ui-widget {}
   .ui-widget-content {
     background: none;
     border: none;
   }
-  .ui-helper-clearfix {}
-  .ui-corner-all {}
   .ui-datepicker-week-end,.ui-datepicker-unselectable,.ui-state-disabled {
     span {
       @include fontsize(1.3);
@@ -413,49 +528,18 @@ input[type="checkbox"] {
   .ui-state-default,.ui-state-highlight {
       border: none;
     }
-    .ui-state-default,.ui-widget-content,.ui-widget-header {
-      .ui-state-default {
-        border: none;
-        background: none;
-        font-weight: bold;
-        color: $brack;
-      }
-    }
+  .ui-state-default,.ui-widget-content,.ui-widget-header {
     .ui-state-default {
       border: none;
       background: none;
       font-weight: bold;
       color: $brack;
     }
-    .ui-state-highlight,.ui-widget-content .ui-state-highlight,.ui-widget-header .ui-state-highlight {
-      border: none;
-      background: $green !important;
-      color: $brack;
-    }
-    .ui-state-default,.ui-widget-content .ui-state-default,.ui-widget-header .ui-state-default {
+  }
+  .ui-state-default {
     border: none;
     background: none;
     font-weight: bold;
     color: $brack;
   }
-    .ui-state-highlight, .ui-widget-content .ui-state-highlight, .ui-widget-header .ui-state-highlight {
-      border: none;
-      background: $green;
-      color: #fff;
-    }
-    .ui-datepicker-week-end {
-      .ui-state-default {
-        border: none;
-        background: none;
-      }
-      .ui-datepicker-days-cell-over {
-        .ui-state-highlight {
-          background: $green;
-        }
-      }
-    }
-    &.ui-widget-content {
-      border: none;
-      background: #fff;
-    }
 }
