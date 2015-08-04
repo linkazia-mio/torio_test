@@ -80,4 +80,30 @@
     width: 100px;
     margin: 30px auto;
   }
+  blockquote {
+    padding: 10px 20px;
+    margin: 0 0 20px;
+    font-size: 17.5px;
+    border-left: 4px solid $dark_yellow;
+  }
+  ol {
+    padding-left: 20px;
+  }
+  ul {
+    padding-left: 20px;
+    li {
+      list-style: disc;
+    }
+  }
+  pre {
+    @include border_radius(0);
+    padding: 10px 20px;
+    display: block;
+    margin: 0 0 10px;
+    color: #333;
+    word-break: break-all;
+    word-wrap: break-word;
+    background-color: $white_gray;
+    border: none;
+  }
 }

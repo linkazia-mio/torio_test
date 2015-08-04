@@ -365,14 +365,16 @@
                   <li>いいい</li>
                   <li>ううう</li>
                 </ul>
-                <pre><code>
-                  function aFunctionName(){
-                    console.log("this works");
-                  }
-                  setTimeout("aFunctionName()",1000); //this works in regular javascript
+                <pre>
+<code>
+function aFunctionName(){
+  console.log("this works");
+}
+setTimeout("aFunctionName()",1000); //this works in regular javascript
 
-                  $timeout(aFunctionName,1000); //this works
-                  $timeout("aFunctionName()",1000); //this does not work and throws error: TypeError: fn is not a function</code></pre>
+$timeout(aFunctionName,1000); //this works
+$timeout("aFunctionName()",1000); //this does not work and throws error: TypeError: fn is not a function</code>
+                </pre>
               </article>
             </div>
             <!--Note Edit/-->
