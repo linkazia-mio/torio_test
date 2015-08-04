@@ -1252,12 +1252,11 @@ header {
           }
         }
         .comment {
-          text-align: left;
+          margin-top: 20px;
           .comment_inner {
             display: table;
             width: 100%;
             table-layout: fixed;
-            margin-bottom: 25px;
             .user_image {
               display: table-cell;
               width: 50px;

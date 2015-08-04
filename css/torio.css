@@ -2117,12 +2117,11 @@ header {
         .modal .modal-dialog .modal-content .modal-body .task_detail .information textarea:focus {
           outline: none; }
     .modal .modal-dialog .modal-content .modal-body .comment {
-      text-align: left; }
+      margin-top: 20px; }
       .modal .modal-dialog .modal-content .modal-body .comment .comment_inner {
         display: table;
         width: 100%;
-        table-layout: fixed;
-        margin-bottom: 25px; }
+        table-layout: fixed; }
         .modal .modal-dialog .modal-content .modal-body .comment .comment_inner .user_image {
           display: table-cell;
           width: 50px; }

@@ -125,6 +125,14 @@ $(document).ready(function(){
   		}
       });
   });
+
+  $(function() {
+    $('#limlt_date').datepicker({
+  		showOtherMonths: true,
+  		minDate: 0,
+      });
+  });
+
   (function( factory ) {
     	if ( typeof define === 'function' && define.amd ) {
     		// AMD. Register as an anonymous module.
@@ -156,7 +164,4 @@ $(document).ready(function(){
       return datepicker.regional['ja'];
     }));
 
-    $(function() {
-        $('#limit_date').datepicker();
-    });
 });
