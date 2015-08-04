@@ -3068,8 +3068,8 @@ input[type="checkbox"] {
     display: block;
     cursor: pointer;
     float: left;
-    width: 30px;
-    margin: 28px 10px 18px 15px;
+    width: 18px;
+    margin: 27px 10px 18px 15px;
     /*通常時の見た目*/
     /*hover時の見た目*/ }
     input[type="checkbox"] + label::before {
