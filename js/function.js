@@ -292,6 +292,15 @@ window.onload=function(){
       event.stopPropagation();
       $('.add_page,.check_box,.option_box,.detail_option_box,.detail_check_box,.task_add_list_member,.task_add_member,.task_add_requester,.limit_add_time').hide();
     });
+    //Nnote_detail_option_box
+    $(".note_option").click(function () {
+      $(".note_detail_option_box").toggle( 'fade', '', 100 );
+      event.stopPropagation();
+      $('.add_page,.check_box,.option_box,.detail_option_box,.detail_check_box,.task_add_list_member,.task_add_member,.task_add_requester,.limit_add_time').hide();
+    });
+
+
+
   });
 
   $(function(){

@@ -68,4 +68,20 @@ $(document).ready(function(){
       datepicker.setDefaults(datepicker.regional['ja']);
       return datepicker.regional['ja'];
     }));
+
+    //ノートタイトル書き換え
+    $('.note_title').click(function() {
+      $('.note_title').css( 'display', 'none');
+      $('#title_edit')
+        .val( $( '.note_title').text())
+        .css( 'display', '')
+        .focus();
+    });
+      $('#title_edit').blur(function() {
+      $('#title_edit').css( 'display', 'none');
+      $('.note_title')
+      .text($('#title_edit').val())
+      .css( 'display', '');
+    });
+
 });
