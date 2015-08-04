@@ -170,6 +170,16 @@ window.onload=function(){
       event.stopPropagation();
       $('.add_page,.check_box,.option_box,.detail_option_box,.detail_check_box,.task_add_list_member,.task_add_member').hide();
     });
+    //Limit_add_time
+    $(".limlt").click(function () {
+      $(".limit_add_time").toggle( 'fade', '', 100 );
+      event.stopPropagation();
+      $('.add_page,.check_box,.option_box,.detail_option_box,.detail_check_box,.task_add_list_member,.task_add_member').hide();
+    });
+    $('.limit_add_time').click(function () {
+      jQuery('.limit_add_time').show();
+      event.stopPropagation();
+    });
   });
 
   $(function(){

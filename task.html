@@ -394,7 +394,7 @@
                 <!--Task Lists/-->
                 <div class="task_lists">
                   <!--Task List/-->
-                  <div class="task_list">
+                  <div class="task_list important">
                     <input type="checkbox" id="c3"><label for="c3"></label>
                     <p class="task_title"  data-toggle="modal" data-target="#task_detail">プラン選択・プロモーションページ</p>
                     <p class="time"><i class="icon-access-time"></i>あと20日</p>
@@ -654,7 +654,7 @@
                   <i class="icon-person"></i><input type="textarea" placeholder="作業者を設定">
                 </div>
                 <div class="limlt">
-                  <i class="icon-access-time"></i><input id="limlt_date" type="textarea" placeholder="期限日">
+                  <i class="icon-access-time"></i><input type="textarea" placeholder="期限日">
                 </div>
                 <div class="information">
                   <textarea class="description" placeholder="詳細を入力してください"></textarea>
@@ -669,9 +669,25 @@
                   </div>
                 </div>
               </div>
-              <!-- <div class="limlt_box popover">
-                <input id="limlt_date" type="textarea" placeholder="期限日">
-              </div> -->
+              <!--/limit_add_time-->
+              <div class="limit_add_time popover">
+                <div class="calendar">
+                  <input type="text" id="limlt_date"/>
+                </div>
+                <div class="select_box">
+                  <select>
+                    <option value="">繰返しなし</option>
+                    <option value="">繰返しなし</option>
+                    <option value="">選択肢02</option>
+                    <option value="">選択肢03</option>
+                  </select>
+                </div>
+                <div class="task_add_time_footer">
+                  <button class="btn_cancel">キャンセル</button>
+                  <button class="btn_add_task">保存する</button>
+                </div>
+              </div>
+              <!--/limit_add_time-->
             </div>
             <!--/modal-content_1-->
             <div class="modal-footer gray">

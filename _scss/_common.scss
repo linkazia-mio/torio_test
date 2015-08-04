@@ -1242,7 +1242,7 @@ header {
             textarea {
               @include border_radius();
               border: 1px solid $border_gray;
-              padding: 5px;
+              padding: 13px;
               margin-top: 20px;
               width: 100%;
               &:focus {
@@ -1250,6 +1250,10 @@ header {
               }
             }
           }
+        }
+        .limit_add_time {
+          left: 200px;
+          top: 10px;
         }
         .comment {
           margin-top: 20px;
@@ -1292,7 +1296,7 @@ header {
                 &.memo {
                   @include fontsize(1.4);
                   word-wrap: break-word;
-                  color: #000000;
+                  color: #000;
                 }
               }
             }

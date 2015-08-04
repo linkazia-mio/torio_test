@@ -125,13 +125,16 @@ $(document).ready(function(){
   		}
       });
   });
-
   $(function() {
-    $('#limlt_date').datepicker({
+      $('.limit_add_time .calendar').datepicker({
   		showOtherMonths: true,
   		minDate: 0,
+  		onSelect: function(dateText, inst) {
+  			$('#limlt_date').val(dateText);
+  		}
       });
   });
+
 
   (function( factory ) {
     	if ( typeof define === 'function' && define.amd ) {
