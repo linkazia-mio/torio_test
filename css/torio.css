@@ -3597,6 +3597,7 @@ input[type="checkbox"] {
     -moz-border-radius: 4px;
     -ms-border-radius: 4px;
     border-radius: 4px;
+    position: relative;
     margin: 30px;
     padding: 20px;
     background: #fff;
@@ -3606,3 +3607,34 @@ input[type="checkbox"] {
     border: 1px solid #ededf0;
     border-bottom: 1px solid #dcdce0;
     box-shadow: none; }
+    .note .note_edit a {
+      color: #2e6b95; }
+    .note .note_edit .edit_name {
+      font-weight: bold; }
+      .note .note_edit .edit_name .user_image {
+        float: left;
+        margin-right: 12px; }
+        .note .note_edit .edit_name .user_image img {
+          width: 40px;
+          height: 40px; }
+      .note .note_edit .edit_name .writer_info {
+        font-size: 12px;
+        font-size: 1.2rem;
+        color: #8a959e; }
+    .note .note_edit .btn_add_task {
+      bottom: 10px; }
+    .note .note_edit .counter {
+      font-size: 11px;
+      font-size: 1.1rem;
+      position: absolute;
+      right: 110px;
+      bottom: 15px;
+      color: #8a959e; }
+
+/*---------------------------------------------------------------------------------------
+ Editable
+---------------------------------------------------------------------------------------*/
+.editable {
+  padding: 30px 50px; }
+  .editable p {
+    margin: 0 0 30px 0; }
