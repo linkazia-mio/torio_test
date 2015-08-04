@@ -180,6 +180,18 @@ window.onload=function(){
       jQuery('.limit_add_time').show();
       event.stopPropagation();
     });
+    //Task_add_requester
+    $(".requester input").click(function () {
+      $(".task_add_requester").toggle( 'fade', '', 100 );
+      event.stopPropagation();
+      $('.add_page,.check_box,.option_box,.detail_option_box,.detail_check_box,.task_add_list_member,.task_add_member').hide();
+    });
+    //Task_add_worker
+    $(".worker input").click(function () {
+      $(".task_add_worker").toggle( 'fade', '', 100 );
+      event.stopPropagation();
+      $('.add_page,.check_box,.option_box,.detail_option_box,.detail_check_box,.task_add_list_member,.task_add_member').hide();
+    });
   });
 
   $(function(){

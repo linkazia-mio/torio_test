@@ -3051,14 +3051,15 @@ header {
           width: 20px;
           height: 20px; }
       .task .task_create .task_add_list_member ul li .noimage {
-        font-size: 12px;
-        font-size: 1.2rem;
+        font-size: 10px;
+        font-size: 1rem;
         position: static;
         display: inline-block;
         margin-right: 10px;
         height: 20px;
         width: 20px;
-        line-height: 20px; }
+        line-height: 20px;
+        font-weight: normal; }
 
 /* Checkbox ------------------------------------------------*/
 input[type="checkbox"] {
