@@ -75,6 +75,7 @@
   }
   p {
     margin: 0 0 30px 0;
+    line-height: 1.8;
   }
   hr {
     width: 100px;
@@ -88,9 +89,11 @@
   }
   ol {
     padding-left: 20px;
+    margin-bottom: 30px;
   }
   ul {
     padding-left: 20px;
+    margin-bottom: 30px;
     li {
       list-style: disc;
     }
@@ -105,5 +108,12 @@
     word-wrap: break-word;
     background-color: $white_gray;
     border: none;
+  }
+  figure {
+    margin: 30px 0;
+  }
+  small {
+    margin: 10px 0;
+    display: block;
   }
 }

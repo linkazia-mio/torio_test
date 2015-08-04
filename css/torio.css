@@ -3658,7 +3658,8 @@ input[type="checkbox"] {
     font-weight: bold;
     margin: 0 0 40px 0; }
   .editable p {
-    margin: 0 0 30px 0; }
+    margin: 0 0 30px 0;
+    line-height: 1.8; }
   .editable hr {
     width: 100px;
     margin: 30px auto; }
@@ -3668,9 +3669,11 @@ input[type="checkbox"] {
     font-size: 17.5px;
     border-left: 4px solid #ff9933; }
   .editable ol {
-    padding-left: 20px; }
+    padding-left: 20px;
+    margin-bottom: 30px; }
   .editable ul {
-    padding-left: 20px; }
+    padding-left: 20px;
+    margin-bottom: 30px; }
     .editable ul li {
       list-style: disc; }
   .editable pre {
@@ -3686,3 +3689,8 @@ input[type="checkbox"] {
     word-wrap: break-word;
     background-color: #f5f5f5;
     border: none; }
+  .editable figure {
+    margin: 30px 0; }
+  .editable small {
+    margin: 10px 0;
+    display: block; }
