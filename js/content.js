@@ -99,11 +99,29 @@ $(document).ready(function(){
 
   //カレンダー
   $(function() {
-      $('.calendar').datepicker({
+      $('#made_1 .calendar').datepicker({
   		showOtherMonths: true,
   		minDate: 0,
   		onSelect: function(dateText, inst) {
-  			$('#date').val(dateText);
+  			$('#made_1 #date').val(dateText);
+  		}
+      });
+  });
+  $(function() {
+      $('#made_2 .calendar').datepicker({
+  		showOtherMonths: true,
+  		minDate: 0,
+  		onSelect: function(dateText, inst) {
+  			$('#made_2 #date').val(dateText);
+  		}
+      });
+  });
+  $(function() {
+      $('#made_3 .calendar').datepicker({
+  		showOtherMonths: true,
+  		minDate: 0,
+  		onSelect: function(dateText, inst) {
+  			$('#made_3 #date').val(dateText);
   		}
       });
   });

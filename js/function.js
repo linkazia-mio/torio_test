@@ -129,40 +129,40 @@ window.onload=function(){
       event.stopPropagation();
     });
     //Task_add_time
-    $("#time_create_1").click(function () {
-      $("#task_add_time_1").toggle( 'fade', '', 100 );
+    $("#made_1 .time_create").click(function () {
+      $("#made_1 .task_add_time").toggle( 'fade', '', 100 );
       event.stopPropagation();
       $('.option_box,.activity_box,.check_box,.add_page,.detail_option_box,.task_add_list_member,.task_add_member,#task_add_time_2,#task_add_time_3').hide();
     });
     //Task_add_time
-    $("#time_create_2").click(function () {
-      $("#task_add_time_2").toggle( 'fade', '', 100 );
+    $("#made_2 .time_create").click(function () {
+      $("#made_2 .task_add_time").toggle( 'fade', '', 100 );
       event.stopPropagation();
-      $('.option_box,.activity_box,.check_box,.add_page,.detail_option_box,.task_add_list_member,.task_add_member,#task_add_time_1,#task_add_time_3').hide();
+      $('.option_box,.activity_box,.check_box,.add_page,.detail_option_box,.task_add_list_member,.task_add_member,#task_add_time_2,#task_add_time_3').hide();
     });
     //Task_add_time
-    $("#time_create_3").click(function () {
-      $("#task_add_time_3").toggle( 'fade', '', 100 );
+    $("#made_3 .time_create").click(function () {
+      $("#made_3 .task_add_time").toggle( 'fade', '', 100 );
       event.stopPropagation();
-      $('.option_box,.activity_box,.check_box,.add_page,.detail_option_box,.task_add_list_member,.task_add_member,#task_add_time_1,#task_add_time_2').hide();
+      $('.option_box,.activity_box,.check_box,.add_page,.detail_option_box,.task_add_list_member,.task_add_member,#task_add_time_2,#task_add_time_3').hide();
     });
     //Task Add Member
-    $("#task_member_1").click(function () {
-      $("#task_add_member_1").toggle( 'fade', '', 100 );
+    $("#made_1 .task_member").click(function () {
+      $("#made_1 .task_add_member").toggle( 'fade', '', 100 );
       event.stopPropagation();
       $('.add_page,.check_box,.option_box,.detail_option_box,.detail_check_box,.task_add_list_member,#task_add_time_1,#task_add_time_2,#task_add_time_3').hide();
     });
     //Task Add Member
-    $("#task_member_2").click(function () {
-      $("#task_add_member_2").toggle( 'fade', '', 100 );
+    $("#made_2 .task_member").click(function () {
+      $("#made_2 .task_add_member").toggle( 'fade', '', 100 );
       event.stopPropagation();
       $('.add_page,.check_box,.option_box,.detail_option_box,.detail_check_box,.task_add_list_member,#task_add_time_1,#task_add_time_2,#task_add_time_3').hide();
     });
     //Task Add Member
-    $("#task_member_3").click(function () {
-      $("#task_add_member_3").toggle( 'fade', '', 100 );
+    $("#made_3 .task_member").click(function () {
+      $("#made_3 .task_add_member").toggle( 'fade', '', 100 );
       event.stopPropagation();
-      $('.add_page,.check_box,.option_box,.detail_option_box,.detail_check_box,.task_add_list_member,#task_add_time_1').hide();
+      $('.add_page,.check_box,.option_box,.detail_option_box,.detail_check_box,.task_add_list_member,#task_add_time_1,#task_add_time_2,#task_add_time_3').hide();
     });
   });
 
