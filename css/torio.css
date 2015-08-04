@@ -2105,6 +2105,59 @@ header {
         margin-top: 20px; }
         .modal .modal-dialog .modal-content .modal-body .task_detail .limlt i {
           color: #db4c3f; }
+      .modal .modal-dialog .modal-content .modal-body .task_detail .information textarea {
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+        -ms-border-radius: 4px;
+        border-radius: 4px;
+        border: 1px solid #e2e2e2;
+        padding: 5px;
+        margin-top: 20px;
+        width: 100%; }
+        .modal .modal-dialog .modal-content .modal-body .task_detail .information textarea:focus {
+          outline: none; }
+    .modal .modal-dialog .modal-content .modal-body .comment {
+      text-align: left; }
+      .modal .modal-dialog .modal-content .modal-body .comment .comment_inner {
+        display: table;
+        width: 100%;
+        table-layout: fixed;
+        margin-bottom: 25px; }
+        .modal .modal-dialog .modal-content .modal-body .comment .comment_inner .user_image {
+          display: table-cell;
+          width: 50px; }
+          .modal .modal-dialog .modal-content .modal-body .comment .comment_inner .user_image img {
+            width: 40px;
+            height: 40px;
+            vertical-align: top;
+            margin-top: 2px; }
+          .modal .modal-dialog .modal-content .modal-body .comment .comment_inner .user_image .noimage {
+            font-family: 'Helvetica neue',Helvetica,Arial,sans-serif;
+            font-size: 12px;
+            font-size: 1.2rem;
+            line-height: 40px;
+            text-align: center;
+            width: 40px; }
+        .modal .modal-dialog .modal-content .modal-body .comment .comment_inner .user_comment {
+          display: table-cell;
+          vertical-align: top; }
+          .modal .modal-dialog .modal-content .modal-body .comment .comment_inner .user_comment p {
+            font-size: 14px;
+            font-size: 1.4rem; }
+            .modal .modal-dialog .modal-content .modal-body .comment .comment_inner .user_comment p.name {
+              font-weight: bold;
+              padding-bottom: 1px; }
+              .modal .modal-dialog .modal-content .modal-body .comment .comment_inner .user_comment p.name .time {
+                margin-left: 10px;
+                font-weight: normal;
+                color: #8a959e;
+                font-size: 12px;
+                font-size: 1.2rem; }
+            .modal .modal-dialog .modal-content .modal-body .comment .comment_inner .user_comment p.memo {
+              font-size: 14px;
+              font-size: 1.4rem;
+              word-wrap: break-word;
+              color: #000000; }
   .modal .modal-dialog .modal-content .modal-footer {
     border-top: none;
     padding: 25px;

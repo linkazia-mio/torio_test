@@ -2,7 +2,7 @@ $(document).ready(function(){
 
   //タスク入力部分
   $('#made_1.task_input').click(function () {
-    $(this).css("padding_bottom","15px");
+    $(this).css('padding_bottom','15px');
     jQuery('.task_button').show();
     event.stopPropagation();
   });
@@ -17,13 +17,13 @@ $(document).ready(function(){
     autosize(this);
   });
   $('#made_1 .task_add_member button').click(function () {
-    $(this).toggleClass("checked");
+    $(this).toggleClass('checked');
   });
   $('#made_1 .task_add_list_member button').click(function () {
-    $(this).toggleClass("checked");
+    $(this).toggleClass('checked');
   });
   $('#made_1.task_input').click(function () {
-    $(this).css("padding_bottom","15px");
+    $(this).css('padding_bottom','15px');
     jQuery('.task_button').show();
     event.stopPropagation();
   });
@@ -34,7 +34,7 @@ $(document).ready(function(){
 
 
   $('#made_2.task_input').click(function () {
-    $(this).css("padding_bottom","15px");
+    $(this).css('padding_bottom','15px');
     jQuery('.task_button').show();
     event.stopPropagation();
   });
@@ -49,13 +49,13 @@ $(document).ready(function(){
     autosize(this);
   });
   $('#made_2 .task_add_member button').click(function () {
-    $(this).toggleClass("checked");
+    $(this).toggleClass('checked');
   });
   $('#made_2 .task_add_list_member button').click(function () {
-    $(this).toggleClass("checked");
+    $(this).toggleClass('checked');
   });
   $('#made_2.task_input').click(function () {
-    $(this).css("padding_bottom","15px");
+    $(this).css('padding_bottom','15px');
     jQuery('.task_button').show();
     event.stopPropagation();
   });
@@ -66,7 +66,7 @@ $(document).ready(function(){
 
 
   $('#made_3.task_input').click(function () {
-    $(this).css("padding_bottom","15px");
+    $(this).css('padding_bottom','15px');
     jQuery('.task_button').show();
     event.stopPropagation();
   });
@@ -81,13 +81,13 @@ $(document).ready(function(){
     autosize(this);
   });
   $('#made_3 .task_add_member button').click(function () {
-    $(this).toggleClass("checked");
+    $(this).toggleClass('checked');
   });
   $('#made_3 .task_add_list_member button').click(function () {
-    $(this).toggleClass("checked");
+    $(this).toggleClass('checked');
   });
   $('#made_3.task_input').click(function () {
-    $(this).css("padding_bottom","15px");
+    $(this).css('padding_bottom','15px');
     jQuery('.task_button').show();
     event.stopPropagation();
   });
@@ -126,9 +126,9 @@ $(document).ready(function(){
       });
   });
   (function( factory ) {
-    	if ( typeof define === "function" && define.amd ) {
+    	if ( typeof define === 'function' && define.amd ) {
     		// AMD. Register as an anonymous module.
-    		define([ "../datepicker" ], factory );
+    		define([ '../datepicker' ], factory );
     	} else {
     		// Browser globals
     		factory( jQuery.datepicker );
@@ -155,4 +155,8 @@ $(document).ready(function(){
       datepicker.setDefaults(datepicker.regional['ja']);
       return datepicker.regional['ja'];
     }));
+
+    $(function() {
+        $('#limit_date').datepicker();
+    });
 });

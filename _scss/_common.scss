@@ -1237,6 +1237,67 @@ header {
               color: $dark_red;
             }
           }
+          .information {
+            @extend .limit;
+            textarea {
+              @include border_radius();
+              border: 1px solid $border_gray;
+              padding: 5px;
+              margin-top: 20px;
+              width: 100%;
+              &:focus {
+                outline: none;
+              }
+            }
+          }
+        }
+        .comment {
+          text-align: left;
+          .comment_inner {
+            display: table;
+            width: 100%;
+            table-layout: fixed;
+            margin-bottom: 25px;
+            .user_image {
+              display: table-cell;
+              width: 50px;
+              img {
+                width: 40px;
+                height: 40px;
+                vertical-align: top;
+                margin-top: 2px;
+              }
+              .noimage {
+                @include font_eng;
+                @include fontsize(1.2);
+                line-height: 40px;
+                text-align: center;
+                width: 40px;
+              }
+            }
+            .user_comment {
+              display: table-cell;
+              vertical-align: top;
+              p {
+                @include fontsize(1.4);
+                &.name {
+                  font-weight: bold;
+                  padding-bottom: 1px;
+                  .time {
+                    margin-left: 10px;
+                    font-weight: normal;
+                    color: $white_brack;
+                    @include fontsize(1.2);
+                  }
+                }
+                &.memo {
+                  @include fontsize(1.4);
+                  word-wrap: break-word;
+                  color: #000000;
+                }
+              }
+            }
+          }
         }
       }
       .modal-footer  {
