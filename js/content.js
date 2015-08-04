@@ -1,26 +1,102 @@
-//タスク入力部分
 $(document).ready(function(){
-  $('.task_input').click(function () {
+
+  //タスク入力部分
+  $('#made_1.task_input').click(function () {
     $(this).css("padding_bottom","15px");
     jQuery('.task_button').show();
     event.stopPropagation();
   });
-  $('.made').click(function () {
-    jQuery('.task_button').show();
+  $('#made_1.made').click(function () {
+    jQuery('#made_1 .task_button').show();
     event.stopPropagation();
   });
   $(document).click(function() {
-    $('.task_button').hide();
+    $('#made_1 .task_button').hide();
   });
-  $('.task_input').each(function(){
+  $('#made_1 .task_input').each(function(){
     autosize(this);
   });
-  $('.task_add_member button').click(function () {
+  $('#made_1 .task_add_member button').click(function () {
     $(this).toggleClass("checked");
   });
-  $('.task_add_list_member button').click(function () {
+  $('#made_1 .task_add_list_member button').click(function () {
     $(this).toggleClass("checked");
   });
+  $('#made_1.task_input').click(function () {
+    $(this).css("padding_bottom","15px");
+    jQuery('.task_button').show();
+    event.stopPropagation();
+  });
+  $('#made_1 .made').click(function () {
+    jQuery('#made_1 .task_button').show();
+    event.stopPropagation();
+  });
+
+
+  $('#made_2.task_input').click(function () {
+    $(this).css("padding_bottom","15px");
+    jQuery('.task_button').show();
+    event.stopPropagation();
+  });
+  $('#made_2.made').click(function () {
+    jQuery('#made_2 .task_button').show();
+    event.stopPropagation();
+  });
+  $(document).click(function() {
+    $('#made_2 .task_button').hide();
+  });
+  $('#made_2 .task_input').each(function(){
+    autosize(this);
+  });
+  $('#made_2 .task_add_member button').click(function () {
+    $(this).toggleClass("checked");
+  });
+  $('#made_2 .task_add_list_member button').click(function () {
+    $(this).toggleClass("checked");
+  });
+  $('#made_2.task_input').click(function () {
+    $(this).css("padding_bottom","15px");
+    jQuery('.task_button').show();
+    event.stopPropagation();
+  });
+  $('#made_2 .made').click(function () {
+    jQuery('#made_2 .task_button').show();
+    event.stopPropagation();
+  });
+
+
+  $('#made_3.task_input').click(function () {
+    $(this).css("padding_bottom","15px");
+    jQuery('.task_button').show();
+    event.stopPropagation();
+  });
+  $('#made_3.made').click(function () {
+    jQuery('#made_3 .task_button').show();
+    event.stopPropagation();
+  });
+  $(document).click(function() {
+    $('#made_3 .task_button').hide();
+  });
+  $('#made_3 .task_input').each(function(){
+    autosize(this);
+  });
+  $('#made_3 .task_add_member button').click(function () {
+    $(this).toggleClass("checked");
+  });
+  $('#made_3 .task_add_list_member button').click(function () {
+    $(this).toggleClass("checked");
+  });
+  $('#made_3.task_input').click(function () {
+    $(this).css("padding_bottom","15px");
+    jQuery('.task_button').show();
+    event.stopPropagation();
+  });
+  $('#made_3 .made').click(function () {
+    jQuery('#made_3 .task_button').show();
+    event.stopPropagation();
+  });
+
+
   //カレンダー
   $(function() {
       $('.calendar').datepicker({

@@ -350,9 +350,39 @@
                 </div>
                 <!--/Task Lists-->
                 <!--Task List Made/-->
-                <div class="task_list">
-                  <input type="checkbox" id="c5"><label for="c5"></label>
-                  <input type="text" placeholder="タスクを追加する"><button>作成</button>
+                <div class="task_list made" id="made_1">
+                  <input type="checkbox" id="c15"><label for="c15"></label>
+                  <textarea class="task_input" placeholder="タスクを追加する"></textarea>
+                  <div class="task_button">
+                    <p class="time_create" id="time_create_1"><i class="icon-access-time"></i></p>
+                    <p class="task_member"  id="task_member_1"><i class="icon-person-plus-outline"></i></p>
+                    <button class="btn_add_task">追加する</button>
+                  </div>
+                  <div class="task_add_member popover" id="task_add_member_1">
+                    <input type="text" placeholder="メンバーを探す"></input>
+                    <ul>
+                      <li><button><span class="user_image"><img src="http://placehold.it/100x100"></span>小松 健太</button></li>
+                      <li><button><span class="user_image"><img src="http://placehold.it/100x100"></span>原戸 陵至</button></li>
+                      <li><button><span class="noimage">TO</span>大崎 太加彦</button></li>
+                    </ul>
+                  </div>
+                  <div class="task_add_time popover" id="task_add_time_1">
+                    <div class="calendar">
+                      <input type="text" id="date"/>
+                    </div>
+                    <div class="select_box">
+                      <select>
+                    		<option value="">繰返しなし</option>
+                    		<option value="">繰返しなし</option>
+                    		<option value="">選択肢02</option>
+                    		<option value="">選択肢03</option>
+                    	</select>
+                    </div>
+                    <div class="task_add_time_footer">
+                      <button class="btn_cancel">キャンセル</button>
+                      <button class="btn_add_task">保存する</button>
+                    </div>
+                  </div>
                 </div>
                 <!--/Task List Made-->
                 <p class="finish"><i class="icon-done"></i><span>2件のタスクが完了しました</span></p>
@@ -411,9 +441,39 @@
                 </div>
                 <!--/Task Lists-->
                 <!--Task List Made/-->
-                <div class="task_list">
-                  <input type="checkbox" id="c6"><label for="c6"></label>
-                  <input type="text" placeholder="タスクを追加する"><button>作成</button>
+                <div class="task_list made"  id="made_2">
+                  <input type="checkbox" id="c15"><label for="c15"></label>
+                  <textarea class="task_input" placeholder="タスクを追加する"></textarea>
+                  <div class="task_button">
+                    <p class="time_create"><i class="icon-access-time"></i></p>
+                    <p class="task_member"><i class="icon-person-plus-outline"></i></p>
+                    <button class="btn_add_task">追加する</button>
+                  </div>
+                  <div class="task_add_member popover">
+                    <input type="text" placeholder="メンバーを探す"></input>
+                    <ul>
+                      <li><button><span class="user_image"><img src="http://placehold.it/100x100"></span>小松 健太</button></li>
+                      <li><button><span class="user_image"><img src="http://placehold.it/100x100"></span>原戸 陵至</button></li>
+                      <li><button><span class="noimage">TO</span>大崎 太加彦</button></li>
+                    </ul>
+                  </div>
+                  <div class="task_add_time popover">
+                    <div class="calendar">
+                      <input type="text" id="date"/>
+                    </div>
+                    <div class="select_box">
+                      <select>
+                    		<option value="">繰返しなし</option>
+                    		<option value="">繰返しなし</option>
+                    		<option value="">選択肢02</option>
+                    		<option value="">選択肢03</option>
+                    	</select>
+                    </div>
+                    <div class="task_add_time_footer">
+                      <button class="btn_cancel">キャンセル</button>
+                      <button class="btn_add_task">保存する</button>
+                    </div>
+                  </div>
                 </div>
                 <!--/Task List Made-->
                 <p class="finish"><i class="icon-done"></i><span>2件のタスクが完了しました</span></p>
@@ -445,7 +505,7 @@
                 </div>
                 <!--/Task Lists-->
                 <!--Task List Made/-->
-                <div class="task_list made">
+                <div class="task_list made"  id="made_3">
                   <input type="checkbox" id="c15"><label for="c15"></label>
                   <textarea class="task_input" placeholder="タスクを追加する"></textarea>
                   <div class="task_button">
