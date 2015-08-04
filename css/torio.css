@@ -2038,37 +2038,89 @@ header {
   box-shadow: 0px 0px 17px 0px rgba(0, 0, 0, 0.11);
   border: none; }
   .modal .modal-dialog .modal-content .modal-header {
-    -webkit-border-radius: 4px;
-    -moz-border-radius: 4px;
-    -ms-border-radius: 4px;
-    border-radius: 4px;
-    border-bottom: none;
-    background: #fff;
-    padding: 25px;
     -webkit-border-radius: 4 4 0 0;
     -moz-border-radius: 4 4 0 0;
     -ms-border-radius: 4 4 0 0;
-    border-radius: 4 4 0 0; }
+    border-radius: 4 4 0 0;
+    border-bottom: none;
+    background: #fff;
+    padding: 25px; }
     .modal .modal-dialog .modal-content .modal-header .modal-title {
-      font-size: 16px;
-      font-size: 1.6rem; }
+      font-size: 14px;
+      font-size: 1.4rem;
+      font-weight: bold; }
     .modal .modal-dialog .modal-content .modal-header .close {
       margin-top: -8px; }
+    .modal .modal-dialog .modal-content .modal-header .option, .modal .modal-dialog .modal-content .bx-wrapper .bx-viewport .file_slide .item .modal-header .download, .bx-wrapper .bx-viewport .file_slide .item .modal .modal-dialog .modal-content .modal-header .download, .modal .modal-dialog .modal-content .bx-wrapper .bx-viewport .file_slide .item .modal-header .like, .bx-wrapper .bx-viewport .file_slide .item .modal .modal-dialog .modal-content .modal-header .like, .modal .modal-dialog .modal-content .carousel .carousel-inner .item .modal-header .download, .carousel .carousel-inner .item .modal .modal-dialog .modal-content .modal-header .download, .modal .modal-dialog .modal-content .carousel .carousel-inner .item .modal-header .like, .carousel .carousel-inner .item .modal .modal-dialog .modal-content .modal-header .like {
+      font-size: 26px;
+      font-size: 2.6rem;
+      position: absolute;
+      right: 20px;
+      top: 22px;
+      color: #8a959e; }
+    .modal .modal-dialog .modal-content .modal-header input[type="checkbox"] + label {
+      width: 0;
+      margin: 13px 30px 18px 0; }
+    .modal .modal-dialog .modal-content .modal-header .modal_option_box {
+      right: -160px; }
   .modal .modal-dialog .modal-content .modal-body {
     background: #f5f5f5; }
+    .modal .modal-dialog .modal-content .modal-body.white {
+      border-top: 1px solid #f5f5f5;
+      background: #fff; }
+    .modal .modal-dialog .modal-content .modal-body .task_detail {
+      padding: 5px; }
+      .modal .modal-dialog .modal-content .modal-body .task_detail .requester, .modal .modal-dialog .modal-content .modal-body .task_detail .worker, .modal .modal-dialog .modal-content .modal-body .task_detail .limlt {
+        -webkit-border-radius: 4px 4px 0 0;
+        -moz-border-radius: 4px 4px 0 0;
+        -ms-border-radius: 4px 4px 0 0;
+        border-radius: 4px 4px 0 0;
+        position: relative;
+        width: 100%;
+        border: 1px solid #e2e2e2;
+        padding: 5px;
+        line-height: 40px;
+        height: 50px; }
+        .modal .modal-dialog .modal-content .modal-body .task_detail .requester i, .modal .modal-dialog .modal-content .modal-body .task_detail .worker i, .modal .modal-dialog .modal-content .modal-body .task_detail .limlt i {
+          font-size: 26px;
+          font-size: 2.6rem;
+          position: absolute;
+          color: #555555;
+          left: 10px;
+          top: 12px; }
+        .modal .modal-dialog .modal-content .modal-body .task_detail .requester input, .modal .modal-dialog .modal-content .modal-body .task_detail .worker input, .modal .modal-dialog .modal-content .modal-body .task_detail .limlt input {
+          padding-left: 40px;
+          width: 550px; }
+      .modal .modal-dialog .modal-content .modal-body .task_detail .worker {
+        -webkit-border-radius: 0 0 4px 4px;
+        -moz-border-radius: 0 0 4px 4px;
+        -ms-border-radius: 0 0 4px 4px;
+        border-radius: 0 0 4px 4px;
+        border-top: none; }
+      .modal .modal-dialog .modal-content .modal-body .task_detail .limlt {
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+        -ms-border-radius: 4px;
+        border-radius: 4px;
+        margin-top: 20px; }
+        .modal .modal-dialog .modal-content .modal-body .task_detail .limlt i {
+          color: #db4c3f; }
   .modal .modal-dialog .modal-content .modal-footer {
     border-top: none;
     padding: 25px;
     position: relative; }
+    .modal .modal-dialog .modal-content .modal-footer.gray {
+      background: #f5f5f5; }
     .modal .modal-dialog .modal-content .modal-footer textarea {
-      -webkit-border-radius: 4;
-      -moz-border-radius: 4;
-      -ms-border-radius: 4;
-      border-radius: 4;
+      -webkit-border-radius: 4px;
+      -moz-border-radius: 4px;
+      -ms-border-radius: 4px;
+      border-radius: 4px;
       width: 100%;
       height: 95px;
       margin-bottom: 25px;
       border: 1px solid #e2e2e2;
+      background: #fff;
       resize: none;
       outline: none;
       padding: 13px 13px; }
@@ -2122,7 +2174,7 @@ header {
   padding: 30px 30px 20px 30px; }
 
 #viewers_box .modal-body {
-  background: #FFFFFF;
+  background: #fff;
   padding: 10px 30px 10px 30px;
   -webkit-border-radius: 0 0 4 4;
   -moz-border-radius: 0 0 4 4;
@@ -2160,7 +2212,7 @@ header {
         top: 15px;
         right: 0;
         /*border: 1px solid $border_gray;
-          @include border_radius(4);*/
+        @include border_radius(4);*/
         font-size: 13px;
         font-size: 1.3rem;
         padding: 0 10px; }
@@ -2985,6 +3037,10 @@ input[type="checkbox"] {
     input[type="checkbox"] + label::before {
       font-size: 30px;
       font-size: 3rem;
+      -webkit-border-radius: 4px;
+      -moz-border-radius: 4px;
+      -ms-border-radius: 4px;
+      border-radius: 4px;
       position: absolute;
       font-family: 'torio_icon';
       width: 18px;
@@ -2996,7 +3052,6 @@ input[type="checkbox"] {
       content: "\e649";
       color: transparent;
       padding: 0;
-      border-radius: 5px;
       border: 1px solid #dddddd;
       background: #fff;
       margin: -12px 0px 0 0;
@@ -3130,8 +3185,8 @@ input[type="checkbox"] {
               display: inline-block;
               margin-right: 10px; }
         .task_replacement .task_people .task_list.made .task_add_time {
-          right: 115px;
-          top: -415px; }
+          right: 140px;
+          top: -223px; }
           .task_replacement .task_people .task_list.made .task_add_time input {
             -webkit-border-radius: 4px;
             -moz-border-radius: 4px;

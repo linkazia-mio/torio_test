@@ -1153,7 +1153,7 @@ header {
  Modal
 ---------------------------------------------------------------------------------------*/
 .modal {
-  .modal_close{
+  .modal_close {
     position: absolute;
     top:0px;
     right:15px;
@@ -1168,31 +1168,91 @@ header {
       box-shadow: 0px 0px 17px 0px rgba(0,0,0,0.11);
       border: none;
       .modal-header {
-        @include border_radius();
+        @include border_radius(4 4 0 0);
         border-bottom: none;
         background: #fff;
         padding: 25px;
-        @include border_radius(4 4 0 0);
         .modal-title {
-          @include fontsize(1.6);
+          @include fontsize(1.4);
+          font-weight: bold;
         }
         .close {
           margin-top: -8px;
         }
+        .option {
+          @include fontsize(2.6);
+          position: absolute;
+          right: 20px;
+          top: 22px;
+          color: $white_brack;
+        }
+        input[type="checkbox"] {
+          & + label {
+          width: 0;
+          margin: 13px 30px 18px 0;
+          }
+        }
+        .modal_option_box {
+          right: -160px;
+        }
       }
       .modal-body {
         background: $white_gray;
+        &.white {
+          border-top: 1px solid $border_white_gray;
+          background: #fff;
+        }
+        .task_detail {
+          padding: 5px;
+          .requester {
+            @include border_radius(4px 4px 0 0);
+            position: relative;
+            width: 100%;
+            border: 1px solid $border_gray;
+            padding: 5px;
+            line-height: 40px;
+            height: 50px;
+            i {
+              @include fontsize(2.6);
+              position: absolute;
+              color: $brack;
+              left: 10px;
+              top: 12px;
+            }
+            input {
+              padding-left: 40px;
+              width: 550px;
+            }
+          }
+          .worker {
+            @extend .requester;
+            @include border_radius(0 0 4px 4px);
+            border-top: none;
+          }
+          .limlt {
+            @extend .requester;
+            @include border_radius();
+            margin-top: 20px;
+            i {
+              color: $dark_red;
+            }
+          }
+        }
       }
-      .modal-footer {
+      .modal-footer  {
         border-top: none;
         padding: 25px;
         position: relative;
+        &.gray {
+          background: $white_gray;
+        }
         textarea {
-          @include border_radius(4);
+          @include border_radius();
           width: 100%;
           height: 95px;
           margin-bottom: 25px;
           border: 1px solid $border_gray;
+          background: #fff;
           resize: none;
           outline: none;
           padding: 13px 13px;
@@ -1222,14 +1282,14 @@ header {
             }
           }
         }
-        .link{
+        .link {
           position: absolute;
           left: 25px;
           bottom: 36px;
-          a{
+          a {
             padding: 0 0 0 25px;
             color: $white_brack;
-            i{
+            i {
               @include fontsize(2.4);
               @include border_radius(0);
               color: $white_brack;
@@ -1239,7 +1299,7 @@ header {
               top: 0;
               left: 0;
             }
-            span{
+            span {
               @include fontsize(1.3);
             }
           }
@@ -1248,57 +1308,58 @@ header {
     }
   }
 }
+
 #viewers_box {
   .made{
     border-bottom: 1px solid $border_white_gray;
     padding: 30px 30px 20px 30px;
   }
   .modal-body {
-    background: #FFFFFF;
+    background: #fff;
     padding: 10px 30px 10px 30px;
     @include border_radius(0 0 4 4);
-    .view_group_member{
+    .view_group_member {
       border-bottom: 1px solid $border_white_gray;
       @extend .clearfix;
       width: 100%;
       position: relative;
       padding: 15px 0 15px 0;
       margin: 0;
-      &:first-child{
+      &:first-child {
         padding: 15px 0 15px 0;
       }
-      &:last-child{
+      &:last-child {
         padding: 15px 0 25px 0;
         border: none;
       }
-      dt{
+      dt {
         float: left;
         width: 40px;
         .noimage {
-          @include font_eng;
-          @include fontsize(1.0);
-          line-height: 38px;
-          text-align: center;
-        }
-        .user_image {
-          img {
-            width: 40px;
-            height: auto;
-          }
+        @include font_eng;
+        @include fontsize(1.0);
+        line-height: 38px;
+        text-align: center;
+      }
+      .user_image {
+        img {
+          width: 40px;
+          height: auto;
         }
       }
-      dd{
-        float: left;
-        line-height: 40px;
-        margin-left: 10px;
-        .user_friends{
-          position: absolute;
-          top: 15px;
-          right: 0;
-          /*border: 1px solid $border_gray;
-          @include border_radius(4);*/
-          @include fontsize(1.3);
-          padding: 0 10px;
+    }
+    dd {
+      float: left;
+      line-height: 40px;
+      margin-left: 10px;
+      .user_friends {
+        position: absolute;
+        top: 15px;
+        right: 0;
+        /*border: 1px solid $border_gray;
+        @include border_radius(4);*/
+        @include fontsize(1.3);
+        padding: 0 10px;
         }
       }
     }

@@ -84,6 +84,7 @@ input[type="checkbox"] {
     /*通常時の見た目*/
     &::before {
       @include fontsize(3.0);
+      @include border_radius();
       position: absolute;
       font-family: 'torio_icon';
       width: 18px;
@@ -95,7 +96,6 @@ input[type="checkbox"] {
       content: "\e649";
       color: transparent;
       padding: 0;
-      border-radius: 5px;
       border: 1px solid #dddddd;
       background: #fff;
       margin: -12px 0px 0 0;
@@ -240,8 +240,8 @@ input[type="checkbox"] {
           }
         }
         .task_add_time {
-          right: 115px;
-          top: -415px;
+          right: 140px;
+          top: -223px;
           input {
             @include border_radius();
             @include fontsize(1.3);

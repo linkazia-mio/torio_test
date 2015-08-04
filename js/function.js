@@ -164,6 +164,12 @@ window.onload=function(){
       event.stopPropagation();
       $('.add_page,.check_box,.option_box,.detail_option_box,.detail_check_box,.task_add_list_member,#task_add_time_1,#task_add_time_2,#task_add_time_3').hide();
     });
+    //Task Option
+    $(".modal-header .option").click(function () {
+      $(".modal_option_box").toggle( 'fade', '', 100 );
+      event.stopPropagation();
+      $('.add_page,.check_box,.option_box,.detail_option_box,.detail_check_box,.task_add_list_member,.task_add_member').hide();
+    });
   });
 
   $(function(){

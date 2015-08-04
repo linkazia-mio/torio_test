@@ -628,60 +628,51 @@
         </div>
       </div>
       <!--/Add member-->
-      <!--Add File/-->
-      <div class="modal fade" id="add_file" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-        <div class="modal-dialog" role="document">
-          <!--modal-content_1/-->
-          <div class="modal-content">
-            <div class="modal-header">
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-              <h4 class="modal-title" id="myModalLabel">新規作成</h4>
-            </div>
-            <div class="modal-body">
-              <div class="local_up">
-                <a href="">
-                  <i class="icon-file-upload-outline"></i>
-                  <p class="title">画像、動画、ファイルを追加</p>
-                  <p class="note">クリックまたはドラッグ&ドロップ</p>
-                </a>
-              </div>
-              <div class="web_up">
-                <a href="">
-                  <i class="icon-public-outline"></i>
-                  <p class="title">ウェブサイトから追加</p>
-                </a>
-              </div>
-            </div>
-            <!--/modal-content_1-->
-            <div class="modal-footer">
-              <textarea class="description" placeholder="説明を入力してください"></textarea>
-              <button type="button" class="btn btn-default" data-dismiss="modal">キャンセル</button>
-              <button type="button" class="btn btn-primary">作成する</button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!--/Add File-->
       <!--Task Detail/-->
       <div class="modal fade" id="task_detail" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
         <div class="modal-dialog" role="document">
           <!--modal-content_1/-->
           <div class="modal-content">
             <div class="modal-header">
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
               <input type="checkbox" id="c20"><label for="c20"></label>
               <h4 class="modal-title" id="myModalLabel">オンラインのグローバルナビの追加修正</h4>
+              <p class="option"><i class="icon-more-horiz"></i></p>
+              <div class="modal_option_box popover">
+                <ul>
+                  <li><a href="">作成した日付を表示する</a></li>
+                  <li><a href="">タスクを複製する</a></li>
+                  <li><a href="">タスクを削除する</a></li>
+                </ul>
+              </div>
             </div>
-            <div class="modal-body">
+            <div class="modal-body white">
               <div class="task_detail">
-                ここでタスクを編集します。
+                <div class="requester">
+                  <i class="icon-person-outline"></i><input type="textarea" placeholder="依頼者を設定">
+                </div>
+                <div class="worker">
+                  <i class="icon-person"></i><input type="textarea" placeholder="作業者を設定">
+                </div>
+                <div class="limlt">
+                  <i class="icon-access-time"></i><input type="textarea" placeholder="期限日">
+                </div>
+                <textarea class="description" placeholder="説明を入力してください"></textarea>
+                <div class="comment">
+                  <div class="comment_inner">
+                    <div class="user_image"><img src="http://placehold.it/100x100"></div>
+                    <div class="user_comment">
+                      <p class="name">小松 健太<span class="time">3時間前</span></p>
+                      <p class="memo">本題からは大きく外れますが、ドローンなどに使うキャパシタ（バッテリー）がキャパシタ（コンデンサー）であることを最近知って驚きました。</p>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
             <!--/modal-content_1-->
-            <div class="modal-footer">
-              <textarea class="description" placeholder="説明を入力してください"></textarea>
+            <div class="modal-footer gray">
+              <textarea class="description" placeholder="コメントを入力してください"></textarea>
               <button type="button" class="btn btn-default" data-dismiss="modal">キャンセル</button>
-              <button type="button" class="btn btn-primary">作成する</button>
+              <button type="button" class="btn btn-primary">コメント</button>
             </div>
           </div>
         </div>
