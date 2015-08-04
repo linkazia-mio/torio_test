@@ -1239,21 +1239,58 @@ header {
           }
           .information {
             @extend .limit;
+            position: relative;
             textarea {
               @include border_radius();
               border: 1px solid $border_gray;
               padding: 13px;
               margin-top: 20px;
               width: 100%;
+              resize: vertical;
               &:focus {
                 outline: none;
               }
+            }
+            .btn_file {
+              overflow: hidden;
+              position: absolute;
+              right: 100px;
+              bottom: 5px;
+              width: 30px;
+              height: 30px;
+              i {
+                @include fontsize(2.6);
+                color: $white_brack;
+                &:hover {
+                  color: $green;
+                }
+              }
+              input[type="file"] {
+                position: absolute;
+                opacity: 0;
+                margin: 0;
+                top: 0;
+                width: 30px;
+                height: 40px;
+                &:hover {
+                  cursor: pointer;
+                }
+              }
+            }
+            .btn_add_task {
+              right: 10px;
+              bottom: 10px;
             }
           }
         }
         .limit_add_time {
           left: 200px;
           top: 10px;
+          .task_add_time_footer {
+            .btn_add_task {
+              bottom: 0;
+            }
+          }
         }
         .comment {
           margin-top: 20px;

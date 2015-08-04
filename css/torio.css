@@ -2105,20 +2105,50 @@ header {
         margin-top: 20px; }
         .modal .modal-dialog .modal-content .modal-body .task_detail .limlt i {
           color: #db4c3f; }
-      .modal .modal-dialog .modal-content .modal-body .task_detail .information textarea {
-        -webkit-border-radius: 4px;
-        -moz-border-radius: 4px;
-        -ms-border-radius: 4px;
-        border-radius: 4px;
-        border: 1px solid #e2e2e2;
-        padding: 13px;
-        margin-top: 20px;
-        width: 100%; }
-        .modal .modal-dialog .modal-content .modal-body .task_detail .information textarea:focus {
-          outline: none; }
+      .modal .modal-dialog .modal-content .modal-body .task_detail .information {
+        position: relative; }
+        .modal .modal-dialog .modal-content .modal-body .task_detail .information textarea {
+          -webkit-border-radius: 4px;
+          -moz-border-radius: 4px;
+          -ms-border-radius: 4px;
+          border-radius: 4px;
+          border: 1px solid #e2e2e2;
+          padding: 13px;
+          margin-top: 20px;
+          width: 100%;
+          resize: vertical; }
+          .modal .modal-dialog .modal-content .modal-body .task_detail .information textarea:focus {
+            outline: none; }
+        .modal .modal-dialog .modal-content .modal-body .task_detail .information .btn_file {
+          overflow: hidden;
+          position: absolute;
+          right: 100px;
+          bottom: 5px;
+          width: 30px;
+          height: 30px; }
+          .modal .modal-dialog .modal-content .modal-body .task_detail .information .btn_file i {
+            font-size: 26px;
+            font-size: 2.6rem;
+            color: #8a959e; }
+            .modal .modal-dialog .modal-content .modal-body .task_detail .information .btn_file i:hover {
+              color: #2e6b95; }
+          .modal .modal-dialog .modal-content .modal-body .task_detail .information .btn_file input[type="file"] {
+            position: absolute;
+            opacity: 0;
+            margin: 0;
+            top: 0;
+            width: 30px;
+            height: 40px; }
+            .modal .modal-dialog .modal-content .modal-body .task_detail .information .btn_file input[type="file"]:hover {
+              cursor: pointer; }
+        .modal .modal-dialog .modal-content .modal-body .task_detail .information .btn_add_task {
+          right: 10px;
+          bottom: 10px; }
     .modal .modal-dialog .modal-content .modal-body .limit_add_time {
       left: 200px;
       top: 10px; }
+      .modal .modal-dialog .modal-content .modal-body .limit_add_time .task_add_time_footer .btn_add_task {
+        bottom: 0; }
     .modal .modal-dialog .modal-content .modal-body .comment {
       margin-top: 20px; }
       .modal .modal-dialog .modal-content .modal-body .comment .comment_inner {
@@ -3073,7 +3103,7 @@ input[type="checkbox"] {
     margin: 27px 10px 18px 15px;
     /*通常時の見た目*/
     /*hover時の見た目*/ }
-    input[type="checkbox"] + label::before {
+    input[type="checkbox"] + label:before {
       font-size: 30px;
       font-size: 3rem;
       -webkit-border-radius: 4px;
@@ -3101,7 +3131,7 @@ input[type="checkbox"] {
       box-sizing: border-box; }
     input[type="checkbox"] + label:hover {
       color: #3A87BC; }
-      input[type="checkbox"] + label:hover::before {
+      input[type="checkbox"] + label:hover:before {
         background-color: #f5f5f5; }
   input[type="checkbox"]:checked + label {
     color: #3595e1; }
@@ -3234,6 +3264,8 @@ input[type="checkbox"] {
         .task_replacement .task_people .task_list.made .task_add_time {
           right: 140px;
           top: -223px; }
+          .task_replacement .task_people .task_list.made .task_add_time .task_add_time_footer .btn_add_task {
+            bottom: 0; }
         .task_replacement .task_people .task_list.made .task_button {
           display: none; }
       .task_replacement .task_people .task_list i {
@@ -3489,7 +3521,6 @@ input[type="checkbox"] {
   font-size: 1.3rem;
   position: absolute;
   right: 15px;
-  top: 10px;
   width: 80px;
   height: 26px;
   color: #fff;
@@ -3512,6 +3543,8 @@ input[type="checkbox"] {
     .task_add_time_footer .btn_cancel:hover {
       opacity: 0.7;
       filter: alpha(opacity=70); }
+  .task_add_time_footer .btn_add_task {
+    bottom: 10px; }
 
 .task_add_requester, .task_add_worker {
   -webkit-border-radius: 4px;

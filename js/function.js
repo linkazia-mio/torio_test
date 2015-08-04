@@ -2,6 +2,106 @@ $(window).on('resize', function(){});
 
 window.onload=function(){
 
+  //タスク入力部分
+  $('#made_1.task_input').click(function () {
+    $(this).css('padding_bottom','15px');
+    jQuery('.task_button').show();
+    event.stopPropagation();
+  });
+  $('#made_1.made').click(function () {
+    jQuery('#made_1 .task_button').show();
+    event.stopPropagation();
+  });
+  $(document).click(function() {
+    $('#made_1 .task_button').hide();
+  });
+  $('#made_1 .task_input').each(function(){
+    autosize(this);
+  });
+  $('#made_1 .task_add_member button').click(function () {
+    $(this).toggleClass('checked');
+  });
+  $('#made_1 .task_add_list_member button').click(function () {
+    $(this).toggleClass('checked');
+  });
+  $('#made_1.task_input').click(function () {
+    $(this).css('padding_bottom','15px');
+    jQuery('.task_button').show();
+    event.stopPropagation();
+  });
+  $('#made_1 .made').click(function () {
+    jQuery('#made_1 .task_button').show();
+    event.stopPropagation();
+  });
+
+
+  $('#made_2.task_input').click(function () {
+    $(this).css('padding_bottom','15px');
+    jQuery('.task_button').show();
+    event.stopPropagation();
+  });
+  $('#made_2.made').click(function () {
+    jQuery('#made_2 .task_button').show();
+    event.stopPropagation();
+  });
+  $(document).click(function() {
+    $('#made_2 .task_button').hide();
+  });
+  $('#made_2 .task_input').each(function(){
+    autosize(this);
+  });
+  $('#made_2 .task_add_member button').click(function () {
+    $(this).toggleClass('checked');
+  });
+  $('#made_2 .task_add_list_member button').click(function () {
+    $(this).toggleClass('checked');
+  });
+  $('#made_2.task_input').click(function () {
+    $(this).css('padding_bottom','15px');
+    jQuery('.task_button').show();
+    event.stopPropagation();
+  });
+  $('#made_2 .made').click(function () {
+    jQuery('#made_2 .task_button').show();
+    event.stopPropagation();
+  });
+
+
+  $('#made_3.task_input').click(function () {
+    $(this).css('padding_bottom','15px');
+    jQuery('.task_button').show();
+    event.stopPropagation();
+  });
+  $('#made_3.made').click(function () {
+    jQuery('#made_3 .task_button').show();
+    event.stopPropagation();
+  });
+  $(document).click(function() {
+    $('#made_3 .task_button').hide();
+  });
+  $('#made_3 .task_input').each(function(){
+    autosize(this);
+  });
+  $('#made_3 .task_add_member button').click(function () {
+    $(this).toggleClass('checked');
+  });
+  $('#made_3 .task_add_list_member button').click(function () {
+    $(this).toggleClass('checked');
+  });
+  $('#made_3.task_input').click(function () {
+    $(this).css('padding_bottom','15px');
+    jQuery('.task_button').show();
+    event.stopPropagation();
+  });
+  $('#made_3 .made').click(function () {
+    jQuery('#made_3 .task_button').show();
+    event.stopPropagation();
+  });
+
+  $('.information textarea').each(function(){
+    autosize(this);
+  });
+
   $(function(){
        function adjust(){
             var h = $(window).height(); //ウィンドウの高さ
@@ -174,7 +274,7 @@ window.onload=function(){
     $(".limlt").click(function () {
       $(".limit_add_time").toggle( 'fade', '', 100 );
       event.stopPropagation();
-      $('.add_page,.check_box,.option_box,.detail_option_box,.detail_check_box,.task_add_list_member,.task_add_member').hide();
+      $('.add_page,.check_box,.option_box,.detail_option_box,.detail_check_box,.task_add_list_member,.task_add_member,.task_add_requester,.task_add_worker').hide();
     });
     $('.limit_add_time').click(function () {
       jQuery('.limit_add_time').show();
@@ -184,13 +284,13 @@ window.onload=function(){
     $(".requester input").click(function () {
       $(".task_add_requester").toggle( 'fade', '', 100 );
       event.stopPropagation();
-      $('.add_page,.check_box,.option_box,.detail_option_box,.detail_check_box,.task_add_list_member,.task_add_member,.task_add_worker').hide();
+      $('.add_page,.check_box,.option_box,.detail_option_box,.detail_check_box,.task_add_list_member,.task_add_member,.task_add_worker,.limit_add_time').hide();
     });
     //Task_add_worker
     $(".worker input").click(function () {
       $(".task_add_worker").toggle( 'fade', '', 100 );
       event.stopPropagation();
-      $('.add_page,.check_box,.option_box,.detail_option_box,.detail_check_box,.task_add_list_member,.task_add_member,.task_add_requester').hide();
+      $('.add_page,.check_box,.option_box,.detail_option_box,.detail_check_box,.task_add_list_member,.task_add_member,.task_add_requester,.limit_add_time').hide();
     });
   });
 
