@@ -152,7 +152,7 @@ input[type="checkbox"] {
       span {
         @include fontsize(1.1);
         font-weight: normal;
-        padding-left: 10px;
+        padding-left: 17px;
       }
     }
     .placeholder {
@@ -181,7 +181,12 @@ input[type="checkbox"] {
       position: relative;
       color: $white_brack;
       &.important {
-        border: 1px solid $dark_red;
+        border: 1px solid $red;
+        background: $white_red;
+        input[type="checkbox"] + label::before {
+          border: 1px solid $red;
+          background: $white_red;
+        }
       }
       &.made {
         height: auto;
