@@ -24,6 +24,7 @@
       color: $green;
     }
     .edit_name {
+      position: relative;
       font-weight: bold;
       padding: 20px;
       .noimage {
@@ -68,9 +69,16 @@
       color: $white_brack;
     }
     .editing {
+      @include border_radius(4px 4px 0 0);
+      position: relative;
       background: $green;
       color: #fff;
       text-align: center;
+      height: 40px;
+      p {
+        line-height: 30px;
+        display: inline-block;
+      }
     }
   }
 }
@@ -136,7 +144,16 @@
 /*---------------------------------------------------------------------------------------
  Medium Editor
 ---------------------------------------------------------------------------------------*/
+.medium-editor-insert-plugin.medium-editor-placeholder:after {
+    padding: 30px 70px;
+}
 .medium-editor-insert-plugin {
+  .medium-editor-placeholder {
+    &:after {
+      padding: 30px 70px;
+      font-style: normal;
+    }
+  }
   .medium-insert-buttons {
     .medium-insert-buttons-show {
       @include border_radius(100);
@@ -200,5 +217,73 @@
         }
       }
     }
+  }
+}
+
+.medium-editor-placeholder {
+  &:after {
+    font-family:'ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro','メイリオ',Meiryo,'ＭＳ Ｐゴシック','MS PGothic',sans-serif;
+    font-style: normal;
+  }
+}
+
+/*---------------------------------------------------------------------------------------
+ Loader
+---------------------------------------------------------------------------------------*/
+.loader:before,
+.loader:after,
+.loader {
+  @include border_radius(100%);
+  width: 5px;
+  height: 5px;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation: load7 1.8s infinite ease-in-out;
+  animation: load7 1.8s infinite ease-in-out;
+}
+.loader {
+  display: block;
+  position: relative;
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-animation-delay: -0.16s;
+  animation-delay: -0.16s;
+  left: -30px;
+  top: -17px;
+  &:before,
+  &:after {
+    content: '';
+    position: absolute;
+  }
+  &:before {
+    left: -10px;
+    top: 0px;
+    -webkit-animation-delay: -0.32s;
+    animation-delay: -0.32s;
+  }
+  &:after {
+    left: 10px;
+    top: 0px;
+  }
+}
+@-webkit-keyframes load7 {
+  0%,
+  80%,
+  100% {
+    box-shadow: 0 2.5em 0 -1.3em #ffffff;
+  }
+  40% {
+    box-shadow: 0 2.5em 0 0 #ffffff;
+  }
+}
+@keyframes load7 {
+  0%,
+  80%,
+  100% {
+    box-shadow: 0 2.5em 0 -1.3em #ffffff;
+  }
+  40% {
+    box-shadow: 0 2.5em 0 0 #ffffff;
   }
 }

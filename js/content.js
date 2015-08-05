@@ -83,4 +83,10 @@ $(document).ready(function(){
       .text($('#title_edit').val())
       .css( 'display', '');
     });
+
+    $('.editable').click(function () {
+      jQuery('.start').hide();
+      event.stopPropagation();
+    });
+
 });

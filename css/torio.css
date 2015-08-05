@@ -3615,6 +3615,7 @@ input[type="checkbox"] {
     .note .note_edit a {
       color: #2e6b95; }
     .note .note_edit .edit_name {
+      position: relative;
       font-weight: bold;
       padding: 20px; }
       .note .note_edit .edit_name .noimage {
@@ -3653,9 +3654,18 @@ input[type="checkbox"] {
       bottom: 15px;
       color: #8a959e; }
     .note .note_edit .editing {
+      -webkit-border-radius: 4px 4px 0 0;
+      -moz-border-radius: 4px 4px 0 0;
+      -ms-border-radius: 4px 4px 0 0;
+      border-radius: 4px 4px 0 0;
+      position: relative;
       background: #2e6b95;
       color: #fff;
-      text-align: center; }
+      text-align: center;
+      height: 40px; }
+      .note .note_edit .editing p {
+        line-height: 30px;
+        display: inline-block; }
 
 /*---------------------------------------------------------------------------------------
  Editable
@@ -3710,6 +3720,13 @@ input[type="checkbox"] {
 /*---------------------------------------------------------------------------------------
  Medium Editor
 ---------------------------------------------------------------------------------------*/
+.medium-editor-insert-plugin.medium-editor-placeholder:after {
+  padding: 30px 70px; }
+
+.medium-editor-insert-plugin .medium-editor-placeholder:after {
+  padding: 30px 70px;
+  font-style: normal; }
+
 .medium-editor-insert-plugin .medium-insert-buttons .medium-insert-buttons-show {
   -webkit-border-radius: 100;
   -moz-border-radius: 100;
@@ -3762,3 +3779,63 @@ input[type="checkbox"] {
         content: "\e622"; }
       .medium-editor-insert-plugin .medium-insert-buttons .medium-insert-buttons-addons li a.medium-insert-action .fa.fa-youtube-play:before {
         content: "\e709"; }
+
+.medium-editor-placeholder:after {
+  font-family: 'ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro','メイリオ',Meiryo,'ＭＳ Ｐゴシック','MS PGothic',sans-serif;
+  font-style: normal; }
+
+/*---------------------------------------------------------------------------------------
+ Loader
+---------------------------------------------------------------------------------------*/
+.loader:before,
+.loader:after,
+.loader {
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  border-radius: 100%;
+  width: 5px;
+  height: 5px;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation: load7 1.8s infinite ease-in-out;
+  animation: load7 1.8s infinite ease-in-out; }
+
+.loader {
+  display: block;
+  position: relative;
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-animation-delay: -0.16s;
+  animation-delay: -0.16s;
+  left: -30px;
+  top: -17px; }
+  .loader:before,
+  .loader:after {
+    content: '';
+    position: absolute; }
+  .loader:before {
+    left: -10px;
+    top: 0px;
+    -webkit-animation-delay: -0.32s;
+    animation-delay: -0.32s; }
+  .loader:after {
+    left: 10px;
+    top: 0px; }
+
+@-webkit-keyframes load7 {
+  0%,
+  80%,
+  100% {
+    box-shadow: 0 2.5em 0 -1.3em #ffffff; }
+  40% {
+    box-shadow: 0 2.5em 0 0 #ffffff; } }
+
+@keyframes load7 {
+  0%,
+  80%,
+  100% {
+    box-shadow: 0 2.5em 0 -1.3em #ffffff; }
+  40% {
+    box-shadow: 0 2.5em 0 0 #ffffff; } }
