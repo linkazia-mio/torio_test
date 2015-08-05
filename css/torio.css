@@ -3605,7 +3605,6 @@ input[type="checkbox"] {
     border-radius: 4px;
     position: relative;
     margin: 30px;
-    padding: 20px;
     background: #fff;
     /*-webkit-box-shadow: 0 2px 5px rgba(0,0,0,0.06);
     box-shadow: 0 2px 5px rgba(0,0,0,0.06);
@@ -3616,7 +3615,8 @@ input[type="checkbox"] {
     .note .note_edit a {
       color: #2e6b95; }
     .note .note_edit .edit_name {
-      font-weight: bold; }
+      font-weight: bold;
+      padding: 20px; }
       .note .note_edit .edit_name .noimage {
         height: 40px;
         width: 40px;
@@ -3652,12 +3652,16 @@ input[type="checkbox"] {
       right: 110px;
       bottom: 15px;
       color: #8a959e; }
+    .note .note_edit .editing {
+      background: #2e6b95;
+      color: #fff;
+      text-align: center; }
 
 /*---------------------------------------------------------------------------------------
  Editable
 ---------------------------------------------------------------------------------------*/
 .editable {
-  padding: 30px 50px; }
+  padding: 30px 70px; }
   .editable:focus {
     outline: none; }
   .editable h1 {

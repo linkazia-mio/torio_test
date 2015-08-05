@@ -13,7 +13,6 @@
     @include border_radius();
     position: relative;
     margin: 30px;
-    padding: 20px;
     background: #fff;
     /*-webkit-box-shadow: 0 2px 5px rgba(0,0,0,0.06);
     box-shadow: 0 2px 5px rgba(0,0,0,0.06);
@@ -26,6 +25,7 @@
     }
     .edit_name {
       font-weight: bold;
+      padding: 20px;
       .noimage {
         height: 40px;
         width: 40px;
@@ -67,6 +67,11 @@
       bottom: 15px;
       color: $white_brack;
     }
+    .editing {
+      background: $green;
+      color: #fff;
+      text-align: center;
+    }
   }
 }
 
@@ -74,7 +79,7 @@
  Editable
 ---------------------------------------------------------------------------------------*/
 .editable {
-  padding: 30px 50px;
+  padding: 30px 70px;
   &:focus {
     outline: none;
   }
