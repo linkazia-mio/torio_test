@@ -1265,11 +1265,12 @@ header {
     color: #8a959e;
     position: absolute;
     right: 3px;
-    top: 1px; }
+    top: 1px;
+    z-index: 10; }
   .search input[type="search"] {
     font-size: 14px;
     font-size: 1.4rem;
-    width: 100%;
+    width: 90%;
     height: 32px;
     padding: 0 10px;
     line-height: 32px; }
@@ -1280,7 +1281,8 @@ header {
     width: 32px;
     height: 0;
     padding-top: 30px;
-    overflow: hidden; }
+    overflow: hidden;
+    z-index: 100; }
     .search input[type="submit"]:hover {
       cursor: pointer; }
 
