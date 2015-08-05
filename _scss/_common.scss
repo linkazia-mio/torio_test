@@ -561,6 +561,9 @@ header {
           span {
             margin: 9px 8px 9px 12px;
           }
+          &:hover {
+            background: $white_gray;
+          }
           &.unread {
             color: $green;
             font-weight: bold;
@@ -818,6 +821,26 @@ header {
       padding: 18px 10px 18px 20px;
       color: $brack;
       border-bottom: 1px solid $border_white_gray;
+      &:hover {
+        background: $white_gray;
+        .check {
+         	border-bottom: 7px solid $white_gray;
+        }
+      }
+      &.selected {
+        background: $green;
+        .check {
+         	border-bottom: 7px solid $green;
+        }
+        .title,.text {
+          color: #fff;
+        }
+        .unread {
+          .title {
+            color: #fff;
+          }
+        }
+      }
       .check {
         position: absolute;
         right: 16px;
@@ -1238,17 +1261,19 @@ header {
             padding: 5px;
             margin-bottom: 10px;
           }
-          select {
-            float: right;
-            width: 420px;
-            -webkit-appearance: none;
-            -moz-appearance: none;
-            appearance: none;
-            border: 1px solid $border_gray;
-            padding: 5px 10px;
-            margin-bottom: 20px;
-            &:focus {
-              outline: none;
+          .select_box {
+            select {
+              float: right;
+              width: 420px;
+              -webkit-appearance: none;
+              -moz-appearance: none;
+              appearance: none;
+              border: 1px solid $border_gray;
+              padding: 5px 10px;
+              margin-bottom: 20px;
+              &:focus {
+                outline: none;
+              }
             }
             &:after {
               @include fontsize(2.6);

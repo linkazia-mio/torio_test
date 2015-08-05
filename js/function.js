@@ -2,6 +2,15 @@ $(window).on('resize', function(){});
 
 window.onload=function(){
 
+  //クリッカブル
+  $(".item").click(function () {
+    $(this).toggleClass("selected");
+  });
+  //クリッカブル
+  $(".global_menu_inner li a").click(function () {
+    $(this).toggleClass("selected");
+  });
+
   //タスク入力部分
   $('#made_1.task_input').click(function () {
     $(this).css('padding_bottom','15px');

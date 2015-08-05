@@ -1553,6 +1553,8 @@ header {
           line-height: 50px; }
           .global_menu .global_menu_inner ul li a span {
             margin: 9px 8px 9px 12px; }
+          .global_menu .global_menu_inner ul li a:hover {
+            background: #f5f5f5; }
           .global_menu .global_menu_inner ul li a.unread {
             color: #2e6b95;
             font-weight: bold; }
@@ -1773,6 +1775,18 @@ header {
       padding: 18px 10px 18px 20px;
       color: #555555;
       border-bottom: 1px solid #f5f5f5; }
+      .page_menu .page_menu_inner .item:hover {
+        background: #f5f5f5; }
+        .page_menu .page_menu_inner .item:hover .check {
+          border-bottom: 7px solid #f5f5f5; }
+      .page_menu .page_menu_inner .item.selected {
+        background: #2e6b95; }
+        .page_menu .page_menu_inner .item.selected .check {
+          border-bottom: 7px solid #2e6b95; }
+        .page_menu .page_menu_inner .item.selected .title, .page_menu .page_menu_inner .item.selected .text {
+          color: #fff; }
+        .page_menu .page_menu_inner .item.selected .unread .title {
+          color: #fff; }
       .page_menu .page_menu_inner .item .check {
         position: absolute;
         right: 16px;
@@ -2114,7 +2128,7 @@ header {
         border: 1px solid #e2e2e2;
         padding: 5px;
         margin-bottom: 10px; }
-      .modal .modal-dialog .modal-content .modal-body .input_dot select {
+      .modal .modal-dialog .modal-content .modal-body .input_dot .select_box select {
         float: right;
         width: 420px;
         -webkit-appearance: none;
@@ -2123,19 +2137,19 @@ header {
         border: 1px solid #e2e2e2;
         padding: 5px 10px;
         margin-bottom: 20px; }
-        .modal .modal-dialog .modal-content .modal-body .input_dot select:focus {
+        .modal .modal-dialog .modal-content .modal-body .input_dot .select_box select:focus {
           outline: none; }
-        .modal .modal-dialog .modal-content .modal-body .input_dot select:after {
-          font-size: 26px;
-          font-size: 2.6rem;
-          position: absolute;
-          right: 20px;
-          top: 19px;
-          height: 26px;
-          width: 26px;
-          font-family: 'torio_icon';
-          content: "\e666";
-          color: #8a959e; }
+      .modal .modal-dialog .modal-content .modal-body .input_dot .select_box:after {
+        font-size: 26px;
+        font-size: 2.6rem;
+        position: absolute;
+        right: 20px;
+        top: 19px;
+        height: 26px;
+        width: 26px;
+        font-family: 'torio_icon';
+        content: "\e666";
+        color: #8a959e; }
     .modal .modal-dialog .modal-content .modal-body .task_detail {
       padding: 5px; }
       .modal .modal-dialog .modal-content .modal-body .task_detail .requester, .modal .modal-dialog .modal-content .modal-body .task_detail .worker, .modal .modal-dialog .modal-content .modal-body .task_detail .limlt {
