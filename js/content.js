@@ -83,5 +83,4 @@ $(document).ready(function(){
       .text($('#title_edit').val())
       .css( 'display', '');
     });
-
 });

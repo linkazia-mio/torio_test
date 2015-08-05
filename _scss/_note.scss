@@ -26,6 +26,13 @@
     }
     .edit_name {
       font-weight: bold;
+      .noimage {
+        height: 40px;
+        width: 40px;
+        line-height: 40px;
+        float: left;
+        margin-right: 12px;
+      }
       .user_image {
         float: left;
         margin-right: 12px;
@@ -115,5 +122,70 @@
   small {
     margin: 10px 0;
     display: block;
+  }
+}
+
+/*---------------------------------------------------------------------------------------
+ Medium Editor
+---------------------------------------------------------------------------------------*/
+.medium-editor-insert-plugin {
+  .medium-insert-buttons {
+    .medium-insert-buttons-show {
+      @include border_radius(100);
+      @include fontsize(2.0);
+      position: relative;
+      box-sizing: border-box;
+      display: block;
+      width: 20px;
+      height: 20px;
+      margin-top: 2px;
+      border: 2px solid;
+      line-height: 20px;
+      margin-left: 19px;
+      color: $white_brack;
+      overflow: hidden;
+      &:before {
+        position: absolute;
+        font-family: 'torio_icon';
+        font-weight: bold;
+        content: "\e604";
+        height: 20px;
+        left: -2px;
+        top: -2px;
+      }
+      &.active {
+        transition: all .2s;
+      	-webkit-transform: rotate(45deg);
+      	transform: rotate(45deg);
+      }
+    }
+    .medium-insert-buttons-addons {
+      top: -28px;
+      li {
+        a {
+          box-sizing: border-box;
+          display: inline-block;
+          margin: 0 5px;
+          width: 30px;
+          height: 30px;
+          border: none;
+          font-size: 20px;
+          line-height: 28px;
+          text-align: center;
+          color: $white_brack;
+          &.medium-insert-action {
+            .fa {
+              @include fontsize(2.0);
+              font-family: 'torio_icon';
+              &.fa-camera {
+                &:before {
+                  content: "\e622";
+                }
+              }
+            }
+          }
+        }
+      }
+    }
   }
 }

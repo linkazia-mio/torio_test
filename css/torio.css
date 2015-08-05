@@ -3617,6 +3617,12 @@ input[type="checkbox"] {
       color: #2e6b95; }
     .note .note_edit .edit_name {
       font-weight: bold; }
+      .note .note_edit .edit_name .noimage {
+        height: 40px;
+        width: 40px;
+        line-height: 40px;
+        float: left;
+        margin-right: 12px; }
       .note .note_edit .edit_name .user_image {
         float: left;
         margin-right: 12px; }
@@ -3694,3 +3700,57 @@ input[type="checkbox"] {
   .editable small {
     margin: 10px 0;
     display: block; }
+
+/*---------------------------------------------------------------------------------------
+ Medium Editor
+---------------------------------------------------------------------------------------*/
+.medium-editor-insert-plugin .medium-insert-buttons .medium-insert-buttons-show {
+  -webkit-border-radius: 100;
+  -moz-border-radius: 100;
+  -ms-border-radius: 100;
+  border-radius: 100;
+  font-size: 20px;
+  font-size: 2rem;
+  position: relative;
+  box-sizing: border-box;
+  display: block;
+  width: 20px;
+  height: 20px;
+  margin-top: 2px;
+  border: 2px solid;
+  line-height: 20px;
+  margin-left: 19px;
+  color: #8a959e;
+  overflow: hidden; }
+  .medium-editor-insert-plugin .medium-insert-buttons .medium-insert-buttons-show:before {
+    position: absolute;
+    font-family: 'torio_icon';
+    font-weight: bold;
+    content: "\e604";
+    height: 20px;
+    left: -2px;
+    top: -2px; }
+  .medium-editor-insert-plugin .medium-insert-buttons .medium-insert-buttons-show.active {
+    transition: all 0.2s;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg); }
+
+.medium-editor-insert-plugin .medium-insert-buttons .medium-insert-buttons-addons {
+  top: -28px; }
+  .medium-editor-insert-plugin .medium-insert-buttons .medium-insert-buttons-addons li a {
+    box-sizing: border-box;
+    display: inline-block;
+    margin: 0 5px;
+    width: 30px;
+    height: 30px;
+    border: none;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    color: #8a959e; }
+    .medium-editor-insert-plugin .medium-insert-buttons .medium-insert-buttons-addons li a.medium-insert-action .fa {
+      font-size: 20px;
+      font-size: 2rem;
+      font-family: 'torio_icon'; }
+      .medium-editor-insert-plugin .medium-insert-buttons .medium-insert-buttons-addons li a.medium-insert-action .fa.fa-camera:before {
+        content: "\e622"; }
