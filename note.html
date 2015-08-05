@@ -468,14 +468,37 @@ $timeout("aFunctionName()",1000); //this does not work and throws error: TypeErr
         <div class="modal-dialog" role="document">
           <div class="modal-content">
             <div class="modal-header">
-              <h4 class="modal-title" id="myModalLabel">メンバー追加</h4>
+              <h4 class="modal-title" id="myModalLabel">人を招待する</h4>
             </div>
-            <div class="modal-body">
-              ...
+            <div class="modal-body white">
+              <div class="input_dot">
+                <p class="item_name">メールアドレス</p>
+                <input type="text">
+                <input type="text">
+                <p><a href="">人を追加する</a>
+                <p><a href="">まとめて追加したい方はこちら</a>
+              </div>
+              <div class="input_dot">
+                <p class="item_name">招待するグループ</p>
+                <select>
+                  <option value="">グループに属さない</option>
+              		<option value="">グループA</option>
+              		<option value="">グループB</option>
+                  <option value="">グループC</option>
+              	</select>
+              </div>
+              <div class="input_dot dot_less">
+                <p class="item_name">権限設定</p>
+                <select>
+              		<option value="">設定しない</option>
+              		<option value="">公開</option>
+                  <option value="">非公開</option>
+              	</select>
+              </div>
             </div>
             <div class="modal-footer">
-              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-              <button type="button" class="btn btn-primary">Save changes</button>
+              <button type="button" class="btn btn-default" data-dismiss="modal">キャンセル</button>
+              <button type="button" class="btn btn-primary">招待する</button>
             </div>
           </div>
         </div>
