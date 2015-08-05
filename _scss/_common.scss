@@ -1244,33 +1244,58 @@ header {
             background-image: linear-gradient(to right, $white_brack, $white_brack 20%, rgba(0, 0, 0, 0) 20%, rgba(0, 0, 0, 0) 100%);
             background-size: 5px 5px;
             height: 1px;
-            margin-top: 20px;
+            margin-top: 10px;
             visibility: visible;
           }
           &.dot_less {
+            margin-bottom: 0;
             &:after {
               background: none;
               margin: 0;
+            }
+            .select_box {
+              margin-bottom: 0;
+              select {
+                margin-bottom: 0;
+              }
+            }
+          }
+          .member_add_link {
+            position: relative;
+            float: right;
+            width: 400px;
+            padding-bottom: 40px;
+            .single {
+              position: absolute;
+              left: 0;
+            }
+            .group {
+              position: absolute;
+              right: 0;
             }
           }
           input[type="text"] {
             @include border_radius();
             float: right;
-            width: 420px;
+            clear: left;
+            width: 400px;
             border: 1px solid $border_gray;
             padding: 5px;
             margin-bottom: 10px;
           }
           .select_box {
+            @include clearfix;
+            float: right;
+            margin-bottom: 20px;
             select {
-              float: right;
-              width: 420px;
+              position: relative;
+              width: 400px;
               -webkit-appearance: none;
               -moz-appearance: none;
               appearance: none;
               border: 1px solid $border_gray;
               padding: 5px 10px;
-              margin-bottom: 20px;
+              margin: 0 0 0 0;
               &:focus {
                 outline: none;
               }
@@ -1278,13 +1303,14 @@ header {
             &:after {
               @include fontsize(2.6);
               position: absolute;
-              right: 20px;
-              top: 19px;
+              right: 5px;
+              top: -2px;
               height: 26px;
               width: 26px;
               font-family: 'torio_icon';
               content: "\e666";
               color: $white_brack;
+              visibility: visible;
             }
           }
         }
