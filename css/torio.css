@@ -3658,6 +3658,8 @@ input[type="checkbox"] {
 ---------------------------------------------------------------------------------------*/
 .editable {
   padding: 30px 50px; }
+  .editable:focus {
+    outline: none; }
   .editable h1 {
     font-size: 20px;
     font-size: 2rem;
@@ -3736,11 +3738,11 @@ input[type="checkbox"] {
     transform: rotate(45deg); }
 
 .medium-editor-insert-plugin .medium-insert-buttons .medium-insert-buttons-addons {
-  top: -28px; }
+  top: -24px; }
   .medium-editor-insert-plugin .medium-insert-buttons .medium-insert-buttons-addons li a {
     box-sizing: border-box;
     display: inline-block;
-    margin: 0 5px;
+    margin: 0;
     width: 30px;
     height: 30px;
     border: none;
@@ -3749,8 +3751,10 @@ input[type="checkbox"] {
     text-align: center;
     color: #8a959e; }
     .medium-editor-insert-plugin .medium-insert-buttons .medium-insert-buttons-addons li a.medium-insert-action .fa {
-      font-size: 20px;
-      font-size: 2rem;
+      font-size: 26px;
+      font-size: 2.6rem;
       font-family: 'torio_icon'; }
       .medium-editor-insert-plugin .medium-insert-buttons .medium-insert-buttons-addons li a.medium-insert-action .fa.fa-camera:before {
         content: "\e622"; }
+      .medium-editor-insert-plugin .medium-insert-buttons .medium-insert-buttons-addons li a.medium-insert-action .fa.fa-youtube-play:before {
+        content: "\e709"; }

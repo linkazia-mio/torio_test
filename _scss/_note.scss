@@ -75,6 +75,9 @@
 ---------------------------------------------------------------------------------------*/
 .editable {
   padding: 30px 50px;
+  &:focus {
+    outline: none;
+  }
   h1 {
     @include fontsize(2.0);
     font-weight: bold;
@@ -160,12 +163,12 @@
       }
     }
     .medium-insert-buttons-addons {
-      top: -28px;
+      top: -24px;
       li {
         a {
           box-sizing: border-box;
           display: inline-block;
-          margin: 0 5px;
+          margin: 0;
           width: 30px;
           height: 30px;
           border: none;
@@ -175,11 +178,16 @@
           color: $white_brack;
           &.medium-insert-action {
             .fa {
-              @include fontsize(2.0);
+              @include fontsize(2.6);
               font-family: 'torio_icon';
               &.fa-camera {
                 &:before {
                   content: "\e622";
+                }
+              }
+              &.fa-youtube-play {
+                &:before {
+                  content: "\e709";
                 }
               }
             }
