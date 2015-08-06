@@ -1282,6 +1282,53 @@ header {
               }
             }
           }
+          .input_dot_toggle {
+            width: 400px;
+            float: right;
+            .toggle_btn {
+              @include border_radius(100px);
+              position: relative;
+              float: left;
+              width: 40px;
+              height: 20px;
+              padding: 2px;
+              &:hover {
+                cursor: pointer;
+              }
+              &.on {
+                background: $green;
+                .on {
+                  display: block;
+                }
+                .off {
+                  display: none;
+                }
+              }
+              &.off {
+                background: $dark_gray;
+                .off {
+                  display: block;
+                }
+                .on {
+                  display: none;
+                }
+              }
+              .circle {
+                @include border_radius(100px);
+                position: absolute;
+                left:2px;
+                width: 16px;
+                height: 16px;
+                background: #fff;
+                display: block;
+                border: 1px solid #ededf0;
+                border-bottom: 1px solid #dcdce0;
+              }
+            }
+            p {
+              float: left;
+            }
+          }
           .profile_image {
             float: right;
             height: 95px;

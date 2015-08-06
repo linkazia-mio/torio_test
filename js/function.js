@@ -2,16 +2,24 @@ $(window).on('resize', function(){});
 
 window.onload=function(){
 
+  //トグルスイッチ
+  $('.toggle_btn').click(function () {
+    $('.off .circle').animate({'left': '+=20px'}, 'fast');
+    $('.on .circle').animate({'left': '-=20px'}, 'fast');
+    $(this).toggleClass("off");
+    $(this).toggleClass("on");
+  });
+
   //グループ、メンバー追加hover
   $('.add').click(function() {
-    $(this).find(".balloon_box").hide();
+    $(this).find('.balloon_box').hide();
   });
   $('.add').hover(
     function () {
-      $(this).find(".balloon_box").show();
+      $(this).find('.balloon_box').show();
     },
     function () {
-      $(this).find(".balloon_box").hide();
+      $(this).find('.balloon_box').hide();
     }
   );
 
