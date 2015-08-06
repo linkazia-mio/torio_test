@@ -2,13 +2,25 @@ $(window).on('resize', function(){});
 
 window.onload=function(){
 
+  $('.add').click(function() {
+    $(this).find(".balloon_box").hide();
+  });
+  $('.add').hover(
+    function () {
+      $(this).find(".balloon_box").show();
+    },
+    function () {
+      $(this).find(".balloon_box").hide();
+    }
+  );
+
   //クリッカブル
-  $(".item").click(function () {
-    $(this).toggleClass("selected");
+  $('.item').click(function () {
+    $(this).toggleClass('selected');
   });
   //クリッカブル
-  $(".global_menu_inner li a").click(function () {
-    $(this).toggleClass("selected");
+  $('.global_menu_inner li a').click(function () {
+    $(this).toggleClass('selected');
   });
 
   //タスク入力部分
@@ -192,44 +204,44 @@ window.onload=function(){
 
   $(document).ready(function(){
     //Activity
-    $(".activity p").click(function () {
-      $(".activity_box").toggle( 'fade', '', 100 );
+    $('.activity p').click(function () {
+      $('.activity_box').toggle( 'fade', '', 100 );
       event.stopPropagation();
       $('.add_page,.check_box,.option_box,.detail_option_box,.detail_check_box,.task_add_list_member,.task_add_member').hide();
     });
     //Check box
-    $(".config .check").click(function () {
-      $(".check_box").toggle( 'fade', '', 100 );
+    $('.config .check').click(function () {
+      $('.check_box').toggle( 'fade', '', 100 );
       event.stopPropagation();
       $('.add_page,.activity_box,.option_box,.detail_option_box,.detail_check_box,#task_add_time_1,.task_add_list_member,.task_add_member,#task_add_time_1,#task_add_time_2,#task_add_time_3').hide();
     });
     //Option box
-    $(".config .option").click(function () {
-      $(".option_box").toggle( 'fade', '', 100 );
+    $('.config .option').click(function () {
+      $('.option_box').toggle( 'fade', '', 100 );
       event.stopPropagation();
       $('.add_page,.activity_box,.check_box,.detail_option_box,.detail_check_box,#task_add_time_1,.task_add_list_member,.task_add_member,#task_add_time_1,#task_add_time_2,#task_add_time_3').hide();
     });
     //Add page
-    $(".page_menu_footer p").click(function () {
-      $(".add_page").toggle( 'fade', '', 100 );
+    $('.page_menu_footer p').click(function () {
+      $('.add_page').toggle( 'fade', '', 100 );
       event.stopPropagation();
       $('.option_box,.activity_box,.check_box,.detail_option_box,.detail_check_box,#task_add_time_1,.task_add_list_member,.task_add_member,#task_add_time_1,#task_add_time_2,#task_add_time_3').hide();
     });
     //Detail_option_box
-    $(".detail .option").click(function () {
-      $(".detail_option_box").toggle( 'fade', '', 100 );
+    $('.detail .option').click(function () {
+      $('.detail_option_box').toggle( 'fade', '', 100 );
       event.stopPropagation();
       $('.option_box,.activity_box,.check_box,.add_page,.detail_check_box,#task_add_time_1,.task_add_list_member,.task_add_member,#task_add_time_1,#task_add_time_2,#task_add_time_3').hide();
     });
     //Detail_option_box
-    $(".detail .check").click(function () {
-      $(".detail_check_box").toggle( 'fade', '', 100 );
+    $('.detail .check').click(function () {
+      $('.detail_check_box').toggle( 'fade', '', 100 );
       event.stopPropagation();
       $('.option_box,.activity_box,.check_box,.add_page,.detail_option_box,#task_add_time_1,.task_add_list_member,.task_add_member,#task_add_time_1,#task_add_time_2,#task_add_time_3').hide();
     });
     //task_add_list_member
-    $(".task_add_list_btn").click(function () {
-      $(".task_add_list_member").toggle( 'fade', '', 100 );
+    $('.task_add_list_btn').click(function () {
+      $('.task_add_list_member').toggle( 'fade', '', 100 );
       event.stopPropagation();
       $('.option_box,.activity_box,.check_box,.add_page,.detail_option_box,#task_add_time_1,.task_add_member,#task_add_time_1,#task_add_time_2,#task_add_time_3').hide();
     });
@@ -238,50 +250,50 @@ window.onload=function(){
       event.stopPropagation();
     });
     //Task_add_time
-    $("#made_1 .time_create").click(function () {
-      $("#made_1 .task_add_time").toggle( 'fade', '', 100 );
+    $('#made_1 .time_create').click(function () {
+      $('#made_1 .task_add_time').toggle( 'fade', '', 100 );
       event.stopPropagation();
       $('.option_box,.activity_box,.check_box,.add_page,.detail_option_box,.task_add_list_member,.task_add_member,#task_add_time_2,#task_add_time_3').hide();
     });
     //Task_add_time
-    $("#made_2 .time_create").click(function () {
-      $("#made_2 .task_add_time").toggle( 'fade', '', 100 );
+    $('#made_2 .time_create').click(function () {
+      $('#made_2 .task_add_time').toggle( 'fade', '', 100 );
       event.stopPropagation();
       $('.option_box,.activity_box,.check_box,.add_page,.detail_option_box,.task_add_list_member,.task_add_member,#task_add_time_2,#task_add_time_3').hide();
     });
     //Task_add_time
-    $("#made_3 .time_create").click(function () {
-      $("#made_3 .task_add_time").toggle( 'fade', '', 100 );
+    $('#made_3 .time_create').click(function () {
+      $('#made_3 .task_add_time').toggle( 'fade', '', 100 );
       event.stopPropagation();
       $('.option_box,.activity_box,.check_box,.add_page,.detail_option_box,.task_add_list_member,.task_add_member,#task_add_time_2,#task_add_time_3').hide();
     });
     //Task Add Member
-    $("#made_1 .task_member").click(function () {
-      $("#made_1 .task_add_member").toggle( 'fade', '', 100 );
+    $('#made_1 .task_member').click(function () {
+      $('#made_1 .task_add_member').toggle( 'fade', '', 100 );
       event.stopPropagation();
       $('.add_page,.check_box,.option_box,.detail_option_box,.detail_check_box,.task_add_list_member,#task_add_time_1,#task_add_time_2,#task_add_time_3').hide();
     });
     //Task Add Member
-    $("#made_2 .task_member").click(function () {
-      $("#made_2 .task_add_member").toggle( 'fade', '', 100 );
+    $('#made_2 .task_member').click(function () {
+      $('#made_2 .task_add_member').toggle( 'fade', '', 100 );
       event.stopPropagation();
       $('.add_page,.check_box,.option_box,.detail_option_box,.detail_check_box,.task_add_list_member,#task_add_time_1,#task_add_time_2,#task_add_time_3').hide();
     });
     //Task Add Member
-    $("#made_3 .task_member").click(function () {
-      $("#made_3 .task_add_member").toggle( 'fade', '', 100 );
+    $('#made_3 .task_member').click(function () {
+      $('#made_3 .task_add_member').toggle( 'fade', '', 100 );
       event.stopPropagation();
       $('.add_page,.check_box,.option_box,.detail_option_box,.detail_check_box,.task_add_list_member,#task_add_time_1,#task_add_time_2,#task_add_time_3').hide();
     });
     //Task Option
-    $(".modal-header .option").click(function () {
-      $(".modal_option_box").toggle( 'fade', '', 100 );
+    $('.modal-header .option').click(function () {
+      $('.modal_option_box').toggle( 'fade', '', 100 );
       event.stopPropagation();
       $('.add_page,.check_box,.option_box,.detail_option_box,.detail_check_box,.task_add_list_member,.task_add_member').hide();
     });
     //Limit_add_time
-    $(".limlt").click(function () {
-      $(".limit_add_time").toggle( 'fade', '', 100 );
+    $('.limlt').click(function () {
+      $('.limit_add_time').toggle( 'fade', '', 100 );
       event.stopPropagation();
       $('.add_page,.check_box,.option_box,.detail_option_box,.detail_check_box,.task_add_list_member,.task_add_member,.task_add_requester,.task_add_worker').hide();
     });
@@ -290,20 +302,20 @@ window.onload=function(){
       event.stopPropagation();
     });
     //Task_add_requester
-    $(".requester input").click(function () {
-      $(".task_add_requester").toggle( 'fade', '', 100 );
+    $('.requester input').click(function () {
+      $('.task_add_requester').toggle( 'fade', '', 100 );
       event.stopPropagation();
       $('.add_page,.check_box,.option_box,.detail_option_box,.detail_check_box,.task_add_list_member,.task_add_member,.task_add_worker,.limit_add_time').hide();
     });
     //Task_add_worker
-    $(".worker input").click(function () {
-      $(".task_add_worker").toggle( 'fade', '', 100 );
+    $('.worker input').click(function () {
+      $('.task_add_worker').toggle( 'fade', '', 100 );
       event.stopPropagation();
       $('.add_page,.check_box,.option_box,.detail_option_box,.detail_check_box,.task_add_list_member,.task_add_member,.task_add_requester,.limit_add_time').hide();
     });
     //Nnote_detail_option_box
-    $(".note_option").click(function () {
-      $(".note_detail_option_box").toggle( 'fade', '', 100 );
+    $('.note_option').click(function () {
+      $('.note_detail_option_box').toggle( 'fade', '', 100 );
       event.stopPropagation();
       $('.add_page,.check_box,.option_box,.detail_option_box,.detail_check_box,.task_add_list_member,.task_add_member,.task_add_requester,.limit_add_time').hide();
     });
@@ -321,7 +333,7 @@ window.onload=function(){
 
   //global_menu 非表示
   $(document).ready(function(){
-    $(".global_menu_btn").click(function () {
+    $('.global_menu_btn').click(function () {
       jQuery( '.global_menu' ).toggle();
     });
   });
@@ -362,54 +374,54 @@ window.onload=function(){
   var Dougnut_data = [
     {
       value: 60,
-      color:"#3A87BC"
+      color:'#3A87BC'
     },
     {
       value: 40,
-      color: "#e0f2f2"
+      color: '#e0f2f2'
     }
   ];
   //タスクドーナツグラフ 黄色
   var Dougnut_data_yellow = [
     {
       value: 40,
-      color:"#feb22e"
+      color:'#feb22e'
     },
     {
       value: 60,
-      color: "#fff4e0"
+      color: '#fff4e0'
     }
   ];
   //タスクドーナツグラフ 赤
   var Dougnut_data_red = [
     {
       value: 10,
-      color:"#ed6d44"
+      color:'#ed6d44'
     },
     {
       value: 90,
-      color: "#fbebea"
+      color: '#fbebea'
     }
   ];
 
   var options = {
     percentageInnerCutout : 70,
     animationSteps : 20,
-    animationEasing: "easeOutQuart",
+    animationEasing: 'easeOutQuart',
     showTooltips: false,
   //   //String - A legend template
-  //   legendTemplate : '<% for (var i=0; i<segments.length; i++){ %><p style="color:<%=segments[i].fillColor%>"><%= Math.ceil(segments[i].value / total * 1000) / 10 %>%</p><% } %>',
+  //   legendTemplate : '<% for (var i=0; i<segments.length; i++){ %><p style='color:<%=segments[i].fillColor%>'><%= Math.ceil(segments[i].value / total * 1000) / 10 %>%</p><% } %>',
   //   onAnimationComplete: function() {
-  //     $(".number").html(this.generateLegend()).fadeIn();
+  //     $('.number').html(this.generateLegend()).fadeIn();
   //  }
   }
 
-  var myDoughnut = new Chart(document.getElementById("task_graph_green").
-  getContext("2d")).Doughnut(Dougnut_data,options);
-  var myDoughnut = new Chart(document.getElementById("task_graph_red").
-  getContext("2d")).Doughnut(Dougnut_data_red,options);
-  var myDoughnut = new Chart(document.getElementById("task_graph_yellow").
-  getContext("2d")).Doughnut(Dougnut_data_yellow,options);
+  var myDoughnut = new Chart(document.getElementById('task_graph_green').
+  getContext('2d')).Doughnut(Dougnut_data,options);
+  var myDoughnut = new Chart(document.getElementById('task_graph_red').
+  getContext('2d')).Doughnut(Dougnut_data_red,options);
+  var myDoughnut = new Chart(document.getElementById('task_graph_yellow').
+  getContext('2d')).Doughnut(Dougnut_data_yellow,options);
 
 
   jQuery(document).ready(function(){
@@ -454,7 +466,7 @@ $(function(){
 });
 
 function actCustomScrollbar(){
-     $(".global_menu_inner").mCustomScrollbar({
+     $('.global_menu_inner').mCustomScrollbar({
        autoHideScrollbar: true,
        scrollInertia: 0,
        advanced:{
@@ -462,7 +474,7 @@ function actCustomScrollbar(){
           updateOnContentResize: true
         }
      });
-     $(".page_menu_inner").mCustomScrollbar({
+     $('.page_menu_inner').mCustomScrollbar({
        autoHideScrollbar: true,
        scrollInertia: 0,
        advanced:{
@@ -470,7 +482,7 @@ function actCustomScrollbar(){
           updateOnContentResize: true
         }
      });
-     $(".detail .file").mCustomScrollbar({
+     $('.detail .file').mCustomScrollbar({
        autoHideScrollbar: true,
        scrollInertia: 0,
        advanced:{
@@ -478,7 +490,7 @@ function actCustomScrollbar(){
           updateOnContentResize: true
         }
      });
-     $(".detail .task").mCustomScrollbar({
+     $('.detail .task').mCustomScrollbar({
        autoHideScrollbar: true,
        scrollInertia: 0,
        advanced:{
@@ -486,7 +498,7 @@ function actCustomScrollbar(){
           updateOnContentResize: true
         }
      });
-     $(".detail .note").mCustomScrollbar({
+     $('.detail .note').mCustomScrollbar({
        autoHideScrollbar: true,
        scrollInertia: 0,
        advanced:{
@@ -494,7 +506,7 @@ function actCustomScrollbar(){
           updateOnContentResize: true
         }
      });
-     $(".viewers_list").mCustomScrollbar({
+     $('.viewers_list').mCustomScrollbar({
        autoHideScrollbar: true,
        scrollInertia: 0,
        advanced:{

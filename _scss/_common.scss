@@ -272,7 +272,7 @@ header {
         @include fontsize(2.6);
         position: relative;
         height: 30px;
-        width: 15px;
+        width: 30px;
         color: $white_brack;
         &:hover {
           color: $torio_green;
@@ -287,7 +287,7 @@ header {
         text-align: center;
         color: #fff;
         top: 0px;
-        right: -15px;
+        right: 0px;
         margin-top: -3px;
         z-index: 1000;
         content: "";
@@ -301,7 +301,7 @@ header {
   }
   .activity {
     @extend .task;
-    margin-left: 14%;
+    padding-left: 10px;
   }
   .me {
     position: absolute;

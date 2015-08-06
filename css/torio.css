@@ -1311,7 +1311,7 @@ header {
       font-size: 2.6rem;
       position: relative;
       height: 30px;
-      width: 15px;
+      width: 30px;
       color: #8a959e; }
       .alart .task p.icon:hover, .alart .activity p.icon:hover {
         color: #3A87BC;
@@ -1328,7 +1328,7 @@ header {
       text-align: center;
       color: #fff;
       top: 0px;
-      right: -15px;
+      right: 0px;
       margin-top: -3px;
       z-index: 1000;
       content: "";
@@ -1338,7 +1338,7 @@ header {
       padding: 0 4px;
       background: #db4c3f; }
   .alart .activity {
-    margin-left: 14%; }
+    padding-left: 10px; }
   .alart .me {
     position: absolute;
     top: -3px;
