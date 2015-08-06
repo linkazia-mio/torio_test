@@ -3842,8 +3842,7 @@ input[type="checkbox"] {
       color: #555555; }
       .calendar .ui-datepicker-inline .ui-widget-header .ui-state-hover {
         border: none;
-        background: none;
-        font-weight: normal; }
+        background: none; }
       .calendar .ui-datepicker-inline .ui-widget-header .ui-icon {
         background: none;
         text-indent: 0;
@@ -4049,9 +4048,8 @@ input[type="checkbox"] {
     border: 1px solid #e3e3e3;*/
     border: 1px solid #ededf0;
     border-bottom: 1px solid #dcdce0;
-    box-shadow: none; }
-    .note .note_edit article {
-      margin-bottom: 20px; }
+    box-shadow: none;
+    margin-bottom: 20px; }
     .note .note_edit a {
       color: #2e6b95; }
     .note .note_edit .edit_name {
