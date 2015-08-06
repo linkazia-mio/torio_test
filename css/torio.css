@@ -4276,3 +4276,30 @@ input[type="checkbox"] {
     box-shadow: 0 2.5em 0 -1.3em #ffffff; }
   40% {
     box-shadow: 0 2.5em 0 0 #ffffff; } }
+
+/*---------------------------------------------------------------------------------------
+ Delete_text
+---------------------------------------------------------------------------------------*/
+.delete_text {
+  text-align: center;
+  margin-top: 30%; }
+  .delete_text p {
+    font-size: 18px;
+    font-size: 1.8rem;
+    color: #fff; }
+  .delete_text button {
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    border-radius: 4px;
+    width: 140px;
+    height: 40px;
+    margin: 30px 10px; }
+    .delete_text button:hover {
+      opacity: 0.8;
+      filter: alpha(opacity=80); }
+    .delete_text button.cancel {
+      background: #f5f5f5; }
+    .delete_text button.agree {
+      background: #2e6b95;
+      color: #fff; }

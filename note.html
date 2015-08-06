@@ -348,6 +348,8 @@
               <article class="editable">
                 <p>テスト投稿です。</p>
               </article>
+              <p class="counter">1000文字</p>
+              <button class="btn_add_task" data-toggle="modal" data-target="#delete_note">削除する</button>
             </div>
             <!--Note Edit/-->
             <!--Note Edit/-->
@@ -568,6 +570,16 @@ $timeout("aFunctionName()",1000); //this does not work and throws error: TypeErr
         </div>
       </div>
       <!--/Add member-->
+      <!--Delete/-->
+      <div class="modal fade" id="delete_note" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <button type="button" class="modal_close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <div class="delete_text">
+          <p>このページを削除しますか？</p>
+          <button class="cancel">キャンセル</button>
+          <button class="agree">削除する</button>
+        </div>
+      </div>
+      <!--/Delete-->
     </div>
     <script>
     var editor = new MediumEditor('.editable', {

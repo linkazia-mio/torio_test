@@ -287,3 +287,32 @@
     box-shadow: 0 2.5em 0 0 #ffffff;
   }
 }
+
+/*---------------------------------------------------------------------------------------
+ Delete_text
+---------------------------------------------------------------------------------------*/
+
+.delete_text {
+  text-align: center;
+  margin-top: 30%;
+  p {
+    @include fontsize(1.8);
+    color: #fff;
+  }
+  button {
+    @include border_radius();
+    width: 140px;
+    height: 40px;
+    margin: 30px 10px;
+    &:hover {
+      @include opacity(0.8);
+    }
+    &.cancel {
+      background: $white_gray;
+    }
+    &.agree {
+      background: $green;
+      color: #fff;
+    }
+  }
+}
