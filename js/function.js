@@ -2,6 +2,7 @@ $(window).on('resize', function(){});
 
 window.onload=function(){
 
+  //グループを追加の削除ボタン
   $('#group_member_1 .delete').click(function() {
     $('#group_member_1').hide();
   });
@@ -259,7 +260,7 @@ window.onload=function(){
     $('.detail .option').click(function () {
       $('.detail_option_box').toggle( 'fade', '', 100 );
       event.stopPropagation();
-      $('.option_box,.activity_box,.check_box,.add_page,.detail_check_box,#task_add_time_1,.task_add_list_member,.task_add_member,#task_add_time_1,#task_add_time_2,#task_add_time_3').hide();
+      $('.option_box,.activity_box,.check_box,.add_page,.detail_website_box,.detail_check_box,#task_add_time_1,.task_add_list_member,.task_add_member,#task_add_time_1,#task_add_time_2,#task_add_time_3').hide();
     });
     //Detail_option_box
     $('.detail .check').click(function () {

@@ -1573,7 +1573,7 @@ header {
     font-size: 1.3rem;
     font-weight: bold; }
     .global_menu .global_menu_inner h3:first-child {
-      margin-top: 30px; }
+      padding-top: 30px; }
   .global_menu .global_menu_inner ul {
     margin: 0 0 2rem -10px;
     font-size: 12px;
@@ -1639,7 +1639,7 @@ header {
     .global_menu .global_menu_inner .groups .add, .global_menu .global_menu_inner .member .add {
       position: absolute;
       right: 17px;
-      top: -5px;
+      top: 26px;
       font-size: 22px;
       font-size: 2.2rem;
       color: #8a959e;
