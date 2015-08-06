@@ -2,6 +2,7 @@ $(window).on('resize', function(){});
 
 window.onload=function(){
 
+  //グループ、メンバー追加hover
   $('.add').click(function() {
     $(this).find(".balloon_box").hide();
   });

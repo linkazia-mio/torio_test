@@ -1145,6 +1145,7 @@ button:focus {
   text-align: left;
   white-space: normal;
   opacity: 1;
+  filter: alpha(opacity=100);
   padding: 10px 0; }
   .popover ul {
     margin-bottom: 0; }
@@ -2109,7 +2110,6 @@ header {
       font-size: 1.3rem;
       *zoom: 1;
       padding: 10px;
-      margin-bottom: 20px;
       clear: both; }
       .modal .modal-dialog .modal-content .modal-body .input_dot:after {
         content: ".";
@@ -2122,6 +2122,7 @@ header {
         float: left; }
       .modal .modal-dialog .modal-content .modal-body .input_dot:after {
         *zoom: 1;
+        clear: both;
         display: block;
         content: "";
         background-image: -webkit-linear-gradient(left, #8a959e, #8a959e 20%, transparent 20%, transparent 100%);
@@ -2146,6 +2147,31 @@ header {
           margin-bottom: 0; }
           .modal .modal-dialog .modal-content .modal-body .input_dot.dot_less .select_box select {
             margin-bottom: 0; }
+      .modal .modal-dialog .modal-content .modal-body .input_dot .profile_image {
+        float: right;
+        height: 95px;
+        width: 400px;
+        margin-bottom: 20px; }
+        .modal .modal-dialog .modal-content .modal-body .input_dot .profile_image .image_preview {
+          width: 95px;
+          height: 95px;
+          float: left;
+          background: #3A87BC; }
+        .modal .modal-dialog .modal-content .modal-body .input_dot .profile_image .photo_upload {
+          overflow: hidden; }
+        .modal .modal-dialog .modal-content .modal-body .input_dot .profile_image input[type="file"] {
+          opacity: 0;
+          filter: alpha(opacity=0);
+          position: absolute;
+          right: 0;
+          top: 0;
+          margin: 0;
+          font-size: 100px;
+          cursor: pointer; }
+        .modal .modal-dialog .modal-content .modal-body .input_dot .profile_image p {
+          float: left;
+          line-height: 95px;
+          padding-left: 20px; }
       .modal .modal-dialog .modal-content .modal-body .input_dot .member_add_link {
         position: relative;
         float: right;
@@ -2163,7 +2189,6 @@ header {
         -ms-border-radius: 4px;
         border-radius: 4px;
         float: right;
-        clear: left;
         width: 400px;
         border: 1px solid #e2e2e2;
         padding: 5px;
@@ -2268,12 +2293,13 @@ header {
             .modal .modal-dialog .modal-content .modal-body .task_detail .information .btn_file i:hover {
               color: #2e6b95; }
           .modal .modal-dialog .modal-content .modal-body .task_detail .information .btn_file input[type="file"] {
-            position: absolute;
             opacity: 0;
+            filter: alpha(opacity=0);
+            position: absolute;
             margin: 0;
             top: 0;
-            width: 30px;
-            height: 40px; }
+            width: 100px;
+            height: 20px; }
             .modal .modal-dialog .modal-content .modal-body .task_detail .information .btn_file input[type="file"]:hover {
               cursor: pointer; }
         .modal .modal-dialog .modal-content .modal-body .task_detail .information .btn_add_task {
@@ -2357,14 +2383,16 @@ header {
         padding: 0;
         font-weight: normal; }
         .modal .modal-dialog .modal-content .modal-footer button.btn-default:hover {
-          opacity: 0.7; }
+          opacity: 0.7;
+          filter: alpha(opacity=70); }
       .modal .modal-dialog .modal-content .modal-footer button.btn-primary {
         background: #3A87BC;
         border: none;
         padding: 0;
         font-weight: 700; }
         .modal .modal-dialog .modal-content .modal-footer button.btn-primary:hover {
-          opacity: 0.7; }
+          opacity: 0.7;
+          filter: alpha(opacity=70); }
     .modal .modal-dialog .modal-content .modal-footer .link {
       position: absolute;
       left: 25px;

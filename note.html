@@ -453,34 +453,23 @@ $timeout("aFunctionName()",1000); //this does not work and throws error: TypeErr
             </div>
             <div class="modal-body white">
               <div class="input_dot">
-                <p class="item_name">メールアドレス</p>
-                <input type="text">
-                <input type="text">
-                <div class="member_add_link">
-                  <p class="single"><a href="">人を追加する</a>
-                  <p class="group"><a href="">まとめて追加したい方はこちら</a>
+                <p class="item_name">アイコン</p>
+                <div class="profile_image">
+                  <div class="image_preview">
+                  </div>
+                  <div class="photo_upload">
+                    <input type="file" name="datafile">
+                    <p>写真を変更する</p>
+                  </div>
                 </div>
               </div>
               <div class="input_dot">
-                <p class="item_name">招待するグループ</p>
-                <div class="select_box">
-                  <select>
-                    <option value="">グループに属さない</option>
-                		<option value="">グループA</option>
-                		<option value="">グループB</option>
-                    <option value="">グループC</option>
-                	</select>
-                </div>
+                <p class="item_name">グループ名</p>
+                <input type="text">
               </div>
               <div class="input_dot dot_less">
-                <p class="item_name">権限設定</p>
-                <div class="select_box">
-                  <select>
-                		<option value="">設定しない</option>
-                		<option value="">公開</option>
-                    <option value="">非公開</option>
-                	</select>
-                </div>
+                <p class="item_name">メンバー</p>
+                <input type="text">
               </div>
             </div>
             <div class="modal-footer">
