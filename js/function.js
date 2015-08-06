@@ -233,11 +233,21 @@ window.onload=function(){
       event.stopPropagation();
       $('.add_page,.activity_box,.option_box,.detail_option_box,.detail_check_box,#task_add_time_1,.task_add_list_member,.task_add_member,#task_add_time_1,#task_add_time_2,#task_add_time_3').hide();
     });
+    //Website Box
+    $('.website').click(function () {
+      $('.detail_website_box').toggle( 'fade', '', 100 );
+      event.stopPropagation();
+      $('.add_page,.check_box,.option_box,.detail_option_box,.detail_check_box,.task_add_list_member,.task_add_member').hide();
+    });
+    $('.detail_website_box').click(function () {
+      jQuery('.detail_website_box').show();
+      event.stopPropagation();
+    });
     //Option box
     $('.config .option').click(function () {
       $('.option_box').toggle( 'fade', '', 100 );
       event.stopPropagation();
-      $('.add_page,.activity_box,.check_box,.detail_option_box,.detail_check_box,#task_add_time_1,.task_add_list_member,.task_add_member,#task_add_time_1,#task_add_time_2,#task_add_time_3').hide();
+      $('.add_page,.activity_box,.check_box,.detail_option_box,.detail_check_box,#task_add_time_1,.detail_website_box,.task_add_list_member,.task_add_member,#task_add_time_1,#task_add_time_2,#task_add_time_3').hide();
     });
     //Add page
     $('.page_menu_footer p').click(function () {
