@@ -47,7 +47,9 @@ window.onload=function(){
   $('.task_add_list_member button').click(function () {
     $(this).toggleClass('checked');
   });
-
+  $('.task_add_requester button').click(function () {
+    $(this).toggleClass('checked');
+  });
   $('.task_add_worker button').click(function () {
     $(this).toggleClass('checked');
   });

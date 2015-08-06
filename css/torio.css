@@ -4019,9 +4019,10 @@ input[type="checkbox"] {
       width: 20px;
       line-height: 20px;
       font-weight: normal; }
+    .task_add_requester ul li .checked:after, .task_add_worker ul li .checked:after {
+      color: #8a959e; }
 
 .task_add_worker {
-  color: #8a959e;
   top: 88px; }
 
 /*---------------------------------------------------------------------------------------

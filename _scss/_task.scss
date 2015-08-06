@@ -661,11 +661,15 @@ input[type="checkbox"] {
         line-height: 20px;
         font-weight: normal;
       }
+      .checked {
+        &:after {
+          color: $white_brack;
+        }
+      }
     }
   }
 }
 .task_add_worker {
   @extend .task_add_requester;
-  color: $white_brack;
   top: 88px;
 }
