@@ -4050,6 +4050,8 @@ input[type="checkbox"] {
     border: 1px solid #ededf0;
     border-bottom: 1px solid #dcdce0;
     box-shadow: none; }
+    .note .note_edit article {
+      margin-bottom: 20px; }
     .note .note_edit a {
       color: #2e6b95; }
     .note .note_edit .edit_name {
@@ -4118,6 +4120,19 @@ input[type="checkbox"] {
         color: #8a959e;
         line-height: 23px;
         margin-right: 10px; }
+    .note .note_edit .browse_count {
+      font-size: 11px;
+      font-size: 1.1rem;
+      line-height: 23px;
+      color: #8a959e;
+      position: absolute;
+      right: 15px;
+      bottom: 8px;
+      vertical-align: top; }
+      .note .note_edit .browse_count i {
+        font-size: 23px;
+        font-size: 2.3rem;
+        margin-right: 5px; }
     .note .note_edit .counter {
       font-size: 11px;
       font-size: 1.1rem;

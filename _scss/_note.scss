@@ -20,6 +20,9 @@
     border: 1px solid #ededf0;
     border-bottom: 1px solid #dcdce0;
     box-shadow: none;
+    article {
+      margin-bottom: 20px;
+    }
     a {
       color: $green;
     }
@@ -109,6 +112,19 @@
         @extend .line_count;
       }
     }
+    .browse_count {
+      @include fontsize(1.1);
+      line-height: 23px;
+      color: $white_brack;
+      position: absolute;
+      right: 15px;
+      bottom: 8px;
+      vertical-align: top;
+      i {
+        @include fontsize(2.3);
+        margin-right: 5px;
+      }
+    }
     .counter {
       @include fontsize(1.1);
       position: absolute;
@@ -193,7 +209,7 @@
  Medium Editor
 ---------------------------------------------------------------------------------------*/
 .medium-editor-insert-plugin.medium-editor-placeholder:after {
-    padding: 30px 70px;
+  padding: 30px 70px;
 }
 .medium-editor-insert-plugin {
   .medium-editor-placeholder {
