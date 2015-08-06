@@ -1129,6 +1129,10 @@ button:focus {
   border-radius: 100px; }
 
 /*popover*/
+.popover {
+  z-index: 10;
+  padding: 10px 0; }
+
 .main .popover {
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
@@ -1146,7 +1150,8 @@ button:focus {
   white-space: normal;
   opacity: 1;
   filter: alpha(opacity=100);
-  padding: 10px 0; }
+  padding: 10px 0;
+  z-index: 10; }
   .main .popover h3 {
     font-size: 14px;
     font-size: 1.4rem;
@@ -2382,7 +2387,9 @@ header {
           top: 12px; }
         .modal .modal-dialog .modal-content .modal-body .task_detail .requester input, .modal .modal-dialog .modal-content .modal-body .task_detail .worker input, .modal .modal-dialog .modal-content .modal-body .task_detail .limlt input {
           padding-left: 40px;
-          width: 550px; }
+          width: 550px;
+          line-height: 21px;
+          margin-top: 10px; }
       .modal .modal-dialog .modal-content .modal-body .task_detail .worker {
         -webkit-border-radius: 0 0 4px 4px;
         -moz-border-radius: 0 0 4px 4px;
@@ -2397,6 +2404,9 @@ header {
         margin-top: 20px; }
         .modal .modal-dialog .modal-content .modal-body .task_detail .limlt i {
           color: #db4c3f; }
+        .modal .modal-dialog .modal-content .modal-body .task_detail .limlt input {
+          line-height: 21px;
+          margin-top: 10px; }
       .modal .modal-dialog .modal-content .modal-body .task_detail .information {
         position: relative; }
         .modal .modal-dialog .modal-content .modal-body .task_detail .information textarea {

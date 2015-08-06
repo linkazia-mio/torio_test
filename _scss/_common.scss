@@ -78,6 +78,10 @@ button {
   }
 }
 /*popover*/
+.popover {
+  z-index: 10;
+  padding: 10px 0;
+}
 .main {
   .popover {
     @include border_radius();
@@ -93,6 +97,7 @@ button {
     white-space: normal;
     @include opacity(1);
     padding: 10px 0;
+    z-index: 10;
     h3 {
       @include fontsize(1.4);
       border-bottom: 1px solid $border_white_gray;
@@ -1534,6 +1539,8 @@ header {
             input {
               padding-left: 40px;
               width: 550px;
+              line-height: 21px;
+              margin-top: 10px;
             }
           }
           .worker {
@@ -1547,6 +1554,10 @@ header {
             margin-top: 20px;
             i {
               color: $dark_red;
+            }
+            input {
+              line-height: 21px;
+              margin-top: 10px;
             }
           }
           .information {
