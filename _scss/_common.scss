@@ -1297,21 +1297,9 @@ header {
               }
               &.on {
                 background: $green;
-                .on {
-                  display: block;
-                }
-                .off {
-                  display: none;
-                }
               }
               &.off {
                 background: $dark_gray;
-                .off {
-                  display: block;
-                }
-                .on {
-                  display: none;
-                }
               }
               .circle {
                 @include border_radius(100px);
@@ -1327,6 +1315,14 @@ header {
             }
             p {
               float: left;
+              .on {
+                display: block;
+                margin-left: 10px;
+              }
+              .off {
+                display: none;
+                margin-left: 10px;
+              }
             }
           }
           .profile_image {
