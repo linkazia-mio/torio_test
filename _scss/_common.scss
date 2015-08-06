@@ -1298,6 +1298,7 @@ header {
               border: 1px solid $border_gray;
               padding: 5px 10px;
               margin: 0 0 0 0;
+              z-index: 100;
               &:focus {
                 outline: none;
               }
@@ -1313,6 +1314,7 @@ header {
               content: "\e666";
               color: $white_brack;
               visibility: visible;
+              z-index: 10;
             }
           }
         }

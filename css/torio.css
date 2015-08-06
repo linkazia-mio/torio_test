@@ -2166,7 +2166,8 @@ header {
           appearance: none;
           border: 1px solid #e2e2e2;
           padding: 5px 10px;
-          margin: 0 0 0 0; }
+          margin: 0 0 0 0;
+          z-index: 100; }
           .modal .modal-dialog .modal-content .modal-body .input_dot .select_box select:focus {
             outline: none; }
         .modal .modal-dialog .modal-content .modal-body .input_dot .select_box:after {
@@ -2180,7 +2181,8 @@ header {
           font-family: 'torio_icon';
           content: "\e666";
           color: #8a959e;
-          visibility: visible; }
+          visibility: visible;
+          z-index: 10; }
     .modal .modal-dialog .modal-content .modal-body .task_detail {
       padding: 5px; }
       .modal .modal-dialog .modal-content .modal-body .task_detail .requester, .modal .modal-dialog .modal-content .modal-body .task_detail .worker, .modal .modal-dialog .modal-content .modal-body .task_detail .limlt {
