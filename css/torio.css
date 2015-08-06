@@ -2797,7 +2797,7 @@ header {
             color: #ffffff; }
       .file .file_list .panel .panel-body.type_file {
         cursor: pointer; }
-        .file .file_list .panel .panel-body.type_file .excel {
+        .file .file_list .panel .panel-body.type_file .excel, .file .file_list .panel .panel-body.type_file .word, .file .file_list .panel .panel-body.type_file .powerpoint, .file .file_list .panel .panel-body.type_file .pdf {
           font-size: 80px;
           font-size: 8rem;
           -webkit-border-top-left-radius: 2px;

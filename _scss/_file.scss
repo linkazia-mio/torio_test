@@ -81,7 +81,7 @@
         }
         &.type_file {
           cursor: pointer;
-          .excel {
+          .excel,.word,.powerpoint,.pdf {
             @include fontsize(8.0);
             -webkit-border-top-left-radius: 2px;
             -webkit-border-top-right-radius: 2px;
