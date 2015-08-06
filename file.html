@@ -625,14 +625,64 @@
         <div class="modal-dialog" role="document">
           <div class="modal-content">
             <div class="modal-header">
-              <h4 class="modal-title" id="myModalLabel">新規グループ作成</h4>
+              <h4 class="modal-title" id="myModalLabel">グループを新規作成</h4>
             </div>
-            <div class="modal-body">
-              ...
+            <div class="modal-body white">
+              <div class="input_dot">
+                <p class="item_name">アイコン</p>
+                <div class="profile_image">
+                  <div class="image_preview">
+                  </div>
+                  <div class="photo_upload">
+                    <input type="file">
+                    <p>写真を変更する</p>
+                  </div>
+                </div>
+              </div>
+              <div class="input_dot">
+                <p class="item_name">グループ名</p>
+                <input type="text">
+              </div>
+              <div class="input_dot">
+                <p class="item_name">メンバー</p>
+                <input type="text">
+                <div class="input_dot_contents">
+                  <ul>
+                    <li id="group_member_1"><p class="user_image"><span class="noimage">KO</span></p><p class="user_name">小松 健太</p>
+                      <div class="select_box">
+                        <select>
+                          <option value="">オーナー</option>
+                      		<option value="">グループA</option>
+                      		<option value="">グループB</option>
+                      	</select>
+                      </div>
+                      <p class="delete"><i class="icon-clear"></i></p>
+                    </li>
+                    <li id="group_member_2">
+                      <p class="user_image"><img src="http://placehold.it/100x100"></p><p class="user_name">小松 健太</p>
+                      <div class="select_box">
+                        <select>
+                          <option value="">オーナー</option>
+                      		<option value="">グループA</option>
+                      		<option value="">グループB</option>
+                      	</select>
+                      </div>
+                      <p class="delete"><i class="icon-clear"></i></p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="input_dot dot_less">
+                <p class="item_name">公開範囲</p>
+                <div class="input_dot_contents">
+                  <div class="toggle_btn off"><span class="circle"></span></div>
+                  <p><span class="on">公開する</span><span class="off">公開しない</span></p>
+                </div>
+              </div>
             </div>
             <div class="modal-footer">
-              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-              <button type="button" class="btn btn-primary">Save changes</button>
+              <button type="button" class="btn btn-default" data-dismiss="modal">キャンセル</button>
+              <button type="button" class="btn btn-primary">招待する</button>
             </div>
           </div>
         </div>

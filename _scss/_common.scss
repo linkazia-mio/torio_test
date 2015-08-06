@@ -1285,6 +1285,66 @@ header {
           .input_dot_contents {
             width: 400px;
             float: right;
+            ul {
+              li {
+                position: relative;
+                clear: both;
+                height: 40px;
+                padding-bottom: 10px;
+                margin: 0;
+                .user_image {
+                  .noimage {
+                    width: 30px;
+                    height: 30px;
+                    line-height: 30px;
+                  }
+                  img {
+                    width: 30px;
+                    height: 30px;
+                  }
+                }
+                .user_name {
+                  line-height: 30px;
+                  padding-left: 10px;
+                }
+                .delete {
+                  @include fontsize(2.6);
+                  position: absolute;
+                  right: -6px;
+                  top: 2px;
+                  line-height: 30px;
+                  color: $white_brack;
+                }
+                .select_box {
+                  position: absolute;
+                  top: 2px;
+                  right: 40px;
+                  select {
+                    line-height: 30px;
+                    width: 100px;
+                    border: none;
+                    padding: 0;
+                    &:focus {
+                      outline: none;
+                    }
+                  }
+                  &:after {
+                    @include fontsize(2.6);
+                    position: absolute;
+                    right: 0;
+                    top: -5px;
+                    height: 26px;
+                    width: 26px;
+                    font-family: 'torio_icon';
+                    content: "\e666";
+                    color: $white_brack;
+                    visibility: visible;
+                    z-index: 1;
+                    display: block;
+                  }
+                }
+              }
+            }
             .toggle_btn {
               @include border_radius(100px);
               position: relative;

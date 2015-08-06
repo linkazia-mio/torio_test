@@ -2,6 +2,13 @@ $(window).on('resize', function(){});
 
 window.onload=function(){
 
+  $('#group_member_1 .delete').click(function() {
+    $('#group_member_1').hide();
+  });
+  $('#group_member_2 .delete').click(function() {
+    $('#group_member_2').hide();
+  });
+
   //トグルスイッチ
   $('.toggle_btn').click(function () {
     $('.off .circle').animate({'left': '+=20px'}, 'fast');
