@@ -269,32 +269,39 @@ header {
     display: inline-block;
     p {
       &.icon {
+        @include fontsize(2.6);
+        position: relative;
         height: 30px;
         width: 15px;
-        @include fontsize(2.6);
         color: $white_brack;
         &:hover {
           color: $torio_green;
           cursor: pointer;
         }
+      }
+      .unread {
+        @include fontsize(1.0);
+        @include border_radius(70px);
+        font-weight: bold;
+        position: absolute;
+        text-align: center;
+        color: #fff;
+        top: 0px;
+        right: -15px;
+        margin-top: -3px;
+        z-index: 1000;
+        content: "";
+        line-height: 15px;
+        width: auto;
+        height: 15px;
+        padding: 0 4px;
+        background: $dark_red;
       }
     }
   }
   .activity {
-    display: inline-block;
+    @extend .task;
     margin-left: 14%;
-    p {
-      &.icon {
-        height: 30px;
-        width: 15px;
-        @include fontsize(2.6);
-        color: $white_brack;
-        &:hover {
-          color: $torio_green;
-          cursor: pointer;
-        }
-      }
-    }
   }
   .me {
     position: absolute;
@@ -622,12 +629,11 @@ header {
         cursor: pointer;
         &:hover {
           color: $torio_green;
-          .balloon_box {
-            display: block;
-            top: -35px;
-            left: 50%;
-            margin-left: -50px;
-          }
+        }
+        .balloon_box {
+          top: -35px;
+          left: 50%;
+          margin-left: -50px;
         }
         .md-trigger {
           width: 12px;
@@ -1605,5 +1611,5 @@ header {
   @include balloon;
   display: none;
   position: absolute;
-  z-index: 1000;
+  z-index: 1100;
 }

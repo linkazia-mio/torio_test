@@ -1304,29 +1304,41 @@ header {
     .alart p:hover {
       color: #3A87BC;
       cursor: pointer; }
-  .alart .task {
+  .alart .task, .alart .activity {
     display: inline-block; }
-    .alart .task p.icon {
-      height: 30px;
-      width: 15px;
+    .alart .task p.icon, .alart .activity p.icon {
       font-size: 26px;
       font-size: 2.6rem;
+      position: relative;
+      height: 30px;
+      width: 15px;
       color: #8a959e; }
-      .alart .task p.icon:hover {
+      .alart .task p.icon:hover, .alart .activity p.icon:hover {
         color: #3A87BC;
         cursor: pointer; }
+    .alart .task p .unread, .alart .activity p .unread {
+      font-size: 10px;
+      font-size: 1rem;
+      -webkit-border-radius: 70px;
+      -moz-border-radius: 70px;
+      -ms-border-radius: 70px;
+      border-radius: 70px;
+      font-weight: bold;
+      position: absolute;
+      text-align: center;
+      color: #fff;
+      top: 0px;
+      right: -15px;
+      margin-top: -3px;
+      z-index: 1000;
+      content: "";
+      line-height: 15px;
+      width: auto;
+      height: 15px;
+      padding: 0 4px;
+      background: #db4c3f; }
   .alart .activity {
-    display: inline-block;
     margin-left: 14%; }
-    .alart .activity p.icon {
-      height: 30px;
-      width: 15px;
-      font-size: 26px;
-      font-size: 2.6rem;
-      color: #8a959e; }
-      .alart .activity p.icon:hover {
-        color: #3A87BC;
-        cursor: pointer; }
   .alart .me {
     position: absolute;
     top: -3px;
@@ -1606,11 +1618,10 @@ header {
       cursor: pointer; }
       .global_menu .global_menu_inner .groups .add:hover, .global_menu .global_menu_inner .member .add:hover {
         color: #3A87BC; }
-        .global_menu .global_menu_inner .groups .add:hover .balloon_box, .global_menu .global_menu_inner .member .add:hover .balloon_box {
-          display: block;
-          top: -35px;
-          left: 50%;
-          margin-left: -50px; }
+      .global_menu .global_menu_inner .groups .add .balloon_box, .global_menu .global_menu_inner .member .add .balloon_box {
+        top: -35px;
+        left: 50%;
+        margin-left: -50px; }
       .global_menu .global_menu_inner .groups .add .md-trigger, .global_menu .global_menu_inner .member .add .md-trigger {
         width: 12px; }
         .global_menu .global_menu_inner .groups .add .md-trigger span, .global_menu .global_menu_inner .member .add .md-trigger span {
@@ -1877,45 +1888,45 @@ header {
           text-overflow: ellipsis; }
           .page_menu .page_menu_inner .item.note .text::after {
             content: "…"; }
-      .page_menu .page_menu_inner .item.task ul {
+      .page_menu .page_menu_inner .item.task ul, .page_menu .page_menu_inner .alart .item.activity ul, .alart .page_menu .page_menu_inner .item.activity ul {
         margin-right: 55px;
         overflow: hidden;
         white-space: nowrap;
         text-overflow: ellipsis; }
-        .page_menu .page_menu_inner .item.task ul li {
+        .page_menu .page_menu_inner .item.task ul li, .page_menu .page_menu_inner .alart .item.activity ul li, .alart .page_menu .page_menu_inner .item.activity ul li {
           margin-bottom: 2px;
           width: 100%; }
-          .page_menu .page_menu_inner .item.task ul li .name {
+          .page_menu .page_menu_inner .item.task ul li .name, .page_menu .page_menu_inner .alart .item.activity ul li .name, .alart .page_menu .page_menu_inner .item.activity ul li .name {
             float: left;
             display: block;
             text-align: left;
             width: 30%; }
-          .page_menu .page_menu_inner .item.task ul li .value {
+          .page_menu .page_menu_inner .item.task ul li .value, .page_menu .page_menu_inner .alart .item.activity ul li .value, .alart .page_menu .page_menu_inner .item.activity ul li .value {
             display: block;
             text-align: right;
             width: 70%; }
-      .page_menu .page_menu_inner .item.task .graph {
+      .page_menu .page_menu_inner .item.task .graph, .page_menu .page_menu_inner .alart .item.activity .graph, .alart .page_menu .page_menu_inner .item.activity .graph {
         position: absolute;
         right: 16px;
         bottom: 20px;
         height: 50px;
         font-family: 'Helvetica neue',Helvetica,Arial,sans-serif; }
-        .page_menu .page_menu_inner .item.task .graph.green .number p {
+        .page_menu .page_menu_inner .item.task .graph.green .number p, .page_menu .page_menu_inner .alart .item.activity .graph.green .number p, .alart .page_menu .page_menu_inner .item.activity .graph.green .number p {
           color: #3A87BC; }
-        .page_menu .page_menu_inner .item.task .graph.yellow .number p {
+        .page_menu .page_menu_inner .item.task .graph.yellow .number p, .page_menu .page_menu_inner .alart .item.activity .graph.yellow .number p, .alart .page_menu .page_menu_inner .item.activity .graph.yellow .number p {
           color: #feb22e; }
-        .page_menu .page_menu_inner .item.task .graph.red .number p {
+        .page_menu .page_menu_inner .item.task .graph.red .number p, .page_menu .page_menu_inner .alart .item.activity .graph.red .number p, .alart .page_menu .page_menu_inner .item.activity .graph.red .number p {
           color: #ed6d44; }
-        .page_menu .page_menu_inner .item.task .graph .number {
+        .page_menu .page_menu_inner .item.task .graph .number, .page_menu .page_menu_inner .alart .item.activity .graph .number, .alart .page_menu .page_menu_inner .item.activity .graph .number {
           position: absolute;
           right: 0;
           top: 0;
           width: 50px;
           text-align: center;
           line-height: 50px; }
-          .page_menu .page_menu_inner .item.task .graph .number p {
+          .page_menu .page_menu_inner .item.task .graph .number p, .page_menu .page_menu_inner .alart .item.activity .graph .number p, .alart .page_menu .page_menu_inner .item.activity .graph .number p {
             display: none; }
-            .page_menu .page_menu_inner .item.task .graph .number p:first-child {
+            .page_menu .page_menu_inner .item.task .graph .number p:first-child, .page_menu .page_menu_inner .alart .item.activity .graph .number p:first-child, .alart .page_menu .page_menu_inner .item.activity .graph .number p:first-child {
               display: block; }
   .page_menu .page_menu_footer {
     font-size: 40px;
@@ -2450,7 +2461,7 @@ header {
   z-index: 0;
   display: none;
   position: absolute;
-  z-index: 1000; }
+  z-index: 1100; }
   .balloon_box:after {
     content: "";
     position: absolute;
@@ -3193,7 +3204,7 @@ header {
     font-size: 13px;
     text-align: center; }
 
-.task .task_create {
+.task .task_create, .alart .activity .task_create {
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   -ms-border-radius: 4px;
@@ -3206,23 +3217,23 @@ header {
   padding: 10px 15px;
   background: #fff;
   color: #8a959e; }
-  .task .task_create i {
+  .task .task_create i, .alart .activity .task_create i {
     font-size: 26px;
     font-size: 2.6rem;
     position: absolute;
     left: 12px;
     top: 10px; }
-  .task .task_create input {
+  .task .task_create input, .alart .activity .task_create input {
     width: 90%;
     padding-left: 30px; }
-  .task .task_create .task_add_list_member {
+  .task .task_create .task_add_list_member, .alart .activity .task_create .task_add_list_member {
     -webkit-border-radius: 4px;
     -moz-border-radius: 4px;
     -ms-border-radius: 4px;
     border-radius: 4px;
     left: 0;
     top: 40px; }
-    .task .task_create .task_add_list_member input {
+    .task .task_create .task_add_list_member input, .alart .activity .task_create .task_add_list_member input {
       -webkit-border-radius: 4px;
       -moz-border-radius: 4px;
       -ms-border-radius: 4px;
@@ -3233,16 +3244,16 @@ header {
       margin: 10px 15px;
       padding: 5px;
       border: 1px solid #e2e2e2; }
-    .task .task_create .task_add_list_member ul li {
+    .task .task_create .task_add_list_member ul li, .alart .activity .task_create .task_add_list_member ul li {
       position: relative; }
-      .task .task_create .task_add_list_member ul li .user_image {
+      .task .task_create .task_add_list_member ul li .user_image, .alart .activity .task_create .task_add_list_member ul li .user_image {
         position: static;
         display: inline-block;
         padding: 0 10px 0 0; }
-        .task .task_create .task_add_list_member ul li .user_image img {
+        .task .task_create .task_add_list_member ul li .user_image img, .alart .activity .task_create .task_add_list_member ul li .user_image img {
           width: 20px;
           height: 20px; }
-      .task .task_create .task_add_list_member ul li .noimage {
+      .task .task_create .task_add_list_member ul li .noimage, .alart .activity .task_create .task_add_list_member ul li .noimage {
         font-size: 10px;
         font-size: 1rem;
         position: static;
