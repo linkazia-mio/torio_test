@@ -2206,12 +2206,13 @@ header {
     .modal .modal-dialog .modal-content .modal-header .close {
       margin-top: -8px; }
     .modal .modal-dialog .modal-content .modal-header .option, .modal .modal-dialog .modal-content .bx-wrapper .bx-viewport .file_slide .item .modal-header .download, .bx-wrapper .bx-viewport .file_slide .item .modal .modal-dialog .modal-content .modal-header .download, .modal .modal-dialog .modal-content .bx-wrapper .bx-viewport .file_slide .item .modal-header .like, .bx-wrapper .bx-viewport .file_slide .item .modal .modal-dialog .modal-content .modal-header .like, .modal .modal-dialog .modal-content .carousel .carousel-inner .item .modal-header .download, .carousel .carousel-inner .item .modal .modal-dialog .modal-content .modal-header .download, .modal .modal-dialog .modal-content .carousel .carousel-inner .item .modal-header .like, .carousel .carousel-inner .item .modal .modal-dialog .modal-content .modal-header .like {
-      font-size: 26px;
-      font-size: 2.6rem;
       position: absolute;
       right: 20px;
       top: 22px;
       color: #8a959e; }
+      .modal .modal-dialog .modal-content .modal-header .option i, .modal .modal-dialog .modal-content .bx-wrapper .bx-viewport .file_slide .item .modal-header .download i, .bx-wrapper .bx-viewport .file_slide .item .modal .modal-dialog .modal-content .modal-header .download i, .modal .modal-dialog .modal-content .bx-wrapper .bx-viewport .file_slide .item .modal-header .like i, .bx-wrapper .bx-viewport .file_slide .item .modal .modal-dialog .modal-content .modal-header .like i, .modal .modal-dialog .modal-content .carousel .carousel-inner .item .modal-header .download i, .carousel .carousel-inner .item .modal .modal-dialog .modal-content .modal-header .download i, .modal .modal-dialog .modal-content .carousel .carousel-inner .item .modal-header .like i, .carousel .carousel-inner .item .modal .modal-dialog .modal-content .modal-header .like i {
+        font-size: 26px;
+        font-size: 2.6rem; }
     .modal .modal-dialog .modal-content .modal-header input[type="checkbox"] + label {
       width: 0;
       margin: 13px 30px 18px 0; }

@@ -1351,11 +1351,13 @@ header {
           margin-top: -8px;
         }
         .option {
-          @include fontsize(2.6);
           position: absolute;
           right: 20px;
           top: 22px;
           color: $white_brack;
+          i {
+            @include fontsize(2.6);
+          }
         }
         input[type="checkbox"] {
           & + label {
