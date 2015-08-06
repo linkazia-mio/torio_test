@@ -61,6 +61,54 @@
     .btn_add_task {
       bottom: 10px;
     }
+    .like_comment_box {
+      position: absolute;
+      left: 15px;
+      bottom: 15px;
+      .like_btn {
+        float: left;
+        margin-right: 10px;
+        i {
+          color: $white_brack;
+          @include fontsize(2.3);
+          &.icon-favorite-outline {
+            display: block;
+          }
+          &.icon-favorite {
+            display: none;
+          }
+        }
+        &.active {
+          i {
+            &.icon-favorite-outline {
+              display: none;
+            }
+            &.icon-favorite {
+              color: $dark_red;
+              display: block;
+            }
+          }
+        }
+      }
+      .comment_btn {
+        float: left;
+        margin-right: 10px;
+        i {
+          @include fontsize(2.3);
+          color: $white_brack;
+        }
+      }
+      .line_count {
+        @include fontsize(1.2);
+        float: left;
+        color: $white_brack;
+        line-height: 23px;
+        margin-right: 10px;
+      }
+      .comment_count {
+        @extend .line_count;
+      }
+    }
     .counter {
       @include fontsize(1.1);
       position: absolute;

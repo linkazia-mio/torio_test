@@ -4084,6 +4084,40 @@ input[type="checkbox"] {
         top: 20px; }
     .note .note_edit .btn_add_task {
       bottom: 10px; }
+    .note .note_edit .like_comment_box {
+      position: absolute;
+      left: 15px;
+      bottom: 15px; }
+      .note .note_edit .like_comment_box .like_btn {
+        float: left;
+        margin-right: 10px; }
+        .note .note_edit .like_comment_box .like_btn i {
+          color: #8a959e;
+          font-size: 23px;
+          font-size: 2.3rem; }
+          .note .note_edit .like_comment_box .like_btn i.icon-favorite-outline {
+            display: block; }
+          .note .note_edit .like_comment_box .like_btn i.icon-favorite {
+            display: none; }
+        .note .note_edit .like_comment_box .like_btn.active i.icon-favorite-outline {
+          display: none; }
+        .note .note_edit .like_comment_box .like_btn.active i.icon-favorite {
+          color: #db4c3f;
+          display: block; }
+      .note .note_edit .like_comment_box .comment_btn {
+        float: left;
+        margin-right: 10px; }
+        .note .note_edit .like_comment_box .comment_btn i {
+          font-size: 23px;
+          font-size: 2.3rem;
+          color: #8a959e; }
+      .note .note_edit .like_comment_box .line_count, .note .note_edit .like_comment_box .comment_count {
+        font-size: 12px;
+        font-size: 1.2rem;
+        float: left;
+        color: #8a959e;
+        line-height: 23px;
+        margin-right: 10px; }
     .note .note_edit .counter {
       font-size: 11px;
       font-size: 1.1rem;
