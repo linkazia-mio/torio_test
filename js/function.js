@@ -427,7 +427,8 @@ window.onload=function(){
     //タスク入れ替え
     jQuery('.task_replacement').sortable({
       cursor : 'move',
-      handle : '.handle'
+      handle : '.handle',
+      placeholder: 'placeholder'
     });
     jQuery('.task_lists').sortable({
       cursor : 'move',
