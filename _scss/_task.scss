@@ -666,5 +666,6 @@ input[type="checkbox"] {
 }
 .task_add_worker {
   @extend .task_add_requester;
+  color: $white_brack;
   top: 88px;
 }

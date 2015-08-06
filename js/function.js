@@ -43,6 +43,15 @@ window.onload=function(){
   });
 
   //タスク入力部分
+
+  $('.task_add_list_member button').click(function () {
+    $(this).toggleClass('checked');
+  });
+
+  $('.task_add_worker button').click(function () {
+    $(this).toggleClass('checked');
+  });
+
   $('#made_1.task_input').click(function () {
     $(this).css('padding_bottom','15px');
     jQuery('.task_button').show();
