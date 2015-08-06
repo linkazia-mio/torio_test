@@ -8,8 +8,8 @@ window.onload=function(){
     $('.on .circle').animate({'left': '-=20px'}, 'fast');
     $(this).toggleClass("off");
     $(this).toggleClass("on");
-    $('.input_dot_toggle p .on').toggle();
-    $('.input_dot_toggle p .off').toggle();
+    $('.input_dot_contents p .on').toggle();
+    $('.input_dot_contents p .off').toggle();
   });
 
   //グループ、メンバー追加hover
