@@ -1503,11 +1503,11 @@ header {
             p {
               float: left;
               .on {
-                display: block;
+                display: none;
                 margin-left: 10px;
               }
               .off {
-                display: none;
+                display: block;
                 margin-left: 10px;
               }
             }

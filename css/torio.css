@@ -2349,10 +2349,10 @@ header {
         .modal .modal-dialog .modal-content .modal-body .input_dot .input_dot_contents p {
           float: left; }
           .modal .modal-dialog .modal-content .modal-body .input_dot .input_dot_contents p .on {
-            display: block;
+            display: none;
             margin-left: 10px; }
           .modal .modal-dialog .modal-content .modal-body .input_dot .input_dot_contents p .off {
-            display: none;
+            display: block;
             margin-left: 10px; }
       .modal .modal-dialog .modal-content .modal-body .input_dot .profile_image {
         float: right;
