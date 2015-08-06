@@ -19,14 +19,14 @@ Plugin URI: http://manos.malihu.gr/jquery-custom-content-scroller
 }
 .mCustomScrollBox { /* contains plugin's markup */
 	position: relative;
-	overflow: hidden;
+	/*overflow: hidden;*/
 	height: 100%;
 	max-width: 100%;
 	outline: none;
 	direction: ltr;
 }
 .mCSB_container { /* contains the original content */
-	overflow: hidden;
+	/*overflow: hidden;*/
 	width: auto;
 	height: auto;
 }
