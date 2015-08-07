@@ -3558,9 +3558,9 @@ input[type="checkbox"] {
     input[type="checkbox"]:checked + label::before {
       font-size: 15px;
       font-size: 1.5rem;
-      background: #3A87BC !important;
-      border-color: #3595e1 !important;
-      color: #fff !important; }
+      background: #3A87BC;
+      border-color: #3595e1;
+      color: #fff; }
 
 /*---------------------------------------------------------------------------------------
  task_none
@@ -3648,9 +3648,16 @@ input[type="checkbox"] {
       .task_replacement .task_people .task_list.important {
         border: 1px solid #ed6d44;
         background: #ffebe7; }
-        .task_replacement .task_people .task_list.important input[type="checkbox"] + label::before {
-          border: 1px solid #ed6d44;
-          background: #ffebe7; }
+        .task_replacement .task_people .task_list.important input[type="checkbox"] {
+          /*checked時の見た目*/ }
+          .task_replacement .task_people .task_list.important input[type="checkbox"] + label {
+            /*通常時の見た目*/ }
+            .task_replacement .task_people .task_list.important input[type="checkbox"] + label:before {
+              border: 1px solid #ed6d44;
+              background: #ffebe7; }
+          .task_replacement .task_people .task_list.important input[type="checkbox"]:checked + label::before {
+            background: #db4c3f;
+            border-color: #ed6d44; }
       .task_replacement .task_people .task_list.made {
         height: auto;
         min-height: 50px; }

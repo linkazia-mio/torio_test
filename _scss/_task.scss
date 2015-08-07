@@ -105,9 +105,9 @@ input[type="checkbox"] {
     color: $blue;
     &::before {
       @include fontsize(1.5);
-      background: $torio_green !important;
-      border-color: $blue !important;
-      color: #fff !important;
+      background: $torio_green;
+      border-color: $blue;
+      color: #fff;
     }
   }
 }
@@ -201,9 +201,21 @@ input[type="checkbox"] {
       &.important {
         border: 1px solid $red;
         background: $white_red;
-        input[type="checkbox"] + label::before {
-          border: 1px solid $red;
-          background: $white_red;
+        input[type="checkbox"] {
+          & + label {
+            /*通常時の見た目*/
+            &:before {
+              border: 1px solid $red;
+              background: $white_red;
+            }
+          }
+          /*checked時の見た目*/
+          &:checked + label {
+            &::before {
+              background: $dark_red;
+              border-color: $red;
+            }
+          }
         }
       }
       &.made {
