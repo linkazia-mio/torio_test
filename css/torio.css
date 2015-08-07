@@ -3730,8 +3730,8 @@ input[type="checkbox"] {
         position: absolute;
         right: 15px;
         bottom: 11px;
-        line-height: 26px;
-        width: 80px;
+        line-height: 30px;
+        width: 100px;
         color: #fff;
         background: #3A87BC; }
         .task_replacement .task_people .task_list .btn_add_task:hover {
@@ -3974,8 +3974,8 @@ input[type="checkbox"] {
   font-size: 1.3rem;
   position: absolute;
   right: 15px;
-  width: 80px;
-  height: 26px;
+  width: 100px;
+  height: 30px;
   color: #fff;
   font-weight: bold;
   background: #3A87BC; }
@@ -4070,138 +4070,225 @@ input[type="checkbox"] {
     margin-bottom: 20px; }
     .note .note_edit a {
       color: #2e6b95; }
-    .note .note_edit .edit_name {
-      position: relative;
-      font-weight: bold;
-      padding: 20px; }
-      .note .note_edit .edit_name .noimage {
-        height: 40px;
-        width: 40px;
-        line-height: 40px;
-        float: left;
-        margin-right: 12px; }
-      .note .note_edit .edit_name .user_image {
-        float: left;
-        margin-right: 12px; }
-        .note .note_edit .edit_name .user_image img {
-          width: 40px;
-          height: 40px; }
-      .note .note_edit .edit_name .writer_info {
-        font-size: 12px;
-        font-size: 1.2rem;
-        color: #8a959e; }
-      .note .note_edit .edit_name .note_option {
-        font-size: 26px;
-        font-size: 2.6rem;
-        position: absolute;
-        right: 15px;
-        top: 28px;
-        color: #8a959e; }
-      .note .note_edit .edit_name .note_detail_option_box {
-        right: 15px;
-        top: 60px; }
-    .note .note_edit .btn_add_task {
-      bottom: 10px; }
-    .note .note_edit .like_comment_box {
-      position: absolute;
-      left: 15px;
-      bottom: 15px; }
-      .note .note_edit .like_comment_box .like_btn {
-        float: left;
-        margin-right: 10px;
-        padding-top: 10px; }
-        .note .note_edit .like_comment_box .like_btn i {
-          color: #8a959e;
-          font-size: 23px;
-          font-size: 2.3rem; }
-          .note .note_edit .like_comment_box .like_btn i.icon-favorite-outline {
-            display: block; }
-          .note .note_edit .like_comment_box .like_btn i.icon-favorite {
-            display: none; }
-        .note .note_edit .like_comment_box .like_btn.active i.icon-favorite-outline {
-          display: none; }
-        .note .note_edit .like_comment_box .like_btn.active i.icon-favorite {
-          color: #db4c3f;
-          display: block; }
-      .note .note_edit .like_comment_box .comment_btn {
-        float: left;
-        margin-right: 10px;
-        padding-top: 10px; }
-        .note .note_edit .like_comment_box .comment_btn i {
-          font-size: 23px;
-          font-size: 2.3rem;
-          color: #8a959e; }
-      .note .note_edit .like_comment_box .like_count, .note .note_edit .like_comment_box .comment_count {
-        font-size: 12px;
-        font-size: 1.2rem;
+    .note .note_edit .note_edit_inner {
+      position: relative; }
+      .note .note_edit .note_edit_inner .edit_name {
         position: relative;
-        float: left;
+        font-weight: bold;
+        padding: 20px; }
+        .note .note_edit .note_edit_inner .edit_name .noimage {
+          height: 40px;
+          width: 40px;
+          line-height: 40px;
+          float: left;
+          margin-right: 12px; }
+        .note .note_edit .note_edit_inner .edit_name .user_image {
+          float: left;
+          margin-right: 12px; }
+          .note .note_edit .note_edit_inner .edit_name .user_image img {
+            width: 40px;
+            height: 40px; }
+        .note .note_edit .note_edit_inner .edit_name .writer_info {
+          font-size: 12px;
+          font-size: 1.2rem;
+          color: #8a959e; }
+        .note .note_edit .note_edit_inner .edit_name .note_option {
+          font-size: 26px;
+          font-size: 2.6rem;
+          position: absolute;
+          right: 15px;
+          top: 28px;
+          color: #8a959e; }
+        .note .note_edit .note_edit_inner .edit_name .note_detail_option_box {
+          right: 15px;
+          top: 60px; }
+      .note .note_edit .note_edit_inner .btn_add_task {
+        bottom: 10px; }
+      .note .note_edit .note_edit_inner .like_comment_box {
+        position: absolute;
+        left: 15px;
+        bottom: 15px; }
+        .note .note_edit .note_edit_inner .like_comment_box .like_btn {
+          float: left;
+          margin-right: 10px;
+          padding-top: 10px; }
+          .note .note_edit .note_edit_inner .like_comment_box .like_btn i {
+            color: #8a959e;
+            font-size: 23px;
+            font-size: 2.3rem; }
+            .note .note_edit .note_edit_inner .like_comment_box .like_btn i.icon-favorite-outline {
+              display: block; }
+            .note .note_edit .note_edit_inner .like_comment_box .like_btn i.icon-favorite {
+              display: none; }
+          .note .note_edit .note_edit_inner .like_comment_box .like_btn.active i.icon-favorite-outline {
+            display: none; }
+          .note .note_edit .note_edit_inner .like_comment_box .like_btn.active i.icon-favorite {
+            color: #db4c3f;
+            display: block; }
+        .note .note_edit .note_edit_inner .like_comment_box .comment_btn {
+          float: left;
+          margin-right: 10px;
+          padding-top: 10px; }
+          .note .note_edit .note_edit_inner .like_comment_box .comment_btn i {
+            font-size: 23px;
+            font-size: 2.3rem;
+            color: #8a959e; }
+        .note .note_edit .note_edit_inner .like_comment_box .like_count, .note .note_edit .note_edit_inner .like_comment_box .comment_count {
+          font-size: 12px;
+          font-size: 1.2rem;
+          position: relative;
+          float: left;
+          color: #8a959e;
+          padding-top: 10px;
+          line-height: 23px;
+          margin-right: 10px; }
+          .note .note_edit .note_edit_inner .like_comment_box .like_count:hover .balloon_box, .note .note_edit .note_edit_inner .like_comment_box .comment_count:hover .balloon_box {
+            display: block;
+            height: auto;
+            bottom: 28px;
+            left: 0;
+            text-align: left;
+            padding: 10px 10px; }
+            .note .note_edit .note_edit_inner .like_comment_box .like_count:hover .balloon_box ul, .note .note_edit .note_edit_inner .like_comment_box .comment_count:hover .balloon_box ul {
+              margin-bottom: 0; }
+              .note .note_edit .note_edit_inner .like_comment_box .like_count:hover .balloon_box ul li, .note .note_edit .note_edit_inner .like_comment_box .comment_count:hover .balloon_box ul li {
+                line-height: 1.9; }
+      .note .note_edit .note_edit_inner .browse_count {
+        font-size: 11px;
+        font-size: 1.1rem;
+        line-height: 23px;
         color: #8a959e;
         padding-top: 10px;
-        line-height: 23px;
-        margin-right: 10px; }
-        .note .note_edit .like_comment_box .like_count:hover .balloon_box, .note .note_edit .like_comment_box .comment_count:hover .balloon_box {
+        position: absolute;
+        right: 15px;
+        bottom: 8px;
+        vertical-align: top; }
+        .note .note_edit .note_edit_inner .browse_count i {
+          font-size: 23px;
+          font-size: 2.3rem;
+          margin-right: 5px; }
+        .note .note_edit .note_edit_inner .browse_count:hover .balloon_box {
           display: block;
           height: auto;
-          bottom: 28px;
+          width: 100%;
+          bottom: 30px;
           left: 0;
           text-align: left;
           padding: 10px 10px; }
-          .note .note_edit .like_comment_box .like_count:hover .balloon_box ul, .note .note_edit .like_comment_box .comment_count:hover .balloon_box ul {
+          .note .note_edit .note_edit_inner .browse_count:hover .balloon_box ul {
             margin-bottom: 0; }
-            .note .note_edit .like_comment_box .like_count:hover .balloon_box ul li, .note .note_edit .like_comment_box .comment_count:hover .balloon_box ul li {
-              line-height: 1.9; }
-    .note .note_edit .browse_count {
-      font-size: 11px;
-      font-size: 1.1rem;
-      line-height: 23px;
-      color: #8a959e;
-      padding-top: 10px;
-      position: absolute;
-      right: 15px;
-      bottom: 8px;
-      vertical-align: top; }
-      .note .note_edit .browse_count i {
-        font-size: 23px;
-        font-size: 2.3rem;
-        margin-right: 5px; }
-      .note .note_edit .browse_count:hover .balloon_box {
-        display: block;
-        height: auto;
+            .note .note_edit .note_edit_inner .browse_count:hover .balloon_box ul li {
+              line-height: 1.9;
+              overflow: hidden;
+              white-space: nowrap;
+              text-overflow: ellipsis; }
+              .note .note_edit .note_edit_inner .browse_count:hover .balloon_box ul li span:hover {
+                cursor: pointer; }
+      .note .note_edit .note_edit_inner .counter {
+        font-size: 11px;
+        font-size: 1.1rem;
+        position: absolute;
+        right: 130px;
+        bottom: 15px;
+        color: #8a959e; }
+      .note .note_edit .note_edit_inner .editing {
+        -webkit-border-radius: 4px 4px 0 0;
+        -moz-border-radius: 4px 4px 0 0;
+        -ms-border-radius: 4px 4px 0 0;
+        border-radius: 4px 4px 0 0;
+        position: relative;
+        background: #2e6b95;
+        color: #fff;
+        text-align: center;
+        height: 40px; }
+        .note .note_edit .note_edit_inner .editing p {
+          line-height: 30px;
+          display: inline-block; }
+    .note .note_edit .note_comment {
+      -webkit-border-radius: 0 0 5px 5px;
+      -moz-border-radius: 0 0 5px 5px;
+      -ms-border-radius: 0 0 5px 5px;
+      border-radius: 0 0 5px 5px;
+      background: #f5f5f5;
+      text-align: left;
+      border-bottom: 1px solid #f5f5f5;
+      padding: 20px 20px 20px 20px; }
+      .note .note_edit .note_comment .comment_inner {
+        display: table;
         width: 100%;
-        bottom: 30px;
-        left: 0;
-        text-align: left;
-        padding: 10px 10px; }
-        .note .note_edit .browse_count:hover .balloon_box ul {
-          margin-bottom: 0; }
-          .note .note_edit .browse_count:hover .balloon_box ul li {
-            line-height: 1.9;
-            overflow: hidden;
-            white-space: nowrap;
-            text-overflow: ellipsis; }
-            .note .note_edit .browse_count:hover .balloon_box ul li span:hover {
-              cursor: pointer; }
-    .note .note_edit .counter {
-      font-size: 11px;
-      font-size: 1.1rem;
-      position: absolute;
-      right: 110px;
-      bottom: 15px;
-      color: #8a959e; }
-    .note .note_edit .editing {
-      -webkit-border-radius: 4px 4px 0 0;
-      -moz-border-radius: 4px 4px 0 0;
-      -ms-border-radius: 4px 4px 0 0;
-      border-radius: 4px 4px 0 0;
-      position: relative;
-      background: #2e6b95;
-      color: #fff;
-      text-align: center;
-      height: 40px; }
-      .note .note_edit .editing p {
-        line-height: 30px;
-        display: inline-block; }
+        table-layout: fixed;
+        margin-bottom: 20px; }
+        .note .note_edit .note_comment .comment_inner .user_image {
+          display: table-cell;
+          width: 40px; }
+          .note .note_edit .note_comment .comment_inner .user_image img {
+            width: 30px;
+            height: 30px;
+            vertical-align: top;
+            margin-top: 2px; }
+          .note .note_edit .note_comment .comment_inner .user_image .noimage {
+            font-family: 'Helvetica neue',Helvetica,Arial,sans-serif;
+            font-size: 11px;
+            font-size: 1.1rem;
+            line-height: 30px;
+            text-align: center;
+            width: 30px; }
+        .note .note_edit .note_comment .comment_inner .user_comment {
+          display: table-cell;
+          vertical-align: top; }
+          .note .note_edit .note_comment .comment_inner .user_comment p {
+            font-size: 14px;
+            font-size: 1.4rem; }
+            .note .note_edit .note_comment .comment_inner .user_comment p.name {
+              font-weight: bold;
+              padding-bottom: 1px; }
+              .note .note_edit .note_comment .comment_inner .user_comment p.name .time {
+                margin-left: 10px;
+                font-weight: normal;
+                color: #8a959e;
+                font-size: 12px;
+                font-size: 1.2rem; }
+            .note .note_edit .note_comment .comment_inner .user_comment p.memo {
+              font-size: 14px;
+              font-size: 1.4rem;
+              word-wrap: break-word; }
+      .note .note_edit .note_comment .comment_entry {
+        margin: 0 auto;
+        padding: 20px 0;
+        border-top: 1px solid #e2e2e2; }
+        .note .note_edit .note_comment .comment_entry textarea {
+          -webkit-border-radius: 4px;
+          -moz-border-radius: 4px;
+          -ms-border-radius: 4px;
+          border-radius: 4px;
+          width: 100%;
+          height: 60px;
+          padding: 10px 15px;
+          margin-bottom: 10px;
+          border: 1px solid #e2e2e2;
+          background: #fff;
+          resize: none;
+          outline: none; }
+        .note .note_edit .note_comment .comment_entry button {
+          float: right;
+          width: 100px;
+          height: 30px; }
+          .note .note_edit .note_comment .comment_entry button.btn-default {
+            border-color: #f5f5f5;
+            background: #f5f5f5; }
+            .note .note_edit .note_comment .comment_entry button.btn-default:hover {
+              opacity: 0.7; }
+          .note .note_edit .note_comment .comment_entry button.btn-primary {
+            line-height: 30px;
+            font-size: 13px;
+            font-size: 1.3rem; }
+            .note .note_edit .note_comment .comment_entry button.btn-primary.btn-primary {
+              background: #3A87BC;
+              border: none;
+              padding: 0;
+              font-weight: 700; }
+              .note .note_edit .note_comment .comment_entry button.btn-primary.btn-primary:hover {
+                opacity: 0.7; }
 
 /*---------------------------------------------------------------------------------------
  Editable

@@ -324,171 +324,201 @@
             <!--/Title-->
             <!--Note Edit/-->
             <div class="note_edit">
-              <article class="editable">
-              </article>
-              <p class="counter">1000文字</p>
-              <button class="btn_add_task">投稿する</button>
+              <div class="note_edit_inner">
+                <article class="editable">
+                </article>
+                <p class="counter">1000文字</p>
+                <button class="btn_add_task">投稿する</button>
+              </div>
             </div>
             <!--Note Edit/-->
             <!--Note Edit/-->
             <div class="note_edit" id="note_1">
-              <div class="edit_name">
-                <p class="noimage">TO</p>
-                <p class="writer_name">大崎太加彦</p>
-                <p class="writer_info">3時間前に<a href="">大石 未央</a>さんに更新されました。</p>
-                <p class="note_option"><i class="icon-more-horiz"></i></p>
-                <div class="note_detail_option_box popover">
-                  <ul>
-                    <li><a data-toggle="modal" data-target="#delete_note" href="">この記事を削除する</a></li>
-                    <li><a href="">日付の古い順</a></li>
-                    <li><a href="">割り当てた人順</a></li>
-                  </ul>
-                </div>
-              </div>
-              <article class="editable">
-                <p>テスト投稿です。</p>
-              </article>
-              <div class="like_comment_box">
-                <p class="like_btn active"><i class="icon-favorite-outline"></i><i class="icon-favorite"></i></p>
-                <p class="comment_btn"><i class="icon-comment-outline"></i></p>
-                <div class="like_count">いいね 11件
-                  <div class="balloon_box">
+              <div class="note_edit_inner">
+                <div class="edit_name">
+                  <p class="noimage">TO</p>
+                  <p class="writer_name">大崎太加彦</p>
+                  <p class="writer_info">3時間前に<a href="">大石 未央</a>さんに更新されました。</p>
+                  <p class="note_option"><i class="icon-more-horiz"></i></p>
+                  <div class="note_detail_option_box popover">
                     <ul>
-                      <li>小松健太</li>
-                      <li>大崎太加彦</li>
-                      <li>小松健太</li>
-                      <li>大崎太加彦</li>
-                      <li>他34人</li>
+                      <li><a data-toggle="modal" data-target="#delete_note" href="">この記事を削除する</a></li>
+                      <li><a href="">日付の古い順</a></li>
+                      <li><a href="">割り当てた人順</a></li>
                     </ul>
                   </div>
                 </div>
-                <p class="comment_count">コメント 8件</p>
+                <article class="editable">
+                  <p>テスト投稿です。</p>
+                </article>
+                <div class="like_comment_box">
+                  <p class="like_btn active"><i class="icon-favorite-outline"></i><i class="icon-favorite"></i></p>
+                  <p class="comment_btn"><i class="icon-comment-outline"></i></p>
+                  <div class="like_count">いいね 11件
+                    <div class="balloon_box">
+                      <ul>
+                        <li>小松健太</li>
+                        <li>大崎太加彦</li>
+                        <li>小松健太</li>
+                        <li>大崎太加彦</li>
+                        <li>他34人</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <p class="comment_count">コメント 8件</p>
+                </div>
+                <p class="counter">1000文字</p>
+                <button class="btn_add_task">編集する</button>
               </div>
-              <p class="counter">1000文字</p>
-              <button class="btn_add_task">編集する</button>
+              <div class="note_comment">
+                <div class="comment_inner">
+                  <div class="user_image"><img src="http://placehold.it/100x100"></div>
+                  <div class="user_comment">
+                    <p class="name">小松 健太<span class="time">3時間前</span></p>
+                    <p class="memo">本題からは大きく外れますが、ドローンなどに使うキャパシタ（バッテリー）がキャパシタ（コンデンサー）であることを最近知って驚きました。</p>
+                  </div>
+                </div>
+                <div class="comment_inner">
+                  <div class="user_image"><span class="noimage">KO</span></div>
+                  <div class="user_comment">
+                    <p class="name">小松 健太<span class="time">3時間前</span></p>
+                    <p class="memo">キャパシタ（コンデンサー）であることを知ってました。</p>
+                  </div>
+                </div>
+                <div class="comment_entry">
+                  <textarea class="description" placeholder="コメントを入力してください…"></textarea>
+                  <!--<p class="add_member"><i class="icon-person-plus-outline"></i></p>
+                  <p class="add_emoji"><i class="icon-emoji-outline"></i></p>-->
+                  <button type="button" class="btn btn-primary">投稿する</button>
+                </div>
+              </div>
             </div>
             <!--Note Edit/-->
             <!--Note Edit/-->
             <div class="note_edit" id="note_2">
-              <div class="editing">
-                <p><span class="loader"></span>使用中です。小松健太さんが編集しています。</p>
-              </div>
-              <div class="edit_name">
-                <p class="noimage">TO</p>
-                <p class="writer_name">大崎太加彦</p>
-                <p class="writer_info">3時間前に<a href="">小松 健太</a>さんに更新されました。</p>
-                <p class="note_option"><i class="icon-more-horiz"></i></p>
-                <div class="note_detail_option_box popover">
-                  <ul>
-                    <li><a data-toggle="modal" data-target="#delete_note" href="">この記事を削除する</a></li>
-                    <li><a href="">日付の古い順</a></li>
-                    <li><a href="">割り当てた人順</a></li>
-                  </ul>
+              <div class="note_edit_inner">
+                <div class="editing">
+                  <p><span class="loader"></span>使用中です。小松健太さんが編集しています。</p>
                 </div>
-              </div>
-              <article class="editable_lock">
-                <p>ロック中なので編集できません。</p>
-              </article>
-              <div class="like_comment_box">
-                <p class="like_btn active"><i class="icon-favorite-outline"></i><i class="icon-favorite"></i></p>
-                <p class="comment_btn"><i class="icon-comment-outline"></i></p>
-                <div class="like_count">いいね 11件
-                  <div class="balloon_box">
+                <div class="edit_name">
+                  <p class="noimage">TO</p>
+                  <p class="writer_name">大崎太加彦</p>
+                  <p class="writer_info">3時間前に<a href="">小松 健太</a>さんに更新されました。</p>
+                  <p class="note_option"><i class="icon-more-horiz"></i></p>
+                  <div class="note_detail_option_box popover">
                     <ul>
-                      <li>小松健太</li>
-                      <li>大崎太加彦</li>
-                      <li>小松健太</li>
-                      <li>大崎太加彦</li>
-                      <li>他34人</li>
+                      <li><a data-toggle="modal" data-target="#delete_note" href="">この記事を削除する</a></li>
+                      <li><a href="">日付の古い順</a></li>
+                      <li><a href="">割り当てた人順</a></li>
                     </ul>
                   </div>
                 </div>
-                <p class="comment_count">コメント 8件</p>
-              </div>
-              <div class="browse_count">
-                <i class="icon-visibility"></i>34人が閲覧しました
-                <div class="balloon_box">
-                  <ul>
-                    <li>小松 健太</li>
-                    <li>大崎 太加彦太加彦太加彦</li>
-                    <li>原戸 陵至</li>
-                    <li>大石 太加</li>
-                    <li><span data-toggle="modal" data-target="#note_viewers_box">他34人</span></li>
-                  </ul>
+                <article class="editable_lock">
+                  <p>ロック中なので編集できません。</p>
+                </article>
+                <div class="like_comment_box">
+                  <p class="like_btn"><i class="icon-favorite-outline"></i><i class="icon-favorite"></i></p>
+                  <p class="comment_btn"><i class="icon-comment-outline"></i></p>
+                  <div class="like_count">いいね 11件
+                    <div class="balloon_box">
+                      <ul>
+                        <li>小松健太</li>
+                        <li>大崎太加彦</li>
+                        <li>小松健太</li>
+                        <li>大崎太加彦</li>
+                        <li>他34人</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <p class="comment_count">コメント 8件</p>
+                </div>
+                <div class="browse_count">
+                  <i class="icon-visibility"></i>34人が閲覧しました
+                  <div class="balloon_box">
+                    <ul>
+                      <li>小松 健太</li>
+                      <li>大崎 太加彦太加彦太加彦</li>
+                      <li>原戸 陵至</li>
+                      <li>大石 太加</li>
+                      <li><span data-toggle="modal" data-target="#note_viewers_box">他34人</span></li>
+                    </ul>
+                  </div>
                 </div>
               </div>
             </div>
             <!--Note Edit/-->
             <!--Note Edit/-->
             <div class="note_edit" id="note_3">
-              <div class="edit_name">
-                <p class="user_image"><img src="http://placehold.it/100x100"></p>
-                <p class="writer_name">小松健太</p>
-                <p class="writer_info">3時間前に<a href="">原戸 陵至</a>さんに更新されました。</p>
-                <p class="note_option"><i class="icon-more-horiz"></i></p>
-                <div class="note_detail_option_box popover">
-                  <ul>
-                    <li><a href="">この記事を削除する</a></li>
-                    <li><a href="">日付の古い順</a></li>
-                    <li><a href="">割り当てた人順</a></li>
-                  </ul>
-                </div>
-              </div>
-              <article class="editable">
-                <p>こんにちは。新井由己です。軽バンを改造した「オフグリッド移動オフィス」で全国を訪ねている、フリーランスのルポライターです。</p>
-                <p>今、電気料金が少しずつ値上がりしてます。電力会社は原発が停止しているので化石燃料のコストがかかっていると言っていますが、料金内訳の中に「再エネ賦課金」と書いてあることを知ってますか？</p>
-                <p>太陽光・風力・バイオマスなどの再生可能エネルギーで発電した電気を電力会社に買い取ってもらう料金は、電力会社が支払うのではなく、「再エネ賦課金」として各家庭の電気料金に上乗せされているのです。</p>
-                <p>今年度は標準家庭（月の電力使用量が300kWh）で月225円ですが、来年度は472円と倍になり、事業認定されている設備がすべて稼働すると、負担が1,000円近くになるそうです。</p>
-                <p>そしてさらに、2016年4月からの電力小売り自由化後、原発廃炉費用を電気料金に転嫁する方針が決められました。一方的な電気料金の仕組みに「もうやってられない！」と思う人も少なくないでしょう。</p>
-                <p>そこで今回は、独立型の自家発電で暮らし始めた<strong>佐藤隆哉さんと千佳さん</strong>に、これからの電力自給のありかたについて聞きました。</p>
-                <hr>
-                <h1>電力会社の電気を使わない暮らし</h1>
-                <p>神奈川県横浜市戸塚区で暮らす佐藤隆哉さんと千佳さんは、昨年夏ごろに自然派住宅を施工する「天然住宅」で自宅を新築しました。実は、佐藤さんの家は、電力会社から電気を買っていないというのです。千佳さんに話を伺いました。</p>
-                <blockquote>我が家は、新築時から電力会社とは契約していません。電柱もメーターもありませんし、もちろん請求書も届かないので、再エネ賦課金を払う必要もありません。</blockquote>
-                <figure><img src="http://greenz.jp/main/wp-content/uploads/2015/05/sato_002.jpg" alt="sato_002" width="540" height="405" class="alignnone"><br><small>玄関にはカメラ付きのインターホンが設置されていました。延べ床面積90平方メートルの2階建てです</small></figure>
-                <p>一般的な家庭にあるソーラー発電は、発電した電力量と実際に使用した電力量を比較して、余剰分を電力会社に買い取ってもらう仕組み（先述したように、実際はほかの家庭が負担）になっています。</p>
-                <p>一方、佐藤さんの家は、昼間に発電した電気をバッテリーに貯めて、それを夜間に使っています。夜に減った分は、翌日にまた充電されるので、電気を使いすぎたり、雨が続いて発電できないときは、バッテリーの電気が足りなくなるおそれがあります。</p>
-                <blockquote>現在の我が家の消費電力は、1日平均3kWh。一般的な日本の世帯のおよそ3分の1だそうです。冷凍冷蔵庫、洗濯機、掃除機、炊飯器、エアコン、パソコン、プリンター、携帯電話を使っていますので、みなさんの生活と大きな差はありません。しいて言えば、テレビと電子レンジがないくらいでしょうか。</blockquote>
-                <p>一般的な4人家族で使う電気は1日に10kWhといわれています。佐藤さんが設置したバッテリーの蓄電量は27kWh。何も考えずに使うと3日分ですが、節電を意識しているので、9日分くらいの容量があります。</p>
-                <ol>
-                  <li>あああ</li>
-                  <li>いいい</li>
-                  <li>ううう</li>
-                </ol>
-                <ul>
-                  <li>あああ</li>
-                  <li>いいい</li>
-                  <li>ううう</li>
-                </ul>
-                <pre>
-<code>
-function aFunctionName(){
-  console.log("this works");
-}
-setTimeout("aFunctionName()",1000); //this works in regular javascript
-
-$timeout(aFunctionName,1000); //this works
-$timeout("aFunctionName()",1000); //this does not work and throws error: TypeError: fn is not a function</code>
-                </pre>
-              </article>
-              <div class="like_comment_box">
-                <p class="like_btn active"><i class="icon-favorite-outline"></i><i class="icon-favorite"></i></p>
-                <p class="comment_btn"><i class="icon-comment-outline"></i></p>
-                <div class="like_count">いいね 11件
-                  <div class="balloon_box">
+              <div class="note_edit_inner">
+                <div class="edit_name">
+                  <p class="user_image"><img src="http://placehold.it/100x100"></p>
+                  <p class="writer_name">小松健太</p>
+                  <p class="writer_info">3時間前に<a href="">原戸 陵至</a>さんに更新されました。</p>
+                  <p class="note_option"><i class="icon-more-horiz"></i></p>
+                  <div class="note_detail_option_box popover">
                     <ul>
-                      <li>小松健太</li>
-                      <li>大崎太加彦</li>
-                      <li>小松健太</li>
-                      <li>大崎太加彦</li>
-                      <li>他34人</li>
+                      <li><a href="">この記事を削除する</a></li>
+                      <li><a href="">日付の古い順</a></li>
+                      <li><a href="">割り当てた人順</a></li>
                     </ul>
                   </div>
                 </div>
-                <p class="comment_count">コメント 8件</p>
+                <article class="editable">
+                  <p>こんにちは。新井由己です。軽バンを改造した「オフグリッド移動オフィス」で全国を訪ねている、フリーランスのルポライターです。</p>
+                  <p>今、電気料金が少しずつ値上がりしてます。電力会社は原発が停止しているので化石燃料のコストがかかっていると言っていますが、料金内訳の中に「再エネ賦課金」と書いてあることを知ってますか？</p>
+                  <p>太陽光・風力・バイオマスなどの再生可能エネルギーで発電した電気を電力会社に買い取ってもらう料金は、電力会社が支払うのではなく、「再エネ賦課金」として各家庭の電気料金に上乗せされているのです。</p>
+                  <p>今年度は標準家庭（月の電力使用量が300kWh）で月225円ですが、来年度は472円と倍になり、事業認定されている設備がすべて稼働すると、負担が1,000円近くになるそうです。</p>
+                  <p>そしてさらに、2016年4月からの電力小売り自由化後、原発廃炉費用を電気料金に転嫁する方針が決められました。一方的な電気料金の仕組みに「もうやってられない！」と思う人も少なくないでしょう。</p>
+                  <p>そこで今回は、独立型の自家発電で暮らし始めた<strong>佐藤隆哉さんと千佳さん</strong>に、これからの電力自給のありかたについて聞きました。</p>
+                  <hr>
+                  <h1>電力会社の電気を使わない暮らし</h1>
+                  <p>神奈川県横浜市戸塚区で暮らす佐藤隆哉さんと千佳さんは、昨年夏ごろに自然派住宅を施工する「天然住宅」で自宅を新築しました。実は、佐藤さんの家は、電力会社から電気を買っていないというのです。千佳さんに話を伺いました。</p>
+                  <blockquote>我が家は、新築時から電力会社とは契約していません。電柱もメーターもありませんし、もちろん請求書も届かないので、再エネ賦課金を払う必要もありません。</blockquote>
+                  <figure><img src="http://greenz.jp/main/wp-content/uploads/2015/05/sato_002.jpg" alt="sato_002" width="540" height="405" class="alignnone"><br><small>玄関にはカメラ付きのインターホンが設置されていました。延べ床面積90平方メートルの2階建てです</small></figure>
+                  <p>一般的な家庭にあるソーラー発電は、発電した電力量と実際に使用した電力量を比較して、余剰分を電力会社に買い取ってもらう仕組み（先述したように、実際はほかの家庭が負担）になっています。</p>
+                  <p>一方、佐藤さんの家は、昼間に発電した電気をバッテリーに貯めて、それを夜間に使っています。夜に減った分は、翌日にまた充電されるので、電気を使いすぎたり、雨が続いて発電できないときは、バッテリーの電気が足りなくなるおそれがあります。</p>
+                  <blockquote>現在の我が家の消費電力は、1日平均3kWh。一般的な日本の世帯のおよそ3分の1だそうです。冷凍冷蔵庫、洗濯機、掃除機、炊飯器、エアコン、パソコン、プリンター、携帯電話を使っていますので、みなさんの生活と大きな差はありません。しいて言えば、テレビと電子レンジがないくらいでしょうか。</blockquote>
+                  <p>一般的な4人家族で使う電気は1日に10kWhといわれています。佐藤さんが設置したバッテリーの蓄電量は27kWh。何も考えずに使うと3日分ですが、節電を意識しているので、9日分くらいの容量があります。</p>
+                  <ol>
+                    <li>あああ</li>
+                    <li>いいい</li>
+                    <li>ううう</li>
+                  </ol>
+                  <ul>
+                    <li>あああ</li>
+                    <li>いいい</li>
+                    <li>ううう</li>
+                  </ul>
+                  <pre>
+  <code>
+  function aFunctionName(){
+    console.log("this works");
+  }
+  setTimeout("aFunctionName()",1000); //this works in regular javascript
+
+  $timeout(aFunctionName,1000); //this works
+  $timeout("aFunctionName()",1000); //this does not work and throws error: TypeError: fn is not a function</code>
+                  </pre>
+                </article>
+                <div class="like_comment_box">
+                  <p class="like_btn active"><i class="icon-favorite-outline"></i><i class="icon-favorite"></i></p>
+                  <p class="comment_btn"><i class="icon-comment-outline"></i></p>
+                  <div class="like_count">いいね 11件
+                    <div class="balloon_box">
+                      <ul>
+                        <li>小松健太</li>
+                        <li>大崎太加彦</li>
+                        <li>小松健太</li>
+                        <li>大崎太加彦</li>
+                        <li>他34人</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <p class="comment_count">コメント 8件</p>
+                </div>
+                <p class="counter">1000文字</p>
+                <button class="btn_add_task" data-toggle="modal" data-target="#delete_note">編集する</button>
               </div>
-              <p class="counter">1000文字</p>
-              <button class="btn_add_task" data-toggle="modal" data-target="#delete_note">編集する</button>
             </div>
             <!--Note Edit/-->
           </div>

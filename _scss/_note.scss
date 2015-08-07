@@ -24,96 +24,133 @@
     a {
       color: $green;
     }
-    .edit_name {
+    .note_edit_inner {
       position: relative;
-      font-weight: bold;
-      padding: 20px;
-      .noimage {
-        height: 40px;
-        width: 40px;
-        line-height: 40px;
-        float: left;
-        margin-right: 12px;
-      }
-      .user_image {
-        float: left;
-        margin-right: 12px;
-        img {
+      .edit_name {
+        position: relative;
+        font-weight: bold;
+        padding: 20px;
+        .noimage {
+          height: 40px;
           width: 40px;
-          height:40px;
+          line-height: 40px;
+          float: left;
+          margin-right: 12px;
         }
-      }
-      .writer_info {
-        @include fontsize(1.2);
-        color: $white_brack;
-      }
-      .note_option {
-        @include fontsize(2.6);
-        position: absolute;
-        right: 15px;
-        top: 28px;
-        color: $white_brack;
-      }
-      .note_detail_option_box {
-        right: 15px;
-        top: 60px;
-      }
-    }
-    .btn_add_task {
-      bottom: 10px;
-    }
-    .like_comment_box {
-      position: absolute;
-      left: 15px;
-      bottom: 15px;
-      .like_btn {
-        float: left;
-        margin-right: 10px;
-        padding-top: 10px;
-        i {
+        .user_image {
+          float: left;
+          margin-right: 12px;
+          img {
+            width: 40px;
+            height:40px;
+          }
+        }
+        .writer_info {
+          @include fontsize(1.2);
           color: $white_brack;
-          @include fontsize(2.3);
-          &.icon-favorite-outline {
-            display: block;
-          }
-          &.icon-favorite {
-            display: none;
-          }
         }
-        &.active {
+        .note_option {
+          @include fontsize(2.6);
+          position: absolute;
+          right: 15px;
+          top: 28px;
+          color: $white_brack;
+        }
+        .note_detail_option_box {
+          right: 15px;
+          top: 60px;
+        }
+      }
+      .btn_add_task {
+        bottom: 10px;
+      }
+      .like_comment_box {
+        position: absolute;
+        left: 15px;
+        bottom: 15px;
+        .like_btn {
+          float: left;
+          margin-right: 10px;
+          padding-top: 10px;
           i {
+            color: $white_brack;
+            @include fontsize(2.3);
             &.icon-favorite-outline {
-              display: none;
-            }
-            &.icon-favorite {
-              color: $dark_red;
               display: block;
             }
+            &.icon-favorite {
+              display: none;
+            }
+          }
+          &.active {
+            i {
+              &.icon-favorite-outline {
+                display: none;
+              }
+              &.icon-favorite {
+                color: $dark_red;
+                display: block;
+              }
+            }
           }
         }
-      }
-      .comment_btn {
-        float: left;
-        margin-right: 10px;
-        padding-top: 10px;
-        i {
-          @include fontsize(2.3);
+        .comment_btn {
+          float: left;
+          margin-right: 10px;
+          padding-top: 10px;
+          i {
+            @include fontsize(2.3);
+            color: $white_brack;
+          }
+        }
+        .like_count {
+          @include fontsize(1.2);
+          position: relative;
+          float: left;
           color: $white_brack;
+          padding-top: 10px;
+          line-height: 23px;
+          margin-right: 10px;
+          &:hover {
+            .balloon_box {
+              display: block;
+              height: auto;
+              bottom: 28px;
+              left: 0;
+              text-align: left;
+              padding: 10px 10px;
+              ul {
+                margin-bottom: 0;
+                li {
+                  line-height: 1.9;
+                }
+              }
+            }
+          }
+        }
+        .comment_count {
+          @extend .like_count;
         }
       }
-      .like_count {
-        @include fontsize(1.2);
-        position: relative;
-        float: left;
+      .browse_count {
+        @include fontsize(1.1);
+        line-height: 23px;
         color: $white_brack;
         padding-top: 10px;
-        line-height: 23px;
-        margin-right: 10px;
+        position: absolute;
+        right: 15px;
+        bottom: 8px;
+        vertical-align: top;
+        i {
+          @include fontsize(2.3);
+          margin-right: 5px;
+        }
         &:hover {
           .balloon_box {
             display: block;
             height: auto;
-            bottom: 28px;
+            width: 100%;
+            bottom: 30px;
             left: 0;
             text-align: left;
             padding: 10px 10px;
@@ -121,71 +158,129 @@
               margin-bottom: 0;
               li {
                 line-height: 1.9;
-              }
-            }
-          }
-        }
-      }
-      .comment_count {
-        @extend .like_count;
-      }
-    }
-    .browse_count {
-      @include fontsize(1.1);
-      line-height: 23px;
-      color: $white_brack;
-      padding-top: 10px;
-      position: absolute;
-      right: 15px;
-      bottom: 8px;
-      vertical-align: top;
-      i {
-        @include fontsize(2.3);
-        margin-right: 5px;
-      }
-      &:hover {
-        .balloon_box {
-          display: block;
-          height: auto;
-          width: 100%;
-          bottom: 30px;
-          left: 0;
-          text-align: left;
-          padding: 10px 10px;
-          ul {
-            margin-bottom: 0;
-            li {
-              line-height: 1.9;
-              overflow: hidden;
-              white-space: nowrap;
-              text-overflow: ellipsis;
-              span {
-                &:hover {
-                  cursor: pointer;
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                span {
+                  &:hover {
+                    cursor: pointer;
+                  }
                 }
               }
             }
           }
         }
       }
+      .counter {
+        @include fontsize(1.1);
+        position: absolute;
+        right: 130px;
+        bottom: 15px;
+        color: $white_brack;
+      }
+      .editing {
+        @include border_radius(4px 4px 0 0);
+        position: relative;
+        background: $green;
+        color: #fff;
+        text-align: center;
+        height: 40px;
+        p {
+          line-height: 30px;
+          display: inline-block;
+        }
+      }
     }
-    .counter {
-      @include fontsize(1.1);
-      position: absolute;
-      right: 110px;
-      bottom: 15px;
-      color: $white_brack;
-    }
-    .editing {
-      @include border_radius(4px 4px 0 0);
-      position: relative;
-      background: $green;
-      color: #fff;
-      text-align: center;
-      height: 40px;
-      p {
-        line-height: 30px;
-        display: inline-block;
+    .note_comment {
+      @include border_radius(0 0 5px 5px);
+      background: $white_gray;
+      text-align: left;
+      border-bottom: 1px solid $border_white_gray;
+      padding: 20px 20px 20px 20px;
+      .comment_inner {
+        display: table;
+        width: 100%;
+        table-layout: fixed;
+        margin-bottom: 20px;
+        .user_image {
+          display: table-cell;
+          width: 40px;
+          img {
+            width: 30px;
+            height: 30px;
+            vertical-align: top;
+            margin-top: 2px;
+          }
+          .noimage {
+            @include font_eng;
+            @include fontsize(1.1);
+            line-height: 30px;
+            text-align: center;
+            width: 30px;
+          }
+        }
+        .user_comment {
+          display: table-cell;
+          vertical-align: top;
+          p {
+            @include fontsize(1.4);
+            &.name {
+              font-weight: bold;
+              padding-bottom: 1px;
+              .time {
+                margin-left: 10px;
+                font-weight: normal;
+                color: $white_brack;
+                @include fontsize(1.2);
+              }
+            }
+            &.memo {
+              @include fontsize(1.4);
+              word-wrap: break-word;
+            }
+          }
+        }
+      }
+      .comment_entry {
+        margin: 0 auto;
+        padding: 20px 0;
+        border-top: 1px solid $border_gray;
+        textarea {
+          @include border_radius();
+          width: 100%;
+          height: 60px;
+          padding: 10px 15px;
+          margin-bottom: 10px;
+          border: 1px solid $border_gray;
+          background: #fff;
+          resize: none;
+          outline: none;
+        }
+        button {
+          float: right;
+          width: 100px;
+          height: 30px;
+          &.btn-default {
+            border-color: $border_white_gray;
+            background: $white_gray;
+            &:hover {
+              opacity: 0.7;
+            }
+          }
+          &.btn-primary {
+            line-height: 30px;
+            @include fontsize(1.3);
+            &.btn-primary {
+              background: $torio_green;
+              border: none;
+              padding: 0;
+              font-weight: 700;
+              &:hover {
+                opacity: 0.7;
+              }
+            }
+          }
+        }
       }
     }
   }
