@@ -354,10 +354,16 @@ window.onload=function(){
       $('.add_page,.check_box,.option_box,.detail_option_box,.detail_check_box,.task_add_list_member,.task_add_member,.task_add_requester,.limit_add_time').hide();
     });
     //Nnote_detail_option_box
-    $('.note_option').click(function () {
-      $('.note_detail_option_box').toggle( 'fade', '', 100 );
+    $('#note_1 .note_option').click(function () {
+      $('#note_1 .note_detail_option_box').toggle( 'fade', '', 100 );
       event.stopPropagation();
-      $('.add_page,.check_box,.option_box,.detail_option_box,.detail_check_box,.task_add_list_member,.task_add_member,.task_add_requester,.limit_add_time').hide();
+      $('.add_page,.check_box,.option_box,.detail_option_box,.detail_check_box,.task_add_list_member,.task_add_member,.task_add_requester,.limit_add_time,#note_2 .note_detail_option_box').hide();
+    });
+    //Nnote_detail_option_box
+    $('#note_2 .note_option').click(function () {
+      $('#note_2 .note_detail_option_box').toggle( 'fade', '', 100 );
+      event.stopPropagation();
+      $('.add_page,.check_box,.option_box,.detail_option_box,.detail_check_box,.task_add_list_member,.task_add_member,.task_add_requester,.limit_add_time,#note_1 .note_detail_option_box').hide();
     });
 
 

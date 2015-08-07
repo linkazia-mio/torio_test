@@ -1486,6 +1486,11 @@ header {
               }
               &.on {
                 background: $green;
+                .circle {
+                  width: 14px;
+                  height: 14px;
+                  top: 3px;
+                }
               }
               &.off {
                 background: $dark_gray;
