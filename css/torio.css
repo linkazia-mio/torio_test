@@ -4207,7 +4207,7 @@ input[type="checkbox"] {
  Editable
 ---------------------------------------------------------------------------------------*/
 .editable {
-  padding: 30px 70px; }
+  padding: 30px 70px 50px 70px; }
   .editable:focus {
     outline: none; }
   .editable h1 {
