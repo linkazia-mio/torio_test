@@ -3738,7 +3738,7 @@ input[type="checkbox"] {
           filter: alpha(opacity=80); }
       .task_replacement .task_people .task_list .time_create, .task_replacement .task_people .task_list .task_member {
         position: absolute;
-        right: 130px;
+        right: 128px;
         bottom: 16px; }
         .task_replacement .task_people .task_list .time_create.configured, .task_replacement .task_people .task_list .configured.task_member {
           -webkit-border-radius: 4px;
@@ -3765,7 +3765,7 @@ input[type="checkbox"] {
         line-height: 30px; }
         .task_replacement .task_people .task_list .task_member.configured {
           line-height: 28px;
-          right: 241px;
+          right: 239px;
           padding: 0 10px 0 32px; }
           .task_replacement .task_people .task_list .task_member.configured span {
             padding: 0; }

@@ -295,7 +295,7 @@ input[type="checkbox"] {
       }
       .time_create {
         position: absolute;
-        right: 130px;
+        right: 128px;
         bottom: 16px;
         &.configured {
           @include border_radius();
@@ -322,7 +322,7 @@ input[type="checkbox"] {
         line-height: 30px;
         &.configured {
           line-height: 28px;
-          right: 241px;
+          right: 239px;
           padding: 0 10px 0 32px;
           span {
             padding: 0;
