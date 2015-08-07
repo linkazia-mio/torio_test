@@ -1823,13 +1823,19 @@ header {
   }
 }
 
-#viewers_box {
+#viewers_box,#note_viewers_box {
   .made{
     border-bottom: 1px solid $border_white_gray;
     padding: 30px 30px 20px 30px;
   }
+  .modal-content {
+    padding-bottom: 10px;
+  }
   .modal-body {
+    border-top: 1px solid $border_white_gray;
     background: #fff;
+    height: 50%;
+    overflow: hidden;
     padding: 10px 30px 10px 30px;
     @include border_radius(0 0 4 4);
     .view_group_member {

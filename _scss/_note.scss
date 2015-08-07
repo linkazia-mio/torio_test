@@ -134,6 +134,7 @@
       @include fontsize(1.1);
       line-height: 23px;
       color: $white_brack;
+      padding-top: 10px;
       position: absolute;
       right: 15px;
       bottom: 8px;
@@ -141,6 +142,31 @@
       i {
         @include fontsize(2.3);
         margin-right: 5px;
+      }
+      &:hover {
+        .balloon_box {
+          display: block;
+          height: auto;
+          width: 100%;
+          bottom: 30px;
+          left: 0;
+          text-align: left;
+          padding: 10px 10px;
+          ul {
+            margin-bottom: 0;
+            li {
+              line-height: 1.9;
+              overflow: hidden;
+              white-space: nowrap;
+              text-overflow: ellipsis;
+              span {
+                &:hover {
+                  cursor: pointer;
+                }
+              }
+            }
+          }
+        }
       }
     }
     .counter {

@@ -33,6 +33,19 @@ window.onload=function(){
     }
   );
 
+  //閲覧者hover
+  $('.browse_count').click(function() {
+    $(this).find('.balloon_box').hide();
+  });
+  $('.browse_count').hover(
+    function () {
+      $(this).find('.balloon_box').show();
+    },
+    function () {
+      $(this).find('.balloon_box').hide();
+    }
+  );
+
   //クリッカブル
   $('.item').click(function () {
     $(this).toggleClass('selected');
@@ -553,6 +566,22 @@ function actCustomScrollbar(){
         }
      });
      $('.viewers_list').mCustomScrollbar({
+       autoHideScrollbar: true,
+       scrollInertia: 0,
+       advanced:{
+          autoScrollOnFocus: true,
+          updateOnContentResize: true
+        }
+     });
+     $('#note_viewers_box .modal-body').mCustomScrollbar({
+       autoHideScrollbar: true,
+       scrollInertia: 0,
+       advanced:{
+          autoScrollOnFocus: true,
+          updateOnContentResize: true
+        }
+     });
+     $('#viewers_box .modal-body').mCustomScrollbar({
        autoHideScrollbar: true,
        scrollInertia: 0,
        advanced:{

@@ -1098,9 +1098,9 @@ p {
 button:focus {
   outline: none; }
 
-.clearfix, .alart .me, .account, #viewers_box .modal-body .view_group_member, .bx-wrapper .bx-viewport .file_slide .item .modal-header {
+.clearfix, .alart .me, .account, #viewers_box .modal-body .view_group_member, #note_viewers_box .modal-body .view_group_member, .bx-wrapper .bx-viewport .file_slide .item .modal-header {
   *zoom: 1; }
-  .clearfix:after, .alart .me:after, .account:after, #viewers_box .modal-body .view_group_member:after, .bx-wrapper .bx-viewport .file_slide .item .modal-header:after {
+  .clearfix:after, .alart .me:after, .account:after, #viewers_box .modal-body .view_group_member:after, #note_viewers_box .modal-body .view_group_member:after, .bx-wrapper .bx-viewport .file_slide .item .modal-header:after {
     content: ".";
     display: block;
     clear: both;
@@ -2640,45 +2640,51 @@ header {
           font-size: 13px;
           font-size: 1.3rem; }
 
-#viewers_box .made {
+#viewers_box .made, #note_viewers_box .made {
   border-bottom: 1px solid #f5f5f5;
   padding: 30px 30px 20px 30px; }
 
-#viewers_box .modal-body {
+#viewers_box .modal-content, #note_viewers_box .modal-content {
+  padding-bottom: 10px; }
+
+#viewers_box .modal-body, #note_viewers_box .modal-body {
+  border-top: 1px solid #f5f5f5;
   background: #fff;
+  height: 50%;
+  overflow: hidden;
   padding: 10px 30px 10px 30px;
   -webkit-border-radius: 0 0 4 4;
   -moz-border-radius: 0 0 4 4;
   -ms-border-radius: 0 0 4 4;
   border-radius: 0 0 4 4; }
-  #viewers_box .modal-body .view_group_member {
+  #viewers_box .modal-body .view_group_member, #note_viewers_box .modal-body .view_group_member {
     border-bottom: 1px solid #f5f5f5;
     width: 100%;
     position: relative;
     padding: 15px 0 15px 0;
     margin: 0; }
-    #viewers_box .modal-body .view_group_member:first-child {
+    #viewers_box .modal-body .view_group_member:first-child, #note_viewers_box .modal-body .view_group_member:first-child {
       padding: 15px 0 15px 0; }
-    #viewers_box .modal-body .view_group_member:last-child {
+    #viewers_box .modal-body .view_group_member:last-child, #note_viewers_box .modal-body .view_group_member:last-child {
       padding: 15px 0 25px 0;
       border: none; }
-    #viewers_box .modal-body .view_group_member dt {
+    #viewers_box .modal-body .view_group_member dt, #note_viewers_box .modal-body .view_group_member dt {
       float: left;
       width: 40px; }
-      #viewers_box .modal-body .view_group_member dt .noimage {
+      #viewers_box .modal-body .view_group_member dt .noimage, #note_viewers_box .modal-body .view_group_member dt .noimage {
         font-family: 'Helvetica neue',Helvetica,Arial,sans-serif;
         font-size: 10px;
         font-size: 1rem;
         line-height: 38px;
         text-align: center; }
-      #viewers_box .modal-body .view_group_member dt .user_image img {
+      #viewers_box .modal-body .view_group_member dt .user_image img, #note_viewers_box .modal-body .view_group_member dt .user_image img {
         width: 40px;
         height: auto; }
-    #viewers_box .modal-body .view_group_member dd {
+    #viewers_box .modal-body .view_group_member dd, #note_viewers_box .modal-body .view_group_member dd {
       float: left;
       line-height: 40px;
       margin-left: 10px; }
-      #viewers_box .modal-body .view_group_member dd .user_friends {
+      #viewers_box .modal-body .view_group_member dd .user_friends, #note_viewers_box .modal-body .view_group_member dd .user_friends {
         position: absolute;
         top: 15px;
         right: 0;
@@ -4150,6 +4156,7 @@ input[type="checkbox"] {
       font-size: 1.1rem;
       line-height: 23px;
       color: #8a959e;
+      padding-top: 10px;
       position: absolute;
       right: 15px;
       bottom: 8px;
@@ -4158,6 +4165,23 @@ input[type="checkbox"] {
         font-size: 23px;
         font-size: 2.3rem;
         margin-right: 5px; }
+      .note .note_edit .browse_count:hover .balloon_box {
+        display: block;
+        height: auto;
+        width: 100%;
+        bottom: 30px;
+        left: 0;
+        text-align: left;
+        padding: 10px 10px; }
+        .note .note_edit .browse_count:hover .balloon_box ul {
+          margin-bottom: 0; }
+          .note .note_edit .browse_count:hover .balloon_box ul li {
+            line-height: 1.9;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis; }
+            .note .note_edit .browse_count:hover .balloon_box ul li span:hover {
+              cursor: pointer; }
     .note .note_edit .counter {
       font-size: 11px;
       font-size: 1.1rem;
