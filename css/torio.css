@@ -4377,6 +4377,9 @@ input[type="checkbox"] {
     border: none; }
   .editable figure {
     margin: 30px 0; }
+    .editable figure img {
+      max-width: 100%;
+      height: auto; }
   .editable small {
     margin: 10px 0;
     display: block; }
