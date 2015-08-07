@@ -114,9 +114,9 @@ button {
     }
     input {
       @include border_radius();
-      height: 26px;
+      height: 30px;
       padding: 5px;
-      width: 155px;
+      width: 141px;
       border: 1px solid $border_gray;
       margin-right: 10px;
     }
@@ -200,9 +200,9 @@ button {
       }
       input {
         @include border_radius();
-        height: 26px;
+        height: 30px;
         padding: 5px;
-        width: 155px;
+        width: 141px;
         border: 1px solid $border_gray;
         margin-right: 10px;
       }
@@ -1666,8 +1666,8 @@ header {
             .btn_file {
               overflow: hidden;
               position: absolute;
-              right: 100px;
-              bottom: 5px;
+              right: 110px;
+              bottom: 7px;
               width: 30px;
               height: 30px;
               i {

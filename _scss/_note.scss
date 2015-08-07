@@ -193,6 +193,7 @@
     }
     .note_comment {
       @include border_radius(0 0 5px 5px);
+      display: none;
       background: $white_gray;
       text-align: left;
       border-bottom: 1px solid $border_white_gray;
@@ -290,7 +291,7 @@
  Editable
 ---------------------------------------------------------------------------------------*/
 .editable {
-  padding: 30px 70px 50px 70px;
+  padding: 20px 70px 50px 70px;
   &:focus {
     outline: none;
   }
@@ -308,9 +309,9 @@
     margin: 30px auto;
   }
   blockquote {
+    @include fontsize(1.4);
     padding: 10px 20px;
     margin: 0 0 20px;
-    font-size: 17.5px;
     border-left: 4px solid $dark_yellow;
   }
   ol {
@@ -347,7 +348,7 @@
  Editable_lock
 ---------------------------------------------------------------------------------------*/
 .editable_lock {
-  padding: 30px 70px;
+  padding: 20px 70px 30px 70px;
   h1 {
     @include fontsize(2.0);
     font-weight: bold;
@@ -412,13 +413,13 @@
   }
   .medium-insert-buttons {
     .medium-insert-buttons-show {
-      @include border_radius(100);
-      @include fontsize(2.0);
+      @include border_radius(100px);
+      @include fontsize(2.1);
       position: relative;
       box-sizing: border-box;
       display: block;
-      width: 20px;
-      height: 20px;
+      width: 22px;
+      height: 22px;
       margin-top: 2px;
       border: 2px solid;
       line-height: 20px;
@@ -434,11 +435,11 @@
         left: -2px;
         top: -2px;
       }
-      &.active {
-        transition: all .2s;
-      	-webkit-transform: rotate(45deg);
-      	transform: rotate(45deg);
-      }
+      // &.active {
+      //   transition: all .2s;
+      // 	-webkit-transform: rotate(45deg);
+      // 	transform: rotate(45deg);
+      // }
     }
     .medium-insert-buttons-addons {
       top: -24px;
@@ -480,6 +481,34 @@
   &:after {
     font-family:'ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro','メイリオ',Meiryo,'ＭＳ Ｐゴシック','MS PGothic',sans-serif;
     font-style: normal;
+  }
+}
+
+.medium-editor-toolbar {
+  border: 0;
+  box-shadow: 0 0 0 #000;
+  ul {
+    @include border_radius();
+    background: #242424;
+    li {
+      .medium-editor-button-first {
+        background: none;
+      }
+      .medium-editor-action-pre {
+        padding: 0;
+      }
+      button {
+        border: 0;
+        height: 35px;
+        padding: 0;
+        box-shadow: 0 0 0 #000;
+      }
+    }
+  }
+}
+.medium-toolbar-arrow-under {
+  &:after {
+    top: 35px;
   }
 }
 
