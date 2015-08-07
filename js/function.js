@@ -378,10 +378,16 @@ window.onload=function(){
       event.stopPropagation();
       $('.add_page,.check_box,.option_box,.detail_option_box,.detail_check_box,.task_add_list_member,.task_add_member,.task_add_requester,.limit_add_time,#note_1 .note_detail_option_box').hide();
     });
-    //Nnote_detail_option_box
+    //comment_count
     $('#note_1 .comment_count').click(function () {
       $('#note_1 .note_comment').toggle();
     });
+    //comment_count
+    $('.item .option').click(function () {
+      $('.item_option_box').toggle( 'fade', '', 100 );
+    });
+
+
   });
 
   $(function(){

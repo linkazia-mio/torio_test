@@ -3054,6 +3054,9 @@ header {
           color: #8a959e; }
           .bx-wrapper .bx-viewport .file_slide .item .modal-header .option a:hover, .bx-wrapper .bx-viewport .file_slide .carousel .carousel-inner .item .modal-header .download a:hover, .carousel .carousel-inner .bx-wrapper .bx-viewport .file_slide .item .modal-header .download a:hover, .bx-wrapper .bx-viewport .file_slide .carousel .carousel-inner .item .modal-header .like a:hover, .carousel .carousel-inner .bx-wrapper .bx-viewport .file_slide .item .modal-header .like a:hover {
             color: #3A87BC; }
+      .bx-wrapper .bx-viewport .file_slide .item .modal-header .item_option_box {
+        right: 15px;
+        top: 60px; }
       .bx-wrapper .bx-viewport .file_slide .item .modal-header .download, .bx-wrapper .bx-viewport .file_slide .carousel .carousel-inner .item .modal-header .like, .carousel .carousel-inner .bx-wrapper .bx-viewport .file_slide .item .modal-header .like {
         position: absolute;
         top: 40px;
