@@ -4102,7 +4102,8 @@ input[type="checkbox"] {
       bottom: 15px; }
       .note .note_edit .like_comment_box .like_btn {
         float: left;
-        margin-right: 10px; }
+        margin-right: 10px;
+        padding-top: 10px; }
         .note .note_edit .like_comment_box .like_btn i {
           color: #8a959e;
           font-size: 23px;
@@ -4118,18 +4119,32 @@ input[type="checkbox"] {
           display: block; }
       .note .note_edit .like_comment_box .comment_btn {
         float: left;
-        margin-right: 10px; }
+        margin-right: 10px;
+        padding-top: 10px; }
         .note .note_edit .like_comment_box .comment_btn i {
           font-size: 23px;
           font-size: 2.3rem;
           color: #8a959e; }
-      .note .note_edit .like_comment_box .line_count, .note .note_edit .like_comment_box .comment_count {
+      .note .note_edit .like_comment_box .like_count, .note .note_edit .like_comment_box .comment_count {
         font-size: 12px;
         font-size: 1.2rem;
+        position: relative;
         float: left;
         color: #8a959e;
+        padding-top: 10px;
         line-height: 23px;
         margin-right: 10px; }
+        .note .note_edit .like_comment_box .like_count:hover .balloon_box, .note .note_edit .like_comment_box .comment_count:hover .balloon_box {
+          display: block;
+          height: auto;
+          bottom: 28px;
+          left: 0;
+          text-align: left;
+          padding: 10px 10px; }
+          .note .note_edit .like_comment_box .like_count:hover .balloon_box ul, .note .note_edit .like_comment_box .comment_count:hover .balloon_box ul {
+            margin-bottom: 0; }
+            .note .note_edit .like_comment_box .like_count:hover .balloon_box ul li, .note .note_edit .like_comment_box .comment_count:hover .balloon_box ul li {
+              line-height: 1.9; }
     .note .note_edit .browse_count {
       font-size: 11px;
       font-size: 1.1rem;
@@ -4211,6 +4226,54 @@ input[type="checkbox"] {
   .editable figure {
     margin: 30px 0; }
   .editable small {
+    margin: 10px 0;
+    display: block; }
+
+/*---------------------------------------------------------------------------------------
+ Editable_lock
+---------------------------------------------------------------------------------------*/
+.editable_lock {
+  padding: 30px 70px; }
+  .editable_lock h1 {
+    font-size: 20px;
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 0 0 40px 0; }
+  .editable_lock p {
+    margin: 0 0 30px 0;
+    line-height: 1.8; }
+  .editable_lock hr {
+    width: 100px;
+    margin: 30px auto; }
+  .editable_lock blockquote {
+    padding: 10px 20px;
+    margin: 0 0 20px;
+    font-size: 17.5px;
+    border-left: 4px solid #ff9933; }
+  .editable_lock ol {
+    padding-left: 20px;
+    margin-bottom: 30px; }
+  .editable_lock ul {
+    padding-left: 20px;
+    margin-bottom: 30px; }
+    .editable_lock ul li {
+      list-style: disc; }
+  .editable_lock pre {
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    border-radius: 0;
+    padding: 10px 20px;
+    display: block;
+    margin: 0 0 10px;
+    color: #333;
+    word-break: break-all;
+    word-wrap: break-word;
+    background-color: #f5f5f5;
+    border: none; }
+  .editable_lock figure {
+    margin: 30px 0; }
+  .editable_lock small {
     margin: 10px 0;
     display: block; }
 

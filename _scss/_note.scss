@@ -69,6 +69,7 @@
       .like_btn {
         float: left;
         margin-right: 10px;
+        padding-top: 10px;
         i {
           color: $white_brack;
           @include fontsize(2.3);
@@ -94,20 +95,39 @@
       .comment_btn {
         float: left;
         margin-right: 10px;
+        padding-top: 10px;
         i {
           @include fontsize(2.3);
           color: $white_brack;
         }
       }
-      .line_count {
+      .like_count {
         @include fontsize(1.2);
+        position: relative;
         float: left;
         color: $white_brack;
+        padding-top: 10px;
         line-height: 23px;
         margin-right: 10px;
+        &:hover {
+          .balloon_box {
+            display: block;
+            height: auto;
+            bottom: 28px;
+            left: 0;
+            text-align: left;
+            padding: 10px 10px;
+            ul {
+              margin-bottom: 0;
+              li {
+                line-height: 1.9;
+              }
+            }
+          }
+        }
       }
       .comment_count {
-        @extend .line_count;
+        @extend .like_count;
       }
     }
     .browse_count {
@@ -202,7 +222,60 @@
     display: block;
   }
 }
-
+/*---------------------------------------------------------------------------------------
+ Editable_lock
+---------------------------------------------------------------------------------------*/
+.editable_lock {
+  padding: 30px 70px;
+  h1 {
+    @include fontsize(2.0);
+    font-weight: bold;
+    margin: 0 0 40px 0;
+  }
+  p {
+    margin: 0 0 30px 0;
+    line-height: 1.8;
+  }
+  hr {
+    width: 100px;
+    margin: 30px auto;
+  }
+  blockquote {
+    padding: 10px 20px;
+    margin: 0 0 20px;
+    font-size: 17.5px;
+    border-left: 4px solid $dark_yellow;
+  }
+  ol {
+    padding-left: 20px;
+    margin-bottom: 30px;
+  }
+  ul {
+    padding-left: 20px;
+    margin-bottom: 30px;
+    li {
+      list-style: disc;
+    }
+  }
+  pre {
+    @include border_radius(0);
+    padding: 10px 20px;
+    display: block;
+    margin: 0 0 10px;
+    color: #333;
+    word-break: break-all;
+    word-wrap: break-word;
+    background-color: $white_gray;
+    border: none;
+  }
+  figure {
+    margin: 30px 0;
+  }
+  small {
+    margin: 10px 0;
+    display: block;
+  }
+}
 /*---------------------------------------------------------------------------------------
  Medium Editor
 ---------------------------------------------------------------------------------------*/

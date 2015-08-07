@@ -339,7 +339,7 @@
                 <p class="note_option"><i class="icon-more-horiz"></i></p>
                 <div class="note_detail_option_box popover">
                   <ul>
-                    <li><a href="">日付の新しい順</a></li>
+                    <li><a data-toggle="modal" data-target="#delete_note" href="">この記事を削除する</a></li>
                     <li><a href="">日付の古い順</a></li>
                     <li><a href="">割り当てた人順</a></li>
                   </ul>
@@ -351,11 +351,21 @@
               <div class="like_comment_box">
                 <p class="like_btn active"><i class="icon-favorite-outline"></i><i class="icon-favorite"></i></p>
                 <p class="comment_btn"><i class="icon-comment-outline"></i></p>
-                <p class="line_count">いいね 11件</p>
+                <div class="like_count">いいね 11件
+                  <div class="balloon_box">
+                    <ul>
+                      <li>小松健太</li>
+                      <li>大崎太加彦</li>
+                      <li>小松健太</li>
+                      <li>大崎太加彦</li>
+                      <li>他34人</li>
+                    </ul>
+                  </div>
+                </div>
                 <p class="comment_count">コメント 8件</p>
               </div>
               <p class="counter">1000文字</p>
-              <button class="btn_add_task" data-toggle="modal" data-target="#delete_note">削除する</button>
+              <button class="btn_add_task">編集する</button>
             </div>
             <!--Note Edit/-->
             <!--Note Edit/-->
@@ -364,13 +374,61 @@
                 <p><span class="loader"></span>使用中です。小松健太さんが編集しています。</p>
               </div>
               <div class="edit_name">
+                <p class="noimage">TO</p>
+                <p class="writer_name">大崎太加彦</p>
+                <p class="writer_info">3時間前に<a href="">小松 健太</a>さんに更新されました。</p>
+                <p class="note_option"><i class="icon-more-horiz"></i></p>
+                <div class="note_detail_option_box popover">
+                  <ul>
+                    <li><a data-toggle="modal" data-target="#delete_note" href="">この記事を削除する</a></li>
+                    <li><a href="">日付の古い順</a></li>
+                    <li><a href="">割り当てた人順</a></li>
+                  </ul>
+                </div>
+              </div>
+              <article class="editable_lock">
+                <p>ロック中なので編集できません。</p>
+              </article>
+              <div class="like_comment_box">
+                <p class="like_btn active"><i class="icon-favorite-outline"></i><i class="icon-favorite"></i></p>
+                <p class="comment_btn"><i class="icon-comment-outline"></i></p>
+                <div class="like_count">いいね 11件
+                  <div class="balloon_box">
+                    <ul>
+                      <li>小松健太</li>
+                      <li>大崎太加彦</li>
+                      <li>小松健太</li>
+                      <li>大崎太加彦</li>
+                      <li>他34人</li>
+                    </ul>
+                  </div>
+                </div>
+                <p class="comment_count">コメント 8件</p>
+              </div>
+              <div class="browse_count">
+                <i class="icon-visibility"></i>34人が閲覧しました
+                <div class="balloon_box">
+                  <ul>
+                    <li>小松 健太</li>
+                    <li>大崎 太加彦</li>
+                    <li>原戸 陵至</li>
+                    <li>大石 太加</li>
+                    <li><span  data-toggle="modal" data-target="#note_viewers_box">他34人</span></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <!--Note Edit/-->
+            <!--Note Edit/-->
+            <div class="note_edit" id="note_3">
+              <div class="edit_name">
                 <p class="user_image"><img src="http://placehold.it/100x100"></p>
                 <p class="writer_name">小松健太</p>
                 <p class="writer_info">3時間前に<a href="">原戸 陵至</a>さんに更新されました。</p>
                 <p class="note_option"><i class="icon-more-horiz"></i></p>
                 <div class="note_detail_option_box popover">
                   <ul>
-                    <li><a href="">日付の新しい順</a></li>
+                    <li><a href="">この記事を削除する</a></li>
                     <li><a href="">日付の古い順</a></li>
                     <li><a href="">割り当てた人順</a></li>
                   </ul>
@@ -416,10 +474,21 @@ $timeout("aFunctionName()",1000); //this does not work and throws error: TypeErr
               <div class="like_comment_box">
                 <p class="like_btn active"><i class="icon-favorite-outline"></i><i class="icon-favorite"></i></p>
                 <p class="comment_btn"><i class="icon-comment-outline"></i></p>
-                <p class="line_count">いいね 11件</p>
+                <div class="like_count">いいね 11件
+                  <div class="balloon_box">
+                    <ul>
+                      <li>小松健太</li>
+                      <li>大崎太加彦</li>
+                      <li>小松健太</li>
+                      <li>大崎太加彦</li>
+                      <li>他34人</li>
+                    </ul>
+                  </div>
+                </div>
                 <p class="comment_count">コメント 8件</p>
               </div>
-              <p class="browse_count"><i class="icon-visibility"></i>34人が閲覧しました</p>
+              <p class="counter">1000文字</p>
+              <button class="btn_add_task" data-toggle="modal" data-target="#delete_note">編集する</button>
             </div>
             <!--Note Edit/-->
           </div>
@@ -583,6 +652,44 @@ $timeout("aFunctionName()",1000); //this does not work and throws error: TypeErr
         </div>
       </div>
       <!--/Add member-->
+      <!--Note Viewers/-->
+      <div class="modal fade" id="note_viewers_box" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <button type="button" class="modal_close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title" id="myModalLabel">閲覧者</h4>
+            </div>
+            <div class="modal-body">
+              <dl class="view_group_member">
+                <dt><p class="user_image"><img src="http://placehold.it/100x100"></p></dt>
+                <dd><p class="user_name">小松 健太</p><p class="user_friends"><a href="">友達になる</a></dd>
+              </dl>
+              <dl class="view_group_member">
+                <dt><p class="user_image"><span class="noimage">KO</span></p></dt>
+                <dd><p class="user_name">小松 健太</p><p class="user_friends"><a href="">友達になる</a></dd>
+              </dl>
+              <dl class="view_group_member">
+                <dt><p class="user_image"><img src="http://placehold.it/100x100"></p></dt>
+                <dd><p class="user_name">小松 健太</p><p class="user_friends"><a href="">友達になる</a></dd>
+              </dl>
+              <dl class="view_group_member">
+                <dt><p class="user_image"><span class="noimage">KO</span></p></dt>
+                <dd><p class="user_name">小松 健太</p><p class="user_friends"><a href="">友達になる</a></dd>
+              </dl>
+              <dl class="view_group_member">
+                <dt><p class="user_image"><span class="noimage">KO</span></p></dt>
+                <dd><p class="user_name">小松 健太</p><p class="user_friends"><a href="">友達になる</a></dd>
+              </dl>
+              <dl class="view_group_member">
+                <dt><p class="user_image"><span class="noimage">KO</span></p></dt>
+                <dd><p class="user_name">小松 健太</p><p class="user_friends"><a href="">友達になる</a></dd>
+              </dl>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--/Note Viewers-->
       <!--Delete/-->
       <div class="modal fade" id="delete_note" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
         <button type="button" class="modal_close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
