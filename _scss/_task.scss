@@ -295,13 +295,56 @@ input[type="checkbox"] {
       }
       .time_create {
         position: absolute;
-        right: 115px;
-        bottom: 13px;
+        right: 130px;
+        bottom: 16px;
+        &.configured {
+          @include border_radius();
+          @include fontsize(1.1);
+          color: $brack;
+          border: 1px solid $border_gray;
+          background: $white_gray;
+          height: 30px;
+          line-height: 30px;
+          vertical-align: top;
+          right: 120px;
+          bottom: 11px;
+          padding: 0 10px 0 28px;
+          i {
+            position: absolute;
+            top: 5px;
+            left: 5px;
+          }
+        }
       }
       .task_member {
-        position: absolute;
-        right: 150px;
-        bottom: 13px;
+        @extend .time_create;
+        right: 162px;
+        line-height: 30px;
+        &.configured {
+          line-height: 28px;
+          right: 241px;
+          padding: 0 10px 0 32px;
+          span {
+            padding: 0;
+          }
+          .noimage {
+            width: 20px;
+            height: 20px;
+            line-height: 20px;
+            padding: 0;
+            display: block;
+            top: 4px;
+            left: 5px;
+          }
+          .user_image {
+            top: 4px;
+            left: 5px;
+            img {
+              width: 20px;
+              height: 20px;
+            }
+          }
+        }
       }
       .task_title {
         color: $brack;
@@ -390,6 +433,7 @@ input[type="checkbox"] {
 ---------------------------------------------------------------------------------------*/
 .calendar {
   text-align: center;
+  width: 250px;
   @include font_eng;
   input {
     @include border_radius();
@@ -625,8 +669,8 @@ input[type="checkbox"] {
   height: 36px;
   .btn_cancel {
     position: absolute;
-    right: 110px;
-    bottom: 0;
+    right: 120px;
+    bottom: 3px;
     width: 80px;
     color: $torio_green;
     &:hover {

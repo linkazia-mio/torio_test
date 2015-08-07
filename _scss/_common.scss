@@ -169,7 +169,6 @@ button {
   .popover {
     @include border_radius();
     display: none;
-    width: 400px;
     position: absolute;
     z-index: 1000;
     background: #fff;
