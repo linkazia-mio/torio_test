@@ -4487,11 +4487,9 @@ input[type="checkbox"] {
   overflow: hidden; }
   .medium-editor-insert-plugin .medium-insert-buttons .medium-insert-buttons-show:before {
     position: absolute;
-    font-family: 'torio_icon';
-    font-weight: bold;
-    content: "\e604";
+    content: "+";
     height: 20px;
-    left: -2px;
+    left: 2px;
     top: -2px; }
 
 .medium-editor-insert-plugin .medium-insert-buttons .medium-insert-buttons-addons {

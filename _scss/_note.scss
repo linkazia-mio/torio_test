@@ -432,11 +432,9 @@
       overflow: hidden;
       &:before {
         position: absolute;
-        font-family: 'torio_icon';
-        font-weight: bold;
-        content: "\e604";
+        content: "+";
         height: 20px;
-        left: -2px;
+        left: 2px;
         top: -2px;
       }
       // &.active {

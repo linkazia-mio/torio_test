@@ -382,9 +382,6 @@ window.onload=function(){
     $('#note_1 .comment_count').click(function () {
       $('#note_1 .note_comment').toggle();
     });
-
-
-
   });
 
   $(function(){
@@ -398,23 +395,7 @@ window.onload=function(){
   $(document).ready(function(){
     $('.global_menu_btn').click(function () {
       jQuery( '.global_menu' ).toggle();
-    });
-  });
-
-
-  //File可変グリッド
-  $(function(){
-      $('#masonry').masonry({
-          itemSelector: '.grid',
-          transitionDuration: 0,
-          columnWidth: 250,
-          isFitWidth: true
-      });
-  });
-  jQuery(window).resize(function(){
-    $('#masonry').masonry({
-        itemSelector: '.grid',
-        transitionDuration: 0
+      jQuery('#masonry').masonry();
     });
   });
 
@@ -428,9 +409,24 @@ window.onload=function(){
           minWidth: 310,
           maxWidth: 600
       });
-      jQuery( '.detail' ).resizable({
-        minWidth: 450
+  });
+
+  //File可変グリッド
+  jQuery(function(){
+      jQuery('#masonry').masonry({
+          itemSelector: '.grid',
+          transitionDuration: 0,
+          columnWidth: 250,
+          isFitWidth: true
       });
+  });
+  jQuery(window).resize(function(){
+    jQuery('#masonry').masonry({
+        itemSelector: '.grid',
+        transitionDuration: 0,
+        columnWidth: 250,
+        isFitWidth: true
+    });
   });
 
   //タスクドーナツグラフ 緑
