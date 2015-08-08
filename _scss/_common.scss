@@ -960,11 +960,11 @@ header {
         }
       }
       &.selected {
-        background: $green;
+        background: $torio_green;
         .check {
          	border-bottom: 7px solid $green;
         }
-        .title,.text {
+        .title,.text,ul {
           color: #fff;
         }
         .unread {
