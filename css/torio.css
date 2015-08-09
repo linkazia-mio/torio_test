@@ -1510,10 +1510,11 @@ header {
     .alart .task p .unread, .alart .activity p .unread {
       font-size: 10px;
       font-size: 1rem;
-      -webkit-border-radius: 70px;
-      -moz-border-radius: 70px;
-      -ms-border-radius: 70px;
-      border-radius: 70px;
+      -webkit-border-radius: 100px;
+      -moz-border-radius: 100px;
+      -ms-border-radius: 100px;
+      border-radius: 100px;
+      font-family: 'Helvetica neue',Helvetica,Arial,sans-serif;
       font-weight: bold;
       position: absolute;
       text-align: center;
@@ -1523,11 +1524,12 @@ header {
       margin-top: -3px;
       z-index: 1000;
       content: "";
-      line-height: 15px;
       width: auto;
-      height: 15px;
-      padding: 0 4px;
-      background: #db4c3f; }
+      padding: 0 0 0 0;
+      background: #db4c3f;
+      line-height: 15px;
+      min-width: 15px;
+      min-height: 15px; }
   .alart .activity {
     padding-left: 10px; }
   .alart .me {
@@ -3489,17 +3491,17 @@ header {
 .branding {
   margin: 80px auto 0 auto; }
   .branding h1 {
-    font-size: 38px;
-    font-size: 3.8rem;
+    font-size: 34px;
+    font-size: 3.4rem;
     font-weight: 300;
     color: #333333;
     text-align: center; }
   .branding p {
     text-align: center;
-    font-size: 20px;
-    font-size: 2rem;
+    font-size: 18px;
+    font-size: 1.8rem;
     color: #8a959e;
-    margin: 5px 0 0 0; }
+    margin: 15px 0 0 0; }
 
 .card {
   max-width: 400px;

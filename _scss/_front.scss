@@ -15,16 +15,16 @@
 .branding{
   margin: 80px auto 0 auto;
   h1{
-    @include fontsize(3.8);
+    @include fontsize(3.4);
     font-weight: 300;
     color: $dark_brack;
     text-align: center;
   }
   p{
     text-align: center;
-    @include fontsize(2.0);
+    @include fontsize(1.8);
     color: $white_brack;
-    margin: 5px 0 0 0 ;
+    margin: 15px 0 0 0 ;
   }
 }
 
