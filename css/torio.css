@@ -1993,7 +1993,7 @@ header {
       .page_menu .page_menu_inner .item.selected {
         background: #3A87BC; }
         .page_menu .page_menu_inner .item.selected .check {
-          border-bottom: 7px solid #2e6b95; }
+          border-bottom: 7px solid #3A87BC; }
         .page_menu .page_menu_inner .item.selected .title, .page_menu .page_menu_inner .item.selected .text, .page_menu .page_menu_inner .item.selected ul {
           color: #fff; }
         .page_menu .page_menu_inner .item.selected .unread .title {

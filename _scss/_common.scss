@@ -1052,7 +1052,7 @@ header {
       &.selected {
         background: $torio_green;
         .check {
-         	border-bottom: 7px solid $green;
+         	border-bottom: 7px solid $torio_green;
         }
         .title,.text,ul {
           color: #fff;
