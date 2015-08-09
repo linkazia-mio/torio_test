@@ -1,3 +1,4 @@
+
 $(window).on('resize', function(){});
 
 window.onload=function(){
@@ -56,7 +57,6 @@ window.onload=function(){
   });
 
   //タスク入力部分
-
   $('.task_add_list_member button').click(function () {
     $(this).toggleClass('checked');
   });
@@ -67,9 +67,10 @@ window.onload=function(){
     $(this).toggleClass('checked');
   });
 
+
   $('#made_1.task_input').click(function () {
     $(this).css('padding_bottom','15px');
-    jQuery('.task_button').show();
+    jQuery('.taskButton').show();
     event.stopPropagation();
   });
   $('#made_1.made').click(function () {
@@ -246,6 +247,12 @@ window.onload=function(){
 
 
   $(document).ready(function(){
+    //Task Box
+    $('.task p').click(function () {
+      $('.task_box').toggle( 'fade', '', 100 );
+      event.stopPropagation();
+      $('.add_page,.check_box,.option_box,.detail_option_box,.detail_check_box,.task_add_list_member,.task_add_member').hide();
+    });
     //Activity
     $('.activity p').click(function () {
       $('.activity_box').toggle( 'fade', '', 100 );

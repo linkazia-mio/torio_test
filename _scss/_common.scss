@@ -252,6 +252,92 @@ button {
     }
   }
 }
+.popover_big {
+  @include border_radius();
+  display: none;
+  width: 500px;
+  position: absolute;
+  z-index: 1000;
+  background: #fff;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+  border: none;
+  line-height: 1.42857143;
+  text-align: left;
+  white-space: normal;
+  @include opacity(1);
+  padding: 10px 0;
+  z-index: 10;
+  h3 {
+    @include fontsize(1.4);
+    border-bottom: 1px solid $border_white_gray;
+    margin: 0;
+    font-weight: bold;
+    padding: 5px 15px 15px 15px;
+  }
+  .popover_inner {
+    padding: 10px 15px;
+    .text {
+      @include fontsize(1.3);
+      position: static;
+      margin-bottom: 10px;
+      &:hover {
+        color: $white_brack;
+        cursor: default;
+      }
+    }
+    input {
+      @include border_radius();
+      height: 30px;
+      padding: 5px;
+      width: 141px;
+      border: 1px solid $border_gray;
+      margin-right: 10px;
+    }
+  }
+  ul {
+    margin-bottom: 0;
+    li {
+      line-height: 40px;
+      a {
+        padding: 0 20px;
+        display: block;
+        height: 40px;
+        &:hover {
+          background: $torio_green;
+          color: white;
+          cursor: pointer;
+        }
+      }
+      button {
+        position: relative;
+        padding: 0 20px;
+        display: block;
+        text-align: left;
+        width: 100%;
+        height: 40px;
+        &:hover {
+          background: $torio_green;
+          color: white;
+          cursor: pointer;
+          .noimage {
+            color: $torio_green;
+            background: #fff;
+          }
+        }
+        &.checked {
+          &:after {
+            @include fontsize(2.0);
+            position: absolute;
+            right: 15px;
+            text-align: right;
+            font-family: 'torio_icon';
+            content: "\e649";
+          }
+        }
+      }
+    }
+  }
+}
 
 .modal-backdrop {
   background: #323A45;
@@ -288,9 +374,12 @@ header {
       cursor: pointer;
     }
   }
+  .task_box {
+    right: 80px;
+    top: 60px;
+  }
   .activity_box {
-    width: 400px;
-    left: 76%;
+    right: 60px;
     top: 60px;
   }
   &.fixed{
@@ -435,7 +524,7 @@ header {
         height: 30px;
       }
     }
-    .name{
+    .name {
       @include fontsize(1.2);
       display: inline-block;
       color: $white_brack;
@@ -445,10 +534,10 @@ header {
 
 .account {
   @extend .clearfix;
-  .login{
+  .login {
     float: right;
     margin: 9px 10px 0 0 ;
-    a{
+    a {
       -webkit-transition: all 0.3s ease-in-out;
       -moz-transition: all 0.3s ease-in-out;
       -ms-transition: all 0.3s ease-in-out;
@@ -474,7 +563,7 @@ header {
       border-radius: 2px;
       color: #7d7d7d;
       text-decoration: none;
-      &:hover{
+      &:hover {
         /*-webkit-box-shadow: inset 0 0 0 1px #b2b2b2;
         box-shadow: inset 0 0 0 1px #b2b2b2;*/
         outline:0;
@@ -485,10 +574,10 @@ header {
       }
     }
   }
-  .new{
+  .new {
     float: right;
     margin: 9px 10px 0 0 ;
-    a{
+    a {
       -webkit-transition: all 0.3s ease-in-out;
       -moz-transition: all 0.3s ease-in-out;
       -ms-transition: all 0.3s ease-in-out;
