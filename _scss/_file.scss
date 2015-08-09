@@ -368,7 +368,7 @@
           }
           .item_option_box {
             right: 15px;
-            top: 60px; 
+            top: 60px;
           }
           .download {
             position: absolute;
@@ -376,6 +376,9 @@
             padding-left: 27px;
             right: 60px;
             vertical-align: top;
+            a {
+              color: $white_brack;
+            }
             i {
               position: absolute;
               @include fontsize(2.6);

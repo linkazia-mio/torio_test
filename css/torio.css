@@ -3148,6 +3148,8 @@ header {
         padding-left: 27px;
         right: 60px;
         vertical-align: top; }
+        .bx-wrapper .bx-viewport .file_slide .item .modal-header .download a, .bx-wrapper .bx-viewport .file_slide .carousel .carousel-inner .item .modal-header .like a, .carousel .carousel-inner .bx-wrapper .bx-viewport .file_slide .item .modal-header .like a {
+          color: #8a959e; }
         .bx-wrapper .bx-viewport .file_slide .item .modal-header .download i, .bx-wrapper .bx-viewport .file_slide .carousel .carousel-inner .item .modal-header .like i, .carousel .carousel-inner .bx-wrapper .bx-viewport .file_slide .item .modal-header .like i {
           position: absolute;
           font-size: 26px;
