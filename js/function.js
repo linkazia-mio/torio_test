@@ -563,7 +563,7 @@ window.onload=function(){
   ];
 
   var options = {
-    segmentStrokeColor: "rgba(255, 255, 255, 0.4)",
+    segmentStrokeColor: "rgba(255, 255, 255, 0.0)",
     percentageInnerCutout : 70,
     animationSteps : 20,
     animationEasing: 'easeOutQuart',
