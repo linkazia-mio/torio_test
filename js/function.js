@@ -67,10 +67,17 @@ window.onload=function(){
     $(this).toggleClass('checked');
   });
 
+<<<<<<< HEAD
 
   $('#made_1.task_input').click(function () {
     $(this).css('padding_bottom','15px');
     jQuery('.taskButton').show();
+=======
+  var taskButton = $('form[name="task_button"]');
+  $('#made_1.task_input').click(function () {
+    $(this).css('padding_bottom','15px');
+    jQuery(taskButton).show();
+>>>>>>> 6b94c8e55f89935f70144c4b67e15f16ef3b9034
     event.stopPropagation();
   });
   $('#made_1.made').click(function () {

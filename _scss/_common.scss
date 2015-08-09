@@ -757,7 +757,7 @@ header {
       }
     }
     ul {
-      margin: 0 0 2rem -10px;
+      margin: 0 0 0 -10px;
       @include fontsize(1.2);
       li {
         position: relative;
@@ -865,6 +865,7 @@ header {
     }
     .member {
       @extend .groups;
+      padding-bottom: 3rem;
       .noimage {
         @include font_eng;
         @include fontsize(1.0);

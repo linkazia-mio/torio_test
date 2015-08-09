@@ -1738,7 +1738,7 @@ header {
     .global_menu .global_menu_inner h3:first-child {
       padding-top: 30px; }
   .global_menu .global_menu_inner ul {
-    margin: 0 0 2rem -10px;
+    margin: 0 0 0 -10px;
     font-size: 12px;
     font-size: 1.2rem; }
     .global_menu .global_menu_inner ul li {
@@ -1830,21 +1830,23 @@ header {
             -moz-transform: rotate(90deg);
             -webkit-transform: rotate(90deg);
             background: #aeaeae; }
-  .global_menu .global_menu_inner .member .noimage {
-    font-family: 'Helvetica neue',Helvetica,Arial,sans-serif;
-    font-size: 10px;
-    font-size: 1rem;
-    line-height: 30px;
-    text-align: center;
-    margin-left: 30px;
-    width: 30px;
-    float: left; }
-  .global_menu .global_menu_inner .member .user_image {
-    float: left;
-    margin-left: 30px; }
-    .global_menu .global_menu_inner .member .user_image img {
+  .global_menu .global_menu_inner .member {
+    padding-bottom: 3rem; }
+    .global_menu .global_menu_inner .member .noimage {
+      font-family: 'Helvetica neue',Helvetica,Arial,sans-serif;
+      font-size: 10px;
+      font-size: 1rem;
+      line-height: 30px;
+      text-align: center;
+      margin-left: 30px;
       width: 30px;
-      height: auto; }
+      float: left; }
+    .global_menu .global_menu_inner .member .user_image {
+      float: left;
+      margin-left: 30px; }
+      .global_menu .global_menu_inner .member .user_image img {
+        width: 30px;
+        height: auto; }
 
 /*Page Menu*/
 .page_menu {
