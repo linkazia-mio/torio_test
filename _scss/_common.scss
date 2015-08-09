@@ -973,6 +973,7 @@ header {
         vertical-align: super;
         font-family: 'Helvetica neue',Helvetica,Arial,sans-serif;
         color:$white_brack;
+        @include fontsize(1.1);
       }
       &:hover {
         color: $torio_green;
@@ -1517,7 +1518,7 @@ header {
                     width: 30px;
                     height: 30px;
                     line-height: 30px;
-                    @include fontsize(1.1);
+                    @include fontsize(1.0);
                   }
                   img {
                     width: 30px;
@@ -1673,13 +1674,14 @@ header {
             float: right;
             margin-bottom: 20px;
             select {
+              @include border_radius(2px);
               position: relative;
               width: 400px;
               -webkit-appearance: none;
               -moz-appearance: none;
               appearance: none;
               border: 1px solid $border_gray;
-              padding: 5px 10px;
+              padding: 12px 10px 10px 13px;
               margin: 0 0 0 0;
               z-index: 100;
               &:focus {
@@ -1689,12 +1691,12 @@ header {
             &:after {
               @include fontsize(2.6);
               position: absolute;
-              right: 5px;
-              top: -2px;
+              right: 8px;
+              top: 2px;
               height: 26px;
               width: 26px;
               font-family: 'torio_icon';
-              content: "\e666";
+              content: "\e60a";
               color: $white_brack;
               visibility: visible;
               z-index: 1;

@@ -1923,7 +1923,9 @@ header {
       .page_menu .config .viewers .number {
         vertical-align: super;
         font-family: 'Helvetica neue',Helvetica,Arial,sans-serif;
-        color: #8a959e; }
+        color: #8a959e;
+        font-size: 11px;
+        font-size: 1.1rem; }
       .page_menu .config .viewers:hover {
         color: #3A87BC;
         cursor: pointer; }
@@ -2366,8 +2368,8 @@ header {
             width: 30px;
             height: 30px;
             line-height: 30px;
-            font-size: 11px;
-            font-size: 1.1rem; }
+            font-size: 10px;
+            font-size: 1rem; }
           .modal .modal-dialog .modal-content .modal-body .input_dot .input_dot_contents ul li .user_image img {
             width: 30px;
             height: 30px; }
@@ -2511,13 +2513,17 @@ header {
           height: 0;
           visibility: hidden; }
         .modal .modal-dialog .modal-content .modal-body .input_dot .select_box select {
+          -webkit-border-radius: 2px;
+          -moz-border-radius: 2px;
+          -ms-border-radius: 2px;
+          border-radius: 2px;
           position: relative;
           width: 400px;
           -webkit-appearance: none;
           -moz-appearance: none;
           appearance: none;
           border: 1px solid #e2e2e2;
-          padding: 5px 10px;
+          padding: 12px 10px 10px 13px;
           margin: 0 0 0 0;
           z-index: 100; }
           .modal .modal-dialog .modal-content .modal-body .input_dot .select_box select:focus {
@@ -2526,12 +2532,12 @@ header {
           font-size: 26px;
           font-size: 2.6rem;
           position: absolute;
-          right: 5px;
-          top: -2px;
+          right: 8px;
+          top: 2px;
           height: 26px;
           width: 26px;
           font-family: 'torio_icon';
-          content: "\e666";
+          content: "\e60a";
           color: #8a959e;
           visibility: visible;
           z-index: 1; }
