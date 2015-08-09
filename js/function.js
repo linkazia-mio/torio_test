@@ -105,8 +105,8 @@ window.onload=function(){
 
   //トグルスイッチ
   $('.toggle_btn').click(function () {
-    $('.off .circle').animate({'left': '+=20px'}, 'fast');
-    $('.on .circle').animate({'left': '-=20px'}, 'fast');
+    $('.off .circle').animate({'left': '+=30px'}, 'fast');
+    $('.on .circle').animate({'left': '-=30px'}, 'fast');
     $(this).toggleClass("off");
     $(this).toggleClass("on");
     $('.input_dot_contents p .on').toggle();
