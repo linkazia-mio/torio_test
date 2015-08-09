@@ -3701,6 +3701,10 @@ input[type="checkbox"] {
   margin: 30px; }
   .task_replacement .placeholder {
     background: #e9e9e9;
+    min-height: 100px;
+    margin-bottom: 20px; }
+  .task_replacement .placeholder_inner {
+    background: #e9e9e9;
     min-height: 50px;
     margin-bottom: 5px; }
   .task_replacement .task_people {
@@ -3734,14 +3738,6 @@ input[type="checkbox"] {
         font-size: 1.1rem;
         font-weight: normal;
         padding-left: 17px; }
-      .task_replacement .task_people .finish .placeholder {
-        background: #e9e9e9;
-        height: 100px;
-        margin-bottom: 10px; }
-    .task_replacement .task_people .placeholder {
-      background: #e9e9e9;
-      height: 50px;
-      margin-bottom: 5px; }
     .task_replacement .task_people span {
       font-size: 11px;
       font-size: 1.1rem;

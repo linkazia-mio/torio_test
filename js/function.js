@@ -603,7 +603,7 @@ window.onload=function(){
     jQuery('.task_lists').sortable({
       cursor : 'move',
       connectWith : '.task_lists',
-      placeholder: 'placeholder'
+      placeholder: 'placeholder_inner'
     });
 
     $('.bookmark').click(
