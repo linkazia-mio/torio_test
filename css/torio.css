@@ -1918,7 +1918,7 @@ header {
       color: #8a959e;
       position: absolute;
       right: 49px;
-      top: 0; }
+      top: 1px; }
       .page_menu .config .viewers i {
         font-size: 22px;
         font-size: 2.2rem; }
@@ -4271,8 +4271,8 @@ input[type="checkbox"] {
         bottom: 10px; }
       .note .note_edit .note_edit_inner .like_comment_box {
         position: absolute;
-        left: 15px;
-        bottom: 15px; }
+        left: 20px;
+        bottom: 20px; }
         .note .note_edit .note_edit_inner .like_comment_box .like_btn {
           float: left;
           margin-right: 10px;
@@ -4305,7 +4305,7 @@ input[type="checkbox"] {
           float: left;
           color: #8a959e;
           padding-top: 10px;
-          line-height: 23px;
+          line-height: 25px;
           margin-right: 10px; }
           .note .note_edit .note_edit_inner .like_comment_box .like_count:hover .balloon_box, .note .note_edit .note_edit_inner .like_comment_box .comment_count:hover .balloon_box {
             display: block;

@@ -66,8 +66,8 @@
       }
       .like_comment_box {
         position: absolute;
-        left: 15px;
-        bottom: 15px;
+        left: 20px;
+        bottom: 20px;
         .like_btn {
           float: left;
           margin-right: 10px;
@@ -109,7 +109,7 @@
           float: left;
           color: $white_brack;
           padding-top: 10px;
-          line-height: 23px;
+          line-height: 25px;
           margin-right: 10px;
           &:hover {
             .balloon_box {
