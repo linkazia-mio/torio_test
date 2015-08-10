@@ -1571,6 +1571,11 @@ header {
           width: 250px;
           right: -160px;
         }
+        &.task_modal_header{
+          .modal-title{
+            font-weight: bold;
+          }
+        }
       }
       .modal-body {
         background: $white_gray;
@@ -1976,6 +1981,7 @@ header {
         position: relative;
         &.gray {
           background: $white_gray;
+          @include border_radius(0 0 2px 2px);
         }
         textarea {
           @include border_radius();
