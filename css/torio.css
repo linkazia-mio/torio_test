@@ -1128,26 +1128,6 @@ button:focus {
   -ms-border-radius: 100px;
   border-radius: 100px; }
 
-.popover_big {
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  -ms-border-radius: 4px;
-  border-radius: 4px;
-  display: none;
-  width: 500px;
-  position: absolute;
-  z-index: 1000;
-  background: #fff;
-  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
-  border: none;
-  line-height: 1.42857143;
-  text-align: left;
-  white-space: normal;
-  opacity: 1;
-  filter: alpha(opacity=100);
-  padding: 10px 0;
-  z-index: 10; }
-
 .popover {
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
@@ -1326,7 +1306,7 @@ button:focus {
   white-space: normal;
   opacity: 1;
   filter: alpha(opacity=100);
-  padding: 10px 0;
+  padding: 10px 0 0 0;
   z-index: 10; }
   .popover_big h3 {
     font-size: 14px;
@@ -1361,8 +1341,7 @@ button:focus {
       line-height: 40px; }
       .popover_big ul li a {
         padding: 0 20px;
-        display: block;
-        height: 40px; }
+        display: block; }
         .popover_big ul li a:hover {
           background: #3A87BC;
           color: white;
@@ -1449,55 +1428,79 @@ header {
         header .task_box ul li.active {
           background: #2e6b95;
           color: #fff; }
+          header .task_box ul li.active a {
+            color: #fff; }
     header .task_box .active_lists {
       background: #f5f5f5;
-      padding: 15px; }
-      header .task_box .active_lists .task_list {
-        -webkit-border-radius: 4px;
-        -moz-border-radius: 4px;
-        -ms-border-radius: 4px;
-        border-radius: 4px;
-        margin: 0 0 5px 0;
-        line-height: 50px;
-        height: 50px;
-        background: #fff;
-        clear: both;
-        border: 1px solid #ededf0;
-        border-bottom: 1px solid #dcdce0;
-        box-shadow: none;
-        position: relative;
-        color: #8a959e; }
-        header .task_box .active_lists .task_list.ui-sortable-helper {
-          -moz-transform: rotate(-1deg);
-          -webkit-transform: rotate(-1deg);
-          -o-transform: rotate(-1deg);
-          -ms-transform: rotate(-1deg); }
-        header .task_box .active_lists .task_list.important {
-          border: 1px solid #ed6d44;
-          background: #ffebe7; }
-          header .task_box .active_lists .task_list.important input[type="checkbox"] {
-            /*checked時の見た目*/ }
-            header .task_box .active_lists .task_list.important input[type="checkbox"] + label {
-              /*通常時の見た目*/ }
-              header .task_box .active_lists .task_list.important input[type="checkbox"] + label:before {
-                border: 1px solid #ed6d44;
-                background: #ffebe7; }
-            header .task_box .active_lists .task_list.important input[type="checkbox"]:checked + label::before {
-              background: #db4c3f;
-              border-color: #ed6d44; }
-        header .task_box .active_lists .task_list .user_image {
-          position: absolute;
-          right: 0;
-          top: 0;
-          padding: 0 10px 0 0; }
-          header .task_box .active_lists .task_list .user_image img {
-            width: 30px;
-            height: 30px; }
-        header .task_box .active_lists .task_list .noimage {
-          position: absolute;
-          right: 0;
-          top: 0;
-          margin-right: 10px; }
+      padding: 15px;
+      height: 300px;
+      -webkit-box-shadow: 0 0px 2px rgba(0, 0, 0, 0.15), inset 0 0px 0 rgba(255, 255, 255, 0.5);
+      box-shadow: 0 0px 2px rgba(0, 0, 0, 0.15), inset 0 0px 0 rgba(255, 255, 255, 0.5);
+      overflow: hidden; }
+      header .task_box .active_lists.requeste {
+        display: none; }
+      header .task_box .active_lists .active_list {
+        margin-bottom: 30px; }
+        header .task_box .active_lists .active_list .active_list_title {
+          font-size: 13px;
+          font-size: 1.3rem;
+          font-weight: bold;
+          margin-bottom: 15px; }
+          header .task_box .active_lists .active_list .active_list_title .number {
+            font-size: 11px;
+            font-size: 1.1rem;
+            color: #8a959e;
+            margin-left: 3px; }
+        header .task_box .active_lists .active_list .task_list {
+          -webkit-border-radius: 4px;
+          -moz-border-radius: 4px;
+          -ms-border-radius: 4px;
+          border-radius: 4px;
+          margin: 0 0 5px 0;
+          line-height: 50px;
+          height: 50px;
+          background: #fff;
+          clear: both;
+          border: 1px solid #ededf0;
+          border-bottom: 1px solid #dcdce0;
+          box-shadow: none;
+          position: relative;
+          color: #8a959e; }
+          header .task_box .active_lists .active_list .task_list.ui-sortable-helper {
+            -moz-transform: rotate(-1deg);
+            -webkit-transform: rotate(-1deg);
+            -o-transform: rotate(-1deg);
+            -ms-transform: rotate(-1deg); }
+          header .task_box .active_lists .active_list .task_list.important {
+            border: 1px solid #ed6d44;
+            background: #ffebe7; }
+            header .task_box .active_lists .active_list .task_list.important input[type="checkbox"] {
+              /*checked時の見た目*/ }
+              header .task_box .active_lists .active_list .task_list.important input[type="checkbox"] + label {
+                /*通常時の見た目*/ }
+                header .task_box .active_lists .active_list .task_list.important input[type="checkbox"] + label:before {
+                  border: 1px solid #ed6d44;
+                  background: #ffebe7; }
+              header .task_box .active_lists .active_list .task_list.important input[type="checkbox"]:checked + label::before {
+                background: #db4c3f;
+                border-color: #ed6d44; }
+          header .task_box .active_lists .active_list .task_list .user_image {
+            position: absolute;
+            right: 0;
+            top: 12px;
+            padding: 0 10px 0 0; }
+            header .task_box .active_lists .active_list .task_list .user_image img {
+              width: 25px;
+              height: 25px; }
+          header .task_box .active_lists .active_list .task_list .noimage {
+            font-size: 11px;
+            font-size: 1.1rem;
+            position: absolute;
+            right: 10px;
+            top: 10px;
+            line-height: 25px;
+            width: 25px;
+            height: 25px; }
   header .activity_box {
     right: 60px;
     top: 60px; }
@@ -1586,19 +1589,19 @@ header {
     .alart p:hover {
       color: #3A87BC;
       cursor: pointer; }
-  .alart .task, .alart .activity {
+  .alart .alart_task, .alart .activity {
     display: inline-block; }
-    .alart .task p.icon, .alart .activity p.icon {
+    .alart .alart_task p.icon, .alart .activity p.icon {
       font-size: 26px;
       font-size: 2.6rem;
       position: relative;
       height: 30px;
       width: 30px;
       color: #8a959e; }
-      .alart .task p.icon:hover, .alart .activity p.icon:hover {
+      .alart .alart_task p.icon:hover, .alart .activity p.icon:hover {
         color: #3A87BC;
         cursor: pointer; }
-    .alart .task p .unread, .alart .activity p .unread {
+    .alart .alart_task p .unread, .alart .activity p .unread {
       font-size: 10px;
       font-size: 1rem;
       -webkit-border-radius: 100px;
@@ -2177,45 +2180,45 @@ header {
           text-overflow: ellipsis; }
           .page_menu .page_menu_inner .item.note .text::after {
             content: "…"; }
-      .page_menu .page_menu_inner .item.task ul, .page_menu .page_menu_inner .alart .item.activity ul, .alart .page_menu .page_menu_inner .item.activity ul {
+      .page_menu .page_menu_inner .item.task ul {
         margin-right: 55px;
         overflow: hidden;
         white-space: nowrap;
         text-overflow: ellipsis; }
-        .page_menu .page_menu_inner .item.task ul li, .page_menu .page_menu_inner .alart .item.activity ul li, .alart .page_menu .page_menu_inner .item.activity ul li {
+        .page_menu .page_menu_inner .item.task ul li {
           margin-bottom: 2px;
           width: 100%; }
-          .page_menu .page_menu_inner .item.task ul li .name, .page_menu .page_menu_inner .alart .item.activity ul li .name, .alart .page_menu .page_menu_inner .item.activity ul li .name {
+          .page_menu .page_menu_inner .item.task ul li .name {
             float: left;
             display: block;
             text-align: left;
             width: 30%; }
-          .page_menu .page_menu_inner .item.task ul li .value, .page_menu .page_menu_inner .alart .item.activity ul li .value, .alart .page_menu .page_menu_inner .item.activity ul li .value {
+          .page_menu .page_menu_inner .item.task ul li .value {
             display: block;
             text-align: right;
             width: 70%; }
-      .page_menu .page_menu_inner .item.task .graph, .page_menu .page_menu_inner .alart .item.activity .graph, .alart .page_menu .page_menu_inner .item.activity .graph {
+      .page_menu .page_menu_inner .item.task .graph {
         position: absolute;
         right: 16px;
         bottom: 20px;
         height: 50px;
         font-family: 'Helvetica neue',Helvetica,Arial,sans-serif; }
-        .page_menu .page_menu_inner .item.task .graph.green .number p, .page_menu .page_menu_inner .alart .item.activity .graph.green .number p, .alart .page_menu .page_menu_inner .item.activity .graph.green .number p {
+        .page_menu .page_menu_inner .item.task .graph.green .number p {
           color: #3A87BC; }
-        .page_menu .page_menu_inner .item.task .graph.yellow .number p, .page_menu .page_menu_inner .alart .item.activity .graph.yellow .number p, .alart .page_menu .page_menu_inner .item.activity .graph.yellow .number p {
+        .page_menu .page_menu_inner .item.task .graph.yellow .number p {
           color: #feb22e; }
-        .page_menu .page_menu_inner .item.task .graph.red .number p, .page_menu .page_menu_inner .alart .item.activity .graph.red .number p, .alart .page_menu .page_menu_inner .item.activity .graph.red .number p {
+        .page_menu .page_menu_inner .item.task .graph.red .number p {
           color: #ed6d44; }
-        .page_menu .page_menu_inner .item.task .graph .number, .page_menu .page_menu_inner .alart .item.activity .graph .number, .alart .page_menu .page_menu_inner .item.activity .graph .number {
+        .page_menu .page_menu_inner .item.task .graph .number {
           position: absolute;
           right: 0;
           top: 0;
           width: 50px;
           text-align: center;
           line-height: 50px; }
-          .page_menu .page_menu_inner .item.task .graph .number p, .page_menu .page_menu_inner .alart .item.activity .graph .number p, .alart .page_menu .page_menu_inner .item.activity .graph .number p {
+          .page_menu .page_menu_inner .item.task .graph .number p {
             display: none; }
-            .page_menu .page_menu_inner .item.task .graph .number p:first-child, .page_menu .page_menu_inner .alart .item.activity .graph .number p:first-child, .alart .page_menu .page_menu_inner .item.activity .graph .number p:first-child {
+            .page_menu .page_menu_inner .item.task .graph .number p:first-child {
               display: block; }
   .page_menu .page_menu_footer {
     font-size: 40px;
@@ -3691,7 +3694,7 @@ header {
     font-size: 13px;
     text-align: center; }
 
-.task .task_create, .alart .activity .task_create {
+.task .task_create {
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   -ms-border-radius: 4px;
@@ -3704,23 +3707,23 @@ header {
   padding: 10px 15px;
   background: #fff;
   color: #8a959e; }
-  .task .task_create i, .alart .activity .task_create i {
+  .task .task_create i {
     font-size: 26px;
     font-size: 2.6rem;
     position: absolute;
     left: 12px;
     top: 10px; }
-  .task .task_create input, .alart .activity .task_create input {
+  .task .task_create input {
     width: 90%;
     padding-left: 30px; }
-  .task .task_create .task_add_list_member, .alart .activity .task_create .task_add_list_member {
+  .task .task_create .task_add_list_member {
     -webkit-border-radius: 4px;
     -moz-border-radius: 4px;
     -ms-border-radius: 4px;
     border-radius: 4px;
     left: 0;
     top: 40px; }
-    .task .task_create .task_add_list_member input, .alart .activity .task_create .task_add_list_member input {
+    .task .task_create .task_add_list_member input {
       -webkit-border-radius: 4px;
       -moz-border-radius: 4px;
       -ms-border-radius: 4px;
@@ -3731,16 +3734,16 @@ header {
       margin: 10px 15px;
       padding: 5px;
       border: 1px solid #e2e2e2; }
-    .task .task_create .task_add_list_member ul li, .alart .activity .task_create .task_add_list_member ul li {
+    .task .task_create .task_add_list_member ul li {
       position: relative; }
-      .task .task_create .task_add_list_member ul li .user_image, .alart .activity .task_create .task_add_list_member ul li .user_image {
+      .task .task_create .task_add_list_member ul li .user_image {
         position: static;
         display: inline-block;
         padding: 0 10px 0 0; }
-        .task .task_create .task_add_list_member ul li .user_image img, .alart .activity .task_create .task_add_list_member ul li .user_image img {
+        .task .task_create .task_add_list_member ul li .user_image img {
           width: 20px;
           height: 20px; }
-      .task .task_create .task_add_list_member ul li .noimage, .alart .activity .task_create .task_add_list_member ul li .noimage {
+      .task .task_create .task_add_list_member ul li .noimage {
         font-size: 10px;
         font-size: 1rem;
         position: static;
@@ -4324,23 +4327,23 @@ input[type="checkbox"] {
     font-weight: bold;
     width: auto; }
   .note .note_edit {
-    -webkit-border-radius: 2px;
-    -moz-border-radius: 2px;
-    -ms-border-radius: 2px;
-    border-radius: 2px;
-    margin: 0 30px 0 30px;
-    margin-bottom: 20px;
-    border: 1px solid #ededf0;
-    border-bottom: 1px solid #dcdce0;
-    background: #fff;
-    box-shadow: none; }
+    padding-bottom: 20px; }
     .note .note_edit:last-child {
       padding-bottom: 35px; }
     .note .note_edit a {
       color: #2e6b95; }
     .note .note_edit .note_edit_inner {
       position: relative;
-      z-index: 10; }
+      z-index: 10;
+      -webkit-border-radius: 2px;
+      -moz-border-radius: 2px;
+      -ms-border-radius: 2px;
+      border-radius: 2px;
+      margin: 0 30px 0 30px;
+      border: 1px solid #ededf0;
+      border-bottom: 1px solid #dcdce0;
+      background: #fff;
+      box-shadow: none; }
       .note .note_edit .note_edit_inner .edit_name {
         position: relative;
         font-weight: bold;

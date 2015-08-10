@@ -342,13 +342,25 @@ window.onload=function(){
 
 
   $(document).ready(function(){
-    //Task
-    $('.task p').click(function () {
+    //Task Box
+    $('.alart_task p').click(function () {
       $('.task_box').toggle( 'fade', '', 100 );
       event.stopPropagation();
       popover.hide();
       popoverBig.hide();
       $('.task_box.popover_big').toggle();
+    });
+    $('.task_box').click(function () {
+      jQuery('.task_box').show();
+      event.stopPropagation();
+    });
+    $('.mine_btn').click(function () {
+      jQuery('.active_lists.mine').toggle();
+      jQuery('.active_lists.requeste').toggle();
+    });
+    $('.requeste_btn').click(function () {
+      jQuery('.active_lists.requeste').toggle();
+      jQuery('.active_lists.mine').toggle();
     });
     //Activity
     $('.activity p').click(function () {
@@ -362,7 +374,9 @@ window.onload=function(){
     $('.config .check').click(function () {
       $('.check_box').toggle( 'fade', '', 100 );
       event.stopPropagation();
-      $('.add_page,.activity_box,.option_box,.detail_option_box,.detail_check_box,#task_add_time_1,.task_add_list_member,.task_add_member,#task_add_time_1,#task_add_time_2,#task_add_time_3').hide();
+      popover.hide();
+      popoverBig.hide();
+      $('.check_box.popover').hide();
     });
     //Website Box
     $('.website').click(function () {
@@ -679,6 +693,14 @@ function actCustomScrollbar(){
         }
      });
      $('.viewers_list').mCustomScrollbar({
+       autoHideScrollbar: true,
+       scrollInertia: 0,
+       advanced:{
+          autoScrollOnFocus: true,
+          updateOnContentResize: true
+        }
+     });
+     $('.active_lists').mCustomScrollbar({
        autoHideScrollbar: true,
        scrollInertia: 0,
        advanced:{
