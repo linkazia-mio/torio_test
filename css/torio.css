@@ -4089,7 +4089,7 @@ input[type="checkbox"] {
         .task_replacement .task_people .task_list .task_icon_box p {
           display: inline-block;
           position: relative;
-          margin-left: 5px; }
+          margin-left: 10px; }
         .task_replacement .task_people .task_list .task_icon_box .time {
           padding-left: 20px;
           font-weight: normal;
