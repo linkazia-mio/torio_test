@@ -159,7 +159,7 @@ input[type="checkbox"] {
     .finish {
       @include fontsize(1.2);
       position: relative;
-      margin-top: 10px;
+      margin-top: 15px;
       font-weight: normal;
       line-height: 20px;
       i {
@@ -170,7 +170,7 @@ input[type="checkbox"] {
       span {
         @include fontsize(1.1);
         font-weight: normal;
-        padding-left: 17px;
+        padding-left: 20px;
       }
     }
     span {

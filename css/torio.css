@@ -3854,7 +3854,7 @@ input[type="checkbox"] {
       font-size: 12px;
       font-size: 1.2rem;
       position: relative;
-      margin-top: 10px;
+      margin-top: 15px;
       font-weight: normal;
       line-height: 20px; }
       .task_replacement .task_people .finish i {
@@ -3866,7 +3866,7 @@ input[type="checkbox"] {
         font-size: 11px;
         font-size: 1.1rem;
         font-weight: normal;
-        padding-left: 17px; }
+        padding-left: 20px; }
     .task_replacement .task_people span {
       font-size: 11px;
       font-size: 1.1rem;
