@@ -29,13 +29,14 @@
       .edit_name {
         position: relative;
         font-weight: bold;
-        padding: 20px;
+        padding: 25px 20px 0px 20px;
         .noimage {
           height: 40px;
           width: 40px;
           line-height: 40px;
           float: left;
           margin-right: 12px;
+          @include fontsize(1.2);
         }
         .user_image {
           float: left;

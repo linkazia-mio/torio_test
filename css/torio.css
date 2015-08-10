@@ -4240,13 +4240,15 @@ input[type="checkbox"] {
       .note .note_edit .note_edit_inner .edit_name {
         position: relative;
         font-weight: bold;
-        padding: 20px; }
+        padding: 25px 20px 0px 20px; }
         .note .note_edit .note_edit_inner .edit_name .noimage {
           height: 40px;
           width: 40px;
           line-height: 40px;
           float: left;
-          margin-right: 12px; }
+          margin-right: 12px;
+          font-size: 12px;
+          font-size: 1.2rem; }
         .note .note_edit .note_edit_inner .edit_name .user_image {
           float: left;
           margin-right: 12px; }
