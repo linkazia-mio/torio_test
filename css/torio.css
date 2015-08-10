@@ -1520,16 +1520,16 @@ header {
       text-align: center;
       color: #fff;
       top: 0px;
-      right: 0px;
-      margin-top: -3px;
+      right: -3px;
+      margin-top: -6px;
       z-index: 1000;
       content: "";
       width: auto;
       padding: 0 0 0 0;
       background: #db4c3f;
-      line-height: 15px;
-      min-width: 15px;
-      min-height: 15px; }
+      line-height: 18px;
+      min-width: 18px;
+      min-height: 18px; }
   .alart .activity {
     padding-left: 10px; }
   .alart .me {
@@ -3850,16 +3850,17 @@ input[type="checkbox"] {
         font-size: 20px;
         font-size: 2rem; }
       .task_replacement .task_people .task_list .btn_add_task {
-        -webkit-border-radius: 4px;
-        -moz-border-radius: 4px;
-        -ms-border-radius: 4px;
-        border-radius: 4px;
+        -webkit-border-radius: 2;
+        -moz-border-radius: 2;
+        -ms-border-radius: 2;
+        border-radius: 2;
         position: absolute;
         right: 15px;
         bottom: 11px;
         line-height: 30px;
         width: 100px;
         color: #fff;
+        font-weight: normal;
         background: #3A87BC; }
         .task_replacement .task_people .task_list .btn_add_task:hover {
           opacity: 0.8;
@@ -4133,18 +4134,19 @@ input[type="checkbox"] {
     z-index: 10; }
 
 .btn_add_task {
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  -ms-border-radius: 4px;
-  border-radius: 4px;
-  font-size: 13px;
-  font-size: 1.3rem;
+  -webkit-border-radius: 3;
+  -moz-border-radius: 3;
+  -ms-border-radius: 3;
+  border-radius: 3;
+  font-size: 12px;
+  font-size: 1.2rem;
   position: absolute;
   right: 15px;
   width: 100px;
   height: 30px;
+  line-height: 33px;
   color: #fff;
-  font-weight: bold;
+  font-weight: normal;
   background: #3A87BC; }
   .btn_add_task:hover {
     opacity: 0.8;
@@ -4276,11 +4278,11 @@ input[type="checkbox"] {
           right: 15px;
           top: 60px; }
       .note .note_edit .note_edit_inner .btn_add_task {
-        bottom: 10px; }
+        bottom: 15px; }
       .note .note_edit .note_edit_inner .like_comment_box {
         position: absolute;
         left: 20px;
-        bottom: 20px; }
+        bottom: 21px; }
         .note .note_edit .note_edit_inner .like_comment_box .like_btn {
           float: left;
           margin-right: 10px;
@@ -4362,7 +4364,7 @@ input[type="checkbox"] {
         font-size: 1.1rem;
         position: absolute;
         right: 130px;
-        bottom: 15px;
+        bottom: 20px;
         color: #8a959e; }
       .note .note_edit .note_edit_inner .editing {
         -webkit-border-radius: 2px 2px 0 0;

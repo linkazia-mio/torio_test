@@ -68,12 +68,12 @@
         }
       }
       .btn_add_task {
-        bottom: 10px;
+        bottom: 15px;
       }
       .like_comment_box {
         position: absolute;
         left: 20px;
-        bottom: 20px;
+        bottom: 21px;
         .like_btn {
           float: left;
           margin-right: 10px;
@@ -181,7 +181,7 @@
         @include fontsize(1.1);
         position: absolute;
         right: 130px;
-        bottom: 15px;
+        bottom: 20px;
         color: $white_brack;
       }
       .editing {
