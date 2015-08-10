@@ -3299,7 +3299,7 @@ header {
       font-size: 10rem;
       padding: 30px;
       text-align: center;
-      background: #2e6b95;
+      background: #33c16f;
       color: #fff; }
     .bx-wrapper .bx-viewport .file_slide .item .image {
       text-align: center;
@@ -4453,15 +4453,18 @@ input[type="checkbox"] {
         font-size: 1.1rem;
         line-height: 23px;
         color: #8a959e;
-        padding-top: 10px;
+        padding-bottom: 10px;
         position: absolute;
         right: 15px;
         bottom: 8px;
-        vertical-align: top; }
+        padding-left: 25px; }
         .note .note_edit .note_edit_inner .browse_count i {
           font-size: 23px;
           font-size: 2.3rem;
-          margin-right: 5px; }
+          margin-right: 5px;
+          position: absolute;
+          bottom: 10px;
+          left: 0; }
         .note .note_edit .note_edit_inner .browse_count:hover .balloon_box {
           display: block;
           height: auto;

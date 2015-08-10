@@ -147,14 +147,17 @@
         @include fontsize(1.1);
         line-height: 23px;
         color: $white_brack;
-        padding-top: 10px;
+        padding-bottom: 10px;
         position: absolute;
         right: 15px;
         bottom: 8px;
-        vertical-align: top;
+        padding-left: 25px;
         i {
           @include fontsize(2.3);
           margin-right: 5px;
+          position: absolute;
+          bottom: 10px;
+          left: 0;
         }
         &:hover {
           .balloon_box {
@@ -527,7 +530,7 @@
         box-shadow: 0 0 0 #000;
         .fa{
           @include fontsize(2.6);
-          font-family: 'torio_icon';    
+          font-family: 'torio_icon';
           &.fa-bold{
             vertical-align: middle;
             &:before{
