@@ -157,6 +157,9 @@ window.onload=function(){
   $('.task_add_list_member button').click(function () {
     $(this).toggleClass('checked');
   });
+  $('.task_add_member button').click(function () {
+    $(this).toggleClass('checked');
+  });
   $('.task_add_requester button').click(function () {
     $(this).toggleClass('checked');
   });
@@ -357,10 +360,6 @@ window.onload=function(){
       $('.task_add_list_member').toggle( 'fade', '', 100 );
       event.stopPropagation();
       $('.option_box,.activity_box,.check_box,.add_page,.detail_option_box,#task_add_time_1,.task_add_member,#task_add_time_1,#task_add_time_2,#task_add_time_3').hide();
-    });
-    $('.task_add_list_member').click(function () {
-      jQuery('.task_button').show();
-      event.stopPropagation();
     });
     //Task_add_time
     $('#made_1 .time_create').click(function () {
