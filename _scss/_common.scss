@@ -1832,24 +1832,25 @@ header {
           }
         }
         .task_detail {
-          padding: 5px;
+          padding: 5px 0;
           .requester {
-            @include border_radius(4px 4px 0 0);
+            @include border_radius(2px 2px 0 0);
             position: relative;
             width: 100%;
-            border: 1px solid $border_gray;
-            padding: 5px;
-            line-height: 40px;
-            height: 50px;
+            /*border: 1px solid $border_gray;*/
+            border: 1px solid #cbcbcb;
+            padding: 3px 5px;
+            line-height: 35px;
+            height: 45px;
             i {
-              @include fontsize(2.6);
+              @include fontsize(2.4);
               position: absolute;
               color: $brack;
               left: 10px;
-              top: 12px;
+              top: 11px;
             }
             input {
-              padding-left: 40px;
+              padding-left: 35px;
               width: 550px;
               line-height: 21px;
               margin-top: 10px;
@@ -1857,12 +1858,12 @@ header {
           }
           .worker {
             @extend .requester;
-            @include border_radius(0 0 4px 4px);
+            @include border_radius(0 0 2px 2px);
             border-top: none;
           }
           .limlt {
             @extend .requester;
-            @include border_radius();
+            @include border_radius(2);
             margin-top: 20px;
             i {
               color: $dark_red;
@@ -1876,8 +1877,9 @@ header {
             @extend .limit;
             position: relative;
             textarea {
-              @include border_radius();
-              border: 1px solid $border_gray;
+              @include border_radius(2);
+              /*border: 1px solid $border_gray;*/
+              border: 1px solid #cbcbcb;
               padding: 13px;
               margin-top: 20px;
               width: 100%;
