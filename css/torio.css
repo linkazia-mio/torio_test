@@ -3873,11 +3873,12 @@ input[type="checkbox"] {
         font-size: 1.1rem;
         font-weight: normal;
         padding-left: 20px; }
-    .task_replacement .task_people span {
+    .task_replacement .task_people .number {
       font-size: 11px;
       font-size: 1.1rem;
       font-weight: normal;
-      padding-left: 10px; }
+      padding-left: 8px;
+      font-family: 'Helvetica neue',Helvetica,Arial,sans-serif; }
     .task_replacement .task_people .task_lists {
       min-height: 50px; }
     .task_replacement .task_people .task_list {

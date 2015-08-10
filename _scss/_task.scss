@@ -179,10 +179,11 @@ input[type="checkbox"] {
         padding-left: 20px;
       }
     }
-    span {
+    .number {
       @include fontsize(1.1);
       font-weight: normal;
-      padding-left: 10px;
+      padding-left: 8px;
+      @include font_eng;
     }
     .task_lists {
       min-height: 50px;
