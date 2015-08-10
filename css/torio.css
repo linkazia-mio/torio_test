@@ -2589,10 +2589,10 @@ header {
           position: absolute;
           right: 0; }
       .modal .modal-dialog .modal-content .modal-body .input_dot input[type="text"] {
-        -webkit-border-radius: 2px;
-        -moz-border-radius: 2px;
-        -ms-border-radius: 2px;
-        border-radius: 2px;
+        -webkit-border-radius: 2;
+        -moz-border-radius: 2;
+        -ms-border-radius: 2;
+        border-radius: 2;
         float: right;
         width: 400px;
         border: 1px solid #e2e2e2;
@@ -2602,12 +2602,12 @@ header {
         position: relative;
         float: right; }
         .modal .modal-dialog .modal-content .modal-body .input_dot .close_btn .delete {
-          font-size: 24px;
-          font-size: 2.4rem;
+          font-size: 20px;
+          font-size: 2rem;
           position: absolute;
           color: #8a959e;
-          right: 4px;
-          top: 9px; }
+          right: 10px;
+          top: 12px; }
       .modal .modal-dialog .modal-content .modal-body .input_dot .select_box {
         *zoom: 1;
         float: right;
@@ -3695,12 +3695,15 @@ header {
     text-align: center; }
 
 .task .task_create {
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  -ms-border-radius: 4px;
-  border-radius: 4px;
+  -webkit-border-radius: 2;
+  -moz-border-radius: 2;
+  -ms-border-radius: 2;
+  border-radius: 2;
   position: relative;
-  border: 1px solid #2e6b95;
+  /*border: 1px solid $green;*/
+  /*border: 1px solid $border_gray;*/
+  border: 1px solid #ededf0;
+  border-bottom: 1px solid #dcdce0;
   margin: 0 30px;
   vertical-align: top;
   line-height: 26px;
@@ -3865,12 +3868,12 @@ input[type="checkbox"] {
       font-weight: normal;
       padding-left: 10px; }
     .task_replacement .task_people .task_lists {
-      min-height: 30px; }
+      min-height: 50px; }
     .task_replacement .task_people .task_list {
-      -webkit-border-radius: 4px;
-      -moz-border-radius: 4px;
-      -ms-border-radius: 4px;
-      border-radius: 4px;
+      -webkit-border-radius: 2;
+      -moz-border-radius: 2;
+      -ms-border-radius: 2;
+      border-radius: 2;
       margin: 0 0 5px 0;
       line-height: 50px;
       height: 50px;
@@ -4017,8 +4020,11 @@ input[type="checkbox"] {
               width: 20px;
               height: 20px; }
       .task_replacement .task_people .task_list .task_title {
-        color: #555555;
-        width: 70%; }
+        color: #000000;
+        width: 70%;
+        font-size: 13px;
+        font-size: 1.3rem;
+        font-weight: normal; }
       .task_replacement .task_people .task_list .time {
         position: absolute;
         top: 1px;
@@ -4344,6 +4350,13 @@ input[type="checkbox"] {
       border-bottom: 1px solid #dcdce0;
       background: #fff;
       box-shadow: none; }
+      .note .note_edit .note_edit_inner.note_edit_inner_comment {
+        -webkit-border-radius: 2px 2px 0 0 !important;
+        -moz-border-radius: 2px 2px 0 0 !important;
+        -ms-border-radius: 2px 2px 0 0 !important;
+        border-radius: 2px 2px 0 0 !important;
+        border: 1px solid #ededf0 !important;
+        border-bottom: 1px solid none !important; }
       .note .note_edit .note_edit_inner .edit_name {
         position: relative;
         font-weight: bold;
@@ -4484,15 +4497,20 @@ input[type="checkbox"] {
           line-height: 28px;
           display: inline-block; }
     .note .note_edit .note_comment {
-      -webkit-border-radius: 0 0 5px 5px;
-      -moz-border-radius: 0 0 5px 5px;
-      -ms-border-radius: 0 0 5px 5px;
-      border-radius: 0 0 5px 5px;
+      -webkit-border-radius: 0 0 2px 2px;
+      -moz-border-radius: 0 0 2px 2px;
+      -ms-border-radius: 0 0 2px 2px;
+      border-radius: 0 0 2px 2px;
       display: none;
       background: #f5f5f5;
       text-align: left;
-      padding: 20px 20px 20px 20px;
-      z-index: 100; }
+      padding: 25px 20px 25px 20px;
+      z-index: 100;
+      margin: 0 30px 0 30px;
+      border: 1px solid #ededf0;
+      border-top: none;
+      border-bottom: 1px solid #dcdce0;
+      box-shadow: none; }
       .note .note_edit .note_comment .comment_inner {
         display: table;
         width: 100%;
@@ -4508,8 +4526,8 @@ input[type="checkbox"] {
             margin-top: 2px; }
           .note .note_edit .note_comment .comment_inner .user_image .noimage {
             font-family: 'Helvetica neue',Helvetica,Arial,sans-serif;
-            font-size: 11px;
-            font-size: 1.1rem;
+            font-size: 10px;
+            font-size: 1rem;
             line-height: 30px;
             text-align: center;
             width: 30px; }
@@ -4517,8 +4535,8 @@ input[type="checkbox"] {
           display: table-cell;
           vertical-align: top; }
           .note .note_edit .note_comment .comment_inner .user_comment p {
-            font-size: 14px;
-            font-size: 1.4rem; }
+            font-size: 12px;
+            font-size: 1.2rem; }
             .note .note_edit .note_comment .comment_inner .user_comment p.name {
               font-weight: bold;
               padding-bottom: 1px; }
@@ -4529,8 +4547,8 @@ input[type="checkbox"] {
                 font-size: 12px;
                 font-size: 1.2rem; }
             .note .note_edit .note_comment .comment_inner .user_comment p.memo {
-              font-size: 14px;
-              font-size: 1.4rem;
+              font-size: 12px;
+              font-size: 1.2rem;
               word-wrap: break-word; }
       .note .note_edit .note_comment .comment_entry {
         margin: 0 auto;
@@ -4543,12 +4561,14 @@ input[type="checkbox"] {
           border-radius: 4px;
           width: 100%;
           height: 60px;
-          padding: 10px 15px;
-          margin-bottom: 10px;
+          padding: 10px 10px;
+          margin-bottom: 15px;
           border: 1px solid #e2e2e2;
           background: #fff;
           resize: none;
-          outline: none; }
+          outline: none;
+          font-size: 12px;
+          font-size: 1.2rem; }
         .note .note_edit .note_comment .comment_entry button {
           float: right;
           width: 100px;
@@ -4559,14 +4579,18 @@ input[type="checkbox"] {
             .note .note_edit .note_comment .comment_entry button.btn-default:hover {
               opacity: 0.7; }
           .note .note_edit .note_comment .comment_entry button.btn-primary {
-            line-height: 30px;
-            font-size: 13px;
-            font-size: 1.3rem; }
+            line-height: 33px;
+            font-size: 12px;
+            font-size: 1.2rem; }
             .note .note_edit .note_comment .comment_entry button.btn-primary.btn-primary {
               background: #3A87BC;
               border: none;
               padding: 0;
-              font-weight: 700; }
+              font-weight: normal;
+              -webkit-border-radius: 3;
+              -moz-border-radius: 3;
+              -ms-border-radius: 3;
+              border-radius: 3; }
               .note .note_edit .note_comment .comment_entry button.btn-primary.btn-primary:hover {
                 opacity: 0.7; }
 

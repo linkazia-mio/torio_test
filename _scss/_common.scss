@@ -1769,7 +1769,7 @@ header {
             }
           }
           input[type="text"] {
-            @include border_radius(2px);
+            @include border_radius(2);
             float: right;
             width: 400px;
             border: 1px solid $border_gray;
@@ -1780,11 +1780,11 @@ header {
             position: relative;
             float: right;
             .delete {
-              @include fontsize(2.4);
+              @include fontsize(2);
               position: absolute;
               color: $white_brack;
-              right: 4px;
-              top: 9px;
+              right: 10px;
+              top: 12px;
             }
           }
           .select_box {
