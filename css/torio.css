@@ -4697,19 +4697,22 @@ input[type="checkbox"] {
     font-size: 20px;
     font-size: 2rem;
     font-weight: bold;
-    margin: 0 0 40px 0; }
+    margin: 0 0 25px 0; }
   .editable p {
     margin: 0 0 20px 0;
     line-height: 1.8; }
   .editable hr {
-    width: 100px;
-    margin: 30px auto; }
+    width: 100%;
+    margin: 30px auto 35px auto;
+    border-top: 1px solid #e2e2e2; }
   .editable blockquote {
     font-size: 14px;
     font-size: 1.4rem;
     padding: 10px 20px;
     margin: 0 0 20px;
-    border-left: 4px solid #f36; }
+    border-left: 4px solid #f36;
+    color: #8a959e;
+    font-style: italic; }
   .editable ol {
     padding-left: 20px;
     margin-bottom: 20px; }

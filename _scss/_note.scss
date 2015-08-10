@@ -325,21 +325,24 @@
   h1 {
     @include fontsize(2.0);
     font-weight: bold;
-    margin: 0 0 40px 0;
+    margin: 0 0 25px 0;
   }
   p {
     margin: 0 0 20px 0;
     line-height: 1.8;
   }
   hr {
-    width: 100px;
-    margin: 30px auto;
+    width: 100%;
+    margin: 30px auto 35px auto;
+    border-top: 1px solid $border_gray;
   }
   blockquote {
     @include fontsize(1.4);
     padding: 10px 20px;
     margin: 0 0 20px;
     border-left: 4px solid #f36;
+    color: $white_brack;
+    font-style: italic;
   }
   ol {
     padding-left: 20px;
