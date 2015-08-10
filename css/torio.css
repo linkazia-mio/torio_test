@@ -4495,10 +4495,10 @@ input[type="checkbox"] {
     border-left: 4px solid #ff9933; }
   .editable ol {
     padding-left: 20px;
-    margin-bottom: 30px; }
+    margin-bottom: 20px; }
   .editable ul {
     padding-left: 20px;
-    margin-bottom: 30px; }
+    margin-bottom: 20px; }
     .editable ul li {
       list-style: disc; }
   .editable pre {
