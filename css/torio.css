@@ -4647,14 +4647,58 @@ input[type="checkbox"] {
       padding: 0; }
     .medium-editor-toolbar ul li button {
       border: 0;
-      height: 35px;
+      height: 40px;
       padding: 0;
       box-shadow: 0 0 0 #000; }
-      .medium-editor-toolbar ul li button .fa-lg {
-        vertical-align: middle; }
+      .medium-editor-toolbar ul li button .fa {
+        font-size: 26px;
+        font-size: 2.6rem;
+        font-family: 'torio_icon'; }
+        .medium-editor-toolbar ul li button .fa.fa-bold {
+          vertical-align: middle; }
+          .medium-editor-toolbar ul li button .fa.fa-bold:before {
+            content: "\e658";
+            font-size: 23px;
+            font-size: 2.3rem; }
+        .medium-editor-toolbar ul li button .fa.fa-h1 {
+          vertical-align: middle; }
+          .medium-editor-toolbar ul li button .fa.fa-h1:before {
+            content: "\e659";
+            font-size: 23px;
+            font-size: 2.3rem; }
+        .medium-editor-toolbar ul li button .fa.fa-link {
+          vertical-align: middle; }
+          .medium-editor-toolbar ul li button .fa.fa-link:before {
+            content: "\e698";
+            font-size: 22px;
+            font-size: 2.2rem; }
+        .medium-editor-toolbar ul li button .fa.fa-quote-right {
+          vertical-align: middle; }
+          .medium-editor-toolbar ul li button .fa.fa-quote-right:before {
+            content: "\e6ce";
+            font-size: 23px;
+            font-size: 2.3rem; }
+        .medium-editor-toolbar ul li button .fa.fa-list-ul {
+          vertical-align: middle; }
+          .medium-editor-toolbar ul li button .fa.fa-list-ul:before {
+            content: "\e69b";
+            font-size: 28px;
+            font-size: 2.8rem; }
+        .medium-editor-toolbar ul li button .fa.fa-list-ol {
+          vertical-align: middle; }
+          .medium-editor-toolbar ul li button .fa.fa-list-ol:before {
+            content: "\e69a";
+            font-size: 28px;
+            font-size: 2.8rem; }
+        .medium-editor-toolbar ul li button .fa.fa-lg {
+          vertical-align: middle; }
+          .medium-editor-toolbar ul li button .fa.fa-lg:before {
+            content: "\e637";
+            font-size: 28px;
+            font-size: 2.8rem; }
 
 .medium-toolbar-arrow-under:after {
-  top: 35px; }
+  top: 37px; }
 
 /*---------------------------------------------------------------------------------------
  Loader
