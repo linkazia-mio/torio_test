@@ -232,7 +232,7 @@
           }
           .noimage {
             @include font_eng;
-            @include fontsize(1.1);
+            @include fontsize(1.0);
             line-height: 30px;
             text-align: center;
             width: 30px;

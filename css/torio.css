@@ -4446,8 +4446,8 @@ input[type="checkbox"] {
             margin-top: 2px; }
           .note .note_edit .note_comment .comment_inner .user_image .noimage {
             font-family: 'Helvetica neue',Helvetica,Arial,sans-serif;
-            font-size: 11px;
-            font-size: 1.1rem;
+            font-size: 10px;
+            font-size: 1rem;
             line-height: 30px;
             text-align: center;
             width: 30px; }
