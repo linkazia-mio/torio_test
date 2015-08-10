@@ -177,9 +177,6 @@ window.onload=function(){
   $(document).click(function() {
     $('#made_1 .task_button').hide();
   });
-  $('#made_1 .task_input').each(function(){
-    autosize(this);
-  });
   $('#made_1 .task_add_member button').click(function () {
     $(this).toggleClass('checked');
   });
@@ -209,9 +206,6 @@ window.onload=function(){
   $(document).click(function() {
     $('#made_2 .task_button').hide();
   });
-  $('#made_2 .task_input').each(function(){
-    autosize(this);
-  });
   $('#made_2 .task_add_member button').click(function () {
     $(this).toggleClass('checked');
   });
@@ -240,9 +234,6 @@ window.onload=function(){
   });
   $(document).click(function() {
     $('#made_3 .task_button').hide();
-  });
-  $('#made_3 .task_input').each(function(){
-    autosize(this);
   });
   $('#made_3 .task_add_member button').click(function () {
     $(this).toggleClass('checked');

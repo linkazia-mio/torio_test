@@ -3918,19 +3918,18 @@ input[type="checkbox"] {
       .task_replacement .task_people .task_list.made {
         height: auto;
         min-height: 50px; }
-        .task_replacement .task_people .task_list.made textarea {
-          width: 75%;
+        .task_replacement .task_people .task_list.made input[type="textarea"] {
+          width: 90%;
           border: none;
           height: 35px;
           margin-bottom: -18px;
           overflow: hidden;
-          resize: none;
           outline: none;
           padding: 16px 0 0 0;
           line-height: 1.5;
           font-weight: normal;
           /*resize: vertical;*/ }
-          .task_replacement .task_people .task_list.made textarea:focus {
+          .task_replacement .task_people .task_list.made input[type="textarea"]:focus {
             outline: none; }
         .task_replacement .task_people .task_list.made .task_add_member {
           -webkit-border-radius: 4px;
@@ -3967,7 +3966,7 @@ input[type="checkbox"] {
             bottom: 0; }
         .task_replacement .task_people .task_list.made .task_button {
           display: none;
-          margin-top: 50px; }
+          margin-top: 70px; }
       .task_replacement .task_people .task_list i {
         font-size: 20px;
         font-size: 2rem; }
