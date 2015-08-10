@@ -151,7 +151,6 @@ window.onload=function(){
   //リストを作成するボタン表示
   $('.task_create').click(function () {
     jQuery('.btn_add_task_create').toggle();
-    event.stopPropagation();
   });
 
   //タスク入力部分
@@ -165,40 +164,15 @@ window.onload=function(){
     $(this).toggleClass('checked');
   });
 
-  $('#made_1.task_input').click(function () {
-    $(this).css('padding_bottom','15px');
-    jQuery('.task_button').show();
-    event.stopPropagation();
-  });
-  $('#made_1.made').click(function () {
+
+  $('#made_1.made .task_input').click(function () {
     jQuery('#made_1 .task_button').show();
     event.stopPropagation();
   });
   $(document).click(function() {
     $('#made_1 .task_button').hide();
   });
-  $('#made_1 .task_add_member button').click(function () {
-    $(this).toggleClass('checked');
-  });
-  $('#made_1 .task_add_list_member button').click(function () {
-    $(this).toggleClass('checked');
-  });
-  $('#made_1.task_input').click(function () {
-    $(this).css('padding_bottom','15px');
-    jQuery('.task_button').show();
-    event.stopPropagation();
-  });
-  $('#made_1 .made').click(function () {
-    jQuery('#made_1 .task_button').show();
-    event.stopPropagation();
-  });
 
-
-  $('#made_2.task_input').click(function () {
-    $(this).css('padding_bottom','15px');
-    jQuery('.task_button').show();
-    event.stopPropagation();
-  });
   $('#made_2.made').click(function () {
     jQuery('#made_2 .task_button').show();
     event.stopPropagation();
@@ -206,28 +180,7 @@ window.onload=function(){
   $(document).click(function() {
     $('#made_2 .task_button').hide();
   });
-  $('#made_2 .task_add_member button').click(function () {
-    $(this).toggleClass('checked');
-  });
-  $('#made_2 .task_add_list_member button').click(function () {
-    $(this).toggleClass('checked');
-  });
-  $('#made_2.task_input').click(function () {
-    $(this).css('padding_bottom','15px');
-    jQuery('.task_button').show();
-    event.stopPropagation();
-  });
-  $('#made_2 .made').click(function () {
-    jQuery('#made_2 .task_button').show();
-    event.stopPropagation();
-  });
 
-
-  $('#made_3.task_input').click(function () {
-    $(this).css('padding_bottom','15px');
-    jQuery('.task_button').show();
-    event.stopPropagation();
-  });
   $('#made_3.made').click(function () {
     jQuery('#made_3 .task_button').show();
     event.stopPropagation();
@@ -235,21 +188,7 @@ window.onload=function(){
   $(document).click(function() {
     $('#made_3 .task_button').hide();
   });
-  $('#made_3 .task_add_member button').click(function () {
-    $(this).toggleClass('checked');
-  });
-  $('#made_3 .task_add_list_member button').click(function () {
-    $(this).toggleClass('checked');
-  });
-  $('#made_3.task_input').click(function () {
-    $(this).css('padding_bottom','15px');
-    jQuery('.task_button').show();
-    event.stopPropagation();
-  });
-  $('#made_3 .made').click(function () {
-    jQuery('#made_3 .task_button').show();
-    event.stopPropagation();
-  });
+
 
   $('.information textarea').each(function(){
     autosize(this);
