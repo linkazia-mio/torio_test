@@ -355,12 +355,12 @@ window.onload=function(){
       event.stopPropagation();
     });
     $('.mine_btn').click(function () {
-      jQuery('.active_lists.mine').toggle();
-      jQuery('.active_lists.requeste').toggle();
+      jQuery('.active_lists.mine').show();
+      jQuery('.active_lists.requeste').hide();
     });
     $('.requeste_btn').click(function () {
-      jQuery('.active_lists.requeste').toggle();
-      jQuery('.active_lists.mine').toggle();
+      jQuery('.active_lists.requeste').show();
+      jQuery('.active_lists.mine').hide();
     });
     //Activity
     $('.activity p').click(function () {
