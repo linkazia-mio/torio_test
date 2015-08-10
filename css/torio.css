@@ -2092,14 +2092,20 @@ header {
         background: #f5f5f5; }
         .page_menu .page_menu_inner .item:hover .check {
           border-bottom: 7px solid #f5f5f5; }
+        .page_menu .page_menu_inner .item:hover .text, .page_menu .page_menu_inner .item:hover ul {
+          color: #333; }
       .page_menu .page_menu_inner .item.selected {
         background: #3A87BC; }
         .page_menu .page_menu_inner .item.selected .check {
           border-bottom: 7px solid #3A87BC; }
         .page_menu .page_menu_inner .item.selected .title, .page_menu .page_menu_inner .item.selected .text, .page_menu .page_menu_inner .item.selected ul {
           color: #fff; }
-        .page_menu .page_menu_inner .item.selected .unread .title {
+          .page_menu .page_menu_inner .item.selected .title:hover, .page_menu .page_menu_inner .item.selected .text:hover, .page_menu .page_menu_inner .item.selected ul:hover {
+            color: #fff; }
+        .page_menu .page_menu_inner .item.selected .unread .title, .page_menu .page_menu_inner .item.selected .unread .text, .page_menu .page_menu_inner .item.selected .unread .ul {
           color: #fff; }
+          .page_menu .page_menu_inner .item.selected .unread .title:hover, .page_menu .page_menu_inner .item.selected .unread .text:hover, .page_menu .page_menu_inner .item.selected .unread .ul:hover {
+            color: #fff; }
       .page_menu .page_menu_inner .item .check {
         position: absolute;
         right: 16px;
@@ -2184,6 +2190,8 @@ header {
           text-overflow: ellipsis; }
           .page_menu .page_menu_inner .item.note .text::after {
             content: "…"; }
+          .page_menu .page_menu_inner .item.note .text:hover {
+            color: #333; }
       .page_menu .page_menu_inner .item.task ul {
         margin-right: 55px;
         overflow: hidden;
@@ -2196,11 +2204,11 @@ header {
             float: left;
             display: block;
             text-align: left;
-            width: 30%; }
+            width: 150px; }
           .page_menu .page_menu_inner .item.task ul li .value {
             display: block;
-            text-align: right;
-            width: 70%; }
+            text-align: left;
+            width: 50%; }
       .page_menu .page_menu_inner .item.task .graph {
         position: absolute;
         right: 16px;

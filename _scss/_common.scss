@@ -1160,6 +1160,9 @@ header {
         .check {
          	border-bottom: 7px solid $white_gray;
         }
+        .text,ul{
+          color: #333;
+        }
       }
       &.selected {
         background: $torio_green;
@@ -1168,10 +1171,16 @@ header {
         }
         .title,.text,ul {
           color: #fff;
+          &:hover{
+            color:#fff;
+          }
         }
         .unread {
-          .title {
+          .title,.text,.ul {
             color: #fff;
+            &:hover{
+              color:#fff;
+            }
           }
         }
       }
@@ -1271,6 +1280,9 @@ header {
           &::after {
             content: "…";
           }
+          &:hover{
+            color:#333;
+          }
         }
       }
       &.task {
@@ -1286,12 +1298,12 @@ header {
               float: left;
               display: block;
               text-align: left;
-              width: 30%;
+              width: 150px;
             }
             .value {
               display: block;
-              text-align: right;
-              width: 70%;
+              text-align: left;
+              width: 50%;
             }
           }
         }
