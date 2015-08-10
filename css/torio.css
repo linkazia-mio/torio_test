@@ -4046,30 +4046,6 @@ input[type="checkbox"] {
         font-size: 13px;
         font-size: 1.3rem;
         font-weight: normal; }
-      .task_replacement .task_people .task_list .time {
-        position: absolute;
-        top: 1px;
-        right: 95px;
-        font-weight: normal;
-        font-size: 11px;
-        font-size: 1.1rem; }
-        .task_replacement .task_people .task_list .time.caution {
-          color: #db4c3f; }
-        .task_replacement .task_people .task_list .time i {
-          position: absolute;
-          top: 13px;
-          left: -22px; }
-      .task_replacement .task_people .task_list .comment {
-        position: absolute;
-        top: 1px;
-        right: 55px;
-        font-weight: normal;
-        font-size: 11px;
-        font-size: 1.1rem; }
-        .task_replacement .task_people .task_list .comment i {
-          position: absolute;
-          top: 13px;
-          left: -20px; }
       .task_replacement .task_people .task_list .user_image {
         position: absolute;
         top: 13px;
@@ -4088,6 +4064,48 @@ input[type="checkbox"] {
         line-height: 25px;
         text-align: center;
         padding: 0; }
+      .task_replacement .task_people .task_list .task_icon_box {
+        position: absolute;
+        right: 15px;
+        top: 0; }
+        .task_replacement .task_people .task_list .task_icon_box p {
+          display: inline-block;
+          position: relative;
+          margin-left: 5px; }
+        .task_replacement .task_people .task_list .task_icon_box .time {
+          padding-left: 20px;
+          font-weight: normal;
+          font-size: 11px;
+          font-size: 1.1rem; }
+          .task_replacement .task_people .task_list .task_icon_box .time i {
+            position: absolute;
+            top: 14px;
+            left: 0; }
+          .task_replacement .task_people .task_list .task_icon_box .time.caution {
+            color: #db4c3f; }
+        .task_replacement .task_people .task_list .task_icon_box .comment {
+          padding-left: 20px;
+          font-weight: normal;
+          font-size: 11px;
+          font-size: 1.1rem; }
+          .task_replacement .task_people .task_list .task_icon_box .comment i {
+            position: absolute;
+            top: 14px;
+            left: 0; }
+        .task_replacement .task_people .task_list .task_icon_box .user_image {
+          position: static; }
+          .task_replacement .task_people .task_list .task_icon_box .user_image img {
+            height: 25px;
+            width: 25px; }
+        .task_replacement .task_people .task_list .task_icon_box .noimage {
+          font-size: 10px;
+          font-size: 1rem;
+          position: static;
+          width: 25px;
+          height: 25px;
+          line-height: 25px;
+          text-align: center;
+          padding: 0; }
   .task_replacement .dd {
     font-size: 13px;
     font-size: 1.3rem;
