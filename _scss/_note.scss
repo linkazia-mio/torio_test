@@ -315,6 +315,9 @@
 ---------------------------------------------------------------------------------------*/
 .editable {
   padding: 20px 70px 70px 70px;
+  &:first-child{
+   padding: 30px 70px 70px 70px;
+  }
   &:focus {
     outline: none;
   }
@@ -430,7 +433,7 @@
  Medium Editor
 ---------------------------------------------------------------------------------------*/
 .medium-editor-insert-plugin.medium-editor-placeholder:after {
-  padding: 20px 70px;
+  padding: 30px 70px;
 }
 .medium-editor-insert-plugin {
   .medium-editor-placeholder {

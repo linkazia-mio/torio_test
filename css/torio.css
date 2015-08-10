@@ -4636,6 +4636,8 @@ input[type="checkbox"] {
 ---------------------------------------------------------------------------------------*/
 .editable {
   padding: 20px 70px 70px 70px; }
+  .editable:first-child {
+    padding: 30px 70px 70px 70px; }
   .editable:focus {
     outline: none; }
   .editable h1 {
@@ -4737,7 +4739,7 @@ input[type="checkbox"] {
  Medium Editor
 ---------------------------------------------------------------------------------------*/
 .medium-editor-insert-plugin.medium-editor-placeholder:after {
-  padding: 20px 70px; }
+  padding: 30px 70px; }
 
 .medium-editor-insert-plugin .medium-editor-placeholder:after {
   padding: 30px 70px;
