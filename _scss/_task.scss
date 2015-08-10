@@ -76,7 +76,7 @@ input[type="checkbox"] {
     /*通常時の見た目*/
     &:before {
       @include fontsize(3.0);
-      @include border_radius();
+      @include border_radius(3);
       position: absolute;
       font-family: 'torio_icon';
       width: 18px;
@@ -88,8 +88,14 @@ input[type="checkbox"] {
       content: "\e649";
       color: transparent;
       padding: 0;
-      border: 1px solid #dddddd;
-      background: #fff;
+      /*border: 1px solid #dddddd;*/
+      border: 1px solid rgba(0,0,0,0.26);
+      /*background: #fff;*/
+      background: -webkit-linear-gradient(top, rgba(217,217,215,0), rgba(217,217,215,0.26));
+      background: -moz-linear-gradient(top, rgba(217,217,215,0), rgba(217,217,215,0.26));
+      background: -o-linear-gradient(top, rgba(217,217,215,0), rgba(217,217,215,0.26));
+      background: -ms-linear-gradient(top, rgba(217,217,215,0), rgba(217,217,215,0.26));
+      background: linear-gradient(to bottom, rgba(217,217,215,0), rgba(217,217,215,0.26));
       margin: -12px 0px 0 0;
       -webkit-transition: .1s;
       transition: .1s;
