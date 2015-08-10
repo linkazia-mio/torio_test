@@ -300,6 +300,7 @@ input[type="checkbox"] {
         color: #fff;
         font-weight: normal;
         background: $torio_green;
+        @include fontsize(1.2);
         &:hover {
           @include opacity(0.8);
         }
@@ -776,6 +777,7 @@ input[type="checkbox"] {
   color: #fff;
   font-weight: normal;
   background: $torio_green;
+  @include fontsize(1.2);
   &:hover {
     @include opacity(0.8);
   }
