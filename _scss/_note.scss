@@ -187,7 +187,7 @@
       .editing {
         @include border_radius(2px 2px 0 0);
         position: relative;
-        background: $green;
+        background: $torio_green;
         color: #fff;
         text-align: center;
         height: 35px;
@@ -360,7 +360,7 @@
  Editable_lock
 ---------------------------------------------------------------------------------------*/
 .editable_lock {
-  padding: 15px 70px 50px 70px;
+  padding: 15px 70px 70px 70px;
   h1 {
     @include fontsize(2.0);
     font-weight: bold;
@@ -590,7 +590,6 @@
 /*---------------------------------------------------------------------------------------
  Delete_text
 ---------------------------------------------------------------------------------------*/
-
 .delete_text {
   text-align: center;
   margin-top: 30%;
