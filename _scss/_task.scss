@@ -1,6 +1,6 @@
 .task {
   .task_create {
-    @include border_radius(2);
+    @include border_radius(3);
     position: relative;
     /*border: 1px solid $green;*/
     /*border: 1px solid $border_gray;*/
@@ -182,7 +182,7 @@ input[type="checkbox"] {
       min-height: 50px;
     }
     .task_list {
-      @include border_radius(2);
+      @include border_radius(3);
       margin: 0 0 5px 0;
       line-height: 50px;
       height: 50px;
@@ -200,7 +200,7 @@ input[type="checkbox"] {
         -ms-transform: rotate(-1deg);
       }
       &.important {
-        border: 1px solid $red;
+        border: 1px solid #f4c8bf;
         background: $white_red;
         input[type="checkbox"] {
           & + label {
@@ -230,9 +230,10 @@ input[type="checkbox"] {
           overflow: hidden;
           resize: none;
           outline: none;
-          padding: 15px 0 15px 0;
+          padding: 16px 0 0 0;
           line-height: 1.5;
-          resize: vertical;
+          font-weight: normal;
+          /*resize: vertical;*/
           &:focus {
             outline: none;
           }
@@ -355,40 +356,40 @@ input[type="checkbox"] {
         font-weight: normal;
       }
       .time {
-       position: absolute;
-       top: 1px;
-       right: 95px;
-       font-weight: normal;
-       @include fontsize(1.1);
-       &.caution {
-         color: $dark_red;
-       }
-       i {
-         position: absolute;
-         top: 13px;
-         left: -22px;
-       }
+        position: absolute;
+        top: 1px;
+        right: 95px;
+        font-weight: normal;
+        @include fontsize(1.1);
+        &.caution {
+          color: $dark_red;
+        }
+        i {
+          position: absolute;
+          top: 13px;
+          left: -22px;
+        }
       }
       .comment {
-       position: absolute;
-       top: 1px;
-       right: 55px;
-       font-weight: normal;
-       @include fontsize(1.1);
-       i {
-         position: absolute;
-         top:13px;
-         left: -20px;
-       }
+        position: absolute;
+        top: 1px;
+        right: 55px;
+        font-weight: normal;
+        @include fontsize(1.1);
+        i {
+          position: absolute;
+          top:13px;
+          left: -20px;
+        }
       }
       .user_image {
-       position: absolute;
-       top: 13px;
-       right: 15px;
-       img {
-         height: 25px;
-         width: 25px;
-       }
+        position: absolute;
+        top: 13px;
+        right: 15px;
+        img {
+          height: 25px;
+          width: 25px;
+        }
       }
       .noimage {
         @include fontsize(1.0);

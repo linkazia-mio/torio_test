@@ -3697,10 +3697,10 @@ header {
     text-align: center; }
 
 .task .task_create {
-  -webkit-border-radius: 2;
-  -moz-border-radius: 2;
-  -ms-border-radius: 2;
-  border-radius: 2;
+  -webkit-border-radius: 3;
+  -moz-border-radius: 3;
+  -ms-border-radius: 3;
+  border-radius: 3;
   position: relative;
   /*border: 1px solid $green;*/
   /*border: 1px solid $border_gray;*/
@@ -3872,10 +3872,10 @@ input[type="checkbox"] {
     .task_replacement .task_people .task_lists {
       min-height: 50px; }
     .task_replacement .task_people .task_list {
-      -webkit-border-radius: 2;
-      -moz-border-radius: 2;
-      -ms-border-radius: 2;
-      border-radius: 2;
+      -webkit-border-radius: 3;
+      -moz-border-radius: 3;
+      -ms-border-radius: 3;
+      border-radius: 3;
       margin: 0 0 5px 0;
       line-height: 50px;
       height: 50px;
@@ -3892,7 +3892,7 @@ input[type="checkbox"] {
         -o-transform: rotate(-1deg);
         -ms-transform: rotate(-1deg); }
       .task_replacement .task_people .task_list.important {
-        border: 1px solid #ed6d44;
+        border: 1px solid #f4c8bf;
         background: #ffebe7; }
         .task_replacement .task_people .task_list.important input[type="checkbox"] {
           /*checked時の見た目*/ }
@@ -3915,9 +3915,10 @@ input[type="checkbox"] {
           overflow: hidden;
           resize: none;
           outline: none;
-          padding: 15px 0 15px 0;
+          padding: 16px 0 0 0;
           line-height: 1.5;
-          resize: vertical; }
+          font-weight: normal;
+          /*resize: vertical;*/ }
           .task_replacement .task_people .task_list.made textarea:focus {
             outline: none; }
         .task_replacement .task_people .task_list.made .task_add_member {
