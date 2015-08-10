@@ -347,6 +347,7 @@ window.onload=function(){
       $('.task_box').toggle( 'fade', '', 100 );
       event.stopPropagation();
       popover.hide();
+      popoverBig.hide();
       $('.task_box.popover_big').toggle();
     });
     //Activity
@@ -354,6 +355,7 @@ window.onload=function(){
       $('.activity_box').toggle( 'fade', '', 100 );
       event.stopPropagation();
       popover.hide();
+      popoverBig.hide();
       $('.activity_box.popover').toggle();
     });
     //Check box

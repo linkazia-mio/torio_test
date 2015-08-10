@@ -391,6 +391,88 @@ header {
   .task_box {
     right: 80px;
     top: 60px;
+    h3 {
+      text-align: center;
+      border: none;
+    }
+    ul {
+      @include border_radius();
+      margin: 0 15px 15px 15px;
+      width: 470px;
+      border: 1px solid $green;
+      display: table;
+      table-layout: fixed;
+      color: $green;
+      li {
+        display: table-cell;
+        text-align: center;
+        border-right: 1px;
+        line-height: 28px;
+        &.active {
+          background: $green;
+          color: #fff;
+        }
+      }
+    }
+    .active_lists {
+      background: $white_gray;
+      padding: 15px;
+      .task_list {
+        @include border_radius();
+        margin: 0 0 5px 0;
+        line-height: 50px;
+        height: 50px;
+        background: #fff;
+        clear: both;
+        border: 1px solid #ededf0;
+        border-bottom: 1px solid #dcdce0;
+        box-shadow: none;
+        position: relative;
+        color: $white_brack;
+        &.ui-sortable-helper {
+          -moz-transform: rotate(-1deg);
+          -webkit-transform: rotate(-1deg);
+          -o-transform: rotate(-1deg);
+          -ms-transform: rotate(-1deg);
+        }
+        &.important {
+          border: 1px solid $red;
+          background: $white_red;
+          input[type="checkbox"] {
+            & + label {
+              /*通常時の見た目*/
+              &:before {
+                border: 1px solid $red;
+                background: $white_red;
+              }
+            }
+            /*checked時の見た目*/
+            &:checked + label {
+              &::before {
+                background: $dark_red;
+                border-color: $red;
+              }
+            }
+          }
+        }
+        .user_image {
+         position: absolute;
+         right: 0;
+         top: 0;
+         padding: 0 10px 0 0;
+         img {
+           width: 30px;
+           height: 30px;
+         }
+        }
+        .noimage {
+          position: absolute;
+          right: 0;
+          top: 0;
+          margin-right: 10px;
+        }
+      }
+    }
   }
   .activity_box {
     right: 60px;
