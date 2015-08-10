@@ -4258,6 +4258,7 @@ input[type="checkbox"] {
         .note .note_edit .note_edit_inner .edit_name .writer_info {
           font-size: 12px;
           font-size: 1.2rem;
+          font-weight: normal;
           color: #8a959e; }
         .note .note_edit .note_edit_inner .edit_name .note_option {
           font-size: 26px;

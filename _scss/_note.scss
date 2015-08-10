@@ -48,6 +48,7 @@
         }
         .writer_info {
           @include fontsize(1.2);
+          font-weight: normal;
           color: $white_brack;
         }
         .note_option {
