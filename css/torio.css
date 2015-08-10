@@ -4576,7 +4576,7 @@ input[type="checkbox"] {
         -ms-border-radius: 2px 2px 0 0;
         border-radius: 2px 2px 0 0;
         position: relative;
-        background: #3A87BC;
+        background: #f36;
         color: #fff;
         text-align: center;
         height: 35px;
@@ -4752,18 +4752,22 @@ input[type="checkbox"] {
     font-size: 20px;
     font-size: 2rem;
     font-weight: bold;
-    margin: 0 0 40px 0; }
+    margin: 0 0 25px 0; }
   .editable_lock p {
     margin: 0 0 20px 0;
     line-height: 1.8; }
   .editable_lock hr {
-    width: 100px;
-    margin: 30px auto; }
+    width: 100%;
+    margin: 30px auto 35px auto;
+    border-top: 1px solid #e2e2e2; }
   .editable_lock blockquote {
+    font-size: 14px;
+    font-size: 1.4rem;
     padding: 10px 20px;
     margin: 0 0 20px;
-    font-size: 17.5px;
-    border-left: 4px solid #ff9933; }
+    border-left: 4px solid #f36;
+    color: #8a959e;
+    font-style: italic; }
   .editable_lock ol {
     padding-left: 20px;
     margin-bottom: 30px; }
