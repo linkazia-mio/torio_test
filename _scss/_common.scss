@@ -1928,11 +1928,15 @@ header {
           }
         }
         .comment {
-          margin-top: 20px;
+          margin-top: 30px;
           .comment_inner {
             display: table;
             width: 100%;
             table-layout: fixed;
+            margin-bottom: 20px;
+            &:last-child{
+              margin-bottom: 0;
+            }
             .user_image {
               display: table-cell;
               width: 50px;
@@ -1954,19 +1958,20 @@ header {
               display: table-cell;
               vertical-align: top;
               p {
-                @include fontsize(1.4);
+                @include fontsize(1.3);
                 &.name {
                   font-weight: bold;
-                  padding-bottom: 1px;
+                  padding-bottom: 3px;
+                  @include fontsize(1.3);
                   .time {
                     margin-left: 10px;
                     font-weight: normal;
                     color: $white_brack;
-                    @include fontsize(1.2);
+                    @include fontsize(1.3);
                   }
                 }
                 &.memo {
-                  @include fontsize(1.4);
+                  @include fontsize(1.3);
                   word-wrap: break-word;
                   color: #000;
                 }
@@ -1975,7 +1980,7 @@ header {
           }
         }
       }
-      .modal-footer  {
+      .modal-footer {
         border-top: none;
         padding: 25px;
         position: relative;
@@ -1983,11 +1988,21 @@ header {
           background: $white_gray;
           @include border_radius(0 0 2px 2px);
         }
+        &.task_modal_footer{
+          textarea{
+            height: 60px;
+          }
+          button{
+            &.btn-default{
+              margin-right: 5px;
+            }
+          }
+        }
         textarea {
           @include border_radius();
           width: 100%;
           height: 95px;
-          margin-bottom: 25px;
+          margin-bottom: 15px;
           border: 1px solid $border_gray;
           background: #fff;
           resize: none;
