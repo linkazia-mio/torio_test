@@ -4219,7 +4219,9 @@ input[type="checkbox"] {
     font-weight: bold;
     width: auto; }
   .note .note_edit {
-    padding-bottom: 30px; }
+    padding-bottom: 20px; }
+    .note .note_edit:last-child {
+      padding-bottom: 35px; }
     .note .note_edit a {
       color: #2e6b95; }
     .note .note_edit .note_edit_inner {
@@ -4259,7 +4261,8 @@ input[type="checkbox"] {
           font-size: 12px;
           font-size: 1.2rem;
           font-weight: normal;
-          color: #8a959e; }
+          color: #8a959e;
+          padding: 2px 0 0 0; }
         .note .note_edit .note_edit_inner .edit_name .note_option {
           font-size: 26px;
           font-size: 2.6rem;
@@ -4463,7 +4466,7 @@ input[type="checkbox"] {
  Editable
 ---------------------------------------------------------------------------------------*/
 .editable {
-  padding: 20px 70px 50px 70px; }
+  padding: 15px 70px 70px 70px; }
   .editable:focus {
     outline: none; }
   .editable h1 {
@@ -4517,7 +4520,7 @@ input[type="checkbox"] {
  Editable_lock
 ---------------------------------------------------------------------------------------*/
 .editable_lock {
-  padding: 20px 70px 30px 70px; }
+  padding: 15px 70px 50px 70px; }
   .editable_lock h1 {
     font-size: 20px;
     font-size: 2rem;
