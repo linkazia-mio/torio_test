@@ -2406,6 +2406,8 @@ header {
     .modal .modal-dialog .modal-content .modal-header .modal_option_box {
       width: 250px;
       right: -160px; }
+    .modal .modal-dialog .modal-content .modal-header.task_modal_header .modal-title {
+      font-weight: bold; }
   .modal .modal-dialog .modal-content .modal-body {
     background: #f5f5f5; }
     .modal .modal-dialog .modal-content .modal-body.white {
@@ -2785,7 +2787,11 @@ header {
     padding: 25px;
     position: relative; }
     .modal .modal-dialog .modal-content .modal-footer.gray {
-      background: #f5f5f5; }
+      background: #f5f5f5;
+      -webkit-border-radius: 0 0 2px 2px;
+      -moz-border-radius: 0 0 2px 2px;
+      -ms-border-radius: 0 0 2px 2px;
+      border-radius: 0 0 2px 2px; }
     .modal .modal-dialog .modal-content .modal-footer textarea {
       -webkit-border-radius: 4px;
       -moz-border-radius: 4px;
