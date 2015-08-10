@@ -508,16 +508,16 @@ header {
         text-align: center;
         color: #fff;
         top: 0px;
-        right: 0px;
-        margin-top: -3px;
+        right: -3px;
+        margin-top: -6px;
         z-index: 1000;
         content: "";
         width: auto;
         padding: 0 0 0 0;
         background: $dark_red;
-        line-height: 15px;
-        min-width: 15px;
-        min-height: 15px;
+        line-height: 18px;
+        min-width: 18px;
+        min-height: 18px;
       }
     }
   }
@@ -1260,7 +1260,7 @@ header {
     box-shadow: 0 -1px 2px rgba(0,0,0,0.15),inset 0 1px 0 rgba(255,255,255,0.5);
     background: #fff;
     text-align: center;
-    padding-top: 6px;
+    padding-top: 8px;
     cursor: pointer;
     -webkit-transition: all 0.3s ease-in-out;
     -moz-transition: all 0.3s ease-in-out;

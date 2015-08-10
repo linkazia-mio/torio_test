@@ -65,12 +65,12 @@
         }
       }
       .btn_add_task {
-        bottom: 10px;
+        bottom: 15px;
       }
       .like_comment_box {
         position: absolute;
         left: 20px;
-        bottom: 20px;
+        bottom: 21px;
         .like_btn {
           float: left;
           margin-right: 10px;
@@ -178,13 +178,13 @@
         @include fontsize(1.1);
         position: absolute;
         right: 130px;
-        bottom: 15px;
+        bottom: 20px;
         color: $white_brack;
       }
       .editing {
         @include border_radius(2px 2px 0 0);
         position: relative;
-        background: $green;
+        background: $torio_green;
         color: #fff;
         text-align: center;
         height: 35px;
@@ -321,11 +321,11 @@
   }
   ol {
     padding-left: 20px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
   }
   ul {
     padding-left: 20px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     li {
       list-style: disc;
     }
@@ -357,7 +357,7 @@
  Editable_lock
 ---------------------------------------------------------------------------------------*/
 .editable_lock {
-  padding: 15px 70px 50px 70px;
+  padding: 15px 70px 70px 70px;
   h1 {
     @include fontsize(2.0);
     font-weight: bold;
@@ -507,11 +507,61 @@
       }
       button {
         border: 0;
-        height: 35px;
+        height: 40px;
         padding: 0;
         box-shadow: 0 0 0 #000;
-        .fa-lg {
-          vertical-align: middle;
+        .fa{
+          @include fontsize(2.6);
+          font-family: 'torio_icon';    
+          &.fa-bold{
+            vertical-align: middle;
+            &:before{
+              content: "\e658";
+              @include fontsize(2.3);
+            }
+          }
+          &.fa-h1{
+           vertical-align: middle;
+            &:before{
+              content: "\e659";
+              @include fontsize(2.3);
+            }
+          }
+          &.fa-link{
+            vertical-align: middle;
+            &:before{
+              content: "\e698";
+              @include fontsize(2.2);
+            }
+          }
+          &.fa-quote-right{
+            vertical-align: middle;
+            &:before{
+              content: "\e6ce";
+              @include fontsize(2.3);
+            }
+          }
+          &.fa-list-ul{
+            vertical-align: middle;
+            &:before{
+              content: "\e69b";
+              @include fontsize(2.8);
+            }
+          }
+          &.fa-list-ol{
+            vertical-align: middle;
+            &:before{
+              content: "\e69a";
+              @include fontsize(2.8);
+            }
+          }
+          &.fa-lg {
+            vertical-align: middle;
+            &:before{
+              content: "\e637";
+              @include fontsize(2.8);
+            }
+          }
         }
       }
     }
@@ -519,7 +569,7 @@
 }
 .medium-toolbar-arrow-under {
   &:after {
-    top: 35px;
+    top: 37px;
   }
 }
 
@@ -587,7 +637,6 @@
 /*---------------------------------------------------------------------------------------
  Delete_text
 ---------------------------------------------------------------------------------------*/
-
 .delete_text {
   text-align: center;
   margin-top: 30%;

@@ -1540,16 +1540,16 @@ header {
       text-align: center;
       color: #fff;
       top: 0px;
-      right: 0px;
-      margin-top: -3px;
+      right: -3px;
+      margin-top: -6px;
       z-index: 1000;
       content: "";
       width: auto;
       padding: 0 0 0 0;
       background: #db4c3f;
-      line-height: 15px;
-      min-width: 15px;
-      min-height: 15px; }
+      line-height: 18px;
+      min-width: 18px;
+      min-height: 18px; }
   .alart .activity {
     padding-left: 10px; }
   .alart .me {
@@ -2162,7 +2162,7 @@ header {
     box-shadow: 0 -1px 2px rgba(0, 0, 0, 0.15), inset 0 1px 0 rgba(255, 255, 255, 0.5);
     background: #fff;
     text-align: center;
-    padding-top: 6px;
+    padding-top: 8px;
     cursor: pointer;
     -webkit-transition: all 0.3s ease-in-out;
     -moz-transition: all 0.3s ease-in-out;
@@ -3880,16 +3880,17 @@ input[type="checkbox"] {
         font-size: 20px;
         font-size: 2rem; }
       .task_replacement .task_people .task_list .btn_add_task {
-        -webkit-border-radius: 4px;
-        -moz-border-radius: 4px;
-        -ms-border-radius: 4px;
-        border-radius: 4px;
+        -webkit-border-radius: 2;
+        -moz-border-radius: 2;
+        -ms-border-radius: 2;
+        border-radius: 2;
         position: absolute;
         right: 15px;
         bottom: 11px;
         line-height: 30px;
         width: 100px;
         color: #fff;
+        font-weight: normal;
         background: #3A87BC; }
         .task_replacement .task_people .task_list .btn_add_task:hover {
           opacity: 0.8;
@@ -4163,18 +4164,19 @@ input[type="checkbox"] {
     z-index: 10; }
 
 .btn_add_task {
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  -ms-border-radius: 4px;
-  border-radius: 4px;
-  font-size: 13px;
-  font-size: 1.3rem;
+  -webkit-border-radius: 3;
+  -moz-border-radius: 3;
+  -ms-border-radius: 3;
+  border-radius: 3;
+  font-size: 12px;
+  font-size: 1.2rem;
   position: absolute;
   right: 15px;
   width: 100px;
   height: 30px;
+  line-height: 33px;
   color: #fff;
-  font-weight: bold;
+  font-weight: normal;
   background: #3A87BC; }
   .btn_add_task:hover {
     opacity: 0.8;
@@ -4303,11 +4305,11 @@ input[type="checkbox"] {
           right: 15px;
           top: 60px; }
       .note .note_edit .note_edit_inner .btn_add_task {
-        bottom: 10px; }
+        bottom: 15px; }
       .note .note_edit .note_edit_inner .like_comment_box {
         position: absolute;
         left: 20px;
-        bottom: 20px; }
+        bottom: 21px; }
         .note .note_edit .note_edit_inner .like_comment_box .like_btn {
           float: left;
           margin-right: 10px;
@@ -4389,7 +4391,7 @@ input[type="checkbox"] {
         font-size: 1.1rem;
         position: absolute;
         right: 130px;
-        bottom: 15px;
+        bottom: 20px;
         color: #8a959e; }
       .note .note_edit .note_edit_inner .editing {
         -webkit-border-radius: 2px 2px 0 0;
@@ -4397,7 +4399,7 @@ input[type="checkbox"] {
         -ms-border-radius: 2px 2px 0 0;
         border-radius: 2px 2px 0 0;
         position: relative;
-        background: #2e6b95;
+        background: #3A87BC;
         color: #fff;
         text-align: center;
         height: 35px;
@@ -4520,10 +4522,10 @@ input[type="checkbox"] {
     border-left: 4px solid #ff9933; }
   .editable ol {
     padding-left: 20px;
-    margin-bottom: 30px; }
+    margin-bottom: 20px; }
   .editable ul {
     padding-left: 20px;
-    margin-bottom: 30px; }
+    margin-bottom: 20px; }
     .editable ul li {
       list-style: disc; }
   .editable pre {
@@ -4552,7 +4554,7 @@ input[type="checkbox"] {
  Editable_lock
 ---------------------------------------------------------------------------------------*/
 .editable_lock {
-  padding: 15px 70px 50px 70px; }
+  padding: 15px 70px 70px 70px; }
   .editable_lock h1 {
     font-size: 20px;
     font-size: 2rem;
@@ -4672,14 +4674,58 @@ input[type="checkbox"] {
       padding: 0; }
     .medium-editor-toolbar ul li button {
       border: 0;
-      height: 35px;
+      height: 40px;
       padding: 0;
       box-shadow: 0 0 0 #000; }
-      .medium-editor-toolbar ul li button .fa-lg {
-        vertical-align: middle; }
+      .medium-editor-toolbar ul li button .fa {
+        font-size: 26px;
+        font-size: 2.6rem;
+        font-family: 'torio_icon'; }
+        .medium-editor-toolbar ul li button .fa.fa-bold {
+          vertical-align: middle; }
+          .medium-editor-toolbar ul li button .fa.fa-bold:before {
+            content: "\e658";
+            font-size: 23px;
+            font-size: 2.3rem; }
+        .medium-editor-toolbar ul li button .fa.fa-h1 {
+          vertical-align: middle; }
+          .medium-editor-toolbar ul li button .fa.fa-h1:before {
+            content: "\e659";
+            font-size: 23px;
+            font-size: 2.3rem; }
+        .medium-editor-toolbar ul li button .fa.fa-link {
+          vertical-align: middle; }
+          .medium-editor-toolbar ul li button .fa.fa-link:before {
+            content: "\e698";
+            font-size: 22px;
+            font-size: 2.2rem; }
+        .medium-editor-toolbar ul li button .fa.fa-quote-right {
+          vertical-align: middle; }
+          .medium-editor-toolbar ul li button .fa.fa-quote-right:before {
+            content: "\e6ce";
+            font-size: 23px;
+            font-size: 2.3rem; }
+        .medium-editor-toolbar ul li button .fa.fa-list-ul {
+          vertical-align: middle; }
+          .medium-editor-toolbar ul li button .fa.fa-list-ul:before {
+            content: "\e69b";
+            font-size: 28px;
+            font-size: 2.8rem; }
+        .medium-editor-toolbar ul li button .fa.fa-list-ol {
+          vertical-align: middle; }
+          .medium-editor-toolbar ul li button .fa.fa-list-ol:before {
+            content: "\e69a";
+            font-size: 28px;
+            font-size: 2.8rem; }
+        .medium-editor-toolbar ul li button .fa.fa-lg {
+          vertical-align: middle; }
+          .medium-editor-toolbar ul li button .fa.fa-lg:before {
+            content: "\e637";
+            font-size: 28px;
+            font-size: 2.8rem; }
 
 .medium-toolbar-arrow-under:after {
-  top: 35px; }
+  top: 37px; }
 
 /*---------------------------------------------------------------------------------------
  Loader
