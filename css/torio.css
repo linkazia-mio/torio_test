@@ -3794,7 +3794,7 @@ input[type="checkbox"] {
       font-weight: normal;
       padding-left: 10px; }
     .task_replacement .task_people .task_lists {
-      min-height: 30px; }
+      min-height: 50px; }
     .task_replacement .task_people .task_list {
       -webkit-border-radius: 2;
       -moz-border-radius: 2;
@@ -3946,8 +3946,11 @@ input[type="checkbox"] {
               width: 20px;
               height: 20px; }
       .task_replacement .task_people .task_list .task_title {
-        color: #555555;
-        width: 70%; }
+        color: #000000;
+        width: 70%;
+        font-size: 13px;
+        font-size: 1.3rem;
+        font-weight: normal; }
       .task_replacement .task_people .task_list .time {
         position: absolute;
         top: 1px;
