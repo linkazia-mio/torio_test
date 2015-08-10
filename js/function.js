@@ -376,13 +376,15 @@ window.onload=function(){
       event.stopPropagation();
       popover.hide();
       popoverBig.hide();
-      $('.check_box.popover').hide();
+      $('.check_box.popover').toggle();
     });
     //Website Box
     $('.website').click(function () {
       $('.detail_website_box').toggle( 'fade', '', 100 );
       event.stopPropagation();
-      $('.add_page,.check_box,.option_box,.detail_option_box,.detail_check_box,.task_add_list_member,.task_add_member').hide();
+      popover.hide();
+      popoverBig.hide();
+      $('.detail_website_box.popover').hide();
     });
     $('.detail_website_box').click(function () {
       jQuery('.detail_website_box').show();
@@ -392,7 +394,9 @@ window.onload=function(){
     $('.config .option').click(function () {
       $('.option_box').toggle( 'fade', '', 100 );
       event.stopPropagation();
-      $('.add_page,.activity_box,.check_box,.detail_option_box,.detail_check_box,#task_add_time_1,.detail_website_box,.task_add_list_member,.task_add_member,#task_add_time_1,#task_add_time_2,#task_add_time_3').hide();
+      popover.hide();
+      popoverBig.hide();
+      $('.detail_website_box.popover').toggle();
     });
     //Add page
     $('.page_menu_footer p').click(function () {

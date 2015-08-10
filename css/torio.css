@@ -3965,7 +3965,8 @@ input[type="checkbox"] {
           .task_replacement .task_people .task_list.made .task_add_time .task_add_time_footer .btn_add_task {
             bottom: 0; }
         .task_replacement .task_people .task_list.made .task_button {
-          display: none; }
+          display: none;
+          margin-top: 50px; }
       .task_replacement .task_people .task_list i {
         font-size: 20px;
         font-size: 2rem; }
