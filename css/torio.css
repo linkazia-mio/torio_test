@@ -1670,7 +1670,7 @@ header {
     -ms-user-select: none;
     user-select: none;
     line-height: 37px;
-    /*font-family: BrandonText-Medium, "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;*/
+    /*@include font_eng;*/
     font-weight: normal;
     font-style: normal;
     -webkit-border-radius: 2px;
@@ -1708,7 +1708,7 @@ header {
     -ms-user-select: none;
     user-select: none;
     line-height: 37px;
-    /*font-family: BrandonText-Medium, "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;*/
+    /*@include font_eng;*/
     font-weight: normal;
     font-style: normal;
     -webkit-border-radius: 2px;
@@ -1784,7 +1784,7 @@ header {
       -ms-user-select: none;
       user-select: none;
       line-height: 35px;
-      /*font-family: BrandonText-Medium, "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;*/
+      /*@include font_eng;*/
       font-weight: normal;
       font-style: normal;
       -webkit-border-radius: 2px;
@@ -2063,7 +2063,7 @@ header {
       -ms-user-select: none;
       user-select: none;
       line-height: 35px;
-      font-family: BrandonText-Medium, "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+      font-family: 'Helvetica neue',Helvetica,Arial,sans-serif;
       font-weight: normal;
       font-style: normal;
       -webkit-border-radius: 4px;
