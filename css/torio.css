@@ -2515,10 +2515,10 @@ header {
           position: absolute;
           right: 0; }
       .modal .modal-dialog .modal-content .modal-body .input_dot input[type="text"] {
-        -webkit-border-radius: 2px;
-        -moz-border-radius: 2px;
-        -ms-border-radius: 2px;
-        border-radius: 2px;
+        -webkit-border-radius: 2;
+        -moz-border-radius: 2;
+        -ms-border-radius: 2;
+        border-radius: 2;
         float: right;
         width: 400px;
         border: 1px solid #e2e2e2;
@@ -2528,12 +2528,12 @@ header {
         position: relative;
         float: right; }
         .modal .modal-dialog .modal-content .modal-body .input_dot .close_btn .delete {
-          font-size: 24px;
-          font-size: 2.4rem;
+          font-size: 20px;
+          font-size: 2rem;
           position: absolute;
           color: #8a959e;
-          right: 4px;
-          top: 9px; }
+          right: 10px;
+          top: 12px; }
       .modal .modal-dialog .modal-content .modal-body .input_dot .select_box {
         *zoom: 1;
         float: right;
