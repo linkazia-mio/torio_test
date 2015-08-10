@@ -314,7 +314,7 @@
  Editable
 ---------------------------------------------------------------------------------------*/
 .editable {
-  padding: 15px 70px 70px 70px;
+  padding: 20px 70px 70px 70px;
   &:focus {
     outline: none;
   }
@@ -430,7 +430,7 @@
  Medium Editor
 ---------------------------------------------------------------------------------------*/
 .medium-editor-insert-plugin.medium-editor-placeholder:after {
-  padding: 30px 70px;
+  padding: 20px 70px;
 }
 .medium-editor-insert-plugin {
   .medium-editor-placeholder {
