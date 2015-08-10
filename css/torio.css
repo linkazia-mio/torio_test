@@ -3987,7 +3987,9 @@ input[type="checkbox"] {
         width: 100px;
         color: #fff;
         font-weight: normal;
-        background: #3A87BC; }
+        background: #3A87BC;
+        font-size: 12px;
+        font-size: 1.2rem; }
         .task_replacement .task_people .task_list .btn_add_task:hover {
           opacity: 0.8;
           filter: alpha(opacity=80); }
@@ -4354,7 +4356,9 @@ input[type="checkbox"] {
   width: 100px;
   color: #fff;
   font-weight: normal;
-  background: #3A87BC; }
+  background: #3A87BC;
+  font-size: 12px;
+  font-size: 1.2rem; }
   .btn_add_task:hover {
     opacity: 0.8;
     filter: alpha(opacity=80); }
