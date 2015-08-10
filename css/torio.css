@@ -3726,7 +3726,7 @@ input[type="checkbox"] {
     font-size: 13px;
     font-size: 1.3rem;
     left: 0;
-    margin-bottom: 30px;
+    padding-bottom: 30px;
     color: #8a959e;
     font-weight: bold; }
     .task_replacement .task_people.ui-sortable-helper {
@@ -4219,23 +4219,23 @@ input[type="checkbox"] {
     font-weight: bold;
     width: auto; }
   .note .note_edit {
-    -webkit-border-radius: 4px;
-    -moz-border-radius: 4px;
-    -ms-border-radius: 4px;
-    border-radius: 4px;
-    position: relative;
-    margin: 0 30px 30px 30px;
-    background: #fff;
-    /*-webkit-box-shadow: 0 2px 5px rgba(0,0,0,0.06);
-    box-shadow: 0 2px 5px rgba(0,0,0,0.06);
-    border: 1px solid #e3e3e3;*/
-    border: 1px solid #ededf0;
-    border-bottom: 1px solid #dcdce0;
-    box-shadow: none;
-    margin-bottom: 20px; }
+    padding-bottom: 30px; }
     .note .note_edit a {
       color: #2e6b95; }
     .note .note_edit .note_edit_inner {
+      -webkit-border-radius: 4px;
+      -moz-border-radius: 4px;
+      -ms-border-radius: 4px;
+      border-radius: 4px;
+      position: relative;
+      margin: 0 30px 0 30px;
+      background: #fff;
+      /*-webkit-box-shadow: 0 2px 5px rgba(0,0,0,0.06);
+      box-shadow: 0 2px 5px rgba(0,0,0,0.06);
+      border: 1px solid #e3e3e3;*/
+      border: 1px solid #ededf0;
+      border-bottom: 1px solid #dcdce0;
+      box-shadow: none;
       position: relative; }
       .note .note_edit .note_edit_inner .edit_name {
         position: relative;

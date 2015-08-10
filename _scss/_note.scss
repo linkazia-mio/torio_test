@@ -10,21 +10,21 @@
     width: auto;
   }
   .note_edit {
-    @include border_radius();
-    position: relative;
-    margin: 0 30px 30px 30px;
-    background: #fff;
-    /*-webkit-box-shadow: 0 2px 5px rgba(0,0,0,0.06);
-    box-shadow: 0 2px 5px rgba(0,0,0,0.06);
-    border: 1px solid #e3e3e3;*/
-    border: 1px solid #ededf0;
-    border-bottom: 1px solid #dcdce0;
-    box-shadow: none;
-    margin-bottom: 20px;
+    padding-bottom: 30px;
     a {
       color: $green;
     }
     .note_edit_inner {
+      @include border_radius();
+      position: relative;
+      margin: 0 30px 0 30px;
+      background: #fff;
+      /*-webkit-box-shadow: 0 2px 5px rgba(0,0,0,0.06);
+      box-shadow: 0 2px 5px rgba(0,0,0,0.06);
+      border: 1px solid #e3e3e3;*/
+      border: 1px solid #ededf0;
+      border-bottom: 1px solid #dcdce0;
+      box-shadow: none;
       position: relative;
       .edit_name {
         position: relative;
