@@ -488,6 +488,7 @@ header {
   .activity_box {
     right: 60px;
     top: 60px;
+    z-index: 50;
   }
   &.fixed{
     position: fixed !important;
@@ -1510,11 +1511,13 @@ header {
       width: 250px;
       right: 15px;
       top: 60px;
+      z-index: 50;
     }
     .detail_website_box {
       width: 400px;
       right: 70px;
       top: 60px;
+      z-index: 50;
     }
   }
 }
