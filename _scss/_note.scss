@@ -74,6 +74,7 @@
       }
       .btn_add_task {
         bottom: 15px;
+        -webkit-font-smoothing: antialiased;
       }
       .like_comment_box {
         position: absolute;
@@ -457,6 +458,12 @@
       margin-left: 19px;
       color: $white_brack;
       overflow: hidden;
+      transition: all .2s;
+      -webkit-transform: rotate(-0deg);
+      transform: rotate(-0deg);
+      -webkit-backface-visibility:hidden;
+      backface-visibility:hidden;
+      overflow:hidden;
       &:before {
         position: absolute;
         content: "+";
@@ -464,11 +471,11 @@
         left: 2px;
         top: -2px;
       }
-      // &.active {
-      //   transition: all .2s;
-      // 	-webkit-transform: rotate(45deg);
-      // 	transform: rotate(45deg);
-      // }
+      &.active {
+        transition: all .2s;
+      	-webkit-transform: rotate(45deg);
+      	transform: rotate(45deg);
+      }
     }
     .medium-insert-buttons-addons {
       top: -24px;

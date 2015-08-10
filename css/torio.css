@@ -4452,7 +4452,8 @@ input[type="checkbox"] {
           right: 15px;
           top: 60px; }
       .note .note_edit .note_edit_inner .btn_add_task {
-        bottom: 15px; }
+        bottom: 15px;
+        -webkit-font-smoothing: antialiased; }
       .note .note_edit .note_edit_inner .like_comment_box {
         position: absolute;
         left: 20px;
@@ -4788,6 +4789,12 @@ input[type="checkbox"] {
   line-height: 20px;
   margin-left: 19px;
   color: #8a959e;
+  overflow: hidden;
+  transition: all 0.2s;
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
   overflow: hidden; }
   .medium-editor-insert-plugin .medium-insert-buttons .medium-insert-buttons-show:before {
     position: absolute;
@@ -4795,6 +4802,10 @@ input[type="checkbox"] {
     height: 20px;
     left: 2px;
     top: -2px; }
+  .medium-editor-insert-plugin .medium-insert-buttons .medium-insert-buttons-show.active {
+    transition: all 0.2s;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg); }
 
 .medium-editor-insert-plugin .medium-insert-buttons .medium-insert-buttons-addons {
   top: -24px; }
