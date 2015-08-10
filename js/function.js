@@ -332,18 +332,29 @@ window.onload=function(){
   });
 
 
+  var popover = $('.popover');
+  var popoverBig = $('.popover_big');
   //エリア外をクリックしたらpopoverを消す
   $(document).click(function() {
-    $('.popover').hide();
+    popover.hide();
+    popoverBig.hide();
   });
 
 
   $(document).ready(function(){
+    //Task
+    $('.task p').click(function () {
+      $('.task_box').toggle( 'fade', '', 100 );
+      event.stopPropagation();
+      popover.hide();
+      $('.task_box.popover_big').toggle();
+    });
     //Activity
     $('.activity p').click(function () {
       $('.activity_box').toggle( 'fade', '', 100 );
       event.stopPropagation();
-      $('.add_page,.check_box,.option_box,.detail_option_box,.detail_check_box,.task_add_list_member,.task_add_member').hide();
+      popover.hide();
+      $('.activity_box.popover').toggle();
     });
     //Check box
     $('.config .check').click(function () {

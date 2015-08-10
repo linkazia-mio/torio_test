@@ -1115,10 +1115,10 @@ button:focus {
   -moz-border-radius: 100px;
   -ms-border-radius: 100px;
   border-radius: 100px;
+  font-family: 'Helvetica neue',Helvetica,Arial,sans-serif;
   background: #3A87BC;
   text-align: center;
   color: #FFF;
-  font-family: 'Helvetica neue',Helvetica,Arial,sans-serif;
   display: block;
   font-weight: bold; }
 
@@ -1127,6 +1127,26 @@ button:focus {
   -moz-border-radius: 100px;
   -ms-border-radius: 100px;
   border-radius: 100px; }
+
+.popover_big {
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  border-radius: 4px;
+  display: none;
+  width: 500px;
+  position: absolute;
+  z-index: 1000;
+  background: #fff;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+  border: none;
+  line-height: 1.42857143;
+  text-align: left;
+  white-space: normal;
+  opacity: 1;
+  filter: alpha(opacity=100);
+  padding: 10px 0;
+  z-index: 10; }
 
 .popover {
   -webkit-border-radius: 4px;
@@ -2504,6 +2524,16 @@ header {
         border: 1px solid #e2e2e2;
         padding: 10px 10px;
         margin-bottom: 20px; }
+      .modal .modal-dialog .modal-content .modal-body .input_dot .close_btn {
+        position: relative;
+        float: right; }
+        .modal .modal-dialog .modal-content .modal-body .input_dot .close_btn .delete {
+          font-size: 24px;
+          font-size: 2.4rem;
+          position: absolute;
+          color: #8a959e;
+          right: 4px;
+          top: 9px; }
       .modal .modal-dialog .modal-content .modal-body .input_dot .select_box {
         *zoom: 1;
         float: right;
