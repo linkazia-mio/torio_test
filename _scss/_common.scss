@@ -67,6 +67,7 @@ button {
   @include border_radius(100px);
   @include font_eng;
   background: $torio_green;
+  /*background: #f179ab;*/
   text-align: center;
   color: #FFF;
   display: block;
