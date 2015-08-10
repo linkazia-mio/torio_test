@@ -2106,9 +2106,9 @@ header {
         width: 0;
         height: 0;
         border-top: 12px solid #db4c3f;
-        border-right: 8px solid #db4c3f;
-        border-bottom: 7px solid #fff;
-        border-left: 8px solid #db4c3f; }
+        border-right: 6px solid #db4c3f;
+        border-bottom: 5px solid #fff;
+        border-left: 6px solid #db4c3f; }
       .page_menu .page_menu_inner .item .title {
         font-size: 15px;
         font-size: 1.5rem;
@@ -3270,7 +3270,7 @@ header {
         position: absolute;
         top: 40px;
         padding-left: 27px;
-        right: 60px;
+        right: 65px;
         vertical-align: top; }
         .bx-wrapper .bx-viewport .file_slide .item .modal-header .download a, .bx-wrapper .bx-viewport .file_slide .carousel .carousel-inner .item .modal-header .like a, .carousel .carousel-inner .bx-wrapper .bx-viewport .file_slide .item .modal-header .like a {
           color: #8a959e; }
@@ -3283,10 +3283,10 @@ header {
       .bx-wrapper .bx-viewport .file_slide .item .modal-header .like {
         position: absolute;
         top: 40px;
-        right: 180px;
+        right: 195px;
         font-family: 'Helvetica neue',Helvetica,Arial,sans-serif;
         vertical-align: top;
-        padding-left: 30px; }
+        padding-left: 28px; }
         .bx-wrapper .bx-viewport .file_slide .item .modal-header .like i {
           top: -2px;
           left: 0;
@@ -3294,6 +3294,11 @@ header {
           font-size: 26px;
           font-size: 2.6rem;
           color: #db4c3f; }
+        .bx-wrapper .bx-viewport .file_slide .item .modal-header .like span {
+          font-family: 'Helvetica neue',Helvetica,Arial,sans-serif;
+          font-size: 14px;
+          font-size: 1.4rem;
+          color: #8a959e; }
     .bx-wrapper .bx-viewport .file_slide .item .data {
       font-size: 100px;
       font-size: 10rem;
@@ -4039,6 +4044,24 @@ input[type="checkbox"] {
         font-size: 13px;
         font-size: 1.3rem;
         font-weight: normal; }
+      .task_replacement .task_people .task_list .user_image {
+        position: absolute;
+        top: 13px;
+        right: 15px; }
+        .task_replacement .task_people .task_list .user_image img {
+          height: 25px;
+          width: 25px; }
+      .task_replacement .task_people .task_list .noimage {
+        font-size: 10px;
+        font-size: 1rem;
+        position: absolute;
+        top: 12px;
+        right: 15px;
+        width: 25px;
+        height: 25px;
+        line-height: 25px;
+        text-align: center;
+        padding: 0; }
       .task_replacement .task_people .task_list .task_icon_box {
         position: absolute;
         right: 15px;
@@ -4047,15 +4070,15 @@ input[type="checkbox"] {
           display: inline-block;
           position: relative;
           margin-left: 5px; }
-          .task_replacement .task_people .task_list .task_icon_box p i {
-            position: absolute;
-            top: 14px;
-            left: 0; }
         .task_replacement .task_people .task_list .task_icon_box .time {
           padding-left: 20px;
           font-weight: normal;
           font-size: 11px;
           font-size: 1.1rem; }
+          .task_replacement .task_people .task_list .task_icon_box .time i {
+            position: absolute;
+            top: 14px;
+            left: 0; }
           .task_replacement .task_people .task_list .task_icon_box .time.caution {
             color: #db4c3f; }
         .task_replacement .task_people .task_list .task_icon_box .comment {
@@ -4063,12 +4086,19 @@ input[type="checkbox"] {
           font-weight: normal;
           font-size: 11px;
           font-size: 1.1rem; }
-        .task_replacement .task_people .task_list .task_icon_box .user_image img {
-          height: 25px;
-          width: 25px; }
+          .task_replacement .task_people .task_list .task_icon_box .comment i {
+            position: absolute;
+            top: 14px;
+            left: 0; }
+        .task_replacement .task_people .task_list .task_icon_box .user_image {
+          position: static; }
+          .task_replacement .task_people .task_list .task_icon_box .user_image img {
+            height: 25px;
+            width: 25px; }
         .task_replacement .task_people .task_list .task_icon_box .noimage {
           font-size: 10px;
           font-size: 1rem;
+          position: static;
           width: 25px;
           height: 25px;
           line-height: 25px;
@@ -4628,6 +4658,8 @@ input[type="checkbox"] {
 ---------------------------------------------------------------------------------------*/
 .editable {
   padding: 20px 70px 70px 70px; }
+  .editable:first-child {
+    padding: 30px 70px 70px 70px; }
   .editable:focus {
     outline: none; }
   .editable h1 {
@@ -4729,7 +4761,7 @@ input[type="checkbox"] {
  Medium Editor
 ---------------------------------------------------------------------------------------*/
 .medium-editor-insert-plugin.medium-editor-placeholder:after {
-  padding: 20px 70px; }
+  padding: 30px 70px; }
 
 .medium-editor-insert-plugin .medium-editor-placeholder:after {
   padding: 30px 70px;
