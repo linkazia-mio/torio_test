@@ -1,11 +1,11 @@
 .task {
   .task_create {
-    @include border_radius(3);
+    @include border_radius(4);
     position: relative;
     /*border: 1px solid $green;*/
-    /*border: 1px solid $border_gray;*/
-    border: 1px solid #ededf0;
-    border-bottom: 1px solid #dcdce0;
+    border: 1px solid $border_gray;
+    /*border: 1px solid #ededf0;
+    border-bottom: 1px solid #dcdce0;*/
     margin: 0 30px;
     vertical-align: top;
     line-height: 26px;
@@ -182,14 +182,15 @@ input[type="checkbox"] {
       min-height: 50px;
     }
     .task_list {
-      @include border_radius(3);
+      @include border_radius(4);
       margin: 0 0 5px 0;
       line-height: 50px;
       height: 50px;
       background: #fff;
       clear: both;
-      border: 1px solid #ededf0;
-      border-bottom: 1px solid #dcdce0;
+      /*border: 1px solid #ededf0;
+      border-bottom: 1px solid #dcdce0;*/
+      border: 1px solid $border_gray;
       box-shadow: none;
       position: relative;
       color: $white_brack;
