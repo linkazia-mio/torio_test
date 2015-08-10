@@ -26,6 +26,14 @@
       border-bottom: 1px solid #dcdce0;
       background: #fff;
       box-shadow: none;
+      &.note_edit_inner_comment{
+        -webkit-border-radius:2px 2px 0 0 !important;
+        -moz-border-radius:2px 2px 0 0 !important;
+        -ms-border-radius:2px 2px 0 0 !important;
+        border-radius:2px 2px 0 0 !important;
+        border: 1px solid #ededf0 !important;
+        border-bottom: 1px solid none !important;
+      }
       .edit_name {
         position: relative;
         font-weight: bold;
@@ -197,12 +205,17 @@
       }
     }
     .note_comment {
-      @include border_radius(0 0 5px 5px);
+      @include border_radius(0 0 2px 2px);
       display: none;
       background: $white_gray;
       text-align: left;
       padding: 20px 20px 20px 20px;
       z-index: 100;
+      margin: 0 30px 0 30px;
+      border: 1px solid #ededf0;
+      border-top:none;
+      border-bottom: 1px solid #dcdce0;
+      box-shadow: none;
       .comment_inner {
         display: table;
         width: 100%;
