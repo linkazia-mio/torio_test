@@ -148,8 +148,13 @@ window.onload=function(){
     $(this).toggleClass('selected');
   });
 
-  //タスク入力部分
+  //リストを作成するボタン表示
+  $('.task_create').click(function () {
+    jQuery('.btn_add_task_create').toggle();
+    event.stopPropagation();
+  });
 
+  //タスク入力部分
   $('.task_add_list_member button').click(function () {
     $(this).toggleClass('checked');
   });
@@ -338,6 +343,7 @@ window.onload=function(){
   $(document).click(function() {
     popover.hide();
     popoverBig.hide();
+    $('.btn_add_task_create').hide();
   });
 
 

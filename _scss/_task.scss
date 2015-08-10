@@ -661,14 +661,16 @@ input[type="checkbox"] {
   }
 }
 
-.btn_add_task {
+.btn_add_task_create {
   @include border_radius(3);
   @include fontsize(1.2);
+  display: none;
   position: absolute;
+  top: 8px;
   right: 15px;
   width: 100px;
   height: 30px;
-  line-height: 33px;
+  line-height: 30px;
   color: #fff;
   font-weight: normal;
   background: $torio_green;
@@ -741,4 +743,18 @@ input[type="checkbox"] {
 .task_add_worker {
   @extend .task_add_requester;
   top: 88px;
+}
+.btn_add_task {
+  @include border_radius(2);
+  position: absolute;
+  right: 15px;
+  bottom: 11px;
+  line-height: 30px;
+  width: 100px;
+  color: #fff;
+  font-weight: normal;
+  background: $torio_green;
+  &:hover {
+    @include opacity(0.8);
+  }
 }

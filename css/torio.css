@@ -4257,22 +4257,24 @@ input[type="checkbox"] {
     color: #8a959e;
     z-index: 10; }
 
-.btn_add_task {
+.btn_add_task_create {
   -webkit-border-radius: 3;
   -moz-border-radius: 3;
   -ms-border-radius: 3;
   border-radius: 3;
   font-size: 12px;
   font-size: 1.2rem;
+  display: none;
   position: absolute;
+  top: 8px;
   right: 15px;
   width: 100px;
   height: 30px;
-  line-height: 33px;
+  line-height: 30px;
   color: #fff;
   font-weight: normal;
   background: #3A87BC; }
-  .btn_add_task:hover {
+  .btn_add_task_create:hover {
     opacity: 0.8;
     filter: alpha(opacity=80); }
 
@@ -4334,6 +4336,23 @@ input[type="checkbox"] {
 
 .task_add_worker {
   top: 88px; }
+
+.btn_add_task {
+  -webkit-border-radius: 2;
+  -moz-border-radius: 2;
+  -ms-border-radius: 2;
+  border-radius: 2;
+  position: absolute;
+  right: 15px;
+  bottom: 11px;
+  line-height: 30px;
+  width: 100px;
+  color: #fff;
+  font-weight: normal;
+  background: #3A87BC; }
+  .btn_add_task:hover {
+    opacity: 0.8;
+    filter: alpha(opacity=80); }
 
 /*---------------------------------------------------------------------------------------
  Note
