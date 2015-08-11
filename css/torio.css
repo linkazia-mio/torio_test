@@ -1409,29 +1409,33 @@ header {
       color: #3A87BC;
       cursor: pointer; }
   header .task_box, header .activity_box {
-    right: 120px;
-    top: 55px; }
+    right: 170px;
+    top: 53px; }
     header .task_box h3, header .activity_box h3 {
       text-align: center;
       border: none; }
     header .task_box ul, header .activity_box ul {
-      -webkit-border-radius: 4px;
-      -moz-border-radius: 4px;
-      -ms-border-radius: 4px;
-      border-radius: 4px;
-      margin: 0 15px 15px 15px;
-      width: 470px;
-      border: 1px solid #2e6b95;
+      -webkit-border-radius: 3;
+      -moz-border-radius: 3;
+      -ms-border-radius: 3;
+      border-radius: 3;
+      margin: 0 20px 15px 20px;
+      width: 455px;
+      border: 1px solid #3A87BC;
       display: table;
       table-layout: fixed;
-      color: #2e6b95; }
+      color: #3A87BC;
+      font-size: 13px;
+      font-size: 1.3rem;
+      font-weight: bold; }
       header .task_box ul li, header .activity_box ul li {
         display: table-cell;
         text-align: center;
         border-right: 1px;
-        line-height: 28px; }
+        line-height: 28px;
+        padding: 2px 0 0 0; }
         header .task_box ul li.active, header .activity_box ul li.active {
-          background: #2e6b95;
+          background: #3A87BC;
           color: #fff; }
         header .task_box ul li:hover, header .activity_box ul li:hover {
           background: #3A87BC;
@@ -1442,12 +1446,13 @@ header {
       max-height: 600px;
       -webkit-box-shadow: 0 0px 2px rgba(0, 0, 0, 0.15), inset 0 0px 0 rgba(255, 255, 255, 0.5);
       box-shadow: 0 0px 2px rgba(0, 0, 0, 0.15), inset 0 0px 0 rgba(255, 255, 255, 0.5);
-      overflow: hidden; }
+      overflow: hidden;
+      padding-bottom: 20px; }
       header .task_box .task_active_lists.requeste, header .activity_box .task_active_lists.requeste {
         display: none; }
       header .task_box .task_active_lists .task_active_list, header .activity_box .task_active_lists .task_active_list {
-        margin: 0 15px;
-        padding-bottom: 20px; }
+        margin: 0 20px;
+        padding-bottom: 0px; }
         header .task_box .task_active_lists .task_active_list .task_active_list_title, header .activity_box .task_active_lists .task_active_list .task_active_list_title {
           font-size: 13px;
           font-size: 1.3rem;
@@ -1458,19 +1463,21 @@ header {
             font-size: 11px;
             font-size: 1.1rem;
             color: #8a959e;
-            margin-left: 3px; }
+            margin-left: 8px;
+            font-family: 'Helvetica neue',Helvetica,Arial,sans-serif; }
         header .task_box .task_active_lists .task_active_list .task_list, header .activity_box .task_active_lists .task_active_list .task_list {
-          -webkit-border-radius: 4px;
-          -moz-border-radius: 4px;
-          -ms-border-radius: 4px;
-          border-radius: 4px;
+          -webkit-border-radius: 4;
+          -moz-border-radius: 4;
+          -ms-border-radius: 4;
+          border-radius: 4;
           margin: 0 0 5px 0;
           line-height: 50px;
           height: 50px;
           background: #fff;
           clear: both;
-          border: 1px solid #ededf0;
-          border-bottom: 1px solid #dcdce0;
+          /*border: 1px solid #ededf0;
+          border-bottom: 1px solid #dcdce0;*/
+          border: 1px solid #e2e2e2;
           box-shadow: none;
           position: relative;
           color: #8a959e; }
@@ -1480,7 +1487,7 @@ header {
             -o-transform: rotate(-1deg);
             -ms-transform: rotate(-1deg); }
           header .task_box .task_active_lists .task_active_list .task_list.important, header .activity_box .task_active_lists .task_active_list .task_list.important {
-            border: 1px solid #ed6d44;
+            border: 1px solid #f4c8bf;
             background: #ffebe7; }
             header .task_box .task_active_lists .task_active_list .task_list.important input[type="checkbox"], header .activity_box .task_active_lists .task_active_list .task_list.important input[type="checkbox"] {
               /*checked時の見た目*/ }
@@ -1492,23 +1499,30 @@ header {
               header .task_box .task_active_lists .task_active_list .task_list.important input[type="checkbox"]:checked + label::before, header .activity_box .task_active_lists .task_active_list .task_list.important input[type="checkbox"]:checked + label::before {
                 background: #db4c3f;
                 border-color: #ed6d44; }
+          header .task_box .task_active_lists .task_active_list .task_list .task_title, header .activity_box .task_active_lists .task_active_list .task_list .task_title {
+            color: #000000;
+            width: 70%;
+            font-size: 13px;
+            font-size: 1.3rem;
+            font-weight: normal; }
           header .task_box .task_active_lists .task_active_list .task_list .user_image, header .activity_box .task_active_lists .task_active_list .task_list .user_image {
             position: absolute;
-            right: 0;
-            top: 12px;
-            padding: 0 10px 0 0; }
+            top: 13px;
+            right: 15px; }
             header .task_box .task_active_lists .task_active_list .task_list .user_image img, header .activity_box .task_active_lists .task_active_list .task_list .user_image img {
-              width: 25px;
-              height: 25px; }
+              height: 25px;
+              width: 25px; }
           header .task_box .task_active_lists .task_active_list .task_list .noimage, header .activity_box .task_active_lists .task_active_list .task_list .noimage {
-            font-size: 11px;
-            font-size: 1.1rem;
+            font-size: 10px;
+            font-size: 1rem;
             position: absolute;
-            right: 10px;
-            top: 10px;
-            line-height: 25px;
+            top: 12px;
+            right: 15px;
             width: 25px;
-            height: 25px; }
+            height: 25px;
+            line-height: 25px;
+            text-align: center;
+            padding: 0; }
   header .activity_box {
     width: 400px;
     right: 60px;
@@ -3985,7 +3999,8 @@ input[type="checkbox"] {
       -o-transform: rotate(-1deg);
       -ms-transform: rotate(-1deg); }
     .task_replacement .task_people .handle {
-      margin-bottom: 15px; }
+      margin-bottom: 15px;
+      color: #333; }
     .task_replacement .task_people .finish {
       font-size: 12px;
       font-size: 1.2rem;
@@ -4008,7 +4023,8 @@ input[type="checkbox"] {
       font-size: 1.1rem;
       font-weight: normal;
       padding-left: 8px;
-      font-family: 'Helvetica neue',Helvetica,Arial,sans-serif; }
+      font-family: 'Helvetica neue',Helvetica,Arial,sans-serif;
+      color: #8a959e; }
     .task_replacement .task_people .task_lists {
       min-height: 50px; }
     .task_replacement .task_people .task_list {
