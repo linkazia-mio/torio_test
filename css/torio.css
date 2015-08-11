@@ -2991,7 +2991,7 @@ header {
   background: #fff;
   height: 50%;
   overflow: hidden;
-  padding: 10px 30px 10px 30px;
+  padding: 10px 0 10px 0;
   -webkit-border-radius: 0 0 4 4;
   -moz-border-radius: 0 0 4 4;
   -ms-border-radius: 0 0 4 4;
@@ -3000,12 +3000,12 @@ header {
     border-bottom: 1px solid #f5f5f5;
     width: 100%;
     position: relative;
-    padding: 15px 0 15px 0;
+    padding: 15px 20px 15px 20px;
     margin: 0; }
     #viewers_box .modal-body .view_group_member:first-child, #note_viewers_box .modal-body .view_group_member:first-child {
-      padding: 15px 0 15px 0; }
+      padding: 15px 20px 15px 20px; }
     #viewers_box .modal-body .view_group_member:last-child, #note_viewers_box .modal-body .view_group_member:last-child {
-      padding: 15px 0 25px 0;
+      padding: 15px 20px 25px 20px;
       border: none; }
     #viewers_box .modal-body .view_group_member dt, #note_viewers_box .modal-body .view_group_member dt {
       float: left;
@@ -3026,7 +3026,7 @@ header {
       #viewers_box .modal-body .view_group_member dd .user_friends, #note_viewers_box .modal-body .view_group_member dd .user_friends {
         position: absolute;
         top: 15px;
-        right: 0;
+        right: 20px;
         /*border: 1px solid $border_gray;
         @include border_radius(4);*/
         font-size: 13px;
