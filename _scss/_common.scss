@@ -403,7 +403,7 @@ header {
         }
       }
     }
-    .active_lists {
+    .task_active_lists {
       background: $white_gray;
       max-height: 600px;
       -webkit-box-shadow: 0 0px 2px rgba(0,0,0,0.15),inset 0 0px 0 rgba(255,255,255,0.5);
@@ -412,10 +412,10 @@ header {
       &.requeste {
         display: none;
       }
-      .active_list {
+      .task_active_list {
         margin: 0 15px;
         padding-bottom: 20px;
-        .active_list_title {
+        .task_active_list_title {
           @include fontsize(1.3);
           font-weight: bold;
           padding-top: 20px;
@@ -497,6 +497,10 @@ header {
       width: 370px;
     }
     .activity_lists {
+      max-height: 600px;
+      -webkit-box-shadow: 0 0px 2px rgba(0,0,0,0.15),inset 0 0px 0 rgba(255,255,255,0.5);
+      box-shadow: 0 0px 2px rgba(0,0,0,0.15),inset 0 0px 0 rgba(255,255,255,0.5);
+      overflow: hidden;
       .activity_mine {
         display: none;
       }

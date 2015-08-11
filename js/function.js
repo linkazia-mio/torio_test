@@ -294,14 +294,14 @@ window.onload=function(){
       event.stopPropagation();
     });
     $('.mine_btn').click(function () {
-      jQuery('.active_lists.mine').show();
-      jQuery('.active_lists.requeste').hide();
+      jQuery('.task_active_lists.mine').show();
+      jQuery('.task_active_lists.requeste').hide();
       $(this).addClass("active");
       $('.requeste_btn').removeClass("active");
     });
     $('.requeste_btn').click(function () {
-      jQuery('.active_lists.requeste').show();
-      jQuery('.active_lists.mine').hide();
+      jQuery('.task_active_lists.requeste').show();
+      jQuery('.task_active_lists.mine').hide();
       $(this).addClass("active");
       $('.mine_btn').removeClass("active");
     });
@@ -649,7 +649,15 @@ function actCustomScrollbar(){
           updateOnContentResize: true
         }
      });
-     $('.active_lists').mCustomScrollbar({
+     $('.task_active_lists').mCustomScrollbar({
+       autoHideScrollbar: true,
+       scrollInertia: 0,
+       advanced:{
+          autoScrollOnFocus: true,
+          updateOnContentResize: true
+        }
+     });
+     $('.activity_lists').mCustomScrollbar({
        autoHideScrollbar: true,
        scrollInertia: 0,
        advanced:{
