@@ -94,7 +94,7 @@ button {
   white-space: normal;
   @include opacity(1);
   padding: 10px 0;
-  z-index: 10;
+  z-index: 20;
   h3 {
     @include fontsize(1.4);
     border-bottom: 1px solid $border_white_gray;
@@ -181,7 +181,7 @@ button {
     white-space: normal;
     @include opacity(1);
     padding: 10px 0;
-    z-index: 10;
+    z-index: 50;
     h3 {
       @include fontsize(1.4);
       border-bottom: 1px solid $border_white_gray;
@@ -585,6 +585,9 @@ header {
         margin-top: 5px;
         color: $white_brack;
       }
+    }
+    ul {
+      margin: 20px 0 10px 0;
     }
   }
   &.fixed{
