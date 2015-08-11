@@ -1411,7 +1411,7 @@ header {
       color: #3A87BC;
       cursor: pointer; }
   header .task_box, header .activity_box {
-    right: 170px;
+    right: 150px;
     top: 60px; }
     header .task_box h3, header .activity_box h3 {
       text-align: center;
@@ -1527,7 +1527,7 @@ header {
             padding: 0; }
   header .activity_box {
     width: 400px;
-    right: 60px;
+    right: 110px;
     top: 60px; }
     header .activity_box ul {
       width: 360px; }
@@ -1592,19 +1592,20 @@ header {
         height: 40px;
         margin-right: 10px;
         line-height: 40px;
-        font-size: 13px;
-        font-size: 1.3rem; }
+        font-size: 12px;
+        font-size: 1.2rem; }
       header .account .account_info .user_name {
         font-size: 14px;
         font-size: 1.4rem;
         font-weight: bold;
         overflow: hidden;
         white-space: nowrap;
-        text-overflow: ellipsis; }
+        text-overflow: ellipsis;
+        margin-top: 2px; }
       header .account .account_info .user_rank {
         font-size: 12px;
         font-size: 1.2rem;
-        margin-top: 5px;
+        margin-top: 2px;
         color: #8a959e; }
     header .account ul {
       margin: 20px 0 10px 0; }
@@ -4748,7 +4749,7 @@ input[type="checkbox"] {
         -ms-border-radius: 2px 2px 0 0;
         border-radius: 2px 2px 0 0;
         position: relative;
-        background: #f36;
+        background: #4ad337;
         color: #fff;
         text-align: center;
         height: 35px;
