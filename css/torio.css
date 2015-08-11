@@ -4590,6 +4590,7 @@ input[type="checkbox"] {
     .note .note_edit .note_edit_inner {
       position: relative;
       z-index: 10;
+      min-width: 450px;
       -webkit-border-radius: 2px;
       -moz-border-radius: 2px;
       -ms-border-radius: 2px;
