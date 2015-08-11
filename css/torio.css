@@ -1183,7 +1183,8 @@ button:focus {
       padding: 10px 15px;
       display: block;
       font-size: 13px;
-      font-size: 1.3rem; }
+      font-size: 1.3rem;
+      color: #555555; }
       .popover ul li a:hover {
         background: #3A87BC;
         color: white;
