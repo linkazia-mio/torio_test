@@ -4682,19 +4682,19 @@ input[type="checkbox"] {
           padding-top: 10px;
           line-height: 25px;
           margin-right: 10px; }
-          .note .note_edit .note_edit_inner .like_comment_box .like_count:hover .balloon_box, .note .note_edit .note_edit_inner .like_comment_box .comment_count:hover .balloon_box {
-            display: block;
-            height: auto;
-            bottom: 28px;
-            left: 0;
-            text-align: left;
-            padding: 10px 10px; }
-            .note .note_edit .note_edit_inner .like_comment_box .like_count:hover .balloon_box ul, .note .note_edit .note_edit_inner .like_comment_box .comment_count:hover .balloon_box ul {
-              margin-bottom: 0; }
-              .note .note_edit .note_edit_inner .like_comment_box .like_count:hover .balloon_box ul li, .note .note_edit .note_edit_inner .like_comment_box .comment_count:hover .balloon_box ul li {
-                line-height: 1.9; }
-                .note .note_edit .note_edit_inner .like_comment_box .like_count:hover .balloon_box ul li span:hover, .note .note_edit .note_edit_inner .like_comment_box .comment_count:hover .balloon_box ul li span:hover {
-                  cursor: pointer; }
+          .note .note_edit .note_edit_inner .like_comment_box .like_count:hover, .note .note_edit .note_edit_inner .like_comment_box .comment_count:hover {
+            cursor: pointer; }
+            .note .note_edit .note_edit_inner .like_comment_box .like_count:hover .balloon_box, .note .note_edit .note_edit_inner .like_comment_box .comment_count:hover .balloon_box {
+              display: block;
+              height: auto;
+              bottom: 28px;
+              left: 0;
+              text-align: left;
+              padding: 10px 10px; }
+              .note .note_edit .note_edit_inner .like_comment_box .like_count:hover .balloon_box ul, .note .note_edit .note_edit_inner .like_comment_box .comment_count:hover .balloon_box ul {
+                margin-bottom: 0; }
+                .note .note_edit .note_edit_inner .like_comment_box .like_count:hover .balloon_box ul li, .note .note_edit .note_edit_inner .like_comment_box .comment_count:hover .balloon_box ul li {
+                  line-height: 1.9; }
       .note .note_edit .note_edit_inner .browse_count {
         font-size: 11px;
         font-size: 1.1rem;
@@ -4712,23 +4712,23 @@ input[type="checkbox"] {
           position: absolute;
           bottom: 10px;
           left: 0; }
-        .note .note_edit .note_edit_inner .browse_count:hover .balloon_box {
-          display: block;
-          height: auto;
-          width: 100%;
-          bottom: 30px;
-          left: 0;
-          text-align: left;
-          padding: 10px 10px; }
-          .note .note_edit .note_edit_inner .browse_count:hover .balloon_box ul {
-            margin-bottom: 0; }
-            .note .note_edit .note_edit_inner .browse_count:hover .balloon_box ul li {
-              line-height: 1.9;
-              overflow: hidden;
-              white-space: nowrap;
-              text-overflow: ellipsis; }
-              .note .note_edit .note_edit_inner .browse_count:hover .balloon_box ul li span:hover {
-                cursor: pointer; }
+        .note .note_edit .note_edit_inner .browse_count:hover {
+          cursor: pointer; }
+          .note .note_edit .note_edit_inner .browse_count:hover .balloon_box {
+            display: block;
+            height: auto;
+            width: 100%;
+            bottom: 30px;
+            left: 0;
+            text-align: left;
+            padding: 10px 10px; }
+            .note .note_edit .note_edit_inner .browse_count:hover .balloon_box ul {
+              margin-bottom: 0; }
+              .note .note_edit .note_edit_inner .browse_count:hover .balloon_box ul li {
+                line-height: 1.9;
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis; }
       .note .note_edit .note_edit_inner .counter {
         font-size: 11px;
         font-size: 1.1rem;

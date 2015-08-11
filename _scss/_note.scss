@@ -125,6 +125,7 @@
           line-height: 25px;
           margin-right: 10px;
           &:hover {
+            cursor: pointer;
             .balloon_box {
               display: block;
               height: auto;
@@ -136,11 +137,6 @@
                 margin-bottom: 0;
                 li {
                   line-height: 1.9;
-                  span {
-                    &:hover {
-                      cursor: pointer;
-                    }
-                  }
                 }
               }
             }
@@ -167,6 +163,7 @@
           left: 0;
         }
         &:hover {
+          cursor: pointer;
           .balloon_box {
             display: block;
             height: auto;
@@ -182,11 +179,6 @@
                 overflow: hidden;
                 white-space: nowrap;
                 text-overflow: ellipsis;
-                span {
-                  &:hover {
-                    cursor: pointer;
-                  }
-                }
               }
             }
           }
