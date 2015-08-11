@@ -296,10 +296,14 @@ window.onload=function(){
     $('.mine_btn').click(function () {
       jQuery('.active_lists.mine').show();
       jQuery('.active_lists.requeste').hide();
+      $(this).addClass("active");
+      $('.requeste_btn').removeClass("active");
     });
     $('.requeste_btn').click(function () {
       jQuery('.active_lists.requeste').show();
       jQuery('.active_lists.mine').hide();
+      $(this).addClass("active");
+      $('.mine_btn').removeClass("active");
     });
     //Activity
     $('.activity p').click(function () {
