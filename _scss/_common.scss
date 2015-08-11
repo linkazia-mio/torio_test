@@ -522,6 +522,7 @@ header {
         display: none;
       }
       .activity_list {
+        @include clearfix;
         padding: 20px 15px;
         position: relative;
         @include fontsize(1.2);
@@ -541,6 +542,10 @@ header {
           height: 30px;
           line-height: 30px;
           margin-right: 10px;
+        }
+        .activity_text {
+          float: left;
+          width: 320px;
         }
         .time {
           position: absolute;

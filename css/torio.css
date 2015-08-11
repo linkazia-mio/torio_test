@@ -1538,11 +1538,18 @@ header {
       header .activity_box .activity_lists.activity_mine {
         display: none; }
       header .activity_box .activity_lists .activity_list {
+        *zoom: 1;
         padding: 20px 15px;
         position: relative;
         font-size: 12px;
         font-size: 1.2rem;
         border-bottom: 1px solid #f5f5f5; }
+        header .activity_box .activity_lists .activity_list:after {
+          content: ".";
+          display: block;
+          clear: both;
+          height: 0;
+          visibility: hidden; }
         header .activity_box .activity_lists .activity_list .user_image {
           float: left;
           margin-right: 10px; }
@@ -1557,6 +1564,9 @@ header {
           height: 30px;
           line-height: 30px;
           margin-right: 10px; }
+        header .activity_box .activity_lists .activity_list .activity_text {
+          float: left;
+          width: 320px; }
         header .activity_box .activity_lists .activity_list .time {
           position: absolute;
           color: #8a959e;
