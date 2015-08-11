@@ -488,31 +488,21 @@
       top: -24px;
       li {
         a {
+          @include fontsize(2.6);
           box-sizing: border-box;
           display: inline-block;
           margin: 0;
+          text-decoration: none;
           width: 30px;
           height: 30px;
           border: none;
-          font-size: 20px;
-          line-height: 28px;
+          line-height: 26px;
           text-align: center;
           color: $white_brack;
-          &.medium-insert-action {
-            .fa {
-              @include fontsize(2.6);
-              font-family: 'torio_icon';
-              &.fa-camera {
-                &:before {
-                  content: "\e622";
-                }
-              }
-              &.fa-youtube-play {
-                &:before {
-                  content: "\e709";
-                }
-              }
-            }
+          &:hover {
+            color: $brack;
+            display: block;
+            margin-top: -10px;
           }
         }
       }

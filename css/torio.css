@@ -5005,24 +5005,22 @@ input[type="checkbox"] {
 .medium-editor-insert-plugin .medium-insert-buttons .medium-insert-buttons-addons {
   top: -24px; }
   .medium-editor-insert-plugin .medium-insert-buttons .medium-insert-buttons-addons li a {
+    font-size: 26px;
+    font-size: 2.6rem;
     box-sizing: border-box;
     display: inline-block;
     margin: 0;
+    text-decoration: none;
     width: 30px;
     height: 30px;
     border: none;
-    font-size: 20px;
-    line-height: 28px;
+    line-height: 26px;
     text-align: center;
     color: #8a959e; }
-    .medium-editor-insert-plugin .medium-insert-buttons .medium-insert-buttons-addons li a.medium-insert-action .fa {
-      font-size: 26px;
-      font-size: 2.6rem;
-      font-family: 'torio_icon'; }
-      .medium-editor-insert-plugin .medium-insert-buttons .medium-insert-buttons-addons li a.medium-insert-action .fa.fa-camera:before {
-        content: "\e622"; }
-      .medium-editor-insert-plugin .medium-insert-buttons .medium-insert-buttons-addons li a.medium-insert-action .fa.fa-youtube-play:before {
-        content: "\e709"; }
+    .medium-editor-insert-plugin .medium-insert-buttons .medium-insert-buttons-addons li a:hover {
+      color: #555555;
+      display: block;
+      margin-top: -10px; }
 
 .medium-editor-placeholder:after {
   font-family: 'ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro','メイリオ',Meiryo,'ＭＳ Ｐゴシック','MS PGothic',sans-serif;
