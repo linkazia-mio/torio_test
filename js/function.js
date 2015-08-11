@@ -311,7 +311,7 @@ window.onload=function(){
       event.stopPropagation();
       popover.hide();
       popoverBig.hide();
-      $('.activity_box.popover').toggle();
+      $('.activity_box').toggle();
     });
     //Check box
     $('.config .check').click(function () {
