@@ -1130,17 +1130,19 @@ button:focus {
   border-radius: 100px; }
 
 .popover {
-  -webkit-border-radius: 2;
-  -moz-border-radius: 2;
-  -ms-border-radius: 2;
-  border-radius: 2;
+  -webkit-border-radius: 3;
+  -moz-border-radius: 3;
+  -ms-border-radius: 3;
+  border-radius: 3;
   display: none;
   width: 250px;
   position: absolute;
   z-index: 1000;
   background: #fff;
-  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
-  border: none;
+  /*box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);*/
+  border: 1px solid #d6dadc;
+  border-bottom-color: #c4c9cc;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.15);
   line-height: 1.42857143;
   text-align: left;
   white-space: normal;
@@ -1210,16 +1212,18 @@ button:focus {
         content: "\e649"; }
 
 .main .popover {
-  -webkit-border-radius: 2;
-  -moz-border-radius: 2;
-  -ms-border-radius: 2;
-  border-radius: 2;
+  -webkit-border-radius: 3;
+  -moz-border-radius: 3;
+  -ms-border-radius: 3;
+  border-radius: 3;
   display: none;
   position: absolute;
   z-index: 1000;
   background: #fff;
-  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
-  border: none;
+  /*box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);*/
+  border: 1px solid #d6dadc;
+  border-bottom-color: #c4c9cc;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.15);
   line-height: 1.42857143;
   text-align: left;
   white-space: normal;
@@ -1289,24 +1293,26 @@ button:focus {
         content: "\e649"; }
 
 .popover_big {
-  -webkit-border-radius: 2;
-  -moz-border-radius: 2;
-  -ms-border-radius: 2;
-  border-radius: 2;
+  -webkit-border-radius: 3;
+  -moz-border-radius: 3;
+  -ms-border-radius: 3;
+  border-radius: 3;
   display: none;
   width: 500px;
   position: absolute;
   z-index: 1000;
   background: #fff;
-  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
-  border: none;
+  /*box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);*/
+  border: 1px solid #d6dadc;
+  border-bottom-color: #c4c9cc;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.15);
   line-height: 1.42857143;
   text-align: left;
   white-space: normal;
   opacity: 1;
   filter: alpha(opacity=100);
   padding: 10px 0 0 0;
-  z-index: 50; }
+  z-index: 110; }
   .popover_big h3 {
     font-size: 14px;
     font-size: 1.4rem;
@@ -1402,13 +1408,13 @@ header {
     header .global_menu_btn:hover {
       color: #3A87BC;
       cursor: pointer; }
-  header .task_box {
+  header .task_box, header .activity_box {
     right: 120px;
     top: 55px; }
-    header .task_box h3 {
+    header .task_box h3, header .activity_box h3 {
       text-align: center;
       border: none; }
-    header .task_box ul {
+    header .task_box ul, header .activity_box ul {
       -webkit-border-radius: 4px;
       -moz-border-radius: 4px;
       -ms-border-radius: 4px;
@@ -1419,41 +1425,41 @@ header {
       display: table;
       table-layout: fixed;
       color: #2e6b95; }
-      header .task_box ul li {
+      header .task_box ul li, header .activity_box ul li {
         display: table-cell;
         text-align: center;
         border-right: 1px;
         line-height: 28px; }
-        header .task_box ul li.active {
+        header .task_box ul li.active, header .activity_box ul li.active {
           background: #2e6b95;
           color: #fff; }
-        header .task_box ul li:hover {
+        header .task_box ul li:hover, header .activity_box ul li:hover {
           background: #3A87BC;
           color: #fff;
           cursor: pointer; }
-    header .task_box .active_lists {
+    header .task_box .active_lists, header .activity_box .active_lists {
       background: #f5f5f5;
-      height: 300px;
+      max-height: 600px;
       -webkit-box-shadow: 0 0px 2px rgba(0, 0, 0, 0.15), inset 0 0px 0 rgba(255, 255, 255, 0.5);
       box-shadow: 0 0px 2px rgba(0, 0, 0, 0.15), inset 0 0px 0 rgba(255, 255, 255, 0.5);
       overflow: hidden; }
-      header .task_box .active_lists.requeste {
+      header .task_box .active_lists.requeste, header .activity_box .active_lists.requeste {
         display: none; }
-      header .task_box .active_lists .active_list {
+      header .task_box .active_lists .active_list, header .activity_box .active_lists .active_list {
         margin: 0 15px;
         padding-bottom: 20px; }
-        header .task_box .active_lists .active_list .active_list_title {
+        header .task_box .active_lists .active_list .active_list_title, header .activity_box .active_lists .active_list .active_list_title {
           font-size: 13px;
           font-size: 1.3rem;
           font-weight: bold;
           padding-top: 20px;
           margin-bottom: 15px; }
-          header .task_box .active_lists .active_list .active_list_title .number {
+          header .task_box .active_lists .active_list .active_list_title .number, header .activity_box .active_lists .active_list .active_list_title .number {
             font-size: 11px;
             font-size: 1.1rem;
             color: #8a959e;
             margin-left: 3px; }
-        header .task_box .active_lists .active_list .task_list {
+        header .task_box .active_lists .active_list .task_list, header .activity_box .active_lists .active_list .task_list {
           -webkit-border-radius: 4px;
           -moz-border-radius: 4px;
           -ms-border-radius: 4px;
@@ -1468,33 +1474,33 @@ header {
           box-shadow: none;
           position: relative;
           color: #8a959e; }
-          header .task_box .active_lists .active_list .task_list.ui-sortable-helper {
+          header .task_box .active_lists .active_list .task_list.ui-sortable-helper, header .activity_box .active_lists .active_list .task_list.ui-sortable-helper {
             -moz-transform: rotate(-1deg);
             -webkit-transform: rotate(-1deg);
             -o-transform: rotate(-1deg);
             -ms-transform: rotate(-1deg); }
-          header .task_box .active_lists .active_list .task_list.important {
+          header .task_box .active_lists .active_list .task_list.important, header .activity_box .active_lists .active_list .task_list.important {
             border: 1px solid #ed6d44;
             background: #ffebe7; }
-            header .task_box .active_lists .active_list .task_list.important input[type="checkbox"] {
+            header .task_box .active_lists .active_list .task_list.important input[type="checkbox"], header .activity_box .active_lists .active_list .task_list.important input[type="checkbox"] {
               /*checked時の見た目*/ }
-              header .task_box .active_lists .active_list .task_list.important input[type="checkbox"] + label {
+              header .task_box .active_lists .active_list .task_list.important input[type="checkbox"] + label, header .activity_box .active_lists .active_list .task_list.important input[type="checkbox"] + label {
                 /*通常時の見た目*/ }
-                header .task_box .active_lists .active_list .task_list.important input[type="checkbox"] + label:before {
+                header .task_box .active_lists .active_list .task_list.important input[type="checkbox"] + label:before, header .activity_box .active_lists .active_list .task_list.important input[type="checkbox"] + label:before {
                   border: 1px solid #ed6d44;
                   background: #ffebe7; }
-              header .task_box .active_lists .active_list .task_list.important input[type="checkbox"]:checked + label::before {
+              header .task_box .active_lists .active_list .task_list.important input[type="checkbox"]:checked + label::before, header .activity_box .active_lists .active_list .task_list.important input[type="checkbox"]:checked + label::before {
                 background: #db4c3f;
                 border-color: #ed6d44; }
-          header .task_box .active_lists .active_list .task_list .user_image {
+          header .task_box .active_lists .active_list .task_list .user_image, header .activity_box .active_lists .active_list .task_list .user_image {
             position: absolute;
             right: 0;
             top: 12px;
             padding: 0 10px 0 0; }
-            header .task_box .active_lists .active_list .task_list .user_image img {
+            header .task_box .active_lists .active_list .task_list .user_image img, header .activity_box .active_lists .active_list .task_list .user_image img {
               width: 25px;
               height: 25px; }
-          header .task_box .active_lists .active_list .task_list .noimage {
+          header .task_box .active_lists .active_list .task_list .noimage, header .activity_box .active_lists .active_list .task_list .noimage {
             font-size: 11px;
             font-size: 1.1rem;
             position: absolute;
@@ -1504,9 +1510,12 @@ header {
             width: 25px;
             height: 25px; }
   header .activity_box {
+    width: 400px;
     right: 60px;
     top: 60px;
     z-index: 50; }
+    header .activity_box ul {
+      width: 370px; }
   header.fixed {
     position: fixed !important;
     left: 0;
