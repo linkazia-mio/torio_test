@@ -1888,13 +1888,14 @@ header {
           }
           .information {
             @extend .limit;
+            @include border_radius(2);
             position: relative;
+            margin-top: 20px;
+            border: 1px solid #cbcbcb;
+            padding-bottom: 40px;
             textarea {
               @include border_radius(2);
-              /*border: 1px solid $border_gray;*/
-              border: 1px solid #cbcbcb;
               padding: 13px;
-              margin-top: 20px;
               width: 100%;
               resize: vertical;
               &:focus {

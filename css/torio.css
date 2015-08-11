@@ -2707,16 +2707,20 @@ header {
           line-height: 21px;
           margin-top: 10px; }
       .modal .modal-dialog .modal-content .modal-body .task_detail .information {
-        position: relative; }
+        -webkit-border-radius: 2;
+        -moz-border-radius: 2;
+        -ms-border-radius: 2;
+        border-radius: 2;
+        position: relative;
+        margin-top: 20px;
+        border: 1px solid #cbcbcb;
+        padding-bottom: 40px; }
         .modal .modal-dialog .modal-content .modal-body .task_detail .information textarea {
           -webkit-border-radius: 2;
           -moz-border-radius: 2;
           -ms-border-radius: 2;
           border-radius: 2;
-          /*border: 1px solid $border_gray;*/
-          border: 1px solid #cbcbcb;
           padding: 13px;
-          margin-top: 20px;
           width: 100%;
           resize: vertical; }
           .modal .modal-dialog .modal-content .modal-body .task_detail .information textarea:focus {
