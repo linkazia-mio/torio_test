@@ -1313,7 +1313,7 @@ button:focus {
   opacity: 1;
   filter: alpha(opacity=100);
   padding: 10px 0 0 0;
-  z-index: 110; }
+  z-index: 1010; }
   .popover_big h3 {
     font-size: 14px;
     font-size: 1.4rem;
@@ -1527,8 +1527,7 @@ header {
   header .activity_box {
     width: 400px;
     right: 60px;
-    top: 60px;
-    z-index: 50; }
+    top: 60px; }
     header .activity_box ul {
       width: 370px; }
     header .activity_box .activity_lists {

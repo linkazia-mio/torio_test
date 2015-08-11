@@ -270,7 +270,7 @@ button {
   white-space: normal;
   @include opacity(1);
   padding: 10px 0 0 0;
-  z-index: 110;
+  z-index: 1010;
   h3 {
     @include fontsize(1.4);
     border-bottom: 1px solid $border_white_gray;
@@ -510,7 +510,6 @@ header {
     width: 400px;
     right: 60px;
     top: 60px;
-    z-index: 50;
     ul {
       width: 370px;
     }
