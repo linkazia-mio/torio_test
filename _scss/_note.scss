@@ -136,6 +136,11 @@
                 margin-bottom: 0;
                 li {
                   line-height: 1.9;
+                  span {
+                    &:hover {
+                      cursor: pointer;
+                    }
+                  }
                 }
               }
             }

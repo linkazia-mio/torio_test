@@ -701,6 +701,14 @@ function actCustomScrollbar(){
           updateOnContentResize: true
         }
      });
+     $('#note_like_box .modal-body').mCustomScrollbar({
+       autoHideScrollbar: true,
+       scrollInertia: 0,
+       advanced:{
+          autoScrollOnFocus: true,
+          updateOnContentResize: true
+        }
+     });
      $('#viewers_box .modal-body').mCustomScrollbar({
        autoHideScrollbar: true,
        scrollInertia: 0,
