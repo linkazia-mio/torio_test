@@ -4710,7 +4710,7 @@ input[type="checkbox"] {
           font-size: 2.3rem;
           margin-right: 5px;
           position: absolute;
-          bottom: 10px;
+          bottom: 9px;
           left: 0; }
         .note .note_edit .note_edit_inner .browse_count:hover {
           cursor: pointer; }
