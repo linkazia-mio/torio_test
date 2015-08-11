@@ -161,6 +161,7 @@ input[type="checkbox"] {
     }
     .handle {
       margin-bottom: 15px;
+      color: #333;
     }
     .finish {
       @include fontsize(1.2);
@@ -184,6 +185,7 @@ input[type="checkbox"] {
       font-weight: normal;
       padding-left: 8px;
       @include font_eng;
+      color: $white_brack;
     }
     .task_lists {
       min-height: 50px;
