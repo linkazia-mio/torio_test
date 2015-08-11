@@ -1327,13 +1327,13 @@ button:focus {
         color: #8a959e;
         cursor: default; }
     .popover_big .popover_inner input {
-      -webkit-border-radius: 4px;
-      -moz-border-radius: 4px;
-      -ms-border-radius: 4px;
-      border-radius: 4px;
+      -webkit-border-radius: 2px;
+      -moz-border-radius: 2px;
+      -ms-border-radius: 2px;
+      border-radius: 2px;
       height: 30px;
       padding: 5px;
-      width: 141px;
+      width: 258px;
       border: 1px solid #e2e2e2;
       margin-right: 10px; }
   .popover_big ul {

@@ -285,10 +285,10 @@ button {
       }
     }
     input {
-      @include border_radius();
+      @include border_radius(2px);
       height: 30px;
       padding: 5px;
-      width: 141px;
+      width: 258px;
       border: 1px solid $border_gray;
       margin-right: 10px;
     }

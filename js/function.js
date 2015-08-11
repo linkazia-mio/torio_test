@@ -323,7 +323,7 @@ window.onload=function(){
       event.stopPropagation();
       popover.hide();
       popoverBig.hide();
-      $('.detail_website_box.popover').toggle();
+      $('.detail_website_box').toggle();
     });
     $('.detail_website_box').click(function () {
       jQuery('.detail_website_box').show();
