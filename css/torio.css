@@ -1539,7 +1539,7 @@ header {
         display: none; }
       header .activity_box .activity_lists .activity_list {
         *zoom: 1;
-        padding: 20px 15px;
+        padding: 20px 20px 0 20px;
         position: relative;
         font-size: 12px;
         font-size: 1.2rem;
@@ -1566,7 +1566,8 @@ header {
           margin-right: 10px; }
         header .activity_box .activity_lists .activity_list .activity_text {
           float: left;
-          width: 320px; }
+          width: 310px;
+          margin-bottom: 30px; }
         header .activity_box .activity_lists .activity_list .time {
           position: absolute;
           color: #8a959e;
