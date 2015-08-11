@@ -79,14 +79,16 @@ button {
   }
 }
 .popover {
-  @include border_radius();
+  @include border_radius(3);
   display: none;
   width: 250px;
   position: absolute;
   z-index: 1000;
   background: #fff;
-  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
-  border: none;
+  /*box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);*/
+  border: 1px solid #d6dadc;
+  border-bottom-color: #c4c9cc;
+  box-shadow: 0 1px 6px rgba(0,0,0,.15);
   line-height: 1.42857143;
   text-align: left;
   white-space: normal;
@@ -123,11 +125,10 @@ button {
   ul {
     margin-bottom: 0;
     li {
-      line-height: 40px;
       a {
-        padding: 0 20px;
+        padding: 10px 15px;
         display: block;
-        height: 40px;
+        @include fontsize(1.3);
         &:hover {
           background: $torio_green;
           color: white;
@@ -166,13 +167,15 @@ button {
 }
 .main {
   .popover {
-    @include border_radius();
+    @include border_radius(3);
     display: none;
     position: absolute;
     z-index: 1000;
     background: #fff;
-    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
-    border: none;
+    /*box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);*/
+    border: 1px solid #d6dadc;
+    border-bottom-color: #c4c9cc;
+    box-shadow: 0 1px 6px rgba(0,0,0,.15);
     line-height: 1.42857143;
     text-align: left;
     white-space: normal;
@@ -209,11 +212,10 @@ button {
     ul {
       margin-bottom: 0;
       li {
-        line-height: 40px;
         a {
-          padding: 0 20px;
+          padding: 10px 15px;
           display: block;
-          height: 40px;
+          @include fontsize(1.3);
           &:hover {
             background: $torio_green;
             color: white;
@@ -252,14 +254,16 @@ button {
   }
 }
 .popover_big {
-  @include border_radius();
+  @include border_radius(3);
   display: none;
   width: 500px;
   position: absolute;
   z-index: 1000;
   background: #fff;
-  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
-  border: none;
+  /*box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);*/
+  border: 1px solid #d6dadc;
+  border-bottom-color: #c4c9cc;
+  box-shadow: 0 1px 6px rgba(0,0,0,.15);
   line-height: 1.42857143;
   text-align: left;
   white-space: normal;
