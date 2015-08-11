@@ -1335,7 +1335,7 @@ button:focus {
       padding: 5px;
       width: 258px;
       border: 1px solid #e2e2e2;
-      margin-right: 10px; }
+      margin: 0 10px 1px 0; }
   .popover_big ul {
     margin-bottom: 0; }
     .popover_big ul li {
