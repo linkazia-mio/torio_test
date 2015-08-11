@@ -496,6 +496,39 @@ header {
     ul {
       width: 370px;
     }
+    .activity_lists {
+      .activity_mine {
+        display: none;
+      }
+      .activity_list {
+        padding: 20px 15px;
+        position: relative;
+        @include fontsize(1.2);
+        border-bottom: 1px solid $border_white_gray;
+        .user_image {
+          float: left;
+          margin-right: 10px;
+          img {
+            width: 30px;
+            height: 30px;
+          }
+        }
+        .noimage {
+          @include fontsize(1.1);
+          float: left;
+          width: 30px;
+          height: 30px;
+          line-height: 30px;
+          margin-right: 10px;
+        }
+        .time {
+          position: absolute;
+          color: $white_brack;
+          right: 15px;
+          bottom: 10px;
+        }
+      }
+    }
   }
   &.fixed{
     position: fixed !important;
