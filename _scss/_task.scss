@@ -12,6 +12,7 @@
     padding: 10px 15px;
     background: #fff;
     color: $white_brack;
+    min-width: 590px;
     i {
       @include fontsize(2.6);
       position: absolute;
@@ -136,7 +137,9 @@ input[type="checkbox"] {
  task_replacement
 ---------------------------------------------------------------------------------------*/
 .task_replacement {
-  margin: 30px;
+  margin: 30px auto;
+  padding: 0 30px;
+  min-width: 650px;
   .placeholder {
     background: $dark_gray;
     min-height: 100px;
