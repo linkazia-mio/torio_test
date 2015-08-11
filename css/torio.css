@@ -1130,10 +1130,10 @@ button:focus {
   border-radius: 100px; }
 
 .popover {
-  -webkit-border-radius: 3;
-  -moz-border-radius: 3;
-  -ms-border-radius: 3;
-  border-radius: 3;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  border-radius: 3px;
   display: none;
   width: 250px;
   position: absolute;
@@ -1212,10 +1212,10 @@ button:focus {
         content: "\e649"; }
 
 .main .popover {
-  -webkit-border-radius: 3;
-  -moz-border-radius: 3;
-  -ms-border-radius: 3;
-  border-radius: 3;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  border-radius: 3px;
   display: none;
   position: absolute;
   z-index: 1000;
@@ -1293,10 +1293,10 @@ button:focus {
         content: "\e649"; }
 
 .popover_big {
-  -webkit-border-radius: 3;
-  -moz-border-radius: 3;
-  -ms-border-radius: 3;
-  border-radius: 3;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  border-radius: 3px;
   display: none;
   width: 500px;
   position: absolute;
@@ -1562,6 +1562,38 @@ header {
           color: #8a959e;
           right: 15px;
           bottom: 10px; }
+  header .account {
+    right: 20px;
+    top: 60px; }
+    header .account .account_info {
+      padding: 5px 15px 15px 15px;
+      border-bottom: 1px solid #f5f5f5; }
+      header .account .account_info .user_image {
+        float: left;
+        margin-right: 10px; }
+        header .account .account_info .user_image img {
+          width: 40px;
+          height: 40px; }
+      header .account .account_info .noimage {
+        float: left;
+        width: 40px;
+        height: 40px;
+        margin-right: 10px;
+        line-height: 40px;
+        font-size: 13px;
+        font-size: 1.3rem; }
+      header .account .account_info .user_name {
+        font-size: 14px;
+        font-size: 1.4rem;
+        font-weight: bold;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis; }
+      header .account .account_info .user_rank {
+        font-size: 12px;
+        font-size: 1.2rem;
+        margin-top: 5px;
+        color: #8a959e; }
   header.fixed {
     position: fixed !important;
     left: 0;

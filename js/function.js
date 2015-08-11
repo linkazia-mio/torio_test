@@ -329,6 +329,18 @@ window.onload=function(){
       $(this).addClass("active");
       $('.activity_mine_btn').removeClass("active");
     });
+    //Account
+    $('.me').click(function () {
+      $('.account').toggle( 'fade', '', 100 );
+      event.stopPropagation();
+      popover.hide();
+      popoverBig.hide();
+      $('.account').toggle();
+    });
+    $('.account').click(function () {
+      jQuery('.account').show();
+      event.stopPropagation();
+    });
     //Check box
     $('.config .check').click(function () {
       $('.check_box').toggle( 'fade', '', 100 );
