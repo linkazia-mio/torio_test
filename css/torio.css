@@ -1558,8 +1558,8 @@ header {
             width: 30px;
             height: 30px; }
         header .activity_box .activity_lists .activity_list .noimage {
-          font-size: 11px;
-          font-size: 1.1rem;
+          font-size: 10px;
+          font-size: 1rem;
           float: left;
           width: 30px;
           height: 30px;
