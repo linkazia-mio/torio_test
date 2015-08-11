@@ -1410,7 +1410,7 @@ header {
       cursor: pointer; }
   header .task_box, header .activity_box {
     right: 170px;
-    top: 53px; }
+    top: 60px; }
     header .task_box h3, header .activity_box h3 {
       text-align: center;
       border: none; }
