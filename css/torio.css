@@ -1521,7 +1521,7 @@ header {
       -webkit-box-shadow: 0 0px 2px rgba(0, 0, 0, 0.15), inset 0 0px 0 rgba(255, 255, 255, 0.5);
       box-shadow: 0 0px 2px rgba(0, 0, 0, 0.15), inset 0 0px 0 rgba(255, 255, 255, 0.5);
       overflow: hidden; }
-      header .activity_box .activity_lists .activity_mine {
+      header .activity_box .activity_lists.activity_mine {
         display: none; }
       header .activity_box .activity_lists .activity_list {
         padding: 20px 15px;
@@ -3010,6 +3010,9 @@ header {
     border-width: 6px 6px 0;
     border-color: #242424 transparent transparent transparent; }
 
+/*---------------------------------------------------------------------------------------
+ Loader
+---------------------------------------------------------------------------------------*/
 /*---------------------------------------------------------------------------------------
  File
 ---------------------------------------------------------------------------------------*/

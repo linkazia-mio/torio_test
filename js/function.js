@@ -313,6 +313,22 @@ window.onload=function(){
       popoverBig.hide();
       $('.activity_box').toggle();
     });
+    $('.activity_box').click(function () {
+      jQuery('.activity_box').show();
+      event.stopPropagation();
+    });
+    $('.activity_mine_btn').click(function () {
+      jQuery('.activity_mine').show();
+      jQuery('.activity_all').hide();
+      $(this).addClass("active");
+      $('.all_btn').removeClass("active");
+    });
+    $('.all_btn').click(function () {
+      jQuery('.activity_all').show();
+      jQuery('.activity_mine').hide();
+      $(this).addClass("active");
+      $('.activity_mine_btn').removeClass("active");
+    });
     //Check box
     $('.config .check').click(function () {
       $('.check_box').toggle( 'fade', '', 100 );
