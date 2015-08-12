@@ -121,6 +121,18 @@
   .user_image {
     margin: 30px auto 20px auto;
     text-align: center;
+    img {
+      width: 100px;
+      height: 100px;
+    }
+  }
+  .noimage {
+    @include fontsize(2.6);
+    margin: 30px auto 20px auto;
+    text-align: center;
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
   }
   .profile_name {
     @include fontsize(1.5);
