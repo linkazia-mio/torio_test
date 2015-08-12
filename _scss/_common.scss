@@ -354,6 +354,7 @@ header {
   /*border-bottom: 1px solid $border_gray;*/
   width: 100%;
   z-index: 1000;
+  height: 50px;
   .header_inner {
     height: 50px;
     position: relative;
@@ -1650,6 +1651,9 @@ header {
 /*---------------------------------------------------------------------------------------
  Modal
 ---------------------------------------------------------------------------------------*/
+.modal-open {
+  overflow: auto;
+}
 .modal {
   .modal_close {
     position: absolute;

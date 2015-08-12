@@ -252,6 +252,7 @@ window.onload=function(){
        })
   });
 
+
   $(function(){
        function adjust(){
             var h = $(window).height(); //ウィンドウの高さ

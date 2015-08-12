@@ -1386,7 +1386,8 @@ button:focus {
 header {
   /*border-bottom: 1px solid $border_gray;*/
   width: 100%;
-  z-index: 1000; }
+  z-index: 1000;
+  height: 50px; }
   header .header_inner {
     height: 50px;
     position: relative;
@@ -2473,6 +2474,9 @@ header {
 /*---------------------------------------------------------------------------------------
  Modal
 ---------------------------------------------------------------------------------------*/
+.modal-open {
+  overflow: auto; }
+
 .modal .modal_close {
   position: absolute;
   top: 0px;
@@ -5230,9 +5234,9 @@ input[type="checkbox"] {
 /*---------------------------------------------------------------------------------------
  Option
 ---------------------------------------------------------------------------------------*/
-.options .configuration {
+.option_config .configuration {
   padding: 0 30px 10px 30px; }
-  .options .configuration .configuration_inner {
+  .option_config .configuration .configuration_inner {
     -webkit-border-radius: 2px;
     -moz-border-radius: 2px;
     -ms-border-radius: 2px;
@@ -5246,64 +5250,64 @@ input[type="checkbox"] {
     border: 1px solid #ededf0;
     border-bottom: 1px solid #dcdce0;
     box-shadow: none; }
-    .options .configuration .configuration_inner.cancellation .configuration_title {
+    .option_config .configuration .configuration_inner.cancellation .configuration_title {
       margin-bottom: 0; }
-    .options .configuration .configuration_inner.cancellation .configuration_btn {
+    .option_config .configuration .configuration_inner.cancellation .configuration_btn {
       margin-top: 30px;
       display: none; }
-    .options .configuration .configuration_inner.cancellation .configuration_btn_show {
+    .option_config .configuration .configuration_inner.cancellation .configuration_btn_show {
       position: absolute;
       right: 45px;
       top: 30px;
       color: #8a959e; }
-      .options .configuration .configuration_inner.cancellation .configuration_btn_show span {
+      .option_config .configuration .configuration_inner.cancellation .configuration_btn_show span {
         padding-right: 20px; }
-        .options .configuration .configuration_inner.cancellation .configuration_btn_show span:hover {
+        .option_config .configuration .configuration_inner.cancellation .configuration_btn_show span:hover {
           cursor: pointer; }
-        .options .configuration .configuration_inner.cancellation .configuration_btn_show span.configuration_close {
+        .option_config .configuration .configuration_inner.cancellation .configuration_btn_show span.configuration_close {
           display: none; }
-        .options .configuration .configuration_inner.cancellation .configuration_btn_show span i {
+        .option_config .configuration .configuration_inner.cancellation .configuration_btn_show span i {
           font-size: 26px;
           font-size: 2.6rem;
           position: absolute;
           right: -5px;
           top: -2px; }
-    .options .configuration .configuration_inner .configuration_title {
+    .option_config .configuration .configuration_inner .configuration_title {
       font-size: 14px;
       font-size: 1.4rem;
       font-weight: bold;
       color: #555555;
       margin-bottom: 10px; }
-    .options .configuration .configuration_inner .input_box, .options .configuration .configuration_inner .select_box {
+    .option_config .configuration .configuration_inner .input_box, .option_config .configuration .configuration_inner .select_box {
       border: 1px solid #e2e2e2;
       width: 490px;
       padding: 10px 10px;
       margin-bottom: 20px;
       position: relative; }
-      .options .configuration .configuration_inner .input_box input, .options .configuration .configuration_inner .select_box input {
+      .option_config .configuration .configuration_inner .input_box input, .option_config .configuration .configuration_inner .select_box input {
         width: 100%; }
-        .options .configuration .configuration_inner .input_box input:focus, .options .configuration .configuration_inner .select_box input:focus {
+        .option_config .configuration .configuration_inner .input_box input:focus, .option_config .configuration .configuration_inner .select_box input:focus {
           outline: none; }
-      .options .configuration .configuration_inner .input_box .change, .options .configuration .configuration_inner .select_box .change {
+      .option_config .configuration .configuration_inner .input_box .change, .option_config .configuration .configuration_inner .select_box .change {
         position: absolute;
         right: 20px;
         top: 10px; }
-        .options .configuration .configuration_inner .input_box .change a, .options .configuration .configuration_inner .select_box .change a {
+        .option_config .configuration .configuration_inner .input_box .change a, .option_config .configuration .configuration_inner .select_box .change a {
           color: #8a959e; }
-    .options .configuration .configuration_inner .select_box {
+    .option_config .configuration .configuration_inner .select_box {
       -webkit-border-radius: 0;
       -moz-border-radius: 0;
       -ms-border-radius: 0;
       border-radius: 0;
       position: relative;
       padding: 0; }
-      .options .configuration .configuration_inner .select_box select {
+      .option_config .configuration .configuration_inner .select_box select {
         border: none;
         margin: 0;
         padding: 10px;
         width: 100%;
         z-index: 10; }
-      .options .configuration .configuration_inner .select_box:after {
+      .option_config .configuration .configuration_inner .select_box:after {
         position: absolute;
         right: 7px;
         top: 2px;
