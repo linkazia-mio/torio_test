@@ -61,6 +61,7 @@
         margin-bottom: 20px;
         position: relative;
         input {
+          width: 100%;
           &:focus {
             outline: none;
           }
@@ -69,6 +70,9 @@
           position: absolute;
           right: 20px;
           top: 10px;
+          a {
+            color: $white_brack;
+          }
         }
       }
       .select_box {
@@ -122,9 +126,13 @@
 ---------------------------------------------------------------------------------------*/
 .profile {
   h3 {
-    padding: 0 0 20px 20px;
+    height: 45px;
+    line-height: 45px;
+    padding-left: 13px;
+    margin: 0;
     border-bottom: 1px solid $border_gray;
     font-weight: bold;
+    color: $dark_brack;
   }
   .user_image {
     margin: 30px auto 20px auto;
