@@ -59,18 +59,30 @@
         position: relative;
         input {
           width: 100%;
+          z-index: 10;
           &:focus {
             outline: none;
+          }
+        }
+        &.disabled {
+          background: $white_gray;
+          input {
+            pointer-events : none;
           }
         }
         .change {
           position: absolute;
           right: 20px;
           top: 10px;
-          a {
-            color: $white_brack;
+          color: $white_brack;
+          z-index: 100;
+          &:hover {
+            cursor: pointer;
           }
         }
+      }
+      .input_box_pass {
+        @extend .input_box;
       }
       .select_box {
         @extend .input_box;
@@ -268,6 +280,7 @@ h3.profile_title {
       }
       .configuration_btn_box {
         @include clearfix;
+        padding-top: 30px;
         .configuration_btn {
           float: right;
           &.delete {
