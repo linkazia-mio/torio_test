@@ -494,14 +494,6 @@ window.onload=function(){
       $('.input_box_pass').removeClass('disabled');
       event.stopPropagation();
     });
-    $('.input_box_pass input').click(function () {
-      $('.input_box_pass').removeClass('disabled');
-      event.stopPropagation();
-    });
-    $(document).click(function() {
-      $('.input_box_pass').addClass('disabled');
-      event.stopPropagation();
-    });
 
 
   });
