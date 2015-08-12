@@ -5270,7 +5270,7 @@ input[type="checkbox"], .option .configuration .configuration_inner [type="check
           font-size: 2.6rem;
           position: absolute;
           right: -5px;
-          top: 0; }
+          top: -2px; }
     .option .configuration .configuration_inner .configuration_title, .carousel .carousel-inner .item .modal-header .download .configuration .configuration_inner .configuration_title, .carousel .carousel-inner .item .modal-header .like .configuration .configuration_inner .configuration_title {
       font-size: 14px;
       font-size: 1.4rem;
@@ -5335,3 +5335,77 @@ input[type="checkbox"], .option .configuration .configuration_inner [type="check
   padding: 0 0 20px 20px;
   border-bottom: 1px solid #e2e2e2;
   font-weight: bold; }
+
+.profile .user_image {
+  margin: 30px auto 20px auto;
+  text-align: center; }
+
+.profile .profile_name {
+  font-size: 15px;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  text-align: center;
+  font-weight: bold; }
+
+.profile .profile_mail {
+  font-size: 12px;
+  font-size: 1.2rem;
+  text-align: center;
+  margin-bottom: 20px; }
+
+.profile .profile_comment {
+  font-size: 12px;
+  font-size: 1.2rem;
+  padding: 0 30px;
+  color: #8a959e; }
+
+.profile .profile_link {
+  text-align: center; }
+  .profile .profile_link li {
+    display: inline-block;
+    margin: 0 5px;
+    position: relative; }
+    .profile .profile_link li a {
+      -webkit-border-radius: 100px;
+      -moz-border-radius: 100px;
+      -ms-border-radius: 100px;
+      border-radius: 100px;
+      color: #8a959e;
+      height: 30px;
+      width: 30px;
+      line-height: 30px;
+      display: block;
+      border: 1px solid #8a959e; }
+      .profile .profile_link li a i {
+        font-size: 26px;
+        font-size: 2.6rem;
+        position: absolute;
+        left: 2px;
+        top: 2px; }
+      .profile .profile_link li a:hover {
+        color: #3A87BC;
+        border: 1px solid #3A87BC; }
+
+.profile hr {
+  width: 40%;
+  margin: 30px auto; }
+
+.profile .profile_settings li {
+  position: relative; }
+  .profile .profile_settings li a {
+    display: block;
+    height: 45px;
+    line-height: 45px;
+    padding-left: 40px; }
+    .profile .profile_settings li a:hover {
+      background: #3A87BC;
+      color: white; }
+      .profile .profile_settings li a:hover i {
+        color: white; }
+  .profile .profile_settings li i {
+    font-size: 26px;
+    font-size: 2.6rem;
+    color: #8a959e;
+    position: absolute;
+    top: 10px;
+    left: 10px; }

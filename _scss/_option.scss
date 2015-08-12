@@ -43,7 +43,7 @@
               @include fontsize(2.6);
               position: absolute;
               right: -5px;
-              top: 0;
+              top: -2px;
             }
           }
         }
@@ -117,5 +117,81 @@
     padding: 0 0 20px 20px;
     border-bottom: 1px solid $border_gray;
     font-weight: bold;
+  }
+  .user_image {
+    margin: 30px auto 20px auto;
+    text-align: center;
+  }
+  .profile_name {
+    @include fontsize(1.5);
+    margin-bottom: 10px;
+    text-align: center;
+    font-weight: bold;
+  }
+  .profile_mail {
+    @include fontsize(1.2);
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .profile_comment {
+    @include fontsize(1.2);
+    padding: 0 30px;
+    color: $white_brack;
+  }
+  .profile_link {
+    text-align: center;
+    li {
+      display: inline-block;
+      margin: 0 5px;
+      position: relative;
+      a {
+        @include border_radius(100px);
+        color: $white_brack;
+        height: 30px;
+        width: 30px;
+        line-height: 30px;
+        display: block;
+        border: 1px solid $white_brack;
+        i {
+          @include fontsize(2.6);
+          position: absolute;
+          left: 2px;
+          top: 2px;
+        }
+        &:hover {
+          color: $torio_green;
+          border: 1px solid $torio_green;
+        }
+      }
+    }
+  }
+  hr {
+    width: 40%;
+    margin: 30px auto;
+  }
+  .profile_settings {
+    li {
+      position: relative;
+      a {
+        display: block;
+        height: 45px;
+        line-height: 45px;
+        padding-left: 40px;
+        &:hover {
+          background: $torio_green;
+          color: white;
+          i {
+            color: white;
+          }
+        }
+      }
+      i {
+        @include fontsize(2.6);
+        color: $white_brack;
+        position: absolute;
+        top: 10px;
+        left: 10px;
+      }
+    }
   }
 }
