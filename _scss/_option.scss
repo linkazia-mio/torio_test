@@ -1,0 +1,60 @@
+/*---------------------------------------------------------------------------------------
+ Option
+---------------------------------------------------------------------------------------*/
+.option {
+  .configuration {
+    padding: 0 30px;
+    .configuration_inner {
+      @include border_radius(2px);
+      max-width: 750px;
+      min-width: 590px;
+      margin: 0 auto;
+      padding: 50px;
+      background: #fff;
+      position: relative;
+      border: 1px solid #ededf0;
+      border-bottom: 1px solid #dcdce0;
+      box-shadow: none;
+      .configuration_title {
+        @include fontsize(1.4);
+        font-weight: bold;
+        color: $brack;
+        margin-bottom: 10px;
+      }
+      input {
+        border: 1px solid $border_gray;
+        width: 490px;
+        padding: 10px 10px;
+        margin-bottom: 20px;
+        &:focus {
+          outline: none;
+        }
+      }
+      .select_box {
+        @extend input;
+        @include border_radius(0);
+        position: relative;
+        padding: 0;
+        select {
+          border: none;
+          margin: 0;
+          padding: 10px;
+          width: 100%;
+          z-index: 10;
+        }
+        &:after {
+          position: absolute;
+          right: 7px;
+          top: 2px;
+          height: 26px;
+          width: 26px;
+          font-family: 'torio_icon';
+          content: "\e666";
+          color: $white_brack;
+          z-index: 1;
+          display: block;
+        }
+      }
+    }
+  }
+}
