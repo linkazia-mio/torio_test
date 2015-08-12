@@ -1,7 +1,7 @@
 /*---------------------------------------------------------------------------------------
  Option
 ---------------------------------------------------------------------------------------*/
-.option {
+.options {
   .configuration {
     padding: 0 30px 10px 30px;
     .configuration_inner {
@@ -230,6 +230,41 @@ h3.profile_title {
         position: absolute;
         top: 10px;
         left: 10px;
+      }
+    }
+  }
+}
+
+/*---------------------------------------------------------------------------------------
+ Cancellation_box
+---------------------------------------------------------------------------------------*/
+#cancellation_box {
+  .modal-body {
+    &.white {
+      border: none;
+      .attention {
+        @include border_radius(2px);
+        background: $white_red;
+        padding: 20px;
+        color: $dark_red;
+      }
+      .caution {
+        @include fontsize(1.8);
+        color: $dark_red;
+        margin: 30px 0;
+      }
+      .data {
+        font-weight: bold;
+        padding-bottom: 10px;
+        border-bottom: 1px solid $border_gray;
+        margin-bottom: 10px;
+      }
+      .data_list {
+        padding-left: 20px;
+        margin-bottom: 20px;
+        li {
+          list-style: disc;
+        }
       }
     }
   }
