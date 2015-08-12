@@ -307,11 +307,13 @@
         <!--/Global_menu-->
         <!--Page_menu/-->
         <div class="page_menu ui-widget-content">
+          <h3 class="profile_title">Profile</h3>
           <!--Profile/-->
           <div class="profile">
-            <h3>Profile</h3>
             <!-- <p class="user_image"><img src="http://placehold.it/100x100"></p> -->
-            <p class="noimage">KO</p>
+            <div class="noimage_box">
+              <p class="noimage">KO</p>
+            </div>
             <p class="profile_name">小松健太</p>
             <p class="profile_mail">kenta.b210@gmail.com</p>
             <ul class="profile_link">
@@ -387,7 +389,7 @@
               <div class="configuration_inner cancellation">
                 <p class="configuration_title">アカウントを解約</p>
                 <p class="configuration_btn_show"><span class="configuration_open">開く<i class="icon-arrow-drop-down"></i></span><span class="configuration_close">閉じる<i class="icon-arrow-drop-up"></i></span></p>
-                <button class="configuration_btn delete">解約</button>
+                <button class="configuration_btn delete" data-toggle="modal" data-target="#cancellation_box">解約</button>
               </div>
             </div>
             <!--/Configuration-->
@@ -556,8 +558,8 @@
         </div>
       </div>
       <!--/Add member-->
-      <!--Task Detail/-->
-      <div class="modal fade" id="task_detail" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <!--Cancellation box/-->
+      <div class="modal fade" id="cancellation_box" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
         <button type="button" class="modal_close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <div class="modal-dialog" role="document">
           <!--modal-content_1/-->
@@ -607,55 +609,12 @@
                   </div>
                 </div>
               </div>
-              <!--Task_add_requester/-->
-              <div class="task_add_requester popover">
-                <input type="text" placeholder="メンバーを探す"></input>
-                <ul>
-                  <li><button><span class="user_image"><img src="http://placehold.it/100x100"></span>小松 健太</button></li>
-                  <li><button><span class="user_image"><img src="http://placehold.it/100x100"></span>原戸 陵至</button></li>
-                  <li><button><span class="noimage">TO</span>大崎 太加彦</button></li>
-                </ul>
-              </div>
-              <!--/Task_add_requester-->
-              <!--Task_add_worker/-->
-              <div class="task_add_worker popover">
-                <input type="text" placeholder="メンバーを探す"></input>
-                <ul>
-                  <li><button><span class="user_image"><img src="http://placehold.it/100x100"></span>小松 健太</button></li>
-                  <li><button><span class="user_image"><img src="http://placehold.it/100x100"></span>原戸 陵至</button></li>
-                  <li><button><span class="noimage">TO</span>大崎 太加彦</button></li>
-                </ul>
-              </div>
-              <!--/Task_add_worker-->
-              <!--/limit_add_time-->
-              <div class="limit_add_time popover">
-                <div class="calendar">
-                  <input type="text" id="limlt_date"/>
-                </div>
-                <div class="select_box">
-                  <select>
-                    <option value="">繰返しなし</option>
-                    <option value="">繰返しなし</option>
-                    <option value="">選択肢02</option>
-                    <option value="">選択肢03</option>
-                  </select>
-                </div>
-                <div class="task_add_time_footer">
-                  <button class="btn_cancel">キャンセル</button>
-                  <button class="btn_add_task">保存する</button>
-                </div>
-              </div>
-              <!--/limit_add_time-->
             </div>
             <!--/modal-content_1-->
-            <div class="modal-footer task_modal_footer gray">
-              <textarea class="description" placeholder="コメントを入力してください..."></textarea>
-              <button type="button" class="btn btn-primary">コメント</button>
-            </div>
           </div>
         </div>
       </div>
-      <!--/Task Detail-->
+      <!--/Cancellation box-->
     </div>
   </body>
 

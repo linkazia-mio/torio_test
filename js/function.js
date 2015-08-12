@@ -221,7 +221,8 @@ window.onload=function(){
   $(function(){
         function adjust(){
              var h = $(window).height(); //ウィンドウの高さ
-             $('.profile').css('height', h-53); //可変部分の高さを適用
+             var h4= $('.profile_title').height(); //他要素の高さ
+             $('.profile').css('height', h-h4-53); //可変部分の高さを適用
         }
        adjust();
        $(window).on('resize', function(){
