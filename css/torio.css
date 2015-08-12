@@ -5199,7 +5199,7 @@ input[type="checkbox"], .option .configuration .configuration_inner [type="check
  Option
 ---------------------------------------------------------------------------------------*/
 .option .configuration, .carousel .carousel-inner .item .modal-header .download .configuration, .carousel .carousel-inner .item .modal-header .like .configuration {
-  padding: 0 30px; }
+  padding: 0 30px 10px 30px; }
   .option .configuration .configuration_inner, .carousel .carousel-inner .item .modal-header .download .configuration .configuration_inner, .carousel .carousel-inner .item .modal-header .like .configuration .configuration_inner {
     -webkit-border-radius: 2px;
     -moz-border-radius: 2px;
@@ -5207,13 +5207,35 @@ input[type="checkbox"], .option .configuration .configuration_inner [type="check
     border-radius: 2px;
     max-width: 750px;
     min-width: 590px;
-    margin: 0 auto;
-    padding: 50px;
+    margin: 0 auto 30px auto;
+    padding: 30px 50px;
     background: #fff;
     position: relative;
     border: 1px solid #ededf0;
     border-bottom: 1px solid #dcdce0;
     box-shadow: none; }
+    .option .configuration .configuration_inner.cancellation .configuration_title, .carousel .carousel-inner .item .modal-header .download .configuration .configuration_inner.cancellation .configuration_title, .carousel .carousel-inner .item .modal-header .like .configuration .configuration_inner.cancellation .configuration_title {
+      margin-bottom: 0; }
+    .option .configuration .configuration_inner.cancellation .configuration_btn, .carousel .carousel-inner .item .modal-header .download .configuration .configuration_inner.cancellation .configuration_btn, .carousel .carousel-inner .item .modal-header .like .configuration .configuration_inner.cancellation .configuration_btn {
+      margin-top: 30px;
+      display: none; }
+    .option .configuration .configuration_inner.cancellation .configuration_btn_show, .carousel .carousel-inner .item .modal-header .download .configuration .configuration_inner.cancellation .configuration_btn_show, .carousel .carousel-inner .item .modal-header .like .configuration .configuration_inner.cancellation .configuration_btn_show {
+      position: absolute;
+      right: 45px;
+      top: 30px;
+      color: #8a959e; }
+      .option .configuration .configuration_inner.cancellation .configuration_btn_show span, .carousel .carousel-inner .item .modal-header .download .configuration .configuration_inner.cancellation .configuration_btn_show span, .carousel .carousel-inner .item .modal-header .like .configuration .configuration_inner.cancellation .configuration_btn_show span {
+        padding-right: 20px; }
+        .option .configuration .configuration_inner.cancellation .configuration_btn_show span:hover, .carousel .carousel-inner .item .modal-header .download .configuration .configuration_inner.cancellation .configuration_btn_show span:hover, .carousel .carousel-inner .item .modal-header .like .configuration .configuration_inner.cancellation .configuration_btn_show span:hover {
+          cursor: pointer; }
+        .option .configuration .configuration_inner.cancellation .configuration_btn_show span.configuration_close, .carousel .carousel-inner .item .modal-header .download .configuration .configuration_inner.cancellation .configuration_btn_show span.configuration_close, .carousel .carousel-inner .item .modal-header .like .configuration .configuration_inner.cancellation .configuration_btn_show span.configuration_close {
+          display: none; }
+        .option .configuration .configuration_inner.cancellation .configuration_btn_show span i, .carousel .carousel-inner .item .modal-header .download .configuration .configuration_inner.cancellation .configuration_btn_show span i, .carousel .carousel-inner .item .modal-header .like .configuration .configuration_inner.cancellation .configuration_btn_show span i {
+          font-size: 26px;
+          font-size: 2.6rem;
+          position: absolute;
+          right: -5px;
+          top: 0; }
     .option .configuration .configuration_inner .configuration_title, .carousel .carousel-inner .item .modal-header .download .configuration .configuration_inner .configuration_title, .carousel .carousel-inner .item .modal-header .like .configuration .configuration_inner .configuration_title {
       font-size: 14px;
       font-size: 1.4rem;
@@ -5251,3 +5273,22 @@ input[type="checkbox"], .option .configuration .configuration_inner [type="check
         color: #8a959e;
         z-index: 1;
         display: block; }
+
+/*---------------------------------------------------------------------------------------
+ Configuration_btn
+---------------------------------------------------------------------------------------*/
+.configuration_btn {
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  border-radius: 4px;
+  width: 150px;
+  height: 50px;
+  line-height: 50px;
+  color: white;
+  background: #3A87BC; }
+  .configuration_btn.delete {
+    background: #db4c3f; }
+  .configuration_btn:hover {
+    opacity: 0.7;
+    filter: alpha(opacity=70); }

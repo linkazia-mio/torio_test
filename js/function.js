@@ -464,6 +464,18 @@ window.onload=function(){
     $('.item .option').click(function () {
       $('.item_option_box').toggle( 'fade', '', 100 );
     });
+    //configuration_btn_show
+    $('.configuration_btn_show .configuration_open').click(function () {
+      $('.configuration_btn.delete').toggle();
+      $('.configuration_open').hide();
+      $('.configuration_close').show();
+    });
+    //configuration_btn_show
+    $('.configuration_btn_show .configuration_close').click(function () {
+      $('.configuration_btn.delete').toggle();
+      $('.configuration_open').show();
+      $('.configuration_close').hide();
+    });
 
 
   });
