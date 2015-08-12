@@ -149,8 +149,12 @@ window.onload=function(){
   });
 
   //リストを作成するボタン表示
-  $('.task_create').click(function () {
-    jQuery('.btn_add_task_create').toggle();
+  $('.task_create_inner input').click(function () {
+    jQuery('.btn_add_task_create').show();
+    event.stopPropagation();
+  });
+  $(document).click(function() {
+    $('.btn_add_task_create').hide();
   });
 
   //タスク入力部分
@@ -276,7 +280,6 @@ window.onload=function(){
   $(document).click(function() {
     popover.hide();
     popoverBig.hide();
-    $('.btn_add_task_create').hide();
   });
 
 
