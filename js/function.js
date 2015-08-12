@@ -232,29 +232,7 @@ window.onload=function(){
   $(function(){
         function adjust(){
              var h = $(window).height(); //ウィンドウの高さ
-             $('.detail .file').css('height', h-53); //可変部分の高さを適用
-        }
-       adjust();
-       $(window).on('resize', function(){
-            adjust();
-       })
-  });
-
-  $(function(){
-        function adjust(){
-             var h = $(window).height(); //ウィンドウの高さ
-             $('.detail .task').css('height', h-53); //可変部分の高さを適用
-        }
-       adjust();
-       $(window).on('resize', function(){
-            adjust();
-       })
-  });
-
-  $(function(){
-        function adjust(){
-             var h = $(window).height(); //ウィンドウの高さ
-             $('.detail .note').css('height', h-53); //可変部分の高さを適用
+             $('.detail').css('height', h-50); //可変部分の高さを適用
         }
        adjust();
        $(window).on('resize', function(){
@@ -648,23 +626,7 @@ function actCustomScrollbar(){
           updateOnContentResize: true
         }
      });
-     $('.detail .file').mCustomScrollbar({
-       autoHideScrollbar: true,
-       scrollInertia: 0,
-       advanced:{
-          autoScrollOnFocus: true,
-          updateOnContentResize: true
-        }
-     });
-     $('.detail .task').mCustomScrollbar({
-       autoHideScrollbar: true,
-       scrollInertia: 0,
-       advanced:{
-          autoScrollOnFocus: true,
-          updateOnContentResize: true
-        }
-     });
-     $('.detail .note').mCustomScrollbar({
+     $('.detail').mCustomScrollbar({
        autoHideScrollbar: true,
        scrollInertia: 0,
        advanced:{
