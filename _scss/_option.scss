@@ -54,17 +54,25 @@
         color: $brack;
         margin-bottom: 10px;
       }
-      input {
+      .input_box {
         border: 1px solid $border_gray;
         width: 490px;
         padding: 10px 10px;
         margin-bottom: 20px;
-        &:focus {
-          outline: none;
+        position: relative;
+        input {
+          &:focus {
+            outline: none;
+          }
+        }
+        .change {
+          position: absolute;
+          right: 20px;
+          top: 10px;
         }
       }
       .select_box {
-        @extend input;
+        @extend .input_box;
         @include border_radius(0);
         position: relative;
         padding: 0;

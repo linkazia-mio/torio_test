@@ -14,17 +14,16 @@ audio:not([controls]) {
 details {
   display: block; }
 
-input[type="number"], .option .configuration .configuration_inner [type="number"].select_box, .carousel .carousel-inner .item .modal-header .download .configuration .configuration_inner [type="number"].select_box, .carousel .carousel-inner .item .modal-header .like .configuration .configuration_inner [type="number"].select_box {
+input[type="number"] {
   width: auto; }
 
-input[type="search"], .option .configuration .configuration_inner [type="search"].select_box, .carousel .carousel-inner .item .modal-header .download .configuration .configuration_inner [type="search"].select_box, .carousel .carousel-inner .item .modal-header .like .configuration .configuration_inner [type="search"].select_box {
+input[type="search"] {
   -webkit-appearance: textfield; }
   input[type="search"]::-webkit-search-cancel-button,
-  .option .configuration .configuration_inner [type="search"].select_box::-webkit-search-cancel-button,
-  .carousel .carousel-inner .item .modal-header .download .configuration .configuration_inner [type="search"].select_box::-webkit-search-cancel-button, .carousel .carousel-inner .item .modal-header .like .configuration .configuration_inner [type="search"].select_box::-webkit-search-cancel-button, input[type="search"]::-webkit-search-decoration, .option .configuration .configuration_inner [type="search"].select_box::-webkit-search-decoration, .carousel .carousel-inner .item .modal-header .download .configuration .configuration_inner [type="search"].select_box::-webkit-search-decoration, .carousel .carousel-inner .item .modal-header .like .configuration .configuration_inner [type="search"].select_box::-webkit-search-decoration {
+  input[type="search"]::-webkit-search-decoration {
     -webkit-appearance: none; }
 
-input:focus, .option .configuration .configuration_inner .select_box:focus, .carousel .carousel-inner .item .modal-header .download .configuration .configuration_inner .select_box:focus, .carousel .carousel-inner .item .modal-header .like .configuration .configuration_inner .select_box:focus {
+input:focus {
   outline: none; }
 
 main {
@@ -106,15 +105,13 @@ video {
 
 button,
 input,
-.option .configuration .configuration_inner .select_box,
-.carousel .carousel-inner .item .modal-header .download .configuration .configuration_inner .select_box, .carousel .carousel-inner .item .modal-header .like .configuration .configuration_inner .select_box, select,
+select,
 textarea {
   background-color: transparent; }
 
 button,
 input,
-.option .configuration .configuration_inner .select_box,
-.carousel .carousel-inner .item .modal-header .download .configuration .configuration_inner .select_box, .carousel .carousel-inner .item .modal-header .like .configuration .configuration_inner .select_box, select,
+select,
 textarea {
   color: inherit;
   font-family: inherit;
@@ -1170,7 +1167,7 @@ button:focus {
       .popover .popover_inner .text:hover {
         color: #8a959e;
         cursor: default; }
-    .popover .popover_inner input, .popover .popover_inner .option .configuration .configuration_inner .select_box, .option .configuration .configuration_inner .popover .popover_inner .select_box, .popover .popover_inner .carousel .carousel-inner .item .modal-header .download .configuration .configuration_inner .select_box, .carousel .carousel-inner .item .modal-header .download .configuration .configuration_inner .popover .popover_inner .select_box, .popover .popover_inner .carousel .carousel-inner .item .modal-header .like .configuration .configuration_inner .select_box, .carousel .carousel-inner .item .modal-header .like .configuration .configuration_inner .popover .popover_inner .select_box {
+    .popover .popover_inner input {
       -webkit-border-radius: 4px;
       -moz-border-radius: 4px;
       -ms-border-radius: 4px;
@@ -1252,7 +1249,7 @@ button:focus {
       .main .popover .popover_inner .text:hover {
         color: #8a959e;
         cursor: default; }
-    .main .popover .popover_inner input, .main .popover .popover_inner .option .configuration .configuration_inner .select_box, .option .configuration .configuration_inner .main .popover .popover_inner .select_box, .main .popover .popover_inner .carousel .carousel-inner .item .modal-header .download .configuration .configuration_inner .select_box, .carousel .carousel-inner .item .modal-header .download .configuration .configuration_inner .main .popover .popover_inner .select_box, .main .popover .popover_inner .carousel .carousel-inner .item .modal-header .like .configuration .configuration_inner .select_box, .carousel .carousel-inner .item .modal-header .like .configuration .configuration_inner .main .popover .popover_inner .select_box {
+    .main .popover .popover_inner input {
       -webkit-border-radius: 4px;
       -moz-border-radius: 4px;
       -ms-border-radius: 4px;
@@ -1335,7 +1332,7 @@ button:focus {
       .popover_big .popover_inner .text:hover {
         color: #8a959e;
         cursor: default; }
-    .popover_big .popover_inner input, .popover_big .popover_inner .option .configuration .configuration_inner .select_box, .option .configuration .configuration_inner .popover_big .popover_inner .select_box, .popover_big .popover_inner .carousel .carousel-inner .item .modal-header .download .configuration .configuration_inner .select_box, .carousel .carousel-inner .item .modal-header .download .configuration .configuration_inner .popover_big .popover_inner .select_box, .popover_big .popover_inner .carousel .carousel-inner .item .modal-header .like .configuration .configuration_inner .select_box, .carousel .carousel-inner .item .modal-header .like .configuration .configuration_inner .popover_big .popover_inner .select_box {
+    .popover_big .popover_inner input {
       -webkit-border-radius: 2px;
       -moz-border-radius: 2px;
       -ms-border-radius: 2px;
@@ -1494,14 +1491,14 @@ header {
           header .task_box .task_active_lists .task_active_list .task_list.important, header .activity_box .task_active_lists .task_active_list .task_list.important {
             border: 1px solid #f4c8bf;
             background: #ffebe7; }
-            header .task_box .task_active_lists .task_active_list .task_list.important input[type="checkbox"], header .activity_box .task_active_lists .task_active_list .task_list.important input[type="checkbox"], header .task_box .task_active_lists .task_active_list .task_list.important .option .configuration .configuration_inner [type="checkbox"].select_box, .option .configuration .configuration_inner header .task_box .task_active_lists .task_active_list .task_list.important [type="checkbox"].select_box, header .activity_box .task_active_lists .task_active_list .task_list.important .option .configuration .configuration_inner [type="checkbox"].select_box, .option .configuration .configuration_inner header .activity_box .task_active_lists .task_active_list .task_list.important [type="checkbox"].select_box, header .task_box .task_active_lists .task_active_list .task_list.important .carousel .carousel-inner .item .modal-header .download .configuration .configuration_inner [type="checkbox"].select_box, .carousel .carousel-inner .item .modal-header .download .configuration .configuration_inner header .task_box .task_active_lists .task_active_list .task_list.important [type="checkbox"].select_box, header .activity_box .task_active_lists .task_active_list .task_list.important .carousel .carousel-inner .item .modal-header .download .configuration .configuration_inner [type="checkbox"].select_box, .carousel .carousel-inner .item .modal-header .download .configuration .configuration_inner header .activity_box .task_active_lists .task_active_list .task_list.important [type="checkbox"].select_box, header .task_box .task_active_lists .task_active_list .task_list.important .carousel .carousel-inner .item .modal-header .like .configuration .configuration_inner [type="checkbox"].select_box, .carousel .carousel-inner .item .modal-header .like .configuration .configuration_inner header .task_box .task_active_lists .task_active_list .task_list.important [type="checkbox"].select_box, header .activity_box .task_active_lists .task_active_list .task_list.important .carousel .carousel-inner .item .modal-header .like .configuration .configuration_inner [type="checkbox"].select_box, .carousel .carousel-inner .item .modal-header .like .configuration .configuration_inner header .activity_box .task_active_lists .task_active_list .task_list.important [type="checkbox"].select_box {
+            header .task_box .task_active_lists .task_active_list .task_list.important input[type="checkbox"], header .activity_box .task_active_lists .task_active_list .task_list.important input[type="checkbox"] {
               /*checked時の見た目*/ }
-              header .task_box .task_active_lists .task_active_list .task_list.important input[type="checkbox"] + label, header .activity_box .task_active_lists .task_active_list .task_list.important input[type="checkbox"] + label, header .task_box .task_active_lists .task_active_list .task_list.important .option .configuration .configuration_inner [type="checkbox"].select_box + label, .option .configuration .configuration_inner header .task_box .task_active_lists .task_active_list .task_list.important [type="checkbox"].select_box + label, header .activity_box .task_active_lists .task_active_list .task_list.important .option .configuration .configuration_inner [type="checkbox"].select_box + label, .option .configuration .configuration_inner header .activity_box .task_active_lists .task_active_list .task_list.important [type="checkbox"].select_box + label, header .task_box .task_active_lists .task_active_list .task_list.important .carousel .carousel-inner .item .modal-header .download .configuration .configuration_inner [type="checkbox"].select_box + label, .carousel .carousel-inner .item .modal-header .download .configuration .configuration_inner header .task_box .task_active_lists .task_active_list .task_list.important [type="checkbox"].select_box + label, header .activity_box .task_active_lists .task_active_list .task_list.important .carousel .carousel-inner .item .modal-header .download .configuration .configuration_inner [type="checkbox"].select_box + label, .carousel .carousel-inner .item .modal-header .download .configuration .configuration_inner header .activity_box .task_active_lists .task_active_list .task_list.important [type="checkbox"].select_box + label, header .task_box .task_active_lists .task_active_list .task_list.important .carousel .carousel-inner .item .modal-header .like .configuration .configuration_inner [type="checkbox"].select_box + label, .carousel .carousel-inner .item .modal-header .like .configuration .configuration_inner header .task_box .task_active_lists .task_active_list .task_list.important [type="checkbox"].select_box + label, header .activity_box .task_active_lists .task_active_list .task_list.important .carousel .carousel-inner .item .modal-header .like .configuration .configuration_inner [type="checkbox"].select_box + label, .carousel .carousel-inner .item .modal-header .like .configuration .configuration_inner header .activity_box .task_active_lists .task_active_list .task_list.important [type="checkbox"].select_box + label {
+              header .task_box .task_active_lists .task_active_list .task_list.important input[type="checkbox"] + label, header .activity_box .task_active_lists .task_active_list .task_list.important input[type="checkbox"] + label {
                 /*通常時の見た目*/ }
-                header .task_box .task_active_lists .task_active_list .task_list.important input[type="checkbox"] + label:before, header .activity_box .task_active_lists .task_active_list .task_list.important input[type="checkbox"] + label:before, header .task_box .task_active_lists .task_active_list .task_list.important .option .configuration .configuration_inner [type="checkbox"].select_box + label:before, .option .configuration .configuration_inner header .task_box .task_active_lists .task_active_list .task_list.important [type="checkbox"].select_box + label:before, header .activity_box .task_active_lists .task_active_list .task_list.important .option .configuration .configuration_inner [type="checkbox"].select_box + label:before, .option .configuration .configuration_inner header .activity_box .task_active_lists .task_active_list .task_list.important [type="checkbox"].select_box + label:before, header .task_box .task_active_lists .task_active_list .task_list.important .carousel .carousel-inner .item .modal-header .download .configuration .configuration_inner [type="checkbox"].select_box + label:before, .carousel .carousel-inner .item .modal-header .download .configuration .configuration_inner header .task_box .task_active_lists .task_active_list .task_list.important [type="checkbox"].select_box + label:before, header .activity_box .task_active_lists .task_active_list .task_list.important .carousel .carousel-inner .item .modal-header .download .configuration .configuration_inner [type="checkbox"].select_box + label:before, .carousel .carousel-inner .item .modal-header .download .configuration .configuration_inner header .activity_box .task_active_lists .task_active_list .task_list.important [type="checkbox"].select_box + label:before, header .task_box .task_active_lists .task_active_list .task_list.important .carousel .carousel-inner .item .modal-header .like .configuration .configuration_inner [type="checkbox"].select_box + label:before, .carousel .carousel-inner .item .modal-header .like .configuration .configuration_inner header .task_box .task_active_lists .task_active_list .task_list.important [type="checkbox"].select_box + label:before, header .activity_box .task_active_lists .task_active_list .task_list.important .carousel .carousel-inner .item .modal-header .like .configuration .configuration_inner [type="checkbox"].select_box + label:before, .carousel .carousel-inner .item .modal-header .like .configuration .configuration_inner header .activity_box .task_active_lists .task_active_list .task_list.important [type="checkbox"].select_box + label:before {
+                header .task_box .task_active_lists .task_active_list .task_list.important input[type="checkbox"] + label:before, header .activity_box .task_active_lists .task_active_list .task_list.important input[type="checkbox"] + label:before {
                   border: 1px solid #ed6d44;
                   background: #ffebe7; }
-              header .task_box .task_active_lists .task_active_list .task_list.important input[type="checkbox"]:checked + label::before, header .activity_box .task_active_lists .task_active_list .task_list.important input[type="checkbox"]:checked + label::before, header .task_box .task_active_lists .task_active_list .task_list.important .option .configuration .configuration_inner [type="checkbox"].select_box:checked + label::before, .option .configuration .configuration_inner header .task_box .task_active_lists .task_active_list .task_list.important [type="checkbox"].select_box:checked + label::before, header .activity_box .task_active_lists .task_active_list .task_list.important .option .configuration .configuration_inner [type="checkbox"].select_box:checked + label::before, .option .configuration .configuration_inner header .activity_box .task_active_lists .task_active_list .task_list.important [type="checkbox"].select_box:checked + label::before, header .task_box .task_active_lists .task_active_list .task_list.important .carousel .carousel-inner .item .modal-header .download .configuration .configuration_inner [type="checkbox"].select_box:checked + label::before, .carousel .carousel-inner .item .modal-header .download .configuration .configuration_inner header .task_box .task_active_lists .task_active_list .task_list.important [type="checkbox"].select_box:checked + label::before, header .activity_box .task_active_lists .task_active_list .task_list.important .carousel .carousel-inner .item .modal-header .download .configuration .configuration_inner [type="checkbox"].select_box:checked + label::before, .carousel .carousel-inner .item .modal-header .download .configuration .configuration_inner header .activity_box .task_active_lists .task_active_list .task_list.important [type="checkbox"].select_box:checked + label::before, header .task_box .task_active_lists .task_active_list .task_list.important .carousel .carousel-inner .item .modal-header .like .configuration .configuration_inner [type="checkbox"].select_box:checked + label::before, .carousel .carousel-inner .item .modal-header .like .configuration .configuration_inner header .task_box .task_active_lists .task_active_list .task_list.important [type="checkbox"].select_box:checked + label::before, header .activity_box .task_active_lists .task_active_list .task_list.important .carousel .carousel-inner .item .modal-header .like .configuration .configuration_inner [type="checkbox"].select_box:checked + label::before, .carousel .carousel-inner .item .modal-header .like .configuration .configuration_inner header .activity_box .task_active_lists .task_active_list .task_list.important [type="checkbox"].select_box:checked + label::before {
+              header .task_box .task_active_lists .task_active_list .task_list.important input[type="checkbox"]:checked + label::before, header .activity_box .task_active_lists .task_active_list .task_list.important input[type="checkbox"]:checked + label::before {
                 background: #db4c3f;
                 border-color: #ed6d44; }
           header .task_box .task_active_lists .task_active_list .task_list .task_title, header .activity_box .task_active_lists .task_active_list .task_list .task_title {
@@ -1663,14 +1660,14 @@ header {
     right: 3px;
     top: 2px;
     z-index: 10; }
-  .search input[type="search"], .search .option .configuration .configuration_inner [type="search"].select_box, .option .configuration .configuration_inner .search [type="search"].select_box, .search .carousel .carousel-inner .item .modal-header .download .configuration .configuration_inner [type="search"].select_box, .carousel .carousel-inner .item .modal-header .download .configuration .configuration_inner .search [type="search"].select_box, .search .carousel .carousel-inner .item .modal-header .like .configuration .configuration_inner [type="search"].select_box, .carousel .carousel-inner .item .modal-header .like .configuration .configuration_inner .search [type="search"].select_box {
+  .search input[type="search"] {
     font-size: 14px;
     font-size: 1.4rem;
     width: 90%;
     height: 29px;
     padding: 0 10px;
     /*line-height: 32px;*/ }
-  .search input[type="submit"], .search .option .configuration .configuration_inner [type="submit"].select_box, .option .configuration .configuration_inner .search [type="submit"].select_box, .search .carousel .carousel-inner .item .modal-header .download .configuration .configuration_inner [type="submit"].select_box, .carousel .carousel-inner .item .modal-header .download .configuration .configuration_inner .search [type="submit"].select_box, .search .carousel .carousel-inner .item .modal-header .like .configuration .configuration_inner [type="submit"].select_box, .carousel .carousel-inner .item .modal-header .like .configuration .configuration_inner .search [type="submit"].select_box {
+  .search input[type="submit"] {
     position: absolute;
     right: 1px;
     top: 0;
@@ -1679,7 +1676,7 @@ header {
     padding-top: 30px;
     overflow: hidden;
     z-index: 100; }
-    .search input[type="submit"]:hover, .search .option .configuration .configuration_inner [type="submit"].select_box:hover, .option .configuration .configuration_inner .search [type="submit"].select_box:hover, .search .carousel .carousel-inner .item .modal-header .download .configuration .configuration_inner [type="submit"].select_box:hover, .carousel .carousel-inner .item .modal-header .download .configuration .configuration_inner .search [type="submit"].select_box:hover, .search .carousel .carousel-inner .item .modal-header .like .configuration .configuration_inner [type="submit"].select_box:hover, .carousel .carousel-inner .item .modal-header .like .configuration .configuration_inner .search [type="submit"].select_box:hover {
+    .search input[type="submit"]:hover {
       cursor: pointer; }
 
 /*Alart*/
@@ -2515,7 +2512,7 @@ header {
       .modal .modal-dialog .modal-content .modal-header .option i, .modal .modal-dialog .modal-content .carousel .carousel-inner .item .modal-header .download i, .carousel .carousel-inner .item .modal .modal-dialog .modal-content .modal-header .download i, .modal .modal-dialog .modal-content .carousel .carousel-inner .item .modal-header .like i, .carousel .carousel-inner .item .modal .modal-dialog .modal-content .modal-header .like i {
         font-size: 26px;
         font-size: 2.6rem; }
-    .modal .modal-dialog .modal-content .modal-header input[type="checkbox"] + label, .modal .modal-dialog .modal-content .modal-header .option .configuration .configuration_inner [type="checkbox"].select_box + label, .option .configuration .configuration_inner .modal .modal-dialog .modal-content .modal-header [type="checkbox"].select_box + label, .modal .modal-dialog .modal-content .carousel .carousel-inner .item .modal-header .download .configuration .configuration_inner [type="checkbox"].select_box + label, .carousel .carousel-inner .item .modal .modal-dialog .modal-content .modal-header .download .configuration .configuration_inner [type="checkbox"].select_box + label, .modal .modal-dialog .modal-content .carousel .carousel-inner .item .modal-header .like .configuration .configuration_inner [type="checkbox"].select_box + label, .carousel .carousel-inner .item .modal .modal-dialog .modal-content .modal-header .like .configuration .configuration_inner [type="checkbox"].select_box + label {
+    .modal .modal-dialog .modal-content .modal-header input[type="checkbox"] + label {
       width: 0;
       margin: 13px 30px 18px 0; }
     .modal .modal-dialog .modal-content .modal-header .modal_option_box {
@@ -2682,7 +2679,7 @@ header {
           float: left;
           overflow: hidden;
           position: relative; }
-          .modal .modal-dialog .modal-content .modal-body .input_dot .profile_image .photo_upload input[type="file"], .modal .modal-dialog .modal-content .modal-body .input_dot .profile_image .photo_upload .option .configuration .configuration_inner [type="file"].select_box, .option .configuration .configuration_inner .modal .modal-dialog .modal-content .modal-body .input_dot .profile_image .photo_upload [type="file"].select_box, .modal .modal-dialog .modal-content .modal-body .input_dot .profile_image .photo_upload .carousel .carousel-inner .item .modal-header .download .configuration .configuration_inner [type="file"].select_box, .carousel .carousel-inner .item .modal-header .download .configuration .configuration_inner .modal .modal-dialog .modal-content .modal-body .input_dot .profile_image .photo_upload [type="file"].select_box, .modal .modal-dialog .modal-content .modal-body .input_dot .profile_image .photo_upload .carousel .carousel-inner .item .modal-header .like .configuration .configuration_inner [type="file"].select_box, .carousel .carousel-inner .item .modal-header .like .configuration .configuration_inner .modal .modal-dialog .modal-content .modal-body .input_dot .profile_image .photo_upload [type="file"].select_box {
+          .modal .modal-dialog .modal-content .modal-body .input_dot .profile_image .photo_upload input[type="file"] {
             opacity: 0;
             filter: alpha(opacity=0);
             position: absolute;
@@ -2710,7 +2707,7 @@ header {
         .modal .modal-dialog .modal-content .modal-body .input_dot .member_add_link .group {
           position: absolute;
           right: 0; }
-      .modal .modal-dialog .modal-content .modal-body .input_dot input[type="text"], .modal .modal-dialog .modal-content .modal-body .input_dot .option .configuration .configuration_inner [type="text"].select_box, .option .configuration .configuration_inner .modal .modal-dialog .modal-content .modal-body .input_dot [type="text"].select_box, .modal .modal-dialog .modal-content .modal-body .input_dot .carousel .carousel-inner .item .modal-header .download .configuration .configuration_inner [type="text"].select_box, .carousel .carousel-inner .item .modal-header .download .configuration .configuration_inner .modal .modal-dialog .modal-content .modal-body .input_dot [type="text"].select_box, .modal .modal-dialog .modal-content .modal-body .input_dot .carousel .carousel-inner .item .modal-header .like .configuration .configuration_inner [type="text"].select_box, .carousel .carousel-inner .item .modal-header .like .configuration .configuration_inner .modal .modal-dialog .modal-content .modal-body .input_dot [type="text"].select_box {
+      .modal .modal-dialog .modal-content .modal-body .input_dot input[type="text"] {
         -webkit-border-radius: 2;
         -moz-border-radius: 2;
         -ms-border-radius: 2;
@@ -2790,7 +2787,7 @@ header {
           color: #555555;
           left: 10px;
           top: 11px; }
-        .modal .modal-dialog .modal-content .modal-body .task_detail .requester input, .modal .modal-dialog .modal-content .modal-body .task_detail .worker input, .modal .modal-dialog .modal-content .modal-body .task_detail .limlt input, .modal .modal-dialog .modal-content .modal-body .task_detail .requester .option .configuration .configuration_inner .select_box, .option .configuration .configuration_inner .modal .modal-dialog .modal-content .modal-body .task_detail .requester .select_box, .modal .modal-dialog .modal-content .modal-body .task_detail .worker .option .configuration .configuration_inner .select_box, .option .configuration .configuration_inner .modal .modal-dialog .modal-content .modal-body .task_detail .worker .select_box, .modal .modal-dialog .modal-content .modal-body .task_detail .limlt .option .configuration .configuration_inner .select_box, .option .configuration .configuration_inner .modal .modal-dialog .modal-content .modal-body .task_detail .limlt .select_box, .modal .modal-dialog .modal-content .modal-body .task_detail .requester .carousel .carousel-inner .item .modal-header .download .configuration .configuration_inner .select_box, .carousel .carousel-inner .item .modal-header .download .configuration .configuration_inner .modal .modal-dialog .modal-content .modal-body .task_detail .requester .select_box, .modal .modal-dialog .modal-content .modal-body .task_detail .worker .carousel .carousel-inner .item .modal-header .download .configuration .configuration_inner .select_box, .carousel .carousel-inner .item .modal-header .download .configuration .configuration_inner .modal .modal-dialog .modal-content .modal-body .task_detail .worker .select_box, .modal .modal-dialog .modal-content .modal-body .task_detail .limlt .carousel .carousel-inner .item .modal-header .download .configuration .configuration_inner .select_box, .carousel .carousel-inner .item .modal-header .download .configuration .configuration_inner .modal .modal-dialog .modal-content .modal-body .task_detail .limlt .select_box, .modal .modal-dialog .modal-content .modal-body .task_detail .requester .carousel .carousel-inner .item .modal-header .like .configuration .configuration_inner .select_box, .carousel .carousel-inner .item .modal-header .like .configuration .configuration_inner .modal .modal-dialog .modal-content .modal-body .task_detail .requester .select_box, .modal .modal-dialog .modal-content .modal-body .task_detail .worker .carousel .carousel-inner .item .modal-header .like .configuration .configuration_inner .select_box, .carousel .carousel-inner .item .modal-header .like .configuration .configuration_inner .modal .modal-dialog .modal-content .modal-body .task_detail .worker .select_box, .modal .modal-dialog .modal-content .modal-body .task_detail .limlt .carousel .carousel-inner .item .modal-header .like .configuration .configuration_inner .select_box, .carousel .carousel-inner .item .modal-header .like .configuration .configuration_inner .modal .modal-dialog .modal-content .modal-body .task_detail .limlt .select_box {
+        .modal .modal-dialog .modal-content .modal-body .task_detail .requester input, .modal .modal-dialog .modal-content .modal-body .task_detail .worker input, .modal .modal-dialog .modal-content .modal-body .task_detail .limlt input {
           padding-left: 35px;
           width: 550px;
           line-height: 21px;
@@ -2809,7 +2806,7 @@ header {
         margin-top: 20px; }
         .modal .modal-dialog .modal-content .modal-body .task_detail .limlt i {
           color: #db4c3f; }
-        .modal .modal-dialog .modal-content .modal-body .task_detail .limlt input, .modal .modal-dialog .modal-content .modal-body .task_detail .limlt .option .configuration .configuration_inner .select_box, .option .configuration .configuration_inner .modal .modal-dialog .modal-content .modal-body .task_detail .limlt .select_box, .modal .modal-dialog .modal-content .modal-body .task_detail .limlt .carousel .carousel-inner .item .modal-header .download .configuration .configuration_inner .select_box, .carousel .carousel-inner .item .modal-header .download .configuration .configuration_inner .modal .modal-dialog .modal-content .modal-body .task_detail .limlt .select_box, .modal .modal-dialog .modal-content .modal-body .task_detail .limlt .carousel .carousel-inner .item .modal-header .like .configuration .configuration_inner .select_box, .carousel .carousel-inner .item .modal-header .like .configuration .configuration_inner .modal .modal-dialog .modal-content .modal-body .task_detail .limlt .select_box {
+        .modal .modal-dialog .modal-content .modal-body .task_detail .limlt input {
           line-height: 21px;
           margin-top: 10px; }
       .modal .modal-dialog .modal-content .modal-body .task_detail .information {
@@ -2844,7 +2841,7 @@ header {
             color: #8a959e; }
             .modal .modal-dialog .modal-content .modal-body .task_detail .information .btn_file i:hover {
               color: #2e6b95; }
-          .modal .modal-dialog .modal-content .modal-body .task_detail .information .btn_file input[type="file"], .modal .modal-dialog .modal-content .modal-body .task_detail .information .btn_file .option .configuration .configuration_inner [type="file"].select_box, .option .configuration .configuration_inner .modal .modal-dialog .modal-content .modal-body .task_detail .information .btn_file [type="file"].select_box, .modal .modal-dialog .modal-content .modal-body .task_detail .information .btn_file .carousel .carousel-inner .item .modal-header .download .configuration .configuration_inner [type="file"].select_box, .carousel .carousel-inner .item .modal-header .download .configuration .configuration_inner .modal .modal-dialog .modal-content .modal-body .task_detail .information .btn_file [type="file"].select_box, .modal .modal-dialog .modal-content .modal-body .task_detail .information .btn_file .carousel .carousel-inner .item .modal-header .like .configuration .configuration_inner [type="file"].select_box, .carousel .carousel-inner .item .modal-header .like .configuration .configuration_inner .modal .modal-dialog .modal-content .modal-body .task_detail .information .btn_file [type="file"].select_box {
+          .modal .modal-dialog .modal-content .modal-body .task_detail .information .btn_file input[type="file"] {
             opacity: 0;
             filter: alpha(opacity=0);
             position: absolute;
@@ -2852,7 +2849,7 @@ header {
             top: 0;
             width: 100px;
             height: 20px; }
-            .modal .modal-dialog .modal-content .modal-body .task_detail .information .btn_file input[type="file"]:hover, .modal .modal-dialog .modal-content .modal-body .task_detail .information .btn_file .option .configuration .configuration_inner [type="file"].select_box:hover, .option .configuration .configuration_inner .modal .modal-dialog .modal-content .modal-body .task_detail .information .btn_file [type="file"].select_box:hover, .modal .modal-dialog .modal-content .modal-body .task_detail .information .btn_file .carousel .carousel-inner .item .modal-header .download .configuration .configuration_inner [type="file"].select_box:hover, .carousel .carousel-inner .item .modal-header .download .configuration .configuration_inner .modal .modal-dialog .modal-content .modal-body .task_detail .information .btn_file [type="file"].select_box:hover, .modal .modal-dialog .modal-content .modal-body .task_detail .information .btn_file .carousel .carousel-inner .item .modal-header .like .configuration .configuration_inner [type="file"].select_box:hover, .carousel .carousel-inner .item .modal-header .like .configuration .configuration_inner .modal .modal-dialog .modal-content .modal-body .task_detail .information .btn_file [type="file"].select_box:hover {
+            .modal .modal-dialog .modal-content .modal-body .task_detail .information .btn_file input[type="file"]:hover {
               cursor: pointer; }
         .modal .modal-dialog .modal-content .modal-body .task_detail .information .btn_add_task {
           right: 10px;
@@ -3370,7 +3367,7 @@ header {
     #add_file .modal-body .local_up .field, #add_file .modal-body .web_up .field, #add_file2 .modal-body .local_up .field, #add_file2 .modal-body .web_up .field, #add_file3 .modal-body .local_up .field, #add_file3 .modal-body .web_up .field {
       /*@extend .clearfix;*/
       margin-top: 40px; }
-      #add_file .modal-body .local_up .field input, #add_file .modal-body .web_up .field input, #add_file .modal-body .local_up .field .option .configuration .configuration_inner .select_box, .option .configuration .configuration_inner #add_file .modal-body .local_up .field .select_box, #add_file .modal-body .web_up .field .option .configuration .configuration_inner .select_box, .option .configuration .configuration_inner #add_file .modal-body .web_up .field .select_box, #add_file .modal-body .local_up .field .carousel .carousel-inner .item .modal-header .download .configuration .configuration_inner .select_box, .carousel .carousel-inner .item .modal-header .download .configuration .configuration_inner #add_file .modal-body .local_up .field .select_box, #add_file .modal-body .web_up .field .carousel .carousel-inner .item .modal-header .download .configuration .configuration_inner .select_box, .carousel .carousel-inner .item .modal-header .download .configuration .configuration_inner #add_file .modal-body .web_up .field .select_box, #add_file .modal-body .local_up .field .carousel .carousel-inner .item .modal-header .like .configuration .configuration_inner .select_box, .carousel .carousel-inner .item .modal-header .like .configuration .configuration_inner #add_file .modal-body .local_up .field .select_box, #add_file .modal-body .web_up .field .carousel .carousel-inner .item .modal-header .like .configuration .configuration_inner .select_box, .carousel .carousel-inner .item .modal-header .like .configuration .configuration_inner #add_file .modal-body .web_up .field .select_box, #add_file2 .modal-body .local_up .field input, #add_file2 .modal-body .web_up .field input, #add_file2 .modal-body .local_up .field .option .configuration .configuration_inner .select_box, .option .configuration .configuration_inner #add_file2 .modal-body .local_up .field .select_box, #add_file2 .modal-body .web_up .field .option .configuration .configuration_inner .select_box, .option .configuration .configuration_inner #add_file2 .modal-body .web_up .field .select_box, #add_file2 .modal-body .local_up .field .carousel .carousel-inner .item .modal-header .download .configuration .configuration_inner .select_box, .carousel .carousel-inner .item .modal-header .download .configuration .configuration_inner #add_file2 .modal-body .local_up .field .select_box, #add_file2 .modal-body .web_up .field .carousel .carousel-inner .item .modal-header .download .configuration .configuration_inner .select_box, .carousel .carousel-inner .item .modal-header .download .configuration .configuration_inner #add_file2 .modal-body .web_up .field .select_box, #add_file2 .modal-body .local_up .field .carousel .carousel-inner .item .modal-header .like .configuration .configuration_inner .select_box, .carousel .carousel-inner .item .modal-header .like .configuration .configuration_inner #add_file2 .modal-body .local_up .field .select_box, #add_file2 .modal-body .web_up .field .carousel .carousel-inner .item .modal-header .like .configuration .configuration_inner .select_box, .carousel .carousel-inner .item .modal-header .like .configuration .configuration_inner #add_file2 .modal-body .web_up .field .select_box, #add_file3 .modal-body .local_up .field input, #add_file3 .modal-body .web_up .field input, #add_file3 .modal-body .local_up .field .option .configuration .configuration_inner .select_box, .option .configuration .configuration_inner #add_file3 .modal-body .local_up .field .select_box, #add_file3 .modal-body .web_up .field .option .configuration .configuration_inner .select_box, .option .configuration .configuration_inner #add_file3 .modal-body .web_up .field .select_box, #add_file3 .modal-body .local_up .field .carousel .carousel-inner .item .modal-header .download .configuration .configuration_inner .select_box, .carousel .carousel-inner .item .modal-header .download .configuration .configuration_inner #add_file3 .modal-body .local_up .field .select_box, #add_file3 .modal-body .web_up .field .carousel .carousel-inner .item .modal-header .download .configuration .configuration_inner .select_box, .carousel .carousel-inner .item .modal-header .download .configuration .configuration_inner #add_file3 .modal-body .web_up .field .select_box, #add_file3 .modal-body .local_up .field .carousel .carousel-inner .item .modal-header .like .configuration .configuration_inner .select_box, .carousel .carousel-inner .item .modal-header .like .configuration .configuration_inner #add_file3 .modal-body .local_up .field .select_box, #add_file3 .modal-body .web_up .field .carousel .carousel-inner .item .modal-header .like .configuration .configuration_inner .select_box, .carousel .carousel-inner .item .modal-header .like .configuration .configuration_inner #add_file3 .modal-body .web_up .field .select_box {
+      #add_file .modal-body .local_up .field input, #add_file .modal-body .web_up .field input, #add_file2 .modal-body .local_up .field input, #add_file2 .modal-body .web_up .field input, #add_file3 .modal-body .local_up .field input, #add_file3 .modal-body .web_up .field input {
         -webkit-border-radius: 4;
         -moz-border-radius: 4;
         -ms-border-radius: 4;
@@ -3875,7 +3872,7 @@ header {
         font-size: 34px;
         font-size: 3.4rem;
         color: #3A87BC; }
-      .card .auth-form .row input, .card .auth-form .row .option .configuration .configuration_inner .select_box, .option .configuration .configuration_inner .card .auth-form .row .select_box, .card .auth-form .row .carousel .carousel-inner .item .modal-header .download .configuration .configuration_inner .select_box, .carousel .carousel-inner .item .modal-header .download .configuration .configuration_inner .card .auth-form .row .select_box, .card .auth-form .row .carousel .carousel-inner .item .modal-header .like .configuration .configuration_inner .select_box, .carousel .carousel-inner .item .modal-header .like .configuration .configuration_inner .card .auth-form .row .select_box {
+      .card .auth-form .row input {
         -webkit-box-flex: 1;
         -moz-box-flex: 1;
         -o-box-flex: 1;
@@ -3890,7 +3887,7 @@ header {
         color: #666;
         outline: none;
         letter-spacing: normal; }
-        .card .auth-form .row input.button, .card .auth-form .row .option .configuration .configuration_inner .button.select_box, .option .configuration .configuration_inner .card .auth-form .row .button.select_box, .card .auth-form .row .carousel .carousel-inner .item .modal-header .download .configuration .configuration_inner .button.select_box, .carousel .carousel-inner .item .modal-header .download .configuration .configuration_inner .card .auth-form .row .button.select_box, .card .auth-form .row .carousel .carousel-inner .item .modal-header .like .configuration .configuration_inner .button.select_box, .carousel .carousel-inner .item .modal-header .like .configuration .configuration_inner .card .auth-form .row .button.select_box {
+        .card .auth-form .row input.button {
           display: block;
           width: 100%;
           font-size: 16px;
@@ -3905,7 +3902,7 @@ header {
           -o-transition: 0.1s -o-transform ease-in-out;
           -ms-transition: 0.1s -ms-transform ease-in-out;
           transition: 0.1s transform ease-in-out; }
-        .card .auth-form .row input.blue, .card .auth-form .row .option .configuration .configuration_inner .blue.select_box, .option .configuration .configuration_inner .card .auth-form .row .blue.select_box, .card .auth-form .row .carousel .carousel-inner .item .modal-header .download .configuration .configuration_inner .blue.select_box, .carousel .carousel-inner .item .modal-header .download .configuration .configuration_inner .card .auth-form .row .blue.select_box, .card .auth-form .row .carousel .carousel-inner .item .modal-header .like .configuration .configuration_inner .blue.select_box, .carousel .carousel-inner .item .modal-header .like .configuration .configuration_inner .card .auth-form .row .blue.select_box {
+        .card .auth-form .row input.blue {
           border: 0 none;
           background-color: #3A87BC;
           color: #fff; }
@@ -3956,7 +3953,7 @@ header {
       position: absolute;
       left: 12px;
       top: 10px; }
-    .task .task_create .task_create_inner input, .task .task_create .task_create_inner .option .configuration .configuration_inner .select_box, .option .configuration .configuration_inner .task .task_create .task_create_inner .select_box, .task .task_create .task_create_inner .carousel .carousel-inner .item .modal-header .download .configuration .configuration_inner .select_box, .carousel .carousel-inner .item .modal-header .download .configuration .configuration_inner .task .task_create .task_create_inner .select_box, .task .task_create .task_create_inner .carousel .carousel-inner .item .modal-header .like .configuration .configuration_inner .select_box, .carousel .carousel-inner .item .modal-header .like .configuration .configuration_inner .task .task_create .task_create_inner .select_box {
+    .task .task_create .task_create_inner input {
       width: 90%;
       padding-left: 30px; }
     .task .task_create .task_create_inner .task_add_list_member {
@@ -3966,7 +3963,7 @@ header {
       border-radius: 4px;
       left: 0;
       top: 40px; }
-      .task .task_create .task_create_inner .task_add_list_member input, .task .task_create .task_create_inner .task_add_list_member .option .configuration .configuration_inner .select_box, .option .configuration .configuration_inner .task .task_create .task_create_inner .task_add_list_member .select_box, .task .task_create .task_create_inner .task_add_list_member .carousel .carousel-inner .item .modal-header .download .configuration .configuration_inner .select_box, .carousel .carousel-inner .item .modal-header .download .configuration .configuration_inner .task .task_create .task_create_inner .task_add_list_member .select_box, .task .task_create .task_create_inner .task_add_list_member .carousel .carousel-inner .item .modal-header .like .configuration .configuration_inner .select_box, .carousel .carousel-inner .item .modal-header .like .configuration .configuration_inner .task .task_create .task_create_inner .task_add_list_member .select_box {
+      .task .task_create .task_create_inner .task_add_list_member input {
         -webkit-border-radius: 4px;
         -moz-border-radius: 4px;
         -ms-border-radius: 4px;
@@ -4000,10 +3997,10 @@ header {
 /*---------------------------------------------------------------------------------------
  Checkbox
 ---------------------------------------------------------------------------------------*/
-input[type="checkbox"], .option .configuration .configuration_inner [type="checkbox"].select_box, .carousel .carousel-inner .item .modal-header .download .configuration .configuration_inner [type="checkbox"].select_box, .carousel .carousel-inner .item .modal-header .like .configuration .configuration_inner [type="checkbox"].select_box {
+input[type="checkbox"] {
   display: none;
   /*checked時の見た目*/ }
-  input[type="checkbox"] + label, .option .configuration .configuration_inner [type="checkbox"].select_box + label, .carousel .carousel-inner .item .modal-header .download .configuration .configuration_inner [type="checkbox"].select_box + label, .carousel .carousel-inner .item .modal-header .like .configuration .configuration_inner [type="checkbox"].select_box + label {
+  input[type="checkbox"] + label {
     display: block;
     cursor: pointer;
     float: left;
@@ -4011,7 +4008,7 @@ input[type="checkbox"], .option .configuration .configuration_inner [type="check
     margin: 27px 10px 18px 15px;
     /*通常時の見た目*/
     /*hover時の見た目*/ }
-    input[type="checkbox"] + label:before, .option .configuration .configuration_inner [type="checkbox"].select_box + label:before, .carousel .carousel-inner .item .modal-header .download .configuration .configuration_inner [type="checkbox"].select_box + label:before, .carousel .carousel-inner .item .modal-header .like .configuration .configuration_inner [type="checkbox"].select_box + label:before {
+    input[type="checkbox"] + label:before {
       font-size: 30px;
       font-size: 3rem;
       -webkit-border-radius: 3;
@@ -4043,13 +4040,13 @@ input[type="checkbox"], .option .configuration .configuration_inner [type="check
       -webkit-box-sizing: border-box;
       -moz-box-sizing: border-box;
       box-sizing: border-box; }
-    input[type="checkbox"] + label:hover, .option .configuration .configuration_inner [type="checkbox"].select_box + label:hover, .carousel .carousel-inner .item .modal-header .download .configuration .configuration_inner [type="checkbox"].select_box + label:hover, .carousel .carousel-inner .item .modal-header .like .configuration .configuration_inner [type="checkbox"].select_box + label:hover {
+    input[type="checkbox"] + label:hover {
       color: #3A87BC; }
-      input[type="checkbox"] + label:hover:before, .option .configuration .configuration_inner [type="checkbox"].select_box + label:hover:before, .carousel .carousel-inner .item .modal-header .download .configuration .configuration_inner [type="checkbox"].select_box + label:hover:before, .carousel .carousel-inner .item .modal-header .like .configuration .configuration_inner [type="checkbox"].select_box + label:hover:before {
+      input[type="checkbox"] + label:hover:before {
         background-color: #f5f5f5; }
-  input[type="checkbox"]:checked + label, .option .configuration .configuration_inner [type="checkbox"].select_box:checked + label, .carousel .carousel-inner .item .modal-header .download .configuration .configuration_inner [type="checkbox"].select_box:checked + label, .carousel .carousel-inner .item .modal-header .like .configuration .configuration_inner [type="checkbox"].select_box:checked + label {
+  input[type="checkbox"]:checked + label {
     color: #3595e1; }
-    input[type="checkbox"]:checked + label::before, .option .configuration .configuration_inner [type="checkbox"].select_box:checked + label::before, .carousel .carousel-inner .item .modal-header .download .configuration .configuration_inner [type="checkbox"].select_box:checked + label::before, .carousel .carousel-inner .item .modal-header .like .configuration .configuration_inner [type="checkbox"].select_box:checked + label::before {
+    input[type="checkbox"]:checked + label::before {
       font-size: 15px;
       font-size: 1.5rem;
       background: #3A87BC;
@@ -4145,20 +4142,20 @@ input[type="checkbox"], .option .configuration .configuration_inner [type="check
       .task_replacement .task_people .task_list.important {
         border: 1px solid #f4c8bf;
         background: #ffebe7; }
-        .task_replacement .task_people .task_list.important input[type="checkbox"], .task_replacement .task_people .task_list.important .option .configuration .configuration_inner [type="checkbox"].select_box, .option .configuration .configuration_inner .task_replacement .task_people .task_list.important [type="checkbox"].select_box, .task_replacement .task_people .task_list.important .carousel .carousel-inner .item .modal-header .download .configuration .configuration_inner [type="checkbox"].select_box, .carousel .carousel-inner .item .modal-header .download .configuration .configuration_inner .task_replacement .task_people .task_list.important [type="checkbox"].select_box, .task_replacement .task_people .task_list.important .carousel .carousel-inner .item .modal-header .like .configuration .configuration_inner [type="checkbox"].select_box, .carousel .carousel-inner .item .modal-header .like .configuration .configuration_inner .task_replacement .task_people .task_list.important [type="checkbox"].select_box {
+        .task_replacement .task_people .task_list.important input[type="checkbox"] {
           /*checked時の見た目*/ }
-          .task_replacement .task_people .task_list.important input[type="checkbox"] + label, .task_replacement .task_people .task_list.important .option .configuration .configuration_inner [type="checkbox"].select_box + label, .option .configuration .configuration_inner .task_replacement .task_people .task_list.important [type="checkbox"].select_box + label, .task_replacement .task_people .task_list.important .carousel .carousel-inner .item .modal-header .download .configuration .configuration_inner [type="checkbox"].select_box + label, .carousel .carousel-inner .item .modal-header .download .configuration .configuration_inner .task_replacement .task_people .task_list.important [type="checkbox"].select_box + label, .task_replacement .task_people .task_list.important .carousel .carousel-inner .item .modal-header .like .configuration .configuration_inner [type="checkbox"].select_box + label, .carousel .carousel-inner .item .modal-header .like .configuration .configuration_inner .task_replacement .task_people .task_list.important [type="checkbox"].select_box + label {
+          .task_replacement .task_people .task_list.important input[type="checkbox"] + label {
             /*通常時の見た目*/ }
-            .task_replacement .task_people .task_list.important input[type="checkbox"] + label:before, .task_replacement .task_people .task_list.important .option .configuration .configuration_inner [type="checkbox"].select_box + label:before, .option .configuration .configuration_inner .task_replacement .task_people .task_list.important [type="checkbox"].select_box + label:before, .task_replacement .task_people .task_list.important .carousel .carousel-inner .item .modal-header .download .configuration .configuration_inner [type="checkbox"].select_box + label:before, .carousel .carousel-inner .item .modal-header .download .configuration .configuration_inner .task_replacement .task_people .task_list.important [type="checkbox"].select_box + label:before, .task_replacement .task_people .task_list.important .carousel .carousel-inner .item .modal-header .like .configuration .configuration_inner [type="checkbox"].select_box + label:before, .carousel .carousel-inner .item .modal-header .like .configuration .configuration_inner .task_replacement .task_people .task_list.important [type="checkbox"].select_box + label:before {
+            .task_replacement .task_people .task_list.important input[type="checkbox"] + label:before {
               border: 1px solid #ed6d44;
               background: #ffebe7; }
-          .task_replacement .task_people .task_list.important input[type="checkbox"]:checked + label::before, .task_replacement .task_people .task_list.important .option .configuration .configuration_inner [type="checkbox"].select_box:checked + label::before, .option .configuration .configuration_inner .task_replacement .task_people .task_list.important [type="checkbox"].select_box:checked + label::before, .task_replacement .task_people .task_list.important .carousel .carousel-inner .item .modal-header .download .configuration .configuration_inner [type="checkbox"].select_box:checked + label::before, .carousel .carousel-inner .item .modal-header .download .configuration .configuration_inner .task_replacement .task_people .task_list.important [type="checkbox"].select_box:checked + label::before, .task_replacement .task_people .task_list.important .carousel .carousel-inner .item .modal-header .like .configuration .configuration_inner [type="checkbox"].select_box:checked + label::before, .carousel .carousel-inner .item .modal-header .like .configuration .configuration_inner .task_replacement .task_people .task_list.important [type="checkbox"].select_box:checked + label::before {
+          .task_replacement .task_people .task_list.important input[type="checkbox"]:checked + label::before {
             background: #db4c3f;
             border-color: #ed6d44; }
       .task_replacement .task_people .task_list.made {
         height: auto;
         min-height: 50px; }
-        .task_replacement .task_people .task_list.made input[type="textarea"], .task_replacement .task_people .task_list.made .option .configuration .configuration_inner [type="textarea"].select_box, .option .configuration .configuration_inner .task_replacement .task_people .task_list.made [type="textarea"].select_box, .task_replacement .task_people .task_list.made .carousel .carousel-inner .item .modal-header .download .configuration .configuration_inner [type="textarea"].select_box, .carousel .carousel-inner .item .modal-header .download .configuration .configuration_inner .task_replacement .task_people .task_list.made [type="textarea"].select_box, .task_replacement .task_people .task_list.made .carousel .carousel-inner .item .modal-header .like .configuration .configuration_inner [type="textarea"].select_box, .carousel .carousel-inner .item .modal-header .like .configuration .configuration_inner .task_replacement .task_people .task_list.made [type="textarea"].select_box {
+        .task_replacement .task_people .task_list.made input[type="textarea"] {
           width: 90%;
           border: none;
           height: 35px;
@@ -4169,7 +4166,7 @@ input[type="checkbox"], .option .configuration .configuration_inner [type="check
           line-height: 1.5;
           font-weight: normal;
           /*resize: vertical;*/ }
-          .task_replacement .task_people .task_list.made input[type="textarea"]:focus, .task_replacement .task_people .task_list.made .option .configuration .configuration_inner [type="textarea"].select_box:focus, .option .configuration .configuration_inner .task_replacement .task_people .task_list.made [type="textarea"].select_box:focus, .task_replacement .task_people .task_list.made .carousel .carousel-inner .item .modal-header .download .configuration .configuration_inner [type="textarea"].select_box:focus, .carousel .carousel-inner .item .modal-header .download .configuration .configuration_inner .task_replacement .task_people .task_list.made [type="textarea"].select_box:focus, .task_replacement .task_people .task_list.made .carousel .carousel-inner .item .modal-header .like .configuration .configuration_inner [type="textarea"].select_box:focus, .carousel .carousel-inner .item .modal-header .like .configuration .configuration_inner .task_replacement .task_people .task_list.made [type="textarea"].select_box:focus {
+          .task_replacement .task_people .task_list.made input[type="textarea"]:focus {
             outline: none; }
         .task_replacement .task_people .task_list.made .task_add_member {
           -webkit-border-radius: 4px;
@@ -4178,7 +4175,7 @@ input[type="checkbox"], .option .configuration .configuration_inner [type="check
           border-radius: 4px;
           right: 143px;
           top: -190px; }
-          .task_replacement .task_people .task_list.made .task_add_member input, .task_replacement .task_people .task_list.made .task_add_member .option .configuration .configuration_inner .select_box, .option .configuration .configuration_inner .task_replacement .task_people .task_list.made .task_add_member .select_box, .task_replacement .task_people .task_list.made .task_add_member .carousel .carousel-inner .item .modal-header .download .configuration .configuration_inner .select_box, .carousel .carousel-inner .item .modal-header .download .configuration .configuration_inner .task_replacement .task_people .task_list.made .task_add_member .select_box, .task_replacement .task_people .task_list.made .task_add_member .carousel .carousel-inner .item .modal-header .like .configuration .configuration_inner .select_box, .carousel .carousel-inner .item .modal-header .like .configuration .configuration_inner .task_replacement .task_people .task_list.made .task_add_member .select_box {
+          .task_replacement .task_people .task_list.made .task_add_member input {
             -webkit-border-radius: 4px;
             -moz-border-radius: 4px;
             -ms-border-radius: 4px;
@@ -4372,7 +4369,7 @@ input[type="checkbox"], .option .configuration .configuration_inner [type="check
   text-align: center;
   width: 250px;
   font-family: 'Helvetica neue',Helvetica,Arial,sans-serif; }
-  .calendar input, .calendar .option .configuration .configuration_inner .select_box, .option .configuration .configuration_inner .calendar .select_box, .calendar .carousel .carousel-inner .item .modal-header .download .configuration .configuration_inner .select_box, .carousel .carousel-inner .item .modal-header .download .configuration .configuration_inner .calendar .select_box, .calendar .carousel .carousel-inner .item .modal-header .like .configuration .configuration_inner .select_box, .carousel .carousel-inner .item .modal-header .like .configuration .configuration_inner .calendar .select_box {
+  .calendar input {
     -webkit-border-radius: 4px;
     -moz-border-radius: 4px;
     -ms-border-radius: 4px;
@@ -4561,7 +4558,7 @@ input[type="checkbox"], .option .configuration .configuration_inner [type="check
   border-radius: 4px;
   left: 115px;
   top: 38px; }
-  .task_add_requester input, .task_add_worker input, .task_add_requester .option .configuration .configuration_inner .select_box, .option .configuration .configuration_inner .task_add_requester .select_box, .task_add_worker .option .configuration .configuration_inner .select_box, .option .configuration .configuration_inner .task_add_worker .select_box, .task_add_requester .carousel .carousel-inner .item .modal-header .download .configuration .configuration_inner .select_box, .carousel .carousel-inner .item .modal-header .download .configuration .configuration_inner .task_add_requester .select_box, .task_add_worker .carousel .carousel-inner .item .modal-header .download .configuration .configuration_inner .select_box, .carousel .carousel-inner .item .modal-header .download .configuration .configuration_inner .task_add_worker .select_box, .task_add_requester .carousel .carousel-inner .item .modal-header .like .configuration .configuration_inner .select_box, .carousel .carousel-inner .item .modal-header .like .configuration .configuration_inner .task_add_requester .select_box, .task_add_worker .carousel .carousel-inner .item .modal-header .like .configuration .configuration_inner .select_box, .carousel .carousel-inner .item .modal-header .like .configuration .configuration_inner .task_add_worker .select_box {
+  .task_add_requester input, .task_add_worker input {
     -webkit-border-radius: 4px;
     -moz-border-radius: 4px;
     -ms-border-radius: 4px;
@@ -5277,13 +5274,18 @@ input[type="checkbox"], .option .configuration .configuration_inner [type="check
       font-weight: bold;
       color: #555555;
       margin-bottom: 10px; }
-    .option .configuration .configuration_inner input, .carousel .carousel-inner .item .modal-header .download .configuration .configuration_inner input, .carousel .carousel-inner .item .modal-header .like .configuration .configuration_inner input, .option .configuration .configuration_inner .select_box, .carousel .carousel-inner .item .modal-header .download .configuration .configuration_inner .select_box, .carousel .carousel-inner .item .modal-header .like .configuration .configuration_inner .select_box {
+    .option .configuration .configuration_inner .input_box, .carousel .carousel-inner .item .modal-header .download .configuration .configuration_inner .input_box, .carousel .carousel-inner .item .modal-header .like .configuration .configuration_inner .input_box, .option .configuration .configuration_inner .select_box, .carousel .carousel-inner .item .modal-header .download .configuration .configuration_inner .select_box, .carousel .carousel-inner .item .modal-header .like .configuration .configuration_inner .select_box {
       border: 1px solid #e2e2e2;
       width: 490px;
       padding: 10px 10px;
-      margin-bottom: 20px; }
-      .option .configuration .configuration_inner input:focus, .carousel .carousel-inner .item .modal-header .download .configuration .configuration_inner input:focus, .carousel .carousel-inner .item .modal-header .like .configuration .configuration_inner input:focus, .option .configuration .configuration_inner .select_box:focus, .carousel .carousel-inner .item .modal-header .download .configuration .configuration_inner .select_box:focus, .carousel .carousel-inner .item .modal-header .like .configuration .configuration_inner .select_box:focus {
+      margin-bottom: 20px;
+      position: relative; }
+      .option .configuration .configuration_inner .input_box input:focus, .carousel .carousel-inner .item .modal-header .download .configuration .configuration_inner .input_box input:focus, .carousel .carousel-inner .item .modal-header .like .configuration .configuration_inner .input_box input:focus, .option .configuration .configuration_inner .select_box input:focus, .carousel .carousel-inner .item .modal-header .download .configuration .configuration_inner .select_box input:focus, .carousel .carousel-inner .item .modal-header .like .configuration .configuration_inner .select_box input:focus {
         outline: none; }
+      .option .configuration .configuration_inner .input_box .change, .carousel .carousel-inner .item .modal-header .download .configuration .configuration_inner .input_box .change, .carousel .carousel-inner .item .modal-header .like .configuration .configuration_inner .input_box .change, .option .configuration .configuration_inner .select_box .change, .carousel .carousel-inner .item .modal-header .download .configuration .configuration_inner .select_box .change, .carousel .carousel-inner .item .modal-header .like .configuration .configuration_inner .select_box .change {
+        position: absolute;
+        right: 20px;
+        top: 10px; }
     .option .configuration .configuration_inner .select_box, .carousel .carousel-inner .item .modal-header .download .configuration .configuration_inner .select_box, .carousel .carousel-inner .item .modal-header .like .configuration .configuration_inner .select_box {
       -webkit-border-radius: 0;
       -moz-border-radius: 0;
