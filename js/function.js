@@ -221,6 +221,17 @@ window.onload=function(){
   $(function(){
         function adjust(){
              var h = $(window).height(); //ウィンドウの高さ
+             $('.profile').css('height', h-53); //可変部分の高さを適用
+        }
+       adjust();
+       $(window).on('resize', function(){
+            adjust();
+       })
+  });
+
+  $(function(){
+        function adjust(){
+             var h = $(window).height(); //ウィンドウの高さ
              $('.global_menu_inner').css('height', h-53); //可変部分の高さを適用
         }
        adjust();
@@ -631,6 +642,14 @@ function actCustomScrollbar(){
         }
      });
      $('.page_menu_inner').mCustomScrollbar({
+       autoHideScrollbar: true,
+       scrollInertia: 0,
+       advanced:{
+          autoScrollOnFocus: true,
+          updateOnContentResize: true
+        }
+     });
+     $('.profile').mCustomScrollbar({
        autoHideScrollbar: true,
        scrollInertia: 0,
        advanced:{
