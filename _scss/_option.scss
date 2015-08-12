@@ -33,9 +33,6 @@
             &:hover {
               cursor: pointer;
             }
-            &.configuration_open {
-
-            }
             &.configuration_close {
               display: none;
             }
@@ -111,6 +108,7 @@
   width: 150px;
   height: 50px;
   line-height: 50px;
+  text-align: center;
   color: white;
   background: $torio_green;
   &.delete {
@@ -118,6 +116,7 @@
   }
   &:hover {
     @include opacity(0.7);
+    cursor: pointer;
   }
 }
 
@@ -239,6 +238,7 @@ h3.profile_title {
  Cancellation_box
 ---------------------------------------------------------------------------------------*/
 #cancellation_box {
+  @include clearfix;
   .modal-body {
     &.white {
       border: none;
@@ -264,6 +264,22 @@ h3.profile_title {
         margin-bottom: 20px;
         li {
           list-style: disc;
+        }
+      }
+      .configuration_btn_box {
+        @include clearfix;
+        .configuration_btn {
+          float: right;
+          &.delete {
+            display: block;
+            margin-left: 20px;
+          }
+          &.cancel {
+            display: block;
+            background: none;
+            border: 1px solid $border_gray;
+            color: $white_brack;
+          }
         }
       }
     }
