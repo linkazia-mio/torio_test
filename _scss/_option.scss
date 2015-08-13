@@ -156,36 +156,42 @@ h3.profile_title {
     margin: 0 auto 20px auto;
     text-align: center;
     img {
-      width: 100px;
-      height: 100px;
+      width: 85px;
+      height: 85px;
+      -webkit-transition: opacity 0.33s cubic-bezier(0.645, 0.045, 0.355, 1);
+      -webkit-transition-delay: 0.25s;
+      -moz-transition: opacity 0.33s cubic-bezier(0.645, 0.045, 0.355, 1) 0.25s;
+      -o-transition: opacity 0.33s cubic-bezier(0.645, 0.045, 0.355, 1) 0.25s;
+      transition: opacity 0.33s cubic-bezier(0.645, 0.045, 0.355, 1) 0.25s;
     }
   }
   .noimage_box {
-    padding-top: 30px;
+    padding-top: 50px;
     .noimage {
-      @include fontsize(2.6);
-      margin: 0 auto 20px auto;
+      @include fontsize(3.0);
+      @include font_eng;
+      font-weight: normal;
+      margin: 0 auto 18px auto;
       text-align: center;
-      width: 100px;
-      height: 100px;
-      line-height: 100px;
+      width: 85px;
+      height: 85px;
+      line-height: 85px;
     }
   }
   .profile_name {
-    @include fontsize(1.5);
-    margin-bottom: 10px;
+    @include fontsize(1.8);
+    margin-bottom: 3px;
     text-align: center;
     font-weight: bold;
   }
   .profile_mail {
-    @include fontsize(1.2);
+    @include fontsize(1.3);
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 18px;
   }
   .profile_comment {
-    @include fontsize(1.2);
-    padding: 0 30px;
-    color: $white_brack;
+    @include fontsize(1.3);
+    padding: 0 30px 50px 30px;
   }
   .profile_link {
     text-align: center;
@@ -195,38 +201,49 @@ h3.profile_title {
       position: relative;
       a {
         @include border_radius(100px);
-        color: $white_brack;
+        background: $torio_green;
         height: 30px;
         width: 30px;
         line-height: 30px;
         display: block;
-        border: 1px solid $white_brack;
+        color: #ffffff;
         i {
-          @include fontsize(2.6);
-          position: absolute;
-          left: 2px;
-          top: 2px;
+          @include fontsize(2.4);
+          &.icon-home{
+            position: absolute;
+            left: 3px;
+            top: 3.5px;
+          }
+          &.icon-facebook{
+            position: absolute;
+            left: 3px;
+            top: 3.5px;
+          }
+          &.icon-twitter{
+            position: absolute;
+            left: 3px;
+            top: 4px;
+          }
         }
         &:hover {
-          color: $torio_green;
-          border: 1px solid $torio_green;
+          color: #ffffff;
         }
       }
     }
   }
   hr {
-    width: 40%;
-    margin: 30px auto;
+    width: 100%;
+    margin: 0 auto 0 auto;
   }
   .profile_settings {
-    padding-bottom: 30px;
+    padding: 15px 0;
     li {
       position: relative;
       a {
         display: block;
         height: 45px;
-        line-height: 45px;
-        padding-left: 40px;
+        line-height: 47px;
+        padding-left: 47px;
         &:hover {
           background: $torio_green;
           color: white;
@@ -234,9 +251,17 @@ h3.profile_title {
             color: white;
           }
         }
+        &.selected{
+          background: #3A87BC;
+          color: #fff;
+          font-weight: bold; 
+          i {
+            color: #ffffff;
+          }
+        }
       }
       i {
-        @include fontsize(2.6);
+        @include fontsize(2.8);
         color: $white_brack;
         position: absolute;
         top: 10px;
