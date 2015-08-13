@@ -261,7 +261,7 @@ window.onload=function(){
         }
        adjust();
        $(window).on('resize', function(){
-            adjust();
+          adjust();
        })
   });
 
@@ -275,6 +275,9 @@ window.onload=function(){
        $(window).on('resize', function(){
             adjust();
        })
+       $('.global_menu_btn').click(function () {
+         adjust();
+    })
   });
 
 
