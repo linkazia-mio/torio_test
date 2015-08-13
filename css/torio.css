@@ -5500,8 +5500,11 @@ h3.profile_title {
         font-size: 60px;
         font-size: 6rem;
         margin-bottom: 20px; }
-  #cancellation_box .modal-body.white {
-    border: none; }
+  #cancellation_box .modal-body {
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    border-radius: 4px; }
     #cancellation_box .modal-body.white .cancellation_contents .cancellation_title {
       font-size: 16px;
       font-size: 1.6rem;
