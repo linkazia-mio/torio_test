@@ -5,11 +5,11 @@
   .configuration {
     padding: 0 30px 10px 30px;
     .configuration_inner {
-      @include border_radius(2px);
+      @include border_radius(3px);
       max-width: 750px;
       min-width: 590px;
       margin: 0 auto 30px auto;
-      padding: 30px 50px;
+      padding: 35px 35px;
       background: #fff;
       position: relative;
       border: 1px solid #ededf0;
@@ -25,8 +25,8 @@
         }
         .configuration_btn_show {
           position: absolute;
-          right: 45px;
-          top: 30px;
+          right: 35px;
+          top: 35px;
           color: $white_brack;
           span {
             padding-right: 20px;
@@ -46,7 +46,7 @@
         }
       }
       .configuration_title {
-        @include fontsize(1.4);
+        @include fontsize(1.3);
         font-weight: bold;
         color: $brack;
         margin-bottom: 10px;
@@ -55,8 +55,9 @@
         border: 1px solid $border_gray;
         width: 490px;
         padding: 10px 10px;
-        margin-bottom: 20px;
+        margin-bottom: 35px;
         position: relative;
+        @include border_radius(3px);
         input {
           width: 100%;
           z-index: 10;
@@ -86,7 +87,7 @@
       }
       .select_box {
         @extend .input_box;
-        @include border_radius(0);
+        @include border_radius(3px);
         position: relative;
         padding: 0;
         select {
@@ -103,7 +104,7 @@
           height: 26px;
           width: 26px;
           font-family: 'torio_icon';
-          content: "\e666";
+          content: "\e60a";
           color: $white_brack;
           z-index: 1;
           display: block;
@@ -117,12 +118,14 @@
 ---------------------------------------------------------------------------------------*/
 .configuration_btn {
   @include border_radius();
-  width: 150px;
-  height: 50px;
-  line-height: 50px;
+  width: 130px;
+  height: 40px;
+  line-height: 40px;
   text-align: center;
   color: white;
   background: $torio_green;
+  @include fontsize(1.3);
+  font-weight: bold;
   &.delete {
     background: $dark_red;
   }
@@ -245,11 +248,8 @@ h3.profile_title {
         line-height: 47px;
         padding-left: 47px;
         &:hover {
-          background: $torio_green;
-          color: white;
-          i {
-            color: white;
-          }
+          background: $white_gray;
+          color: $dark_brack;
         }
         &.selected{
           background: #3A87BC;
@@ -280,7 +280,7 @@ h3.profile_title {
     &.white {
       border: none;
       .attention {
-        @include border_radius(2px);
+        @include border_radius(3px);
         background: $white_red;
         padding: 20px;
         color: $dark_red;
