@@ -1932,6 +1932,8 @@ header {
   min-width: 100px;
   background: #fff;
   float: left; }
+  .global_menu.size_none {
+    width: 0 !important; }
   .global_menu.ui-widget-content {
     border: none;
     border-right: 1px solid #e2e2e2; }

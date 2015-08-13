@@ -567,7 +567,8 @@ window.onload=function(){
   //global_menu 非表示
   $(document).ready(function(){
     $('.global_menu_btn').click(function () {
-      jQuery( '.global_menu' ).toggle();
+      jQuery('.global_menu').toggle();
+      jQuery('.global_menu').toggleClass("size_none");
       jQuery('#masonry').masonry();
     });
   });

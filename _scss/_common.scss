@@ -967,6 +967,9 @@ header {
   min-width: 100px;
   background: #fff;
   float: left;
+  &.size_none {
+    width: 0 !important;
+  }
   &.ui-widget-content {
     border: none;
     border-right: 1px solid $border_gray;
