@@ -282,6 +282,9 @@ h3.profile_title {
   #cancellation_finish {
     display: none;
     padding: 50px 0;
+    .white {
+      border: none;
+    }
     p {
       @include fontsize(2.2);
       font-weight: bold;

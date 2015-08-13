@@ -5490,6 +5490,8 @@ h3.profile_title {
   #cancellation_box #cancellation_finish {
     display: none;
     padding: 50px 0; }
+    #cancellation_box #cancellation_finish .white {
+      border: none; }
     #cancellation_box #cancellation_finish p {
       font-size: 22px;
       font-size: 2.2rem;
