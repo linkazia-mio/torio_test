@@ -5502,13 +5502,35 @@ h3.profile_title {
         margin-bottom: 20px; }
   #cancellation_box .modal-body.white {
     border: none; }
-<<<<<<< HEAD
     #cancellation_box .modal-body.white .cancellation_contents .cancellation_title {
       font-size: 16px;
       font-size: 1.6rem;
       color: #333333;
       font-weight: bold;
       margin-bottom: 10px; }
+    #cancellation_box .modal-body.white .cancellation_contents .attention {
+      -webkit-border-radius: 3px;
+      -moz-border-radius: 3px;
+      -ms-border-radius: 3px;
+      border-radius: 3px;
+      background: #ffebe7;
+      padding: 20px;
+      color: #db4c3f; }
+    #cancellation_box .modal-body.white .cancellation_contents .caution {
+      font-size: 18px;
+      font-size: 1.8rem;
+      color: #db4c3f;
+      margin: 30px 0; }
+    #cancellation_box .modal-body.white .cancellation_contents .data {
+      font-weight: bold;
+      padding-bottom: 10px;
+      border-bottom: 1px solid #e2e2e2;
+      margin-bottom: 10px; }
+    #cancellation_box .modal-body.white .cancellation_contents .data_list {
+      padding-left: 20px;
+      margin-bottom: 20px; }
+      #cancellation_box .modal-body.white .cancellation_contents .data_list li {
+        list-style: disc; }
     #cancellation_box .modal-body.white .cancellation_contents .cancellation_reason_list {
       margin: 20px 0; }
       #cancellation_box .modal-body.white .cancellation_contents .cancellation_reason_list li {
@@ -5547,13 +5569,6 @@ h3.profile_title {
       -moz-border-radius: 2px;
       -ms-border-radius: 2px;
       border-radius: 2px;
-=======
-    #cancellation_box .modal-body.white .attention {
-      -webkit-border-radius: 3px;
-      -moz-border-radius: 3px;
-      -ms-border-radius: 3px;
-      border-radius: 3px;
->>>>>>> abe997323458b013c60db454e2c5ddf9b998d66a
       background: #ffebe7;
       padding: 20px;
       color: #db4c3f;
