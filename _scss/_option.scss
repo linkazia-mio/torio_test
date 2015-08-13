@@ -52,21 +52,21 @@
         text-align: center;
         .user_image {
           img {
-            width: 100px;
-            height: 100px;
+            width: 85px;
+            height: 85px;
           }
         }
         .noimage {
           @include fontsize(3.0);
-          width: 100px;
-          height: 100px;
-          line-height: 100px;
+          width: 85px;
+          height: 85px;
+          line-height: 85px;
           font-weight: normal;
         }
         .change_btn {
           margin-top: 20px;
           a {
-            color: $torio_green;
+            color: $white_brack;
           }
         }
       }
@@ -298,12 +298,12 @@ h3.profile_title {
     margin: 0 auto 0 auto;
   }
   .profile_settings {
-    padding: 15px 0;
+    padding: 28px 0;
     li {
       position: relative;
       a {
         display: block;
-        height: 45px;
+        height: 47px;
         line-height: 47px;
         padding-left: 47px;
         &:hover {

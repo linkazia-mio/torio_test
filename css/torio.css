@@ -5278,19 +5278,19 @@ input[type="checkbox"] {
       top: 30px;
       text-align: center; }
       .option_config .configuration .configuration_inner .profile_image_change .user_image img {
-        width: 100px;
-        height: 100px; }
+        width: 85px;
+        height: 85px; }
       .option_config .configuration .configuration_inner .profile_image_change .noimage {
         font-size: 30px;
         font-size: 3rem;
-        width: 100px;
-        height: 100px;
-        line-height: 100px;
+        width: 85px;
+        height: 85px;
+        line-height: 85px;
         font-weight: normal; }
       .option_config .configuration .configuration_inner .profile_image_change .change_btn {
         margin-top: 20px; }
         .option_config .configuration .configuration_inner .profile_image_change .change_btn a {
-          color: #3A87BC; }
+          color: #8a959e; }
     .option_config .configuration .configuration_inner .configuration_title {
       font-size: 13px;
       font-size: 1.3rem;
@@ -5505,12 +5505,12 @@ h3.profile_title {
     width: 100%;
     margin: 0 auto 0 auto; }
   .profile .profile_settings {
-    padding: 15px 0; }
+    padding: 28px 0; }
     .profile .profile_settings li {
       position: relative; }
       .profile .profile_settings li a {
         display: block;
-        height: 45px;
+        height: 47px;
         line-height: 47px;
         padding-left: 47px; }
         .profile .profile_settings li a:hover {
