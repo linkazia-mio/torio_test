@@ -5272,22 +5272,66 @@ input[type="checkbox"] {
           position: absolute;
           right: -5px;
           top: -2px; }
+    .option_config .configuration .configuration_inner .profile_image_change {
+      position: absolute;
+      right: 30px;
+      top: 30px;
+      text-align: center; }
+      .option_config .configuration .configuration_inner .profile_image_change .user_image img {
+        width: 100px;
+        height: 100px; }
+      .option_config .configuration .configuration_inner .profile_image_change .noimage {
+        font-size: 30px;
+        font-size: 3rem;
+        width: 100px;
+        height: 100px;
+        line-height: 100px;
+        font-weight: normal; }
+      .option_config .configuration .configuration_inner .profile_image_change .change_btn {
+        margin-top: 20px; }
+        .option_config .configuration .configuration_inner .profile_image_change .change_btn a {
+          color: #3A87BC; }
     .option_config .configuration .configuration_inner .configuration_title {
       font-size: 13px;
       font-size: 1.3rem;
       font-weight: bold;
       color: #555555;
-      margin-bottom: 10px; }
+      margin-bottom: 10px;
+      clear: both; }
     .option_config .configuration .configuration_inner .input_box, .option_config .configuration .configuration_inner .input_box_pass, .option_config .configuration .configuration_inner .select_box {
       border: 1px solid #e2e2e2;
       width: 490px;
-      padding: 10px 10px;
+      padding: 10px;
       margin-bottom: 35px;
       position: relative;
       -webkit-border-radius: 3px;
       -moz-border-radius: 3px;
       -ms-border-radius: 3px;
       border-radius: 3px; }
+      .option_config .configuration .configuration_inner .input_box.profile_text, .option_config .configuration .configuration_inner .profile_text.input_box_pass, .option_config .configuration .configuration_inner .profile_text.select_box {
+        margin-bottom: 50px; }
+      .option_config .configuration .configuration_inner .input_box.profile_name, .option_config .configuration .configuration_inner .profile_name.input_box_pass, .option_config .configuration .configuration_inner .profile_name.select_box {
+        *zoom: 1;
+        border: none;
+        padding: 0; }
+        .option_config .configuration .configuration_inner .input_box.profile_name:after, .option_config .configuration .configuration_inner .profile_name.input_box_pass:after, .option_config .configuration .configuration_inner .profile_name.select_box:after {
+          content: ".";
+          display: block;
+          clear: both;
+          height: 0;
+          visibility: hidden; }
+        .option_config .configuration .configuration_inner .input_box.profile_name input, .option_config .configuration .configuration_inner .profile_name.input_box_pass input, .option_config .configuration .configuration_inner .profile_name.select_box input {
+          -webkit-border-radius: 3px;
+          -moz-border-radius: 3px;
+          -ms-border-radius: 3px;
+          border-radius: 3px;
+          border: 1px solid #e2e2e2;
+          padding: 10px 10px;
+          width: 235px;
+          float: left;
+          margin-left: 20px; }
+          .option_config .configuration .configuration_inner .input_box.profile_name input:first-child, .option_config .configuration .configuration_inner .profile_name.input_box_pass input:first-child, .option_config .configuration .configuration_inner .profile_name.select_box input:first-child {
+            margin-left: 0; }
       .option_config .configuration .configuration_inner .input_box input, .option_config .configuration .configuration_inner .input_box_pass input, .option_config .configuration .configuration_inner .select_box input {
         width: 100%;
         z-index: 10; }
@@ -5297,6 +5341,11 @@ input[type="checkbox"] {
         background: #f5f5f5; }
         .option_config .configuration .configuration_inner .input_box.disabled input, .option_config .configuration .configuration_inner .disabled.input_box_pass input, .option_config .configuration .configuration_inner .disabled.select_box input {
           pointer-events: none; }
+      .option_config .configuration .configuration_inner .input_box textarea, .option_config .configuration .configuration_inner .input_box_pass textarea, .option_config .configuration .configuration_inner .select_box textarea {
+        width: 100%;
+        resize: none; }
+        .option_config .configuration .configuration_inner .input_box textarea:focus, .option_config .configuration .configuration_inner .input_box_pass textarea:focus, .option_config .configuration .configuration_inner .select_box textarea:focus {
+          outline: none; }
       .option_config .configuration .configuration_inner .input_box .change, .option_config .configuration .configuration_inner .input_box_pass .change, .option_config .configuration .configuration_inner .select_box .change {
         position: absolute;
         right: 20px;
@@ -5305,6 +5354,13 @@ input[type="checkbox"] {
         z-index: 100; }
         .option_config .configuration .configuration_inner .input_box .change:hover, .option_config .configuration .configuration_inner .input_box_pass .change:hover, .option_config .configuration .configuration_inner .select_box .change:hover {
           cursor: pointer; }
+      .option_config .configuration .configuration_inner .input_box .count, .option_config .configuration .configuration_inner .input_box_pass .count, .option_config .configuration .configuration_inner .select_box .count {
+        font-size: 12px;
+        font-size: 1.2rem;
+        position: absolute;
+        left: 0;
+        bottom: -30px;
+        color: #8a959e; }
     .option_config .configuration .configuration_inner .select_box {
       -webkit-border-radius: 3px;
       -moz-border-radius: 3px;
