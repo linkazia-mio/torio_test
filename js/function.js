@@ -257,7 +257,7 @@ window.onload=function(){
              var w = $(window).width(); //ウィンドウの高さ
              var w1= $('.page_menu').width(); //他要素の高さ
              var w2= $('.global_menu').width(); //他要素の高さ
-             $('.detail').css('width', w-w1-w2); //可変部分の高さを適用
+             $('.detail').css('width', w-w1-w2-2); //可変部分の高さを適用
         }
        adjust();
        $(window).on('resize', function(){
