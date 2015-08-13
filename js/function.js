@@ -566,6 +566,8 @@ window.onload=function(){
           minWidth: 310,
           maxWidth: 600
       });
+      jQuery( '.detail' ).resizable({
+      });
   });
 
   //File可変グリッド
