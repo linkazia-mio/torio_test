@@ -391,55 +391,73 @@ window.onload=function(){
     $('.task_add_list_btn').click(function () {
       $('.task_add_list_member').toggle( 'fade', '', 100 );
       event.stopPropagation();
-      $('.option_box,.activity_box,.check_box,.add_page,.detail_option_box,#task_add_time_1,.task_add_member,#task_add_time_1,#task_add_time_2,#task_add_time_3').hide();
+      popover.hide();
+      popoverBig.hide();
+      $('.task_add_list_member').toggle();
     });
     //Task_add_time
     $('#made_1 .time_create').click(function () {
       $('#made_1 .task_add_time').toggle( 'fade', '', 100 );
       event.stopPropagation();
-      $('.option_box,.activity_box,.check_box,.add_page,.detail_option_box,.task_add_list_member,.task_add_member,#task_add_time_2,#task_add_time_3').hide();
+      popover.hide();
+      popoverBig.hide();
+      $('#made_1 .task_add_time').toggle();
     });
     //Task_add_time
     $('#made_2 .time_create').click(function () {
       $('#made_2 .task_add_time').toggle( 'fade', '', 100 );
       event.stopPropagation();
-      $('.option_box,.activity_box,.check_box,.add_page,.detail_option_box,.task_add_list_member,.task_add_member,#task_add_time_2,#task_add_time_3').hide();
+      popover.hide();
+      popoverBig.hide();
+      $('#made_2 .task_add_time').toggle();
     });
     //Task_add_time
     $('#made_3 .time_create').click(function () {
       $('#made_3 .task_add_time').toggle( 'fade', '', 100 );
       event.stopPropagation();
-      $('.option_box,.activity_box,.check_box,.add_page,.detail_option_box,.task_add_list_member,.task_add_member,#task_add_time_2,#task_add_time_3').hide();
+      popover.hide();
+      popoverBig.hide();
+      $('#made_3 .task_add_time').toggle();
     });
     //Task Add Member
     $('#made_1 .task_member').click(function () {
       $('#made_1 .task_add_member').toggle( 'fade', '', 100 );
       event.stopPropagation();
-      $('.add_page,.check_box,.option_box,.detail_option_box,.detail_check_box,.task_add_list_member,#task_add_time_1,#task_add_time_2,#task_add_time_3').hide();
+      popover.hide();
+      popoverBig.hide();
+      $('#made_1 .task_add_member').toggle();
     });
     //Task Add Member
     $('#made_2 .task_member').click(function () {
       $('#made_2 .task_add_member').toggle( 'fade', '', 100 );
       event.stopPropagation();
-      $('.add_page,.check_box,.option_box,.detail_option_box,.detail_check_box,.task_add_list_member,#task_add_time_1,#task_add_time_2,#task_add_time_3').hide();
+      popover.hide();
+      popoverBig.hide();
+      $('#made_2 .task_add_member').toggle();
     });
     //Task Add Member
     $('#made_3 .task_member').click(function () {
       $('#made_3 .task_add_member').toggle( 'fade', '', 100 );
       event.stopPropagation();
-      $('.add_page,.check_box,.option_box,.detail_option_box,.detail_check_box,.task_add_list_member,#task_add_time_1,#task_add_time_2,#task_add_time_3').hide();
+      popover.hide();
+      popoverBig.hide();
+      $('#made_3 .task_add_member').toggle();
     });
     //Task Option
     $('.modal-header .option').click(function () {
       $('.modal_option_box').toggle( 'fade', '', 100 );
       event.stopPropagation();
-      $('.add_page,.check_box,.option_box,.detail_option_box,.detail_check_box,.task_add_list_member,.task_add_member').hide();
+      popover.hide();
+      popoverBig.hide();
+      $('.modal_option_box').toggle();
     });
     //Limit_add_time
     $('.limlt').click(function () {
       $('.limit_add_time').toggle( 'fade', '', 100 );
       event.stopPropagation();
-      $('.add_page,.check_box,.option_box,.detail_option_box,.detail_check_box,.task_add_list_member,.task_add_member,.task_add_requester,.task_add_worker').hide();
+      popover.hide();
+      popoverBig.hide();
+      $('.limit_add_time').toggle();
     });
     $('.limit_add_time').click(function () {
       jQuery('.limit_add_time').show();
@@ -449,25 +467,33 @@ window.onload=function(){
     $('.requester input').click(function () {
       $('.task_add_requester').toggle( 'fade', '', 100 );
       event.stopPropagation();
-      $('.add_page,.check_box,.option_box,.detail_option_box,.detail_check_box,.task_add_list_member,.task_add_member,.task_add_worker,.limit_add_time').hide();
+      popover.hide();
+      popoverBig.hide();
+      $('.task_add_requester').toggle();
     });
     //Task_add_worker
     $('.worker input').click(function () {
       $('.task_add_worker').toggle( 'fade', '', 100 );
       event.stopPropagation();
-      $('.add_page,.check_box,.option_box,.detail_option_box,.detail_check_box,.task_add_list_member,.task_add_member,.task_add_requester,.limit_add_time').hide();
+      popover.hide();
+      popoverBig.hide();
+      $('.task_add_worker').toggle();
     });
     //Nnote_detail_option_box
     $('#note_1 .note_option').click(function () {
       $('#note_1 .note_detail_option_box').toggle( 'fade', '', 100 );
       event.stopPropagation();
-      $('.add_page,.check_box,.option_box,.detail_option_box,.detail_check_box,.task_add_list_member,.task_add_member,.task_add_requester,.limit_add_time,#note_2 .note_detail_option_box').hide();
+      popover.hide();
+      popoverBig.hide();
+      $('#note_1 .note_detail_option_box').toggle();
     });
     //Note_detail_option_box
     $('#note_2 .note_option').click(function () {
       $('#note_2 .note_detail_option_box').toggle( 'fade', '', 100 );
       event.stopPropagation();
-      $('.add_page,.check_box,.option_box,.detail_option_box,.detail_check_box,.task_add_list_member,.task_add_member,.task_add_requester,.limit_add_time,#note_1 .note_detail_option_box').hide();
+      popover.hide();
+      popoverBig.hide();
+      $('#note_2 .note_detail_option_box').toggle();
     });
     //comment_count
     $('#note_1 .comment_count').click(function () {
@@ -492,6 +518,23 @@ window.onload=function(){
     //change
     $('.change').click(function () {
       $('.input_box_pass').removeClass('disabled');
+      event.stopPropagation();
+    });
+    //cancellation_first
+    $('#cancellation_first .delete').click(function () {
+      $('#cancellation_second').show();
+      $('#cancellation_first').hide();
+      event.stopPropagation();
+    });
+    //cancellation_second
+    $('#cancellation_second .delete').click(function () {
+      $('#cancellation_finish').show();
+      $('#cancellation_second').hide();
+      event.stopPropagation();
+    });
+    $('#cancellation_second .cancel').click(function () {
+      $('#cancellation_first').show();
+      $('#cancellation_second').hide();
       event.stopPropagation();
     });
 

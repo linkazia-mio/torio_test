@@ -2,6 +2,8 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="x-ua-compatible" content="IE=9" >
+    <meta http-equiv="x-ua-compatible" content="IE=EmulateIE9" >
     <title>TORIO</title>
     <script type="text/javascript" src="js/jquery-1.11.3.js"></script>
     <script type="text/javascript" src="js/jquery-ui.min.js"></script>
@@ -524,12 +526,13 @@
       <div class="modal fade" id="cancellation_box" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
         <button type="button" class="modal_close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <div class="modal-dialog" role="document">
-          <!--modal-content_1/-->
-          <div class="modal-content">
+          <!--modal-content/-->
+          <div class="modal-content" id="cancellation_first">
             <div class="modal-header task_modal_header">
               <h4 class="modal-title" id="myModalLabel">サービスを解約する</h4>
             </div>
             <div class="modal-body white">
+              <!--cancellation_contents/-->
               <div class="cancellation_contents">
                 <p class="attention">解約すると、以下のデータが削除され、今後ログインすることができなくなります。<br>
                 削除されたデータは復旧することができません。本当に削除しますか？</p>
@@ -547,12 +550,60 @@
                 </ul>
                 <div class="configuration_btn_box">
                   <p class="configuration_btn delete">次へ</p>
-                  <p class="configuration_btn cancel">キャンセル</p>
+                  <p class="configuration_btn cancel" data-dismiss="modal" aria-label="Close">キャンセル</p>
                 </div>
               </div>
+              <!--/cancellation_contents-->
             </div>
-            <!--/modal-content_1-->
           </div>
+          <!--/modal-content-->
+          <!--modal-content/-->
+          <div class="modal-content" id="cancellation_second">
+            <div class="modal-header task_modal_header">
+              <h4 class="modal-title" id="myModalLabel">解約アンケートにご協力ください</h4>
+            </div>
+            <div class="modal-body white">
+              <!--cancellation_contents/-->
+              <div class="cancellation_contents">
+                <p class="attention">解約はまだ完了しておりません。</p>
+                <p class="cancellation_title">解約の理由を選択してください。</p>
+                <p class="note">※必ず1項目以上を選択してください。（複数選択可）</p>
+                <ul class="cancellation_reason_list">
+                  <li><input type="checkbox" id="c100"><label for="c100"></label>使いにくい、分かりにくい</li>
+                  <li><input type="checkbox" id="c101"><label for="c101"></label>求めていた機能がなかった</li>
+                  <li><input type="checkbox" id="c102"><label for="c102"></label>値段が高い</li>
+                  <li><input type="checkbox" id="c103"><label for="c103"></label>どう活用していいか分からなかった</li>
+                  <li><input type="checkbox" id="c104"><label for="c104"></label>他のツールに乗り換え</li>
+                  <li><input type="checkbox" id="c105"><label for="c105"></label>やりとりする相手がいない</li>
+                  <li><input type="checkbox" id="c106"><label for="c106"></label>その他</li>
+                </ul>
+                <input type="text" class="cancellation_reason_etc">
+                <p class="cancellation_title">解約の理由をご記入ください。</p>
+                <textarea class="cancellation_reason"></textarea>
+                <div class="configuration_btn_box">
+                  <p class="configuration_btn delete">解約する</p>
+                  <p class="configuration_btn cancel" data-dismiss="modal" aria-label="Close">もどる</p>
+                </div>
+              </div>
+              <!--/cancellation_contents-->
+            </div>
+          </div>
+          <!--/modal-content-->
+          <!--modal-content/-->
+          <div class="modal-content" id="cancellation_finish">
+            <div class="modal-body white">
+              <!--cancellation_contents/-->
+              <div class="cancellation_contents">
+                <p>
+                  <i class="icon-emoji-sad"></i><br>
+                  退会手続きが完了しました。<br>
+                  ご利用ありがとうございました。
+                </p>
+              </div>
+              <!--/cancellation_contents-->
+            </div>
+          </div>
+          <!--/modal-content-->
         </div>
       </div>
       <!--/Cancellation box-->

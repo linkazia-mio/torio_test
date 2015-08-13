@@ -5460,46 +5460,101 @@ h3.profile_title {
     clear: both;
     height: 0;
     visibility: hidden; }
+  #cancellation_box #cancellation_second {
+    display: none; }
+  #cancellation_box #cancellation_finish {
+    display: none;
+    padding: 50px 0; }
+    #cancellation_box #cancellation_finish p {
+      font-size: 22px;
+      font-size: 2.2rem;
+      font-weight: bold;
+      text-align: center;
+      color: #db4c3f; }
+      #cancellation_box #cancellation_finish p i {
+        font-size: 60px;
+        font-size: 6rem;
+        margin-bottom: 20px; }
   #cancellation_box .modal-body.white {
     border: none; }
-    #cancellation_box .modal-body.white .attention {
+    #cancellation_box .modal-body.white .cancellation_contents .cancellation_title {
+      font-size: 16px;
+      font-size: 1.6rem;
+      color: #333333;
+      font-weight: bold;
+      margin-bottom: 10px; }
+    #cancellation_box .modal-body.white .cancellation_contents .cancellation_reason_list {
+      margin: 20px 0; }
+      #cancellation_box .modal-body.white .cancellation_contents .cancellation_reason_list li {
+        clear: both;
+        height: 35px;
+        line-height: 35px; }
+        #cancellation_box .modal-body.white .cancellation_contents .cancellation_reason_list li input[type="checkbox"] + label {
+          margin: 20px 10px 15px 0px; }
+    #cancellation_box .modal-body.white .cancellation_contents .cancellation_reason_etc {
+      -webkit-border-radius: 2px;
+      -moz-border-radius: 2px;
+      -ms-border-radius: 2px;
+      border-radius: 2px;
+      border: 1px solid #e2e2e2;
+      padding: 10px;
+      width: 426px;
+      margin: -15px 0 30px 28px; }
+    #cancellation_box .modal-body.white .cancellation_contents .cancellation_reason {
+      -webkit-border-radius: 2px;
+      -moz-border-radius: 2px;
+      -ms-border-radius: 2px;
+      border-radius: 2px;
+      border: 1px solid #e2e2e2;
+      width: 100%;
+      padding: 10px;
+      resize: none;
+      height: 60px; }
+      #cancellation_box .modal-body.white .cancellation_contents .cancellation_reason:focus {
+        outline: none; }
+    #cancellation_box .modal-body.white .cancellation_contents .note {
+      font-size: 13px;
+      font-size: 1.3rem;
+      color: #8a959e; }
+    #cancellation_box .modal-body.white .cancellation_contents .attention {
       -webkit-border-radius: 2px;
       -moz-border-radius: 2px;
       -ms-border-radius: 2px;
       border-radius: 2px;
       background: #ffebe7;
       padding: 20px;
-      color: #db4c3f; }
-    #cancellation_box .modal-body.white .caution {
-      font-size: 18px;
-      font-size: 1.8rem;
       color: #db4c3f;
-      margin: 30px 0; }
-    #cancellation_box .modal-body.white .data {
+      margin-bottom: 30px; }
+    #cancellation_box .modal-body.white .cancellation_contents .caution {
+      font-size: 16px;
+      font-size: 1.6rem;
+      color: #db4c3f;
+      margin-bottom: 30px; }
+    #cancellation_box .modal-body.white .cancellation_contents .data {
       font-weight: bold;
       padding-bottom: 10px;
       border-bottom: 1px solid #e2e2e2;
       margin-bottom: 10px; }
-    #cancellation_box .modal-body.white .data_list {
+    #cancellation_box .modal-body.white .cancellation_contents .data_list {
       padding-left: 20px;
       margin-bottom: 20px; }
-      #cancellation_box .modal-body.white .data_list li {
+      #cancellation_box .modal-body.white .cancellation_contents .data_list li {
         list-style: disc; }
-    #cancellation_box .modal-body.white .configuration_btn_box {
+    #cancellation_box .modal-body.white .cancellation_contents .configuration_btn_box {
       *zoom: 1;
       padding-top: 30px; }
-      #cancellation_box .modal-body.white .configuration_btn_box:after {
+      #cancellation_box .modal-body.white .cancellation_contents .configuration_btn_box:after {
         content: ".";
         display: block;
         clear: both;
         height: 0;
         visibility: hidden; }
-      #cancellation_box .modal-body.white .configuration_btn_box .configuration_btn {
+      #cancellation_box .modal-body.white .cancellation_contents .configuration_btn_box .configuration_btn {
         float: right; }
-        #cancellation_box .modal-body.white .configuration_btn_box .configuration_btn.delete {
+        #cancellation_box .modal-body.white .cancellation_contents .configuration_btn_box .configuration_btn.delete {
           display: block;
           margin-left: 20px; }
-        #cancellation_box .modal-body.white .configuration_btn_box .configuration_btn.cancel {
+        #cancellation_box .modal-body.white .cancellation_contents .configuration_btn_box .configuration_btn.cancel {
           display: block;
           background: none;
           border: 1px solid #e2e2e2;
