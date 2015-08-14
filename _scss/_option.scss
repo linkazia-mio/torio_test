@@ -173,6 +173,55 @@
   }
 }
 /*---------------------------------------------------------------------------------------
+ Connect List
+---------------------------------------------------------------------------------------*/
+.connect_list {
+  height: 120px;
+  position: relative;
+  i {
+    @include fontsize(5.0);
+    color: $torio_green;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    margin-top: -25px;
+  }
+  .service_name {
+    font-weight: bold;
+    padding: 38px 0 0 60px;
+  }
+  .service_description {
+    padding: 0 0 0 60px;
+  }
+  .toggle_box {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .connect_list_btn {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  &:after {
+    @include clearfix;
+    margin-top: 37px;
+    clear: both;
+    display: block;
+    content: "";
+    background-image: -webkit-linear-gradient(left, $white_brack, $white_brack 20%, rgba(0, 0, 0, 0) 20%, rgba(0, 0, 0, 0) 100%);
+    background-image: -o-linear-gradient(left, $white_brack, $white_brack 20%, rgba(0, 0, 0, 0) 20%, rgba(0, 0, 0, 0) 100%);
+    background-image: linear-gradient(to right, $white_brack, $white_brack 20%, rgba(0, 0, 0, 0) 20%, rgba(0, 0, 0, 0) 100%);
+    background-size: 5px 5px;
+    height: 1px;
+  }
+  &:last-child {
+    &:after {
+      background: none;
+    }
+  }
+}
+/*---------------------------------------------------------------------------------------
  Configuration_btn
 ---------------------------------------------------------------------------------------*/
 .configuration_btn {

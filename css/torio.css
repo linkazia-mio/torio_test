@@ -5395,6 +5395,53 @@ input[type="checkbox"] {
         display: block; }
 
 /*---------------------------------------------------------------------------------------
+ Connect List
+---------------------------------------------------------------------------------------*/
+.connect_list {
+  height: 120px;
+  position: relative; }
+  .connect_list i {
+    font-size: 50px;
+    font-size: 5rem;
+    color: #3A87BC;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    margin-top: -25px; }
+  .connect_list .service_name {
+    font-weight: bold;
+    padding: 38px 0 0 60px; }
+  .connect_list .service_description {
+    padding: 0 0 0 60px; }
+  .connect_list .toggle_box {
+    position: absolute;
+    right: 0;
+    top: 0; }
+  .connect_list .connect_list_btn {
+    position: absolute;
+    right: 0;
+    top: 0; }
+  .connect_list:after {
+    *zoom: 1;
+    margin-top: 37px;
+    clear: both;
+    display: block;
+    content: "";
+    background-image: -webkit-linear-gradient(left, #8a959e, #8a959e 20%, transparent 20%, transparent 100%);
+    background-image: -o-linear-gradient(left, #8a959e, #8a959e 20%, transparent 20%, transparent 100%);
+    background-image: linear-gradient(to right, #8a959e, #8a959e 20%, transparent 20%, transparent 100%);
+    background-size: 5px 5px;
+    height: 1px; }
+    .connect_list:after:after {
+      content: ".";
+      display: block;
+      clear: both;
+      height: 0;
+      visibility: hidden; }
+  .connect_list:last-child:after {
+    background: none; }
+
+/*---------------------------------------------------------------------------------------
  Configuration_btn
 ---------------------------------------------------------------------------------------*/
 .configuration_btn {
