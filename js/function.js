@@ -511,6 +511,7 @@ window.onload=function(){
     //comment_count
     $('#note_1 .comment_count').click(function () {
       $('#note_1 .note_comment').toggle();
+      $('#note_1 .note_edit_inner_comment').toggleClass('no_border');
     });
     //comment_count
     $('.item .option').click(function () {

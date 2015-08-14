@@ -30,13 +30,13 @@
       border-bottom: 1px solid #dcdce0;
       background: #fff;
       box-shadow: none;
-      &.note_edit_inner_comment{
-        -webkit-border-radius:2px 2px 0 0 !important;
-        -moz-border-radius:2px 2px 0 0 !important;
-        -ms-border-radius:2px 2px 0 0 !important;
-        border-radius:2px 2px 0 0 !important;
-        border: 1px solid #ededf0 !important;
-        border-bottom: 1px solid none !important;
+      &.note_edit_inner_comment {
+        @include border_radius(2px 2px 0 0);
+        border: 1px solid #ededf0;
+        border-bottom: 1px solid #dcdce0;
+        &.no_border {
+          border-bottom: none;
+        }
       }
       .edit_name {
         position: relative;

@@ -4659,12 +4659,14 @@ input[type="checkbox"] {
       background: #fff;
       box-shadow: none; }
       .note .note_edit .note_edit_inner.note_edit_inner_comment {
-        -webkit-border-radius: 2px 2px 0 0 !important;
-        -moz-border-radius: 2px 2px 0 0 !important;
-        -ms-border-radius: 2px 2px 0 0 !important;
-        border-radius: 2px 2px 0 0 !important;
-        border: 1px solid #ededf0 !important;
-        border-bottom: 1px solid none !important; }
+        -webkit-border-radius: 2px 2px 0 0;
+        -moz-border-radius: 2px 2px 0 0;
+        -ms-border-radius: 2px 2px 0 0;
+        border-radius: 2px 2px 0 0;
+        border: 1px solid #ededf0;
+        border-bottom: 1px solid #dcdce0; }
+        .note .note_edit .note_edit_inner.note_edit_inner_comment.no_border {
+          border-bottom: none; }
       .note .note_edit .note_edit_inner .edit_name {
         position: relative;
         font-weight: bold;
