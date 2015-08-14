@@ -576,7 +576,7 @@ window.onload=function(){
   //画面幅移動
   jQuery(function() {
       jQuery( '.global_menu' ).resizable({
-          minWidth: 200,
+          minWidth: 140,
           maxWidth: 400
       });
       jQuery( '.page_menu' ).resizable({
