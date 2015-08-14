@@ -4699,9 +4699,7 @@ input[type="checkbox"] {
         -ms-border-radius: 3px 3px 0 0;
         border-radius: 3px 3px 0 0;
         border: 1px solid #ededf0;
-        border-bottom: 1px solid #dcdce0;
-        min-width: 450px;
-        max-width: 750px; }
+        border-bottom: 1px solid #dcdce0; }
         .note .note_edit .note_edit_inner.note_edit_inner_comment.no_border {
           border-bottom: none; }
       .note .note_edit .note_edit_inner .edit_name {
@@ -4859,6 +4857,8 @@ input[type="checkbox"] {
       text-align: left;
       padding: 25px 20px 25px 20px;
       z-index: 100;
+      min-width: 450px;
+      max-width: 750px;
       border: 1px solid #ededf0;
       border-top: none;
       border-bottom: 1px solid #dcdce0;
