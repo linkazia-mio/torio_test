@@ -5418,9 +5418,18 @@ input[type="checkbox"] {
     right: 0;
     top: 0; }
   .connect_list .connect_list_btn {
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    border-radius: 4px;
     position: absolute;
     right: 0;
-    top: 0; }
+    top: 45px;
+    width: 120px;
+    height: 35px;
+    line-height: 35px;
+    border: 1px solid #e2e2e2;
+    text-align: center; }
   .connect_list:after {
     *zoom: 1;
     margin-top: 37px;

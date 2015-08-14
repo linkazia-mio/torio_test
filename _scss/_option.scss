@@ -199,9 +199,15 @@
     top: 0;
   }
   .connect_list_btn {
+    @include border_radius();
     position: absolute;
     right: 0;
-    top: 0;
+    top: 45px;
+    width: 120px;
+    height: 35px;
+    line-height: 35px;
+    border: 1px solid $border_gray;
+    text-align: center;
   }
   &:after {
     @include clearfix;
