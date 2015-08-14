@@ -226,6 +226,55 @@
       background: none;
     }
   }
+  .toggle_box {
+    position: absolute;
+    top: 45px;
+    right: 0;
+    .toggle_btn {
+      @include border_radius(18px);
+      position: relative;
+      float: left;
+      width: 60px;
+      height: 30px;
+      padding: 3px;
+      &:hover {
+        cursor: pointer;
+      }
+      &.on {
+        background: #4ad337;
+        .circle {
+          width: 24px;
+          height: 24px;
+          top: 3px;
+        }
+      }
+      &.off {
+        background: $dark_gray;
+      }
+      .circle {
+        @include border_radius(100px);
+        position: absolute;
+        left:3px;
+        width: 24px;
+        height: 24px;
+        background: #fff;
+        display: block;
+        box-shadow: 0 1px 2px 0 rgba(0,0,0,0.2),0 3px 4px 0 rgba(0,0,0,0.1);
+      }
+    }
+    p {
+      float: left;
+      line-height: 35px;
+      .on {
+        display: none;
+        margin-left: 15px;
+      }
+      .off {
+        display: block;
+        margin-left: 15px;
+      }
+    }
+  }
 }
 /*---------------------------------------------------------------------------------------
  Configuration_btn
