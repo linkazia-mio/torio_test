@@ -2457,6 +2457,9 @@ header {
         .detail .title p.bookmark.active .icon-bookmark {
           color: #db4c3f;
           display: block; }
+        .detail .title p.bookmark:hover {
+          color: #db4c3f;
+          cursor: pointer; }
       .detail .title p.website {
         right: 69px; }
         .detail .title p.website:hover .balloon_box {
@@ -3190,10 +3193,10 @@ header {
       padding-left: 10px; }
   .file .file_list .panel {
     border: none;
-    -webkit-border-radius: 2px;
-    -moz-border-radius: 2px;
-    -ms-border-radius: 2px;
-    border-radius: 2px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    border-radius: 3px;
     /*-webkit-box-shadow: 0 1px 1px rgba(0,0,0,.05);
       box-shadow: 0 1px 1px rgba(0,0,0,.05);
       border: 1px solid $border_gray;*/
@@ -3277,6 +3280,9 @@ header {
         padding: 0 15px; }
         .file .file_list .panel .panel-body .count a {
           color: #8a959e; }
+          .file .file_list .panel .panel-body .count a:hover {
+            color: #333333;
+            cursor: pointer; }
       .file .file_list .panel .panel-body .info {
         position: relative;
         border-top: 1px solid #f5f5f5;
@@ -3288,19 +3294,36 @@ header {
           font-size: 2.3rem;
           color: #8a959e;
           display: inline-block;
-          margin: 0 2% 0 0; }
+          margin: 0 2% 0 0;
+          /*&.comment{
+              &:hover {
+                color: $dark_brack;
+                cursor: pointer;
+              }
+            }
+            &.download{
+              &:hover {
+                color: $dark_brack;
+                cursor: pointer;
+              }
+            }*/ }
           .file .file_list .panel .panel-body .info p:hover {
-            color: #3A87BC;
+            /*color: $torio_green;*/
             cursor: pointer; }
-          .file .file_list .panel .panel-body .info p.like .icon-favorite-outline {
-            display: block; }
-          .file .file_list .panel .panel-body .info p.like .icon-favorite {
-            display: none; }
-          .file .file_list .panel .panel-body .info p.like.active .icon-favorite-outline {
-            display: none; }
-          .file .file_list .panel .panel-body .info p.like.active .icon-favorite {
-            color: #db4c3f;
-            display: block; }
+          .file .file_list .panel .panel-body .info p.like {
+            /*&:hover {
+                color: $dark_red;
+                cursor: pointer;
+              }*/ }
+            .file .file_list .panel .panel-body .info p.like .icon-favorite-outline {
+              display: block; }
+            .file .file_list .panel .panel-body .info p.like .icon-favorite {
+              display: none; }
+            .file .file_list .panel .panel-body .info p.like.active .icon-favorite-outline {
+              display: none; }
+            .file .file_list .panel .panel-body .info p.like.active .icon-favorite {
+              color: #db4c3f;
+              display: block; }
         .file .file_list .panel .panel-body .info .user_image {
           position: absolute;
           right: 7px;

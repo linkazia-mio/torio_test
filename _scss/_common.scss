@@ -1621,6 +1621,10 @@ header {
             display: block;
           }
         }
+        &:hover {
+          color: $dark_red;
+          cursor: pointer;
+        }
       }
       &.website {
         right: 69px;
