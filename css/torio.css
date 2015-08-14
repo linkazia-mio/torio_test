@@ -5442,7 +5442,15 @@ input[type="checkbox"] {
     height: 35px;
     line-height: 35px;
     border: 1px solid #e2e2e2;
-    text-align: center; }
+    text-align: center;
+    color: #8a959e; }
+    .connect_list .connect_list_btn.connect {
+      background: #555555;
+      color: white; }
+      .connect_list .connect_list_btn.connect:hover {
+        opacity: 0.7;
+        filter: alpha(opacity=70);
+        cursor: pointer; }
   .connect_list:after {
     *zoom: 1;
     margin-top: 37px;
@@ -5622,7 +5630,7 @@ h3.profile_title {
             left: 3px;
             top: 4px; }
         .profile .profile_link li a:hover {
-          color: #ffffff; }
+          color: white; }
   .profile hr {
     width: 100%;
     margin: 0 auto 0 auto; }
