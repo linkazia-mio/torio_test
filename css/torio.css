@@ -1175,7 +1175,7 @@ button:focus {
       height: 30px;
       padding: 5px;
       width: 141px;
-      border: 1px solid #e2e2e2;
+      border: 1px solid #e5e5e5;
       margin-right: 10px; }
   .popover ul {
     margin-bottom: 0; }
@@ -1257,7 +1257,7 @@ button:focus {
       height: 30px;
       padding: 5px;
       width: 141px;
-      border: 1px solid #e2e2e2;
+      border: 1px solid #e5e5e5;
       margin-right: 10px; }
   .main .popover ul {
     margin-bottom: 0; }
@@ -1340,7 +1340,7 @@ button:focus {
       height: 30px;
       padding: 5px;
       width: 258px;
-      border: 1px solid #e2e2e2;
+      border: 1px solid #e5e5e5;
       margin: 0 10px 1px 0; }
   .popover_big ul {
     margin-bottom: 0; }
@@ -1480,7 +1480,7 @@ header {
           clear: both;
           /*border: 1px solid #ededf0;
           border-bottom: 1px solid #dcdce0;*/
-          border: 1px solid #e2e2e2;
+          border: 1px solid #e5e5e5;
           box-shadow: none;
           position: relative;
           color: #8a959e; }
@@ -1937,7 +1937,7 @@ header {
     min-width: 0 !important; }
   .global_menu.ui-widget-content {
     border: none;
-    border-right: 1px solid #e2e2e2; }
+    border-right: 1px solid #e5e5e5; }
   .global_menu .global_menu_inner h3 {
     margin: 0 20px 8px 20px;
     font-size: 13px;
@@ -2066,7 +2066,7 @@ header {
   overflow: hidden; }
   .page_menu.ui-widget-content {
     border: none;
-    border-right: 1px solid #e2e2e2; }
+    border-right: 1px solid #e5e5e5; }
   .page_menu .config {
     position: relative;
     height: 45px;
@@ -2729,7 +2729,7 @@ header {
         border-radius: 2;
         float: right;
         width: 400px;
-        border: 1px solid #e2e2e2;
+        border: 1px solid #e5e5e5;
         padding: 10px 10px;
         margin-bottom: 20px; }
       .modal .modal-dialog .modal-content .modal-body .input_dot .close_btn {
@@ -2762,7 +2762,7 @@ header {
           -webkit-appearance: none;
           -moz-appearance: none;
           appearance: none;
-          border: 1px solid #e2e2e2;
+          border: 1px solid #e5e5e5;
           padding: 12px 10px 10px 13px;
           margin: 0 0 0 0;
           z-index: 100; }
@@ -2942,7 +2942,7 @@ header {
       width: 100%;
       height: 95px;
       margin-bottom: 15px;
-      border: 1px solid #e2e2e2;
+      border: 1px solid #e5e5e5;
       background: #fff;
       resize: none;
       outline: none;
@@ -3378,7 +3378,7 @@ header {
     padding-top: 60px;
     display: table-cell;
     text-align: center;
-    border-right: 1px solid #e2e2e2; }
+    border-right: 1px solid #e5e5e5; }
     #add_file .modal-body .local_up a, #add_file .modal-body .web_up a, #add_file2 .modal-body .local_up a, #add_file2 .modal-body .web_up a, #add_file3 .modal-body .local_up a, #add_file3 .modal-body .web_up a {
       color: #8a959e;
       display: block; }
@@ -3409,7 +3409,7 @@ header {
         border-radius: 4;
         width: 430px;
         margin: 0 10px 30px 0;
-        border: 1px solid #e2e2e2;
+        border: 1px solid #e5e5e5;
         background: #ffffff;
         resize: none;
         outline: none;
@@ -3653,7 +3653,7 @@ header {
           height: 60px;
           padding: 10px 15px;
           margin-bottom: 20px;
-          border: 1px solid #e2e2e2;
+          border: 1px solid #e5e5e5;
           resize: none;
           outline: none; }
         .bx-wrapper .bx-viewport .file_slide .item .modal-footer .comment_entry button {
@@ -3884,7 +3884,7 @@ header {
     /*height: 235px;*/
     padding-bottom: 10px;
     background-color: #fff;
-    border: 1px solid #e2e2e2;
+    border: 1px solid #e5e5e5;
     /*-webkit-box-shadow: 0 1px 3px rgba(50,50,50,0.08);
     box-shadow: 0 1px 3px rgba(50,50,50,0.08);*/
     -webkit-border-radius: 4px;
@@ -3984,7 +3984,7 @@ header {
     position: relative;
     margin: 0 auto;
     /*border: 1px solid $green;*/
-    border: 1px solid #e2e2e2;
+    border: 1px solid #e5e5e5;
     /*border: 1px solid #ededf0;
       border-bottom: 1px solid #dcdce0;*/
     vertical-align: top;
@@ -4020,7 +4020,7 @@ header {
         width: 220px;
         margin: 10px 15px;
         padding: 5px;
-        border: 1px solid #e2e2e2; }
+        border: 1px solid #e5e5e5; }
       .task .task_create .task_create_inner .task_add_list_member ul li {
         position: relative; }
         .task .task_create .task_create_inner .task_add_list_member ul li .user_image {
@@ -4177,7 +4177,7 @@ input[type="checkbox"] {
       clear: both;
       /*border: 1px solid #ededf0;
       border-bottom: 1px solid #dcdce0;*/
-      border: 1px solid #e2e2e2;
+      border: 1px solid #e5e5e5;
       box-shadow: none;
       position: relative;
       color: #8a959e; }
@@ -4232,7 +4232,7 @@ input[type="checkbox"] {
             width: 220px;
             margin: 10px 15px;
             padding: 5px;
-            border: 1px solid #e2e2e2; }
+            border: 1px solid #e5e5e5; }
           .task_replacement .task_people .task_list.made .task_add_member ul li {
             position: relative; }
             .task_replacement .task_people .task_list.made .task_add_member ul li .user_image {
@@ -4255,10 +4255,10 @@ input[type="checkbox"] {
         font-size: 20px;
         font-size: 2rem; }
       .task_replacement .task_people .task_list .btn_add_task {
-        -webkit-border-radius: 2;
-        -moz-border-radius: 2;
-        -ms-border-radius: 2;
-        border-radius: 2;
+        -webkit-border-radius: 3;
+        -moz-border-radius: 3;
+        -ms-border-radius: 3;
+        border-radius: 3;
         position: absolute;
         right: 15px;
         bottom: 11px;
@@ -4284,7 +4284,7 @@ input[type="checkbox"] {
           font-size: 11px;
           font-size: 1.1rem;
           color: #555555;
-          border: 1px solid #e2e2e2;
+          border: 1px solid #e5e5e5;
           background: #f5f5f5;
           height: 30px;
           line-height: 30px;
@@ -4426,7 +4426,7 @@ input[type="checkbox"] {
     width: 220px;
     margin: 10px 15px;
     padding: 5px;
-    border: 1px solid #e2e2e2; }
+    border: 1px solid #e5e5e5; }
   .calendar .ui-datepicker {
     margin: 0 auto;
     width: 220px; }
@@ -4447,7 +4447,7 @@ input[type="checkbox"] {
   .calendar .ui-datepicker-inline {
     position: relative; }
     .calendar .ui-datepicker-inline .ui-datepicker-calendar thead {
-      border-bottom: 1px solid #e2e2e2; }
+      border-bottom: 1px solid #e5e5e5; }
     .calendar .ui-datepicker-inline .ui-datepicker-calendar tbody tr:first-child span {
       padding-top: 10px; }
     .calendar .ui-datepicker-inline .ui-widget-header {
@@ -4545,7 +4545,7 @@ input[type="checkbox"] {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
-    border: 1px solid #e2e2e2;
+    border: 1px solid #e5e5e5;
     padding: 5px 10px;
     z-index: 100; }
     .select_box select:focus {
@@ -4584,7 +4584,7 @@ input[type="checkbox"] {
 
 .task_add_time_footer {
   position: relative;
-  border-top: 1px solid #e2e2e2;
+  border-top: 1px solid #e5e5e5;
   height: 36px; }
   .task_add_time_footer .btn_cancel {
     position: absolute;
@@ -4615,7 +4615,7 @@ input[type="checkbox"] {
     width: 220px;
     margin: 10px 15px;
     padding: 5px;
-    border: 1px solid #e2e2e2; }
+    border: 1px solid #e5e5e5; }
   .task_add_requester ul li, .task_add_worker ul li {
     position: relative; }
     .task_add_requester ul li .user_image, .task_add_worker ul li .user_image {
@@ -4642,10 +4642,10 @@ input[type="checkbox"] {
   top: 88px; }
 
 .btn_add_task {
-  -webkit-border-radius: 2;
-  -moz-border-radius: 2;
-  -ms-border-radius: 2;
-  border-radius: 2;
+  -webkit-border-radius: 3;
+  -moz-border-radius: 3;
+  -ms-border-radius: 3;
+  border-radius: 3;
   position: absolute;
   right: 15px;
   bottom: 11px;
@@ -4684,20 +4684,20 @@ input[type="checkbox"] {
       z-index: 10;
       min-width: 450px;
       max-width: 750px;
-      -webkit-border-radius: 2px;
-      -moz-border-radius: 2px;
-      -ms-border-radius: 2px;
-      border-radius: 2px;
+      -webkit-border-radius: 3px;
+      -moz-border-radius: 3px;
+      -ms-border-radius: 3px;
+      border-radius: 3px;
       margin: 0 auto 0 auto;
       border: 1px solid #ededf0;
       border-bottom: 1px solid #dcdce0;
       background: #fff;
       box-shadow: none; }
       .note .note_edit .note_edit_inner.note_edit_inner_comment {
-        -webkit-border-radius: 2px 2px 0 0;
-        -moz-border-radius: 2px 2px 0 0;
-        -ms-border-radius: 2px 2px 0 0;
-        border-radius: 2px 2px 0 0;
+        -webkit-border-radius: 3px 3px 0 0;
+        -moz-border-radius: 3px 3px 0 0;
+        -ms-border-radius: 3px 3px 0 0;
+        border-radius: 3px 3px 0 0;
         border: 1px solid #ededf0;
         border-bottom: 1px solid #dcdce0;
         min-width: 450px;
@@ -4834,10 +4834,10 @@ input[type="checkbox"] {
         bottom: 20px;
         color: #8a959e; }
       .note .note_edit .note_edit_inner .editing {
-        -webkit-border-radius: 2px 2px 0 0;
-        -moz-border-radius: 2px 2px 0 0;
-        -ms-border-radius: 2px 2px 0 0;
-        border-radius: 2px 2px 0 0;
+        -webkit-border-radius: 3px 3px 0 0;
+        -moz-border-radius: 3px 3px 0 0;
+        -ms-border-radius: 3px 3px 0 0;
+        border-radius: 3px 3px 0 0;
         position: relative;
         background: #4ad337;
         color: #fff;
@@ -4850,10 +4850,10 @@ input[type="checkbox"] {
           line-height: 28px;
           display: inline-block; }
     .note .note_edit .note_comment {
-      -webkit-border-radius: 0 0 2px 2px;
-      -moz-border-radius: 0 0 2px 2px;
-      -ms-border-radius: 0 0 2px 2px;
-      border-radius: 0 0 2px 2px;
+      -webkit-border-radius: 0 0 3px 3px;
+      -moz-border-radius: 0 0 3px 3px;
+      -ms-border-radius: 0 0 3px 3px;
+      border-radius: 0 0 3px 3px;
       display: none;
       background: #f5f5f5;
       text-align: left;
@@ -4905,7 +4905,7 @@ input[type="checkbox"] {
       .note .note_edit .note_comment .comment_entry {
         margin: 0 auto;
         padding: 20px 0;
-        border-top: 1px solid #e2e2e2; }
+        border-top: 1px solid #e5e5e5; }
         .note .note_edit .note_comment .comment_entry textarea {
           -webkit-border-radius: 4px;
           -moz-border-radius: 4px;
@@ -4915,7 +4915,7 @@ input[type="checkbox"] {
           height: 60px;
           padding: 10px 10px;
           margin-bottom: 15px;
-          border: 1px solid #e2e2e2;
+          border: 1px solid #e5e5e5;
           background: #fff;
           resize: none;
           outline: none;
@@ -4966,7 +4966,7 @@ input[type="checkbox"] {
   .editable hr {
     width: 100%;
     margin: 30px auto 35px auto;
-    border-top: 1px solid #e2e2e2; }
+    border-top: 1px solid #e5e5e5; }
   .editable blockquote {
     font-size: 14px;
     font-size: 1.4rem;
@@ -5021,7 +5021,7 @@ input[type="checkbox"] {
   .editable_lock hr {
     width: 100%;
     margin: 30px auto 35px auto;
-    border-top: 1px solid #e2e2e2; }
+    border-top: 1px solid #e5e5e5; }
   .editable_lock blockquote {
     font-size: 14px;
     font-size: 1.4rem;
@@ -5345,7 +5345,7 @@ input[type="checkbox"] {
       margin-bottom: 10px;
       clear: both; }
     .option_config .configuration .configuration_inner .input_box, .option_config .configuration .configuration_inner .input_box_pass, .option_config .configuration .configuration_inner .select_box {
-      border: 1px solid #e2e2e2;
+      border: 1px solid #e5e5e5;
       width: 490px;
       padding: 10px;
       margin-bottom: 35px;
@@ -5371,7 +5371,7 @@ input[type="checkbox"] {
           -moz-border-radius: 3px;
           -ms-border-radius: 3px;
           border-radius: 3px;
-          border: 1px solid #e2e2e2;
+          border: 1px solid #e5e5e5;
           padding: 10px 10px;
           width: 235px;
           float: left;
@@ -5466,7 +5466,7 @@ input[type="checkbox"] {
     width: 120px;
     height: 35px;
     line-height: 35px;
-    border: 1px solid #e2e2e2;
+    border: 1px solid #e5e5e5;
     text-align: center;
     color: #8a959e; }
     .connect_list .connect_list_btn.connect {
@@ -5740,7 +5740,7 @@ h3.profile_title {
     #cancellation_box .modal-body.white .cancellation_contents .data {
       font-weight: bold;
       padding-bottom: 10px;
-      border-bottom: 1px solid #e2e2e2;
+      border-bottom: 1px solid #e5e5e5;
       margin-bottom: 10px; }
     #cancellation_box .modal-body.white .cancellation_contents .data_list {
       padding-left: 20px;
@@ -5760,7 +5760,7 @@ h3.profile_title {
       -moz-border-radius: 2px;
       -ms-border-radius: 2px;
       border-radius: 2px;
-      border: 1px solid #e2e2e2;
+      border: 1px solid #e5e5e5;
       padding: 10px;
       width: 426px;
       margin: -15px 0 30px 28px; }
@@ -5769,7 +5769,7 @@ h3.profile_title {
       -moz-border-radius: 2px;
       -ms-border-radius: 2px;
       border-radius: 2px;
-      border: 1px solid #e2e2e2;
+      border: 1px solid #e5e5e5;
       width: 100%;
       padding: 10px;
       resize: none;
@@ -5797,7 +5797,7 @@ h3.profile_title {
     #cancellation_box .modal-body.white .cancellation_contents .data {
       font-weight: bold;
       padding-bottom: 10px;
-      border-bottom: 1px solid #e2e2e2;
+      border-bottom: 1px solid #e5e5e5;
       margin-bottom: 10px; }
     #cancellation_box .modal-body.white .cancellation_contents .data_list {
       padding-left: 20px;
@@ -5821,5 +5821,5 @@ h3.profile_title {
         #cancellation_box .modal-body.white .cancellation_contents .configuration_btn_box .configuration_btn.cancel {
           display: block;
           background: none;
-          border: 1px solid #e2e2e2;
+          border: 1px solid #e5e5e5;
           color: #8a959e; }

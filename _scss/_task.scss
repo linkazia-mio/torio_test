@@ -301,7 +301,7 @@ input[type="checkbox"] {
        @include fontsize(2.0);
       }
       .btn_add_task {
-        @include border_radius(2);
+        @include border_radius(3);
         position: absolute;
         right: 15px;
         bottom: 11px;
@@ -778,7 +778,7 @@ input[type="checkbox"] {
   top: 88px;
 }
 .btn_add_task {
-  @include border_radius(2);
+  @include border_radius(3);
   position: absolute;
   right: 15px;
   bottom: 11px;
