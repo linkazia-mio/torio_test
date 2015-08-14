@@ -34,6 +34,8 @@
         @include border_radius(2px 2px 0 0);
         border: 1px solid #ededf0;
         border-bottom: 1px solid #dcdce0;
+        min-width: 450px;
+        max-width: 750px;
         &.no_border {
           border-bottom: none;
         }
