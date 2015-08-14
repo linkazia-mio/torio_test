@@ -3868,7 +3868,7 @@ header {
     border-radius: 4px;
     font-size: 16px; }
     .card .auth-form .row {
-      height: 60px;
+      min-height: 60px;
       margin: 0;
       border-bottom: 1px solid #f5f5f5;
       display: -webkit-box;
@@ -3882,6 +3882,25 @@ header {
       .card .auth-form .row.submit {
         border-bottom: none;
         padding: 0 15px; }
+        .card .auth-form .row.submit input.button {
+          display: block;
+          width: 100%;
+          font-size: 16px;
+          -webkit-border-radius: 3px;
+          border-radius: 3px;
+          margin: 18px auto 16px auto;
+          height: 50px;
+          font-weight: bold;
+          cursor: pointer;
+          -webkit-transition: 0.1s -webkit-transform ease-in-out;
+          -moz-transition: 0.1s -moz-transform ease-in-out;
+          -o-transition: 0.1s -o-transform ease-in-out;
+          -ms-transition: 0.1s -ms-transform ease-in-out;
+          transition: 0.1s transform ease-in-out; }
+        .card .auth-form .row.submit input.blue {
+          border: 0 none;
+          background-color: #3A87BC;
+          color: #fff; }
       .card .auth-form .row .icon {
         width: 21px;
         height: 25px;
@@ -3890,7 +3909,13 @@ header {
         font-size: 34px;
         font-size: 3.4rem;
         color: #3A87BC; }
-      .card .auth-form .row input {
+        .card .auth-form .row .icon.email {
+          margin-top: 15px !important; }
+        .card .auth-form .row .icon.padlock {
+          margin-top: 15px !important; }
+        .card .auth-form .row .icon.person {
+          margin-top: 15px !important; }
+      .card .auth-form .row.email input, .card .auth-form .row.password input, .card .auth-form .row.name input {
         -webkit-box-flex: 1;
         -moz-box-flex: 1;
         -o-box-flex: 1;
@@ -3905,37 +3930,18 @@ header {
         color: #666;
         outline: none;
         letter-spacing: normal; }
-        .card .auth-form .row input.button {
-          display: block;
-          width: 100%;
-          font-size: 16px;
-          padding: 11px 10px;
-          -webkit-border-radius: 3px;
-          border-radius: 3px;
-          margin: 18px auto;
-          font-weight: bold;
-          cursor: pointer;
-          -webkit-transition: 0.1s -webkit-transform ease-in-out;
-          -moz-transition: 0.1s -moz-transform ease-in-out;
-          -o-transition: 0.1s -o-transform ease-in-out;
-          -ms-transition: 0.1s -ms-transform ease-in-out;
-          transition: 0.1s transform ease-in-out; }
-        .card .auth-form .row input.blue {
-          border: 0 none;
-          background-color: #3A87BC;
-          color: #fff; }
   .card .link.forgot-password {
     font-size: 14px;
     display: block;
     text-align: center;
     margin: 0;
-    padding: 0; }
+    padding: 0 0 5px 0; }
   .card .link.plan {
     font-size: 14px;
     display: block;
     text-align: center;
     margin: 0;
-    padding: 0; }
+    padding: 0 0 5px 0; }
   .card .link.sign-up {
     font-size: 15px;
     padding: 15px 0 10px 0;
