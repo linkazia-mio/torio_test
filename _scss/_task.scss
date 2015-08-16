@@ -241,11 +241,13 @@ input[type="checkbox"] {
       &.made {
         height: auto;
         min-height: 50px;
+        .task_input {
+          margin-bottom: -18px;    
+        }
         input[type="textarea"] {
           width: 90%;
           border: none;
           height: 35px;
-          margin-bottom: -18px;
           overflow: hidden;
           outline: none;
           padding: 16px 0 0 0;
