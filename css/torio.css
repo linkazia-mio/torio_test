@@ -4212,6 +4212,7 @@ input[type="checkbox"] {
         height: auto;
         min-height: 50px; }
         .task_replacement .task_people .task_list.made .task_input {
+          height: 35px;
           margin-bottom: -18px; }
         .task_replacement .task_people .task_list.made input[type="textarea"] {
           width: 90%;
