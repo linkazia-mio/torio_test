@@ -321,6 +321,7 @@
           content: "\e62d";
         }
       }
+      *::-ms-backdrop, .bx-prev { left: 100px; } /* IE11 */
       .bx-next {
         position: fixed;
         top: 350px;
@@ -334,10 +335,11 @@
           content: "\e62e";
         }
       }
+      *::-ms-backdrop, .bx-next { right: 100px; } /* IE11 */
     }
   }
   .bx-viewport {
-    min-height: 125px;
+    min-height: 300px;
     .file_slide {
       .item {
         width: 100% !important;

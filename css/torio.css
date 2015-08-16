@@ -3450,7 +3450,9 @@ header {
   .bx-wrapper .bx-controls .bx-pager {
     display: none; }
   .bx-wrapper .bx-controls .bx-controls-direction {
-    font-family: 'torio_icon'; }
+    font-family: 'torio_icon';
+    /* IE11 */
+    /* IE11 */ }
     .bx-wrapper .bx-controls .bx-controls-direction .bx-prev {
       position: fixed;
       top: 350px;
@@ -3463,6 +3465,8 @@ header {
         font-size: 60px;
         font-size: 6rem;
         content: "\e62d"; }
+    .bx-wrapper .bx-controls .bx-controls-direction *::-ms-backdrop, .bx-wrapper .bx-controls .bx-controls-direction .bx-prev {
+      left: 100px; }
     .bx-wrapper .bx-controls .bx-controls-direction .bx-next {
       position: fixed;
       top: 350px;
@@ -3475,8 +3479,10 @@ header {
         font-size: 60px;
         font-size: 6rem;
         content: "\e62e"; }
+    .bx-wrapper .bx-controls .bx-controls-direction *::-ms-backdrop, .bx-wrapper .bx-controls .bx-controls-direction .bx-next {
+      right: 100px; }
   .bx-wrapper .bx-viewport {
-    min-height: 125px; }
+    min-height: 300px; }
     .bx-wrapper .bx-viewport .file_slide .item {
       width: 100% !important; }
       .bx-wrapper .bx-viewport .file_slide .item .modal-header {
