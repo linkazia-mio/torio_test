@@ -2196,7 +2196,7 @@ header {
       font-size: 12px;
       font-size: 1.2rem;
       position: relative;
-      padding: 18px 10px 18px 20px;
+      padding: 22px 10px 20px 20px;
       color: #555555;
       border-bottom: 1px solid #f5f5f5; }
       .page_menu .page_menu_inner .item:hover {
@@ -2232,7 +2232,7 @@ header {
         font-size: 1.5rem;
         color: #333333;
         font-weight: bold;
-        margin-bottom: 10px;
+        margin-bottom: 5px;
         overflow: hidden;
         white-space: nowrap;
         text-overflow: ellipsis; }
@@ -2244,7 +2244,7 @@ header {
           -ms-border-radius: 70px;
           border-radius: 70px;
           position: absolute;
-          top: 29px;
+          top: 33px;
           left: 7px;
           margin-top: -3px;
           z-index: 1000;
@@ -2254,7 +2254,7 @@ header {
           background: #2aaef5; }
       .page_menu .page_menu_inner .item.file ul {
         margin: 0;
-        padding: 0; }
+        padding: 3px 0 0 0; }
         .page_menu .page_menu_inner .item.file ul li {
           /*@include border_radius(2px);*/
           display: inline-block;
@@ -2293,7 +2293,7 @@ header {
             height: 50px;
             vertical-align: middle; }
       .page_menu .page_menu_inner .item.note {
-        height: 120px; }
+        height: 125px; }
         .page_menu .page_menu_inner .item.note .text {
           height: 50px;
           line-height: 1.5;
