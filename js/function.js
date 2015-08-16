@@ -661,18 +661,16 @@ window.onload=function(){
   var myDoughnut = new Chart(document.getElementById('task_graph_yellow').
   getContext('2d')).Doughnut(Dougnut_data_yellow,options);
 
-
   jQuery(document).ready(function(){
     var slider = jQuery('.file_slide').bxSlider({
       mode: 'fade',
-      adaptiveHeight: 'false'
+      adaptiveHeight : true,
     });
 
+
     jQuery('#file_detail').on('show.bs.modal', function(){
-        setTimeout(function(){
-                slider.reloadSlider();}, 200
-        )
-    })
+        setTimeout(function(){slider.reloadSlider();},200);
+    });
 
     //タスク入れ替え
     jQuery('.task_replacement').sortable({
