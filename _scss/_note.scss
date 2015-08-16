@@ -480,6 +480,7 @@
         left: 2px;
         top: -2px;
       }
+      *::-ms-backdrop, &:before { left: 1px; top: 0px; } /* IE11 */
       &.active {
         transition: all .2s;
       	-webkit-transform: rotate(45deg);
