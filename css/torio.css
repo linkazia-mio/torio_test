@@ -3475,221 +3475,223 @@ header {
         font-size: 60px;
         font-size: 6rem;
         content: "\e62e"; }
-  .bx-wrapper .bx-viewport .file_slide .item {
-    width: 100% !important; }
-    .bx-wrapper .bx-viewport .file_slide .item .modal-header {
-      -webkit-border-radius: 4px;
-      -moz-border-radius: 4px;
-      -ms-border-radius: 4px;
-      border-radius: 4px;
-      position: relative;
-      padding: 30px 25px 25px;
-      border-bottom: 1px solid #f5f5f5; }
-      .bx-wrapper .bx-viewport .file_slide .item .modal-header .user_image {
-        float: left;
-        margin-right: 8px; }
-        .bx-wrapper .bx-viewport .file_slide .item .modal-header .user_image img {
-          height: 40px;
-          width: 40px; }
-      .bx-wrapper .bx-viewport .file_slide .item .modal-header .noimage {
-        font-family: 'Helvetica neue',Helvetica,Arial,sans-serif;
-        font-size: 12px;
-        font-size: 1.2rem;
-        line-height: 40px;
+  .bx-wrapper .bx-viewport {
+    min-height: 125px; }
+    .bx-wrapper .bx-viewport .file_slide .item {
+      width: 100% !important; }
+      .bx-wrapper .bx-viewport .file_slide .item .modal-header {
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+        -ms-border-radius: 4px;
+        border-radius: 4px;
+        position: relative;
+        padding: 30px 25px 25px;
+        border-bottom: 1px solid #f5f5f5; }
+        .bx-wrapper .bx-viewport .file_slide .item .modal-header .user_image {
+          float: left;
+          margin-right: 8px; }
+          .bx-wrapper .bx-viewport .file_slide .item .modal-header .user_image img {
+            height: 40px;
+            width: 40px; }
+        .bx-wrapper .bx-viewport .file_slide .item .modal-header .noimage {
+          font-family: 'Helvetica neue',Helvetica,Arial,sans-serif;
+          font-size: 12px;
+          font-size: 1.2rem;
+          line-height: 40px;
+          text-align: center;
+          width: 40px;
+          float: left; }
+        .bx-wrapper .bx-viewport .file_slide .item .modal-header .modal-title {
+          font-size: 16px;
+          font-size: 1.6rem;
+          font-weight: bold;
+          padding: 10px 0 0 0; }
+        .bx-wrapper .bx-viewport .file_slide .item .modal-header .option, .bx-wrapper .bx-viewport .file_slide .carousel .carousel-inner .item .modal-header .download, .carousel .carousel-inner .bx-wrapper .bx-viewport .file_slide .item .modal-header .download, .bx-wrapper .bx-viewport .file_slide .carousel .carousel-inner .item .modal-header .like, .carousel .carousel-inner .bx-wrapper .bx-viewport .file_slide .item .modal-header .like {
+          font-size: 13px;
+          font-size: 1.3rem;
+          position: absolute;
+          top: 40px;
+          right: 45px;
+          color: #8a959e; }
+          .bx-wrapper .bx-viewport .file_slide .item .modal-header .option i, .bx-wrapper .bx-viewport .file_slide .carousel .carousel-inner .item .modal-header .download i, .carousel .carousel-inner .bx-wrapper .bx-viewport .file_slide .item .modal-header .download i, .bx-wrapper .bx-viewport .file_slide .carousel .carousel-inner .item .modal-header .like i, .carousel .carousel-inner .bx-wrapper .bx-viewport .file_slide .item .modal-header .like i {
+            position: absolute;
+            font-size: 26px;
+            font-size: 2.6rem;
+            top: -3px;
+            left: 0; }
+          .bx-wrapper .bx-viewport .file_slide .item .modal-header .option a, .bx-wrapper .bx-viewport .file_slide .carousel .carousel-inner .item .modal-header .download a, .carousel .carousel-inner .bx-wrapper .bx-viewport .file_slide .item .modal-header .download a, .bx-wrapper .bx-viewport .file_slide .carousel .carousel-inner .item .modal-header .like a, .carousel .carousel-inner .bx-wrapper .bx-viewport .file_slide .item .modal-header .like a {
+            color: #8a959e; }
+            .bx-wrapper .bx-viewport .file_slide .item .modal-header .option a:hover, .bx-wrapper .bx-viewport .file_slide .carousel .carousel-inner .item .modal-header .download a:hover, .carousel .carousel-inner .bx-wrapper .bx-viewport .file_slide .item .modal-header .download a:hover, .bx-wrapper .bx-viewport .file_slide .carousel .carousel-inner .item .modal-header .like a:hover, .carousel .carousel-inner .bx-wrapper .bx-viewport .file_slide .item .modal-header .like a:hover {
+              color: #3A87BC; }
+        .bx-wrapper .bx-viewport .file_slide .item .modal-header .item_option_box {
+          right: 15px;
+          top: 60px; }
+        .bx-wrapper .bx-viewport .file_slide .item .modal-header .download, .bx-wrapper .bx-viewport .file_slide .carousel .carousel-inner .item .modal-header .like, .carousel .carousel-inner .bx-wrapper .bx-viewport .file_slide .item .modal-header .like {
+          position: absolute;
+          top: 40px;
+          padding-left: 27px;
+          right: 65px;
+          vertical-align: top; }
+          .bx-wrapper .bx-viewport .file_slide .item .modal-header .download a, .bx-wrapper .bx-viewport .file_slide .carousel .carousel-inner .item .modal-header .like a, .carousel .carousel-inner .bx-wrapper .bx-viewport .file_slide .item .modal-header .like a {
+            color: #8a959e; }
+          .bx-wrapper .bx-viewport .file_slide .item .modal-header .download i, .bx-wrapper .bx-viewport .file_slide .carousel .carousel-inner .item .modal-header .like i, .carousel .carousel-inner .bx-wrapper .bx-viewport .file_slide .item .modal-header .like i {
+            position: absolute;
+            font-size: 26px;
+            font-size: 2.6rem;
+            top: -2px;
+            left: 0; }
+        .bx-wrapper .bx-viewport .file_slide .item .modal-header .like {
+          position: absolute;
+          top: 40px;
+          right: 195px;
+          font-family: 'Helvetica neue',Helvetica,Arial,sans-serif;
+          vertical-align: top;
+          padding-left: 28px; }
+          .bx-wrapper .bx-viewport .file_slide .item .modal-header .like i {
+            top: -2px;
+            left: 0;
+            position: absolute;
+            font-size: 26px;
+            font-size: 2.6rem;
+            color: #db4c3f; }
+          .bx-wrapper .bx-viewport .file_slide .item .modal-header .like span {
+            font-family: 'Helvetica neue',Helvetica,Arial,sans-serif;
+            font-size: 14px;
+            font-size: 1.4rem;
+            color: #8a959e; }
+      .bx-wrapper .bx-viewport .file_slide .item .data {
+        font-size: 100px;
+        font-size: 10rem;
+        padding: 30px;
         text-align: center;
-        width: 40px;
-        float: left; }
-      .bx-wrapper .bx-viewport .file_slide .item .modal-header .modal-title {
-        font-size: 16px;
-        font-size: 1.6rem;
-        font-weight: bold;
-        padding: 10px 0 0 0; }
-      .bx-wrapper .bx-viewport .file_slide .item .modal-header .option, .bx-wrapper .bx-viewport .file_slide .carousel .carousel-inner .item .modal-header .download, .carousel .carousel-inner .bx-wrapper .bx-viewport .file_slide .item .modal-header .download, .bx-wrapper .bx-viewport .file_slide .carousel .carousel-inner .item .modal-header .like, .carousel .carousel-inner .bx-wrapper .bx-viewport .file_slide .item .modal-header .like {
+        background: #33c16f;
+        color: #fff; }
+      .bx-wrapper .bx-viewport .file_slide .item .image {
+        text-align: center;
+        background: #f5f5f5; }
+        .bx-wrapper .bx-viewport .file_slide .item .image img {
+          width: 100%;
+          height: auto; }
+      .bx-wrapper .bx-viewport .file_slide .item .link {
+        position: relative;
+        padding: 15px 0 15px 50px;
         font-size: 13px;
         font-size: 1.3rem;
-        position: absolute;
-        top: 40px;
-        right: 45px;
-        color: #8a959e; }
-        .bx-wrapper .bx-viewport .file_slide .item .modal-header .option i, .bx-wrapper .bx-viewport .file_slide .carousel .carousel-inner .item .modal-header .download i, .carousel .carousel-inner .bx-wrapper .bx-viewport .file_slide .item .modal-header .download i, .bx-wrapper .bx-viewport .file_slide .carousel .carousel-inner .item .modal-header .like i, .carousel .carousel-inner .bx-wrapper .bx-viewport .file_slide .item .modal-header .like i {
-          position: absolute;
-          font-size: 26px;
-          font-size: 2.6rem;
-          top: -3px;
-          left: 0; }
-        .bx-wrapper .bx-viewport .file_slide .item .modal-header .option a, .bx-wrapper .bx-viewport .file_slide .carousel .carousel-inner .item .modal-header .download a, .carousel .carousel-inner .bx-wrapper .bx-viewport .file_slide .item .modal-header .download a, .bx-wrapper .bx-viewport .file_slide .carousel .carousel-inner .item .modal-header .like a, .carousel .carousel-inner .bx-wrapper .bx-viewport .file_slide .item .modal-header .like a {
+        line-height: 2.1;
+        display: block;
+        border-top: 1px solid #f5f5f5; }
+        .bx-wrapper .bx-viewport .file_slide .item .link a {
           color: #8a959e; }
-          .bx-wrapper .bx-viewport .file_slide .item .modal-header .option a:hover, .bx-wrapper .bx-viewport .file_slide .carousel .carousel-inner .item .modal-header .download a:hover, .carousel .carousel-inner .bx-wrapper .bx-viewport .file_slide .item .modal-header .download a:hover, .bx-wrapper .bx-viewport .file_slide .carousel .carousel-inner .item .modal-header .like a:hover, .carousel .carousel-inner .bx-wrapper .bx-viewport .file_slide .item .modal-header .like a:hover {
+          .bx-wrapper .bx-viewport .file_slide .item .link a:hover {
             color: #3A87BC; }
-      .bx-wrapper .bx-viewport .file_slide .item .modal-header .item_option_box {
-        right: 15px;
-        top: 60px; }
-      .bx-wrapper .bx-viewport .file_slide .item .modal-header .download, .bx-wrapper .bx-viewport .file_slide .carousel .carousel-inner .item .modal-header .like, .carousel .carousel-inner .bx-wrapper .bx-viewport .file_slide .item .modal-header .like {
-        position: absolute;
-        top: 40px;
-        padding-left: 27px;
-        right: 65px;
-        vertical-align: top; }
-        .bx-wrapper .bx-viewport .file_slide .item .modal-header .download a, .bx-wrapper .bx-viewport .file_slide .carousel .carousel-inner .item .modal-header .like a, .carousel .carousel-inner .bx-wrapper .bx-viewport .file_slide .item .modal-header .like a {
-          color: #8a959e; }
-        .bx-wrapper .bx-viewport .file_slide .item .modal-header .download i, .bx-wrapper .bx-viewport .file_slide .carousel .carousel-inner .item .modal-header .like i, .carousel .carousel-inner .bx-wrapper .bx-viewport .file_slide .item .modal-header .like i {
-          position: absolute;
-          font-size: 26px;
-          font-size: 2.6rem;
-          top: -2px;
-          left: 0; }
-      .bx-wrapper .bx-viewport .file_slide .item .modal-header .like {
-        position: absolute;
-        top: 40px;
-        right: 195px;
-        font-family: 'Helvetica neue',Helvetica,Arial,sans-serif;
-        vertical-align: top;
-        padding-left: 28px; }
-        .bx-wrapper .bx-viewport .file_slide .item .modal-header .like i {
-          top: -2px;
-          left: 0;
-          position: absolute;
-          font-size: 26px;
-          font-size: 2.6rem;
-          color: #db4c3f; }
-        .bx-wrapper .bx-viewport .file_slide .item .modal-header .like span {
-          font-family: 'Helvetica neue',Helvetica,Arial,sans-serif;
-          font-size: 14px;
-          font-size: 1.4rem;
-          color: #8a959e; }
-    .bx-wrapper .bx-viewport .file_slide .item .data {
-      font-size: 100px;
-      font-size: 10rem;
-      padding: 30px;
-      text-align: center;
-      background: #33c16f;
-      color: #fff; }
-    .bx-wrapper .bx-viewport .file_slide .item .image {
-      text-align: center;
-      background: #f5f5f5; }
-      .bx-wrapper .bx-viewport .file_slide .item .image img {
-        width: 100%;
-        height: auto; }
-    .bx-wrapper .bx-viewport .file_slide .item .link {
-      position: relative;
-      padding: 15px 0 15px 50px;
-      font-size: 13px;
-      font-size: 1.3rem;
-      line-height: 2.1;
-      display: block;
-      border-top: 1px solid #f5f5f5; }
-      .bx-wrapper .bx-viewport .file_slide .item .link a {
-        color: #8a959e; }
-        .bx-wrapper .bx-viewport .file_slide .item .link a:hover {
-          color: #3A87BC; }
-        .bx-wrapper .bx-viewport .file_slide .item .link a i {
-          font-size: 26px;
-          font-size: 2.6rem;
-          position: absolute;
-          top: 15px;
-          left: 23px;
-          color: #8a959e; }
-          .bx-wrapper .bx-viewport .file_slide .item .link a i.icon-swap-horiz {
+          .bx-wrapper .bx-viewport .file_slide .item .link a i {
+            font-size: 26px;
+            font-size: 2.6rem;
+            position: absolute;
+            top: 15px;
+            left: 23px;
             color: #8a959e; }
-    .bx-wrapper .bx-viewport .file_slide .item .modal-footer {
-      border-top: 1px solid #f5f5f5;
-      padding: 35px 0 25px 0;
-      position: relative; }
-      .bx-wrapper .bx-viewport .file_slide .item .modal-footer .comment {
-        text-align: left;
-        border-bottom: 1px solid #f5f5f5;
-        margin-bottom: 25px;
-        padding: 0 25px; }
-        .bx-wrapper .bx-viewport .file_slide .item .modal-footer .comment .comment_inner {
-          display: table;
-          width: 100%;
-          table-layout: fixed;
-          margin-bottom: 25px; }
-          .bx-wrapper .bx-viewport .file_slide .item .modal-footer .comment .comment_inner .user_image {
-            display: table-cell;
-            width: 50px; }
-            .bx-wrapper .bx-viewport .file_slide .item .modal-footer .comment .comment_inner .user_image img {
-              width: 40px;
-              height: 40px;
-              vertical-align: top;
-              margin-top: 2px; }
-            .bx-wrapper .bx-viewport .file_slide .item .modal-footer .comment .comment_inner .user_image .noimage {
-              font-family: 'Helvetica neue',Helvetica,Arial,sans-serif;
-              font-size: 12px;
-              font-size: 1.2rem;
-              line-height: 40px;
-              text-align: center;
-              width: 40px; }
-          .bx-wrapper .bx-viewport .file_slide .item .modal-footer .comment .comment_inner .user_comment {
-            display: table-cell;
-            vertical-align: top; }
-            .bx-wrapper .bx-viewport .file_slide .item .modal-footer .comment .comment_inner .user_comment p {
-              font-size: 14px;
-              font-size: 1.4rem; }
-              .bx-wrapper .bx-viewport .file_slide .item .modal-footer .comment .comment_inner .user_comment p.name {
-                font-weight: bold;
-                padding-bottom: 1px; }
-                .bx-wrapper .bx-viewport .file_slide .item .modal-footer .comment .comment_inner .user_comment p.name .time {
-                  margin-left: 10px;
-                  font-weight: normal;
-                  color: #8a959e;
-                  font-size: 12px;
-                  font-size: 1.2rem; }
-              .bx-wrapper .bx-viewport .file_slide .item .modal-footer .comment .comment_inner .user_comment p.memo {
+            .bx-wrapper .bx-viewport .file_slide .item .link a i.icon-swap-horiz {
+              color: #8a959e; }
+      .bx-wrapper .bx-viewport .file_slide .item .modal-footer {
+        border-top: 1px solid #f5f5f5;
+        padding: 35px 0 25px 0;
+        position: relative; }
+        .bx-wrapper .bx-viewport .file_slide .item .modal-footer .comment {
+          text-align: left;
+          border-bottom: 1px solid #f5f5f5;
+          margin-bottom: 25px;
+          padding: 0 25px; }
+          .bx-wrapper .bx-viewport .file_slide .item .modal-footer .comment .comment_inner {
+            display: table;
+            width: 100%;
+            table-layout: fixed;
+            margin-bottom: 25px; }
+            .bx-wrapper .bx-viewport .file_slide .item .modal-footer .comment .comment_inner .user_image {
+              display: table-cell;
+              width: 50px; }
+              .bx-wrapper .bx-viewport .file_slide .item .modal-footer .comment .comment_inner .user_image img {
+                width: 40px;
+                height: 40px;
+                vertical-align: top;
+                margin-top: 2px; }
+              .bx-wrapper .bx-viewport .file_slide .item .modal-footer .comment .comment_inner .user_image .noimage {
+                font-family: 'Helvetica neue',Helvetica,Arial,sans-serif;
+                font-size: 12px;
+                font-size: 1.2rem;
+                line-height: 40px;
+                text-align: center;
+                width: 40px; }
+            .bx-wrapper .bx-viewport .file_slide .item .modal-footer .comment .comment_inner .user_comment {
+              display: table-cell;
+              vertical-align: top; }
+              .bx-wrapper .bx-viewport .file_slide .item .modal-footer .comment .comment_inner .user_comment p {
                 font-size: 14px;
-                font-size: 1.4rem;
-                word-wrap: break-word;
-                color: #000000; }
-      .bx-wrapper .bx-viewport .file_slide .item .modal-footer .comment_entry {
-        width: 750px;
-        min-width: 510px;
-        margin: 0 auto; }
-        .bx-wrapper .bx-viewport .file_slide .item .modal-footer .comment_entry textarea {
-          -webkit-border-radius: 4px;
-          -moz-border-radius: 4px;
-          -ms-border-radius: 4px;
-          border-radius: 4px;
-          width: 100%;
-          height: 60px;
-          padding: 10px 15px;
-          margin-bottom: 20px;
-          border: 1px solid #e5e5e5;
-          resize: none;
-          outline: none; }
-        .bx-wrapper .bx-viewport .file_slide .item .modal-footer .comment_entry button {
-          width: 130px; }
-          .bx-wrapper .bx-viewport .file_slide .item .modal-footer .comment_entry button.btn-default {
-            border-color: #f5f5f5;
-            background: #f5f5f5; }
-            .bx-wrapper .bx-viewport .file_slide .item .modal-footer .comment_entry button.btn-default:hover {
-              opacity: 0.7; }
-          .bx-wrapper .bx-viewport .file_slide .item .modal-footer .comment_entry button.btn-primary {
-            width: 130px;
-            height: 40px;
-            line-height: 43px;
-            font-size: 13px;
-            font-size: 1.3rem; }
-            .bx-wrapper .bx-viewport .file_slide .item .modal-footer .comment_entry button.btn-primary.btn-primary {
-              background: #3A87BC;
-              border: none;
-              padding: 0;
-              font-weight: 700; }
-              .bx-wrapper .bx-viewport .file_slide .item .modal-footer .comment_entry button.btn-primary.btn-primary:hover {
+                font-size: 1.4rem; }
+                .bx-wrapper .bx-viewport .file_slide .item .modal-footer .comment .comment_inner .user_comment p.name {
+                  font-weight: bold;
+                  padding-bottom: 1px; }
+                  .bx-wrapper .bx-viewport .file_slide .item .modal-footer .comment .comment_inner .user_comment p.name .time {
+                    margin-left: 10px;
+                    font-weight: normal;
+                    color: #8a959e;
+                    font-size: 12px;
+                    font-size: 1.2rem; }
+                .bx-wrapper .bx-viewport .file_slide .item .modal-footer .comment .comment_inner .user_comment p.memo {
+                  font-size: 14px;
+                  font-size: 1.4rem;
+                  word-wrap: break-word;
+                  color: #000000; }
+        .bx-wrapper .bx-viewport .file_slide .item .modal-footer .comment_entry {
+          width: 750px;
+          min-width: 510px;
+          margin: 0 auto; }
+          .bx-wrapper .bx-viewport .file_slide .item .modal-footer .comment_entry textarea {
+            -webkit-border-radius: 4px;
+            -moz-border-radius: 4px;
+            -ms-border-radius: 4px;
+            border-radius: 4px;
+            width: 100%;
+            height: 60px;
+            padding: 10px 15px;
+            margin-bottom: 20px;
+            border: 1px solid #e5e5e5;
+            resize: none;
+            outline: none; }
+          .bx-wrapper .bx-viewport .file_slide .item .modal-footer .comment_entry button {
+            width: 130px; }
+            .bx-wrapper .bx-viewport .file_slide .item .modal-footer .comment_entry button.btn-default {
+              border-color: #f5f5f5;
+              background: #f5f5f5; }
+              .bx-wrapper .bx-viewport .file_slide .item .modal-footer .comment_entry button.btn-default:hover {
                 opacity: 0.7; }
-    .bx-wrapper .bx-viewport .file_slide .item .add_member {
-      font-size: 26px;
-      font-size: 2.6rem;
-      color: #8a959e;
-      position: absolute;
-      right: 216px;
-      bottom: 24px; }
-    .bx-wrapper .bx-viewport .file_slide .item .add_emoji {
-      font-size: 26px;
-      font-size: 2.6rem;
-      color: #8a959e;
-      position: absolute;
-      right: 170px;
-      bottom: 24px; }
+            .bx-wrapper .bx-viewport .file_slide .item .modal-footer .comment_entry button.btn-primary {
+              width: 130px;
+              height: 40px;
+              line-height: 43px;
+              font-size: 13px;
+              font-size: 1.3rem; }
+              .bx-wrapper .bx-viewport .file_slide .item .modal-footer .comment_entry button.btn-primary.btn-primary {
+                background: #3A87BC;
+                border: none;
+                padding: 0;
+                font-weight: 700; }
+                .bx-wrapper .bx-viewport .file_slide .item .modal-footer .comment_entry button.btn-primary.btn-primary:hover {
+                  opacity: 0.7; }
+      .bx-wrapper .bx-viewport .file_slide .item .add_member {
+        font-size: 26px;
+        font-size: 2.6rem;
+        color: #8a959e;
+        position: absolute;
+        right: 216px;
+        bottom: 24px; }
+      .bx-wrapper .bx-viewport .file_slide .item .add_emoji {
+        font-size: 26px;
+        font-size: 2.6rem;
+        color: #8a959e;
+        position: absolute;
+        right: 170px;
+        bottom: 24px; }
 
 /*Carousel*/
 .carousel {

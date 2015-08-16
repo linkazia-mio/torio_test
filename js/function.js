@@ -665,7 +665,7 @@ window.onload=function(){
   jQuery(document).ready(function(){
     var slider = jQuery('.file_slide').bxSlider({
       mode: 'fade',
-      adaptiveHeight: 'true'
+      adaptiveHeight: 'false'
     });
 
     jQuery('#file_detail').on('show.bs.modal', function(){
