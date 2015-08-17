@@ -82,7 +82,7 @@ input[type="checkbox"] {
     /*通常時の見た目*/
     &:before {
       @include fontsize(3.0);
-      @include border_radius(3);
+      @include border_radius(3px);
       position: absolute;
       font-family: 'torio_icon';
       width: 18px;
@@ -305,7 +305,7 @@ input[type="checkbox"] {
        @include fontsize(2.0);
       }
       .btn_add_task {
-        @include border_radius(3);
+        @include border_radius(3px);
         position: absolute;
         right: 15px;
         bottom: 11px;
@@ -699,7 +699,7 @@ input[type="checkbox"] {
 }
 
 .btn_add_task_create {
-  @include border_radius(3);
+  @include border_radius(3px);
   @include fontsize(1.2);
   display: none;
   position: absolute;
@@ -782,7 +782,7 @@ input[type="checkbox"] {
   top: 88px;
 }
 .btn_add_task {
-  @include border_radius(3);
+  @include border_radius(3px);
   position: absolute;
   right: 15px;
   bottom: 11px;

@@ -20,11 +20,11 @@
       color: $green;
     }
     .note_edit_inner {
+      @include border_radius(3px);
       position: relative;
       z-index: 10;
       min-width: 450px;
       max-width: 750px;
-      @include border_radius(3px);
       margin: 0 auto 0 auto;
       border: 1px solid #ededf0;
       border-bottom: 1px solid #dcdce0;
@@ -302,7 +302,7 @@
               border: none;
               padding: 0;
               font-weight: normal;
-              @include border_radius(3);
+              @include border_radius(3px);
               &:hover {
                 opacity: 0.7;
               }
