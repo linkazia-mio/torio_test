@@ -328,10 +328,70 @@
     table-layout: fixed;
     div {
       display: table-cell;
+      position: relative;
       border-left: 1px solid $border_gray;
       text-align: center;
+      padding: 20px;
+      height: 380px;
       &:first-child {
         border: none;
+      }
+      .type_name {
+        @include fontsize(1.8);
+        @include font_eng;
+        font-weight: bold;
+        margin-bottom: 20px;
+      }
+      .price {
+        @include fontsize(3.4);
+        @include font_eng;
+        &:before {
+          @include fontsize(2.4);
+          content: "¥";
+        }
+      }
+      .user_count {
+        margin-top: 20px;
+      }
+      .option {
+        @include fontsize(1.2);
+        color: $white_brack;
+        height: 40px;
+      }
+      button {
+        @include border_radius();
+        position: absolute;
+        bottom: 20px;
+        left: 50%;
+        width: 80%;
+        margin-left: -40%;
+        height: 40px;
+        &.yourgrade {
+          border: 1px solid $border_gray;
+          background: $white_gray;
+        }
+        &.upgrade {
+          background: $torio_green;
+          color: #fff;
+          &:hover {
+            @include opacity(0.7);
+          }
+        }
+      }
+      &.pro {
+        .type_name {
+          color: $torio_green;
+        }
+      }
+      &.team {
+        .type_name {
+          color: $torio_yellow;
+        }
+      }
+      &.company {
+        .type_name {
+          color: $torio_red;
+        }
       }
     }
   }
