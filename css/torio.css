@@ -5598,6 +5598,27 @@ input[type="checkbox"] {
   text-align: center;
   color: #8a959e; }
 
+.plan .plan_select {
+  position: relative;
+  height: 34px;
+  margin: 20px 0; }
+  .plan .plan_select select {
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    border-radius: 4px;
+    position: absolute;
+    margin-left: -100px;
+    left: 50%;
+    border: 1px solid #e5e5e5;
+    padding: 5px;
+    width: 200px; }
+  .plan .plan_select:after {
+    position: absolute;
+    font-family: 'torio_icon';
+    content: "\e60a";
+    left: 50%; }
+
 .plan .plan_type {
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;

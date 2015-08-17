@@ -319,6 +319,26 @@
     text-align: center;
     color: $white_brack;
   }
+  .plan_select {
+    position: relative;
+    height: 34px;
+    margin: 20px 0;
+    select {
+      @include border_radius();
+      position: absolute;
+      margin-left: -100px;
+      left: 50%;
+      border: 1px solid $border_gray;
+      padding: 5px;
+      width: 200px;
+    }
+    &:after {
+      position: absolute;
+      font-family: 'torio_icon';
+      content: "\e60a";
+      left: 50%;
+    }
+  }
   .plan_type {
     @include border_radius();
     margin-top: 50px;
