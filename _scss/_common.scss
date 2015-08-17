@@ -354,9 +354,9 @@ header {
   /*border-bottom: 1px solid $border_gray;*/
   width: 100%;
   z-index: 1000;
-  height: 50px;
+  height: 55px;
   .header_inner {
-    height: 50px;
+    height: 55px;
     position: relative;
     background: #1f2532;
     @include opacity(0.9);
@@ -371,7 +371,7 @@ header {
   .global_menu_btn {
     @include fontsize(2.5);
     position: absolute;
-    top: 13px;
+    top: 15px;
     left: 15px;
     color: $white_brack;
     &:hover {
@@ -636,14 +636,14 @@ header {
 
 /*Search*/
 .search {
-  @include border_radius(2px);
+  @include border_radius(3px);
   position: absolute;
   width: 45%;
-  height: 29px;
+  height: 27px;
   /*border: 1px solid #fff;*/
   background: #fff;
-  top: 52%;
-  left: 55%;
+  top: 53%;
+  left: 57%;
   margin: -15px 0 0 -30%;
   .icon-search {
     @include fontsize(2.6);
@@ -680,9 +680,9 @@ header {
 /*Alart*/
 .alart {
   position: absolute;
-  top: 13px;
+  top: 15px;
   right: 23px;
-  width: 185px;
+  width: 190px;
   height: 30px;
   p {
     color: $brack;
@@ -731,7 +731,7 @@ header {
   }
   .activity {
     @extend .alart_task;
-    padding-left: 10px;
+    padding-left: 14px;
   }
   .me {
     position: absolute;
@@ -1589,6 +1589,7 @@ header {
       font-weight: bold;
       display: inline-block;
       line-height: 28px;
+      letter-spacing: 0.08em;
     }
     p {
       @include fontsize(2.6);
