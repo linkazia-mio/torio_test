@@ -306,7 +306,36 @@
     cursor: pointer;
   }
 }
-
+/*---------------------------------------------------------------------------------------
+ Plan
+---------------------------------------------------------------------------------------*/
+.plan {
+  .title {
+    @include fontsize(2.2);
+    text-align: center;
+    margin-bottom: 0px;
+  }
+  .note {
+    text-align: center;
+    color: $white_brack;
+  }
+  .plan_type {
+    @include border_radius();
+    margin-top: 50px;
+    border: 1px solid $border_gray;
+    width: 100%;
+    display: table;
+    table-layout: fixed;
+    div {
+      display: table-cell;
+      border-left: 1px solid $border_gray;
+      text-align: center;
+      &:first-child {
+        border: none;
+      }
+    }
+  }
+}
 /*---------------------------------------------------------------------------------------
  Profile
 ---------------------------------------------------------------------------------------*/
