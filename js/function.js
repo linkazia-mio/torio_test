@@ -376,17 +376,23 @@ window.onload=function(){
       });
 
       //ファイルスライド
-
-      var slider = jQuery('.file_slide').bxSlider({
-        mode: 'fade',
-        adaptiveHeight : true,
-        preloadImages: 'visible',
-        autoReload: true
-      });
-
-
       jQuery('#file_detail').on('show.bs.modal', function(){
         setTimeout(function(){slider.reloadSlider();},200);
+      });
+
+      $('.file_img').click(function () {
+        jQuery('#file_detail').show();
+        event.stopPropagation();
+        var slider = jQuery('.file_slide').bxSlider({
+          mode: 'fade',
+          adaptiveHeight : true,
+          preloadImages: 'visible',
+          autoReload: true
+        });
+      });
+      $('#file_detail').click(function () {
+        jQuery('#file_detail').hide();
+        event.stopPropagation();
       });
 
       //タスク入れ替え
@@ -553,7 +559,8 @@ window.onload=function(){
   $(function(){
         function adjust(){
              var h = $(window).height(); //ウィンドウの高さ
-             $('.global_menu_inner').css('height', h-53); //可変部分の高さを適用
+             var h5= $('.sponsor').height(); //他要素の高さ
+             $('.global_menu_inner').css('height', h-h5-53); //可変部分の高さを適用
         }
        adjust();
        $(window).on('resize', function(){
@@ -785,6 +792,14 @@ function actCustomScrollbar(){
         }
      });
      $('#viewers_box .modal-body').mCustomScrollbar({
+       autoHideScrollbar: true,
+       scrollInertia: 0,
+       advanced:{
+          autoScrollOnFocus: true,
+          updateOnContentResize: true
+        }
+     });
+     $('#file_detail').mCustomScrollbar({
        autoHideScrollbar: true,
        scrollInertia: 0,
        advanced:{
