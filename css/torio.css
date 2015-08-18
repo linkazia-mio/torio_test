@@ -2055,6 +2055,17 @@ header {
       .global_menu .global_menu_inner .member .user_image img {
         width: 30px;
         height: auto; }
+  .global_menu .global_menu_inner .sponsor {
+    margin-top: 40px; }
+    .global_menu .global_menu_inner .sponsor img {
+      max-width: 80%;
+      margin: 0 10%;
+      height: auto; }
+    .global_menu .global_menu_inner .sponsor p {
+      font-size: 10px;
+      font-size: 1rem;
+      margin: 5% 10%;
+      padding-bottom: 10%; }
 
 /*Page Menu*/
 .page_menu {

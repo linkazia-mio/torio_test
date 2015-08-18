@@ -1113,6 +1113,19 @@ header {
         }
       }
     }
+    .sponsor {
+      margin-top: 40px;
+      img {
+        max-width: 80%;
+        margin: 0 10%;
+        height: auto;
+      }
+      p {
+        @include fontsize(1.0);
+        margin: 5% 10%;
+        padding-bottom: 10%;
+      }
+    }
   }
 }
 
