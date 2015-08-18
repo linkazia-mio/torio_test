@@ -3489,7 +3489,7 @@ header {
   overflow: hidden;
   background: rgba(50, 58, 69, 0.96); }
   #file_detail .file_detail_inner {
-    width: 650px;
+    width: 750px;
     margin: 0 auto;
     padding: 60px 0; }
   #file_detail .modal-dialog {
@@ -3506,10 +3506,10 @@ header {
 
 /*bx-wrapper*/
 .bx-wrapper {
-  -webkit-border-radius: 0 0 4px 4px;
-  -moz-border-radius: 0 0 4px 4px;
-  -ms-border-radius: 0 0 4px 4px;
-  border-radius: 0 0 4px 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  border-radius: 4px;
   position: relative;
   background: #fff; }
   .bx-wrapper .bx-controls .bx-pager {

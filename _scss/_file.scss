@@ -302,7 +302,7 @@
   overflow: hidden;
   background: rgba(50,58,69,0.96);
   .file_detail_inner {
-    width: 650px;
+    width: 750px;
     margin: 0 auto;
     padding: 60px 0;
   }
@@ -322,7 +322,7 @@
 
 /*bx-wrapper*/
 .bx-wrapper {
-  @include border_radius( 0 0 4px 4px);
+  @include border_radius();
   position: relative;
   background: #fff;
   .bx-controls {
