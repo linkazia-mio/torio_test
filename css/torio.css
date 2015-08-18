@@ -5726,7 +5726,8 @@ input[type="checkbox"] {
     .plan .plan_type_super li .option, .plan .plan_type_super li .carousel .carousel-inner .item .modal-header .download, .carousel .carousel-inner .item .modal-header .plan .plan_type_super li .download, .plan .plan_type_super li .carousel .carousel-inner .item .modal-header .like, .carousel .carousel-inner .item .modal-header .plan .plan_type_super li .like {
       font-size: 12px;
       font-size: 1.2rem;
-      color: #8a959e; }
+      color: #8a959e;
+      height: 40px; }
     .plan .plan_type_super li button {
       -webkit-border-radius: 4px;
       -moz-border-radius: 4px;

@@ -452,6 +452,7 @@
       .option {
         @include fontsize(1.2);
         color: $white_brack;
+        height: 40px;
       }
       button {
         @include border_radius();
