@@ -382,7 +382,6 @@ window.onload=function(){
 
       $('.file_img').click(function () {
         jQuery('#file_detail').show();
-        event.stopPropagation();
         var slider = jQuery('.file_slide').bxSlider({
           mode: 'fade',
           adaptiveHeight : true,
@@ -391,6 +390,10 @@ window.onload=function(){
         });
       });
       $('#file_detail').click(function () {
+        jQuery('#file_detail').hide();
+        event.stopPropagation();
+      });
+      $('#file_detail .modal_close').click(function () {
         jQuery('#file_detail').hide();
         event.stopPropagation();
       });

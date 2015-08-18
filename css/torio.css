@@ -3496,6 +3496,13 @@ header {
     min-width: 600px;
     width: 800px;
     margin: 60px auto; }
+  #file_detail .modal_close {
+    position: absolute;
+    top: 0px;
+    right: 15px;
+    color: #8a959e;
+    font-size: 30px;
+    font-size: 3rem; }
 
 /*bx-wrapper*/
 .bx-wrapper {
@@ -3510,9 +3517,9 @@ header {
   .bx-wrapper .bx-controls .bx-controls-direction {
     font-family: 'torio_icon'; }
     .bx-wrapper .bx-controls .bx-controls-direction .bx-prev {
-      position: fixed;
+      position: absolute;
       top: 350px;
-      left: 250px;
+      left: -80px;
       height: 60px;
       width: 60px;
       overflow: hidden;
@@ -3522,9 +3529,9 @@ header {
         font-size: 6rem;
         content: "\e62d"; }
     .bx-wrapper .bx-controls .bx-controls-direction .bx-next {
-      position: fixed;
+      position: absolute;
       top: 350px;
-      right: 250px;
+      right: -80px;
       height: 60px;
       width: 60px;
       overflow: hidden;
