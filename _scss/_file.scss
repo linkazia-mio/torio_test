@@ -241,11 +241,11 @@
       .note {
         @include fontsize(1.2);
       }
-      .field{
+      .field {
         /*@extend .clearfix;*/
         margin-top: 40px;
-        input{
-          @include border_radius(4);
+        input {
+          @include border_radius();
           width: 430px;
           margin: 0 10px 30px 0;
           border: 1px solid $border_gray;
@@ -255,7 +255,7 @@
           padding: 0 13px;
           height: 40px;
         }
-        button{
+        button {
           width: 100px;
           height: 40px;
           line-height: 43px;
@@ -284,7 +284,7 @@
       }
     }
   }
-  .modal-footer{
+  .modal-footer {
     .btn-primary{
       background: #f36;
     }
@@ -315,7 +315,9 @@
 
 /*bx-wrapper*/
 .bx-wrapper {
+  @include border_radius( 0 0 4px 4px);
   position: relative;
+  background: #fff;
   .bx-controls {
     .bx-pager {
       display: none;
@@ -325,7 +327,7 @@
       .bx-prev {
         position: fixed;
         top: 350px;
-        left: -100px;
+        left: 250px;
         height: 60px;
         width: 60px;
         overflow: hidden;
@@ -339,7 +341,7 @@
       .bx-next {
         position: fixed;
         top: 350px;
-        right: -100px;
+        right: 250px;
         height: 60px;
         width: 60px;
         overflow: hidden;
@@ -354,6 +356,7 @@
   }
   .bx-viewport {
     min-height: 300px;
+    padding-bottom: 35px;
     .file_slide {
       .item {
         width: 100% !important;
@@ -376,6 +379,7 @@
             @include fontsize(1.2);
             line-height: 40px;
             text-align: center;
+            height: 40px;
             width: 40px;
             float: left;
           }
@@ -437,7 +441,7 @@
               @include fontsize(2.6);
               color: $dark_red;
             }
-            span{
+            span {
               @include font_eng;
               @include fontsize(1.4);
               color: $white_brack;
@@ -485,13 +489,12 @@
         }
         .modal-footer {
           border-top: 1px solid $border_white_gray;
-          padding: 35px 0 25px 0;
+          padding: 35px 0 0 0;
           position: relative;
           .comment {
             text-align: left;
-            border-bottom: 1px solid $border_white_gray;
-            margin-bottom: 25px;
             padding: 0 25px;
+            margin-bottom: 25px;
             .comment_inner {
               display: table;
               width: 100%;
@@ -506,12 +509,18 @@
                   vertical-align: top;
                   margin-top: 2px;
                 }
+              }
+              .noimage_box {
+                display: table-cell;
+                width: 50px;
                 .noimage {
                   @include font_eng;
                   @include fontsize(1.2);
+                  display: block;
                   line-height: 40px;
                   text-align: center;
                   width: 40px;
+                  height: 40px;
                 }
               }
               .user_comment {
@@ -539,9 +548,7 @@
             }
           }
           .comment_entry {
-            width: 750px;
-            min-width: 510px;
-            margin: 0 auto;
+            position: relative;
             textarea {
               @include border_radius();
               width: 100%;
@@ -554,6 +561,8 @@
             }
             button {
               width: 130px;
+              position: absolute;
+              right: 0;
               &.btn-default {
                 border-color: $border_white_gray;
                 background: $white_gray;
@@ -704,6 +713,12 @@
               vertical-align: top;
               margin-top: 5px;
             }
+          }
+          .noimage {
+            width: 45px;
+            height: 45px;
+            line-height: 45px;
+            display: block;
           }
           .user_comment {
             display: table-cell;

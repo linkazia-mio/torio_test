@@ -3441,10 +3441,10 @@ header {
       /*@extend .clearfix;*/
       margin-top: 40px; }
       #add_file .modal-body .local_up .field input, #add_file .modal-body .web_up .field input, #add_file2 .modal-body .local_up .field input, #add_file2 .modal-body .web_up .field input, #add_file3 .modal-body .local_up .field input, #add_file3 .modal-body .web_up .field input {
-        -webkit-border-radius: 4;
-        -moz-border-radius: 4;
-        -ms-border-radius: 4;
-        border-radius: 4;
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+        -ms-border-radius: 4px;
+        border-radius: 4px;
         width: 430px;
         margin: 0 10px 30px 0;
         border: 1px solid #e5e5e5;
@@ -3499,7 +3499,12 @@ header {
 
 /*bx-wrapper*/
 .bx-wrapper {
-  position: relative; }
+  -webkit-border-radius: 0 0 4px 4px;
+  -moz-border-radius: 0 0 4px 4px;
+  -ms-border-radius: 0 0 4px 4px;
+  border-radius: 0 0 4px 4px;
+  position: relative;
+  background: #fff; }
   .bx-wrapper .bx-controls .bx-pager {
     display: none; }
   .bx-wrapper .bx-controls .bx-controls-direction {
@@ -3509,7 +3514,7 @@ header {
     .bx-wrapper .bx-controls .bx-controls-direction .bx-prev {
       position: fixed;
       top: 350px;
-      left: -100px;
+      left: 250px;
       height: 60px;
       width: 60px;
       overflow: hidden;
@@ -3523,7 +3528,7 @@ header {
     .bx-wrapper .bx-controls .bx-controls-direction .bx-next {
       position: fixed;
       top: 350px;
-      right: -100px;
+      right: 250px;
       height: 60px;
       width: 60px;
       overflow: hidden;
@@ -3535,7 +3540,8 @@ header {
     .bx-wrapper .bx-controls .bx-controls-direction *::-ms-backdrop, .bx-wrapper .bx-controls .bx-controls-direction .bx-next {
       right: 100px; }
   .bx-wrapper .bx-viewport {
-    min-height: 300px; }
+    min-height: 300px;
+    padding-bottom: 35px; }
     .bx-wrapper .bx-viewport .file_slide .item {
       width: 100% !important; }
       .bx-wrapper .bx-viewport .file_slide .item .modal-header {
@@ -3558,6 +3564,7 @@ header {
           font-size: 1.2rem;
           line-height: 40px;
           text-align: center;
+          height: 40px;
           width: 40px;
           float: left; }
         .bx-wrapper .bx-viewport .file_slide .item .modal-header .modal-title {
@@ -3654,13 +3661,12 @@ header {
               color: #8a959e; }
       .bx-wrapper .bx-viewport .file_slide .item .modal-footer {
         border-top: 1px solid #f5f5f5;
-        padding: 35px 0 25px 0;
+        padding: 35px 0 0 0;
         position: relative; }
         .bx-wrapper .bx-viewport .file_slide .item .modal-footer .comment {
           text-align: left;
-          border-bottom: 1px solid #f5f5f5;
-          margin-bottom: 25px;
-          padding: 0 25px; }
+          padding: 0 25px;
+          margin-bottom: 25px; }
           .bx-wrapper .bx-viewport .file_slide .item .modal-footer .comment .comment_inner {
             display: table;
             width: 100%;
@@ -3674,13 +3680,18 @@ header {
                 height: 40px;
                 vertical-align: top;
                 margin-top: 2px; }
-              .bx-wrapper .bx-viewport .file_slide .item .modal-footer .comment .comment_inner .user_image .noimage {
+            .bx-wrapper .bx-viewport .file_slide .item .modal-footer .comment .comment_inner .noimage_box {
+              display: table-cell;
+              width: 50px; }
+              .bx-wrapper .bx-viewport .file_slide .item .modal-footer .comment .comment_inner .noimage_box .noimage {
                 font-family: 'Helvetica neue',Helvetica,Arial,sans-serif;
                 font-size: 12px;
                 font-size: 1.2rem;
+                display: block;
                 line-height: 40px;
                 text-align: center;
-                width: 40px; }
+                width: 40px;
+                height: 40px; }
             .bx-wrapper .bx-viewport .file_slide .item .modal-footer .comment .comment_inner .user_comment {
               display: table-cell;
               vertical-align: top; }
@@ -3702,9 +3713,7 @@ header {
                   word-wrap: break-word;
                   color: #000000; }
         .bx-wrapper .bx-viewport .file_slide .item .modal-footer .comment_entry {
-          width: 750px;
-          min-width: 510px;
-          margin: 0 auto; }
+          position: relative; }
           .bx-wrapper .bx-viewport .file_slide .item .modal-footer .comment_entry textarea {
             -webkit-border-radius: 4px;
             -moz-border-radius: 4px;
@@ -3718,7 +3727,9 @@ header {
             resize: none;
             outline: none; }
           .bx-wrapper .bx-viewport .file_slide .item .modal-footer .comment_entry button {
-            width: 130px; }
+            width: 130px;
+            position: absolute;
+            right: 0; }
             .bx-wrapper .bx-viewport .file_slide .item .modal-footer .comment_entry button.btn-default {
               border-color: #f5f5f5;
               background: #f5f5f5; }
@@ -3847,6 +3858,11 @@ header {
               height: 30px;
               vertical-align: top;
               margin-top: 5px; }
+          .carousel .carousel-inner .modal-footer .comment .comment_inner .noimage {
+            width: 45px;
+            height: 45px;
+            line-height: 45px;
+            display: block; }
           .carousel .carousel-inner .modal-footer .comment .comment_inner .user_comment {
             display: table-cell; }
             .carousel .carousel-inner .modal-footer .comment .comment_inner .user_comment p {

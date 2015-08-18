@@ -394,6 +394,10 @@ window.onload=function(){
         jQuery('#file_detail').hide();
         event.stopPropagation();
       });
+      $('.file_detail_inner').click(function () {
+        jQuery('#file_detail').show();
+        event.stopPropagation();
+      });
 
       //タスク入れ替え
       jQuery('.task_replacement').sortable({
