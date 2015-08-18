@@ -337,7 +337,6 @@
           content: "\e62d";
         }
       }
-      *::-ms-backdrop, .bx-prev { left: 100px; } /* IE11 */
       .bx-next {
         position: fixed;
         top: 350px;
@@ -351,7 +350,6 @@
           content: "\e62e";
         }
       }
-      *::-ms-backdrop, .bx-next { right: 100px; } /* IE11 */
     }
   }
   .bx-viewport {
@@ -507,7 +505,6 @@
                   width: 40px;
                   height: 40px;
                   vertical-align: top;
-                  margin-top: 2px;
                 }
               }
               .noimage_box {
@@ -563,6 +560,7 @@
               width: 130px;
               position: absolute;
               right: 0;
+              bottom: -40px;
               &.btn-default {
                 border-color: $border_white_gray;
                 background: $white_gray;
