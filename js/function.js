@@ -384,6 +384,7 @@ window.onload=function(){
         jQuery('#file_detail').show();
         var slider = jQuery('.file_slide').bxSlider({
           mode: 'fade',
+          speed: 0,
           adaptiveHeight : true,
           preloadImages: 'visible',
           autoReload: true
