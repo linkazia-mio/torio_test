@@ -4071,7 +4071,8 @@ footer.front {
     font-size: 30px;
     font-size: 3rem;
     padding: 70px 0;
-    color: #333333; }
+    color: #333333;
+    margin: 0 auto; }
   .front_main .container {
     width: 900px;
     margin: 0 auto 0 auto;
