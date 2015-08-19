@@ -3,7 +3,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-    <title>TORIO</title>
+    <title>役割分担 by グループ名 ｜ torio（トリオ）</title>
     <script type="text/javascript" src="js/jquery-1.11.3.js"></script>
     <script type="text/javascript" src="js/jquery-ui.min.js"></script>
     <script type="text/javascript" src="js/jquery.mCustomScrollbar.js"></script>
@@ -23,252 +23,18 @@
   <body>
     <div class="wrapper">
       <!--Header/-->
-      <header>
+      <header class="front">
         <div class="header_inner">
           <div class="header_line">
           </div>
-           <p class="global_menu_btn"><i class="icon-automation-arrow"></i></p>
-           <div class="search">
-             <form method="post">
-               <input type="search"><input type="submit" value="送信する"><i class="icon-search"></i>
-             </form>
-           </div>
-           <div class="alart">
-             <div class="alart_task">
-               <p class="icon"><i class="icon-inbox-task"></i></p>
-             </div>
-             <div class="activity">
-               <p class="icon"><span class="unread">5</span><i class="icon-notifications-outline"></i></p>
-             </div>
-             <div class="me">
-               <p class="image"><span class="noimage">KO</span></p>
-               <p class="name">小松 健太</p>
-             </div>
-           </div>
-         </div>
-         <!--Task_box/-->
-         <div class="task_box popover_big">
-           <h3>タスク</h3>
-           <ul>
-             <li class="mine_btn active">あなた</li>
-             <li class="requeste_btn">依頼したタスク</li>
-           </ul>
-           <!--Active Lists/-->
-           <div class="task_active_lists mine">
-             <!--Active List/-->
-             <div class="task_active_list">
-               <p class="task_active_list_title">私のタスク<span class="number">2</span></p>
-               <!--Task List/-->
-               <div class="task_list">
-                 <input type="checkbox" id="c28"><label for="c28"></label>
-                 <p class="task_title"  data-toggle="modal" data-target="#task_detail">プラン選択・プロモーションページ</p>
-                 <p><span class="user_image"><img src="http://placehold.it/100x100"></span></p>
-               </div>
-               <!--/Task List-->
-               <!--Task List/-->
-               <div class="task_list">
-                 <input type="checkbox" id="c26"><label for="c26"></label>
-                 <p class="task_title"  data-toggle="modal" data-target="#task_detail">プラン選択・プロモーションページ</p>
-                 <p><span class="noimage">KO</span></p>
-               </div>
-               <!--/Task List-->
-             </div>
-             <!--/Active List-->
-             <!--Active List/-->
-             <div class="task_active_list">
-               <p class="task_active_list_title">私のタスク<span class="number">2</span></p>
-               <!--Task List/-->
-               <div class="task_list important">
-                 <input type="checkbox" id="c25"><label for="c25"></label>
-                 <p class="task_title"  data-toggle="modal" data-target="#task_detail">プラン選択・プロモーションページ</p>
-                 <p><span class="user_image"><img src="http://placehold.it/100x100"></span></p>
-               </div>
-               <!--/Task List-->
-               <!--Task List/-->
-               <div class="task_list">
-                 <input type="checkbox" id="c23"><label for="c23"></label>
-                 <p class="task_title"  data-toggle="modal" data-target="#task_detail">プラン選択・プロモーションページ</p>
-                 <p><span class="user_image"><img src="http://placehold.it/100x100"></span></p>
-               </div>
-               <!--/Task List-->
-               <!--Task List/-->
-               <div class="task_list">
-                 <input type="checkbox" id="c24"><label for="c24"></label>
-                 <p class="task_title"  data-toggle="modal" data-target="#task_detail">プラン選択・プロモーションページ</p>
-                 <p><span class="noimage">KO</span></p>
-               </div>
-               <!--/Task List-->
-             </div>
-             <!--/Active List-->
-           </div>
-           <!--/Active Lists-->
-           <!--Active Lists/-->
-           <div class="task_active_lists requeste">
-             <!--Active List/-->
-             <div class="task_active_list">
-               <p class="task_active_list_title">依頼したタスク<span class="number">2</span></p>
-               <!--Task List/-->
-               <div class="task_list">
-                 <input type="checkbox" id="c20"><label for="c20"></label>
-                 <p class="task_title"  data-toggle="modal" data-target="#task_detail">プラン選択・プロモーションページ</p>
-                 <p><span class="user_image"><img src="http://placehold.it/100x100"></span></p>
-               </div>
-               <!--/Task List-->
-               <!--Task List/-->
-               <div class="task_list important">
-                 <input type="checkbox" id="c21"><label for="c21"></label>
-                 <p class="task_title"  data-toggle="modal" data-target="#task_detail">プラン選択・プロモーションページ</p>
-                 <p><span class="user_image"><img src="http://placehold.it/100x100"></span></p>
-               </div>
-               <!--/Task List-->
-               <!--Task List/-->
-               <div class="task_list">
-                 <input type="checkbox" id="c22"><label for="c22"></label>
-                 <p class="task_title"  data-toggle="modal" data-target="#task_detail">プラン選択・プロモーションページ</p>
-                 <p><span class="noimage">KO</span></p>
-               </div>
-               <!--/Task List-->
-             </div>
-             <!--/Active List-->
-             <!--Active List/-->
-             <div class="task_active_list">
-               <p class="task_active_list_title">家選びネット<span class="number">2</span></p>
-               <!--Task List/-->
-               <div class="task_list important">
-                 <input type="checkbox" id="c4"><label for="c4"></label>
-                 <p class="task_title"  data-toggle="modal" data-target="#task_detail">プラン選択・プロモーションページ</p>
-                 <p><span class="user_image"><img src="http://placehold.it/100x100"></span></p>
-               </div>
-               <!--/Task List-->
-               <!--Task List/-->
-               <div class="task_list">
-                 <input type="checkbox" id="c5"><label for="c5"></label>
-                 <p class="task_title"  data-toggle="modal" data-target="#task_detail">プラン選択・プロモーションページ</p>
-                 <p><span class="user_image"><img src="http://placehold.it/100x100"></span></p>
-               </div>
-               <!--/Task List-->
-               <!--Task List/-->
-               <div class="task_list">
-                 <input type="checkbox" id="c6"><label for="c6"></label>
-                 <p class="task_title"  data-toggle="modal" data-target="#task_detail">プラン選択・プロモーションページ</p>
-                 <p><span class="noimage">KO</span></p>
-               </div>
-               <!--/Task List-->
-             </div>
-             <!--/Active List-->
-             <!--Active List/-->
-             <div class="task_active_list">
-               <p class="task_active_list_title">家選びネット<span class="number">2</span></p>
-               <!--Task List/-->
-               <div class="task_list important">
-                 <input type="checkbox" id="c4"><label for="c4"></label>
-                 <p class="task_title"  data-toggle="modal" data-target="#task_detail">プラン選択・プロモーションページ</p>
-                 <p><span class="user_image"><img src="http://placehold.it/100x100"></span></p>
-               </div>
-               <!--/Task List-->
-               <!--Task List/-->
-               <div class="task_list">
-                 <input type="checkbox" id="c5"><label for="c5"></label>
-                 <p class="task_title"  data-toggle="modal" data-target="#task_detail">プラン選択・プロモーションページ</p>
-                 <p><span class="user_image"><img src="http://placehold.it/100x100"></span></p>
-               </div>
-               <!--/Task List-->
-               <!--Task List/-->
-               <div class="task_list">
-                 <input type="checkbox" id="c6"><label for="c6"></label>
-                 <p class="task_title"  data-toggle="modal" data-target="#task_detail">プラン選択・プロモーションページ</p>
-                 <p><span class="noimage">KO</span></p>
-               </div>
-               <!--/Task List-->
-             </div>
-             <!--/Active List-->
-           </div>
-           <!--/Active Lists-->
-         </div>
-         <!--/Task_box-->
-         <!--Activity_box/-->
-         <div class="activity_box popover_big">
-           <h3>アクティビティ</h3>
-           <ul>
-             <li class="all_btn active">すべて</li>
-             <li class="activity_mine_btn">あなた</li>
-           </ul>
-           <div class="activity_lists activity_all">
-             <div class="activity_list">
-               <p class="noimage">KO</p>
-               <p class="activity_text">全てのアクティビティ小松健太さんが、家選びネットに<a href="">ノート：議事録</a>を投稿しましたを投稿しましたを投稿しましたを投稿しましたを投稿しましたを投稿しましたを投稿しましたを投稿しましたを投稿しました稿しました</p>
-               <p class="time">3時間前</p>
-             </div>
-             <div class="activity_list">
-               <p class="user_image"><img src="http://placehold.it/100x100"></p>
-               <p class="activity_text">全てのアクティビティ小松健太さんが、家選びネットに<a href="">ノート：議事録</a>を投稿しました。</p>
-               <p class="time">3時間前</p>
-             </div>
-             <span class="activity_loader"></span>
-           </div>
-           <div class="activity_lists activity_mine">
-             <div class="activity_list">
-               <p class="noimage">KO</p>
-               <p class="activity_text">私のアクティビティ小松健太さんが、家選びネットに<a href="">ノート：議事録</a>を投稿しました。</p>
-               <p class="time">3時間前</p>
-             </div>
-             <div class="activity_list">
-               <p class="user_image"><img src="http://placehold.it/100x100"></p>
-               <p class="activity_text">小松健太さんが、家選びネットに<a href="">ノート：議事録</a>を投稿しました。</p>
-               <p class="time">3時間前</p>
-             </div>
-             <div class="activity_list">
-               <p class="user_image"><img src="http://placehold.it/100x100"></p>
-               <p class="activity_text">小松健太さんが、家選びネットに<a href="">ノート：議事録</a>を投稿しました。</p>
-               <p class="time">3時間前</p>
-             </div>
-             <div class="activity_list">
-               <p class="user_image"><img src="http://placehold.it/100x100"></p>
-               <p class="activity_text">小松健太さんが、家選びネットに<a href="">ノート：議事録</a>を投稿しました。</p>
-               <p class="time">3時間前</p>
-             </div>
-             <div class="activity_list">
-               <p class="user_image"><img src="http://placehold.it/100x100"></p>
-               <p class="activity_text">小松健太さんが、家選びネットに<a href="">ノート：議事録</a>を投稿しました。</p>
-               <p class="time">3時間前</p>
-             </div>
-             <div class="activity_list">
-               <p class="user_image"><img src="http://placehold.it/100x100"></p>
-               <p class="activity_text">小松健太さんが、家選びネットに<a href="">ノート：議事録</a>を投稿しました。</p>
-               <p class="time">3時間前</p>
-             </div>
-             <div class="activity_list">
-               <p class="user_image"><img src="http://placehold.it/100x100"></p>
-               <p class="activity_text">小松健太さんが、家選びネットに<a href="">ノート：議事録</a>を投稿しました。</p>
-               <p class="time">3時間前</p>
-             </div>
-             <div class="activity_list">
-               <p class="user_image"><img src="http://placehold.it/100x100"></p>
-               <p class="activity_text">小松健太さんが、家選びネットに<a href="">ノート：議事録</a>を投稿しました。</p>
-               <p class="time">3時間前</p>
-             </div>
-           </div>
-         </div>
-         <!--/Activity_box-->
-         <!--Acccont_box/-->
-         <div class="account popover">
-           <div class="account_info">
-             <!-- <p class="user_image"><img src="http://placehold.it/100x100"></p> -->
-             <p class="noimage">KO</p>
-             <p class="user_name">小松 健太小松 健太小松 健太小松 健太</p>
-             <p class="user_rank">無料アカウント</p>
-           </div>
-           <ul>
-             <li><a href="">プロフィール編集</a></li>
-             <li><a href="">アカウント設定</a></li>
-             <li><a href="">友達を探す</a></li>
-             <li><a href="">ヘルプ＆フィードバック</a></li>
-             <li><a href="">ログアウト</a></li>
-           </ul>
-         </div>
-         <!--/Acccont_box-->
+          <div class="front_header_menu">
+            <p class="logo"><a href=""><img src="images/logo.png"></a></p>
+            <p class="new"><a href=""><span>無料ではじめる</span></a></p>
+            <p class="login"><a href=""><span>ログイン</span></a></p>
+          </div>
+        </div>
       </header>
-      <!--/Header-->
+      <!--Header/-->
       <!--Main/-->
       <div class="main">
         <!--Detail/-->
@@ -306,28 +72,13 @@
               </div>
             </div>
             <!--/Title-->
-            <!--Task create/-->
-            <div class="task_create">
-              <div class="task_create_inner">
-                <p class="task_add_list_btn"><i class="icon-list-ul"></i></p><input type="text" placeholder="リストを作成する..."><button class="btn_add_task_create">作成</button>
-                <div class="task_add_list_member popover">
-                  <input type="text" placeholder="メンバーを探す"></input>
-                  <ul>
-                    <li><button><span class="user_image"><img src="http://placehold.it/100x100"></span>小松 健太</button></li>
-                    <li><button><span class="user_image"><img src="http://placehold.it/100x100"></span>原戸 陵至</button></li>
-                    <li><button><span class="noimage">OS</span>大崎 太加彦</button></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <!--/Task create-->
             <!--Task none/-->
             <div class="task_none">
               タスクがありません
             </div>
             <!--/Task none-->
             <!--Task Replacement/-->
-            <div class="task_replacement">
+            <div class="task_replacement" style="margin-top: 0;">
               <!--Task People/-->
               <div class="task_people">
                 <p class="handle">小松の担当<span class="number">5</span></p>
