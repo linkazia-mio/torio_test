@@ -5,7 +5,7 @@ window.onload=function(){
   $(document).ready(function(){
 
     //global_menu 非表示
-    $('.global_menu_btn').click(function () {
+    $('.global_menu_btn').click(function (event) {
       jQuery('.global_menu').toggle();
       jQuery('.global_menu').toggleClass("size_none");
       var w = $(window).width(); //ウィンドウの高さ
@@ -22,67 +22,67 @@ window.onload=function(){
     });
 
     //Task Box
-    $('.alart_task p').click(function () {
+    $('.alart_task p').click(function (event) {
       $('.task_box').toggle( 'fade', '', 100 );
       event.stopPropagation();
       popover.hide();
       popoverBig.hide();
       $('.task_box.popover_big').toggle();
     });
-    $('.task_box').click(function () {
+    $('.task_box').click(function (event) {
       jQuery('.task_box').show();
       event.stopPropagation();
     });
-    $('.mine_btn').click(function () {
+    $('.mine_btn').click(function (event) {
       jQuery('.task_active_lists.mine').show();
       jQuery('.task_active_lists.requeste').hide();
       $(this).addClass("active");
       $('.requeste_btn').removeClass("active");
     });
-    $('.requeste_btn').click(function () {
+    $('.requeste_btn').click(function (event) {
       jQuery('.task_active_lists.requeste').show();
       jQuery('.task_active_lists.mine').hide();
       $(this).addClass("active");
       $('.mine_btn').removeClass("active");
     });
     //Activity
-    $('.activity p').click(function () {
+    $('.activity p').click(function (event) {
       $('.activity_box').toggle( 'fade', '', 100 );
       event.stopPropagation();
       popover.hide();
       popoverBig.hide();
       $('.activity_box').toggle();
     });
-    $('.activity_box').click(function () {
+    $('.activity_box').click(function (event) {
       jQuery('.activity_box').show();
       event.stopPropagation();
     });
-    $('.activity_mine_btn').click(function () {
+    $('.activity_mine_btn').click(function (event) {
       jQuery('.activity_mine').show();
       jQuery('.activity_all').hide();
       $(this).addClass("active");
       $('.all_btn').removeClass("active");
     });
-    $('.all_btn').click(function () {
+    $('.all_btn').click(function (event) {
       jQuery('.activity_all').show();
       jQuery('.activity_mine').hide();
       $(this).addClass("active");
       $('.activity_mine_btn').removeClass("active");
     });
     //Account
-    $('.me').click(function () {
+    $('.me').click(function (event) {
       $('.account').toggle( 'fade', '', 100 );
       event.stopPropagation();
       popover.hide();
       popoverBig.hide();
       $('.account').toggle();
     });
-    $('.account').click(function () {
+    $('.account').click(function (event) {
       jQuery('.account').show();
       event.stopPropagation();
     });
     //Check box
-    $('.config .check').click(function () {
+    $('.config .check').click(function (event) {
       $('.check_box').toggle( 'fade', '', 100 );
       event.stopPropagation();
       popover.hide();
@@ -90,19 +90,19 @@ window.onload=function(){
       $('.check_box').toggle();
     });
     //Website Box
-    $('.website').click(function () {
+    $('.website').click(function (event) {
       $('.detail_website_box').toggle( 'fade', '', 100 );
       event.stopPropagation();
       popover.hide();
       popoverBig.hide();
       $('.detail_website_box').toggle();
     });
-    $('.detail_website_box').click(function () {
+    $('.detail_website_box').click(function (event) {
       jQuery('.detail_website_box').show();
       event.stopPropagation();
     });
     //Option box
-    $('.config .option').click(function () {
+    $('.config .option').click(function (event) {
       $('.option_box').toggle( 'fade', '', 100 );
       event.stopPropagation();
       popover.hide();
@@ -110,7 +110,7 @@ window.onload=function(){
       $('.option_box').toggle();
     });
     //Add page
-    $('.page_menu_footer p').click(function () {
+    $('.page_menu_footer p').click(function (event) {
       $('.add_page').toggle( 'fade', '', 100 );
       event.stopPropagation();
       popover.hide();
@@ -118,7 +118,7 @@ window.onload=function(){
       $('.add_page').toggle();
     });
     //Detail_option_box
-    $('.detail .option').click(function () {
+    $('.detail .option').click(function (event) {
       $('.detail_option_box').toggle( 'fade', '', 100 );
       event.stopPropagation();
       popover.hide();
@@ -126,7 +126,7 @@ window.onload=function(){
       $('.detail_option_box').toggle();
     });
     //Detail_option_box
-    $('.detail .check').click(function () {
+    $('.detail .check').click(function (event) {
       $('.detail_check_box').toggle( 'fade', '', 100 );
       event.stopPropagation();
       popover.hide();
@@ -134,7 +134,7 @@ window.onload=function(){
       $('.detail_check_box').toggle();
     });
     //task_add_list_member
-    $('.task_add_list_btn').click(function () {
+    $('.task_add_list_btn').click(function (event) {
       $('.task_add_list_member').toggle( 'fade', '', 100 );
       event.stopPropagation();
       popover.hide();
@@ -142,7 +142,7 @@ window.onload=function(){
       $('.task_add_list_member').toggle();
     });
     //Task_add_time
-    $('#made_1 .time_create').click(function () {
+    $('#made_1 .time_create').click(function (event) {
       $('#made_1 .task_add_time').toggle( 'fade', '', 100 );
       event.stopPropagation();
       popover.hide();
@@ -150,7 +150,7 @@ window.onload=function(){
       $('#made_1 .task_add_time').toggle();
     });
     //Task_add_time
-    $('#made_2 .time_create').click(function () {
+    $('#made_2 .time_create').click(function (event) {
       $('#made_2 .task_add_time').toggle( 'fade', '', 100 );
       event.stopPropagation();
       popover.hide();
@@ -158,7 +158,7 @@ window.onload=function(){
       $('#made_2 .task_add_time').toggle();
     });
     //Task_add_time
-    $('#made_3 .time_create').click(function () {
+    $('#made_3 .time_create').click(function (event) {
       $('#made_3 .task_add_time').toggle( 'fade', '', 100 );
       event.stopPropagation();
       popover.hide();
@@ -166,7 +166,7 @@ window.onload=function(){
       $('#made_3 .task_add_time').toggle();
     });
     //Task Add Member
-    $('#made_1 .task_member').click(function () {
+    $('#made_1 .task_member').click(function (event) {
       $('#made_1 .task_add_member').toggle( 'fade', '', 100 );
       event.stopPropagation();
       popover.hide();
@@ -174,7 +174,7 @@ window.onload=function(){
       $('#made_1 .task_add_member').toggle();
     });
     //Task Add Member
-    $('#made_2 .task_member').click(function () {
+    $('#made_2 .task_member').click(function (event) {
       $('#made_2 .task_add_member').toggle( 'fade', '', 100 );
       event.stopPropagation();
       popover.hide();
@@ -182,7 +182,7 @@ window.onload=function(){
       $('#made_2 .task_add_member').toggle();
     });
     //Task Add Member
-    $('#made_3 .task_member').click(function () {
+    $('#made_3 .task_member').click(function (event) {
       $('#made_3 .task_add_member').toggle( 'fade', '', 100 );
       event.stopPropagation();
       popover.hide();
@@ -190,7 +190,7 @@ window.onload=function(){
       $('#made_3 .task_add_member').toggle();
     });
     //Task Option
-    $('.modal-header .option').click(function () {
+    $('.modal-header .option').click(function (event) {
       $('.modal_option_box').toggle( 'fade', '', 100 );
       event.stopPropagation();
       popover.hide();
@@ -198,19 +198,19 @@ window.onload=function(){
       $('.modal_option_box').toggle();
     });
     //Limit_add_time
-    $('.limlt').click(function () {
+    $('.limlt').click(function (event) {
       $('.limit_add_time').toggle( 'fade', '', 100 );
       event.stopPropagation();
       popover.hide();
       popoverBig.hide();
       $('.limit_add_time').toggle();
     });
-    $('.limit_add_time').click(function () {
+    $('.limit_add_time').click(function (event) {
       jQuery('.limit_add_time').show();
       event.stopPropagation();
     });
     //Task_add_requester
-    $('.requester input').click(function () {
+    $('.requester input').click(function (event) {
       $('.task_add_requester').toggle( 'fade', '', 100 );
       event.stopPropagation();
       popover.hide();
@@ -218,7 +218,7 @@ window.onload=function(){
       $('.task_add_requester').toggle();
     });
     //Task_add_worker
-    $('.worker input').click(function () {
+    $('.worker input').click(function (event) {
       $('.task_add_worker').toggle( 'fade', '', 100 );
       event.stopPropagation();
       popover.hide();
@@ -226,7 +226,7 @@ window.onload=function(){
       $('.task_add_worker').toggle();
     });
     //Nnote_detail_option_box
-    $('#note_1 .note_option').click(function () {
+    $('#note_1 .note_option').click(function (event) {
       $('#note_1 .note_detail_option_box').toggle( 'fade', '', 100 );
       event.stopPropagation();
       popover.hide();
@@ -234,7 +234,7 @@ window.onload=function(){
       $('#note_1 .note_detail_option_box').toggle();
     });
     //Note_detail_option_box
-    $('#note_2 .note_option').click(function () {
+    $('#note_2 .note_option').click(function (event) {
       $('#note_2 .note_detail_option_box').toggle( 'fade', '', 100 );
       event.stopPropagation();
       popover.hide();
@@ -242,44 +242,44 @@ window.onload=function(){
       $('#note_2 .note_detail_option_box').toggle();
     });
     //comment_count
-    $('#note_1 .comment_count').click(function () {
+    $('#note_1 .comment_count').click(function (event) {
       $('#note_1 .note_comment').toggle();
       $('#note_1 .note_edit_inner_comment').toggleClass('no_border');
     });
     //comment_count
-    $('.item .option').click(function () {
+    $('.item .option').click(function (event) {
       $('.item_option_box').toggle( 'fade', '', 100 );
     });
     //configuration_btn_show
-    $('.cancellation .configuration_btn_show .configuration_open').click(function () {
+    $('.cancellation .configuration_btn_show .configuration_open').click(function (event) {
       $('.cancellation .configuration_btn.delete').toggle();
       $('.configuration_open').hide();
       $('.configuration_close').show();
     });
     //configuration_btn_show
-    $('.configuration_btn_show .configuration_close').click(function () {
+    $('.configuration_btn_show .configuration_close').click(function (event) {
       $('.cancellation .configuration_btn.delete').toggle();
       $('.configuration_open').show();
       $('.configuration_close').hide();
     });
     //change
-    $('.change').click(function () {
+    $('.change').click(function (event) {
       $('.input_box_pass').removeClass('disabled');
       event.stopPropagation();
     });
     //cancellation_first
-    $('#cancellation_first .delete').click(function () {
+    $('#cancellation_first .delete').click(function (event) {
       $('#cancellation_second').show();
       $('#cancellation_first').hide();
       event.stopPropagation();
     });
     //cancellation_second
-    $('#cancellation_second .delete').click(function () {
+    $('#cancellation_second .delete').click(function (event) {
       $('#cancellation_finish').show();
       $('#cancellation_second').hide();
       event.stopPropagation();
     });
-    $('#cancellation_second .cancel').click(function () {
+    $('#cancellation_second .cancel').click(function (event) {
       $('#cancellation_first').show();
       $('#cancellation_second').hide();
       event.stopPropagation();
@@ -370,7 +370,7 @@ window.onload=function(){
         .css( 'display', '');
       });
 
-      $('.editable').click(function () {
+      $('.editable').click(function (event) {
         jQuery('.start').hide();
         event.stopPropagation();
       });
@@ -380,7 +380,7 @@ window.onload=function(){
         setTimeout(function(){slider.reloadSlider();},200);
       });
 
-      $('.panel').click(function () {
+      $('.panel').click(function (event) {
         jQuery('#file_detail').show();
         var slider = jQuery('.file_slide').bxSlider({
           mode: 'fade',
@@ -391,15 +391,15 @@ window.onload=function(){
           autoReload: true
         });
       });
-      $('#file_detail').click(function () {
+      $('#file_detail').click(function (event) {
         jQuery('#file_detail').hide();
         event.stopPropagation();
       });
-      $('.file_detail_close').click(function () {
+      $('.file_detail_close').click(function (event) {
         jQuery('#file_detail').hide();
         event.stopPropagation();
       });
-      $('.file_detail_inner').click(function () {
+      $('.file_detail_inner').click(function (event) {
         jQuery('#file_detail').show();
         event.stopPropagation();
       });
@@ -439,7 +439,7 @@ window.onload=function(){
   });
 
   //トグルスイッチ
-  $('.toggle_btn').click(function () {
+  $('.toggle_btn').click(function (event) {
     $('.off .circle').animate({'left': '+=30px'}, 'fast');
     $('.on .circle').animate({'left': '-=30px'}, 'fast');
     $(this).toggleClass("off");
@@ -475,16 +475,16 @@ window.onload=function(){
   );
 
   //クリッカブル
-  $('.item').click(function () {
+  $('.item').click(function (event) {
     $(this).toggleClass('selected');
   });
   //クリッカブル
-  $('.global_menu_inner li a').click(function () {
+  $('.global_menu_inner li a').click(function (event) {
     $(this).toggleClass('selected');
   });
 
   //リストを作成するボタン表示
-  $('.task_create_inner input').click(function () {
+  $('.task_create_inner input').click(function (event) {
     jQuery('.btn_add_task_create').show();
     event.stopPropagation();
   });
@@ -493,21 +493,21 @@ window.onload=function(){
   });
 
   //タスク入力部分
-  $('.task_add_list_member button').click(function () {
+  $('.task_add_list_member button').click(function (event) {
     $(this).toggleClass('checked');
   });
-  $('.task_add_member button').click(function () {
+  $('.task_add_member button').click(function (event) {
     $(this).toggleClass('checked');
   });
-  $('.task_add_requester button').click(function () {
+  $('.task_add_requester button').click(function (event) {
     $(this).toggleClass('checked');
   });
-  $('.task_add_worker button').click(function () {
+  $('.task_add_worker button').click(function (event) {
     $(this).toggleClass('checked');
   });
 
 
-  $('#made_1.made .task_input').click(function () {
+  $('#made_1.made .task_input').click(function (event) {
     jQuery('#made_1 .task_button').show();
     event.stopPropagation();
   });
@@ -515,7 +515,7 @@ window.onload=function(){
     $('#made_1 .task_button').hide();
   });
 
-  $('#made_2.made').click(function () {
+  $('#made_2.made').click(function (event) {
     jQuery('#made_2 .task_button').show();
     event.stopPropagation();
   });
@@ -523,7 +523,7 @@ window.onload=function(){
     $('#made_2 .task_button').hide();
   });
 
-  $('#made_3.made').click(function () {
+  $('#made_3.made').click(function (event) {
     jQuery('#made_3 .task_button').show();
     event.stopPropagation();
   });
