@@ -1,8 +1,9 @@
 .task {
+  @include font-smoothing(on);
   .task_create {
     padding: 0 30px;
     .task_create_inner {
-      @include border_radius(4);
+      @include border_radius(4px);
       position: relative;
       margin: 0 auto;
       height: 50px;

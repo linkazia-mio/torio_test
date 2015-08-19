@@ -3,6 +3,7 @@
 ---------------------------------------------------------------------------------------*/
 .file {
   position: relative;
+  @include font-smoothing(on);
   #masonry {
     margin: 0 auto;
   }
