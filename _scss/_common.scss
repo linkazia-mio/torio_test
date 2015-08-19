@@ -958,7 +958,7 @@ header {
 }
 
 /*Main*/
-.main {
+.main{
   display: -webkit-box;
   display: -moz-box;
   overflow: hidden;
@@ -1618,13 +1618,16 @@ header {
 }
 
 /*detail*/
-.detail {
+.detail,.detail_public {
   -webkit-box-flex: 1;
   -moz-box-flex: 1;
   background: $white_gray;
   width: auto;
   height: 100%;
   float: left;
+  &.detail_public{
+   float: none !important;
+  }
   &.ui-widget-content {
     border: none;
   }

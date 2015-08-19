@@ -2464,19 +2464,21 @@ header {
               color: white; }
 
 /*detail*/
-.detail {
+.detail, .detail_public {
   -webkit-box-flex: 1;
   -moz-box-flex: 1;
   background: #f9f9f9;
   width: auto;
   height: 100%;
   float: left; }
-  .detail.ui-widget-content {
+  .detail.detail_public, .detail_public.detail_public {
+    float: none !important; }
+  .detail.ui-widget-content, .detail_public.ui-widget-content {
     border: none; }
-  .detail .title {
+  .detail .title, .detail_public .title {
     position: relative;
     padding: 30px 30px 30px 30px; }
-    .detail .title h1 {
+    .detail .title h1, .detail_public .title h1 {
       font-size: 22px;
       font-size: 2.2rem;
       margin: 0 0 0 0;
@@ -2484,50 +2486,50 @@ header {
       display: inline-block;
       line-height: 28px;
       letter-spacing: 0.08em; }
-    .detail .title p {
+    .detail .title p, .detail_public .title p {
       font-size: 26px;
       font-size: 2.6rem;
       line-height: 28px;
       position: absolute;
       color: #8a959e;
       top: 32px; }
-      .detail .title p:hover {
+      .detail .title p:hover, .detail_public .title p:hover {
         color: #3A87BC;
         cursor: pointer; }
-      .detail .title p.check {
+      .detail .title p.check, .detail_public .title p.check {
         /*position: static;*/
         display: inline-block; }
-      .detail .title p.bookmark {
+      .detail .title p.bookmark, .detail_public .title p.bookmark {
         right: 120px; }
-        .detail .title p.bookmark .icon-bookmark-outline {
+        .detail .title p.bookmark .icon-bookmark-outline, .detail_public .title p.bookmark .icon-bookmark-outline {
           display: block; }
-        .detail .title p.bookmark .icon-bookmark {
+        .detail .title p.bookmark .icon-bookmark, .detail_public .title p.bookmark .icon-bookmark {
           display: none; }
-        .detail .title p.bookmark.active .icon-bookmark-outline {
+        .detail .title p.bookmark.active .icon-bookmark-outline, .detail_public .title p.bookmark.active .icon-bookmark-outline {
           display: none; }
-        .detail .title p.bookmark.active .icon-bookmark {
+        .detail .title p.bookmark.active .icon-bookmark, .detail_public .title p.bookmark.active .icon-bookmark {
           color: #db4c3f;
           display: block; }
-        .detail .title p.bookmark:hover {
+        .detail .title p.bookmark:hover, .detail_public .title p.bookmark:hover {
           color: #db4c3f;
           cursor: pointer; }
-      .detail .title p.website {
+      .detail .title p.website, .detail_public .title p.website {
         right: 69px; }
-        .detail .title p.website:hover .balloon_box {
+        .detail .title p.website:hover .balloon_box, .detail_public .title p.website:hover .balloon_box {
           display: block;
           bottom: 78px;
           left: 50%;
           margin: -50px; }
-      .detail .title p.option, .detail .title .carousel .carousel-inner .item .modal-header p.download, .carousel .carousel-inner .item .modal-header .detail .title p.download, .detail .title .carousel .carousel-inner .item .modal-header p.like, .carousel .carousel-inner .item .modal-header .detail .title p.like {
+      .detail .title p.option, .detail .title .carousel .carousel-inner .item .modal-header p.download, .carousel .carousel-inner .item .modal-header .detail .title p.download, .detail .title .carousel .carousel-inner .item .modal-header p.like, .carousel .carousel-inner .item .modal-header .detail .title p.like, .detail_public .title p.option, .detail_public .title .carousel .carousel-inner .item .modal-header p.download, .carousel .carousel-inner .item .modal-header .detail_public .title p.download, .detail_public .title .carousel .carousel-inner .item .modal-header p.like, .carousel .carousel-inner .item .modal-header .detail_public .title p.like {
         right: 24px; }
-    .detail .title .detail_check_box {
+    .detail .title .detail_check_box, .detail_public .title .detail_check_box {
       width: 250px; }
-    .detail .title .detail_option_box {
+    .detail .title .detail_option_box, .detail_public .title .detail_option_box {
       width: 250px;
       right: 15px;
       top: 60px;
       z-index: 50; }
-    .detail .title .detail_website_box {
+    .detail .title .detail_website_box, .detail_public .title .detail_website_box {
       width: 400px;
       right: 70px;
       top: 60px;
@@ -4066,24 +4068,35 @@ footer.front {
     background: #fff; }
 
 /*---------------------------------------------------------------------------------------
- Account
+ Privacy,Terms
 ---------------------------------------------------------------------------------------*/
-.privacypolicy {
+.privacypolicy, .terms {
   color: #606060;
   padding: 60px 50px; }
-  .privacypolicy p {
+  .privacypolicy p, .terms p {
     font-size: 15px;
     font-size: 1.5rem;
     line-height: 2.4; }
-  .privacypolicy h3 {
+  .privacypolicy h3, .terms h3 {
     font-size: 24px;
     font-size: 2.4rem;
     padding: 15px 0 23px 0; }
-  .privacypolicy ul {
+  .privacypolicy ul, .terms ul {
     font-size: 15px;
     font-size: 1.5rem; }
-    .privacypolicy ul li {
+    .privacypolicy ul li, .terms ul li {
       line-height: 2.4; }
+  .privacypolicy ol, .terms ol {
+    list-style-type: decimal;
+    font-size: 15px;
+    font-size: 1.5rem; }
+    .privacypolicy ol li, .terms ol li {
+      list-style-position: outside;
+      margin: 0 0 13px 20px;
+      line-height: 1.8; }
+      .privacypolicy ol li ol, .terms ol li ol {
+        padding-top: 15px;
+        list-style-type: disc; }
 
 /*---------------------------------------------------------------------------------------
  Account

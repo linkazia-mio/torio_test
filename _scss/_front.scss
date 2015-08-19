@@ -35,9 +35,9 @@
 
 
 /*---------------------------------------------------------------------------------------
- Account
+ Privacy,Terms
 ---------------------------------------------------------------------------------------*/
-.privacypolicy{
+.privacypolicy,.terms{
   color: #606060;
   padding: 60px 50px;
   p{
@@ -52,6 +52,19 @@
     @include fontsize(1.5);
     li{
       line-height: 2.4;
+    }
+  }
+  ol{
+    list-style-type: decimal;
+    @include fontsize(1.5);
+    li{
+      list-style-position: outside;
+      margin: 0 0 13px 20px;
+      line-height: 1.8;
+      ol{
+        padding-top: 15px;
+        list-style-type: disc;
+      }
     }
   }
 }
