@@ -115,7 +115,6 @@ button {
       margin-bottom: 10px;
       &:hover {
         color: $white_brack;
-        cursor: default;
       }
     }
     input {
@@ -203,7 +202,6 @@ button {
         margin-bottom: 10px;
         &:hover {
           color: $white_brack;
-          cursor: default;
         }
       }
       input {
@@ -1639,10 +1637,12 @@ header {
   width: auto;
   height: 100%;
   float: left;
+  overflow: hidden;
   &.detail_public{
    float: none !important;
    height: auto !important;
    padding-bottom: 70px;
+   overflow: visible;
   }
   &.ui-widget-content {
     border: none;

@@ -1169,8 +1169,7 @@ button:focus {
       position: static;
       margin-bottom: 10px; }
       .popover .popover_inner .text:hover {
-        color: #8a959e;
-        cursor: default; }
+        color: #8a959e; }
     .popover .popover_inner input {
       -webkit-border-radius: 4px;
       -moz-border-radius: 4px;
@@ -1251,8 +1250,7 @@ button:focus {
       position: static;
       margin-bottom: 10px; }
       .main .popover .popover_inner .text:hover, .main_public .popover .popover_inner .text:hover {
-        color: #8a959e;
-        cursor: default; }
+        color: #8a959e; }
     .main .popover .popover_inner input, .main_public .popover .popover_inner input {
       -webkit-border-radius: 4px;
       -moz-border-radius: 4px;
@@ -2483,11 +2481,13 @@ header {
   background: #f9f9f9;
   width: auto;
   height: 100%;
-  float: left; }
+  float: left;
+  overflow: hidden; }
   .detail.detail_public, .detail_public.detail_public {
     float: none !important;
     height: auto !important;
-    padding-bottom: 70px; }
+    padding-bottom: 70px;
+    overflow: visible; }
   .detail.ui-widget-content, .detail_public.ui-widget-content {
     border: none; }
   .detail .title, .detail_public .title {
