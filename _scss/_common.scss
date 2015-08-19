@@ -1186,9 +1186,10 @@ header {
       max-width: 47%;
       span {
         font-weight: normal;
-        padding-left: 10px;
+        padding-left: 5px;
         @include font_eng;
         color:$white_brack;
+        @include fontsize(1.1);
       }
     }
     .check {
