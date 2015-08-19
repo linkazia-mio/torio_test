@@ -4084,8 +4084,172 @@ footer.front {
     box-shadow: none;
     background: #fff; }
 
+.contact {
+  color: #606060;
+  padding: 60px 50px; }
+  .contact dl {
+    *zoom: 1;
+    padding: 0;
+    width: 100%;
+    margin: 0 auto 20px auto; }
+    .contact dl:after {
+      content: ".";
+      display: block;
+      clear: both;
+      height: 0;
+      visibility: hidden; }
+    .contact dl:last-child {
+      margin-bottom: 0; }
+    .contact dl.top {
+      margin-bottom: 40px; }
+    .contact dl dt {
+      float: left;
+      width: 35%;
+      font-size: 15px;
+      font-size: 1.5rem;
+      font-weight: normal;
+      padding: 15px 0 0 0; }
+      .contact dl dt.image {
+        padding: 0;
+        width: 110px; }
+      .contact dl dt .mail {
+        -webkit-border-radius: 100px;
+        -moz-border-radius: 100px;
+        -ms-border-radius: 100px;
+        border-radius: 100px;
+        line-height: 85px;
+        text-align: center;
+        width: 85px;
+        height: 85px;
+        background: #3a87bc;
+        padding: 20px 0 0 0; }
+        .contact dl dt .mail img {
+          width: 50px; }
+    .contact dl dd {
+      float: left;
+      width: 65%;
+      font-size: 15px;
+      font-size: 1.5rem; }
+      .contact dl dd.text {
+        padding: 10px 0 0 0;
+        width: 83%;
+        line-height: 2.1; }
+      .contact dl dd .input_box, .contact dl dd .select_box, .contact dl dd .option_config .configuration .configuration_inner .input_box_pass, .option_config .configuration .configuration_inner .contact dl dd .input_box_pass, .contact dl dd .option_config .configuration .configuration_inner .select_box, .option_config .configuration .configuration_inner .contact dl dd .select_box {
+        border: 1px solid #e5e5e5;
+        width: 490px;
+        padding: 10px;
+        margin-bottom: 35px;
+        position: relative;
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        -ms-border-radius: 3px;
+        border-radius: 3px; }
+        .contact dl dd .input_box.profile_text, .contact dl dd .profile_text.select_box, .contact dl dd .option_config .configuration .configuration_inner .profile_text.input_box_pass, .option_config .configuration .configuration_inner .contact dl dd .profile_text.input_box_pass, .contact dl dd .option_config .configuration .configuration_inner .profile_text.select_box, .option_config .configuration .configuration_inner .contact dl dd .profile_text.select_box {
+          margin-bottom: 50px; }
+        .contact dl dd .input_box.profile_name, .contact dl dd .profile_name.select_box, .contact dl dd .option_config .configuration .configuration_inner .profile_name.input_box_pass, .option_config .configuration .configuration_inner .contact dl dd .profile_name.input_box_pass, .contact dl dd .option_config .configuration .configuration_inner .profile_name.select_box, .option_config .configuration .configuration_inner .contact dl dd .profile_name.select_box {
+          *zoom: 1;
+          border: none;
+          padding: 0; }
+          .contact dl dd .input_box.profile_name:after, .contact dl dd .profile_name.select_box:after, .contact dl dd .option_config .configuration .configuration_inner .profile_name.input_box_pass:after, .option_config .configuration .configuration_inner .contact dl dd .profile_name.input_box_pass:after, .contact dl dd .option_config .configuration .configuration_inner .profile_name.select_box:after, .option_config .configuration .configuration_inner .contact dl dd .profile_name.select_box:after {
+            content: ".";
+            display: block;
+            clear: both;
+            height: 0;
+            visibility: hidden; }
+          .contact dl dd .input_box.profile_name input, .contact dl dd .profile_name.select_box input, .contact dl dd .option_config .configuration .configuration_inner .profile_name.input_box_pass input, .option_config .configuration .configuration_inner .contact dl dd .profile_name.input_box_pass input, .contact dl dd .option_config .configuration .configuration_inner .profile_name.select_box input, .option_config .configuration .configuration_inner .contact dl dd .profile_name.select_box input {
+            -webkit-border-radius: 3px;
+            -moz-border-radius: 3px;
+            -ms-border-radius: 3px;
+            border-radius: 3px;
+            border: 1px solid #e5e5e5;
+            padding: 10px 10px;
+            width: 235px;
+            float: left;
+            margin-left: 20px; }
+            .contact dl dd .input_box.profile_name input:first-child, .contact dl dd .profile_name.select_box input:first-child, .contact dl dd .option_config .configuration .configuration_inner .profile_name.input_box_pass input:first-child, .option_config .configuration .configuration_inner .contact dl dd .profile_name.input_box_pass input:first-child {
+              margin-left: 0; }
+        .contact dl dd .input_box input, .contact dl dd .select_box input, .contact dl dd .option_config .configuration .configuration_inner .input_box_pass input, .option_config .configuration .configuration_inner .contact dl dd .input_box_pass input, .contact dl dd .option_config .configuration .configuration_inner .select_box input, .option_config .configuration .configuration_inner .contact dl dd .select_box input {
+          width: 100%;
+          z-index: 10; }
+          .contact dl dd .input_box input:focus, .contact dl dd .select_box input:focus, .contact dl dd .option_config .configuration .configuration_inner .input_box_pass input:focus, .option_config .configuration .configuration_inner .contact dl dd .input_box_pass input:focus, .contact dl dd .option_config .configuration .configuration_inner .select_box input:focus, .option_config .configuration .configuration_inner .contact dl dd .select_box input:focus {
+            outline: none; }
+        .contact dl dd .input_box.disabled, .contact dl dd .disabled.select_box, .contact dl dd .option_config .configuration .configuration_inner .disabled.input_box_pass, .option_config .configuration .configuration_inner .contact dl dd .disabled.input_box_pass, .contact dl dd .option_config .configuration .configuration_inner .disabled.select_box, .option_config .configuration .configuration_inner .contact dl dd .disabled.select_box {
+          background: #f9f9f9; }
+          .contact dl dd .input_box.disabled input, .contact dl dd .disabled.select_box input, .contact dl dd .option_config .configuration .configuration_inner .disabled.input_box_pass input, .option_config .configuration .configuration_inner .contact dl dd .disabled.input_box_pass input, .contact dl dd .option_config .configuration .configuration_inner .disabled.select_box input, .option_config .configuration .configuration_inner .contact dl dd .disabled.select_box input {
+            pointer-events: none; }
+        .contact dl dd .input_box textarea, .contact dl dd .select_box textarea, .contact dl dd .option_config .configuration .configuration_inner .input_box_pass textarea, .option_config .configuration .configuration_inner .contact dl dd .input_box_pass textarea, .contact dl dd .option_config .configuration .configuration_inner .select_box textarea, .option_config .configuration .configuration_inner .contact dl dd .select_box textarea {
+          width: 100%;
+          resize: none; }
+          .contact dl dd .input_box textarea:focus, .contact dl dd .select_box textarea:focus, .contact dl dd .option_config .configuration .configuration_inner .input_box_pass textarea:focus, .option_config .configuration .configuration_inner .contact dl dd .input_box_pass textarea:focus, .contact dl dd .option_config .configuration .configuration_inner .select_box textarea:focus, .option_config .configuration .configuration_inner .contact dl dd .select_box textarea:focus {
+            outline: none; }
+        .contact dl dd .input_box .change, .contact dl dd .select_box .change, .contact dl dd .option_config .configuration .configuration_inner .input_box_pass .change, .option_config .configuration .configuration_inner .contact dl dd .input_box_pass .change, .contact dl dd .option_config .configuration .configuration_inner .select_box .change, .option_config .configuration .configuration_inner .contact dl dd .select_box .change {
+          position: absolute;
+          right: 20px;
+          top: 10px;
+          color: #8a959e;
+          z-index: 100; }
+          .contact dl dd .input_box .change:hover, .contact dl dd .select_box .change:hover, .contact dl dd .option_config .configuration .configuration_inner .input_box_pass .change:hover, .option_config .configuration .configuration_inner .contact dl dd .input_box_pass .change:hover {
+            cursor: pointer; }
+        .contact dl dd .input_box .count, .contact dl dd .select_box .count, .contact dl dd .option_config .configuration .configuration_inner .input_box_pass .count, .option_config .configuration .configuration_inner .contact dl dd .input_box_pass .count, .contact dl dd .option_config .configuration .configuration_inner .select_box .count, .option_config .configuration .configuration_inner .contact dl dd .select_box .count {
+          font-size: 12px;
+          font-size: 1.2rem;
+          position: absolute;
+          left: 0;
+          bottom: -30px;
+          color: #8a959e; }
+      .contact dl dd .select_box {
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        -ms-border-radius: 3px;
+        border-radius: 3px;
+        position: relative;
+        padding: 0; }
+        .contact dl dd .select_box select {
+          border: none;
+          margin: 0;
+          padding: 13px 10px 10px 14px;
+          width: 100%;
+          z-index: 10; }
+        .contact dl dd .select_box:after {
+          position: absolute;
+          right: 7px;
+          top: 4px;
+          height: 26px;
+          width: 26px;
+          font-family: 'torio_icon';
+          content: "\e60a";
+          color: #8a959e;
+          z-index: 1;
+          display: block; }
+  .contact .btn_wrapper {
+    margin: 0 auto;
+    text-align: center; }
+    .contact .btn_wrapper button.btn_send {
+      color: #ffffff;
+      width: 400px;
+      height: 75px;
+      line-height: 75px;
+      padding: 0 15px 0 15px;
+      cursor: pointer;
+      display: inline-block;
+      font-size: 20px;
+      font-size: 2rem;
+      font-weight: normal;
+      font-style: normal;
+      -webkit-border-radius: 4px;
+      -moz-border-radius: 4px;
+      -ms-border-radius: 4px;
+      border-radius: 4px;
+      text-decoration: none;
+      letter-spacing: 0.05em;
+      background: #3a87bc; }
+      .contact .btn_wrapper button.btn_send:hover {
+        background: #2b75a7;
+        color: white;
+        outline: 0; }
+
 /*---------------------------------------------------------------------------------------
- Privacy,Terms
+ Privacy,Terms,Tokusyoho
 ---------------------------------------------------------------------------------------*/
 .privacypolicy, .terms, .tokusyoho {
   color: #606060;
