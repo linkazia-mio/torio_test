@@ -4070,33 +4070,57 @@ footer.front {
 /*---------------------------------------------------------------------------------------
  Privacy,Terms
 ---------------------------------------------------------------------------------------*/
-.privacypolicy, .terms {
+.privacypolicy, .terms, .tokusyoho {
   color: #606060;
   padding: 60px 50px; }
-  .privacypolicy p, .terms p {
+  .privacypolicy p, .terms p, .tokusyoho p {
     font-size: 15px;
     font-size: 1.5rem;
     line-height: 2.4; }
-  .privacypolicy h3, .terms h3 {
+  .privacypolicy h3, .terms h3, .tokusyoho h3 {
     font-size: 24px;
     font-size: 2.4rem;
     padding: 15px 0 23px 0; }
-  .privacypolicy ul, .terms ul {
+  .privacypolicy ul, .terms ul, .tokusyoho ul {
     font-size: 15px;
     font-size: 1.5rem; }
-    .privacypolicy ul li, .terms ul li {
+    .privacypolicy ul li, .terms ul li, .tokusyoho ul li {
       line-height: 2.4; }
-  .privacypolicy ol, .terms ol {
+  .privacypolicy ol, .terms ol, .tokusyoho ol {
     list-style-type: decimal;
     font-size: 15px;
     font-size: 1.5rem; }
-    .privacypolicy ol li, .terms ol li {
+    .privacypolicy ol li, .terms ol li, .tokusyoho ol li {
       list-style-position: outside;
       margin: 0 0 13px 20px;
       line-height: 1.8; }
-      .privacypolicy ol li ol, .terms ol li ol {
+      .privacypolicy ol li ol, .terms ol li ol, .tokusyoho ol li ol {
         padding-top: 15px;
         list-style-type: disc; }
+  .privacypolicy dl, .terms dl, .tokusyoho dl {
+    *zoom: 1;
+    padding: 0;
+    width: 100%;
+    margin: 0 auto 30px auto; }
+    .privacypolicy dl:after, .terms dl:after, .tokusyoho dl:after {
+      content: ".";
+      display: block;
+      clear: both;
+      height: 0;
+      visibility: hidden; }
+    .privacypolicy dl:last-child, .terms dl:last-child, .tokusyoho dl:last-child {
+      margin-bottom: 0; }
+    .privacypolicy dl dt, .terms dl dt, .tokusyoho dl dt {
+      float: left;
+      width: 35%;
+      font-size: 15px;
+      font-size: 1.5rem;
+      font-weight: normal; }
+    .privacypolicy dl dd, .terms dl dd, .tokusyoho dl dd {
+      float: left;
+      width: 65%;
+      font-size: 15px;
+      font-size: 1.5rem; }
 
 /*---------------------------------------------------------------------------------------
  Account
