@@ -11,7 +11,51 @@
 
 .front_main{
   background: $white_gray;
+  padding-bottom: 100px;
+  h1{
+    &.center{
+      text-align: center;
+      @include fontsize(3.0);
+      padding: 70px 0;
+      color: $dark_brack;
+    }
+  }
+  .container{
+    width: 900px;
+    margin: 0 auto 0 auto;
+    border: 1px solid #ededf0;
+    border-bottom: 1px solid #dcdce0;
+    /*-webkit-box-shadow: 0 1px 2px rgba(0,0,0,0.07);
+    -moz-box-shadow: 0 1px 2px rgba(0,0,0,0.07);
+    box-shadow: 0 1px 2px rgba(0,0,0,0.07);*/
+    box-shadow: none;
+    background: #fff;
+  }
 }
+
+
+/*---------------------------------------------------------------------------------------
+ Account
+---------------------------------------------------------------------------------------*/
+.privacypolicy{
+  color: #606060;
+  padding: 60px 50px;
+  p{
+    @include fontsize(1.5);
+    line-height: 2.4;
+  }
+  h3{
+    @include fontsize(2.4);
+    padding: 15px 0 23px 0;
+  }
+  ul{
+    @include fontsize(1.5);
+    li{
+      line-height: 2.4;
+    }
+  }
+}
+
 
 /*---------------------------------------------------------------------------------------
  Account

@@ -1082,7 +1082,10 @@ pre {
 
 .wrapper {
   height: 100%;
-  overflow: hidden;
+  overflow: hidden; }
+
+.wrapper_front {
+  height: 100%;
   background: #f9f9f9; }
 
 a:hover {
@@ -3227,6 +3230,88 @@ header {
     box-shadow: 0 2.5em 0 0 #ffffff; } }
 
 /*---------------------------------------------------------------------------------------
+ Footer
+---------------------------------------------------------------------------------------*/
+footer.front {
+  width: 100%;
+  margin: 0 auto;
+  background: url(../images/footer_bg.png) -10% center #282d37;
+  background-size: 97%;
+  color: #ffffff;
+  min-height: 500px; }
+  footer.front .footer_inner {
+    width: 1014px;
+    margin: 0 auto;
+    padding: 90px 0 0 0;
+    *zoom: 1; }
+    footer.front .footer_inner:after {
+      content: ".";
+      display: block;
+      clear: both;
+      height: 0;
+      visibility: hidden; }
+    footer.front .footer_inner .left {
+      float: left;
+      background: url(../images/logo_icon_color.png) no-repeat top left;
+      background-size: 60px 60px;
+      padding: 0 0 0 100px; }
+      footer.front .footer_inner .left ul li {
+        display: inline-block;
+        padding-right: 15px;
+        font-size: 14px;
+        font-size: 1.4rem; }
+        footer.front .footer_inner .left ul li a {
+          color: #FFFFFF; }
+    footer.front .footer_inner .right {
+      float: right; }
+      footer.front .footer_inner .right .select_box_footer {
+        position: relative;
+        background: #363b43;
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        -ms-border-radius: 3px;
+        border-radius: 3px; }
+        footer.front .footer_inner .right .select_box_footer select {
+          line-height: 44px;
+          width: 140px;
+          height: 40px;
+          border: none;
+          padding: 0 0 0 13px; }
+          footer.front .footer_inner .right .select_box_footer select:focus {
+            outline: none; }
+        footer.front .footer_inner .right .select_box_footer:after {
+          font-size: 26px;
+          font-size: 2.6rem;
+          position: absolute;
+          right: 5px;
+          top: 2px;
+          height: 26px;
+          width: 26px;
+          font-family: 'torio_icon';
+          content: "\e60a";
+          color: #ffffff;
+          visibility: visible;
+          z-index: 1;
+          display: block; }
+    footer.front .footer_inner .copyright {
+      font-size: 14px;
+      font-size: 1.4rem;
+      color: #999999;
+      margin: 25px 0 0 0;
+      position: relative; }
+      footer.front .footer_inner .copyright span {
+        padding-right: 40px; }
+        footer.front .footer_inner .copyright span:after {
+          font-family: 'torio_icon';
+          content: "\e669";
+          color: #fa3366;
+          font-size: 24px;
+          font-size: 2.4rem;
+          position: absolute;
+          top: -8px;
+          left: 80px; }
+
+/*---------------------------------------------------------------------------------------
  File
 ---------------------------------------------------------------------------------------*/
 .file {
@@ -3961,7 +4046,44 @@ header {
     color: #3A87BC; }
 
 .front_main {
-  background: #f9f9f9; }
+  background: #f9f9f9;
+  padding-bottom: 100px; }
+  .front_main h1.center {
+    text-align: center;
+    font-size: 30px;
+    font-size: 3rem;
+    padding: 70px 0;
+    color: #333333; }
+  .front_main .container {
+    width: 900px;
+    margin: 0 auto 0 auto;
+    border: 1px solid #ededf0;
+    border-bottom: 1px solid #dcdce0;
+    /*-webkit-box-shadow: 0 1px 2px rgba(0,0,0,0.07);
+    -moz-box-shadow: 0 1px 2px rgba(0,0,0,0.07);
+    box-shadow: 0 1px 2px rgba(0,0,0,0.07);*/
+    box-shadow: none;
+    background: #fff; }
+
+/*---------------------------------------------------------------------------------------
+ Account
+---------------------------------------------------------------------------------------*/
+.privacypolicy {
+  color: #606060;
+  padding: 60px 50px; }
+  .privacypolicy p {
+    font-size: 15px;
+    font-size: 1.5rem;
+    line-height: 2.4; }
+  .privacypolicy h3 {
+    font-size: 24px;
+    font-size: 2.4rem;
+    padding: 15px 0 23px 0; }
+  .privacypolicy ul {
+    font-size: 15px;
+    font-size: 1.5rem; }
+    .privacypolicy ul li {
+      line-height: 2.4; }
 
 /*---------------------------------------------------------------------------------------
  Account
