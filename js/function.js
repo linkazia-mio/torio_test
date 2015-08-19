@@ -380,12 +380,13 @@ window.onload=function(){
         setTimeout(function(){slider.reloadSlider();},200);
       });
 
-      $('.file_img').click(function () {
+      $('.panel').click(function () {
         jQuery('#file_detail').show();
         var slider = jQuery('.file_slide').bxSlider({
           mode: 'fade',
           speed: 0,
           adaptiveHeight : true,
+          adaptiveHeightSpeed: 0,
           preloadImages: 'visible',
           autoReload: true
         });
@@ -394,7 +395,7 @@ window.onload=function(){
         jQuery('#file_detail').hide();
         event.stopPropagation();
       });
-      $('#file_detail .modal_close').click(function () {
+      $('.file_detail_close').click(function () {
         jQuery('#file_detail').hide();
         event.stopPropagation();
       });

@@ -292,6 +292,7 @@
   }
 }
 
+/*File Detail*/
 #file_detail {
   position: fixed;
   top: 0;
@@ -306,13 +307,312 @@
     width: 750px;
     margin: 0 auto;
     padding: 60px 0;
+    /*bx-wrapper*/
+    .bx-wrapper {
+      @include border_radius();
+      position: relative;
+      background: #fff;
+      .bx-controls {
+        .bx-pager {
+          display: none;
+        }
+        .bx-controls-direction {
+          font-family: 'torio_icon';
+          .bx-prev {
+            position: absolute;
+            top: 350px;
+            left: -80px;
+            height: 0;
+            padding-top: 96px;
+            width: 60px;
+            overflow: hidden;
+            color: $brack;
+            text-decoration: none;
+            &:before {
+              @include fontsize(6.0);
+              position: absolute;
+              top: 0;
+              content: "\e62d";
+            }
+          }
+          .bx-next {
+            position: absolute;
+            top: 350px;
+            right: -80px;
+            height: 0;
+            padding-top: 96px;
+            width: 60px;
+            overflow: hidden;
+            color: $brack;
+            text-decoration: none;
+            &:before {
+              @include fontsize(6.0);
+              position: absolute;
+              top: 0;
+              content: "\e62e";
+            }
+          }
+        }
+      }
+      .bx-viewport {
+        min-height: 300px;
+        padding-bottom: 35px;
+        .file_slide {
+          .item {
+            width: 100% !important;
+            .header {
+              @include border_radius();
+              position: relative;
+              padding: 30px 25px 25px;
+              border-bottom: 1px solid $border_white_gray;
+              @extend .clearfix;
+              h4 {
+                @include fontsize(1.4);
+                font-weight: bold;
+              }
+              .user_image {
+                float: left;
+                margin-right: 8px;
+                img {
+                  height: 40px;
+                  width: 40px;
+                }
+              }
+              .noimage {
+                @include font_eng;
+                @include fontsize(1.2);
+                line-height: 40px;
+                text-align: center;
+                height: 40px;
+                width: 40px;
+                float: left;
+              }
+              .modal-title {
+                @include fontsize(1.6);
+                font-weight: bold;
+                padding: 10px 0 0 0;
+              }
+              .option {
+                @include fontsize(1.3);
+                position: absolute;
+                top: 40px;
+                right: 45px;
+                color: $white_brack;
+                i {
+                  position: absolute;
+                  @include fontsize(2.6);
+                  top: -3px;
+                  left: 0;
+                }
+                a {
+                  color: $white_brack;
+                  &:hover {
+                    color: $torio_green;
+                  }
+                }
+              }
+              .item_option_box {
+                right: 15px;
+                top: 60px;
+              }
+              .download {
+                position: absolute;
+                top: 40px;
+                padding-left: 27px;
+                right: 65px;
+                vertical-align: top;
+                a {
+                  color: $white_brack;
+                }
+                i {
+                  position: absolute;
+                  @include fontsize(2.6);
+                  top: -2px;
+                  left: 0;
+                }
+              }
+              .like {
+                position: absolute;
+                top: 40px;
+                right: 195px;
+                @include font_eng;
+                vertical-align: top;
+                padding-left: 28px;
+                i {
+                  top: -2px;
+                  left: 0;
+                  position: absolute;
+                  @include fontsize(2.6);
+                  color: $dark_red;
+                }
+                span {
+                  @include font_eng;
+                  @include fontsize(1.4);
+                  color: $white_brack;
+                }
+              }
+            }
+            .data {
+              @include fontsize(10.0);
+              padding: 30px;
+              text-align: center;
+              background: #33c16f;
+              color: #fff;
+            }
+            .image {
+              text-align: center;
+              background: $white_gray;
+              width: 749px;
+              img {
+                width: 100%;
+                height: auto;
+              }
+            }
+            .link {
+              position: relative;
+              padding: 15px 0 15px 50px;
+              @include fontsize(1.3);
+              line-height: 2.1;
+              display: block;
+              border-top: 1px solid $border_white_gray;
+              a {
+                color: $white_brack;
+                &:hover {
+                  color: $torio_green;
+                }
+                i {
+                  @include fontsize(2.6);
+                  position: absolute;
+                  top: 15px;
+                  left: 23px;
+                  color: $white_brack;
+                  &.icon-swap-horiz{
+                    color: $white_brack;
+                  }
+                }
+              }
+            }
+            .footer {
+              border-top: 1px solid $border_white_gray;
+              padding: 35px 0 0 0;
+              position: relative;
+              .comment {
+                text-align: left;
+                padding: 0 25px;
+                margin-bottom: 25px;
+                .comment_inner {
+                  display: table;
+                  width: 100%;
+                  table-layout: fixed;
+                  margin-bottom: 25px;
+                  .user_image {
+                    display: table-cell;
+                    width: 50px;
+                    img {
+                      width: 40px;
+                      height: 40px;
+                      vertical-align: top;
+                    }
+                  }
+                  .noimage_box {
+                    display: table-cell;
+                    width: 50px;
+                    .noimage {
+                      @include font_eng;
+                      @include fontsize(1.2);
+                      display: block;
+                      line-height: 40px;
+                      text-align: center;
+                      width: 40px;
+                      height: 40px;
+                    }
+                  }
+                  .user_comment {
+                    display: table-cell;
+                    vertical-align: top;
+                    p {
+                      @include fontsize(1.4);
+                      &.name {
+                        font-weight: bold;
+                        padding-bottom: 1px;
+                        .time {
+                          margin-left: 10px;
+                          font-weight: normal;
+                          color: $white_brack;
+                          @include fontsize(1.2);
+                        }
+                      }
+                      &.memo {
+                        @include fontsize(1.4);
+                        word-wrap: break-word;
+                        color: #000000;
+                      }
+                    }
+                  }
+                }
+              }
+              .comment_entry {
+                position: relative;
+                textarea {
+                  @include border_radius();
+                  width: 100%;
+                  height: 60px;
+                  padding: 10px 15px;
+                  margin-bottom: 20px;
+                  border: 1px solid $border_gray;
+                  resize: none;
+                  outline: none;
+                }
+                button {
+                  width: 130px;
+                  position: absolute;
+                  right: 0;
+                  bottom: -40px;
+                  &.btn-default {
+                    border-color: $border_white_gray;
+                    background: $white_gray;
+                    &:hover {
+                      @include opacity(0.7);
+                    }
+                  }
+                  &.btn-primary {
+                    width: 130px;
+                    height: 40px;
+                    line-height: 43px;
+                    @include fontsize(1.3);
+                    &.btn-primary {
+                      background: $torio_green;
+                      border: none;
+                      padding: 0;
+                      font-weight: 700;
+                      &:hover {
+                        @include opacity(0.7);
+                      }
+                    }
+                  }
+                }
+              }
+            }
+            .add_member {
+              @include fontsize(2.6);
+              color: $white_brack;
+              position: absolute;
+              right: 216px;
+              bottom: 24px;
+            }
+            .add_emoji {
+              @include fontsize(2.6);
+              color: $white_brack;
+              position: absolute;
+              right: 170px;
+              bottom: 24px;
+            }
+          }
+        }
+      }
+    }
   }
-  .modal-dialog {
-    min-width: 600px;
-    width: 800px;
-    margin: 60px auto;
-  }
-  .modal_close {
+  .file_detail_close {
     position: absolute;
     top:0px;
     right:15px;
@@ -321,297 +621,6 @@
   }
 }
 
-/*bx-wrapper*/
-.bx-wrapper {
-  @include border_radius();
-  position: relative;
-  background: #fff;
-  .bx-controls {
-    .bx-pager {
-      display: none;
-    }
-    .bx-controls-direction {
-      font-family: 'torio_icon';
-      .bx-prev {
-        position: absolute;
-        top: 350px;
-        left: -80px;
-        height: 60px;
-        width: 60px;
-        overflow: hidden;
-        color: $brack;
-        &:before {
-          @include fontsize(6.0);
-          content: "\e62d";
-        }
-      }
-      .bx-next {
-        position: absolute;
-        top: 350px;
-        right: -80px;
-        height: 60px;
-        width: 60px;
-        overflow: hidden;
-        color: $brack;
-        &:before {
-          @include fontsize(6.0);
-          content: "\e62e";
-        }
-      }
-    }
-  }
-  .bx-viewport {
-    min-height: 300px;
-    padding-bottom: 35px;
-    .file_slide {
-      .item {
-        width: 100% !important;
-        .modal-header {
-          @include border_radius();
-          position: relative;
-          padding: 30px 25px 25px;
-          border-bottom: 1px solid $border_white_gray;
-          @extend .clearfix;
-          .user_image {
-            float: left;
-            margin-right: 8px;
-            img {
-              height: 40px;
-              width: 40px;
-            }
-          }
-          .noimage {
-            @include font_eng;
-            @include fontsize(1.2);
-            line-height: 40px;
-            text-align: center;
-            height: 40px;
-            width: 40px;
-            float: left;
-          }
-          .modal-title {
-            @include fontsize(1.6);
-            font-weight: bold;
-            padding: 10px 0 0 0;
-          }
-          .option {
-            @include fontsize(1.3);
-            position: absolute;
-            top: 40px;
-            right: 45px;
-            color: $white_brack;
-            i {
-              position: absolute;
-              @include fontsize(2.6);
-              top: -3px;
-              left: 0;
-            }
-            a {
-              color: $white_brack;
-              &:hover {
-                color: $torio_green;
-              }
-            }
-          }
-          .item_option_box {
-            right: 15px;
-            top: 60px;
-          }
-          .download {
-            position: absolute;
-            top: 40px;
-            padding-left: 27px;
-            right: 65px;
-            vertical-align: top;
-            a {
-              color: $white_brack;
-            }
-            i {
-              position: absolute;
-              @include fontsize(2.6);
-              top: -2px;
-              left: 0;
-            }
-          }
-          .like {
-            position: absolute;
-            top: 40px;
-            right: 195px;
-            @include font_eng;
-            vertical-align: top;
-            padding-left: 28px;
-            i {
-              top: -2px;
-              left: 0;
-              position: absolute;
-              @include fontsize(2.6);
-              color: $dark_red;
-            }
-            span {
-              @include font_eng;
-              @include fontsize(1.4);
-              color: $white_brack;
-            }
-          }
-        }
-        .data {
-          @include fontsize(10.0);
-          padding: 30px;
-          text-align: center;
-          background: #33c16f;
-          color: #fff;
-        }
-        .image {
-          text-align: center;
-          background: $white_gray;
-          img {
-            width: 100%;
-            height: auto;
-          }
-        }
-        .link {
-          position: relative;
-          padding: 15px 0 15px 50px;
-          @include fontsize(1.3);
-          line-height: 2.1;
-          display: block;
-          border-top: 1px solid $border_white_gray;
-          a {
-            color: $white_brack;
-            &:hover {
-              color: $torio_green;
-            }
-            i {
-              @include fontsize(2.6);
-              position: absolute;
-              top: 15px;
-              left: 23px;
-              color: $white_brack;
-              &.icon-swap-horiz{
-                color: $white_brack;
-              }
-            }
-          }
-        }
-        .modal-footer {
-          border-top: 1px solid $border_white_gray;
-          padding: 35px 0 0 0;
-          position: relative;
-          .comment {
-            text-align: left;
-            padding: 0 25px;
-            margin-bottom: 25px;
-            .comment_inner {
-              display: table;
-              width: 100%;
-              table-layout: fixed;
-              margin-bottom: 25px;
-              .user_image {
-                display: table-cell;
-                width: 50px;
-                img {
-                  width: 40px;
-                  height: 40px;
-                  vertical-align: top;
-                }
-              }
-              .noimage_box {
-                display: table-cell;
-                width: 50px;
-                .noimage {
-                  @include font_eng;
-                  @include fontsize(1.2);
-                  display: block;
-                  line-height: 40px;
-                  text-align: center;
-                  width: 40px;
-                  height: 40px;
-                }
-              }
-              .user_comment {
-                display: table-cell;
-                vertical-align: top;
-                p {
-                  @include fontsize(1.4);
-                  &.name {
-                    font-weight: bold;
-                    padding-bottom: 1px;
-                    .time {
-                      margin-left: 10px;
-                      font-weight: normal;
-                      color: $white_brack;
-                      @include fontsize(1.2);
-                    }
-                  }
-                  &.memo {
-                    @include fontsize(1.4);
-                    word-wrap: break-word;
-                    color: #000000;
-                  }
-                }
-              }
-            }
-          }
-          .comment_entry {
-            position: relative;
-            textarea {
-              @include border_radius();
-              width: 100%;
-              height: 60px;
-              padding: 10px 15px;
-              margin-bottom: 20px;
-              border: 1px solid $border_gray;
-              resize: none;
-              outline: none;
-            }
-            button {
-              width: 130px;
-              position: absolute;
-              right: 0;
-              bottom: -40px;
-              &.btn-default {
-                border-color: $border_white_gray;
-                background: $white_gray;
-                &:hover {
-                  @include opacity(0.7);
-                }
-              }
-              &.btn-primary {
-                width: 130px;
-                height: 40px;
-                line-height: 43px;
-                @include fontsize(1.3);
-                &.btn-primary {
-                  background: $torio_green;
-                  border: none;
-                  padding: 0;
-                  font-weight: 700;
-                  &:hover {
-                    @include opacity(0.7);
-                  }
-                }
-              }
-            }
-          }
-        }
-        .add_member {
-          @include fontsize(2.6);
-          color: $white_brack;
-          position: absolute;
-          right: 216px;
-          bottom: 24px;
-        }
-        .add_emoji {
-          @include fontsize(2.6);
-          color: $white_brack;
-          position: absolute;
-          right: 170px;
-          bottom: 24px;
-        }
-      }
-    }
-  }
-}
 
 /*Carousel*/
 .carousel {
