@@ -1851,7 +1851,7 @@ header {
   animation: animate-bg 5s linear infinite;
   z-index: 1000;
   text-align: center;
-  height: 55px; }
+  height: 70px; }
   .message_bar.info {
     background-color: #3595e1;
     opacity: 0.9;
@@ -1879,7 +1879,7 @@ header {
   .message_bar h3 {
     margin: 0;
     padding: 0;
-    line-height: 55px;
+    line-height: 70px;
     font-size: 20px;
     font-size: 2rem;
     vertical-align: middle; }
@@ -1921,7 +1921,7 @@ header {
   .message_bar p {
     text-align: right;
     position: absolute;
-    top: 10px;
+    top: 15px;
     right: 5px;
     font-size: 34px;
     font-size: 3.4rem; }
@@ -4144,6 +4144,10 @@ footer.front {
         -moz-border-radius: 3px;
         -ms-border-radius: 3px;
         border-radius: 3px; }
+        .contact dl dd .input_box.error_msg, .contact dl dd .error_msg.select_box, .contact dl dd .option_config .configuration .configuration_inner .error_msg.input_box_pass, .option_config .configuration .configuration_inner .contact dl dd .error_msg.input_box_pass, .contact dl dd .option_config .configuration .configuration_inner .error_msg.select_box, .option_config .configuration .configuration_inner .contact dl dd .error_msg.select_box {
+          border: solid 1px rgba(237, 84, 84, 0.7);
+          background-color: rgba(237, 84, 84, 0.05);
+          box-shadow: 0 0 4px rgba(237, 84, 84, 0.3); }
         .contact dl dd .input_box.profile_text, .contact dl dd .profile_text.select_box, .contact dl dd .option_config .configuration .configuration_inner .profile_text.input_box_pass, .option_config .configuration .configuration_inner .contact dl dd .profile_text.input_box_pass, .contact dl dd .option_config .configuration .configuration_inner .profile_text.select_box, .option_config .configuration .configuration_inner .contact dl dd .profile_text.select_box {
           margin-bottom: 50px; }
         .contact dl dd .input_box.profile_name, .contact dl dd .profile_name.select_box, .contact dl dd .option_config .configuration .configuration_inner .profile_name.input_box_pass, .option_config .configuration .configuration_inner .contact dl dd .profile_name.input_box_pass, .contact dl dd .option_config .configuration .configuration_inner .profile_name.select_box, .option_config .configuration .configuration_inner .contact dl dd .profile_name.select_box {
@@ -4204,6 +4208,10 @@ footer.front {
         border-radius: 3px;
         position: relative;
         padding: 0; }
+        .contact dl dd .select_box.error_msg {
+          border: solid 1px rgba(237, 84, 84, 0.7);
+          background-color: rgba(237, 84, 84, 0.05);
+          box-shadow: 0 0 4px rgba(237, 84, 84, 0.3); }
         .contact dl dd .select_box select {
           border: none;
           margin: 0;

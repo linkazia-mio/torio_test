@@ -862,7 +862,7 @@ header {
   animation: animate-bg 5s linear infinite;
   z-index: 1000;
   text-align: center;
-  height: 55px;
+  height: 70px;
   &.info{
     background-color: $blue;
     @include opacity(0.9);
@@ -910,7 +910,7 @@ header {
   h3{
     margin: 0;
     padding: 0;
-    line-height: 55px;
+    line-height: 70px;
     @include fontsize(2.0);
     vertical-align: middle;
     a{
@@ -954,7 +954,7 @@ header {
   p {
     text-align: right;
     position: absolute;
-    top:10px;
+    top:15px;
     right: 5px;
     @include fontsize(3.4);
   }

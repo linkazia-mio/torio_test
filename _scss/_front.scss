@@ -87,6 +87,11 @@
         margin-bottom: 35px;
         position: relative;
         @include border_radius(3px);
+        &.error_msg{
+          border: solid 1px rgba(237,84,84,0.7);
+          background-color: rgba(237,84,84,0.05);
+          box-shadow: 0 0 4px rgba(237,84,84,0.3);
+        }
         &.profile_text {
           margin-bottom: 50px;
         }
@@ -149,6 +154,11 @@
         @include border_radius(3px);
         position: relative;
         padding: 0;
+        &.error_msg{
+          border: solid 1px rgba(237,84,84,0.7);
+          background-color: rgba(237,84,84,0.05);
+          box-shadow: 0 0 4px rgba(237,84,84,0.3);
+        }
         select {
           border: none;
           margin: 0;

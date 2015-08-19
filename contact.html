@@ -6,18 +6,23 @@
     <title>お問い合わせ ｜ torio（トリオ）</title>
     <script type="text/javascript" src="js/jquery-1.11.3.js"></script>
     <script type="text/javascript" src="js/jquery-ui.min.js"></script>
-    <script type="text/javascript" src="js/jquery-ui.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/function.js"></script>
     <script type="text/javascript" src="js/content.js"></script>
     <script type="text/javascript" src="js/masonry.pkgd.min.js"></script>
     <script type="text/javascript" src="js/jquery.bxslider.min.js"></script>
+    <script type="text/javascript" src="js/jquery.mCustomScrollbar.js"></script>
+    <link rel="stylesheet" href="css/jquery.mCustomScrollbar.css">
     <link rel="stylesheet" href="css/jquery-ui.min.css">
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/torio.css">
   </head>
   <body>
+    <div class="error message_bar">
+       <h3>メールアドレスを入力してください。</h3>
+       <p><i class="icon-clear"></i></p>
+    </div>
     <div class="wrapper_front">
       <!--Header/-->
       <header class="front">
@@ -52,7 +57,7 @@
             <dl>
               <dt>メールアドレス</dt>
               <dd>
-                <div class="input_box">
+                <div class="input_box error_msg">
                   <input type="email"></label>
                 </div>
               </dd> 
@@ -81,7 +86,7 @@
               </dd> 
             </dl>
             <div class="btn_wrapper">
-              <button type="submit" class="btn btn_send">送信する</button>
+              <button type="submit" class="btn btn_send trigger error-trigger">送信する</button>
             </div>
           </div>
         </div>
@@ -120,5 +125,45 @@
         </div>
       </footer>
     </div>
+    <script type="text/javascript">
+      // message_bar
+      var myMessages = ['info','warning','error','success']; // define the messages types		 
+      function hideAllMessages()
+      {
+      		 var messagesHeights = new Array(); // this array will store height for each
+      	 
+      		 for (i=0; i<myMessages.length; i++)
+      		 {
+      				  messagesHeights[i] = $('.' + myMessages[i]).outerHeight();
+      				  $('.' + myMessages[i]).css('top', -messagesHeights[i]); //move element outside viewport	  
+      		 }
+      }
+      
+      function showMessage(type)
+      {
+      	$('.'+ type +'-trigger').click(function(){
+      		  hideAllMessages();				  
+      		  $('.'+type).animate({top:"0"}, 500);
+      	});
+      }
+      
+      $(document).ready(function(){
+      		 
+      		 // Initially, hide them all
+      		 hideAllMessages();
+      		 
+      		 // Show message
+      		 for(var i=0;i<myMessages.length;i++)
+      		 {
+      			showMessage(myMessages[i]);
+      		 }
+      		 
+      		 // When message is clicked, hide it
+      		 $('.message_bar').click(function(){			  
+      				  $(this).animate({top: -$(this).outerHeight()}, 500);
+      		  });		 
+      		 
+      });
+    </script>
   </body>
 </html>
