@@ -1082,7 +1082,8 @@ pre {
 
 .wrapper {
   height: 100%;
-  overflow: hidden; }
+  overflow: hidden;
+  background: #f9f9f9; }
 
 a:hover {
   text-decoration: none; }
@@ -3958,6 +3959,9 @@ header {
   margin: 0 auto; }
   .front a {
     color: #3A87BC; }
+
+.front_main {
+  background: #f9f9f9; }
 
 /*---------------------------------------------------------------------------------------
  Account
