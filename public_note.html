@@ -1,4 +1,4 @@
-<html>
+<html style="overflow: auto !important;">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -30,7 +30,7 @@
     <link rel="stylesheet" href="css/torio.css">
   </head>
   <body>
-    <div class="wrapper">
+    <div class="wrapper_public">
       <!--Header/-->
       <header class="front">
         <div class="header_inner">
@@ -45,9 +45,9 @@
       </header>
       <!--Header/-->
       <!--Main/-->
-      <div class="main">
+      <div class="main_public">
         <!--Detail/-->
-        <div class="detail ui-widget-content">
+        <div class="detail_public ui-widget-content">
           <!--Note/-->
           <div class="note">
             <!--Title/-->
@@ -458,6 +458,38 @@
         </div>
       </div>
       <!--/Delete-->
+      <footer class="front">
+        <div class="footer_inner">
+          <div class="left">
+            <ul>
+              <li><a href="">料金プラン</a></li>
+              <li><a href="">サポート</a></li>
+              <li><a href="">メディアキット</a></li>
+            </ul>
+            <ul>
+              <li><a href="">会社概要</a></li>
+              <li><a href="">お問い合わせ</a></li>
+              <li><a href="">プライバシーポリシー</a></li>
+              <li><a href="">利用規約</a></li>
+              <li><a href="">特定商取引法に基づく表記</a></li>
+            </ul>
+            <ul>
+              <li><a href="">Facebook</a></li>
+              <li><a href="">Twitter</a></li>
+              <li><a href="">Google+</a></li>
+            </ul>
+          </div>
+          <div class="right">
+            <div class="select_box_footer">
+              <select id="time" name="time">
+                <option value="ja" selected>日本語</option>
+                <option value="us">English</option>
+              </select>
+            </div>
+            <p class="copyright"><span>Made with</span>by asnica.</p>
+          </div>
+        </div>
+      </footer>
     </div>
     <script>
     var editor = new MediumEditor('.editable', {
@@ -530,7 +562,6 @@
         $(this).toggleClass("active");
       });
     });
-
     </script>
   </body>
 

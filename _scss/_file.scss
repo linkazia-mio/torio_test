@@ -4,6 +4,8 @@
 .file {
   position: relative;
   @include font-smoothing(on);
+  background: $white_gray;
+  @extend .clearfix;
   #masonry {
     margin: 0 auto;
   }

@@ -1,5 +1,6 @@
 .task {
   @include font-smoothing(on);
+  background: $white_gray;
   .task_create {
     padding: 0 30px;
     .task_create_inner {

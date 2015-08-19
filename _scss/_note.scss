@@ -4,6 +4,7 @@
 .note {
   position: relative;
   @include font-smoothing(on);
+  background: $white_gray;
   #title_edit {
     @include fontsize(2.2);
     line-height: 28px;

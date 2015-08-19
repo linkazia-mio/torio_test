@@ -28,8 +28,11 @@ pre {
 .wrapper {
   height: 100%;
   overflow: hidden;
+  &.front{
+    overflow: auto !important;
+  }
 }
-.wrapper_front {
+.wrapper_public {
   height: 100%;
   background: $white_gray;
 }
@@ -168,7 +171,7 @@ button {
     }
   }
 }
-.main {
+.main,.main_public {
   .popover {
     @include border_radius(3px);
     display: none;
@@ -970,6 +973,17 @@ header {
     color: $brack;
   }
 }
+.main_public{
+  display: -webkit-box;
+  display: -moz-box;
+  z-index: 100;
+  width: 100%;
+  height: auto;
+  h3 {
+    @include fontsize(1.2);
+    color: $brack;
+  }
+}
 
 /*Global Menu*/
 .global_menu {
@@ -1627,6 +1641,8 @@ header {
   float: left;
   &.detail_public{
    float: none !important;
+   height: auto !important;
+   padding-bottom: 70px;
   }
   &.ui-widget-content {
     border: none;
@@ -2411,6 +2427,7 @@ footer{
     background-size: 98%;
     color: #ffffff;
     min-height: 500px;
+    @extend .clearfix;
     .footer_inner{
       width: 1014px;
       margin: 0 auto;
