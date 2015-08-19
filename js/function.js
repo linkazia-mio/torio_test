@@ -4,6 +4,10 @@ window.onload=function(){
 
   $(document).ready(function(){
 
+    $(function(event){
+      introJs().start();
+    });
+
     //global_menu 非表示
     $('.global_menu_btn').click(function (event) {
       jQuery('.global_menu').toggle();
