@@ -4554,6 +4554,7 @@ footer.front {
   .front_main .container {
     width: 900px;
     margin: 0 auto 0 auto;
+    padding: 0;
     border: 1px solid #ededf0;
     border-bottom: 1px solid #dcdce0;
     /*-webkit-box-shadow: 0 1px 2px rgba(0,0,0,0.07);
@@ -4773,7 +4774,8 @@ footer.front {
 
 .top_plan {
   color: #606060;
-  padding: 60px 50px; }
+  padding: 180px 50px 60px 50px;
+  background: url(../images/top_price_bg.png) no-repeat top center; }
   .top_plan h3 {
     text-align: center;
     font-size: 30px;
@@ -4783,7 +4785,7 @@ footer.front {
   .top_plan .plan_select {
     position: relative;
     height: 34px;
-    margin: 45px auto 25px auto;
+    margin: 55px auto 55px auto;
     width: 250px; }
     .top_plan .plan_select select {
       -webkit-border-radius: 4px;
