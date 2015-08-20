@@ -4563,54 +4563,54 @@ footer.front {
     box-shadow: none;
     background: #fff; }
 
-.contact {
+.contact, .confirm {
   color: #606060;
   padding: 60px 50px; }
-  .contact h3 {
+  .contact h3, .confirm h3 {
     text-align: center;
     font-size: 30px;
     font-size: 3rem;
     color: #333333;
     margin: 0; }
-  .contact p {
+  .contact p, .confirm p {
     text-align: center;
     color: #606060;
     font-size: 15px;
     font-size: 1.5rem;
     padding: 20px 0 0 0; }
-  .contact .caption {
+  .contact .caption, .confirm .caption {
     text-align: left;
     color: #606060;
     font-size: 15px;
     font-size: 1.5rem;
     padding: 0 0 60px 0;
     font-weight: bold; }
-  .contact dl {
+  .contact dl, .confirm dl {
     *zoom: 1;
     padding: 0;
     width: 100%;
     margin: 0 auto 20px auto; }
-    .contact dl:after {
+    .contact dl:after, .confirm dl:after {
       content: ".";
       display: block;
       clear: both;
       height: 0;
       visibility: hidden; }
-    .contact dl:last-child {
+    .contact dl:last-child, .confirm dl:last-child {
       margin-bottom: 0; }
-    .contact dl.top {
+    .contact dl.top, .confirm dl.top {
       margin-bottom: 40px; }
-    .contact dl dt {
+    .contact dl dt, .confirm dl dt {
       float: left;
       width: 35%;
       font-size: 15px;
       font-size: 1.5rem;
       font-weight: normal;
       padding: 15px 0 0 0; }
-      .contact dl dt.image {
+      .contact dl dt.image, .confirm dl dt.image {
         padding: 0;
         width: 110px; }
-      .contact dl dt .mail {
+      .contact dl dt .mail, .confirm dl dt .mail {
         -webkit-border-radius: 100px;
         -moz-border-radius: 100px;
         -ms-border-radius: 100px;
@@ -4621,23 +4621,23 @@ footer.front {
         height: 85px;
         background: #3a87bc;
         padding: 20px 0 0 0; }
-        .contact dl dt .mail img {
+        .contact dl dt .mail img, .confirm dl dt .mail img {
           width: 50px; }
-    .contact dl dd {
+    .contact dl dd, .confirm dl dd {
       float: left;
       width: 65%;
       font-size: 15px;
       font-size: 1.5rem; }
-      .contact dl dd.text {
+      .contact dl dd.text, .confirm dl dd.text {
         padding: 10px 0 0 0;
         width: 83%;
         line-height: 2.1; }
-      .contact dl dd .plan_text {
+      .contact dl dd .plan_text, .confirm dl dd .plan_text {
         padding: 15px 0 0 0;
         text-align: left;
         margin-bottom: 35px;
         font-weight: bold; }
-      .contact dl dd .input_box, .contact dl dd .select_box, .contact dl dd .option_config .configuration .configuration_inner .input_box_pass, .option_config .configuration .configuration_inner .contact dl dd .input_box_pass, .contact dl dd .option_config .configuration .configuration_inner .select_box, .option_config .configuration .configuration_inner .contact dl dd .select_box {
+      .contact dl dd .input_box, .contact dl dd .select_box, .contact dl dd .option_config .configuration .configuration_inner .input_box_pass, .option_config .configuration .configuration_inner .contact dl dd .input_box_pass, .contact dl dd .option_config .configuration .configuration_inner .select_box, .option_config .configuration .configuration_inner .contact dl dd .select_box, .confirm dl dd .input_box, .confirm dl dd .select_box, .confirm dl dd .option_config .configuration .configuration_inner .input_box_pass, .option_config .configuration .configuration_inner .confirm dl dd .input_box_pass, .confirm dl dd .option_config .configuration .configuration_inner .select_box, .option_config .configuration .configuration_inner .confirm dl dd .select_box {
         border: 1px solid #e5e5e5;
         width: 490px;
         padding: 10px;
@@ -4647,23 +4647,23 @@ footer.front {
         -moz-border-radius: 3px;
         -ms-border-radius: 3px;
         border-radius: 3px; }
-        .contact dl dd .input_box.error_msg, .contact dl dd .error_msg.select_box, .contact dl dd .option_config .configuration .configuration_inner .error_msg.input_box_pass, .option_config .configuration .configuration_inner .contact dl dd .error_msg.input_box_pass, .contact dl dd .option_config .configuration .configuration_inner .error_msg.select_box, .option_config .configuration .configuration_inner .contact dl dd .error_msg.select_box {
+        .contact dl dd .input_box.error_msg, .contact dl dd .error_msg.select_box, .contact dl dd .option_config .configuration .configuration_inner .error_msg.input_box_pass, .option_config .configuration .configuration_inner .contact dl dd .error_msg.input_box_pass, .contact dl dd .option_config .configuration .configuration_inner .error_msg.select_box, .option_config .configuration .configuration_inner .contact dl dd .error_msg.select_box, .confirm dl dd .input_box.error_msg, .confirm dl dd .error_msg.select_box, .confirm dl dd .option_config .configuration .configuration_inner .error_msg.input_box_pass, .option_config .configuration .configuration_inner .confirm dl dd .error_msg.input_box_pass, .confirm dl dd .option_config .configuration .configuration_inner .error_msg.select_box, .option_config .configuration .configuration_inner .confirm dl dd .error_msg.select_box {
           border: solid 1px rgba(237, 84, 84, 0.7);
           background-color: rgba(237, 84, 84, 0.05);
           box-shadow: 0 0 4px rgba(237, 84, 84, 0.3); }
-        .contact dl dd .input_box.profile_text, .contact dl dd .profile_text.select_box, .contact dl dd .option_config .configuration .configuration_inner .profile_text.input_box_pass, .option_config .configuration .configuration_inner .contact dl dd .profile_text.input_box_pass, .contact dl dd .option_config .configuration .configuration_inner .profile_text.select_box, .option_config .configuration .configuration_inner .contact dl dd .profile_text.select_box {
+        .contact dl dd .input_box.profile_text, .contact dl dd .profile_text.select_box, .contact dl dd .option_config .configuration .configuration_inner .profile_text.input_box_pass, .option_config .configuration .configuration_inner .contact dl dd .profile_text.input_box_pass, .contact dl dd .option_config .configuration .configuration_inner .profile_text.select_box, .option_config .configuration .configuration_inner .contact dl dd .profile_text.select_box, .confirm dl dd .input_box.profile_text, .confirm dl dd .profile_text.select_box, .confirm dl dd .option_config .configuration .configuration_inner .profile_text.input_box_pass, .option_config .configuration .configuration_inner .confirm dl dd .profile_text.input_box_pass, .confirm dl dd .option_config .configuration .configuration_inner .profile_text.select_box, .option_config .configuration .configuration_inner .confirm dl dd .profile_text.select_box {
           margin-bottom: 50px; }
-        .contact dl dd .input_box.profile_name, .contact dl dd .profile_name.select_box, .contact dl dd .option_config .configuration .configuration_inner .profile_name.input_box_pass, .option_config .configuration .configuration_inner .contact dl dd .profile_name.input_box_pass, .contact dl dd .option_config .configuration .configuration_inner .profile_name.select_box, .option_config .configuration .configuration_inner .contact dl dd .profile_name.select_box {
+        .contact dl dd .input_box.profile_name, .contact dl dd .profile_name.select_box, .contact dl dd .option_config .configuration .configuration_inner .profile_name.input_box_pass, .option_config .configuration .configuration_inner .contact dl dd .profile_name.input_box_pass, .contact dl dd .option_config .configuration .configuration_inner .profile_name.select_box, .option_config .configuration .configuration_inner .contact dl dd .profile_name.select_box, .confirm dl dd .input_box.profile_name, .confirm dl dd .profile_name.select_box, .confirm dl dd .option_config .configuration .configuration_inner .profile_name.input_box_pass, .option_config .configuration .configuration_inner .confirm dl dd .profile_name.input_box_pass, .confirm dl dd .option_config .configuration .configuration_inner .profile_name.select_box, .option_config .configuration .configuration_inner .confirm dl dd .profile_name.select_box {
           *zoom: 1;
           border: none;
           padding: 0; }
-          .contact dl dd .input_box.profile_name:after, .contact dl dd .profile_name.select_box:after, .contact dl dd .option_config .configuration .configuration_inner .profile_name.input_box_pass:after, .option_config .configuration .configuration_inner .contact dl dd .profile_name.input_box_pass:after, .contact dl dd .option_config .configuration .configuration_inner .profile_name.select_box:after, .option_config .configuration .configuration_inner .contact dl dd .profile_name.select_box:after {
+          .contact dl dd .input_box.profile_name:after, .contact dl dd .profile_name.select_box:after, .contact dl dd .option_config .configuration .configuration_inner .profile_name.input_box_pass:after, .option_config .configuration .configuration_inner .contact dl dd .profile_name.input_box_pass:after, .contact dl dd .option_config .configuration .configuration_inner .profile_name.select_box:after, .option_config .configuration .configuration_inner .contact dl dd .profile_name.select_box:after, .confirm dl dd .input_box.profile_name:after, .confirm dl dd .profile_name.select_box:after, .confirm dl dd .option_config .configuration .configuration_inner .profile_name.input_box_pass:after, .option_config .configuration .configuration_inner .confirm dl dd .profile_name.input_box_pass:after, .confirm dl dd .option_config .configuration .configuration_inner .profile_name.select_box:after, .option_config .configuration .configuration_inner .confirm dl dd .profile_name.select_box:after {
             content: ".";
             display: block;
             clear: both;
             height: 0;
             visibility: hidden; }
-          .contact dl dd .input_box.profile_name input, .contact dl dd .profile_name.select_box input, .contact dl dd .option_config .configuration .configuration_inner .profile_name.input_box_pass input, .option_config .configuration .configuration_inner .contact dl dd .profile_name.input_box_pass input, .contact dl dd .option_config .configuration .configuration_inner .profile_name.select_box input, .option_config .configuration .configuration_inner .contact dl dd .profile_name.select_box input {
+          .contact dl dd .input_box.profile_name input, .contact dl dd .profile_name.select_box input, .contact dl dd .option_config .configuration .configuration_inner .profile_name.input_box_pass input, .option_config .configuration .configuration_inner .contact dl dd .profile_name.input_box_pass input, .contact dl dd .option_config .configuration .configuration_inner .profile_name.select_box input, .option_config .configuration .configuration_inner .contact dl dd .profile_name.select_box input, .confirm dl dd .input_box.profile_name input, .confirm dl dd .profile_name.select_box input, .confirm dl dd .option_config .configuration .configuration_inner .profile_name.input_box_pass input, .option_config .configuration .configuration_inner .confirm dl dd .profile_name.input_box_pass input, .confirm dl dd .option_config .configuration .configuration_inner .profile_name.select_box input, .option_config .configuration .configuration_inner .confirm dl dd .profile_name.select_box input {
             -webkit-border-radius: 3px;
             -moz-border-radius: 3px;
             -ms-border-radius: 3px;
@@ -4673,55 +4673,55 @@ footer.front {
             width: 235px;
             float: left;
             margin-left: 20px; }
-            .contact dl dd .input_box.profile_name input:first-child, .contact dl dd .profile_name.select_box input:first-child, .contact dl dd .option_config .configuration .configuration_inner .profile_name.input_box_pass input:first-child, .option_config .configuration .configuration_inner .contact dl dd .profile_name.input_box_pass input:first-child {
+            .contact dl dd .input_box.profile_name input:first-child, .contact dl dd .profile_name.select_box input:first-child, .contact dl dd .option_config .configuration .configuration_inner .profile_name.input_box_pass input:first-child, .option_config .configuration .configuration_inner .contact dl dd .profile_name.input_box_pass input:first-child, .confirm dl dd .input_box.profile_name input:first-child, .confirm dl dd .profile_name.select_box input:first-child, .confirm dl dd .option_config .configuration .configuration_inner .profile_name.input_box_pass input:first-child, .option_config .configuration .configuration_inner .confirm dl dd .profile_name.input_box_pass input:first-child {
               margin-left: 0; }
-        .contact dl dd .input_box input, .contact dl dd .select_box input, .contact dl dd .option_config .configuration .configuration_inner .input_box_pass input, .option_config .configuration .configuration_inner .contact dl dd .input_box_pass input, .contact dl dd .option_config .configuration .configuration_inner .select_box input, .option_config .configuration .configuration_inner .contact dl dd .select_box input {
+        .contact dl dd .input_box input, .contact dl dd .select_box input, .contact dl dd .option_config .configuration .configuration_inner .input_box_pass input, .option_config .configuration .configuration_inner .contact dl dd .input_box_pass input, .contact dl dd .option_config .configuration .configuration_inner .select_box input, .option_config .configuration .configuration_inner .contact dl dd .select_box input, .confirm dl dd .input_box input, .confirm dl dd .select_box input, .confirm dl dd .option_config .configuration .configuration_inner .input_box_pass input, .option_config .configuration .configuration_inner .confirm dl dd .input_box_pass input, .confirm dl dd .option_config .configuration .configuration_inner .select_box input, .option_config .configuration .configuration_inner .confirm dl dd .select_box input {
           width: 100%;
           z-index: 10; }
-          .contact dl dd .input_box input:focus, .contact dl dd .select_box input:focus, .contact dl dd .option_config .configuration .configuration_inner .input_box_pass input:focus, .option_config .configuration .configuration_inner .contact dl dd .input_box_pass input:focus, .contact dl dd .option_config .configuration .configuration_inner .select_box input:focus, .option_config .configuration .configuration_inner .contact dl dd .select_box input:focus {
+          .contact dl dd .input_box input:focus, .contact dl dd .select_box input:focus, .contact dl dd .option_config .configuration .configuration_inner .input_box_pass input:focus, .option_config .configuration .configuration_inner .contact dl dd .input_box_pass input:focus, .contact dl dd .option_config .configuration .configuration_inner .select_box input:focus, .option_config .configuration .configuration_inner .contact dl dd .select_box input:focus, .confirm dl dd .input_box input:focus, .confirm dl dd .select_box input:focus, .confirm dl dd .option_config .configuration .configuration_inner .input_box_pass input:focus, .option_config .configuration .configuration_inner .confirm dl dd .input_box_pass input:focus, .confirm dl dd .option_config .configuration .configuration_inner .select_box input:focus, .option_config .configuration .configuration_inner .confirm dl dd .select_box input:focus {
             outline: none; }
-        .contact dl dd .input_box.disabled, .contact dl dd .disabled.select_box, .contact dl dd .option_config .configuration .configuration_inner .disabled.input_box_pass, .option_config .configuration .configuration_inner .contact dl dd .disabled.input_box_pass, .contact dl dd .option_config .configuration .configuration_inner .disabled.select_box, .option_config .configuration .configuration_inner .contact dl dd .disabled.select_box {
+        .contact dl dd .input_box.disabled, .contact dl dd .disabled.select_box, .contact dl dd .option_config .configuration .configuration_inner .disabled.input_box_pass, .option_config .configuration .configuration_inner .contact dl dd .disabled.input_box_pass, .contact dl dd .option_config .configuration .configuration_inner .disabled.select_box, .option_config .configuration .configuration_inner .contact dl dd .disabled.select_box, .confirm dl dd .input_box.disabled, .confirm dl dd .disabled.select_box, .confirm dl dd .option_config .configuration .configuration_inner .disabled.input_box_pass, .option_config .configuration .configuration_inner .confirm dl dd .disabled.input_box_pass, .confirm dl dd .option_config .configuration .configuration_inner .disabled.select_box, .option_config .configuration .configuration_inner .confirm dl dd .disabled.select_box {
           background: #f9f9f9; }
-          .contact dl dd .input_box.disabled input, .contact dl dd .disabled.select_box input, .contact dl dd .option_config .configuration .configuration_inner .disabled.input_box_pass input, .option_config .configuration .configuration_inner .contact dl dd .disabled.input_box_pass input, .contact dl dd .option_config .configuration .configuration_inner .disabled.select_box input, .option_config .configuration .configuration_inner .contact dl dd .disabled.select_box input {
+          .contact dl dd .input_box.disabled input, .contact dl dd .disabled.select_box input, .contact dl dd .option_config .configuration .configuration_inner .disabled.input_box_pass input, .option_config .configuration .configuration_inner .contact dl dd .disabled.input_box_pass input, .contact dl dd .option_config .configuration .configuration_inner .disabled.select_box input, .option_config .configuration .configuration_inner .contact dl dd .disabled.select_box input, .confirm dl dd .input_box.disabled input, .confirm dl dd .disabled.select_box input, .confirm dl dd .option_config .configuration .configuration_inner .disabled.input_box_pass input, .option_config .configuration .configuration_inner .confirm dl dd .disabled.input_box_pass input, .confirm dl dd .option_config .configuration .configuration_inner .disabled.select_box input, .option_config .configuration .configuration_inner .confirm dl dd .disabled.select_box input {
             pointer-events: none; }
-        .contact dl dd .input_box textarea, .contact dl dd .select_box textarea, .contact dl dd .option_config .configuration .configuration_inner .input_box_pass textarea, .option_config .configuration .configuration_inner .contact dl dd .input_box_pass textarea, .contact dl dd .option_config .configuration .configuration_inner .select_box textarea, .option_config .configuration .configuration_inner .contact dl dd .select_box textarea {
+        .contact dl dd .input_box textarea, .contact dl dd .select_box textarea, .contact dl dd .option_config .configuration .configuration_inner .input_box_pass textarea, .option_config .configuration .configuration_inner .contact dl dd .input_box_pass textarea, .contact dl dd .option_config .configuration .configuration_inner .select_box textarea, .option_config .configuration .configuration_inner .contact dl dd .select_box textarea, .confirm dl dd .input_box textarea, .confirm dl dd .select_box textarea, .confirm dl dd .option_config .configuration .configuration_inner .input_box_pass textarea, .option_config .configuration .configuration_inner .confirm dl dd .input_box_pass textarea, .confirm dl dd .option_config .configuration .configuration_inner .select_box textarea, .option_config .configuration .configuration_inner .confirm dl dd .select_box textarea {
           width: 100%;
           resize: none; }
-          .contact dl dd .input_box textarea:focus, .contact dl dd .select_box textarea:focus, .contact dl dd .option_config .configuration .configuration_inner .input_box_pass textarea:focus, .option_config .configuration .configuration_inner .contact dl dd .input_box_pass textarea:focus, .contact dl dd .option_config .configuration .configuration_inner .select_box textarea:focus, .option_config .configuration .configuration_inner .contact dl dd .select_box textarea:focus {
+          .contact dl dd .input_box textarea:focus, .contact dl dd .select_box textarea:focus, .contact dl dd .option_config .configuration .configuration_inner .input_box_pass textarea:focus, .option_config .configuration .configuration_inner .contact dl dd .input_box_pass textarea:focus, .contact dl dd .option_config .configuration .configuration_inner .select_box textarea:focus, .option_config .configuration .configuration_inner .contact dl dd .select_box textarea:focus, .confirm dl dd .input_box textarea:focus, .confirm dl dd .select_box textarea:focus, .confirm dl dd .option_config .configuration .configuration_inner .input_box_pass textarea:focus, .option_config .configuration .configuration_inner .confirm dl dd .input_box_pass textarea:focus, .confirm dl dd .option_config .configuration .configuration_inner .select_box textarea:focus, .option_config .configuration .configuration_inner .confirm dl dd .select_box textarea:focus {
             outline: none; }
-        .contact dl dd .input_box .change, .contact dl dd .select_box .change, .contact dl dd .option_config .configuration .configuration_inner .input_box_pass .change, .option_config .configuration .configuration_inner .contact dl dd .input_box_pass .change, .contact dl dd .option_config .configuration .configuration_inner .select_box .change, .option_config .configuration .configuration_inner .contact dl dd .select_box .change {
+        .contact dl dd .input_box .change, .contact dl dd .select_box .change, .contact dl dd .option_config .configuration .configuration_inner .input_box_pass .change, .option_config .configuration .configuration_inner .contact dl dd .input_box_pass .change, .contact dl dd .option_config .configuration .configuration_inner .select_box .change, .option_config .configuration .configuration_inner .contact dl dd .select_box .change, .confirm dl dd .input_box .change, .confirm dl dd .select_box .change, .confirm dl dd .option_config .configuration .configuration_inner .input_box_pass .change, .option_config .configuration .configuration_inner .confirm dl dd .input_box_pass .change, .confirm dl dd .option_config .configuration .configuration_inner .select_box .change, .option_config .configuration .configuration_inner .confirm dl dd .select_box .change {
           position: absolute;
           right: 20px;
           top: 10px;
           color: #8a959e;
           z-index: 100; }
-          .contact dl dd .input_box .change:hover, .contact dl dd .select_box .change:hover, .contact dl dd .option_config .configuration .configuration_inner .input_box_pass .change:hover, .option_config .configuration .configuration_inner .contact dl dd .input_box_pass .change:hover {
+          .contact dl dd .input_box .change:hover, .contact dl dd .select_box .change:hover, .contact dl dd .option_config .configuration .configuration_inner .input_box_pass .change:hover, .option_config .configuration .configuration_inner .contact dl dd .input_box_pass .change:hover, .confirm dl dd .input_box .change:hover, .confirm dl dd .select_box .change:hover, .confirm dl dd .option_config .configuration .configuration_inner .input_box_pass .change:hover, .option_config .configuration .configuration_inner .confirm dl dd .input_box_pass .change:hover {
             cursor: pointer; }
-        .contact dl dd .input_box .count, .contact dl dd .select_box .count, .contact dl dd .option_config .configuration .configuration_inner .input_box_pass .count, .option_config .configuration .configuration_inner .contact dl dd .input_box_pass .count, .contact dl dd .option_config .configuration .configuration_inner .select_box .count, .option_config .configuration .configuration_inner .contact dl dd .select_box .count {
+        .contact dl dd .input_box .count, .contact dl dd .select_box .count, .contact dl dd .option_config .configuration .configuration_inner .input_box_pass .count, .option_config .configuration .configuration_inner .contact dl dd .input_box_pass .count, .contact dl dd .option_config .configuration .configuration_inner .select_box .count, .option_config .configuration .configuration_inner .contact dl dd .select_box .count, .confirm dl dd .input_box .count, .confirm dl dd .select_box .count, .confirm dl dd .option_config .configuration .configuration_inner .input_box_pass .count, .option_config .configuration .configuration_inner .confirm dl dd .input_box_pass .count, .confirm dl dd .option_config .configuration .configuration_inner .select_box .count, .option_config .configuration .configuration_inner .confirm dl dd .select_box .count {
           font-size: 12px;
           font-size: 1.2rem;
           position: absolute;
           left: 0;
           bottom: -30px;
           color: #8a959e; }
-      .contact dl dd .select_box {
+      .contact dl dd .select_box, .confirm dl dd .select_box {
         -webkit-border-radius: 3px;
         -moz-border-radius: 3px;
         -ms-border-radius: 3px;
         border-radius: 3px;
         position: relative;
         padding: 0; }
-        .contact dl dd .select_box.error_msg {
+        .contact dl dd .select_box.error_msg, .confirm dl dd .select_box.error_msg {
           border: solid 1px rgba(237, 84, 84, 0.7);
           background-color: rgba(237, 84, 84, 0.05);
           box-shadow: 0 0 4px rgba(237, 84, 84, 0.3); }
-        .contact dl dd .select_box select {
+        .contact dl dd .select_box select, .confirm dl dd .select_box select {
           border: none;
           margin: 0;
           padding: 13px 10px 10px 14px;
           width: 100%;
           z-index: 10; }
-        .contact dl dd .select_box:after {
+        .contact dl dd .select_box:after, .confirm dl dd .select_box:after {
           position: absolute;
           right: 7px;
           top: 4px;
@@ -4732,10 +4732,10 @@ footer.front {
           color: #8a959e;
           z-index: 1;
           display: block; }
-  .contact .contact_btn {
+  .contact .contact_btn, .confirm .contact_btn {
     margin: 30px auto 0 auto;
     text-align: center; }
-    .contact .contact_btn a {
+    .contact .contact_btn a, .confirm .contact_btn a {
       color: #ffffff;
       line-height: 55px;
       padding: 0 25px 0 25px;
@@ -4753,14 +4753,14 @@ footer.front {
       text-decoration: none;
       letter-spacing: 0.05em;
       background: #3a87bc; }
-      .contact .contact_btn a:hover {
+      .contact .contact_btn a:hover, .confirm .contact_btn a:hover {
         background: #2b75a7;
         color: white;
         outline: 0; }
-  .contact .btn_wrapper {
+  .contact .btn_wrapper, .confirm .btn_wrapper {
     margin: 0 auto;
     text-align: center; }
-    .contact .btn_wrapper button.btn_send {
+    .contact .btn_wrapper button.btn_send, .confirm .btn_wrapper button.btn_send {
       color: #ffffff;
       width: 400px;
       height: 75px;
@@ -4779,10 +4779,17 @@ footer.front {
       text-decoration: none;
       letter-spacing: 0.05em;
       background: #3a87bc; }
-      .contact .btn_wrapper button.btn_send:hover {
+      .contact .btn_wrapper button.btn_send:hover, .confirm .btn_wrapper button.btn_send:hover {
         background: #2b75a7;
         color: white;
         outline: 0; }
+
+.confirm dl dt {
+  padding: 0 !important; }
+
+.confirm .btn_wrapper {
+  margin: 0 auto 0 auto !important;
+  padding: 40px 0 0 0 !important; }
 
 .top_plan {
   color: #606060;
