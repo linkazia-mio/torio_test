@@ -4458,6 +4458,7 @@ footer.front {
     top: 0;
     left: 0;
     background-image: url(../images/section_bg.jpg);
+    background-position: center center;
     background-repeat: no-repeat;
     -webkit-background-size: cover;
     background-size: cover; }
