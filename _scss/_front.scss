@@ -93,9 +93,9 @@
               /*-webkit-box-shadow: inset 0 0 0 1px #b2b2b2;
               box-shadow: inset 0 0 0 1px #b2b2b2;*/
               outline:0;
-              background: #fa3366;
+              background: #e52355;
               color: white;
-              border: 2px solid #fa3366;
+              border: 2px solid #e52355;
             }
           }
         }
@@ -310,7 +310,7 @@
   }
 }
 
-.feature{
+.top_feature{
   background: $white_gray;
   width: 100%;
   .feature_inner{
@@ -417,6 +417,99 @@
           padding: 0;
           color: #606060;
         }
+      }
+    }
+  }
+}
+
+.top_signin{
+  width: 100%;
+  margin: 0 auto;
+  height: 100%;
+  min-height: 450px;
+  max-height: 450px;
+  min-width: 1024px;
+  position: relative;
+  overflow: hidden;
+  .bg{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url(#{$img_path}section_bg.jpg);
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    .filter{
+      width: 100%;
+      height: 100%;
+      background: rgba(40, 46, 56, 0.75);
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+  }
+  .signin_inner{
+    position: absolute;
+    width: 1024px;
+    top: 110px;
+    left: 50%;
+    margin-left: -512px;
+    text-align: center;
+    h3{
+      text-align: center;
+      color: #ffffff;
+      @include fontsize(2.8);
+      @include font-smoothing(on);
+      padding: 0 0 25px 0;
+      letter-spacing: 0.75;
+    }
+    .button{
+      a{
+        -webkit-transition: all 0.3s ease-in-out;
+        -moz-transition: all 0.3s ease-in-out;
+        -ms-transition: all 0.3s ease-in-out;
+        -o-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+        cursor: pointer;
+        border: 2px solid #fa3366;
+        padding: 15px 15px 0 15px;
+        display: inline-block;
+        font-size: 14px;
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        line-height: 40px;
+        width: 400px;
+        height: 75px;
+        /*@include font_eng;*/
+        font-weight: normal;
+        font-style: normal;
+        @include border_radius(4px);
+        @include fontsize(2.0);
+        color: #ffffff;
+        background: #fa3366;
+        text-decoration: none;
+        letter-spacing: 0.05em;
+        &:hover{
+          /*-webkit-box-shadow: inset 0 0 0 1px #b2b2b2;
+          box-shadow: inset 0 0 0 1px #b2b2b2;*/
+          outline:0;
+          background: #e52355;
+          color: white;
+          border: 2px solid #e52355;
+        }
+      }
+    }
+    .caption{
+      @include fontsize(1.4);
+      padding: 30px 0 0 0 ;
+      a{
+        color: #ffffff;
       }
     }
   }
