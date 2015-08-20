@@ -188,7 +188,6 @@
       position: absolute;
     }
     .text{
-      color: #606060;
       padding: 50px 0 0 0;
       h3{
         @include fontsize(2.8);
@@ -210,6 +209,7 @@
         @include font-smoothing(on);
         padding: 20px 0 0 0;
         line-height: 2.0;
+        color: #606060;
       }
     }
   }
@@ -235,7 +235,6 @@
       position: absolute;
     }
     .text{
-      color: #606060;
       padding: 15px 0 0 0;
       text-align: left;
       h3{
@@ -258,6 +257,7 @@
         @include font-smoothing(on);
         padding: 20px 0 0 0;
         line-height: 2.0;
+        color: #606060;
       }
     }
   }
@@ -283,7 +283,6 @@
       position: absolute;
     }
     .text{
-      color: #606060;
       padding: 80px 0 0 0;
       h3{
         @include fontsize(2.8);
@@ -305,6 +304,119 @@
         @include font-smoothing(on);
         padding: 20px 0 0 0;
         line-height: 2.0;
+        color: #606060;
+      }
+    }
+  }
+}
+
+.feature{
+  background: $white_gray;
+  width: 100%;
+  .feature_inner{
+    max-width: 1014px;
+    margin: 0 auto;
+    padding: 0;
+    @include clearfix;
+    h3{
+      @include fontsize(2.8);
+      text-align: center;
+      @include font-smoothing(on);
+      padding: 80px 0 70px 0;
+      span{
+        font-weight: bold;
+      }
+    }
+    .grid{
+      @include clearfix;
+      width: 300px;
+      float: left;
+      margin-right: 35px;
+      margin-bottom: 70px;
+      &:nth-child(4){
+        margin-right: 0;
+      }
+      &:last-child{
+        margin-bottom: 100px;
+      }
+      .card_icon{
+        @include border_radius(100px);
+        line-height: 85px;
+        text-align: center;
+        width: 85px;
+        height: 85px;
+        background: #ffffff;
+        float: left;
+        &.icon_feature_01{
+          padding: 25px 0 0 0;
+          img{
+            width: 40px;
+          }
+        }
+        &.icon_feature_02{
+          padding: 27px 0 0 0;
+          img{
+            width: 31px;
+          }
+        }
+        &.icon_feature_03{
+          padding: 30px 0 0 0;
+          img{
+            width: 36px;
+          }
+        }
+        &.icon_feature_04{
+          padding: 27px 0 0 0;
+          img{
+            width: 34px;
+          }
+        }
+        &.icon_feature_05{
+          padding: 23px 0 0 0;
+          img{
+            width: 40px;
+          }
+        }
+        &.icon_feature_06{
+          padding: 23px 0 0 0;
+          img{
+            width: 37px;
+          }
+        }
+        &.icon_feature_07{
+          padding: 22px 0 0 0;
+          img{
+            width: 40px;
+          }
+        }
+        &.icon_feature_08{
+          padding: 28px 0 0 0;
+          img{
+            width: 50px;
+          }
+        }
+        &.icon_feature_09{
+          padding: 27px 0 0 0;
+          img{
+            width: 40px;
+          }
+        }
+      }
+      .card_text{
+        float: left;
+        width: 210px;
+        padding-left: 15px;
+        @include font-smoothing(on);
+        h4{
+          font-weight: bold;
+          margin: 0 0 8px 0;
+          padding: 0;
+        }
+        p{
+          margin: 0;
+          padding: 0;
+          color: #606060;
+        }
       }
     }
   }
