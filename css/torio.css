@@ -4782,10 +4782,12 @@ footer.front {
     font-size: 3rem;
     color: #333333;
     margin: 0; }
+    .top_plan h3 span {
+      /*color:#fa3366;*/ }
   .top_plan .plan_select {
     position: relative;
     height: 34px;
-    margin: 55px auto 55px auto;
+    margin: 55px auto 70px auto;
     width: 250px; }
     .top_plan .plan_select select {
       -webkit-border-radius: 4px;

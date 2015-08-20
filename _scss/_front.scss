@@ -773,11 +773,14 @@
     @include fontsize(3.0);
     color: $dark_brack;
     margin: 0;
+    span{
+      /*color:#fa3366;*/
+    }
   }
   .plan_select {
     position: relative;
     height: 34px;
-    margin: 55px auto 55px auto;
+    margin: 55px auto 70px auto;
     width: 250px;
     select {
       @include border_radius();
