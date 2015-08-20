@@ -4208,6 +4208,139 @@ footer.front {
       #top_change .header_inner .logo img {
         width: 124px; }
 
+.point01 {
+  overflow: hidden;
+  height: 530px;
+  padding: 100px 0 0 0;
+  clear: both; }
+  .point01 .point_inner {
+    clear: both;
+    padding: 0 1.5rem;
+    margin: 0 auto;
+    box-sizing: border-box;
+    max-width: 1014px;
+    position: relative;
+    width: 100%;
+    padding-left: 440px; }
+    .point01 .point_inner .image {
+      top: 0px;
+      left: -200px;
+      position: absolute; }
+    .point01 .point_inner .text {
+      color: #606060;
+      padding: 50px 0 0 0; }
+      .point01 .point_inner .text h3 {
+        font-size: 28px;
+        font-size: 2.8rem;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        position: relative;
+        padding: 0 0 0 55px; }
+        .point01 .point_inner .text h3 i {
+          font-size: 45px;
+          font-size: 4.5rem; }
+          .point01 .point_inner .text h3 i.icon-note-outline {
+            color: #3a87bc;
+            position: absolute;
+            top: -7px;
+            left: 0; }
+      .point01 .point_inner .text p {
+        font-size: 16px;
+        font-size: 1.6rem;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        padding: 20px 0 0 0;
+        line-height: 2.0; }
+
+.point02 {
+  overflow: hidden;
+  height: 370px;
+  padding: 90px 0 0 0;
+  clear: both; }
+  .point02 .point_inner {
+    clear: both;
+    padding: 0 1.5rem;
+    margin: 0 auto;
+    box-sizing: border-box;
+    max-width: 1014px;
+    position: relative;
+    width: 100%;
+    padding-right: 440px; }
+    .point02 .point_inner .image {
+      top: 0px;
+      right: -70px;
+      position: absolute; }
+    .point02 .point_inner .text {
+      color: #606060;
+      padding: 15px 0 0 0;
+      text-align: left; }
+      .point02 .point_inner .text h3 {
+        font-size: 28px;
+        font-size: 2.8rem;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        position: relative;
+        padding: 0 0 0 55px; }
+        .point02 .point_inner .text h3 i {
+          font-size: 45px;
+          font-size: 4.5rem; }
+          .point02 .point_inner .text h3 i.icon-check-circle-outline {
+            color: #3a87bc;
+            position: absolute;
+            top: -7px;
+            left: 0; }
+      .point02 .point_inner .text p {
+        font-size: 16px;
+        font-size: 1.6rem;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        padding: 20px 0 0 0;
+        line-height: 2.0; }
+
+.point03 {
+  overflow: hidden;
+  height: 545px;
+  padding: 80px 0 0 0;
+  clear: both; }
+  .point03 .point_inner {
+    clear: both;
+    padding: 0 1.5rem;
+    margin: 0 auto;
+    box-sizing: border-box;
+    max-width: 1014px;
+    position: relative;
+    width: 100%;
+    padding-left: 420px; }
+    .point03 .point_inner .image {
+      top: 0px;
+      left: -400px;
+      position: absolute; }
+    .point03 .point_inner .text {
+      color: #606060;
+      padding: 80px 0 0 0; }
+      .point03 .point_inner .text h3 {
+        font-size: 28px;
+        font-size: 2.8rem;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        position: relative;
+        padding: 0 0 0 55px; }
+        .point03 .point_inner .text h3 i {
+          font-size: 45px;
+          font-size: 4.5rem; }
+          .point03 .point_inner .text h3 i.icon-file-double-outline {
+            color: #3a87bc;
+            position: absolute;
+            top: -7px;
+            left: 0; }
+      .point03 .point_inner .text p {
+        font-size: 16px;
+        font-size: 1.6rem;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        padding: 20px 0 0 0;
+        line-height: 2.0; }
+
 /*---------------------------------------------------------------------------------------
  Front
 ---------------------------------------------------------------------------------------*/

@@ -52,13 +52,58 @@
           </div>
         </div>
       </div>
-      
-      <div id="top" style="height: 200px">
-        ああああ
-      </div>
-      
-      <div style="height:1500px;">
-       コンテンツ
+
+      <div id="top_point">
+        <div class="point01">
+          <div class="point_inner">
+            <div class="image">
+              <img src="images/top_img01.png">
+            </div>
+            <div class="text">
+              <h3><i class="icon-note-outline"></i><span>ノートで計画を立てる、記録を残す。</span></h3>
+              <p>
+プロジェクトのスタートには計画が欠かせません。<br>
+ディスカッションした内容の記録にはノートが便利です。<br>
+文字スタイルも変更できるので、振り返る時にも見やすいように整理しておくことができます。<br>
+また、記録したノートを他のメンバーが編集することもできるので、<br>
+簡単にメンバー間でブラッシュアップしていくことができます。
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="point02">
+          <div class="point_inner">
+            <div class="image">
+              <img src="images/top_img02.png">
+            </div>
+            <div class="text">
+              <h3><i class="icon-check-circle-outline"></i><span>タスクで役割分担。</span></h3>
+              <p>
+チーム内で役割分担をしたら、タスクにセットしていきましょう。<br>
+チェックリストとしてタスクのグルーピングができ、<br>
+ドラッグ＆ドロップで簡単に入れ替えが可能です。<br>
+GTD(Getting Things Done)とも相性が良いです。
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="point03">
+          <div class="point_inner">
+            <div class="image">
+              <img src="images/top_img03.png">
+            </div>
+            <div class="text">
+              <h3><i class="icon-file-double-outline"></i><span>各種ファイルやブックマーク共有を。</span></h3>
+              <p>
+ローカルのデータをアップロードできるのはもちろん、<br>
+ウェブサイトのブックマークにもご利用いただけるのがファイルです。<br>
+プロジェクトに必要なデータを保存するもよし、<br>
+参考にしたいサイトや記事の共有や、<br>
+デザインのチェックに利用するもよしの便利な機能です。
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
       
       <footer class="front">
@@ -97,7 +142,7 @@
     <script>
       //スティッキーヘッダー
       var $window = $(window), //ウィンドウを指定
-      $content = $("#top"), //#content部分
+      $content = $("#top_point"), //#content部分
       $chenge = $("#top_change"), //#change部分
       topContent = $content.offset().top; //#contentの位置を取得
        
