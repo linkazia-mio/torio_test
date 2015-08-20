@@ -19,8 +19,29 @@
   </head>
   <body>
     <div class="wrapper_front">
-      <!--Header/-->
-      <header class="front">
+      <div class="kv">
+        <header id="top_header">
+          <div class="header_inner">
+            <div class="header_line">
+            </div>
+            <div class="front_header_menu">
+              <p class="logo"><a href=""><img src="images/logo_flip.png"></a></p>
+              <p class="new"><a href=""><span>無料ではじめる</span></a></p>
+              <p class="login"><a href=""><span>ログイン</span></a></p>
+            </div>
+          </div>
+        </header>
+        <div class="bg">
+          <div class="filter"></div>
+        </div>
+        <div class="title">
+          <h1>チームで共創する新しいプロジェクト管理ツール</h1>
+          <h2>情報をためる。つなげる。自走する強いチームをつくる。</h2>
+          <p><img src="images/top_kv.png"></p>
+        </div>
+      </div>
+             
+      <div id="top_change">
         <div class="header_inner">
           <div class="header_line">
           </div>
@@ -30,9 +51,16 @@
             <p class="login"><a href=""><span>ログイン</span></a></p>
           </div>
         </div>
-      </header>
-      <!--Header/-->
-      あああ
+      </div>
+      
+      <div id="top" style="height: 200px">
+        ああああ
+      </div>
+      
+      <div style="height:1500px;">
+       コンテンツ
+      </div>
+      
       <footer class="front">
         <div class="footer_inner">
           <div class="left">
@@ -66,5 +94,29 @@
         </div>
       </footer>
     </div>
+    <script>
+      //スティッキーヘッダー
+      var $window = $(window), //ウィンドウを指定
+      $content = $("#top"), //#content部分
+      $chenge = $("#top_change"), //#change部分
+      topContent = $content.offset().top; //#contentの位置を取得
+       
+      var sticky = false;
+       
+      $window.on("scroll", function () {
+           if ($window.scrollTop() > topContent) {　//scroll位置が#contentの上にある場合
+                if ( sticky === false ){
+                     $chenge.slideDown();　//#change部分が上がる。
+                     sticky = true;
+                }
+           } else {
+                if ( sticky === true ){　//scroll位置が下にある場合
+                     $chenge.slideUp();//#change部分が降りてくる。
+                     sticky = false;
+                }
+           }
+      });
+      $window.trigger("scroll");
+    </script>
   </body>
 </html>

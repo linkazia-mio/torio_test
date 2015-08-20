@@ -1102,9 +1102,9 @@ p {
 button:focus {
   outline: none; }
 
-.clearfix, .alart .me, .front_header_menu, #viewers_box .modal-body .view_group_member, #note_viewers_box .modal-body .view_group_member, #note_like_box .modal-body .view_group_member, footer.front, .file, #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .item .header {
+.clearfix, .alart .me, .front_header_menu, #viewers_box .modal-body .view_group_member, #note_viewers_box .modal-body .view_group_member, #note_like_box .modal-body .view_group_member, footer.front, .file, #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .item .header, .kv #top_header .header_inner .front_header_menu {
   *zoom: 1; }
-  .clearfix:after, .alart .me:after, .front_header_menu:after, #viewers_box .modal-body .view_group_member:after, #note_viewers_box .modal-body .view_group_member:after, #note_like_box .modal-body .view_group_member:after, footer.front:after, .file:after, #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .item .header:after {
+  .clearfix:after, .alart .me:after, .front_header_menu:after, #viewers_box .modal-body .view_group_member:after, #note_viewers_box .modal-body .view_group_member:after, #note_like_box .modal-body .view_group_member:after, footer.front:after, .file:after, #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .item .header:after, .kv #top_header .header_inner .front_header_menu:after {
     content: ".";
     display: block;
     clear: both;
@@ -4053,6 +4053,160 @@ footer.front {
       text-shadow: none;
       position: fixed;
       top: 300px; }
+
+/*---------------------------------------------------------------------------------------
+ Top
+---------------------------------------------------------------------------------------*/
+.kv {
+  width: 100%;
+  margin: 0 auto;
+  height: 100%;
+  min-height: 728px;
+  max-height: 825px;
+  min-width: 1024px;
+  position: relative;
+  overflow: hidden; }
+  .kv #top_header {
+    width: 100%;
+    z-index: 1000;
+    height: 70px;
+    position: absolute;
+    top: 0;
+    left: 0; }
+    .kv #top_header .header_inner {
+      height: 70px;
+      position: relative;
+      background: none; }
+      .kv #top_header .header_inner .front_header_menu .logo {
+        float: left; }
+        .kv #top_header .header_inner .front_header_menu .logo img {
+          width: 124px; }
+      .kv #top_header .header_inner .front_header_menu .login {
+        float: right;
+        margin: 16px 14px 0 0; }
+        .kv #top_header .header_inner .front_header_menu .login a {
+          -webkit-transition: all 0.3s ease-in-out;
+          -moz-transition: all 0.3s ease-in-out;
+          -ms-transition: all 0.3s ease-in-out;
+          -o-transition: all 0.3s ease-in-out;
+          transition: all 0.3s ease-in-out;
+          cursor: pointer;
+          padding: 0 15px 0 15px;
+          display: inline-block;
+          font-size: 14px;
+          font-size: 1.4rem;
+          -webkit-touch-callout: none;
+          -webkit-user-select: none;
+          -khtml-user-select: none;
+          -moz-user-select: none;
+          -ms-user-select: none;
+          user-select: none;
+          line-height: 40px;
+          height: 42px;
+          /*@include font_eng;*/
+          font-weight: normal;
+          font-style: normal;
+          color: #ffffff;
+          text-decoration: none;
+          letter-spacing: 0.05em; }
+      .kv #top_header .header_inner .front_header_menu .new {
+        float: right;
+        margin: 14px 14px 0 0; }
+        .kv #top_header .header_inner .front_header_menu .new a {
+          -webkit-transition: all 0.3s ease-in-out;
+          -moz-transition: all 0.3s ease-in-out;
+          -ms-transition: all 0.3s ease-in-out;
+          -o-transition: all 0.3s ease-in-out;
+          transition: all 0.3s ease-in-out;
+          cursor: pointer;
+          border: 2px solid #fa3366;
+          padding: 0 15px 0 15px;
+          display: inline-block;
+          font-size: 14px;
+          -webkit-touch-callout: none;
+          -webkit-user-select: none;
+          -khtml-user-select: none;
+          -moz-user-select: none;
+          -ms-user-select: none;
+          user-select: none;
+          line-height: 40px;
+          height: 42px;
+          /*@include font_eng;*/
+          font-weight: normal;
+          font-style: normal;
+          -webkit-border-radius: 4px;
+          -moz-border-radius: 4px;
+          -ms-border-radius: 4px;
+          border-radius: 4px;
+          color: #ffffff;
+          background: #fa3366;
+          text-decoration: none;
+          letter-spacing: 0.05em; }
+          .kv #top_header .header_inner .front_header_menu .new a:hover {
+            /*-webkit-box-shadow: inset 0 0 0 1px #b2b2b2;
+              box-shadow: inset 0 0 0 1px #b2b2b2;*/
+            outline: 0;
+            background: #fa3366;
+            color: white;
+            border: 2px solid #fa3366; }
+  .kv .bg {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url(../images/top_bg.jpg);
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover; }
+    .kv .bg .filter {
+      width: 100%;
+      height: 100%;
+      background: rgba(40, 46, 56, 0.75);
+      position: absolute;
+      top: 0;
+      left: 0; }
+  .kv .title {
+    position: absolute;
+    width: 1024px;
+    top: 0;
+    left: 50%;
+    margin-left: -512px;
+    text-align: center; }
+    .kv .title h1 {
+      font-size: 40px;
+      font-size: 4rem;
+      color: #FFFFFF;
+      line-height: 48px;
+      margin: 120px auto 16px;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale; }
+    .kv .title h2 {
+      font-size: 20px;
+      font-size: 2rem;
+      color: #FFFFFF;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale; }
+    .kv .title p {
+      margin: 70px 0 0 0; }
+
+#top_change {
+  background: #f66f6f;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  display: none;
+  z-index: 9999;
+  height: 70px; }
+  #top_change .header_inner {
+    height: 70px;
+    position: relative;
+    background: #ffffff; }
+    #top_change .header_inner .logo {
+      float: left; }
+      #top_change .header_inner .logo img {
+        width: 124px; }
 
 /*---------------------------------------------------------------------------------------
  Front
