@@ -12,7 +12,7 @@ html {
   overflow: hidden !important;
 }
 body {
-  font-family:'ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro','メイリオ',Meiryo,'ＭＳ Ｐゴシック','MS PGothic',sans-serif;
+  font-family:'Lato','ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro','メイリオ',Meiryo,'ＭＳ Ｐゴシック','MS PGothic',sans-serif;
   @include fontsize(1.4);
   line-height: 1.6;
   color: $dark_brack;
@@ -2487,7 +2487,7 @@ footer{
         margin: 25px 0 0 0;
         position: relative;
         span{
-          padding-right: 40px;
+          padding-right: 30px;
           &:after {
             font-family: 'torio_icon';
             content: "\e669";
@@ -2495,7 +2495,7 @@ footer{
             @include fontsize(2.4);
             position: absolute;
             top:-8px;
-            left: 80px;
+            left: 68px;
           }
         }
       }

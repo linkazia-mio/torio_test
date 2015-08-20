@@ -1066,7 +1066,7 @@ html {
   overflow: hidden !important; }
 
 body {
-  font-family: 'ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro','メイリオ',Meiryo,'ＭＳ Ｐゴシック','MS PGothic',sans-serif;
+  font-family: 'Lato','ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro','メイリオ',Meiryo,'ＭＳ Ｐゴシック','MS PGothic',sans-serif;
   font-size: 14px;
   font-size: 1.4rem;
   line-height: 1.6;
@@ -1119,7 +1119,7 @@ button:focus {
   -moz-border-radius: 100px;
   -ms-border-radius: 100px;
   border-radius: 100px;
-  font-family: 'Helvetica neue',Helvetica,Arial,sans-serif;
+  font-family: 'Lato','Helvetica neue',Helvetica,Arial,sans-serif;
   background: #3A87BC;
   /*background: #f179ab;*/
   text-align: center;
@@ -1481,7 +1481,7 @@ header {
             font-size: 1.1rem;
             color: #8a959e;
             margin-left: 8px;
-            font-family: 'Helvetica neue',Helvetica,Arial,sans-serif; }
+            font-family: 'Lato','Helvetica neue',Helvetica,Arial,sans-serif; }
         header .task_box .task_active_lists .task_active_list .task_list, header .activity_box .task_active_lists .task_active_list .task_list {
           -webkit-border-radius: 4;
           -moz-border-radius: 4;
@@ -1730,7 +1730,7 @@ header {
       -moz-border-radius: 100px;
       -ms-border-radius: 100px;
       border-radius: 100px;
-      font-family: 'Helvetica neue',Helvetica,Arial,sans-serif;
+      font-family: 'Lato','Helvetica neue',Helvetica,Arial,sans-serif;
       font-weight: bold;
       position: absolute;
       text-align: center;
@@ -2064,7 +2064,7 @@ header {
   .global_menu .global_menu_inner .member {
     padding-bottom: 3rem; }
     .global_menu .global_menu_inner .member .noimage {
-      font-family: 'Helvetica neue',Helvetica,Arial,sans-serif;
+      font-family: 'Lato','Helvetica neue',Helvetica,Arial,sans-serif;
       font-size: 10px;
       font-size: 1rem;
       line-height: 30px;
@@ -2138,7 +2138,7 @@ header {
     .page_menu .config .title {
       font-size: 13px;
       font-size: 1.3rem;
-      font-family: 'Helvetica neue',Helvetica,Arial,sans-serif;
+      font-family: 'Lato','Helvetica neue',Helvetica,Arial,sans-serif;
       color: #333333;
       font-weight: bold;
       float: left;
@@ -2150,7 +2150,7 @@ header {
       .page_menu .config .title span {
         font-weight: normal;
         padding-left: 5px;
-        font-family: 'Helvetica neue',Helvetica,Arial,sans-serif;
+        font-family: 'Lato','Helvetica neue',Helvetica,Arial,sans-serif;
         color: #8a959e;
         font-size: 11px;
         font-size: 1.1rem; }
@@ -2194,7 +2194,7 @@ header {
         font-size: 2.2rem; }
       .page_menu .config .viewers .number {
         vertical-align: super;
-        font-family: 'Helvetica neue',Helvetica,Arial,sans-serif;
+        font-family: 'Lato','Helvetica neue',Helvetica,Arial,sans-serif;
         color: #8a959e;
         font-size: 11px;
         font-size: 1.1rem; }
@@ -2236,7 +2236,7 @@ header {
       -ms-user-select: none;
       user-select: none;
       line-height: 35px;
-      font-family: 'Helvetica neue',Helvetica,Arial,sans-serif;
+      font-family: 'Lato','Helvetica neue',Helvetica,Arial,sans-serif;
       font-weight: normal;
       font-style: normal;
       -webkit-border-radius: 4px;
@@ -2335,7 +2335,7 @@ header {
             bottom: 0;
             color: #fff;
             font-size: 15px;
-            font-family: 'Helvetica neue',Helvetica,Arial,sans-serif;
+            font-family: 'Lato','Helvetica neue',Helvetica,Arial,sans-serif;
             font-weight: bold;
             left: 0;
             position: absolute;
@@ -2386,7 +2386,7 @@ header {
         right: 16px;
         bottom: 20px;
         height: 50px;
-        font-family: 'Helvetica neue',Helvetica,Arial,sans-serif; }
+        font-family: 'Lato','Helvetica neue',Helvetica,Arial,sans-serif; }
         .page_menu .page_menu_inner .item.task .graph.green .number p {
           color: #3A87BC; }
         .page_menu .page_menu_inner .item.task .graph.yellow .number p {
@@ -2960,7 +2960,7 @@ header {
             vertical-align: top;
             margin-top: 2px; }
           .modal .modal-dialog .modal-content .modal-body .comment .comment_inner .user_image .noimage {
-            font-family: 'Helvetica neue',Helvetica,Arial,sans-serif;
+            font-family: 'Lato','Helvetica neue',Helvetica,Arial,sans-serif;
             font-size: 12px;
             font-size: 1.2rem;
             line-height: 40px;
@@ -3096,7 +3096,7 @@ header {
       float: left;
       width: 40px; }
       #viewers_box .modal-body .view_group_member dt .noimage, #note_viewers_box .modal-body .view_group_member dt .noimage, #note_like_box .modal-body .view_group_member dt .noimage {
-        font-family: 'Helvetica neue',Helvetica,Arial,sans-serif;
+        font-family: 'Lato','Helvetica neue',Helvetica,Arial,sans-serif;
         font-size: 10px;
         font-size: 1rem;
         line-height: 38px;
@@ -3317,7 +3317,7 @@ footer.front {
       margin: 25px 0 0 0;
       position: relative; }
       footer.front .footer_inner .copyright span {
-        padding-right: 40px; }
+        padding-right: 30px; }
         footer.front .footer_inner .copyright span:after {
           font-family: 'torio_icon';
           content: "\e669";
@@ -3326,7 +3326,7 @@ footer.front {
           font-size: 2.4rem;
           position: absolute;
           top: -8px;
-          left: 80px; }
+          left: 68px; }
 
 /*---------------------------------------------------------------------------------------
  File
@@ -3485,7 +3485,7 @@ footer.front {
             height: 25px;
             width: 25px; }
           .file .file_list .panel .panel-body .info .user_image .noimage {
-            font-family: 'Helvetica neue',Helvetica,Arial,sans-serif;
+            font-family: 'Lato','Helvetica neue',Helvetica,Arial,sans-serif;
             font-size: 10px;
             font-size: 1rem;
             line-height: 25px;
@@ -3676,7 +3676,7 @@ footer.front {
                 height: 40px;
                 width: 40px; }
             #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .item .header .noimage {
-              font-family: 'Helvetica neue',Helvetica,Arial,sans-serif;
+              font-family: 'Lato','Helvetica neue',Helvetica,Arial,sans-serif;
               font-size: 12px;
               font-size: 1.2rem;
               line-height: 40px;
@@ -3727,7 +3727,7 @@ footer.front {
               position: absolute;
               top: 40px;
               right: 195px;
-              font-family: 'Helvetica neue',Helvetica,Arial,sans-serif;
+              font-family: 'Lato','Helvetica neue',Helvetica,Arial,sans-serif;
               vertical-align: top;
               padding-left: 28px; }
               #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .item .header .like i {
@@ -3738,7 +3738,7 @@ footer.front {
                 font-size: 2.6rem;
                 color: #db4c3f; }
               #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .item .header .like span {
-                font-family: 'Helvetica neue',Helvetica,Arial,sans-serif;
+                font-family: 'Lato','Helvetica neue',Helvetica,Arial,sans-serif;
                 font-size: 14px;
                 font-size: 1.4rem;
                 color: #8a959e; }
@@ -3801,7 +3801,7 @@ footer.front {
                   display: table-cell;
                   width: 50px; }
                   #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .item .footer .comment .comment_inner .noimage_box .noimage {
-                    font-family: 'Helvetica neue',Helvetica,Arial,sans-serif;
+                    font-family: 'Lato','Helvetica neue',Helvetica,Arial,sans-serif;
                     font-size: 12px;
                     font-size: 1.2rem;
                     display: block;
@@ -4255,7 +4255,7 @@ footer.front {
 .point02 {
   overflow: hidden;
   height: 370px;
-  padding: 90px 0 0 0;
+  padding: 80px 0 0 0;
   clear: both; }
   .point02 .point_inner {
     clear: both;
@@ -4268,7 +4268,7 @@ footer.front {
     padding-right: 440px; }
     .point02 .point_inner .image {
       top: 0px;
-      right: -70px;
+      right: -80px;
       position: absolute; }
     .point02 .point_inner .text {
       color: #606060;
@@ -4300,7 +4300,7 @@ footer.front {
 .point03 {
   overflow: hidden;
   height: 545px;
-  padding: 80px 0 0 0;
+  padding: 50px 0 0 0;
   clear: both; }
   .point03 .point_inner {
     clear: both;
@@ -4944,7 +4944,7 @@ input[type="checkbox"] {
       font-size: 1.1rem;
       font-weight: normal;
       padding-left: 8px;
-      font-family: 'Helvetica neue',Helvetica,Arial,sans-serif;
+      font-family: 'Lato','Helvetica neue',Helvetica,Arial,sans-serif;
       color: #8a959e; }
     .task_replacement .task_people .task_lists {
       min-height: 50px; }
@@ -5203,7 +5203,7 @@ input[type="checkbox"] {
 .calendar {
   text-align: center;
   width: 250px;
-  font-family: 'Helvetica neue',Helvetica,Arial,sans-serif; }
+  font-family: 'Lato','Helvetica neue',Helvetica,Arial,sans-serif; }
   .calendar input {
     -webkit-border-radius: 4px;
     -moz-border-radius: 4px;
@@ -5672,7 +5672,7 @@ input[type="checkbox"] {
             vertical-align: top;
             margin-top: 2px; }
           .note .note_edit .note_comment .comment_inner .user_image .noimage {
-            font-family: 'Helvetica neue',Helvetica,Arial,sans-serif;
+            font-family: 'Lato','Helvetica neue',Helvetica,Arial,sans-serif;
             font-size: 10px;
             font-size: 1rem;
             line-height: 30px;
@@ -6427,13 +6427,13 @@ input[type="checkbox"] {
     .plan .plan_type div .type_name {
       font-size: 18px;
       font-size: 1.8rem;
-      font-family: 'Helvetica neue',Helvetica,Arial,sans-serif;
+      font-family: 'Lato','Helvetica neue',Helvetica,Arial,sans-serif;
       font-weight: bold;
       margin-bottom: 20px; }
     .plan .plan_type div .price {
       font-size: 34px;
       font-size: 3.4rem;
-      font-family: 'Helvetica neue',Helvetica,Arial,sans-serif; }
+      font-family: 'Lato','Helvetica neue',Helvetica,Arial,sans-serif; }
       .plan .plan_type div .price:before {
         font-size: 24px;
         font-size: 2.4rem;
@@ -6556,7 +6556,7 @@ h3.profile_title {
     .profile .noimage_box .noimage {
       font-size: 30px;
       font-size: 3rem;
-      font-family: 'Helvetica neue',Helvetica,Arial,sans-serif;
+      font-family: 'Lato','Helvetica neue',Helvetica,Arial,sans-serif;
       font-weight: normal;
       margin: 0 auto 18px auto;
       text-align: center;
