@@ -567,6 +567,13 @@
     @include fontsize(1.5);
     padding: 20px 0 0 0 ;
   }
+  .caption{
+    text-align: left;
+    color: #606060;
+    @include fontsize(1.5);
+    padding: 0 0 60px 0 ;
+    font-weight: bold;
+  }
   dl{
     @include clearfix;
     padding: 0;
@@ -609,6 +616,12 @@
         padding: 10px 0 0 0;
         width: 83%;
         line-height: 2.1;
+      }
+      .plan_text{
+        padding: 15px 0 0 0;
+        text-align: left;
+        margin-bottom: 35px;
+        font-weight: bold;
       }
       .input_box {
         border: 1px solid $border_gray;

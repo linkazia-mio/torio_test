@@ -4578,6 +4578,13 @@ footer.front {
     font-size: 15px;
     font-size: 1.5rem;
     padding: 20px 0 0 0; }
+  .contact .caption {
+    text-align: left;
+    color: #606060;
+    font-size: 15px;
+    font-size: 1.5rem;
+    padding: 0 0 60px 0;
+    font-weight: bold; }
   .contact dl {
     *zoom: 1;
     padding: 0;
@@ -4625,6 +4632,11 @@ footer.front {
         padding: 10px 0 0 0;
         width: 83%;
         line-height: 2.1; }
+      .contact dl dd .plan_text {
+        padding: 15px 0 0 0;
+        text-align: left;
+        margin-bottom: 35px;
+        font-weight: bold; }
       .contact dl dd .input_box, .contact dl dd .select_box, .contact dl dd .option_config .configuration .configuration_inner .input_box_pass, .option_config .configuration .configuration_inner .contact dl dd .input_box_pass, .contact dl dd .option_config .configuration .configuration_inner .select_box, .option_config .configuration .configuration_inner .contact dl dd .select_box {
         border: 1px solid #e5e5e5;
         width: 490px;
