@@ -636,7 +636,7 @@ window.onload=function(){
           maxWidth: 400
       });
       jQuery( '.page_menu' ).resizable({
-          minWidth: 310,
+          minWidth: 320,
           maxWidth: 600
       });
       jQuery( '.detail' ).resizable({
