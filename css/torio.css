@@ -1504,7 +1504,7 @@ header {
             -o-transform: rotate(-1deg);
             -ms-transform: rotate(-1deg); }
           header .task_box .task_active_lists .task_active_list .task_list.finished, header .activity_box .task_active_lists .task_active_list .task_list.finished {
-            background: #f9f9f9; }
+            background: #EEE; }
           header .task_box .task_active_lists .task_active_list .task_list.important, header .activity_box .task_active_lists .task_active_list .task_list.important {
             border: 1px solid #f4c8bf;
             background: #ffebe7; }
