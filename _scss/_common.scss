@@ -358,7 +358,7 @@ header {
   width: 100%;
   z-index: 1000;
   height: 55px;
-  background: #373c4a;
+  /*background: #373c4a;*/
   &.front{
     width: 100%;
     z-index: 1000;
@@ -378,9 +378,9 @@ header {
   .header_inner {
     height: 55px;
     position: relative;
-    background: #373c4a;
-    border-bottom: 1px solid #4a4f5c;
-    /*background: #ffffff;*/
+    /*background: #373c4a;*/
+    /*border-bottom: 1px solid #4a4f5c;*/
+    background: #ffffff;
     /*filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFFFFFFF', endColorstr='#FFEEEEEE', GradientType=0);
     background: linear-gradient(to bottom,#fff,#eee);
     background: -moz-linear-gradient(top,#fff,#eee);
@@ -478,7 +478,7 @@ header {
             -ms-transform: rotate(-1deg);
           }
           &.finished {
-            background: $white_gray;
+            background: #EEE;
           }
           &.important {
             border: 1px solid #f4c8bf;
@@ -1659,14 +1659,15 @@ header {
     }
     .add_page {
       width: 280px;
-      right: 23px;
+      left: 9px;
       top: -140px;
       padding-top: 3px;
       z-index: 9999;
       &.popover {
         @include border_radius(3px);
         display: none;
-        width: 280px;
+        width: 300px;
+        max-width: 300px;
         position: absolute;
         z-index: 9999;
         background: #fff;
@@ -1700,20 +1701,24 @@ header {
        	}
       }
       ul {
-        text-align: left;
+        text-align:center;
+        @include clearfix;
         li {
-          @include fontsize(1.4);
-          line-height: 38px;
+          @include fontsize(1.6);
+          @include font-smoothing();
+          font-weight: bold;
           position: relative;
+          display: inline-block;
+          float: left;
+          width: 98px;
+          border-right: 1px solid #EEE;
+          &:last-child{
+            border-right: none;
+          }
           &.add_page_note {
             a {
               i {
                 color: $yellow;
-              }
-              &:hover {
-                i {
-                  color: white;
-                }
               }
             }
           }
@@ -1734,20 +1739,19 @@ header {
             }
           }
           a {
-            padding: 0 20px 0 45px;
-            display: block;
-            height: 35px;
+            padding: 20px;
+            line-height: 2.4;
             i {
               &:before {
-                @include fontsize(2.6);
-                position: absolute;
+                @include fontsize(3.6);
+                /*position: absolute;
                 top: 6px;
-                left: 15px;
+                left: 15px;*/
               }
             }
             &:hover {
-              background: $torio_green;
-              color: white;
+              background: none;
+              color: black;
             }
           }
         }
@@ -1792,7 +1796,7 @@ header {
       color: $white_brack;
       top: 32px;
       &:hover {
-        color: $torio_green;
+        /*color: $torio_green;*/
         cursor: pointer;
       }
       &.check {
@@ -1817,7 +1821,7 @@ header {
           }
         }
         &:hover {
-          color: $dark_red;
+          /*color: $dark_red;*/
           cursor: pointer;
         }
       }

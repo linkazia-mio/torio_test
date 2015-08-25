@@ -1390,7 +1390,7 @@ header {
   width: 100%;
   z-index: 1000;
   height: 55px;
-  background: #373c4a; }
+  /*background: #373c4a;*/ }
   header.front {
     width: 100%;
     z-index: 1000;
@@ -1406,9 +1406,9 @@ header {
   header .header_inner {
     height: 55px;
     position: relative;
-    background: #373c4a;
-    border-bottom: 1px solid #4a4f5c;
-    /*background: #ffffff;*/
+    /*background: #373c4a;*/
+    /*border-bottom: 1px solid #4a4f5c;*/
+    background: #ffffff;
     /*filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFFFFFFF', endColorstr='#FFEEEEEE', GradientType=0);
     background: linear-gradient(to bottom,#fff,#eee);
     background: -moz-linear-gradient(top,#fff,#eee);
@@ -1504,7 +1504,7 @@ header {
             -o-transform: rotate(-1deg);
             -ms-transform: rotate(-1deg); }
           header .task_box .task_active_lists .task_active_list .task_list.finished, header .activity_box .task_active_lists .task_active_list .task_list.finished {
-            background: #f9f9f9; }
+            background: #EEE; }
           header .task_box .task_active_lists .task_active_list .task_list.important, header .activity_box .task_active_lists .task_active_list .task_list.important {
             border: 1px solid #f4c8bf;
             background: #ffebe7; }
@@ -2549,7 +2549,7 @@ header {
       color: white; }
     .page_menu .page_menu_footer .add_page {
       width: 280px;
-      right: 23px;
+      left: 9px;
       top: -140px;
       padding-top: 3px;
       z-index: 9999; }
@@ -2559,7 +2559,8 @@ header {
         -ms-border-radius: 3px;
         border-radius: 3px;
         display: none;
-        width: 280px;
+        width: 300px;
+        max-width: 300px;
         position: absolute;
         z-index: 9999;
         background: #fff;
@@ -2591,33 +2592,45 @@ header {
           border: 8px solid transparent;
           border-top-color: #fff; }
       .page_menu .page_menu_footer .add_page ul {
-        text-align: left; }
+        text-align: center;
+        *zoom: 1; }
+        .page_menu .page_menu_footer .add_page ul:after {
+          content: ".";
+          display: block;
+          clear: both;
+          height: 0;
+          visibility: hidden; }
         .page_menu .page_menu_footer .add_page ul li {
-          font-size: 14px;
-          font-size: 1.4rem;
-          line-height: 38px;
-          position: relative; }
+          font-size: 16px;
+          font-size: 1.6rem;
+          -webkit-font-smoothing: antialiased;
+          -moz-osx-font-smoothing: grayscale;
+          font-weight: bold;
+          position: relative;
+          display: inline-block;
+          float: left;
+          width: 98px;
+          border-right: 1px solid #EEE; }
+          .page_menu .page_menu_footer .add_page ul li:last-child {
+            border-right: none; }
           .page_menu .page_menu_footer .add_page ul li.add_page_note a i, .page_menu .page_menu_footer .add_page ul li.add_page_task a i, .page_menu .page_menu_footer .add_page ul li.add_page_file a i {
             color: #feb22e; }
-          .page_menu .page_menu_footer .add_page ul li.add_page_note a:hover i, .page_menu .page_menu_footer .add_page ul li.add_page_task a:hover i, .page_menu .page_menu_footer .add_page ul li.add_page_file a:hover i {
-            color: white; }
           .page_menu .page_menu_footer .add_page ul li.add_page_task a i {
             color: #3595e1; }
           .page_menu .page_menu_footer .add_page ul li.add_page_file a i {
             color: #ed6d44; }
           .page_menu .page_menu_footer .add_page ul li a {
-            padding: 0 20px 0 45px;
-            display: block;
-            height: 35px; }
+            padding: 20px;
+            line-height: 2.4; }
             .page_menu .page_menu_footer .add_page ul li a i:before {
-              font-size: 26px;
-              font-size: 2.6rem;
-              position: absolute;
-              top: 6px;
-              left: 15px; }
+              font-size: 36px;
+              font-size: 3.6rem;
+              /*position: absolute;
+                top: 6px;
+                left: 15px;*/ }
             .page_menu .page_menu_footer .add_page ul li a:hover {
-              background: #3A87BC;
-              color: white; }
+              background: none;
+              color: black; }
 
 /*detail*/
 .detail, .detail_public {
@@ -2654,7 +2667,7 @@ header {
       color: #8a959e;
       top: 32px; }
       .detail .title p:hover, .detail_public .title p:hover {
-        color: #3A87BC;
+        /*color: $torio_green;*/
         cursor: pointer; }
       .detail .title p.check, .detail_public .title p.check {
         /*position: static;*/
@@ -2671,7 +2684,7 @@ header {
           color: #db4c3f;
           display: block; }
         .detail .title p.bookmark:hover, .detail_public .title p.bookmark:hover {
-          color: #db4c3f;
+          /*color: $dark_red;*/
           cursor: pointer; }
       .detail .title p.website, .detail_public .title p.website {
         right: 69px; }
