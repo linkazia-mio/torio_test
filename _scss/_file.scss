@@ -132,6 +132,7 @@
               cursor: pointer;
             }
             &.like {
+              margin: 0 2.2% 0 0;
               .icon-favorite-outline {
                 display: block;
               }
@@ -152,18 +153,12 @@
                 cursor: pointer;
               }*/
             }
-            /*&.comment{
-              &:hover {
-                color: $dark_brack;
-                cursor: pointer;
-              }
+            &.comment{
+              margin: 0 1.5% 0 0;
             }
             &.download{
-              &:hover {
-                color: $dark_brack;
-                cursor: pointer;
-              }
-            }*/
+              margin: 0 2% 0 0;
+            }
           }
           .user_image {
             position: absolute;
