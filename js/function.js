@@ -8,6 +8,10 @@ window.onload=function(){
     $('.global_menu_btn').click(function (event) {
       jQuery('.global_menu').toggle();
       jQuery('.global_menu').toggleClass("size_none");
+      var w = $(window).width(); //ウィンドウの幅
+      var w2= $('.global_menu').width(); //他要素の幅
+      $('header').css('width', w-w2); //可変部分の幅を適用
+      $('.header_inner').css('width', w-w2); //可変部分の幅を適用
       var w = $(window).width(); //ウィンドウの高さ
       var w1= $('.page_menu').width(); //他要素の高さ
       var w2= $('.global_menu').width(); //他要素の高さ
@@ -545,7 +549,7 @@ window.onload=function(){
             var h = $(window).height(); //ウィンドウの高さ
             var h1= $('.page_menu .config').height(); //他要素の高さ
             var h2= $('.page_menu .page_menu_footer').height(); //他要素の高さ
-            $('.page_menu_inner').css('height', h-h1-h2-53); //可変部分の高さを適用
+            $('.page_menu_inner').css('height', h-h1-h2); //可変部分の高さを適用
        }
        adjust();
        $(window).on('resize', function(){
@@ -557,7 +561,7 @@ window.onload=function(){
         function adjust(){
              var h = $(window).height(); //ウィンドウの高さ
              var h4= $('.profile_title').height(); //他要素の高さ
-             $('.profile').css('height', h-h4-53); //可変部分の高さを適用
+             $('.profile').css('height', h-h4); //可変部分の高さを適用
         }
        adjust();
        $(window).on('resize', function(){
@@ -569,7 +573,7 @@ window.onload=function(){
         function adjust(){
              var h = $(window).height(); //ウィンドウの高さ
              var h5= $('.sponsor').height(); //他要素の高さ
-             $('.global_menu_inner').css('height', h-h5-53); //可変部分の高さを適用
+             $('.global_menu_inner').css('height', h-h5); //可変部分の高さを適用
         }
        adjust();
        $(window).on('resize', function(){
@@ -580,7 +584,7 @@ window.onload=function(){
   $(function(){
         function adjust(){
              var h = $(window).height(); //ウィンドウの高さ
-             $('.detail').css('height', h-50); //可変部分の高さを適用
+             $('.detail').css('height', h); //可変部分の高さを適用
         }
        adjust();
        $(window).on('resize', function(){
@@ -590,17 +594,16 @@ window.onload=function(){
 
   $(function(){
       function adjust(){
-           var w = $(window).width(); //ウィンドウの高さ
-           var w1= $('.page_menu').width(); //他要素の高さ
-           var w2= $('.global_menu').width(); //他要素の高さ
-           $('.detail').css('width', w-w1-w2-2); //可変部分の高さを適用
+           var w = $(window).width(); //ウィンドウの幅
+           var w1= $('.page_menu').width(); //他要素の幅
+           var w2= $('.global_menu').width(); //他要素の幅
+           $('.detail').css('width', w-w1-w2-2); //可変部分の幅を適用
       }
      adjust();
      $(window).on('resize', function(){
         adjust();
      })
   });
-
 
   $(function(){
        function adjust(){
@@ -611,6 +614,19 @@ window.onload=function(){
        $(window).on('resize', function(){
             adjust();
        })
+  });
+
+  $(function(){
+      function adjust(){
+           var w = $(window).width(); //ウィンドウの幅
+           var w2= $('.global_menu').width(); //他要素の幅
+           $('header').css('width', w-w2); //可変部分の幅を適用
+           $('.header_inner').css('width', w-w2); //可変部分の幅を適用
+      }
+     adjust();
+     $(window).on('resize', function(){
+        adjust();
+     })
   });
 
 

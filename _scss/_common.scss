@@ -354,10 +354,13 @@ button {
 }
 /*Header*/
 header {
-  /*border-bottom: 1px solid $border_gray;*/
+  border-bottom: 1px solid $border_gray;
   width: 100%;
   z-index: 1000;
   height: 55px;
+  position: fixed;
+  right: 0;
+  top: 0;
   /*background: #373c4a;*/
   &.front{
     width: 100%;
@@ -967,8 +970,8 @@ header {
   display: -webkit-box;
   display: -moz-box;
   overflow: hidden;
+  float: left;
   z-index: 100;
-  width: 100%;
   height: 100%;
   h3 {
     @include fontsize(1.2);
@@ -1195,6 +1198,7 @@ header {
   float: left;
   width: 320px;
   height: 100%;
+  margin-top: 50px;
   background: #fff;
   /*overflow: hidden;*/
   &.ui-widget-content {
@@ -1767,6 +1771,7 @@ header {
   background: $white_gray;
   width: auto;
   height: 100%;
+  margin-top: 50px;
   float: left;
   overflow: hidden;
   &.detail_public{
