@@ -5522,7 +5522,7 @@ input[type="checkbox"] {
             background: #db4c3f;
             border-color: #ed6d44; }
       .task_replacement .task_people .task_list.finished {
-        background: #f9f9f9; }
+        background: #EEE; }
       .task_replacement .task_people .task_list.made {
         height: auto;
         min-height: 50px; }
