@@ -358,6 +358,7 @@ header {
   width: 100%;
   z-index: 1000;
   height: 55px;
+  background: #373c4a;
   &.front{
     width: 100%;
     z-index: 1000;
@@ -378,6 +379,7 @@ header {
     height: 55px;
     position: relative;
     background: #373c4a;
+    border-bottom: 1px solid #4a4f5c;
     /*background: #ffffff;*/
     /*filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFFFFFFF', endColorstr='#FFEEEEEE', GradientType=0);
     background: linear-gradient(to bottom,#fff,#eee);
