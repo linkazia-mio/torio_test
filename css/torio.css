@@ -2257,7 +2257,7 @@ header {
         opacity: 1;
         filter: alpha(opacity=100);
         padding: 10px 0;
-        z-index: 20; }
+        z-index: 110; }
         .page_menu .config .option_box.popover::before, .page_menu .config .popover.check_box::before {
           position: absolute;
           content: '';
