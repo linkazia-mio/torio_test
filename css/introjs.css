@@ -86,6 +86,7 @@ tr.introjs-showElement > th {
 
 .introjs-helperNumberLayer {
   position: absolute;
+  display: none;
   top: -16px;
   left: -16px;
   z-index: 9999999999 !important;
