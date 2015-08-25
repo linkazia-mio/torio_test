@@ -1390,7 +1390,7 @@ header {
   width: 100%;
   z-index: 1000;
   height: 55px;
-  background: #373c4a; }
+  /*background: #373c4a;*/ }
   header.front {
     width: 100%;
     z-index: 1000;
@@ -1406,9 +1406,9 @@ header {
   header .header_inner {
     height: 55px;
     position: relative;
-    background: #373c4a;
-    border-bottom: 1px solid #4a4f5c;
-    /*background: #ffffff;*/
+    /*background: #373c4a;*/
+    /*border-bottom: 1px solid #4a4f5c;*/
+    background: #ffffff;
     /*filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFFFFFFF', endColorstr='#FFEEEEEE', GradientType=0);
     background: linear-gradient(to bottom,#fff,#eee);
     background: -moz-linear-gradient(top,#fff,#eee);
@@ -2667,7 +2667,7 @@ header {
       color: #8a959e;
       top: 32px; }
       .detail .title p:hover, .detail_public .title p:hover {
-        color: #3A87BC;
+        /*color: $torio_green;*/
         cursor: pointer; }
       .detail .title p.check, .detail_public .title p.check {
         /*position: static;*/
@@ -2684,7 +2684,7 @@ header {
           color: #db4c3f;
           display: block; }
         .detail .title p.bookmark:hover, .detail_public .title p.bookmark:hover {
-          color: #db4c3f;
+          /*color: $dark_red;*/
           cursor: pointer; }
       .detail .title p.website, .detail_public .title p.website {
         right: 69px; }

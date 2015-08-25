@@ -358,7 +358,7 @@ header {
   width: 100%;
   z-index: 1000;
   height: 55px;
-  background: #373c4a;
+  /*background: #373c4a;*/
   &.front{
     width: 100%;
     z-index: 1000;
@@ -378,9 +378,9 @@ header {
   .header_inner {
     height: 55px;
     position: relative;
-    background: #373c4a;
-    border-bottom: 1px solid #4a4f5c;
-    /*background: #ffffff;*/
+    /*background: #373c4a;*/
+    /*border-bottom: 1px solid #4a4f5c;*/
+    background: #ffffff;
     /*filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFFFFFFF', endColorstr='#FFEEEEEE', GradientType=0);
     background: linear-gradient(to bottom,#fff,#eee);
     background: -moz-linear-gradient(top,#fff,#eee);
@@ -1796,7 +1796,7 @@ header {
       color: $white_brack;
       top: 32px;
       &:hover {
-        color: $torio_green;
+        /*color: $torio_green;*/
         cursor: pointer;
       }
       &.check {
@@ -1821,7 +1821,7 @@ header {
           }
         }
         &:hover {
-          color: $dark_red;
+          /*color: $dark_red;*/
           cursor: pointer;
         }
       }
