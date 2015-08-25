@@ -1723,6 +1723,11 @@ header {
       color: #999999; }
       .alart .alart_task p.icon:hover, .alart .activity p.icon:hover {
         cursor: pointer; }
+        .alart .alart_task p.icon:hover .balloon_box_under, .alart .activity p.icon:hover .balloon_box_under {
+          display: block;
+          bottom: 15px;
+          left: 48%;
+          margin: -50px; }
     .alart .alart_task p .unread, .alart .activity p .unread {
       font-size: 10px;
       font-size: 1rem;
@@ -1748,6 +1753,13 @@ header {
       min-height: 18px; }
   .alart .activity {
     padding-left: 14px; }
+    .alart .activity:hover {
+      cursor: pointer; }
+      .alart .activity:hover .balloon_box_under {
+        display: block;
+        bottom: 15px;
+        left: 48%;
+        margin: -50px; }
   .alart .me {
     position: absolute;
     top: -3px;
@@ -2057,7 +2069,7 @@ header {
       color: #999999;
       cursor: pointer; }
       .global_menu .global_menu_inner .groups .add:hover, .global_menu .global_menu_inner .member .add:hover {
-        color: #3A87BC; }
+        color: #FFF; }
       .global_menu .global_menu_inner .groups .add .balloon_box, .global_menu .global_menu_inner .member .add .balloon_box {
         top: -40px;
         left: 50%;
@@ -2197,7 +2209,7 @@ header {
           display: block; }
         .page_menu .config .favorite:hover .balloon_box_under {
           display: block;
-          bottom: 10px;
+          bottom: 6px;
           left: 50%;
           margin: -50px; }
       .page_menu .config .favorite .icon-star-outline {
@@ -2214,7 +2226,7 @@ header {
     .page_menu .config .viewers {
       color: #999999;
       position: absolute;
-      right: 49px;
+      right: 48px;
       top: 1px; }
       .page_menu .config .viewers i {
         font-size: 22px;
@@ -2229,7 +2241,7 @@ header {
         cursor: pointer; }
         .page_menu .config .viewers:hover .balloon_box_under {
           display: block;
-          bottom: 30px;
+          bottom: 21px;
           left: 50%;
           margin: -50px; }
     .page_menu .config .option, .page_menu .config .carousel .carousel-inner .item .modal-header .download, .carousel .carousel-inner .item .modal-header .page_menu .config .download, .page_menu .config .carousel .carousel-inner .item .modal-header .like, .carousel .carousel-inner .item .modal-header .page_menu .config .like {

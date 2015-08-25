@@ -726,6 +726,12 @@ header {
         color: $white_brack;
         &:hover {
           cursor: pointer;
+          .balloon_box_under {
+            display: block;
+            bottom: 15px;
+            left: 48%;
+            margin: -50px;
+          }
         }
       }
       .unread {
@@ -753,6 +759,15 @@ header {
   .activity {
     @extend .alart_task;
     padding-left: 14px;
+    &:hover {
+      cursor: pointer;
+      .balloon_box_under {
+        display: block;
+        bottom: 15px;
+        left: 48%;
+        margin: -50px;
+      }
+    }
   }
   .me {
     position: absolute;
@@ -1098,7 +1113,7 @@ header {
         color: $white_brack;
         cursor: pointer;
         &:hover {
-          color: $torio_green;
+          color: #FFF;
         }
         .balloon_box {
           top: -40px;
@@ -1253,7 +1268,7 @@ header {
         }
         .balloon_box_under {
           display: block;
-          bottom: 10px;
+          bottom: 6px;
           left: 50%;
           margin: -50px;
         }
@@ -1278,7 +1293,7 @@ header {
     .viewers {
       color: $white_brack;
       position: absolute;
-      right: 49px;
+      right: 48px;
       top: 1px;
       i {
         @include fontsize(2.2);
@@ -1293,7 +1308,7 @@ header {
         cursor: pointer;
         .balloon_box_under {
           display: block;
-          bottom: 30px;
+          bottom: 21px;
           left: 50%;
           margin: -50px;
         }
