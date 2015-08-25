@@ -2059,7 +2059,7 @@ header {
       .global_menu .global_menu_inner .groups .add:hover, .global_menu .global_menu_inner .member .add:hover {
         color: #3A87BC; }
       .global_menu .global_menu_inner .groups .add .balloon_box, .global_menu .global_menu_inner .member .add .balloon_box {
-        top: -35px;
+        top: -40px;
         left: 50%;
         margin-left: -50px; }
       .global_menu .global_menu_inner .groups .add .md-trigger, .global_menu .global_menu_inner .member .add .md-trigger {
@@ -2195,6 +2195,11 @@ header {
           display: none; }
         .page_menu .config .favorite:hover .icon-star {
           display: block; }
+        .page_menu .config .favorite:hover .balloon_box_under {
+          display: block;
+          bottom: 10px;
+          left: 50%;
+          margin: -50px; }
       .page_menu .config .favorite .icon-star-outline {
         display: block; }
       .page_menu .config .favorite .icon-star {
@@ -2221,8 +2226,12 @@ header {
         font-size: 11px;
         font-size: 1.1rem; }
       .page_menu .config .viewers:hover {
-        /*color: $dark_brack;*/
         cursor: pointer; }
+        .page_menu .config .viewers:hover .balloon_box_under {
+          display: block;
+          bottom: 30px;
+          left: 50%;
+          margin: -50px; }
     .page_menu .config .option, .page_menu .config .carousel .carousel-inner .item .modal-header .download, .carousel .carousel-inner .item .modal-header .page_menu .config .download, .page_menu .config .carousel .carousel-inner .item .modal-header .like, .carousel .carousel-inner .item .modal-header .page_menu .config .like {
       font-size: 28px;
       font-size: 2.8rem;
@@ -2231,8 +2240,12 @@ header {
       right: 7px;
       top: 12px; }
       .page_menu .config .option:hover, .page_menu .config .carousel .carousel-inner .item .modal-header .download:hover, .carousel .carousel-inner .item .modal-header .page_menu .config .download:hover, .page_menu .config .carousel .carousel-inner .item .modal-header .like:hover, .carousel .carousel-inner .item .modal-header .page_menu .config .like:hover {
-        /*color: $torio_green;*/
         cursor: pointer; }
+        .page_menu .config .option:hover .balloon_box_under, .page_menu .config .carousel .carousel-inner .item .modal-header .download:hover .balloon_box_under, .carousel .carousel-inner .item .modal-header .page_menu .config .download:hover .balloon_box_under, .page_menu .config .carousel .carousel-inner .item .modal-header .like:hover .balloon_box_under, .carousel .carousel-inner .item .modal-header .page_menu .config .like:hover .balloon_box_under {
+          display: block;
+          bottom: 10px;
+          left: 50%;
+          margin: -50px; }
     .page_menu .config .option_box, .page_menu .config .check_box {
       width: 200px;
       height: auto;
@@ -2687,15 +2700,25 @@ header {
             display: none; }
           .detail .title p.bookmark:hover .icon-bookmark, .detail_public .title p.bookmark:hover .icon-bookmark {
             display: block; }
+          .detail .title p.bookmark:hover .balloon_box_under, .detail_public .title p.bookmark:hover .balloon_box_under {
+            display: block;
+            bottom: 10px;
+            left: 50%;
+            margin: -50px; }
       .detail .title p.website, .detail_public .title p.website {
         right: 69px; }
-        .detail .title p.website:hover .balloon_box, .detail_public .title p.website:hover .balloon_box {
+        .detail .title p.website:hover .balloon_box_under, .detail_public .title p.website:hover .balloon_box_under {
           display: block;
-          bottom: 78px;
+          bottom: 10px;
           left: 50%;
           margin: -50px; }
       .detail .title p.option, .detail .title .carousel .carousel-inner .item .modal-header p.download, .carousel .carousel-inner .item .modal-header .detail .title p.download, .detail .title .carousel .carousel-inner .item .modal-header p.like, .carousel .carousel-inner .item .modal-header .detail .title p.like, .detail_public .title p.option, .detail_public .title .carousel .carousel-inner .item .modal-header p.download, .carousel .carousel-inner .item .modal-header .detail_public .title p.download, .detail_public .title .carousel .carousel-inner .item .modal-header p.like, .carousel .carousel-inner .item .modal-header .detail_public .title p.like {
         right: 24px; }
+        .detail .title p.option:hover .balloon_box_under, .detail .title .carousel .carousel-inner .item .modal-header p.download:hover .balloon_box_under, .carousel .carousel-inner .item .modal-header .detail .title p.download:hover .balloon_box_under, .detail .title .carousel .carousel-inner .item .modal-header p.like:hover .balloon_box_under, .carousel .carousel-inner .item .modal-header .detail .title p.like:hover .balloon_box_under, .detail_public .title p.option:hover .balloon_box_under, .detail_public .title .carousel .carousel-inner .item .modal-header p.download:hover .balloon_box_under, .carousel .carousel-inner .item .modal-header .detail_public .title p.download:hover .balloon_box_under, .detail_public .title .carousel .carousel-inner .item .modal-header p.like:hover .balloon_box_under, .carousel .carousel-inner .item .modal-header .detail_public .title p.like:hover .balloon_box_under {
+          display: block;
+          bottom: 10px;
+          left: 50%;
+          margin: -50px; }
     .detail .title .detail_check_box, .detail_public .title .detail_check_box {
       width: 200px;
       left: 132px;

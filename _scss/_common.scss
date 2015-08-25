@@ -1101,7 +1101,7 @@ header {
           color: $torio_green;
         }
         .balloon_box {
-          top: -35px;
+          top: -40px;
           left: 50%;
           margin-left: -50px;
         }
@@ -1251,6 +1251,12 @@ header {
         .icon-star {
           display: block;
         }
+        .balloon_box_under {
+          display: block;
+          bottom: 10px;
+          left: 50%;
+          margin: -50px;
+        }
       }
       .icon-star-outline{
         display: block;
@@ -1284,8 +1290,13 @@ header {
         @include fontsize(1.1);
       }
       &:hover {
-        /*color: $dark_brack;*/
         cursor: pointer;
+        .balloon_box_under {
+          display: block;
+          bottom: 30px;
+          left: 50%;
+          margin: -50px;
+        }
       }
     }
     .option {
@@ -1295,8 +1306,13 @@ header {
       right: 7px;
       top: 12px;
       &:hover {
-        /*color: $torio_green;*/
         cursor: pointer;
+        .balloon_box_under {
+          display: block;
+          bottom: 10px;
+          left: 50%;
+          margin: -50px;
+        }
       }
     }
     .option_box {
@@ -1830,14 +1846,20 @@ header {
           .icon-bookmark {
             display: block;
           }
+          .balloon_box_under {
+            display: block;
+            bottom: 10px;
+            left: 50%;
+            margin: -50px;
+          }
         }
       }
       &.website {
         right: 69px;
         &:hover {
-          .balloon_box {
+          .balloon_box_under {
             display: block;
-            bottom: 78px;
+            bottom: 10px;
             left: 50%;
             margin: -50px;
           }
@@ -1845,6 +1867,14 @@ header {
       }
       &.option {
         right: 24px;
+        &:hover {
+          .balloon_box_under {
+            display: block;
+            bottom: 10px;
+            left: 50%;
+            margin: -50px;
+          }
+        }
       }
     }
     .detail_check_box {
