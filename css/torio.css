@@ -3833,23 +3833,12 @@ footer.front {
           font-size: 2.3rem;
           color: #999999;
           display: inline-block;
-          margin: 0 2% 0 0;
-          /*&.comment{
-              &:hover {
-                color: $dark_brack;
-                cursor: pointer;
-              }
-            }
-            &.download{
-              &:hover {
-                color: $dark_brack;
-                cursor: pointer;
-              }
-            }*/ }
+          margin: 0 2% 0 0; }
           .file .file_list .panel .panel-body .info p:hover {
             /*color: $torio_green;*/
             cursor: pointer; }
           .file .file_list .panel .panel-body .info p.like {
+            margin: 0 2.2% 0 0;
             /*&:hover {
                 color: $dark_red;
                 cursor: pointer;
@@ -3863,6 +3852,10 @@ footer.front {
             .file .file_list .panel .panel-body .info p.like.active .icon-favorite {
               color: #db4c3f;
               display: block; }
+          .file .file_list .panel .panel-body .info p.comment {
+            margin: 0 1.5% 0 0; }
+          .file .file_list .panel .panel-body .info p.download, .file .file_list .panel .panel-body .info .carousel .carousel-inner .item .modal-header p.like, .carousel .carousel-inner .item .modal-header .file .file_list .panel .panel-body .info p.like {
+            margin: 0 2% 0 0; }
         .file .file_list .panel .panel-body .info .user_image {
           position: absolute;
           right: 7px;
