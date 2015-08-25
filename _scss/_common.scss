@@ -994,7 +994,7 @@ header {
   background: -o-linear-gradient(top,  #373c4a 0%,#3A6073 100%); /* Opera 11.10+ */
   background: -ms-linear-gradient(top,  #373c4a 0%,#3A6073 100%); /* IE10+ */
   background: linear-gradient(to bottom,  #373c4a 0%,#3A6073 100%); /* W3C */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#373c4a', endColorstr='#3A6073',GradientType=0 ); /* IE6-9 */ 
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#373c4a', endColorstr='#3A6073',GradientType=0 ); /* IE6-9 */
   float: left;
   position: relative;
   &.size_none {
@@ -1621,7 +1621,7 @@ header {
     background: $torio_green;
     color: white;
     display: block;
-    z-index: 9000;
+    z-index: 1000;
     position: absolute;
     width: 100%;
     right: 0;
@@ -2172,12 +2172,20 @@ header {
             padding: 3px 5px;
             line-height: 35px;
             height: 45px;
-            i {
+            .icon-person-outline {
               @include fontsize(2.4);
               position: absolute;
               color: $brack;
               left: 10px;
-              top: 11px;
+              top: 10px;
+            }
+            .icon-expand-more {
+              @include fontsize(2.4);
+              position: absolute;
+              color: $white_brack;
+              right: 10px;
+              top: 10px;
+              z-index: 10;
             }
             input {
               padding-left: 35px;
@@ -2185,11 +2193,30 @@ header {
               line-height: 21px;
               margin-top: 10px;
             }
+            select {
+              position: relative;
+              width: 100%;
+              padding-left: 35px;
+              line-height: 35px;
+              height: 36px;
+              outline: none;
+              z-index: 100;
+              &:focus {
+                outline: none;
+              }
+            }
           }
           .worker {
             @extend .requester;
             @include border_radius(0 0 2px 2px);
             border-top: none;
+            .icon-person {
+              @include fontsize(2.4);
+              position: absolute;
+              color: $brack;
+              left: 10px;
+              top: 10px;
+            }
           }
           .limlt {
             @extend .requester;
@@ -2197,6 +2224,11 @@ header {
             margin-top: 20px;
             i {
               color: $dark_red;
+              @include fontsize(2.4);
+              position: absolute;
+              color: $brack;
+              left: 10px;
+              top: 10px;
             }
             input {
               line-height: 21px;
