@@ -384,6 +384,7 @@ header {
     /*background: #373c4a;*/
     /*border-bottom: 1px solid #4a4f5c;*/
     background: #ffffff;
+    border-bottom: 1px solid #f2f2f2;
     /*filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFFFFFFF', endColorstr='#FFEEEEEE', GradientType=0);
     background: linear-gradient(to bottom,#fff,#eee);
     background: -moz-linear-gradient(top,#fff,#eee);
@@ -1005,7 +1006,7 @@ header {
 
 /*Global Menu*/
 .global_menu {
-  width: 180px;
+  width: 240px;
   min-width: 120px;
   /*background: #373c4a;*/
   background: #373c4a; /* Old browsers */
@@ -1211,11 +1212,12 @@ header {
   float: left;
   width: 320px;
   height: 100%;
-  margin-top: 50px;
+  margin-top: 54px;
   background: #fff;
   /*overflow: hidden;*/
   &.ui-widget-content {
     border: none;
+    border-right: 1px solid #f2f2f2 !important;
   }
   .config {
     position: relative;
