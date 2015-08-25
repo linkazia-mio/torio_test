@@ -1317,7 +1317,7 @@ header {
         white-space: normal;
         @include opacity(1);
         padding: 10px 0;
-        z-index: 20;
+        z-index: 110;
         &::before {
          	position: absolute;
          	content: '';
