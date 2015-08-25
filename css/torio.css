@@ -1432,10 +1432,10 @@ header {
       text-align: center;
       border: none; }
     header .task_box ul, header .activity_box ul {
-      -webkit-border-radius: 3;
-      -moz-border-radius: 3;
-      -ms-border-radius: 3;
-      border-radius: 3;
+      -webkit-border-radius: 3px;
+      -moz-border-radius: 3px;
+      -ms-border-radius: 3px;
+      border-radius: 3px;
       margin: 0 20px 15px 20px;
       width: 455px;
       border: 1px solid #3A87BC;
@@ -1483,10 +1483,10 @@ header {
             margin-left: 8px;
             font-family: 'Lato','Helvetica neue',Helvetica,Arial,sans-serif; }
         header .task_box .task_active_lists .task_active_list .task_list, header .activity_box .task_active_lists .task_active_list .task_list {
-          -webkit-border-radius: 4;
-          -moz-border-radius: 4;
-          -ms-border-radius: 4;
-          border-radius: 4;
+          -webkit-border-radius: 4px;
+          -moz-border-radius: 4px;
+          -ms-border-radius: 4px;
+          border-radius: 4px;
           margin: 0 0 5px 0;
           line-height: 50px;
           height: 50px;
@@ -2717,10 +2717,10 @@ header {
   box-shadow: 0px 0px 17px 0px rgba(0, 0, 0, 0.11);
   border: none; }
   .modal .modal-dialog .modal-content .modal-header {
-    -webkit-border-radius: 4 4 0 0;
-    -moz-border-radius: 4 4 0 0;
-    -ms-border-radius: 4 4 0 0;
-    border-radius: 4 4 0 0;
+    -webkit-border-radius: 4px 4px 0 0;
+    -moz-border-radius: 4px 4px 0 0;
+    -ms-border-radius: 4px 4px 0 0;
+    border-radius: 4px 4px 0 0;
     border-bottom: none;
     background: #fff;
     padding: 25px; }
@@ -2934,10 +2934,10 @@ header {
           position: absolute;
           right: 0; }
       .modal .modal-dialog .modal-content .modal-body .input_dot input[type="text"] {
-        -webkit-border-radius: 2;
-        -moz-border-radius: 2;
-        -ms-border-radius: 2;
-        border-radius: 2;
+        -webkit-border-radius: 2px;
+        -moz-border-radius: 2px;
+        -ms-border-radius: 2px;
+        border-radius: 2px;
         float: right;
         width: 400px;
         border: 1px solid #e5e5e5;
@@ -3050,10 +3050,10 @@ header {
           left: 10px;
           top: 10px; }
       .modal .modal-dialog .modal-content .modal-body .task_detail .limlt {
-        -webkit-border-radius: 2;
-        -moz-border-radius: 2;
-        -ms-border-radius: 2;
-        border-radius: 2;
+        -webkit-border-radius: 2px;
+        -moz-border-radius: 2px;
+        -ms-border-radius: 2px;
+        border-radius: 2px;
         margin-top: 20px; }
         .modal .modal-dialog .modal-content .modal-body .task_detail .limlt i {
           color: #db4c3f;
@@ -3067,19 +3067,19 @@ header {
           line-height: 21px;
           margin-top: 10px; }
       .modal .modal-dialog .modal-content .modal-body .task_detail .information {
-        -webkit-border-radius: 2;
-        -moz-border-radius: 2;
-        -ms-border-radius: 2;
-        border-radius: 2;
+        -webkit-border-radius: 2px;
+        -moz-border-radius: 2px;
+        -ms-border-radius: 2px;
+        border-radius: 2px;
         position: relative;
         margin-top: 20px;
         border: 1px solid #cbcbcb;
         padding-bottom: 40px; }
         .modal .modal-dialog .modal-content .modal-body .task_detail .information textarea {
-          -webkit-border-radius: 2;
-          -moz-border-radius: 2;
-          -ms-border-radius: 2;
-          border-radius: 2;
+          -webkit-border-radius: 2px;
+          -moz-border-radius: 2px;
+          -ms-border-radius: 2px;
+          border-radius: 2px;
           padding: 13px;
           width: 100%;
           resize: vertical; }
@@ -3251,10 +3251,10 @@ header {
   height: 50%;
   overflow: hidden;
   padding: 10px 0 10px 0;
-  -webkit-border-radius: 0 0 4 4;
-  -moz-border-radius: 0 0 4 4;
-  -ms-border-radius: 0 0 4 4;
-  border-radius: 0 0 4 4; }
+  -webkit-border-radius: 0 0 4px 4px;
+  -moz-border-radius: 0 0 4px 4px;
+  -ms-border-radius: 0 0 4px 4px;
+  border-radius: 0 0 4px 4px; }
   #viewers_box .modal-body .view_group_member, #note_viewers_box .modal-body .view_group_member, #note_like_box .modal-body .view_group_member {
     border-bottom: 1px solid #f5f5f5;
     width: 100%;
@@ -3287,7 +3287,7 @@ header {
         top: 15px;
         right: 20px;
         /*border: 1px solid $border_gray;
-        @include border_radius(4);*/
+        @include border_radius(4px);*/
         font-size: 13px;
         font-size: 1.3rem;
         padding: 0 10px; }
