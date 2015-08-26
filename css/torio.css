@@ -2228,7 +2228,7 @@ header {
   float: left;
   width: 320px;
   height: 100%;
-  margin-top: 49px;
+  margin-top: 50px;
   background: #fff;
   /*overflow: hidden;*/ }
   .page_menu.ui-widget-content {
@@ -2238,7 +2238,6 @@ header {
     position: relative;
     height: 50px;
     padding: 0 20px;
-    border-top: 1px solid #f2f2f2;
     border-bottom: 1px solid #f2f2f2;
     /*-webkit-box-shadow: 0 1px 2px rgba(0,0,0,0.1);
     box-shadow: 0 1px 2px rgba(0,0,0,0.1);*/
