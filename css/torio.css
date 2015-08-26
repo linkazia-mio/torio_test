@@ -4452,16 +4452,16 @@ footer.front {
               bottom: 0;
               left: 0;
               line-height: 35px;
-              width: 100%;
               display: block;
-              margin-top: -20px;
-              padding: 0 25px 15px 40px;
+              margin: -20px 25px 20px 25px;
+              padding: 0 25px 0 25px;
               overflow: hidden;
-              z-index: 100; }
+              z-index: 100;
+              border-bottom: 1px solid #eeeeee; }
               #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .item .footer .url i {
                 position: absolute;
                 top: 5px;
-                left: 17px;
+                left: 0;
                 font-size: 24px;
                 font-size: 2.4rem; }
               #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .item .footer .url a {
