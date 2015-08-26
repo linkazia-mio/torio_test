@@ -1066,7 +1066,7 @@ html {
   overflow: hidden !important; }
 
 body {
-  font-family: 'Lato','ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro','メイリオ',Meiryo,'ＭＳ Ｐゴシック','MS PGothic',sans-serif;
+  font-family: 'ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro','メイリオ',Meiryo,'ＭＳ Ｐゴシック','MS PGothic',sans-serif;
   font-size: 14px;
   font-size: 1.4rem;
   line-height: 1.6;
@@ -1555,14 +1555,14 @@ header {
             background: #EEE; }
           header .task_box .task_active_lists .task_active_list .task_list.important, header .activity_box .task_active_lists .task_active_list .task_list.important {
             border: 1px solid #f4c8bf;
-            background: #ffebe7; }
+            background: #fbeceb; }
             header .task_box .task_active_lists .task_active_list .task_list.important input[type="checkbox"], header .activity_box .task_active_lists .task_active_list .task_list.important input[type="checkbox"] {
               /*checked時の見た目*/ }
               header .task_box .task_active_lists .task_active_list .task_list.important input[type="checkbox"] + label, header .activity_box .task_active_lists .task_active_list .task_list.important input[type="checkbox"] + label {
                 /*通常時の見た目*/ }
                 header .task_box .task_active_lists .task_active_list .task_list.important input[type="checkbox"] + label:before, header .activity_box .task_active_lists .task_active_list .task_list.important input[type="checkbox"] + label:before {
                   border: 1px solid #ed6d44;
-                  background: #ffebe7; }
+                  background: #fbeceb; }
               header .task_box .task_active_lists .task_active_list .task_list.important input[type="checkbox"]:checked + label::before, header .activity_box .task_active_lists .task_active_list .task_list.important input[type="checkbox"]:checked + label::before {
                 background: #ff3366;
                 border-color: #ed6d44; }
@@ -5915,8 +5915,8 @@ input[type="checkbox"] {
     min-height: 50px;
     margin-bottom: 5px; }
   .task_replacement .task_people {
-    font-size: 13px;
-    font-size: 1.3rem;
+    font-size: 14px;
+    font-size: 1.4rem;
     left: 0;
     padding-bottom: 30px;
     color: #999999;
@@ -5928,7 +5928,7 @@ input[type="checkbox"] {
       -ms-transform: rotate(-1deg); }
     .task_replacement .task_people .handle {
       margin-bottom: 15px;
-      color: #333; }
+      color: #000; }
     .task_replacement .task_people .finish {
       font-size: 12px;
       font-size: 1.2rem;
@@ -5977,15 +5977,15 @@ input[type="checkbox"] {
         -o-transform: rotate(-1deg);
         -ms-transform: rotate(-1deg); }
       .task_replacement .task_people .task_list.important {
-        border: 1px solid #f4c8bf;
-        background: #ffebe7; }
+        border: 1px solid #f3b9a9;
+        background: #fbeceb; }
         .task_replacement .task_people .task_list.important input[type="checkbox"] {
           /*checked時の見た目*/ }
           .task_replacement .task_people .task_list.important input[type="checkbox"] + label {
             /*通常時の見た目*/ }
             .task_replacement .task_people .task_list.important input[type="checkbox"] + label:before {
               border: 1px solid #ed6d44;
-              background: #ffebe7; }
+              background: #fbeceb; }
           .task_replacement .task_people .task_list.important input[type="checkbox"]:checked + label::before {
             background: #ff3366;
             border-color: #ed6d44; }
@@ -7694,7 +7694,7 @@ h3.profile_title {
       -moz-border-radius: 3px;
       -ms-border-radius: 3px;
       border-radius: 3px;
-      background: #ffebe7;
+      background: #fbeceb;
       padding: 20px;
       color: #ff3366; }
     #cancellation_box .modal-body.white .cancellation_contents .caution {
@@ -7750,7 +7750,7 @@ h3.profile_title {
       -moz-border-radius: 2px;
       -ms-border-radius: 2px;
       border-radius: 2px;
-      background: #ffebe7;
+      background: #fbeceb;
       padding: 20px;
       color: #ff3366;
       margin-bottom: 30px; }
