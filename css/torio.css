@@ -1427,8 +1427,12 @@ header {
     left: 15px;
     color: #999999; }
     header .global_menu_btn:hover {
-      color: #3A87BC;
       cursor: pointer; }
+      header .global_menu_btn:hover .balloon_box_left {
+        display: block;
+        top: -2px;
+        left: 35px;
+        margin: 0px; }
   header .task_box, header .activity_box {
     right: 118px;
     top: 65px; }
@@ -2483,7 +2487,7 @@ header {
         margin-left: 0px;
         margin-right: 0px;
         margin-top: 0px;
-        z-index: 100;
+        z-index: 10;
         /*.title,.text,ul {
           color: #fff;
           &:hover{
@@ -3682,6 +3686,41 @@ header {
     border-style: solid;
     border-width: 0 6px 6px 6px;
     border-color: transparent transparent #242424 transparent; }
+
+.balloon_box_left {
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  border-radius: 4px;
+  font-size: 11px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  position: relative;
+  display: inline-block;
+  padding: 2px 10px 0px 10px;
+  width: auto;
+  min-width: 100px;
+  height: 30px;
+  color: #fff;
+  line-height: 26px;
+  text-align: center;
+  background: #242424;
+  z-index: 0;
+  display: none;
+  position: absolute;
+  z-index: 1100; }
+  .balloon_box_left:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -6px;
+    margin-top: -6px;
+    display: block;
+    width: 0px;
+    height: 0px;
+    border-style: solid;
+    border-width: 6px 6px 6px 0;
+    border-color: transparent #242424 transparent transparent; }
 
 /*---------------------------------------------------------------------------------------
  Loader

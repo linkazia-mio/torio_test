@@ -399,8 +399,13 @@ header {
     left: 15px;
     color: $white_brack;
     &:hover {
-      color: $torio_green;
       cursor: pointer;
+      .balloon_box_left {
+        display: block;
+        top: -2px;
+        left: 35px;
+        margin: 0px;
+      }
     }
   }
   .task_box {
@@ -1564,7 +1569,7 @@ header {
         margin-left: 0px;
         margin-right: 0px; 
         margin-top: 0px;
-        z-index: 100;
+        z-index: 10;
         .check {
          	position: absolute;
           right: 16px;
@@ -2828,6 +2833,13 @@ header {
 
 .balloon_box_under {
   @include balloon_under;
+  display: none;
+  position: absolute;
+  z-index: 1100;
+}
+
+.balloon_box_left{
+  @include balloon_left;
   display: none;
   position: absolute;
   z-index: 1100;
