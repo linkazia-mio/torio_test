@@ -1178,7 +1178,7 @@ button:focus {
       height: 30px;
       padding: 5px;
       width: 141px;
-      border: 1px solid #e5e5e5;
+      border: 1px solid #eeeeee;
       margin-right: 10px; }
   .popover ul {
     margin-bottom: 0; }
@@ -1259,7 +1259,7 @@ button:focus {
       height: 30px;
       padding: 5px;
       width: 141px;
-      border: 1px solid #e5e5e5;
+      border: 1px solid #eeeeee;
       margin-right: 10px; }
   .main .popover ul, .main_public .popover ul {
     margin-bottom: 0; }
@@ -1342,7 +1342,7 @@ button:focus {
       height: 30px;
       padding: 5px;
       width: 258px;
-      border: 1px solid #e5e5e5;
+      border: 1px solid #eeeeee;
       margin: 0 10px 1px 0; }
   .popover_big ul {
     margin-bottom: 0; }
@@ -1386,7 +1386,7 @@ button:focus {
 
 /*Header*/
 header {
-  border-bottom: 1px solid #e5e5e5;
+  border-bottom: 1px solid #eeeeee;
   width: 100%;
   z-index: 1000;
   height: 50px;
@@ -1412,7 +1412,7 @@ header {
     /*background: #373c4a;*/
     /*border-bottom: 1px solid #4a4f5c;*/
     background: #ffffff;
-    border-bottom: 1px solid #f2f2f2;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
     /*filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFFFFFFF', endColorstr='#FFEEEEEE', GradientType=0);
     background: linear-gradient(to bottom,#fff,#eee);
     background: -moz-linear-gradient(top,#fff,#eee);
@@ -1542,7 +1542,7 @@ header {
           clear: both;
           /*border: 1px solid #ededf0;
           border-bottom: 1px solid #dcdce0;*/
-          border: 1px solid #e5e5e5;
+          border: 1px solid #eeeeee;
           box-shadow: none;
           position: relative;
           color: #999999; }
@@ -2264,12 +2264,13 @@ header {
   /*overflow: hidden;*/ }
   .page_menu.ui-widget-content {
     border: none;
-    border-right: 1px solid #f2f2f2 !important; }
+    /*border-right: 1px solid #f2f2f2 !important;*/
+    border-right: 1px solid rgba(0, 0, 0, 0.1) !important; }
   .page_menu .config {
     position: relative;
     height: 50px;
     padding: 0 20px;
-    border-bottom: 1px solid #f2f2f2;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
     /*-webkit-box-shadow: 0 1px 2px rgba(0,0,0,0.1);
     box-shadow: 0 1px 2px rgba(0,0,0,0.1);*/
     line-height: 50px;
@@ -2482,7 +2483,8 @@ header {
           border-bottom-color: #fff; }
   .page_menu .page_menu_inner {
     width: 100%;
-    overflow: hidden; }
+    overflow: hidden;
+    background: #f9f9f9; }
     .page_menu .page_menu_inner .item {
       font-size: 13px;
       font-size: 1.3rem;
@@ -2616,9 +2618,9 @@ header {
             height: 51px;
             text-align: center; }
             .page_menu .page_menu_inner .item.file ul li .file_list i {
-              font-size: 40px;
-              font-size: 4rem;
-              line-height: 51px; }
+              font-size: 30px;
+              font-size: 3rem;
+              line-height: 53px; }
             .page_menu .page_menu_inner .item.file ul li .file_list.excel, .page_menu .page_menu_inner .item.file ul li .file_list .panel .panel-body.type_file .file_list.word, .page_menu .page_menu_inner .item.file .file_list .panel .panel-body.type_file ul li .file_list.word, .page_menu .page_menu_inner .item.file ul li .file_list .panel .panel-body.type_file .file_list.powerpoint, .page_menu .page_menu_inner .item.file .file_list .panel .panel-body.type_file ul li .file_list.powerpoint, .page_menu .page_menu_inner .item.file ul li .file_list .panel .panel-body.type_file .file_list.pdf, .page_menu .page_menu_inner .item.file .file_list .panel .panel-body.type_file ul li .file_list.pdf, .page_menu .page_menu_inner .item.file ul li .file_list .panel .panel-body.type_file .file_list.video, .page_menu .page_menu_inner .item.file .file_list .panel .panel-body.type_file ul li .file_list.video, .page_menu .page_menu_inner .item.file ul li .file_list .panel .panel-body.type_file .file_list.googledrive, .page_menu .page_menu_inner .item.file .file_list .panel .panel-body.type_file ul li .file_list.googledrive, .page_menu .page_menu_inner .item.file ul li .file_list .panel .panel-body.type_file .file_list.text, .page_menu .page_menu_inner .item.file .file_list .panel .panel-body.type_file ul li .file_list.text, .page_menu .page_menu_inner .item.file ul li .file_list .panel .panel-body.type_file .file_list.image, .page_menu .page_menu_inner .item.file .file_list .panel .panel-body.type_file ul li .file_list.image, .page_menu .page_menu_inner .item.file ul li .file_list .panel .panel-body.type_file .file_list.list, .page_menu .page_menu_inner .item.file .file_list .panel .panel-body.type_file ul li .file_list.list, .page_menu .page_menu_inner .item.file ul li .file_list .panel .panel-body.type_file .file_list.graph, .page_menu .page_menu_inner .item.file .file_list .panel .panel-body.type_file ul li .file_list.graph, .page_menu .page_menu_inner .item.file ul li .file_list .panel .panel-body.type_file .file_list.dropbox, .page_menu .page_menu_inner .item.file .file_list .panel .panel-body.type_file ul li .file_list.dropbox {
               color: #39865a;
               background: #33c16f; }
@@ -3320,7 +3322,7 @@ header {
         border-radius: 2px;
         float: right;
         width: 400px;
-        border: 1px solid #e5e5e5;
+        border: 1px solid #eeeeee;
         padding: 10px 10px;
         margin-bottom: 20px; }
       .modal .modal-dialog .modal-content .modal-body .input_dot .close_btn {
@@ -3353,7 +3355,7 @@ header {
           -webkit-appearance: none;
           -moz-appearance: none;
           appearance: none;
-          border: 1px solid #e5e5e5;
+          border: 1px solid #eeeeee;
           padding: 12px 10px 10px 13px;
           margin: 0 0 0 0;
           z-index: 100; }
@@ -3564,7 +3566,7 @@ header {
       width: 100%;
       height: 95px;
       margin-bottom: 15px;
-      border: 1px solid #e5e5e5;
+      border: 1px solid #eeeeee;
       background: #fff;
       resize: none;
       outline: none;
@@ -4131,7 +4133,7 @@ footer.front {
     padding-top: 60px;
     display: table-cell;
     text-align: center;
-    border-right: 1px solid #e5e5e5; }
+    border-right: 1px solid #eeeeee; }
     #add_file .modal-body .local_up a, #add_file .modal-body .web_up a, #add_file2 .modal-body .local_up a, #add_file2 .modal-body .web_up a, #add_file3 .modal-body .local_up a, #add_file3 .modal-body .web_up a {
       color: #999999;
       display: block; }
@@ -4162,7 +4164,7 @@ footer.front {
         border-radius: 4px;
         width: 430px;
         margin: 0 10px 30px 0;
-        border: 1px solid #e5e5e5;
+        border: 1px solid #eeeeee;
         background: #ffffff;
         resize: none;
         outline: none;
@@ -4471,7 +4473,7 @@ footer.front {
                 height: 60px;
                 padding: 10px 15px;
                 margin-bottom: 20px;
-                border: 1px solid #e5e5e5;
+                border: 1px solid #eeeeee;
                 resize: none;
                 outline: none; }
               #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .item .footer .comment_entry button {
@@ -5279,7 +5281,7 @@ footer.front {
         margin-bottom: 35px;
         font-weight: bold; }
       .contact dl dd .input_box, .contact dl dd .select_box, .contact dl dd .option_config .configuration .configuration_inner .input_box_pass, .option_config .configuration .configuration_inner .contact dl dd .input_box_pass, .contact dl dd .option_config .configuration .configuration_inner .select_box, .option_config .configuration .configuration_inner .contact dl dd .select_box, .confirm dl dd .input_box, .confirm dl dd .select_box, .confirm dl dd .option_config .configuration .configuration_inner .input_box_pass, .option_config .configuration .configuration_inner .confirm dl dd .input_box_pass, .confirm dl dd .option_config .configuration .configuration_inner .select_box, .option_config .configuration .configuration_inner .confirm dl dd .select_box {
-        border: 1px solid #e5e5e5;
+        border: 1px solid #eeeeee;
         width: 490px;
         padding: 10px;
         margin-bottom: 35px;
@@ -5309,7 +5311,7 @@ footer.front {
             -moz-border-radius: 3px;
             -ms-border-radius: 3px;
             border-radius: 3px;
-            border: 1px solid #e5e5e5;
+            border: 1px solid #eeeeee;
             padding: 10px 10px;
             width: 235px;
             float: left;
@@ -5455,7 +5457,7 @@ footer.front {
       -ms-border-radius: 4px;
       border-radius: 4px;
       position: absolute;
-      border: 1px solid #e5e5e5;
+      border: 1px solid #eeeeee;
       padding: 10px 10px 10px 13px;
       width: 250px;
       z-index: 10; }
@@ -5484,7 +5486,7 @@ footer.front {
     .top_plan .plan_type div {
       display: table-cell;
       position: relative;
-      border-left: 1px solid #e5e5e5;
+      border-left: 1px solid #eeeeee;
       text-align: center;
       padding: 20px;
       height: 420px; }
@@ -5668,7 +5670,7 @@ footer.front {
     /*height: 235px;*/
     padding-bottom: 10px;
     background-color: #fff;
-    border: 1px solid #e5e5e5;
+    border: 1px solid #eeeeee;
     /*-webkit-box-shadow: 0 1px 3px rgba(50,50,50,0.08);
     box-shadow: 0 1px 3px rgba(50,50,50,0.08);*/
     -webkit-border-radius: 4px;
@@ -5773,7 +5775,7 @@ footer.front {
       margin: 0 auto;
       height: 50px;
       /*border: 1px solid $green;*/
-      border: 1px solid #e5e5e5;
+      border: 1px solid #eeeeee;
       /*border: 1px solid #ededf0;
       border-bottom: 1px solid #dcdce0;*/
       vertical-align: top;
@@ -5839,7 +5841,7 @@ footer.front {
           width: 220px;
           margin: 10px 15px;
           padding: 5px;
-          border: 1px solid #e5e5e5; }
+          border: 1px solid #eeeeee; }
         .task .task_create .task_create_inner .task_add_list_member ul li {
           position: relative; }
           .task .task_create .task_create_inner .task_add_list_member ul li .user_image {
@@ -5989,14 +5991,14 @@ input[type="checkbox"] {
       -moz-border-radius: 4;
       -ms-border-radius: 4;
       border-radius: 4;
-      margin: 0 0 5px 0;
+      margin: 0 0 6px 0;
       line-height: 50px;
       height: 50px;
       background: #fff;
       clear: both;
       /*border: 1px solid #ededf0;
       border-bottom: 1px solid #dcdce0;*/
-      border: 1px solid #e5e5e5;
+      border: 1px solid #eeeeee;
       box-shadow: none;
       position: relative;
       color: #999999; }
@@ -6055,7 +6057,7 @@ input[type="checkbox"] {
             width: 220px;
             margin: 10px 15px;
             padding: 5px;
-            border: 1px solid #e5e5e5; }
+            border: 1px solid #eeeeee; }
           .task_replacement .task_people .task_list.made .task_add_member ul li {
             position: relative; }
             .task_replacement .task_people .task_list.made .task_add_member ul li .user_image {
@@ -6107,7 +6109,7 @@ input[type="checkbox"] {
           font-size: 11px;
           font-size: 1.1rem;
           color: #555555;
-          border: 1px solid #e5e5e5;
+          border: 1px solid #eeeeee;
           background: #f9f9f9;
           height: 30px;
           line-height: 30px;
@@ -6145,8 +6147,8 @@ input[type="checkbox"] {
       .task_replacement .task_people .task_list .task_title {
         color: #000;
         width: 70%;
-        font-size: 13px;
-        font-size: 1.3rem;
+        font-size: 14px;
+        font-size: 1.4rem;
         font-weight: normal;
         overflow: hidden;
         white-space: nowrap;
@@ -6252,7 +6254,7 @@ input[type="checkbox"] {
     width: 220px;
     margin: 10px 15px;
     padding: 5px;
-    border: 1px solid #e5e5e5; }
+    border: 1px solid #eeeeee; }
   .calendar .ui-datepicker {
     margin: 0 auto;
     width: 220px; }
@@ -6273,7 +6275,7 @@ input[type="checkbox"] {
   .calendar .ui-datepicker-inline {
     position: relative; }
     .calendar .ui-datepicker-inline .ui-datepicker-calendar thead {
-      border-bottom: 1px solid #e5e5e5; }
+      border-bottom: 1px solid #eeeeee; }
     .calendar .ui-datepicker-inline .ui-datepicker-calendar tbody tr:first-child span {
       padding-top: 10px; }
     .calendar .ui-datepicker-inline .ui-widget-header {
@@ -6371,7 +6373,7 @@ input[type="checkbox"] {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
-    border: 1px solid #e5e5e5;
+    border: 1px solid #eeeeee;
     padding: 5px 10px;
     z-index: 100; }
     .select_box select:focus {
@@ -6410,7 +6412,7 @@ input[type="checkbox"] {
 
 .task_add_time_footer {
   position: relative;
-  border-top: 1px solid #e5e5e5;
+  border-top: 1px solid #eeeeee;
   height: 36px; }
   .task_add_time_footer .btn_cancel {
     position: absolute;
@@ -6441,7 +6443,7 @@ input[type="checkbox"] {
     width: 220px;
     margin: 10px 15px;
     padding: 5px;
-    border: 1px solid #e5e5e5; }
+    border: 1px solid #eeeeee; }
   .task_add_requester ul li, .task_add_worker ul li {
     position: relative; }
     .task_add_requester ul li .user_image, .task_add_worker ul li .user_image {
@@ -6738,7 +6740,7 @@ input[type="checkbox"] {
       .note .note_edit .note_comment .comment_entry {
         margin: 0 auto;
         padding: 20px 0;
-        border-top: 1px solid #e5e5e5; }
+        border-top: 1px solid #eeeeee; }
         .note .note_edit .note_comment .comment_entry textarea {
           -webkit-border-radius: 4px;
           -moz-border-radius: 4px;
@@ -6748,7 +6750,7 @@ input[type="checkbox"] {
           height: 60px;
           padding: 10px 10px;
           margin-bottom: 15px;
-          border: 1px solid #e5e5e5;
+          border: 1px solid #eeeeee;
           background: #fff;
           resize: none;
           outline: none;
@@ -6799,7 +6801,7 @@ input[type="checkbox"] {
   .editable hr {
     width: 100%;
     margin: 30px auto 35px auto;
-    border-top: 1px solid #e5e5e5; }
+    border-top: 1px solid #eeeeee; }
   .editable blockquote {
     font-size: 14px;
     font-size: 1.4rem;
@@ -6854,7 +6856,7 @@ input[type="checkbox"] {
   .editable_lock hr {
     width: 100%;
     margin: 30px auto 35px auto;
-    border-top: 1px solid #e5e5e5; }
+    border-top: 1px solid #eeeeee; }
   .editable_lock blockquote {
     font-size: 14px;
     font-size: 1.4rem;
@@ -7182,7 +7184,7 @@ input[type="checkbox"] {
       margin-bottom: 10px;
       clear: both; }
     .option_config .configuration .configuration_inner .input_box, .option_config .configuration .configuration_inner .input_box_pass, .option_config .configuration .configuration_inner .select_box {
-      border: 1px solid #e5e5e5;
+      border: 1px solid #eeeeee;
       width: 490px;
       padding: 10px;
       margin-bottom: 35px;
@@ -7208,7 +7210,7 @@ input[type="checkbox"] {
           -moz-border-radius: 3px;
           -ms-border-radius: 3px;
           border-radius: 3px;
-          border: 1px solid #e5e5e5;
+          border: 1px solid #eeeeee;
           padding: 10px 10px;
           width: 235px;
           float: left;
@@ -7303,7 +7305,7 @@ input[type="checkbox"] {
     width: 120px;
     height: 35px;
     line-height: 35px;
-    border: 1px solid #e5e5e5;
+    border: 1px solid #eeeeee;
     text-align: center;
     color: #999999; }
     .connect_list .connect_list_btn.connect {
@@ -7426,7 +7428,7 @@ input[type="checkbox"] {
     -ms-border-radius: 4px;
     border-radius: 4px;
     position: absolute;
-    border: 1px solid #e5e5e5;
+    border: 1px solid #eeeeee;
     padding: 10px;
     width: 200px;
     z-index: 10; }
@@ -7449,14 +7451,14 @@ input[type="checkbox"] {
   -ms-border-radius: 4px;
   border-radius: 4px;
   margin-top: 50px;
-  border: 1px solid #e5e5e5;
+  border: 1px solid #eeeeee;
   width: 100%;
   display: table;
   table-layout: fixed; }
   .plan .plan_type div {
     display: table-cell;
     position: relative;
-    border-left: 1px solid #e5e5e5;
+    border-left: 1px solid #eeeeee;
     text-align: center;
     padding: 20px;
     height: 380px; }
@@ -7495,7 +7497,7 @@ input[type="checkbox"] {
       margin-left: -40%;
       height: 40px; }
       .plan .plan_type div button.yourgrade {
-        border: 1px solid #e5e5e5;
+        border: 1px solid #eeeeee;
         background: #f9f9f9; }
       .plan .plan_type div button.upgrade {
         background: #3A87BC;
@@ -7539,7 +7541,7 @@ input[type="checkbox"] {
       margin: 20px 0;
       padding-bottom: 20px;
       font-weight: bold;
-      border-bottom: 1px solid #e5e5e5; }
+      border-bottom: 1px solid #eeeeee; }
     .plan .plan_type_super li .option, .plan .plan_type_super li .carousel .carousel-inner .item .modal-header .download, .carousel .carousel-inner .item .modal-header .plan .plan_type_super li .download, .plan .plan_type_super li .carousel .carousel-inner .item .modal-header .like, .carousel .carousel-inner .item .modal-header .plan .plan_type_super li .like {
       font-size: 12px;
       font-size: 1.2rem;
@@ -7734,7 +7736,7 @@ h3.profile_title {
     #cancellation_box .modal-body.white .cancellation_contents .data {
       font-weight: bold;
       padding-bottom: 10px;
-      border-bottom: 1px solid #e5e5e5;
+      border-bottom: 1px solid #eeeeee;
       margin-bottom: 10px; }
     #cancellation_box .modal-body.white .cancellation_contents .data_list {
       padding-left: 20px;
@@ -7754,7 +7756,7 @@ h3.profile_title {
       -moz-border-radius: 2px;
       -ms-border-radius: 2px;
       border-radius: 2px;
-      border: 1px solid #e5e5e5;
+      border: 1px solid #eeeeee;
       padding: 10px;
       width: 426px;
       margin: -15px 0 30px 28px; }
@@ -7763,7 +7765,7 @@ h3.profile_title {
       -moz-border-radius: 2px;
       -ms-border-radius: 2px;
       border-radius: 2px;
-      border: 1px solid #e5e5e5;
+      border: 1px solid #eeeeee;
       width: 100%;
       padding: 10px;
       resize: none;
@@ -7791,7 +7793,7 @@ h3.profile_title {
     #cancellation_box .modal-body.white .cancellation_contents .data {
       font-weight: bold;
       padding-bottom: 10px;
-      border-bottom: 1px solid #e5e5e5;
+      border-bottom: 1px solid #eeeeee;
       margin-bottom: 10px; }
     #cancellation_box .modal-body.white .cancellation_contents .data_list {
       padding-left: 20px;
@@ -7815,5 +7817,5 @@ h3.profile_title {
         #cancellation_box .modal-body.white .cancellation_contents .configuration_btn_box .configuration_btn.cancel {
           display: block;
           background: none;
-          border: 1px solid #e5e5e5;
+          border: 1px solid #eeeeee;
           color: #999999; }
