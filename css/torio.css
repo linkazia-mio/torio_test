@@ -4443,6 +4443,29 @@ footer.front {
             border-top: 1px solid #f5f5f5;
             padding: 35px 0 0 0;
             position: relative; }
+            #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .item .footer .url {
+              font-size: 12px;
+              font-size: 1.2rem;
+              position: relative;
+              color: #999999;
+              font-weight: bold;
+              bottom: 0;
+              left: 0;
+              line-height: 35px;
+              width: 100%;
+              display: block;
+              margin-top: -20px;
+              padding: 0 25px 15px 40px;
+              overflow: hidden;
+              z-index: 100; }
+              #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .item .footer .url i {
+                position: absolute;
+                top: 5px;
+                left: 17px;
+                font-size: 24px;
+                font-size: 2.4rem; }
+              #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .item .footer .url a {
+                color: #999999; }
             #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .item .footer .comment {
               text-align: left;
               padding: 0 25px;
@@ -4491,27 +4514,6 @@ footer.front {
                       font-size: 1.4rem;
                       word-wrap: break-word;
                       color: #000000; }
-              #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .item .footer .comment .url {
-                font-size: 12px;
-                font-size: 1.2rem;
-                position: relative;
-                font-weight: bold;
-                bottom: 0;
-                left: 0;
-                line-height: 35px;
-                width: 100%;
-                display: block;
-                padding: 0 10px 0 35px;
-                overflow: hidden;
-                z-index: 100; }
-                #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .item .footer .comment .url i {
-                  position: absolute;
-                  top: 5px;
-                  left: 8px;
-                  font-size: 24px;
-                  font-size: 2.4rem; }
-                #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .item .footer .comment .url a {
-                  color: #555555; }
             #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .item .footer .comment_entry {
               position: relative; }
               #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .item .footer .comment_entry textarea {
