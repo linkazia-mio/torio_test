@@ -1333,12 +1333,13 @@ header {
   }
   .config {
     position: relative;
-    height: 50px;
+    height: 38px;
     padding: 0 20px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
     /*-webkit-box-shadow: 0 1px 2px rgba(0,0,0,0.1);
     box-shadow: 0 1px 2px rgba(0,0,0,0.1);*/
-    line-height: 50px;
+    line-height: 38px;
+    background: #f9f9f9;
     .title {
       @include fontsize(1.3);
       @include font_eng;
@@ -1362,7 +1363,7 @@ header {
       @include fontsize(2.2);
       color: $white_brack;
       float: left;
-      margin-top: 14px;
+      margin-top: 9px;
       &:hover {
         cursor: pointer;
       }
@@ -1372,7 +1373,7 @@ header {
       color: $white_brack;
       position: absolute;
       right: 93px;
-      top: 13px;
+      top: 7px;
       font-weight: 700;
       &:hover {
         /*color: $yellow;*/
@@ -1436,7 +1437,7 @@ header {
       color: $white_brack;
       position: absolute;
       right: 7px;
-      top: 12px;
+      top: 7px;
       &:hover {
         cursor: pointer;
         .balloon_box_under {
