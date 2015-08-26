@@ -1841,6 +1841,8 @@ header {
       -ms-border-radius: 100px;
       border-radius: 100px;
       font-family: 'Lato','Helvetica neue',Helvetica,Arial,sans-serif;
+      -webkit-font-smoothing: subpixel-antialiased;
+      -moz-osx-font-smoothing: auto;
       font-weight: bold;
       position: absolute;
       text-align: center;
@@ -3937,10 +3939,10 @@ footer.front {
       padding-left: 15px; }
   .file .file_list .panel {
     border: none;
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
-    -ms-border-radius: 3px;
-    border-radius: 3px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    border-radius: 4px;
     /*-webkit-box-shadow: 0 1px 1px rgba(0,0,0,.05);
       box-shadow: 0 1px 1px rgba(0,0,0,.05);
       border: 1px solid $border_gray;*/
@@ -6558,10 +6560,10 @@ input[type="checkbox"] {
     .note .note_edit a {
       color: #2e6b95; }
     .note .note_edit .note_edit_inner {
-      -webkit-border-radius: 3px;
-      -moz-border-radius: 3px;
-      -ms-border-radius: 3px;
-      border-radius: 3px;
+      -webkit-border-radius: 4px;
+      -moz-border-radius: 4px;
+      -ms-border-radius: 4px;
+      border-radius: 4px;
       position: relative;
       z-index: 10;
       min-width: 450px;
@@ -6575,10 +6577,10 @@ input[type="checkbox"] {
       box-shadow: none;
       background: #fff; }
       .note .note_edit .note_edit_inner.note_edit_inner_comment {
-        -webkit-border-radius: 3px 3px 0 0;
-        -moz-border-radius: 3px 3px 0 0;
-        -ms-border-radius: 3px 3px 0 0;
-        border-radius: 3px 3px 0 0;
+        -webkit-border-radius: 4px 4px 0 0;
+        -moz-border-radius: 4px 4px 0 0;
+        -ms-border-radius: 4px 4px 0 0;
+        border-radius: 4px 4px 0 0;
         border: 1px solid #ededf0;
         border-bottom: 1px solid #dcdce0; }
         .note .note_edit .note_edit_inner.note_edit_inner_comment.no_border {
@@ -6713,10 +6715,10 @@ input[type="checkbox"] {
         bottom: 20px;
         color: #999999; }
       .note .note_edit .note_edit_inner .editing {
-        -webkit-border-radius: 3px 3px 0 0;
-        -moz-border-radius: 3px 3px 0 0;
-        -ms-border-radius: 3px 3px 0 0;
-        border-radius: 3px 3px 0 0;
+        -webkit-border-radius: 4px 4px 0 0;
+        -moz-border-radius: 4px 4px 0 0;
+        -ms-border-radius: 4px 4px 0 0;
+        border-radius: 4px 4px 0 0;
         position: relative;
         background: #4ad337;
         color: #fff;
@@ -6729,10 +6731,10 @@ input[type="checkbox"] {
           line-height: 28px;
           display: inline-block; }
     .note .note_edit .note_comment {
-      -webkit-border-radius: 0 0 3px 3px;
-      -moz-border-radius: 0 0 3px 3px;
-      -ms-border-radius: 0 0 3px 3px;
-      border-radius: 0 0 3px 3px;
+      -webkit-border-radius: 0 0 4px 4px;
+      -moz-border-radius: 0 0 4px 4px;
+      -ms-border-radius: 0 0 4px 4px;
+      border-radius: 0 0 4px 4px;
       display: none;
       background: #f9f9f9;
       text-align: left;

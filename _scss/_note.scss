@@ -22,7 +22,7 @@
       color: $green;
     }
     .note_edit_inner {
-      @include border_radius(3px);
+      @include border_radius(4px);
       position: relative;
       z-index: 10;
       min-width: 450px;
@@ -36,7 +36,7 @@
       box-shadow: none;
       background: #fff;
       &.note_edit_inner_comment {
-        @include border_radius(3px 3px 0 0);
+        @include border_radius(4px 4px 0 0);
         border: 1px solid #ededf0;
         border-bottom: 1px solid #dcdce0;
         &.no_border {
@@ -200,7 +200,7 @@
         color: $white_brack;
       }
       .editing {
-        @include border_radius(3px 3px 0 0);
+        @include border_radius(4px 4px 0 0);
         position: relative;
         background: #4ad337;
         color: #fff;
@@ -215,7 +215,7 @@
       }
     }
     .note_comment {
-      @include border_radius(0 0 3px 3px);
+      @include border_radius(0 0 4px 4px);
       display: none;
       background: $white_gray;
       text-align: left;

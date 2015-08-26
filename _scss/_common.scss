@@ -850,6 +850,7 @@ header {
         @include fontsize(1.1);
         @include border_radius(100px);
         @include font_eng;
+        @include font-smoothing(off);
         font-weight: bold;
         position: absolute;
         text-align: center;
