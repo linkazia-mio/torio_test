@@ -2617,9 +2617,9 @@ header {
             height: 51px;
             text-align: center; }
             .page_menu .page_menu_inner .item.file ul li .file_list i {
-              font-size: 40px;
-              font-size: 4rem;
-              line-height: 51px; }
+              font-size: 30px;
+              font-size: 3rem;
+              line-height: 53px; }
             .page_menu .page_menu_inner .item.file ul li .file_list.excel, .page_menu .page_menu_inner .item.file ul li .file_list .panel .panel-body.type_file .file_list.word, .page_menu .page_menu_inner .item.file .file_list .panel .panel-body.type_file ul li .file_list.word, .page_menu .page_menu_inner .item.file ul li .file_list .panel .panel-body.type_file .file_list.powerpoint, .page_menu .page_menu_inner .item.file .file_list .panel .panel-body.type_file ul li .file_list.powerpoint, .page_menu .page_menu_inner .item.file ul li .file_list .panel .panel-body.type_file .file_list.pdf, .page_menu .page_menu_inner .item.file .file_list .panel .panel-body.type_file ul li .file_list.pdf, .page_menu .page_menu_inner .item.file ul li .file_list .panel .panel-body.type_file .file_list.video, .page_menu .page_menu_inner .item.file .file_list .panel .panel-body.type_file ul li .file_list.video, .page_menu .page_menu_inner .item.file ul li .file_list .panel .panel-body.type_file .file_list.googledrive, .page_menu .page_menu_inner .item.file .file_list .panel .panel-body.type_file ul li .file_list.googledrive, .page_menu .page_menu_inner .item.file ul li .file_list .panel .panel-body.type_file .file_list.text, .page_menu .page_menu_inner .item.file .file_list .panel .panel-body.type_file ul li .file_list.text, .page_menu .page_menu_inner .item.file ul li .file_list .panel .panel-body.type_file .file_list.image, .page_menu .page_menu_inner .item.file .file_list .panel .panel-body.type_file ul li .file_list.image, .page_menu .page_menu_inner .item.file ul li .file_list .panel .panel-body.type_file .file_list.list, .page_menu .page_menu_inner .item.file .file_list .panel .panel-body.type_file ul li .file_list.list, .page_menu .page_menu_inner .item.file ul li .file_list .panel .panel-body.type_file .file_list.graph, .page_menu .page_menu_inner .item.file .file_list .panel .panel-body.type_file ul li .file_list.graph, .page_menu .page_menu_inner .item.file ul li .file_list .panel .panel-body.type_file .file_list.dropbox, .page_menu .page_menu_inner .item.file .file_list .panel .panel-body.type_file ul li .file_list.dropbox {
               color: #39865a;
               background: #33c16f; }

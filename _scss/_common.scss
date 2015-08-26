@@ -1705,8 +1705,8 @@ header {
               height: 51px;
               text-align: center;
               i {
-                @include fontsize(4.0);
-                line-height: 51px;
+                @include fontsize(3.0);
+                line-height: 53px;
               }
               &.excel {
                 color: #39865a;
