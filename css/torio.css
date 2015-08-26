@@ -2257,7 +2257,7 @@ header {
 .page_menu {
   position: relative;
   float: left;
-  width: 320px;
+  width: 340px;
   height: 100%;
   margin-top: 50px;
   background: #fff;
@@ -2741,7 +2741,7 @@ header {
       color: white; }
     .page_menu .page_menu_footer .add_page {
       width: 280px;
-      left: 9px;
+      left: 6%;
       top: -140px;
       padding-top: 3px;
       z-index: 9999; }
@@ -2850,7 +2850,7 @@ header {
       font-weight: bold;
       display: inline-block;
       line-height: 28px;
-      letter-spacing: 0.08em; }
+      letter-spacing: 0.05em; }
     .detail .title p, .detail_public .title p {
       font-size: 26px;
       font-size: 2.6rem;
@@ -4462,6 +4462,27 @@ footer.front {
                       font-size: 1.4rem;
                       word-wrap: break-word;
                       color: #000000; }
+              #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .item .footer .comment .url {
+                font-size: 12px;
+                font-size: 1.2rem;
+                font-weight: bold;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                line-height: 35px;
+                width: 100%;
+                display: block;
+                padding: 0 10px 0 35px;
+                overflow: hidden;
+                z-index: 100; }
+                #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .item .footer .comment .url i {
+                  position: absolute;
+                  bottom: 5px;
+                  left: 8px;
+                  font-size: 24px;
+                  font-size: 2.4rem; }
+                #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .item .footer .comment .url a {
+                  color: #555555; }
             #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .item .footer .comment_entry {
               position: relative; }
               #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .item .footer .comment_entry textarea {
@@ -5773,13 +5794,13 @@ footer.front {
       border-radius: 4px;
       position: relative;
       margin: 0 auto;
-      height: 50px;
+      height: 53px;
       /*border: 1px solid $green;*/
       border: 1px solid #eeeeee;
       /*border: 1px solid #ededf0;
       border-bottom: 1px solid #dcdce0;*/
       vertical-align: top;
-      line-height: 26px;
+      line-height: 29px;
       padding: 10px 15px;
       background: #fff;
       color: #999999;
@@ -5797,8 +5818,9 @@ footer.front {
         font-size: 26px;
         font-size: 2.6rem;
         position: absolute;
-        left: 12px;
-        top: 12px; }
+        left: 13px;
+        top: 14px;
+        color: #bbb; }
       .task .task_create .task_create_inner input {
         width: 90%;
         padding-left: 30px;
@@ -5813,8 +5835,8 @@ footer.front {
         font-size: 1.2rem;
         display: none;
         position: absolute;
-        top: 9px;
-        right: 9px;
+        top: 11px;
+        right: 11px;
         width: 100px;
         height: 30px;
         line-height: 30px;
@@ -5873,7 +5895,7 @@ input[type="checkbox"] {
     cursor: pointer;
     float: left;
     width: 18px;
-    margin: 27px 13px 18px 15px;
+    margin: 29px 13px 18px 15px;
     /*通常時の見た目*/
     /*hover時の見た目*/ }
     input[type="checkbox"] + label:before {
@@ -5887,7 +5909,7 @@ input[type="checkbox"] {
       font-family: 'torio_icon';
       width: 20px;
       height: 20px;
-      line-height: 20px;
+      line-height: 18px;
       display: inline-block;
       vertical-align: middle;
       text-align: center;
@@ -5895,7 +5917,7 @@ input[type="checkbox"] {
       color: transparent;
       padding: 0;
       /*border: 1px solid #dddddd;*/
-      border: 1px solid rgba(0, 0, 0, 0.15);
+      border: 2px solid rgba(0, 0, 0, 0.15);
       background: #fff;
       /*background: -webkit-linear-gradient(top, rgba(217,217,215,0), rgba(217,217,215,0.26));
       background: -moz-linear-gradient(top, rgba(217,217,215,0), rgba(217,217,215,0.26));
@@ -5919,6 +5941,7 @@ input[type="checkbox"] {
       font-size: 1.5rem;
       background: #3A87BC;
       border-color: #3595e1;
+      border: 2px solid #3595e1;
       color: #fff; }
 
 /*---------------------------------------------------------------------------------------
@@ -5961,8 +5984,8 @@ input[type="checkbox"] {
       margin-bottom: 15px;
       color: #000; }
     .task_replacement .task_people .finish {
-      font-size: 12px;
-      font-size: 1.2rem;
+      font-size: 14px;
+      font-size: 1.4rem;
       position: relative;
       margin-top: 15px;
       font-weight: normal;
@@ -5979,7 +6002,7 @@ input[type="checkbox"] {
         font-size: 11px;
         font-size: 1.1rem;
         font-weight: normal;
-        padding-left: 20px; }
+        padding-left: 22px; }
     .task_replacement .task_people .number {
       font-size: 11px;
       font-size: 1.1rem;
@@ -5995,8 +6018,8 @@ input[type="checkbox"] {
       -ms-border-radius: 4;
       border-radius: 4;
       margin: 0 0 6px 0;
-      line-height: 52px;
-      height: 50px;
+      line-height: 55px;
+      height: 53px;
       background: #fff;
       clear: both;
       /*border: 1px solid #ededf0;
@@ -6018,16 +6041,16 @@ input[type="checkbox"] {
           .task_replacement .task_people .task_list.important input[type="checkbox"] + label {
             /*通常時の見た目*/ }
             .task_replacement .task_people .task_list.important input[type="checkbox"] + label:before {
-              border: 1px solid #ed6d44;
+              border: 2px solid #f3b9a9;
               background: #fbeceb; }
           .task_replacement .task_people .task_list.important input[type="checkbox"]:checked + label::before {
-            background: #ff3366;
-            border-color: #ed6d44; }
+            background: #b3312d;
+            border: 2px solid #b3312d; }
       .task_replacement .task_people .task_list.finished {
         background: #EEE; }
       .task_replacement .task_people .task_list.made {
         height: auto;
-        min-height: 50px; }
+        min-height: 53px; }
         .task_replacement .task_people .task_list.made .task_input {
           height: 35px;
           margin-bottom: -18px; }
@@ -6037,7 +6060,7 @@ input[type="checkbox"] {
           height: 35px;
           overflow: hidden;
           outline: none;
-          padding: 16px 0 0 0;
+          padding: 20px 0 0 0;
           line-height: 1.5;
           font-weight: normal;
           /*resize: vertical;*/
@@ -6089,7 +6112,7 @@ input[type="checkbox"] {
         -ms-border-radius: 4px;
         border-radius: 4px;
         position: absolute;
-        right: 10px;
+        right: 11px;
         bottom: 11px;
         line-height: 35px;
         width: 100px;
@@ -6103,7 +6126,7 @@ input[type="checkbox"] {
           filter: alpha(opacity=80); }
       .task_replacement .task_people .task_list .time_create, .task_replacement .task_people .task_list .task_member {
         position: absolute;
-        right: 135px;
+        right: 125px;
         bottom: 16px; }
         .task_replacement .task_people .task_list .time_create.configured, .task_replacement .task_people .task_list .configured.task_member {
           -webkit-border-radius: 4px;
@@ -6130,7 +6153,7 @@ input[type="checkbox"] {
           font-size: 2.4rem;
           cursor: pointer; }
       .task_replacement .task_people .task_list .task_member {
-        right: 180px;
+        right: 163px;
         line-height: 30px; }
         .task_replacement .task_people .task_list .task_member.configured {
           line-height: 28px;
@@ -6206,10 +6229,10 @@ input[type="checkbox"] {
           font-family: 'Lato','Helvetica neue',Helvetica,Arial,sans-serif; }
           .task_replacement .task_people .task_list .task_icon_box .time i {
             position: absolute;
-            top: 14px;
+            top: 17px;
             left: 0; }
           .task_replacement .task_people .task_list .task_icon_box .time.caution {
-            color: #ff3366; }
+            color: #b3312d; }
         .task_replacement .task_people .task_list .task_icon_box .comment {
           padding-left: 20px;
           font-weight: normal;
@@ -6221,7 +6244,7 @@ input[type="checkbox"] {
           font-family: 'Lato','Helvetica neue',Helvetica,Arial,sans-serif; }
           .task_replacement .task_people .task_list .task_icon_box .comment i {
             position: absolute;
-            top: 14px;
+            top: 17px;
             left: 0; }
         .task_replacement .task_people .task_list .task_icon_box .user_image {
           position: static; }

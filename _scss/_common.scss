@@ -1320,7 +1320,7 @@ header {
 .page_menu {
   position: relative;
   float: left;
-  width: 320px;
+  width: 340px;
   height: 100%;
   margin-top: 50px;
   background: #fff;
@@ -1873,7 +1873,7 @@ header {
     }
     .add_page {
       width: 280px;
-      left: 9px;
+      left: 6%;
       top: -140px;
       padding-top: 3px;
       z-index: 9999;
@@ -2001,7 +2001,7 @@ header {
       font-weight: bold;
       display: inline-block;
       line-height: 28px;
-      letter-spacing: 0.08em;
+      letter-spacing: 0.05em;
     }
     p {
       @include fontsize(2.6);

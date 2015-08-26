@@ -7,13 +7,13 @@
       @include border_radius(4px);
       position: relative;
       margin: 0 auto;
-      height: 50px;
+      height: 53px;
       /*border: 1px solid $green;*/
       border: 1px solid $border_gray;
       /*border: 1px solid #ededf0;
       border-bottom: 1px solid #dcdce0;*/
       vertical-align: top;
-      line-height: 26px;
+      line-height: 29px;
       padding: 10px 15px;
       background: #fff;
       color: $white_brack;
@@ -32,8 +32,9 @@
       i {
         @include fontsize(2.6);
         position: absolute;
-        left: 12px;
-        top: 12px;
+        left: 13px;
+        top: 14px;
+        color: #bbb;
       }
       input {
         width: 90%;
@@ -46,8 +47,8 @@
         @include fontsize(1.2);
         display: none;
         position: absolute;
-        top: 9px;
-        right: 9px;
+        top: 11px;
+        right: 11px;
         width: 100px;
         height: 30px;
         line-height: 30px;
@@ -109,7 +110,7 @@ input[type="checkbox"] {
     cursor: pointer;
     float: left;
     width: 18px;
-    margin: 27px 13px 18px 15px;
+    margin: 29px 13px 18px 15px;
     /*通常時の見た目*/
     &:before {
       @include fontsize(3.0);
@@ -118,7 +119,7 @@ input[type="checkbox"] {
       font-family: 'torio_icon';
       width: 20px;
       height: 20px;
-      line-height: 20px;
+      line-height: 18px;
       display: inline-block;
       vertical-align: middle;
       text-align: center;
@@ -126,7 +127,7 @@ input[type="checkbox"] {
       color: transparent;
       padding: 0;
       /*border: 1px solid #dddddd;*/
-      border: 1px solid rgba(0,0,0,0.15);
+      border: 2px solid rgba(0,0,0,0.15);
       background: #fff;
       /*background: -webkit-linear-gradient(top, rgba(217,217,215,0), rgba(217,217,215,0.26));
       background: -moz-linear-gradient(top, rgba(217,217,215,0), rgba(217,217,215,0.26));
@@ -155,6 +156,7 @@ input[type="checkbox"] {
       @include fontsize(1.5);
       background: $torio_green;
       border-color: $blue;
+      border: 2px solid $blue;
       color: #fff;
     }
   }
@@ -204,7 +206,7 @@ input[type="checkbox"] {
       color: #000;
     }
     .finish {
-      @include fontsize(1.2);
+      @include fontsize(1.4);
       position: relative;
       margin-top: 15px;
       font-weight: normal;
@@ -219,7 +221,7 @@ input[type="checkbox"] {
       span {
         @include fontsize(1.1);
         font-weight: normal;
-        padding-left: 20px;
+        padding-left: 22px;
       }
     }
     .number {
@@ -235,8 +237,8 @@ input[type="checkbox"] {
     .task_list {
       @include border_radius(4);
       margin: 0 0 6px 0;
-      line-height: 52px;
-      height: 50px;
+      line-height: 55px;
+      height: 53px;
       background: #fff;
       clear: both;
       /*border: 1px solid #ededf0;
@@ -258,15 +260,15 @@ input[type="checkbox"] {
           & + label {
             /*通常時の見た目*/
             &:before {
-              border: 1px solid $red;
+              border: 2px solid #f3b9a9;
               background: $white_red;
             }
           }
           /*checked時の見た目*/
           &:checked + label {
             &::before {
-              background: $dark_red;
-              border-color: $red;
+              background: #b3312d;
+              border: 2px solid #b3312d;
             }
           }
         }
@@ -276,7 +278,7 @@ input[type="checkbox"] {
       }
       &.made {
         height: auto;
-        min-height: 50px;
+        min-height: 53px;
         .task_input {
           height: 35px;
           margin-bottom: -18px;
@@ -287,7 +289,7 @@ input[type="checkbox"] {
           height: 35px;
           overflow: hidden;
           outline: none;
-          padding: 16px 0 0 0;
+          padding: 20px 0 0 0;
           line-height: 1.5;
           font-weight: normal;
           /*resize: vertical;*/
@@ -344,7 +346,7 @@ input[type="checkbox"] {
       .btn_add_task {
         @include border_radius(4px);
         position: absolute;
-        right: 10px;
+        right: 11px;
         bottom: 11px;
         line-height: 35px;
         width: 100px;
@@ -358,7 +360,7 @@ input[type="checkbox"] {
       }
       .time_create {
         position: absolute;
-        right: 135px;
+        right: 125px;
         bottom: 16px;
         &.configured {
           @include border_radius();
@@ -385,7 +387,7 @@ input[type="checkbox"] {
       }
       .task_member {
         @extend .time_create;
-        right: 180px;
+        right: 163px;
         line-height: 30px;
         &.configured {
           line-height: 28px;
@@ -468,11 +470,11 @@ input[type="checkbox"] {
           @include font_eng;
           i {
             position: absolute;
-            top: 14px;
+            top: 17px;
             left: 0;
           }
           &.caution {
-            color: $dark_red;
+            color: #b3312d;
           }
         }
         .comment {
@@ -484,7 +486,7 @@ input[type="checkbox"] {
           @include font_eng;
           i {
             position: absolute;
-            top: 14px;
+            top: 17px;
             left: 0;
           }
         }
