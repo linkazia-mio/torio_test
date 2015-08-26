@@ -384,7 +384,7 @@ window.onload=function(){
         setTimeout(function(){slider.reloadSlider();},200);
       });
 
-      $('.panel').click(function (event) {
+      $('.slide').click(function (event) {
         jQuery('#file_detail').show();
         var slider = jQuery('.file_slide').bxSlider({
           mode: 'fade',
