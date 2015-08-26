@@ -386,7 +386,7 @@
     }
   }
   pre {
-    @include border_radius(0);
+    @include border_radius(4px);
     padding: 10px 20px;
     display: block;
     margin: 0 0 10px;

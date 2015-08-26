@@ -6973,10 +6973,10 @@ input[type="checkbox"] {
     .editable ul li {
       list-style: disc; }
   .editable pre {
-    -webkit-border-radius: 0;
-    -moz-border-radius: 0;
-    -ms-border-radius: 0;
-    border-radius: 0;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    border-radius: 4px;
     padding: 10px 20px;
     display: block;
     margin: 0 0 10px;
