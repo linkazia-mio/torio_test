@@ -288,6 +288,10 @@ window.onload=function(){
       $('#cancellation_second').hide();
       event.stopPropagation();
     });
+    //file like
+    $('.info .like').click(function (event) {
+      $(this).toggleClass('active');
+    });
 
     //カレンダー
     $(function() {
