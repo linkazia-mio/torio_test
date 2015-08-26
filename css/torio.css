@@ -2464,12 +2464,13 @@ header {
       background: #FFF;
       color: #000; }
       .page_menu .page_menu_inner .item:hover {
-        background: #f9f9f9;
-        /*.text,ul{
-          color: #000;
-        }*/ }
+        background: #f9f9f9; }
         .page_menu .page_menu_inner .item:hover .check {
           border-bottom: 7px solid #f9f9f9; }
+        .page_menu .page_menu_inner .item:hover .text, .page_menu .page_menu_inner .item:hover ul {
+          color: #000;
+          -webkit-font-smoothing: antialiased;
+          -moz-osx-font-smoothing: grayscale; }
       .page_menu .page_menu_inner .item.selected {
         /*border: solid 1px rgba(62,136,186,0.7);*/
         border: solid 2px #2aaef5;
@@ -2590,7 +2591,8 @@ header {
           height: 52px;
           line-height: 1.5;
           overflow: hidden;
-          text-overflow: ellipsis; }
+          text-overflow: ellipsis;
+          color: #000; }
           .page_menu .page_menu_inner .item.note .text::after {
             content: "…"; }
           .page_menu .page_menu_inner .item.note .text:hover {
@@ -2602,7 +2604,8 @@ header {
         text-overflow: ellipsis; }
         .page_menu .page_menu_inner .item.task ul li {
           margin-bottom: 2px;
-          width: 100%; }
+          width: 100%;
+          color: #000; }
           .page_menu .page_menu_inner .item.task ul li .name {
             float: left;
             display: block;
