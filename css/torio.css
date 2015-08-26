@@ -2115,7 +2115,8 @@ header {
             content: "";
             width: 7px;
             height: 7px;
-            background: #2aaef5; }
+            background: #2aaef5;
+            box-shadow: 0 0 4px rgba(53, 175, 242, 0.6); }
         .global_menu .global_menu_inner ul li a.selected {
           background: #3A87BC;
           color: #fff;
@@ -2452,26 +2453,36 @@ header {
           border: 8px solid transparent;
           border-bottom-color: #fff; }
   .page_menu .page_menu_inner {
-    overflow: hidden;
-    width: 100%; }
+    width: 100%;
+    overflow: hidden; }
     .page_menu .page_menu_inner .item {
       font-size: 13px;
       font-size: 1.3rem;
       position: relative;
       padding: 20px 15px 20px 20px;
-      border-bottom: 1px solid #f9f9f9;
+      border-bottom: 1px solid #f2f2f2;
       background: #FFF;
       color: #000; }
       .page_menu .page_menu_inner .item:hover {
-        background: #f9f9f9; }
+        background: #f9f9f9;
+        /*.text,ul{
+          color: #000;
+        }*/ }
         .page_menu .page_menu_inner .item:hover .check {
           border-bottom: 7px solid #f9f9f9; }
-        .page_menu .page_menu_inner .item:hover .text, .page_menu .page_menu_inner .item:hover ul {
-          color: #000;
-          -webkit-font-smoothing: subpixel-antialiased;
-          -moz-osx-font-smoothing: auto; }
       .page_menu .page_menu_inner .item.selected {
-        background: #e2f2fd;
+        /*border: solid 1px rgba(62,136,186,0.7);*/
+        border: solid 2px #2aaef5;
+        /*background-color: rgba(255,255,255,0.05);
+        box-shadow: 0 0 4px rgba(53,175,242,0.6);*/
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        -ms-border-radius: 3px;
+        border-radius: 3px;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-top: 0px;
+        z-index: 100;
         /*.title,.text,ul {
           color: #fff;
           &:hover{
@@ -2487,7 +2498,16 @@ header {
           }
         }*/ }
         .page_menu .page_menu_inner .item.selected .check {
-          border-bottom: 7px solid #3A87BC; }
+          position: absolute;
+          right: 16px;
+          top: 0;
+          width: 0;
+          height: 0;
+          border-top: 12px solid #ff3366;
+          border-right: 6px solid #ff3366;
+          border-bottom: 5px solid #fff;
+          border-left: 6px solid #ff3366;
+          background: none; }
       .page_menu .page_menu_inner .item .check {
         position: absolute;
         right: 16px;
@@ -2522,7 +2542,8 @@ header {
           content: "";
           width: 7px;
           height: 7px;
-          background: #2aaef5; }
+          background: #2aaef5;
+          box-shadow: 0 0 4px rgba(53, 175, 242, 0.6); }
       .page_menu .page_menu_inner .item.file ul {
         margin: 0;
         padding: 3px 0 0 0; }
@@ -2535,7 +2556,7 @@ header {
             -webkit-box-shadow: 0 1px 2px rgba(0,0,0,0.07);
             -moz-box-shadow: 0 1px 2px rgba(0,0,0,0.07);
             box-shadow: 0 1px 1px rgba(0,0,0,0.1);*/
-          margin: 0 1.7px 0 0;
+          margin: 0 1.5px 0 0;
           position: relative; }
           .page_menu .page_menu_inner .item.file ul li ._52d9 {
             /*background-color: rgba(0, 0, 0, .4);*/
