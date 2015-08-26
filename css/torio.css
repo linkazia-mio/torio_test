@@ -2491,7 +2491,7 @@ header {
       font-size: 13px;
       font-size: 1.3rem;
       position: relative;
-      padding: 20px 15px 20px 21px;
+      padding: 16px 15px 16px 21px;
       border-bottom: 1px solid #f2f2f2;
       background: #FFF;
       color: #000; }
@@ -2512,6 +2512,7 @@ header {
         -moz-border-radius: 3px;
         -ms-border-radius: 3px;
         border-radius: 3px;
+        box-sizing: border-box;
         margin-left: 0px;
         margin-right: 0px;
         margin-top: 0px;
@@ -2568,7 +2569,7 @@ header {
           -ms-border-radius: 70px;
           border-radius: 70px;
           position: absolute;
-          top: 31px;
+          top: 27px;
           left: 8px;
           margin-top: -3px;
           z-index: 1000;
@@ -2649,9 +2650,9 @@ header {
             height: 50px;
             vertical-align: middle; }
       .page_menu .page_menu_inner .item.note {
-        height: 125px; }
+        height: 120px; }
         .page_menu .page_menu_inner .item.note .text {
-          height: 52px;
+          height: 55px;
           line-height: 1.5;
           overflow: hidden;
           text-overflow: ellipsis;
@@ -2666,7 +2667,7 @@ header {
         white-space: nowrap;
         text-overflow: ellipsis; }
         .page_menu .page_menu_inner .item.task ul li {
-          margin-bottom: 3px;
+          margin-bottom: 2px;
           width: 100%;
           color: #000; }
           .page_menu .page_menu_inner .item.task ul li .name {

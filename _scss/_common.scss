@@ -1570,7 +1570,7 @@ header {
     .item {
       @include fontsize(1.3);
       position: relative;
-      padding: 20px 15px 20px 21px;
+      padding: 16px 15px 16px 21px;
       border-bottom: 1px solid #f2f2f2;
       background: #FFF;
       color: #000;
@@ -1590,6 +1590,7 @@ header {
         /*background-color: rgba(255,255,255,0.05);
         box-shadow: 0 0 4px rgba(53,175,242,0.6);*/
         @include border_radius(3px);
+        box-sizing: border-box;
         margin-left: 0px;
         margin-right: 0px;
         margin-top: 0px;
@@ -1648,7 +1649,7 @@ header {
             &:before {
               @include border_radius(70px);
               position: absolute;
-              top: 31px;
+              top: 27px;
               left: 8px;
               margin-top: -3px;
               z-index: 1000;
@@ -1748,9 +1749,9 @@ header {
         }
       }
       &.note {
-        height: 125px;
+        height: 120px;
         .text {
-          height: 52px;
+          height: 55px;
           line-height: 1.5;
           overflow: hidden;
           text-overflow: ellipsis;
@@ -1770,7 +1771,7 @@ header {
           white-space: nowrap;
           text-overflow: ellipsis;
           li {
-            margin-bottom: 3px;
+            margin-bottom: 2px;
             width: 100%;
             color:#000;
             .name {
