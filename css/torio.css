@@ -1433,6 +1433,30 @@ header {
         top: -2px;
         left: 35px;
         margin: 0px; }
+    header .global_menu_btn .unread {
+      font-size: 11px;
+      font-size: 1.1rem;
+      -webkit-border-radius: 100px;
+      -moz-border-radius: 100px;
+      -ms-border-radius: 100px;
+      border-radius: 100px;
+      font-family: 'Lato','Helvetica neue',Helvetica,Arial,sans-serif;
+      font-weight: bold;
+      position: absolute;
+      text-align: center;
+      color: #fff;
+      top: 0px;
+      right: -1px;
+      margin-top: 0;
+      z-index: 1000;
+      content: "";
+      width: auto;
+      padding: 0 0 0 0;
+      line-height: 8px;
+      min-width: 8px;
+      min-height: 8px;
+      background: #2aaef5;
+      box-shadow: 0 0 4px rgba(53, 175, 242, 0.6); }
   header .task_box, header .activity_box {
     right: 118px;
     top: 65px; }
@@ -1810,8 +1834,8 @@ header {
           left: 48%;
           margin: -50px; }
     .alart .alart_task p .unread, .alart .activity p .unread {
-      font-size: 10px;
-      font-size: 1rem;
+      font-size: 11px;
+      font-size: 1.1rem;
       -webkit-border-radius: 100px;
       -moz-border-radius: 100px;
       -ms-border-radius: 100px;
@@ -1822,16 +1846,16 @@ header {
       text-align: center;
       color: #fff;
       top: 0px;
-      right: -3px;
+      right: -2px;
       margin-top: -6px;
       z-index: 1000;
       content: "";
       width: auto;
       padding: 0 0 0 0;
       background: #ff3366;
-      line-height: 18px;
-      min-width: 18px;
-      min-height: 18px; }
+      line-height: 20px;
+      min-width: 20px;
+      min-height: 20px; }
   .alart .activity {
     padding-left: 14px; }
     .alart .activity:hover {
