@@ -360,24 +360,26 @@ input[type="checkbox"] {
       }
       .time_create {
         position: absolute;
-        right: 125px;
+        right: 126px;
         bottom: 16px;
         &.configured {
           @include border_radius();
           @include fontsize(1.1);
+          @include font_eng;
           color: $brack;
           border: 1px solid $border_gray;
           background: $white_gray;
-          height: 30px;
-          line-height: 30px;
+          height: 35px;
+          line-height: 33px;
           vertical-align: top;
           right: 120px;
           bottom: 11px;
-          padding: 0 10px 0 28px;
+          padding: 0 10px 0 32px;
           i {
             position: absolute;
             top: 5px;
             left: 5px;
+            color: #bbb;
           }
         }
         .icon-access-time{
@@ -390,8 +392,8 @@ input[type="checkbox"] {
         right: 163px;
         line-height: 30px;
         &.configured {
-          line-height: 28px;
-          right: 239px;
+          line-height: 33px;
+          right: 233px;
           padding: 0 10px 0 32px;
           span {
             padding: 0;
@@ -402,12 +404,12 @@ input[type="checkbox"] {
             line-height: 20px;
             padding: 0;
             display: block;
-            top: 4px;
-            left: 5px;
+            top: 7px;
+            left: 7px;
           }
           .user_image {
-            top: 4px;
-            left: 5px;
+            top: 7px;
+            left: 7px;
             img {
               width: 20px;
               height: 20px;
