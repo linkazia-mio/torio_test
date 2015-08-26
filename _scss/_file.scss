@@ -76,8 +76,8 @@
                 left: 8px;
                 @include fontsize(2.4);
               }
-              a{
-                color: #ffffff;
+              a {
+                color: #fff;
               }
             }
           }
@@ -615,6 +615,28 @@
                         color: #000000;
                       }
                     }
+                  }
+                }
+                .url {
+                  @include fontsize(1.2);
+                  font-weight: bold;
+                  position: absolute;
+                  bottom: 0;
+                  left: 0;
+                  line-height: 35px;
+                  width: 100%;
+                  display: block;
+                  padding: 0 10px 0 35px;
+                  overflow: hidden;
+                  z-index: 100;
+                  i {
+                    position: absolute;
+                    bottom: 5px;
+                    left: 8px;
+                    @include fontsize(2.4);
+                  }
+                  a {
+                    color: $brack;
                   }
                 }
               }

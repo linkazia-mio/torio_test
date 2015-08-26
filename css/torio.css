@@ -3995,7 +3995,7 @@ footer.front {
             font-size: 24px;
             font-size: 2.4rem; }
           .file .file_list .panel .panel-body.type_image .file_img .url a {
-            color: #ffffff; }
+            color: #fff; }
       .file .file_list .panel .panel-body.type_file {
         cursor: pointer; }
         .file .file_list .panel .panel-body.type_file .excel, .file .file_list .panel .panel-body.type_file .word, .file .file_list .panel .panel-body.type_file .powerpoint, .file .file_list .panel .panel-body.type_file .pdf, .file .file_list .panel .panel-body.type_file .video, .file .file_list .panel .panel-body.type_file .googledrive, .file .file_list .panel .panel-body.type_file .text, .file .file_list .panel .panel-body.type_file .image, .file .file_list .panel .panel-body.type_file .list, .file .file_list .panel .panel-body.type_file .graph, .file .file_list .panel .panel-body.type_file .dropbox {
