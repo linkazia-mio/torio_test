@@ -649,11 +649,11 @@ window.onload=function(){
   jQuery(function() {
       jQuery( '.global_menu' ).resizable({
           minWidth: 140,
-          maxWidth: 400
+          maxWidth: 300
       });
       jQuery( '.page_menu' ).resizable({
           minWidth: 320,
-          maxWidth: 600
+          maxWidth: 400
       });
       jQuery( '.detail' ).resizable({
       });

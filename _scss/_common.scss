@@ -1742,7 +1742,7 @@ header {
     }
   }
   .page_menu_footer {
-    @include fontsize(4.5);
+    @include fontsize(5.0);
     background: $torio_green;
     color: white;
     display: block;
@@ -1757,7 +1757,7 @@ header {
     -webkit-box-shadow: 0 -1px 0px rgba(0,0,0,0.15),inset 0 1px 0 rgba(255,255,255,0.5);
     box-shadow: 0 -1px 0px rgba(0,0,0,0.15),inset 0 1px 0 rgba(255,255,255,0.5);
     text-align: center;
-    padding-top: 6px;
+    padding-top: 7px;
     cursor: pointer;
     -webkit-transition: all 0.3s ease-in-out;
     -moz-transition: all 0.3s ease-in-out;
