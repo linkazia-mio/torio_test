@@ -2625,19 +2625,16 @@ header {
               line-height: 53px; }
             .page_menu .page_menu_inner .item.file ul li .file_list.excel, .page_menu .page_menu_inner .item.file ul li .file_list .panel .panel-body.type_file .file_list.word, .page_menu .page_menu_inner .item.file .file_list .panel .panel-body.type_file ul li .file_list.word, .page_menu .page_menu_inner .item.file ul li .file_list .panel .panel-body.type_file .file_list.powerpoint, .page_menu .page_menu_inner .item.file .file_list .panel .panel-body.type_file ul li .file_list.powerpoint, .page_menu .page_menu_inner .item.file ul li .file_list .panel .panel-body.type_file .file_list.pdf, .page_menu .page_menu_inner .item.file .file_list .panel .panel-body.type_file ul li .file_list.pdf, .page_menu .page_menu_inner .item.file ul li .file_list .panel .panel-body.type_file .file_list.video, .page_menu .page_menu_inner .item.file .file_list .panel .panel-body.type_file ul li .file_list.video, .page_menu .page_menu_inner .item.file ul li .file_list .panel .panel-body.type_file .file_list.googledrive, .page_menu .page_menu_inner .item.file .file_list .panel .panel-body.type_file ul li .file_list.googledrive, .page_menu .page_menu_inner .item.file ul li .file_list .panel .panel-body.type_file .file_list.text, .page_menu .page_menu_inner .item.file .file_list .panel .panel-body.type_file ul li .file_list.text, .page_menu .page_menu_inner .item.file ul li .file_list .panel .panel-body.type_file .file_list.image, .page_menu .page_menu_inner .item.file .file_list .panel .panel-body.type_file ul li .file_list.image, .page_menu .page_menu_inner .item.file ul li .file_list .panel .panel-body.type_file .file_list.list, .page_menu .page_menu_inner .item.file .file_list .panel .panel-body.type_file ul li .file_list.list, .page_menu .page_menu_inner .item.file ul li .file_list .panel .panel-body.type_file .file_list.graph, .page_menu .page_menu_inner .item.file .file_list .panel .panel-body.type_file ul li .file_list.graph, .page_menu .page_menu_inner .item.file ul li .file_list .panel .panel-body.type_file .file_list.dropbox, .page_menu .page_menu_inner .item.file .file_list .panel .panel-body.type_file ul li .file_list.dropbox {
               color: #39865a;
-              background: #33c16f; }
+              background: #24a35a; }
             .page_menu .page_menu_inner .item.file ul li .file_list.word {
-              color: #127fad;
-              background: #279fd1; }
+              color: #0c4e87;
+              background: #1d6fb5; }
             .page_menu .page_menu_inner .item.file ul li .file_list.powerpoint {
-              color: #b83711;
-              background: #e05d37; }
+              color: #af3417;
+              background: #d14525; }
             .page_menu .page_menu_inner .item.file ul li .file_list.pdf {
-              color: #cf2d3a;
-              background: #ea5d65; }
-            .page_menu .page_menu_inner .item.file ul li .file_list.pdf {
-              color: #cf2d3a;
-              background: #ea5d65; }
+              color: #b92619;
+              background: #e83e2f; }
             .page_menu .page_menu_inner .item.file ul li .file_list.video, .page_menu .page_menu_inner .item.file ul li .file_list.googledrive {
               color: #e3e3e3;
               background: #f5f5f5; }
@@ -4011,16 +4008,16 @@ footer.front {
           text-align: center;
           width: 100%;
           padding: 20% 0;
-          background: #33c16f; }
+          background: #24a35a; }
         .file .file_list .panel .panel-body.type_file .word {
-          color: #127fad;
-          background: #279fd1; }
+          color: #0c4e87;
+          background: #1d6fb5; }
         .file .file_list .panel .panel-body.type_file .powerpoint {
-          color: #b83711;
-          background: #e05d37; }
+          color: #af3417;
+          background: #d14525; }
         .file .file_list .panel .panel-body.type_file .pdf {
-          color: #cf2d3a;
-          background: #ea5d65; }
+          color: #b92619;
+          background: #e83e2f; }
         .file .file_list .panel .panel-body.type_file .video, .file .file_list .panel .panel-body.type_file .googledrive {
           color: #e3e3e3;
           background: #f5f5f5; }
