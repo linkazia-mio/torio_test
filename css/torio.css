@@ -3961,10 +3961,10 @@ footer.front {
           top: 0;
           z-index: 1; }
         .file .file_list .panel .panel-body.type_image .file_img img {
-          -webkit-border-top-left-radius: 2px;
-          -webkit-border-top-right-radius: 2px;
-          -moz-border-radius-topleft: 2px;
-          -moz-border-radius-topright: 2px;
+          -webkit-border-top-left-radius: 4px;
+          -webkit-border-top-right-radius: 4px;
+          -moz-border-radius-topleft: 4px;
+          -moz-border-radius-topright: 4px;
           width: 100%;
           height: auto;
           z-index: 1; }
@@ -4000,10 +4000,10 @@ footer.front {
         .file .file_list .panel .panel-body.type_file .excel, .file .file_list .panel .panel-body.type_file .word, .file .file_list .panel .panel-body.type_file .powerpoint, .file .file_list .panel .panel-body.type_file .pdf, .file .file_list .panel .panel-body.type_file .video, .file .file_list .panel .panel-body.type_file .googledrive, .file .file_list .panel .panel-body.type_file .text, .file .file_list .panel .panel-body.type_file .image, .file .file_list .panel .panel-body.type_file .list, .file .file_list .panel .panel-body.type_file .graph, .file .file_list .panel .panel-body.type_file .dropbox {
           font-size: 80px;
           font-size: 8rem;
-          -webkit-border-top-left-radius: 2px;
-          -webkit-border-top-right-radius: 2px;
-          -moz-border-radius-topleft: 2px;
-          -moz-border-radius-topright: 2px;
+          -webkit-border-top-left-radius: 4px;
+          -webkit-border-top-right-radius: 4px;
+          -moz-border-radius-topleft: 4px;
+          -moz-border-radius-topright: 4px;
           color: #39865a;
           text-align: center;
           width: 100%;
@@ -5983,10 +5983,10 @@ input[type="checkbox"] {
       margin-bottom: 15px;
       color: #000; }
     .task_replacement .task_people .finish {
-      font-size: 14px;
-      font-size: 1.4rem;
+      font-size: 12px;
+      font-size: 1.2rem;
       position: relative;
-      margin-top: 15px;
+      margin-top: 20px;
       font-weight: normal;
       line-height: 20px;
       -webkit-font-smoothing: subpixel-antialiased;
@@ -5998,10 +5998,33 @@ input[type="checkbox"] {
         position: absolute;
         top: 0; }
       .task_replacement .task_people .finish span {
-        font-size: 11px;
-        font-size: 1.1rem;
+        font-size: 12px;
+        font-size: 1.2rem;
         font-weight: normal;
         padding-left: 22px; }
+    .task_replacement .task_people .finish_group {
+      font-size: 12px;
+      font-size: 1.2rem;
+      position: relative;
+      margin-top: 15px;
+      font-weight: normal;
+      line-height: 20px;
+      -webkit-font-smoothing: subpixel-antialiased;
+      -moz-osx-font-smoothing: auto;
+      font-family: 'Lato','Helvetica neue',Helvetica,Arial,sans-serif; }
+      .task_replacement .task_people .finish_group i {
+        font-size: 18px;
+        font-size: 1.8rem;
+        position: absolute;
+        top: 0; }
+      .task_replacement .task_people .finish_group span {
+        font-size: 12px;
+        font-size: 1.2rem;
+        font-weight: normal;
+        padding-left: 22px;
+        padding-right: 3px;
+        color: #000;
+        font-weight: bold; }
     .task_replacement .task_people .number {
       font-size: 11px;
       font-size: 1.1rem;
@@ -6214,7 +6237,7 @@ input[type="checkbox"] {
       .task_replacement .task_people .task_list .task_icon_box {
         position: absolute;
         right: 15px;
-        top: 0; }
+        top: -1px; }
         .task_replacement .task_people .task_list .task_icon_box p {
           display: inline-block;
           position: relative;
@@ -6250,15 +6273,15 @@ input[type="checkbox"] {
         .task_replacement .task_people .task_list .task_icon_box .user_image {
           position: static; }
           .task_replacement .task_people .task_list .task_icon_box .user_image img {
-            height: 25px;
-            width: 25px; }
+            height: 30px;
+            width: 30px; }
         .task_replacement .task_people .task_list .task_icon_box .noimage {
           font-size: 10px;
           font-size: 1rem;
           position: static;
-          width: 25px;
-          height: 25px;
-          line-height: 25px;
+          width: 30px;
+          height: 30px;
+          line-height: 30px;
           text-align: center;
           padding: 0; }
   .task_replacement .dd {

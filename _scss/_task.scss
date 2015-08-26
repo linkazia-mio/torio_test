@@ -206,7 +206,26 @@ input[type="checkbox"] {
       color: #000;
     }
     .finish {
-      @include fontsize(1.4);
+      @include fontsize(1.2);
+      position: relative;
+      margin-top: 20px;
+      font-weight: normal;
+      line-height: 20px;
+      @include font-smoothing(off);
+      @include font_eng;
+      i {
+        @include fontsize(1.8);
+        position: absolute;
+        top: 0;
+      }
+      span {
+        @include fontsize(1.2);
+        font-weight: normal;
+        padding-left: 22px;
+      }
+    }
+    .finish_group {
+      @include fontsize(1.2);
       position: relative;
       margin-top: 15px;
       font-weight: normal;
@@ -219,9 +238,12 @@ input[type="checkbox"] {
         top: 0;
       }
       span {
-        @include fontsize(1.1);
+        @include fontsize(1.2);
         font-weight: normal;
         padding-left: 22px;
+        padding-right: 3px;
+        color: #000;
+        font-weight: bold;
       }
     }
     .number {
@@ -457,7 +479,7 @@ input[type="checkbox"] {
       .task_icon_box {
         position: absolute;
         right: 15px;
-        top: 0;
+        top: -1px;
         p {
           display: inline-block;
           position: relative;
@@ -495,16 +517,16 @@ input[type="checkbox"] {
         .user_image {
           position: static;
           img {
-            height: 25px;
-            width: 25px;
+            height: 30px;
+            width: 30px;
           }
         }
         .noimage {
           @include fontsize(1.0);
           position: static;
-          width: 25px;
-          height: 25px;
-          line-height: 25px;
+          width: 30px;
+          height: 30px;
+          line-height: 30px;
           text-align: center;
           padding: 0;
         }
