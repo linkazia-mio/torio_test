@@ -5717,7 +5717,8 @@ footer.front {
       .task .task_create .task_create_inner input {
         width: 90%;
         padding-left: 30px;
-        padding-top: 3px; }
+        padding-top: 3px;
+        color: #000; }
       .task .task_create .task_create_inner .btn_add_task_create {
         -webkit-border-radius: 100px;
         -moz-border-radius: 100px;
