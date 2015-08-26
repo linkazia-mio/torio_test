@@ -399,8 +399,34 @@ header {
     left: 15px;
     color: $white_brack;
     &:hover {
-      color: $torio_green;
       cursor: pointer;
+      .balloon_box_left {
+        display: block;
+        top: -2px;
+        left: 35px;
+        margin: 0px;
+      }
+    }
+    .unread {
+      @include fontsize(1.1);
+      @include border_radius(100px);
+      @include font_eng;
+      font-weight: bold;
+      position: absolute;
+      text-align: center;
+      color: #fff;
+      top: 0px;
+      right: -1px;
+      margin-top: 0;
+      z-index: 1000;
+      content: "";
+      width: auto;
+      padding: 0 0 0 0;
+      line-height: 8px;
+      min-width: 8px;
+      min-height: 8px;
+      background: #2aaef5;
+      box-shadow: 0 0 4px rgba(53,175,242,0.6);
     }
   }
   .task_box {
@@ -821,7 +847,7 @@ header {
         }
       }
       .unread {
-        @include fontsize(1.0);
+        @include fontsize(1.1);
         @include border_radius(100px);
         @include font_eng;
         font-weight: bold;
@@ -829,16 +855,16 @@ header {
         text-align: center;
         color: #fff;
         top: 0px;
-        right: -3px;
+        right: -2px;
         margin-top: -6px;
         z-index: 1000;
         content: "";
         width: auto;
         padding: 0 0 0 0;
         background: $dark_red;
-        line-height: 18px;
-        min-width: 18px;
-        min-height: 18px;
+        line-height: 20px;
+        min-width: 20px;
+        min-height: 20px;
       }
     }
   }
@@ -1564,7 +1590,7 @@ header {
         margin-left: 0px;
         margin-right: 0px; 
         margin-top: 0px;
-        z-index: 100;
+        z-index: 10;
         .check {
          	position: absolute;
           right: 16px;
@@ -2828,6 +2854,13 @@ header {
 
 .balloon_box_under {
   @include balloon_under;
+  display: none;
+  position: absolute;
+  z-index: 1100;
+}
+
+.balloon_box_left{
+  @include balloon_left;
   display: none;
   position: absolute;
   z-index: 1100;
