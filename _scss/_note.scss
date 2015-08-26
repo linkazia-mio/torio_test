@@ -414,6 +414,7 @@
 ---------------------------------------------------------------------------------------*/
 .editable_lock {
   padding: 15px 70px 70px 70px;
+  @include font-smoothing(off);
   h1 {
     @include fontsize(2.0);
     font-weight: bold;
@@ -448,7 +449,7 @@
     }
   }
   pre {
-    @include border_radius(0);
+    @include border_radius(4px);
     padding: 10px 20px;
     display: block;
     margin: 0 0 10px;
