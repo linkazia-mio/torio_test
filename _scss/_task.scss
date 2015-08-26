@@ -269,6 +269,27 @@ input[type="checkbox"] {
       box-shadow: none;
       position: relative;
       color: $white_brack;
+      .unread {
+        @include fontsize(1.1);
+        @include border_radius(100px);
+        @include font_eng;
+        font-weight: bold;
+        position: absolute;
+        text-align: center;
+        color: #fff;
+        top: 46%;
+        left: -20px;
+        margin-top: 0;
+        z-index: 1000;
+        content: "";
+        width: auto;
+        padding: 0 0 0 0;
+        line-height: 10px;
+        min-width: 10px;
+        min-height: 10px;
+        background: #2aaef5;
+        box-shadow: 0 0 4px rgba(53,175,242,0.6);
+      }
       &.ui-sortable-helper {
         -moz-transform: rotate(-1deg);
         -webkit-transform: rotate(-1deg);
