@@ -1389,7 +1389,7 @@ header {
   border-bottom: 1px solid #e5e5e5;
   width: 100%;
   z-index: 1000;
-  height: 55px;
+  height: 50px;
   position: fixed;
   right: 0;
   top: 0;
@@ -1407,7 +1407,7 @@ header {
         header.front .header_inner .logo img {
           width: 124px; }
   header .header_inner {
-    height: 55px;
+    height: 50px;
     position: relative;
     /*background: #373c4a;*/
     /*border-bottom: 1px solid #4a4f5c;*/
@@ -1423,7 +1423,7 @@ header {
     font-size: 25px;
     font-size: 2.5rem;
     position: absolute;
-    top: 15px;
+    top: 12px;
     left: 15px;
     color: #999999; }
     header .global_menu_btn:hover {
@@ -1776,7 +1776,7 @@ header {
 /*Alart*/
 .alart {
   position: absolute;
-  top: 15px;
+  top: 12px;
   right: 23px;
   width: 190px;
   height: 30px; }
@@ -2228,7 +2228,7 @@ header {
   float: left;
   width: 320px;
   height: 100%;
-  margin-top: 54px;
+  margin-top: 49px;
   background: #fff;
   /*overflow: hidden;*/ }
   .page_menu.ui-widget-content {
@@ -2457,7 +2457,7 @@ header {
       font-size: 13px;
       font-size: 1.3rem;
       position: relative;
-      padding: 22px 15px 20px 20px;
+      padding: 20px 15px 20px 20px;
       border-bottom: 1px solid #f9f9f9;
       background: #FFF;
       color: #000; }
@@ -2741,7 +2741,7 @@ header {
   background: #f9f9f9;
   width: auto;
   height: 100%;
-  margin-top: 55px;
+  margin-top: 50px;
   float: left;
   overflow: hidden; }
   .detail.detail_public, .detail_public.detail_public {
@@ -4420,7 +4420,17 @@ footer.front {
           right: 45px; }
         .carousel .carousel-inner .item .modal-header .like {
           right: 160px; }
-          .carousel .carousel-inner .item .modal-header .like i {
+          .carousel .carousel-inner .item .modal-header .like i:hover {
+            /*color: $yellow;*/
+            cursor: pointer; }
+            .carousel .carousel-inner .item .modal-header .like i:hover .icon-favorite-outline {
+              display: none; }
+            .carousel .carousel-inner .item .modal-header .like i:hover .icon-favorite {
+              display: block; }
+          .carousel .carousel-inner .item .modal-header .like i.active .icon-favorite-outline {
+            display: none; }
+          .carousel .carousel-inner .item .modal-header .like i.active .icon-favorite {
+            display: block;
             color: #db4c3f; }
     .carousel .carousel-inner .modal-footer {
       border-top: 1px solid #f5f5f5;

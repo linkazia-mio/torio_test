@@ -698,7 +698,25 @@
           @extend .download;
           right: 160px;
           i {
-            color: $dark_red;
+            &:hover {
+              /*color: $yellow;*/
+              cursor: pointer;
+              .icon-favorite-outline {
+                display: none;
+              }
+              .icon-favorite {
+                display: block;
+              }
+            }
+            &.active {
+              .icon-favorite-outline {
+                display: none;
+              }
+              .icon-favorite {
+                display: block;
+                color: $dark_red;
+              }
+            }
           }
         }
       }
