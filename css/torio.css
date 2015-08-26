@@ -2482,7 +2482,8 @@ header {
           border-bottom-color: #fff; }
   .page_menu .page_menu_inner {
     width: 100%;
-    overflow: hidden; }
+    overflow: hidden;
+    background: #f9f9f9; }
     .page_menu .page_menu_inner .item {
       font-size: 13px;
       font-size: 1.3rem;
@@ -5906,7 +5907,7 @@ input[type="checkbox"] {
       -moz-border-radius: 4;
       -ms-border-radius: 4;
       border-radius: 4;
-      margin: 0 0 5px 0;
+      margin: 0 0 6px 0;
       line-height: 50px;
       height: 50px;
       background: #fff;
@@ -6062,8 +6063,8 @@ input[type="checkbox"] {
       .task_replacement .task_people .task_list .task_title {
         color: #000;
         width: 70%;
-        font-size: 13px;
-        font-size: 1.3rem;
+        font-size: 14px;
+        font-size: 1.4rem;
         font-weight: normal;
         overflow: hidden;
         white-space: nowrap;
