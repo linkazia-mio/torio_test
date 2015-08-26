@@ -2631,7 +2631,7 @@ header {
         white-space: nowrap;
         text-overflow: ellipsis; }
         .page_menu .page_menu_inner .item.task ul li {
-          margin-bottom: 2px;
+          margin-bottom: 3px;
           width: 100%;
           color: #000; }
           .page_menu .page_menu_inner .item.task ul li .name {
@@ -2646,7 +2646,7 @@ header {
       .page_menu .page_menu_inner .item.task .graph {
         position: absolute;
         right: 16px;
-        bottom: 26px;
+        bottom: 28px;
         height: 50px;
         font-family: 'Lato','Helvetica neue',Helvetica,Arial,sans-serif; }
         .page_menu .page_menu_inner .item.task .graph.green .number p {
