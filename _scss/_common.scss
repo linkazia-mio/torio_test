@@ -1589,7 +1589,7 @@ header {
         box-shadow: 0 0 4px rgba(53,175,242,0.6);*/
         @include border_radius(3px);
         margin-left: 0px;
-        margin-right: 0px; 
+        margin-right: 0px;
         margin-top: 0px;
         z-index: 10;
         .check {
@@ -1674,6 +1674,7 @@ header {
             box-shadow: 0 1px 1px rgba(0,0,0,0.1);*/
             margin: 0 1.5px 0 0;
             position: relative;
+            vertical-align: top;
             ._52d9{
               /*background-color: rgba(0, 0, 0, .4);*/
               background: #1f2532;
@@ -1696,6 +1697,48 @@ header {
                   text-align: center;
                   vertical-align: middle;
                 }
+              }
+            }
+            .file_list {
+              display: block;
+              width: 51px;
+              height: 51px;
+              text-align: center;
+              i {
+                @include fontsize(4.0);
+                line-height: 51px;
+              }
+              &.excel {
+                color: #39865a;
+                background: #33c16f;
+              }
+              &.word {
+                color: #127fad;
+                background: #279fd1;
+              }
+              &.powerpoint {
+                color: #b83711;
+                background: #e05d37;
+              }
+              &.pdf {
+                color: #cf2d3a;
+                background: #ea5d65;
+              }
+              &.pdf {
+                color: #cf2d3a;
+                background: #ea5d65;
+              }
+              &.video,&.googledrive {
+                color: #7a7a7a;
+                background: $border_white_gray;
+              }
+              &.text,&.image,&.list,&.graph {
+                color: #e3e3e3;
+                background: $border_white_gray;
+              }
+              &.dropbox {
+                color: #fff;
+                background: #007ee5;
               }
             }
             img {
