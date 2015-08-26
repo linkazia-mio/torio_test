@@ -5805,10 +5805,10 @@ footer.front {
         padding-top: 3px;
         color: #000; }
       .task .task_create .task_create_inner .btn_add_task_create {
-        -webkit-border-radius: 100px;
-        -moz-border-radius: 100px;
-        -ms-border-radius: 100px;
-        border-radius: 100px;
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+        -ms-border-radius: 4px;
+        border-radius: 4px;
         font-size: 12px;
         font-size: 1.2rem;
         display: none;
@@ -5873,21 +5873,21 @@ input[type="checkbox"] {
     cursor: pointer;
     float: left;
     width: 18px;
-    margin: 27px 10px 18px 15px;
+    margin: 27px 13px 18px 15px;
     /*通常時の見た目*/
     /*hover時の見た目*/ }
     input[type="checkbox"] + label:before {
       font-size: 30px;
       font-size: 3rem;
-      -webkit-border-radius: 3px;
-      -moz-border-radius: 3px;
-      -ms-border-radius: 3px;
-      border-radius: 3px;
+      -webkit-border-radius: 4px;
+      -moz-border-radius: 4px;
+      -ms-border-radius: 4px;
+      border-radius: 4px;
       position: absolute;
       font-family: 'torio_icon';
-      width: 18px;
-      height: 18px;
-      line-height: 18px;
+      width: 20px;
+      height: 20px;
+      line-height: 20px;
       display: inline-block;
       vertical-align: middle;
       text-align: center;
@@ -5895,16 +5895,16 @@ input[type="checkbox"] {
       color: transparent;
       padding: 0;
       /*border: 1px solid #dddddd;*/
-      border: 1px solid rgba(0, 0, 0, 0.26);
-      /*background: #fff;*/
-      background: -webkit-linear-gradient(top, rgba(217, 217, 215, 0), rgba(217, 217, 215, 0.26));
-      background: -moz-linear-gradient(top, rgba(217, 217, 215, 0), rgba(217, 217, 215, 0.26));
-      background: -o-linear-gradient(top, rgba(217, 217, 215, 0), rgba(217, 217, 215, 0.26));
-      background: -ms-linear-gradient(top, rgba(217, 217, 215, 0), rgba(217, 217, 215, 0.26));
-      background: linear-gradient(to bottom, rgba(217, 217, 215, 0), rgba(217, 217, 215, 0.26));
+      border: 1px solid rgba(0, 0, 0, 0.15);
+      background: #fff;
+      /*background: -webkit-linear-gradient(top, rgba(217,217,215,0), rgba(217,217,215,0.26));
+      background: -moz-linear-gradient(top, rgba(217,217,215,0), rgba(217,217,215,0.26));
+      background: -o-linear-gradient(top, rgba(217,217,215,0), rgba(217,217,215,0.26));
+      background: -ms-linear-gradient(top, rgba(217,217,215,0), rgba(217,217,215,0.26));
+      background: linear-gradient(to bottom, rgba(217,217,215,0), rgba(217,217,215,0.26));*/
       margin: -12px 0px 0 0;
-      -webkit-transition: .1s;
-      transition: .1s;
+      -webkit-transition: background-color 0.1s linear 0.1s;
+      transition: background-color 0.1s linear 0.1s;
       -webkit-box-sizing: border-box;
       -moz-box-sizing: border-box;
       box-sizing: border-box; }
@@ -5966,7 +5966,10 @@ input[type="checkbox"] {
       position: relative;
       margin-top: 15px;
       font-weight: normal;
-      line-height: 20px; }
+      line-height: 20px;
+      -webkit-font-smoothing: subpixel-antialiased;
+      -moz-osx-font-smoothing: auto;
+      font-family: 'Lato','Helvetica neue',Helvetica,Arial,sans-serif; }
       .task_replacement .task_people .finish i {
         font-size: 18px;
         font-size: 1.8rem;
@@ -5992,7 +5995,7 @@ input[type="checkbox"] {
       -ms-border-radius: 4;
       border-radius: 4;
       margin: 0 0 6px 0;
-      line-height: 50px;
+      line-height: 52px;
       height: 50px;
       background: #fff;
       clear: both;
@@ -6037,7 +6040,8 @@ input[type="checkbox"] {
           padding: 16px 0 0 0;
           line-height: 1.5;
           font-weight: normal;
-          /*resize: vertical;*/ }
+          /*resize: vertical;*/
+          color: #000; }
           .task_replacement .task_people .task_list.made input[type="textarea"]:focus {
             outline: none; }
         .task_replacement .task_people .task_list.made .task_add_member {
@@ -6080,14 +6084,14 @@ input[type="checkbox"] {
         font-size: 20px;
         font-size: 2rem; }
       .task_replacement .task_people .task_list .btn_add_task {
-        -webkit-border-radius: 3px;
-        -moz-border-radius: 3px;
-        -ms-border-radius: 3px;
-        border-radius: 3px;
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+        -ms-border-radius: 4px;
+        border-radius: 4px;
         position: absolute;
-        right: 15px;
+        right: 10px;
         bottom: 11px;
-        line-height: 30px;
+        line-height: 35px;
         width: 100px;
         color: #fff;
         font-weight: normal;
@@ -6099,7 +6103,7 @@ input[type="checkbox"] {
           filter: alpha(opacity=80); }
       .task_replacement .task_people .task_list .time_create, .task_replacement .task_people .task_list .task_member {
         position: absolute;
-        right: 128px;
+        right: 135px;
         bottom: 16px; }
         .task_replacement .task_people .task_list .time_create.configured, .task_replacement .task_people .task_list .configured.task_member {
           -webkit-border-radius: 4px;
@@ -6121,8 +6125,12 @@ input[type="checkbox"] {
             position: absolute;
             top: 5px;
             left: 5px; }
+        .task_replacement .task_people .task_list .time_create .icon-access-time, .task_replacement .task_people .task_list .task_member .icon-access-time {
+          font-size: 24px;
+          font-size: 2.4rem;
+          cursor: pointer; }
       .task_replacement .task_people .task_list .task_member {
-        right: 162px;
+        right: 180px;
         line-height: 30px; }
         .task_replacement .task_people .task_list .task_member.configured {
           line-height: 28px;
@@ -6144,6 +6152,14 @@ input[type="checkbox"] {
             .task_replacement .task_people .task_list .task_member.configured .user_image img {
               width: 20px;
               height: 20px; }
+        .task_replacement .task_people .task_list .task_member .icon-person-plus {
+          font-size: 24px;
+          font-size: 2.4rem;
+          cursor: pointer; }
+        .task_replacement .task_people .task_list .task_member .icon-person-plus-outline {
+          font-size: 24px;
+          font-size: 2.4rem;
+          cursor: pointer; }
       .task_replacement .task_people .task_list .task_title {
         color: #000;
         width: 70%;
@@ -6180,10 +6196,14 @@ input[type="checkbox"] {
           position: relative;
           margin-left: 10px; }
         .task_replacement .task_people .task_list .task_icon_box .time {
-          padding-left: 20px;
+          padding-left: 23px;
           font-weight: normal;
-          font-size: 11px;
-          font-size: 1.1rem; }
+          font-size: 12px;
+          font-size: 1.2rem;
+          color: #bbb;
+          -webkit-font-smoothing: subpixel-antialiased;
+          -moz-osx-font-smoothing: auto;
+          font-family: 'Lato','Helvetica neue',Helvetica,Arial,sans-serif; }
           .task_replacement .task_people .task_list .task_icon_box .time i {
             position: absolute;
             top: 14px;
@@ -6193,8 +6213,12 @@ input[type="checkbox"] {
         .task_replacement .task_people .task_list .task_icon_box .comment {
           padding-left: 20px;
           font-weight: normal;
-          font-size: 11px;
-          font-size: 1.1rem; }
+          font-size: 12px;
+          font-size: 1.2rem;
+          color: #bbb;
+          -webkit-font-smoothing: subpixel-antialiased;
+          -moz-osx-font-smoothing: auto;
+          font-family: 'Lato','Helvetica neue',Helvetica,Arial,sans-serif; }
           .task_replacement .task_people .task_list .task_icon_box .comment i {
             position: absolute;
             top: 14px;

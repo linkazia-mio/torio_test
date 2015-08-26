@@ -42,7 +42,7 @@
         color: #000;
       }
       .btn_add_task_create {
-        @include border_radius(100px);
+        @include border_radius(4px);
         @include fontsize(1.2);
         display: none;
         position: absolute;
@@ -109,16 +109,16 @@ input[type="checkbox"] {
     cursor: pointer;
     float: left;
     width: 18px;
-    margin: 27px 10px 18px 15px;
+    margin: 27px 13px 18px 15px;
     /*通常時の見た目*/
     &:before {
       @include fontsize(3.0);
-      @include border_radius(3px);
+      @include border_radius(4px);
       position: absolute;
       font-family: 'torio_icon';
-      width: 18px;
-      height: 18px;
-      line-height: 18px;
+      width: 20px;
+      height: 20px;
+      line-height: 20px;
       display: inline-block;
       vertical-align: middle;
       text-align: center;
@@ -126,16 +126,16 @@ input[type="checkbox"] {
       color: transparent;
       padding: 0;
       /*border: 1px solid #dddddd;*/
-      border: 1px solid rgba(0,0,0,0.26);
-      /*background: #fff;*/
-      background: -webkit-linear-gradient(top, rgba(217,217,215,0), rgba(217,217,215,0.26));
+      border: 1px solid rgba(0,0,0,0.15);
+      background: #fff;
+      /*background: -webkit-linear-gradient(top, rgba(217,217,215,0), rgba(217,217,215,0.26));
       background: -moz-linear-gradient(top, rgba(217,217,215,0), rgba(217,217,215,0.26));
       background: -o-linear-gradient(top, rgba(217,217,215,0), rgba(217,217,215,0.26));
       background: -ms-linear-gradient(top, rgba(217,217,215,0), rgba(217,217,215,0.26));
-      background: linear-gradient(to bottom, rgba(217,217,215,0), rgba(217,217,215,0.26));
+      background: linear-gradient(to bottom, rgba(217,217,215,0), rgba(217,217,215,0.26));*/
       margin: -12px 0px 0 0;
-      -webkit-transition: .1s;
-      transition: .1s;
+      -webkit-transition: background-color 0.1s linear 0.1s;
+      transition: background-color 0.1s linear 0.1s;
       -webkit-box-sizing: border-box;
       -moz-box-sizing: border-box;
       box-sizing: border-box;
@@ -209,6 +209,8 @@ input[type="checkbox"] {
       margin-top: 15px;
       font-weight: normal;
       line-height: 20px;
+      @include font-smoothing(off);
+      @include font_eng;
       i {
         @include fontsize(1.8);
         position: absolute;
@@ -233,7 +235,7 @@ input[type="checkbox"] {
     .task_list {
       @include border_radius(4);
       margin: 0 0 6px 0;
-      line-height: 50px;
+      line-height: 52px;
       height: 50px;
       background: #fff;
       clear: both;
@@ -289,6 +291,7 @@ input[type="checkbox"] {
           line-height: 1.5;
           font-weight: normal;
           /*resize: vertical;*/
+          color: #000;
           &:focus {
             outline: none;
           }
@@ -339,11 +342,11 @@ input[type="checkbox"] {
        @include fontsize(2.0);
       }
       .btn_add_task {
-        @include border_radius(3px);
+        @include border_radius(4px);
         position: absolute;
-        right: 15px;
+        right: 10px;
         bottom: 11px;
-        line-height: 30px;
+        line-height: 35px;
         width: 100px;
         color: #fff;
         font-weight: normal;
@@ -355,7 +358,7 @@ input[type="checkbox"] {
       }
       .time_create {
         position: absolute;
-        right: 128px;
+        right: 135px;
         bottom: 16px;
         &.configured {
           @include border_radius();
@@ -375,10 +378,14 @@ input[type="checkbox"] {
             left: 5px;
           }
         }
+        .icon-access-time{
+          @include fontsize(2.4);
+          cursor: pointer;
+        }
       }
       .task_member {
         @extend .time_create;
-        right: 162px;
+        right: 180px;
         line-height: 30px;
         &.configured {
           line-height: 28px;
@@ -404,6 +411,14 @@ input[type="checkbox"] {
               height: 20px;
             }
           }
+        }
+        .icon-person-plus{
+          @include fontsize(2.4);
+          cursor: pointer;
+        }
+        .icon-person-plus-outline{
+          @include fontsize(2.4);
+          cursor: pointer;
         }
       }
       .task_title {
@@ -445,9 +460,12 @@ input[type="checkbox"] {
           margin-left: 10px;
         }
         .time {
-          padding-left: 20px;
+          padding-left: 23px;
           font-weight: normal;
-          @include fontsize(1.1);
+          @include fontsize(1.2);
+          color: #bbb;
+          @include font-smoothing(off);
+          @include font_eng;
           i {
             position: absolute;
             top: 14px;
@@ -460,7 +478,10 @@ input[type="checkbox"] {
         .comment {
           padding-left: 20px;
           font-weight: normal;
-          @include fontsize(1.1);
+          @include fontsize(1.2);
+          color: #bbb;
+          @include font-smoothing(off);
+          @include font_eng;
           i {
             position: absolute;
             top: 14px;
