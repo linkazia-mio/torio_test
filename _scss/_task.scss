@@ -188,7 +188,7 @@ input[type="checkbox"] {
     margin-bottom: 5px;
   }
   .task_people {
-    @include fontsize(1.3);
+    @include fontsize(1.4);
     left: 0;
     padding-bottom: 30px;
     color: $white_brack;
@@ -201,7 +201,7 @@ input[type="checkbox"] {
     }
     .handle {
       margin-bottom: 15px;
-      color: #333;
+      color: #000;
     }
     .finish {
       @include fontsize(1.2);
@@ -250,7 +250,7 @@ input[type="checkbox"] {
         -ms-transform: rotate(-1deg);
       }
       &.important {
-        border: 1px solid #f4c8bf;
+        border: 1px solid #f3b9a9;
         background: $white_red;
         input[type="checkbox"] {
           & + label {

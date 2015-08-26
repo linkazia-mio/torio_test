@@ -12,7 +12,7 @@ html {
   overflow: hidden !important;
 }
 body {
-  font-family:'Lato','ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro','メイリオ',Meiryo,'ＭＳ Ｐゴシック','MS PGothic',sans-serif;
+  font-family:'ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro','メイリオ',Meiryo,'ＭＳ Ｐゴシック','MS PGothic',sans-serif;
   @include fontsize(1.4);
   line-height: 1.6;
   color: $dark_brack;
