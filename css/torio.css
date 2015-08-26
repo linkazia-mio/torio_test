@@ -4255,6 +4255,37 @@ footer.front {
       #file_detail .file_detail_inner .bx-wrapper .bx-viewport {
         min-height: 300px;
         padding-bottom: 35px; }
+        #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .file_icon {
+          text-align: center;
+          height: 200px; }
+          #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .file_icon i {
+            font-size: 100px;
+            font-size: 10rem;
+            line-height: 200px; }
+          #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .file_icon.excel, #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .file .file_list .panel .panel-body.type_file .file_icon.word, .file .file_list .panel .panel-body.type_file #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .file_icon.word, #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .file .file_list .panel .panel-body.type_file .file_icon.powerpoint, .file .file_list .panel .panel-body.type_file #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .file_icon.powerpoint, #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .file .file_list .panel .panel-body.type_file .file_icon.pdf, .file .file_list .panel .panel-body.type_file #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .file_icon.pdf, #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .file .file_list .panel .panel-body.type_file .file_icon.video, .file .file_list .panel .panel-body.type_file #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .file_icon.video, #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .file .file_list .panel .panel-body.type_file .file_icon.googledrive, .file .file_list .panel .panel-body.type_file #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .file_icon.googledrive, #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .file .file_list .panel .panel-body.type_file .file_icon.text, .file .file_list .panel .panel-body.type_file #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .file_icon.text, #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .file .file_list .panel .panel-body.type_file .file_icon.image, .file .file_list .panel .panel-body.type_file #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .file_icon.image, #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .file .file_list .panel .panel-body.type_file .file_icon.list, .file .file_list .panel .panel-body.type_file #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .file_icon.list, #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .file .file_list .panel .panel-body.type_file .file_icon.graph, .file .file_list .panel .panel-body.type_file #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .file_icon.graph, #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .file .file_list .panel .panel-body.type_file .file_icon.dropbox, .file .file_list .panel .panel-body.type_file #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .file_icon.dropbox {
+            color: #39865a;
+            background: #33c16f; }
+          #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .file_icon.word {
+            color: #127fad;
+            background: #279fd1; }
+          #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .file_icon.powerpoint {
+            color: #b83711;
+            background: #e05d37; }
+          #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .file_icon.pdf {
+            color: #cf2d3a;
+            background: #ea5d65; }
+          #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .file_icon.pdf {
+            color: #cf2d3a;
+            background: #ea5d65; }
+          #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .file_icon.video, #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .file_icon.googledrive {
+            color: #7a7a7a;
+            background: #f5f5f5; }
+          #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .file_icon.text, #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .file_icon.image, #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .file_icon.list, #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .file_icon.graph {
+            color: #e3e3e3;
+            background: #f5f5f5; }
+          #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .file_icon.dropbox {
+            color: #fff;
+            background: #007ee5; }
         #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .item {
           width: 100% !important; }
           #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .item .header {

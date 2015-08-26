@@ -385,6 +385,46 @@
         min-height: 300px;
         padding-bottom: 35px;
         .file_slide {
+          .file_icon {
+            text-align: center;
+            height: 200px;
+            i {
+              @include fontsize(10.0);
+              line-height: 200px;
+            }
+            &.excel {
+              color: #39865a;
+              background: #33c16f;
+            }
+            &.word {
+              color: #127fad;
+              background: #279fd1;
+            }
+            &.powerpoint {
+              color: #b83711;
+              background: #e05d37;
+            }
+            &.pdf {
+              color: #cf2d3a;
+              background: #ea5d65;
+            }
+            &.pdf {
+              color: #cf2d3a;
+              background: #ea5d65;
+            }
+            &.video,&.googledrive {
+              color: #7a7a7a;
+              background: $border_white_gray;
+            }
+            &.text,&.image,&.list,&.graph {
+              color: #e3e3e3;
+              background: $border_white_gray;
+            }
+            &.dropbox {
+              color: #fff;
+              background: #007ee5;
+            }
+          }
           .item {
             width: 100% !important;
             .header {
