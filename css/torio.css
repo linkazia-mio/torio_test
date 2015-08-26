@@ -6937,7 +6937,9 @@ input[type="checkbox"] {
  Editable
 ---------------------------------------------------------------------------------------*/
 .editable {
-  padding: 20px 70px 70px 70px; }
+  padding: 20px 70px 70px 70px;
+  -webkit-font-smoothing: subpixel-antialiased;
+  -moz-osx-font-smoothing: auto; }
   .editable:first-child {
     padding: 30px 70px 70px 70px; }
   .editable:focus {

@@ -345,6 +345,7 @@
 ---------------------------------------------------------------------------------------*/
 .editable {
   padding: 20px 70px 70px 70px;
+  @include font-smoothing(off);
   &:first-child{
    padding: 30px 70px 70px 70px;
   }
