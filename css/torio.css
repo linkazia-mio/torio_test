@@ -2257,7 +2257,7 @@ header {
 .page_menu {
   position: relative;
   float: left;
-  width: 340px;
+  width: 330px;
   height: 100%;
   margin-top: 50px;
   background: #fff;
@@ -2489,7 +2489,7 @@ header {
       font-size: 13px;
       font-size: 1.3rem;
       position: relative;
-      padding: 20px 15px 20px 20px;
+      padding: 20px 15px 20px 21px;
       border-bottom: 1px solid #f2f2f2;
       background: #FFF;
       color: #000; }
@@ -2550,11 +2550,11 @@ header {
         border-bottom: 5px solid #fff;
         border-left: 6px solid #ff3366; }
       .page_menu .page_menu_inner .item .title {
-        font-size: 16px;
-        font-size: 1.6rem;
+        font-size: 15px;
+        font-size: 1.5rem;
         color: #333333;
         font-weight: bold;
-        margin-bottom: 5px;
+        margin-bottom: 9px;
         overflow: hidden;
         white-space: nowrap;
         text-overflow: ellipsis; }
@@ -2566,8 +2566,8 @@ header {
           -ms-border-radius: 70px;
           border-radius: 70px;
           position: absolute;
-          top: 32px;
-          left: 7px;
+          top: 31px;
+          left: 8px;
           margin-top: -3px;
           z-index: 1000;
           content: "";
@@ -3933,8 +3933,8 @@ footer.front {
     margin: 0 15px; }
     .file .file_list.row .col-lg-3 {
       width: 250px;
-      padding-right: 10px;
-      padding-left: 10px; }
+      padding-right: 15px;
+      padding-left: 15px; }
   .file .file_list .panel {
     border: none;
     -webkit-border-radius: 3px;
