@@ -874,6 +874,7 @@ header {
       @include fontsize(1.2);
       display: inline-block;
       color: $brack;
+      @include font-smoothing(off);
     }
   }
 }

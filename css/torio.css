@@ -1536,7 +1536,7 @@ header {
                   border: 1px solid #ed6d44;
                   background: #ffebe7; }
               header .task_box .task_active_lists .task_active_list .task_list.important input[type="checkbox"]:checked + label::before, header .activity_box .task_active_lists .task_active_list .task_list.important input[type="checkbox"]:checked + label::before {
-                background: #db4c3f;
+                background: #ff3366;
                 border-color: #ed6d44; }
           header .task_box .task_active_lists .task_active_list .task_list .task_title, header .activity_box .task_active_lists .task_active_list .task_list .task_title {
             color: #000000;
@@ -1824,7 +1824,7 @@ header {
       content: "";
       width: auto;
       padding: 0 0 0 0;
-      background: #db4c3f;
+      background: #ff3366;
       line-height: 18px;
       min-width: 18px;
       min-height: 18px; }
@@ -1854,7 +1854,9 @@ header {
       font-size: 12px;
       font-size: 1.2rem;
       display: inline-block;
-      color: #555555; }
+      color: #555555;
+      -webkit-font-smoothing: subpixel-antialiased;
+      -moz-osx-font-smoothing: auto; }
 
 .front_header_menu .logo {
   float: left;
@@ -2492,10 +2494,10 @@ header {
         top: 0;
         width: 0;
         height: 0;
-        border-top: 12px solid #db4c3f;
-        border-right: 6px solid #db4c3f;
+        border-top: 12px solid #ff3366;
+        border-right: 6px solid #ff3366;
         border-bottom: 5px solid #fff;
-        border-left: 6px solid #db4c3f; }
+        border-left: 6px solid #ff3366; }
       .page_menu .page_menu_inner .item .title {
         font-size: 16px;
         font-size: 1.6rem;
@@ -2783,7 +2785,7 @@ header {
         .detail .title p.bookmark.active .icon-bookmark-outline, .detail_public .title p.bookmark.active .icon-bookmark-outline {
           display: none; }
         .detail .title p.bookmark.active .icon-bookmark, .detail_public .title p.bookmark.active .icon-bookmark {
-          color: #db4c3f;
+          color: #ff3366;
           display: block; }
         .detail .title p.bookmark:hover, .detail_public .title p.bookmark:hover {
           /*color: $dark_red;*/
@@ -3348,7 +3350,7 @@ header {
         border-radius: 2px;
         margin-top: 20px; }
         .modal .modal-dialog .modal-content .modal-body .task_detail .limlt i {
-          color: #db4c3f;
+          color: #ff3366;
           font-size: 24px;
           font-size: 2.4rem;
           position: absolute;
@@ -3930,7 +3932,7 @@ footer.front {
             .file .file_list .panel .panel-body .info p.like.active .icon-favorite-outline {
               display: none; }
             .file .file_list .panel .panel-body .info p.like.active .icon-favorite {
-              color: #db4c3f;
+              color: #ff3366;
               display: block; }
           .file .file_list .panel .panel-body .info p.comment {
             margin: 0 1.5% 0 0; }
@@ -4195,7 +4197,7 @@ footer.front {
                 position: absolute;
                 font-size: 26px;
                 font-size: 2.6rem;
-                color: #db4c3f; }
+                color: #ff3366; }
               #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .item .header .like span {
                 font-family: 'Lato','Helvetica neue',Helvetica,Arial,sans-serif;
                 font-size: 14px;
@@ -4430,7 +4432,7 @@ footer.front {
             display: none; }
           .carousel .carousel-inner .item .modal-header .like i.active .icon-favorite {
             display: block;
-            color: #db4c3f; }
+            color: #ff3366; }
     .carousel .carousel-inner .modal-footer {
       border-top: 1px solid #f5f5f5;
       padding: 20px;
@@ -5814,7 +5816,7 @@ input[type="checkbox"] {
               border: 1px solid #ed6d44;
               background: #ffebe7; }
           .task_replacement .task_people .task_list.important input[type="checkbox"]:checked + label::before {
-            background: #db4c3f;
+            background: #ff3366;
             border-color: #ed6d44; }
       .task_replacement .task_people .task_list.finished {
         background: #EEE; }
@@ -5985,7 +5987,7 @@ input[type="checkbox"] {
             top: 14px;
             left: 0; }
           .task_replacement .task_people .task_list .task_icon_box .time.caution {
-            color: #db4c3f; }
+            color: #ff3366; }
         .task_replacement .task_people .task_list .task_icon_box .comment {
           padding-left: 20px;
           font-weight: normal;
@@ -6388,7 +6390,7 @@ input[type="checkbox"] {
           .note .note_edit .note_edit_inner .like_comment_box .like_btn.active i.icon-favorite-outline {
             display: none; }
           .note .note_edit .note_edit_inner .like_comment_box .like_btn.active i.icon-favorite {
-            color: #db4c3f;
+            color: #ff3366;
             display: block; }
         .note .note_edit .note_edit_inner .like_comment_box .comment_btn {
           float: left;
@@ -7194,7 +7196,7 @@ input[type="checkbox"] {
   font-size: 1.3rem;
   font-weight: bold; }
   .configuration_btn.delete {
-    background: #db4c3f; }
+    background: #ff3366; }
   .configuration_btn:hover {
     opacity: 0.7;
     filter: alpha(opacity=70);
@@ -7500,7 +7502,7 @@ h3.profile_title {
       font-size: 2.2rem;
       font-weight: bold;
       text-align: center;
-      color: #db4c3f; }
+      color: #ff3366; }
       #cancellation_box #cancellation_finish p i {
         font-size: 60px;
         font-size: 6rem;
@@ -7523,11 +7525,11 @@ h3.profile_title {
       border-radius: 3px;
       background: #ffebe7;
       padding: 20px;
-      color: #db4c3f; }
+      color: #ff3366; }
     #cancellation_box .modal-body.white .cancellation_contents .caution {
       font-size: 18px;
       font-size: 1.8rem;
-      color: #db4c3f;
+      color: #ff3366;
       margin: 30px 0; }
     #cancellation_box .modal-body.white .cancellation_contents .data {
       font-weight: bold;
@@ -7579,12 +7581,12 @@ h3.profile_title {
       border-radius: 2px;
       background: #ffebe7;
       padding: 20px;
-      color: #db4c3f;
+      color: #ff3366;
       margin-bottom: 30px; }
     #cancellation_box .modal-body.white .cancellation_contents .caution {
       font-size: 16px;
       font-size: 1.6rem;
-      color: #db4c3f;
+      color: #ff3366;
       margin-bottom: 30px; }
     #cancellation_box .modal-body.white .cancellation_contents .data {
       font-weight: bold;
