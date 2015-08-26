@@ -652,11 +652,11 @@ window.onload=function(){
   //画面幅移動
   jQuery(function() {
       jQuery( '.global_menu' ).resizable({
-          minWidth: 140,
+          minWidth: 150,
           maxWidth: 300
       });
       jQuery( '.page_menu' ).resizable({
-          minWidth: 320,
+          minWidth: 310,
           maxWidth: 400
       });
       jQuery( '.detail' ).resizable({
