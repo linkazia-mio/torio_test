@@ -84,7 +84,7 @@
         }
         &.type_file {
           cursor: pointer;
-          .excel,.word,.powerpoint,.pdf {
+          .excel {
             @include fontsize(8.0);
             -webkit-border-top-left-radius: 2px;
             -webkit-border-top-right-radius: 2px;
@@ -95,6 +95,36 @@
             width: 100%;
             padding: 20% 0;
             background: #33c16f;
+          }
+          .word {
+            @extend .excel;
+            color: #127fad;
+            background: #279fd1;
+          }
+          .powerpoint {
+            @extend .excel;
+            color: #b83711;
+            background: #e05d37;
+          }
+          .pdf {
+            @extend .excel;
+            color: #cf2d3a;
+            background: #ea5d65;
+          }
+          .video,.googledrive {
+            @extend .excel;
+            color: #7a7a7a;
+            background: $border_white_gray;
+          }
+          .text,.image,.list,.graph {
+            @extend .excel;
+            color: #e3e3e3;
+            background: $border_white_gray;
+          }
+          .dropbox {
+            @extend .excel;
+            color: #fff;
+            background: #007ee5;
           }
         }
         .file_name {
