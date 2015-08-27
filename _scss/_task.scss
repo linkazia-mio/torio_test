@@ -446,6 +446,11 @@ input[type="checkbox"] {
         @extend .time_create;
         right: 163px;
         line-height: 30px;
+        select {
+          position: absolute;
+          bottom:0;
+          right: 0;
+        }
         &.configured {
           line-height: 33px;
           right: 233px;

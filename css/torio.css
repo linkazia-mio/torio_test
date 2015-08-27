@@ -6312,6 +6312,10 @@ input[type="checkbox"] {
       .task_replacement .task_people .task_list .task_member {
         right: 163px;
         line-height: 30px; }
+        .task_replacement .task_people .task_list .task_member select {
+          position: absolute;
+          bottom: 0;
+          right: 0; }
         .task_replacement .task_people .task_list .task_member.configured {
           line-height: 33px;
           right: 233px;
