@@ -84,16 +84,16 @@ button {
   }
 }
 .popover {
-  @include border_radius(3px);
+  @include border_radius(5px);
   display: none;
   width: 250px;
   position: absolute;
   z-index: 1000;
   background: #fff;
   /*box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);*/
-  border: 1px solid #d6dadc;
+  border: 1px solid #c4c9cc;
   border-bottom-color: #c4c9cc;
-  box-shadow: 0 1px 6px rgba(0,0,0,.15);
+  box-shadow: 0 1px 2px rgba(0,0,0,.15);
   line-height: 1.42857143;
   text-align: left;
   white-space: normal;
@@ -172,15 +172,15 @@ button {
 }
 .main,.main_public {
   .popover {
-    @include border_radius(3px);
+    @include border_radius(5px);
     display: none;
     position: absolute;
     z-index: 1000;
     background: #fff;
     /*box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);*/
-    border: 1px solid #d6dadc;
+    border: 1px solid #c4c9cc;
     border-bottom-color: #c4c9cc;
-    box-shadow: 0 1px 6px rgba(0,0,0,.15);
+    box-shadow: 0 1px 2px rgba(0,0,0,.15);
     line-height: 1.42857143;
     text-align: left;
     white-space: normal;
@@ -259,16 +259,16 @@ button {
   }
 }
 .popover_big {
-  @include border_radius(3px);
+  @include border_radius(5px);
   display: none;
   width: 500px;
   position: absolute;
   z-index: 1000;
   background: #fff;
   /*box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);*/
-  border: 1px solid #d6dadc;
+  border: 1px solid #c4c9cc;
   border-bottom-color: #c4c9cc;
-  box-shadow: 0 1px 6px rgba(0,0,0,.15);
+  box-shadow: 0 1px 2px rgba(0,0,0,.15);
   line-height: 1.42857143;
   text-align: left;
   white-space: normal;
@@ -656,16 +656,16 @@ header {
     right: 10px;
     top: 65px;
     &.popover {
-      @include border_radius(3px);
+      @include border_radius(5px);
       display: none;
       width: 250px;
       position: absolute;
       z-index: 9999;
       background: #fff;
       /*box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);*/
-      border: 1px solid #d6dadc;
+      border: 1px solid #c4c9cc;
       border-bottom-color: #c4c9cc;
-      box-shadow: 0 1px 6px rgba(0,0,0,.15);
+      box-shadow: 0 1px 2px rgba(0,0,0,.15);
       line-height: 1.42857143;
       text-align: left;
       white-space: normal;
@@ -1454,16 +1454,16 @@ header {
       top: 50px;
       z-index: 9999;
       &.popover {
-        @include border_radius(3px);
+        @include border_radius(5px);
         display: none;
         width: 200px;
         position: absolute;
         z-index: 9999;
         background: #fff;
         /*box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);*/
-        border: 1px solid #d6dadc;
+        border: 1px solid #c4c9cc;
         border-bottom-color: #c4c9cc;
-        box-shadow: 0 1px 6px rgba(0,0,0,.15);
+        box-shadow: 0 1px 2px rgba(0,0,0,.15);
         line-height: 1.42857143;
         text-align: left;
         white-space: normal;
@@ -1526,16 +1526,16 @@ header {
       @extend .option_box;
       left: 60px;
       &.popover {
-        @include border_radius(3px);
+        @include border_radius(5px);
         display: none;
         width: 200px;
         position: absolute;
         z-index: 9999;
         background: #fff;
         /*box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);*/
-        border: 1px solid #d6dadc;
+        border: 1px solid #c4c9cc;
         border-bottom-color: #c4c9cc;
-        box-shadow: 0 1px 6px rgba(0,0,0,.15);
+        box-shadow: 0 1px 2px rgba(0,0,0,.15);
         line-height: 1.42857143;
         text-align: left;
         white-space: normal;
@@ -1876,7 +1876,7 @@ header {
       padding-top: 3px;
       z-index: 9999;
       &.popover {
-        @include border_radius(4px);
+        @include border_radius(5px);
         display: none;
         width: 285px;
         max-width: 285px;
@@ -1884,9 +1884,9 @@ header {
         z-index: 9999;
         background: #fff;
         /*box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);*/
-        border: 1px solid #d6dadc;
+        border: 1px solid #c4c9cc;
         border-bottom-color: #c4c9cc;
-        box-shadow: 0 1px 6px rgba(0,0,0,.15);
+        box-shadow: 0 1px 2px rgba(0,0,0,.15);
         line-height: 1.42857143;
         text-align: left;
         white-space: normal;
@@ -2079,7 +2079,7 @@ header {
       z-index: 50;
       @include font-smoothing(off);
       &.popover {
-        @include border_radius(3px);
+        @include border_radius(5px);
         display: none;
         width: 200px;
         max-width: 200px;
@@ -2087,9 +2087,9 @@ header {
         z-index: 9999;
         background: #fff;
         /*box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);*/
-        border: 1px solid #d6dadc;
+        border: 1px solid #c4c9cc;
         border-bottom-color: #c4c9cc;
-        box-shadow: 0 1px 6px rgba(0,0,0,.15);
+        box-shadow: 0 1px 2px rgba(0,0,0,.15);
         line-height: 1.42857143;
         text-align: left;
         white-space: normal;
@@ -2123,7 +2123,7 @@ header {
       z-index: 50;
       @include font-smoothing(off);
       &.popover {
-        @include border_radius(3px);
+        @include border_radius(5px);
         display: none;
         width: 200px;
         max-width: 200px;
@@ -2131,9 +2131,9 @@ header {
         z-index: 9999;
         background: #fff;
         /*box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);*/
-        border: 1px solid #d6dadc;
+        border: 1px solid #c4c9cc;
         border-bottom-color: #c4c9cc;
-        box-shadow: 0 1px 6px rgba(0,0,0,.15);
+        box-shadow: 0 1px 2px rgba(0,0,0,.15);
         line-height: 1.42857143;
         text-align: left;
         white-space: normal;
@@ -2167,15 +2167,15 @@ header {
       z-index: 50;
       @include font-smoothing(off);
       &.popover_big {
-        @include border_radius(3px);
+        @include border_radius(5px);
         display: none;
         width: 350px;
         position: absolute;
         background: #fff;
         /*box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);*/
-        border: 1px solid #d6dadc;
+        border: 1px solid #c4c9cc;
         border-bottom-color: #c4c9cc;
-        box-shadow: 0 1px 6px rgba(0,0,0,.15);
+        box-shadow: 0 1px 2px rgba(0,0,0,.15);
         line-height: 1.42857143;
         text-align: left;
         white-space: normal;
