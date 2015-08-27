@@ -2221,7 +2221,10 @@ header {
           .global_menu .global_menu_inner ul li a.selected .global_list_noimage {
             background: #fff; }
       .global_menu .global_menu_inner ul li .global_list_noimage {
-        /*@include border_radius(2px);*/
+        -webkit-border-radius: 2px;
+        -moz-border-radius: 2px;
+        -ms-border-radius: 2px;
+        border-radius: 2px;
         display: block;
         float: left;
         background: #3A87BC;

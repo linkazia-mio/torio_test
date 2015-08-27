@@ -1267,7 +1267,7 @@ header {
           }
         }
         .global_list_noimage {
-          /*@include border_radius(2px);*/
+          @include border_radius(2px);
           display: block;
           float: left;
           background: $torio_green;
