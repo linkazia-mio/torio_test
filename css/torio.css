@@ -1560,7 +1560,7 @@ header {
           cursor: pointer; }
     header .task_box .task_active_lists, header .activity_box .task_active_lists {
       background: #f9f9f9;
-      max-height: 600px;
+      max-height: 550px;
       -webkit-box-shadow: 0 0px 2px rgba(0, 0, 0, 0.15), inset 0 0px 0 rgba(255, 255, 255, 0.5);
       box-shadow: 0 0px 2px rgba(0, 0, 0, 0.15), inset 0 0px 0 rgba(255, 255, 255, 0.5);
       overflow: hidden;
@@ -1587,13 +1587,13 @@ header {
             margin-left: 8px;
             font-family: 'Lato','Helvetica neue',Helvetica,Arial,sans-serif; }
         header .task_box .task_active_lists .task_active_list .task_list, header .activity_box .task_active_lists .task_active_list .task_list {
-          -webkit-border-radius: 4px;
-          -moz-border-radius: 4px;
-          -ms-border-radius: 4px;
-          border-radius: 4px;
-          margin: 0 0 5px 0;
-          line-height: 50px;
-          height: 50px;
+          -webkit-border-radius: 4;
+          -moz-border-radius: 4;
+          -ms-border-radius: 4;
+          border-radius: 4;
+          margin: 0 0 6px 0;
+          line-height: 55px;
+          height: 53px;
           background: #fff;
           clear: both;
           /*border: 1px solid #ededf0;
@@ -1610,18 +1610,18 @@ header {
           header .task_box .task_active_lists .task_active_list .task_list.finished, header .activity_box .task_active_lists .task_active_list .task_list.finished {
             background: #EEE; }
           header .task_box .task_active_lists .task_active_list .task_list.important, header .activity_box .task_active_lists .task_active_list .task_list.important {
-            border: 1px solid #f4c8bf;
+            border: 1px solid #f3b9a9;
             background: #fbeceb; }
             header .task_box .task_active_lists .task_active_list .task_list.important input[type="checkbox"], header .activity_box .task_active_lists .task_active_list .task_list.important input[type="checkbox"] {
               /*checked時の見た目*/ }
               header .task_box .task_active_lists .task_active_list .task_list.important input[type="checkbox"] + label, header .activity_box .task_active_lists .task_active_list .task_list.important input[type="checkbox"] + label {
                 /*通常時の見た目*/ }
                 header .task_box .task_active_lists .task_active_list .task_list.important input[type="checkbox"] + label:before, header .activity_box .task_active_lists .task_active_list .task_list.important input[type="checkbox"] + label:before {
-                  border: 1px solid #ed6d44;
+                  border: 2px solid #f3b9a9;
                   background: #fbeceb; }
               header .task_box .task_active_lists .task_active_list .task_list.important input[type="checkbox"]:checked + label::before, header .activity_box .task_active_lists .task_active_list .task_list.important input[type="checkbox"]:checked + label::before {
-                background: #ff3366;
-                border-color: #ed6d44; }
+                background: #b3312d;
+                border: 2px solid #b3312d; }
           header .task_box .task_active_lists .task_active_list .task_list .task_title, header .activity_box .task_active_lists .task_active_list .task_list .task_title {
             color: #000000;
             width: 70%;
@@ -1630,20 +1630,20 @@ header {
             font-weight: normal; }
           header .task_box .task_active_lists .task_active_list .task_list .user_image, header .activity_box .task_active_lists .task_active_list .task_list .user_image {
             position: absolute;
-            top: 13px;
+            top: 11px;
             right: 15px; }
             header .task_box .task_active_lists .task_active_list .task_list .user_image img, header .activity_box .task_active_lists .task_active_list .task_list .user_image img {
-              height: 25px;
-              width: 25px; }
+              height: 30px;
+              width: 30px; }
           header .task_box .task_active_lists .task_active_list .task_list .noimage, header .activity_box .task_active_lists .task_active_list .task_list .noimage {
             font-size: 10px;
             font-size: 1rem;
             position: absolute;
-            top: 12px;
+            top: 10px;
             right: 15px;
-            width: 25px;
-            height: 25px;
-            line-height: 25px;
+            width: 30px;
+            height: 30px;
+            line-height: 30px;
             text-align: center;
             padding: 0; }
   header .activity_box {
@@ -1716,7 +1716,7 @@ header {
           right: 15px;
           bottom: 10px; }
   header .account {
-    right: 10px;
+    right: 15px;
     top: 65px; }
     header .account.popover {
       -webkit-border-radius: 5px;
@@ -6166,7 +6166,7 @@ input[type="checkbox"] {
         top: 46%;
         left: -20px;
         margin-top: 0;
-        z-index: 1000;
+        /*z-index: 1000;*/
         content: "";
         width: auto;
         padding: 0 0 0 0;
