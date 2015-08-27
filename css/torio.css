@@ -6997,7 +6997,7 @@ input[type="checkbox"] {
         -ms-border-radius: 4px 4px 0 0;
         border-radius: 4px 4px 0 0;
         position: relative;
-        background: #4ad337;
+        background: #2aaef5;
         color: #fff;
         text-align: center;
         height: 40px;
@@ -7408,8 +7408,8 @@ input[type="checkbox"] {
   height: 5px;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
-  -webkit-animation: load7 1.8s infinite ease-in-out;
-  animation: load7 1.8s infinite ease-in-out; }
+  -webkit-animation: load7 1.5s infinite ease-in-out;
+  animation: load7 1.5s infinite ease-in-out; }
 
 .loader {
   display: block;
