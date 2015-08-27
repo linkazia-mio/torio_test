@@ -453,11 +453,14 @@ input[type="checkbox"] {
         @extend .time_create;
         right: 163px;
         line-height: 30px;
+        cursor: pointer;
         select {
           @include opacity(0);
           position: absolute;
           bottom:0;
           right: 0;
+          font-weight: normal;
+          @include fontsize(1.2);
         }
         &:hover {
           cursor: pointer;
