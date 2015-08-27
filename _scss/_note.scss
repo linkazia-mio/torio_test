@@ -52,12 +52,12 @@
           width: 40px;
           line-height: 40px;
           float: left;
-          margin-right: 12px;
+          margin-right: 15px;
           @include fontsize(1.2);
         }
         .user_image {
           float: left;
-          margin-right: 12px;
+          margin-right: 15px;
           img {
             width: 40px;
             height:40px;
@@ -68,6 +68,7 @@
           font-weight: normal;
           color: $white_brack;
           padding: 2px 0 0 0;
+          @include font-smoothing(off);
         }
         .note_option {
           @include fontsize(2.6);
@@ -77,18 +78,57 @@
           color: $white_brack;
         }
         .note_detail_option_box {
-          right: 15px;
+          right: -12px;
           top: 60px;
+          cursor: pointer;
+          &.popover {
+            @include border_radius(5px);
+            display: none;
+            width: 200px;
+            position: absolute;
+            z-index: 9999;
+            background: #fff;
+            /*box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);*/
+            border: 1px solid #c4c9cc;
+            border-bottom-color: #c4c9cc;
+            box-shadow: 0 1px 2px rgba(0,0,0,.15);
+            line-height: 1.42857143;
+            text-align: left;
+            white-space: normal;
+            @include opacity(1);
+            padding: 10px 0;
+            z-index: 110;
+            &::before {
+             	position: absolute;
+             	content: '';
+             	left:80%;
+             	top: -16px;
+             	margin-left:-7px;
+             	border:8px solid transparent;
+             	border-bottom-color:rgba(0,0,0,.3);
+            }
+            &::after {
+             	position:absolute;
+             	content: '';
+             	left:80%;
+             	top:-15px;
+             	margin-left:-7px;
+             	border:8px solid transparent;
+             	border-bottom-color:#fff;
+           	}
+          }
         }
       }
       .btn_add_task {
         bottom: 15px;
         -webkit-font-smoothing: antialiased;
+        @include font-smoothing(off);
       }
       .like_comment_box {
         position: absolute;
         left: 20px;
         bottom: 21px;
+        @include font-smoothing(off);
         .like_btn {
           float: left;
           margin-right: 10px;
@@ -137,7 +177,7 @@
             .balloon_box {
               display: block;
               height: auto;
-              bottom: 28px;
+              bottom: 35px;
               left: 0;
               text-align: left;
               padding: 10px 10px;
@@ -155,19 +195,20 @@
         }
       }
       .browse_count {
-        @include fontsize(1.1);
+        @include fontsize(1.2);
         line-height: 23px;
         color: $white_brack;
         padding-bottom: 9px;
         position: absolute;
-        right: 15px;
+        right: 20px;
         bottom: 12px;
         padding-left: 28px;
+        @include font-smoothing(off);
         i {
           @include fontsize(2.3);
           margin-right: 5px;
           position: absolute;
-          bottom: 9px;
+          bottom: 10px;
           left: 0;
         }
         &:hover {
@@ -176,7 +217,7 @@
             display: block;
             height: auto;
             width: 100%;
-            bottom: 38px;
+            bottom: 43px;
             left: 0;
             text-align: left;
             padding: 10px 10px;
@@ -193,11 +234,12 @@
         }
       }
       .counter {
-        @include fontsize(1.1);
+        @include fontsize(1.2);
         position: absolute;
         right: 130px;
-        bottom: 20px;
+        bottom: 22px;
         color: $white_brack;
+        @include font-smoothing(off);
       }
       .editing {
         @include border_radius(4px 4px 0 0);
@@ -214,7 +256,7 @@
         }
       }
       .unread {
-        @include fontsize(1.1);
+        @include fontsize(1.2);
         @include border_radius(100px);
         @include font_eng;
         font-weight: bold;
@@ -344,10 +386,9 @@
  Editable
 ---------------------------------------------------------------------------------------*/
 .editable {
-  padding: 20px 70px 70px 70px;
-  @include font-smoothing(off);
+  padding: 20px 74px 80px 74px;
   &:first-child{
-   padding: 30px 70px 70px 70px;
+   padding: 30px 74px 80px 74px;
   }
   &:focus {
     outline: none;
@@ -375,18 +416,22 @@
     font-style: italic;
   }
   ol {
-    padding-left: 20px;
+    padding-left: 23px;
     margin-bottom: 20px;
+    li{
+      line-height: 1.8;
+    }
   }
   ul {
     padding-left: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
     li {
       list-style: disc;
+      line-height: 1.8;
     }
   }
   pre {
-    @include border_radius(4px);
+    @include border_radius(5px);
     padding: 10px 20px;
     display: block;
     margin: 0 0 10px;
@@ -413,8 +458,7 @@
  Editable_lock
 ---------------------------------------------------------------------------------------*/
 .editable_lock {
-  padding: 15px 70px 70px 70px;
-  @include font-smoothing(off);
+  padding: 15px 74px 80px 74px;
   h1 {
     @include fontsize(2.0);
     font-weight: bold;
@@ -438,7 +482,7 @@
     font-style: italic;
   }
   ol {
-    padding-left: 20px;
+    padding-left: 23px;
     margin-bottom: 30px;
   }
   ul {
@@ -449,7 +493,7 @@
     }
   }
   pre {
-    @include border_radius(4px);
+    @include border_radius(5px);
     padding: 10px 20px;
     display: block;
     margin: 0 0 10px;

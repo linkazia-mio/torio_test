@@ -970,16 +970,17 @@ input[type="checkbox"] {
   top: 88px;
 }
 .btn_add_task {
-  @include border_radius(3px);
+  @include border_radius(4px);
   position: absolute;
   right: 15px;
   bottom: 11px;
-  line-height: 35px;
+  line-height: 37px;
+  height: 35px;
   width: 100px;
   color: #fff;
   font-weight: normal;
   background: $torio_green;
-  @include fontsize(1.2);
+  @include fontsize(1.3);
   &:hover {
     @include opacity(0.8);
   }
