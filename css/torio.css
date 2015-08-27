@@ -2683,7 +2683,7 @@ header {
       .page_menu .page_menu_inner .item.task .graph {
         position: absolute;
         right: 16px;
-        bottom: 28px;
+        bottom: 23px;
         height: 50px;
         font-family: 'Lato','Helvetica neue',Helvetica,Arial,sans-serif; }
         .page_menu .page_menu_inner .item.task .graph.green .number p {
