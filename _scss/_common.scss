@@ -2034,7 +2034,6 @@ header {
   height: 100%;
   margin-top: 50px;
   float: left;
-  overflow: hidden;
   &.detail_public{
    float: none !important;
    height: auto !important;
@@ -2055,6 +2054,14 @@ header {
       line-height: 28px;
       letter-spacing: 0.05em;
     }
+    .check {
+      @include fontsize(2.6);
+      position: absolute;
+      line-height: 28px;
+      display: inline-block;
+      color: $white_brack;
+      top: 32px;
+    }
     p {
       @include fontsize(2.6);
       line-height: 28px;
@@ -2064,10 +2071,6 @@ header {
       &:hover {
         /*color: $torio_green;*/
         cursor: pointer;
-      }
-      &.check {
-        /*position: static;*/
-        display: inline-block;
       }
       &.bookmark {
         right: 120px;
@@ -2128,8 +2131,8 @@ header {
     }
     .detail_check_box {
       width: 200px;
-      left: 132px;
-      top: 75px;
+      left: -88px;
+      top: 40px;
       z-index: 50;
       @include font-smoothing(off);
       &.popover {

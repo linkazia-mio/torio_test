@@ -2883,8 +2883,7 @@ header {
   width: auto;
   height: 100%;
   margin-top: 50px;
-  float: left;
-  overflow: hidden; }
+  float: left; }
   .detail.detail_public, .detail_public.detail_public {
     float: none !important;
     height: auto !important;
@@ -2903,6 +2902,14 @@ header {
       display: inline-block;
       line-height: 28px;
       letter-spacing: 0.05em; }
+    .detail .title .check, .detail_public .title .check {
+      font-size: 26px;
+      font-size: 2.6rem;
+      position: absolute;
+      line-height: 28px;
+      display: inline-block;
+      color: #999999;
+      top: 32px; }
     .detail .title p, .detail_public .title p {
       font-size: 26px;
       font-size: 2.6rem;
@@ -2913,9 +2920,6 @@ header {
       .detail .title p:hover, .detail_public .title p:hover {
         /*color: $torio_green;*/
         cursor: pointer; }
-      .detail .title p.check, .detail_public .title p.check {
-        /*position: static;*/
-        display: inline-block; }
       .detail .title p.bookmark, .detail_public .title p.bookmark {
         right: 120px; }
         .detail .title p.bookmark .icon-bookmark-outline, .detail_public .title p.bookmark .icon-bookmark-outline {
@@ -2955,8 +2959,8 @@ header {
           margin: -50px; }
     .detail .title .detail_check_box, .detail_public .title .detail_check_box {
       width: 200px;
-      left: 132px;
-      top: 75px;
+      left: -88px;
+      top: 40px;
       z-index: 50;
       -webkit-font-smoothing: subpixel-antialiased;
       -moz-osx-font-smoothing: auto; }

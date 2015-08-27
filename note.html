@@ -32,6 +32,17 @@
   </head>
   <body>
     <div class="wrapper">
+      <!--Alart_popover/-->
+      <div class="alart_popover">
+        <button><i class="icon-clear"></i></button>
+        <!-- <p class="user"><span class="user_image"><img src="http://placehold.it/100x100"></span></p> -->
+        <p class="user"><span class="noimage">KO</span></p>
+        <div class="message">
+          <p class="name">小松 健太</p>
+          <p>あなたに新規でタスクが追加されました</p>
+        </div>
+      </div>
+      <!--/Alart_popover-->
       <!--Header/-->
       <header>
         <div class="header_inner">
@@ -516,7 +527,16 @@
             <div class="title">
               <h1 class="note_title">Untitled</h1>
               <input id="title_edit" style="display:none;" name="title_edit" ></input>
-              <p class="check"><i class="icon-expand-more"></i></p>
+              <div class="check">
+                <i class="icon-expand-more"></i>
+                <div class="detail_check_box popover">
+                  <ul>
+                    <li><a href="">日付の新しい順</a></li>
+                    <li><a href="">日付の古い順</a></li>
+                    <li><a href="">割り当てた人順</a></li>
+                  </ul>
+                </div>
+              </div>
               <p class="bookmark"><i class="icon-bookmark-outline"></i><i class="icon-bookmark"></i><span class="balloon_box_under">ブックマーク</span></p>
               <p class="website"><i class="icon-language"></i><span class="balloon_box">ページを共有</span><span class="balloon_box_under">ページを共有</span></p>
               <p class="option"><i class="icon-more-horiz"></i><span class="balloon_box_under">オプション</span></p>
@@ -533,13 +553,6 @@
                   <li><a href="">情報を見る</a></li>
                   <li><a href="">更新履歴</a></li>
                   <li><a href="">このページを削除</a></li>
-                </ul>
-              </div>
-              <div class="detail_check_box popover">
-                <ul>
-                  <li><a href="">日付の新しい順</a></li>
-                  <li><a href="">日付の古い順</a></li>
-                  <li><a href="">割り当てた人順</a></li>
                 </ul>
               </div>
             </div>
