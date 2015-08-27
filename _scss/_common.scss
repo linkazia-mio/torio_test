@@ -2617,10 +2617,11 @@ header {
           padding: 5px 0;
           .requester {
             @include border_radius(2px 2px 0 0);
+            -webkit-background-clip: padding-box;
             position: relative;
             width: 100%;
             /*border: 1px solid $border_gray;*/
-            border: 1px solid #cbcbcb;
+            border: 1px solid $border_dark_gray;
             padding: 3px 5px;
             line-height: 35px;
             height: 45px;
@@ -2661,7 +2662,7 @@ header {
           .worker {
             @extend .requester;
             @include border_radius(0 0 2px 2px);
-            border-top: none;
+            margin-top: -1px;
             .icon-person {
               @include fontsize(2.4);
               position: absolute;

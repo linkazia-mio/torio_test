@@ -3446,6 +3446,7 @@ header {
         -moz-border-radius: 2px 2px 0 0;
         -ms-border-radius: 2px 2px 0 0;
         border-radius: 2px 2px 0 0;
+        -webkit-background-clip: padding-box;
         position: relative;
         width: 100%;
         /*border: 1px solid $border_gray;*/
@@ -3488,7 +3489,7 @@ header {
         -moz-border-radius: 0 0 2px 2px;
         -ms-border-radius: 0 0 2px 2px;
         border-radius: 0 0 2px 2px;
-        border-top: none; }
+        margin-top: -1px; }
         .modal .modal-dialog .modal-content .modal-body .task_detail .worker .icon-person {
           font-size: 24px;
           font-size: 2.4rem;
