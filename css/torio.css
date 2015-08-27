@@ -1938,6 +1938,7 @@ header {
       width: auto;
       padding: 0 0 0 0;
       background: #ff3366;
+      /*background: #2aaef5;*/
       line-height: 20px;
       min-width: 20px;
       min-height: 20px; }
@@ -6355,7 +6356,10 @@ input[type="checkbox"] {
         position: absolute;
         right: 11px;
         bottom: 11px;
-        line-height: 35px;
+        line-height: 37px;
+        height: 35px;
+        -webkit-font-smoothing: subpixel-antialiased;
+        -moz-osx-font-smoothing: auto;
         width: 100px;
         color: #fff;
         font-weight: normal;
