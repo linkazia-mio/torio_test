@@ -6325,6 +6325,13 @@ input[type="checkbox"] {
           position: absolute;
           bottom: 0;
           right: 0; }
+        .task_replacement .task_people .task_list .task_member:hover {
+          cursor: pointer; }
+          .task_replacement .task_people .task_list .task_member:hover .balloon_box {
+            display: block;
+            top: 10px;
+            left: 50%;
+            margin: -50px; }
         .task_replacement .task_people .task_list .task_member.configured {
           *zoom: 1;
           line-height: 33px;

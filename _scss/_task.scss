@@ -459,6 +459,15 @@ input[type="checkbox"] {
           bottom:0;
           right: 0;
         }
+        &:hover {
+          cursor: pointer;
+          .balloon_box {
+            display: block;
+            top: 10px;
+            left: 50%;
+            margin: -50px;
+          }
+        }
         &.configured {
           @include clearfix;
           line-height: 33px;
