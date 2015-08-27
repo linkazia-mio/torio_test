@@ -6305,6 +6305,12 @@ input[type="checkbox"] {
             top: 5px;
             left: 5px;
             color: #bbb; }
+          .task_replacement .task_people .task_list .time_create.configured input, .task_replacement .task_people .task_list .configured.task_member input {
+            width: 60px;
+            line-height: 35px;
+            height: 35px;
+            vertical-align: middle;
+            padding: 0; }
         .task_replacement .task_people .task_list .time_create .icon-access-time, .task_replacement .task_people .task_list .task_member .icon-access-time {
           font-size: 22px;
           font-size: 2.2rem;

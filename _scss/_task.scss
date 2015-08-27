@@ -436,6 +436,13 @@ input[type="checkbox"] {
             left: 5px;
             color: #bbb;
           }
+          input {
+            width: 60px;
+            line-height: 35px;
+            height: 35px;
+            vertical-align: middle;
+            padding: 0;
+          }
         }
         .icon-access-time{
           @include fontsize(2.2);
