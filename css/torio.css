@@ -6862,11 +6862,11 @@ input[type="checkbox"] {
           font-size: 26px;
           font-size: 2.6rem;
           position: absolute;
-          right: 15px;
+          right: 18px;
           top: 28px;
           color: #999999; }
         .note .note_edit .note_edit_inner .edit_name .note_detail_option_box {
-          right: -12px;
+          right: -10px;
           top: 60px;
           cursor: pointer; }
           .note .note_edit .note_edit_inner .edit_name .note_detail_option_box.popover {
@@ -7153,9 +7153,12 @@ input[type="checkbox"] {
  Editable
 ---------------------------------------------------------------------------------------*/
 .editable {
-  padding: 20px 74px 80px 74px; }
+  padding: 25px 74px 90px 74px;
+  color: #111;
+  font-size: 14px;
+  font-size: 1.4rem; }
   .editable:first-child {
-    padding: 30px 74px 80px 74px; }
+    padding: 30px 74px 90px 74px; }
   .editable:focus {
     outline: none; }
   .editable h1 {
@@ -7169,15 +7172,16 @@ input[type="checkbox"] {
   .editable hr {
     width: 100%;
     margin: 30px auto 35px auto;
-    border-top: 1px solid #eeeeee; }
+    border-top: 1px solid #cbcbcb; }
   .editable blockquote {
     font-size: 14px;
     font-size: 1.4rem;
-    padding: 10px 20px;
+    padding: 10px 20px 5px 20px;
     margin: 0 0 20px;
-    border-left: 4px solid #f36;
-    color: #999999;
-    font-style: italic; }
+    border-left: 4px solid #e9e9e9;
+    color: #333333;
+    font-style: italic;
+    line-height: 1.8; }
   .editable ol {
     padding-left: 23px;
     margin-bottom: 20px; }
@@ -7185,7 +7189,7 @@ input[type="checkbox"] {
       line-height: 1.8; }
   .editable ul {
     padding-left: 20px;
-    margin-bottom: 25px; }
+    margin-bottom: 28px; }
     .editable ul li {
       list-style: disc;
       line-height: 1.8; }
@@ -7194,14 +7198,14 @@ input[type="checkbox"] {
     -moz-border-radius: 5px;
     -ms-border-radius: 5px;
     border-radius: 5px;
-    padding: 10px 20px;
+    padding: 10px 10px;
     display: block;
     margin: 0 0 10px;
     color: #333;
     word-break: break-all;
     word-wrap: break-word;
     background-color: #f9f9f9;
-    border: none; }
+    border: 2px solid #e9e9e9; }
   .editable figure {
     margin: 30px 0; }
     .editable figure img {
@@ -7215,7 +7219,10 @@ input[type="checkbox"] {
  Editable_lock
 ---------------------------------------------------------------------------------------*/
 .editable_lock {
-  padding: 15px 74px 80px 74px; }
+  padding: 20px 74px 90px 74px;
+  color: #111;
+  font-size: 14px;
+  font-size: 1.4rem; }
   .editable_lock h1 {
     font-size: 20px;
     font-size: 2rem;
@@ -7227,15 +7234,16 @@ input[type="checkbox"] {
   .editable_lock hr {
     width: 100%;
     margin: 30px auto 35px auto;
-    border-top: 1px solid #eeeeee; }
+    border-top: 1px solid #cbcbcb; }
   .editable_lock blockquote {
     font-size: 14px;
     font-size: 1.4rem;
-    padding: 10px 20px;
+    padding: 10px 20px 5px 20px;
     margin: 0 0 20px;
-    border-left: 4px solid #f36;
-    color: #999999;
-    font-style: italic; }
+    border-left: 4px solid #e9e9e9;
+    color: #333333;
+    font-style: italic;
+    line-height: 1.8; }
   .editable_lock ol {
     padding-left: 23px;
     margin-bottom: 30px; }
@@ -7249,14 +7257,14 @@ input[type="checkbox"] {
     -moz-border-radius: 5px;
     -ms-border-radius: 5px;
     border-radius: 5px;
-    padding: 10px 20px;
+    padding: 10px 10px;
     display: block;
     margin: 0 0 10px;
     color: #333;
     word-break: break-all;
     word-wrap: break-word;
     background-color: #f9f9f9;
-    border: none; }
+    border: 2px solid #e9e9e9; }
   .editable_lock figure {
     margin: 30px 0; }
   .editable_lock small {
