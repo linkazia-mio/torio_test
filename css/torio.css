@@ -2232,9 +2232,12 @@ header {
         float: left;
         margin-left: 30px; }
         .global_menu .global_menu_inner ul li .global_list_image img {
-          /*@include border_radius(2px);*/
           width: 30px;
-          height: auto; }
+          height: auto;
+          -webkit-border-radius: 2px;
+          -moz-border-radius: 2px;
+          -ms-border-radius: 2px;
+          border-radius: 2px; }
   .global_menu .global_menu_inner .groups, .global_menu .global_menu_inner .member {
     position: relative; }
     .global_menu .global_menu_inner .groups .add, .global_menu .global_menu_inner .member .add {
@@ -6110,10 +6113,11 @@ input[type="checkbox"] {
         position: absolute;
         color: #999999;
         font-size: 26px;
-        font-size: 2.6rem; }
-        .task_replacement .task_people .handle .option:hover .balloon_box_under, .task_replacement .task_people .handle .carousel .carousel-inner .item .modal-header .download:hover .balloon_box_under, .carousel .carousel-inner .item .modal-header .task_replacement .task_people .handle .download:hover .balloon_box_under, .task_replacement .task_people .handle .carousel .carousel-inner .item .modal-header .like:hover .balloon_box_under, .carousel .carousel-inner .item .modal-header .task_replacement .task_people .handle .like:hover .balloon_box_under {
+        font-size: 2.6rem;
+        cursor: pointer; }
+        .task_replacement .task_people .handle .option:hover .balloon_box, .task_replacement .task_people .handle .carousel .carousel-inner .item .modal-header .download:hover .balloon_box, .carousel .carousel-inner .item .modal-header .task_replacement .task_people .handle .download:hover .balloon_box, .task_replacement .task_people .handle .carousel .carousel-inner .item .modal-header .like:hover .balloon_box, .carousel .carousel-inner .item .modal-header .task_replacement .task_people .handle .like:hover .balloon_box {
           display: block;
-          bottom: 10px;
+          top: 15px;
           left: 50%;
           margin: -50px; }
     .task_replacement .task_people .task_option_box {

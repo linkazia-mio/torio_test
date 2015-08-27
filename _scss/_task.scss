@@ -212,10 +212,11 @@ input[type="checkbox"] {
         position: absolute;
         color: $white_brack;
         @include fontsize(2.6);
+        cursor: pointer;
         &:hover {
-          .balloon_box_under {
+          .balloon_box {
             display: block;
-            bottom: 10px;
+            top: 15px;
             left: 50%;
             margin: -50px;
           }

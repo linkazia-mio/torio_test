@@ -1279,9 +1279,9 @@ header {
           float: left;
           margin-left: 30px;
           img {
-            /*@include border_radius(2px);*/
             width: 30px;
             height: auto;
+            @include border_radius(2px);
           }
         }
       }
