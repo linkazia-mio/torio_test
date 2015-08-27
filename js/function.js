@@ -638,6 +638,17 @@ window.onload=function(){
      })
   });
 
+  $(function(){
+      function adjust(){
+           var title_space= $('.note_title').width(); //他要素の幅
+           $('#title_edit').css('width', title_space); //可変部分の幅を適用
+      }
+     adjust();
+     $(window).on('resize', function(){
+        adjust();
+     })
+  });
+
 
   var popover = $('.popover');
   var popoverBig = $('.popover_big');
