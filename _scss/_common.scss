@@ -363,19 +363,19 @@ button {
   z-index: 1200;
   // display: none;
   background: #fff;
-  border: 1px solid #d6dadc;
+  border: 1px solid #c4c9cc;
   border-bottom-color: #c4c9cc;
-  box-shadow: 0 1px 6px rgba(0,0,0,.15);
+  box-shadow: 0 1px 2px rgba(0,0,0,.15);
   line-height: 1.42857143;
   text-align: left;
   white-space: normal;
-  padding: 20px 15px;
+  padding: 16px 25px 15px 15px;
   display: table;
   button {
-    @include fontsize(2.6);
+    @include fontsize(2.3);
     position: absolute;
-    right: 2px;
-    top: -6px;
+    right: 4px;
+    top: -4px;
     color: $white_brack;
   }
   .user {
@@ -2362,7 +2362,7 @@ header {
       .modal-body {
         background: $white_gray;
         &.white {
-          border-top: 1px solid $border_dark_gray;
+          border-top: 1px solid $border_white_gray;
           background: #fff;
         }
         .input_dot {
