@@ -6844,11 +6844,11 @@ input[type="checkbox"] {
           font-size: 26px;
           font-size: 2.6rem;
           position: absolute;
-          right: 15px;
+          right: 18px;
           top: 28px;
           color: #999999; }
         .note .note_edit .note_edit_inner .edit_name .note_detail_option_box {
-          right: -12px;
+          right: -10px;
           top: 60px;
           cursor: pointer; }
           .note .note_edit .note_edit_inner .edit_name .note_detail_option_box.popover {
@@ -7135,9 +7135,12 @@ input[type="checkbox"] {
  Editable
 ---------------------------------------------------------------------------------------*/
 .editable {
-  padding: 20px 74px 80px 74px; }
+  padding: 25px 74px 90px 74px;
+  color: #111;
+  font-size: 14px;
+  font-size: 1.4rem; }
   .editable:first-child {
-    padding: 30px 74px 80px 74px; }
+    padding: 30px 74px 90px 74px; }
   .editable:focus {
     outline: none; }
   .editable h1 {
@@ -7151,13 +7154,13 @@ input[type="checkbox"] {
   .editable hr {
     width: 100%;
     margin: 30px auto 35px auto;
-    border-top: 1px solid #eeeeee; }
+    border-top: 1px solid #cbcbcb; }
   .editable blockquote {
     font-size: 14px;
     font-size: 1.4rem;
     padding: 10px 20px;
     margin: 0 0 20px;
-    border-left: 4px solid #f36;
+    border-left: 4px solid #ff3366;
     color: #999999;
     font-style: italic; }
   .editable ol {
@@ -7197,7 +7200,10 @@ input[type="checkbox"] {
  Editable_lock
 ---------------------------------------------------------------------------------------*/
 .editable_lock {
-  padding: 15px 74px 80px 74px; }
+  padding: 20px 74px 90px 74px;
+  color: #111;
+  font-size: 14px;
+  font-size: 1.4rem; }
   .editable_lock h1 {
     font-size: 20px;
     font-size: 2rem;
@@ -7209,13 +7215,13 @@ input[type="checkbox"] {
   .editable_lock hr {
     width: 100%;
     margin: 30px auto 35px auto;
-    border-top: 1px solid #eeeeee; }
+    border-top: 1px solid #cbcbcb; }
   .editable_lock blockquote {
     font-size: 14px;
     font-size: 1.4rem;
     padding: 10px 20px;
     margin: 0 0 20px;
-    border-left: 4px solid #f36;
+    border-left: 4px solid #ff3366;
     color: #999999;
     font-style: italic; }
   .editable_lock ol {
