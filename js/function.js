@@ -129,7 +129,15 @@ window.onload=function(){
       popoverBig.hide();
       $('.detail_option_box').toggle();
     });
-    //Detail_option_box
+    //Task_option_box
+    $('.task_people .option').click(function (event) {
+      $('.task_option_box').toggle( 'fade', '', 100 );
+      event.stopPropagation();
+      popover.hide();
+      popoverBig.hide();
+      $('.task_option_box').toggle();
+    });
+    //Detail_check_box
     $('.detail .check').click(function (event) {
       $('.detail_check_box').toggle( 'fade', '', 100 );
       event.stopPropagation();
