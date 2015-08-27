@@ -1684,7 +1684,7 @@ header {
               @include opacity(0.5);
               bottom: 0;
               color: #fff;
-              font-size: 15px;
+              @include fontsize(1.5);
               @include font_eng;
               font-weight: bold;
               left: 0;
