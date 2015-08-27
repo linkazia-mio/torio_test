@@ -1435,6 +1435,29 @@ button:focus {
       font-size: 14px;
       font-size: 1.4rem;
       font-weight: bold; }
+      .alart_popover .message .name .unread {
+        font-size: 11px;
+        font-size: 1.1rem;
+        -webkit-border-radius: 100px;
+        -moz-border-radius: 100px;
+        -ms-border-radius: 100px;
+        border-radius: 100px;
+        font-family: 'Lato','Helvetica neue',Helvetica,Arial,sans-serif;
+        font-weight: bold;
+        text-align: center;
+        color: #fff;
+        margin-top: 4px;
+        margin-right: 6px;
+        content: "";
+        width: 10px;
+        display: block;
+        float: left;
+        padding: 0 0 0 0;
+        line-height: 10px;
+        min-width: 10px;
+        min-height: 10px;
+        background: #2aaef5;
+        box-shadow: 0 0 4px rgba(53, 175, 242, 0.6); }
 
 /*Header*/
 header {
