@@ -6884,9 +6884,12 @@ input[type="checkbox"] {
   .note #title_edit {
     font-size: 22px;
     font-size: 2.2rem;
-    line-height: 28px;
+    line-height: 26px;
+    height: 26px;
     font-weight: bold;
-    width: auto; }
+    width: auto;
+    margin: -1px 0 3px 0;
+    letter-spacing: 0.05em; }
   .note .note_edit {
     padding-bottom: 20px;
     padding-left: 30px;

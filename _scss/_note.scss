@@ -7,9 +7,12 @@
   background: $white_gray;
   #title_edit {
     @include fontsize(2.2);
-    line-height: 28px;
+    line-height: 26px;
+    height: 26px;
     font-weight: bold;
     width: auto;
+    margin: -1px 0 3px 0;
+    letter-spacing: 0.05em;
   }
   .note_edit {
     padding-bottom: 20px;
