@@ -490,6 +490,7 @@ header {
       box-shadow: 0 0px 2px rgba(0,0,0,0.15),inset 0 0px 0 rgba(255,255,255,0.5);
       overflow: hidden;
       padding-bottom: 20px;
+      @include border_radius(5px);
       &.requeste {
         display: none;
       }
@@ -622,6 +623,7 @@ header {
         position: relative;
         @include fontsize(1.2);
         border-bottom: 1px solid $border_white_gray;
+        @include border_radius(5px);
         .user_image {
           float: left;
           margin-right: 10px;
@@ -1413,7 +1415,7 @@ header {
       right: 48px;
       top: 1px;
       i {
-        @include fontsize(2.2);
+        @include fontsize(2.1);
       }
       .number {
         vertical-align: super;

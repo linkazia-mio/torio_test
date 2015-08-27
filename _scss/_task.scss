@@ -370,8 +370,8 @@ input[type="checkbox"] {
           }
         }
         .task_add_time {
-          right: 140px;
-          top: -223px;
+          right: 145px;
+          top: -210px;
           .task_add_time_footer {
             .btn_add_task {
               bottom: 0;
@@ -598,25 +598,46 @@ input[type="checkbox"] {
 /*---------------------------------------------------------------------------------------
  Callender
 ---------------------------------------------------------------------------------------*/
+.task_add_time{
+  &.popover {
+    @include border_radius(5px);
+    display: none;
+    width: 235px;
+    position: absolute;
+    z-index: 9999;
+    background: #fff;
+    /*box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);*/
+    border: 1px solid #c4c9cc;
+    border-bottom-color: #c4c9cc;
+    box-shadow: 0 1px 2px rgba(0,0,0,.15);
+    line-height: 1.42857143;
+    text-align: left;
+    white-space: normal;
+    @include opacity(1);
+    padding: 10px 0;
+    z-index: 110;
+  }
+}
+
 .calendar {
   text-align: center;
-  width: 250px;
+  width: 235px;
   @include font_eng;
   input {
     @include border_radius();
-    @include fontsize(1.3);
-    width: 220px;
-    margin: 10px 15px;
-    padding: 5px;
-    border: 1px solid $border_gray;
+    @include fontsize(1.2);
+    width: 200px;
+    margin: 10px 14px 5px 14px;
+    padding: 6px;
+    border: 1px solid $border_dark_gray;
   }
   .ui-datepicker {
-    margin: 0 auto;
+    margin: 0 auto 10px auto;
     width: 220px;
     th {
-      @include fontsize(1.3);
+      @include fontsize(1.2);
       span {
-        @include fontsize(1.3);
+        @include fontsize(1.2);
         padding: 0;
       }
     }
@@ -641,14 +662,27 @@ input[type="checkbox"] {
     position: relative;
     .ui-datepicker-calendar {
       thead {
-        border-bottom: 1px solid $border_gray;
+        font-weight: normal;
+        tr{
+          th{
+            font-weight: normal !important;
+            min-width: 28px;
+          }
+        }
       }
       tbody {
         tr {
           &:first-child {
             span {
-              padding-top: 10px;
+              padding-top: 0px;
             }
+          }
+          th,td{
+            min-width: 28px;
+            @include fontsize(1.2);
+            font-weight: normal !important;
+            padding-top: 6px;
+            @include font-smoothing(off);
           }
         }
       }
@@ -671,7 +705,7 @@ input[type="checkbox"] {
             font-family: 'torio_icon';
             content: "\e62e";
             position: absolute;
-            right: -10px !important;
+            right: 5px !important;
             top: -17px !important;
             color: $white_brack;
           }
@@ -688,7 +722,7 @@ input[type="checkbox"] {
           &:before {
             @include fontsize(2.6);
             position: absolute;
-            left: -24px !important;
+            left: -14px !important;
             top: -17px !important;
             font-family: 'torio_icon';
             content: "\e62d";
@@ -729,10 +763,11 @@ input[type="checkbox"] {
         }
       }
       .ui-datepicker-title {
-        font-weight: lighter;
+        font-weight: bold;
         span {
-          @include fontsize(1.3);
-          padding: 0;
+          @include fontsize(1.2);
+          padding: 0 ;
+          font-weight: bold;
         }
       }
     }
@@ -763,7 +798,7 @@ input[type="checkbox"] {
   }
   .ui-datepicker-week-end,.ui-datepicker-unselectable,.ui-state-disabled {
     span {
-      @include fontsize(1.3);
+      @include fontsize(1.2);
       text-align: center;
       padding: 0;
     }
@@ -775,7 +810,7 @@ input[type="checkbox"] {
     .ui-state-default {
       border: none;
       background: none;
-      font-weight: bold;
+      font-weight: normal;
       color: $brack;
     }
   }
@@ -790,15 +825,16 @@ input[type="checkbox"] {
 .select_box {
   position: relative;
   select {
-    width: 220px;
-    margin: 20px 15px;
+    width: 205px;
+    margin: -4px 15px 16px 15px;
     position: relative;
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
-    border: 1px solid $border_gray;
-    padding: 5px 10px;
+    border: 1px solid $border_dark_gray;
+    padding: 6px 10px;
     z-index: 100;
+    @include fontsize(1.2);
     &:focus {
       outline: none;
     }
@@ -806,8 +842,8 @@ input[type="checkbox"] {
   &:after {
     @include fontsize(2.6);
     position: absolute;
-    right: 20px;
-    top: 19px;
+    right: 18px;
+    top: -6px;
     font-family: 'torio_icon';
     content: "\e666";
     color: $white_brack;
@@ -821,7 +857,7 @@ input[type="checkbox"] {
   display: none;
   position: absolute;
   top: 8px;
-  right: 15px;
+  right: 14px;
   width: 100px;
   height: 30px;
   line-height: 30px;
@@ -836,13 +872,14 @@ input[type="checkbox"] {
 .task_add_time_footer {
   position: relative;
   border-top: 1px solid $border_gray;
-  height: 36px;
+  height: 47px;
   .btn_cancel {
     position: absolute;
-    right: 120px;
-    bottom: 3px;
+    right: 130px;
+    bottom: 6px;
     width: 80px;
     color: $torio_green;
+    @include fontsize(1.2);
     &:hover {
       @include opacity(0.7);
     }
