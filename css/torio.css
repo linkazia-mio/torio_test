@@ -2640,7 +2640,9 @@ header {
         white-space: nowrap;
         text-overflow: ellipsis; }
       .page_menu .page_menu_inner .item a.unread .title {
-        color: #2e6b95; }
+        color: #3A87BC;
+        -webkit-font-smoothing: subpixel-antialiased;
+        -moz-osx-font-smoothing: auto; }
         .page_menu .page_menu_inner .item a.unread .title:before {
           -webkit-border-radius: 70px;
           -moz-border-radius: 70px;

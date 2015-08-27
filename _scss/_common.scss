@@ -1715,7 +1715,8 @@ header {
       a {
         &.unread {
           .title {
-            color: $green;
+            color: $torio_green;
+            @include font-smoothing(off);
             &:before {
               @include border_radius(70px);
               position: absolute;
