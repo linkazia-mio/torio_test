@@ -1194,15 +1194,7 @@ header {
 .global_menu {
   width: 220px;
   min-width: 120px;
-  /*background: #373c4a;*/
-  background: #373c4a; /* Old browsers */
-  background: -moz-linear-gradient(top,  #373c4a 0%, #3A6073 100%); /* FF3.6+ */
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#373c4a), color-stop(100%,#3A6073)); /* Chrome,Safari4+ */
-  background: -webkit-linear-gradient(top,  #373c4a 0%,#3A6073 100%); /* Chrome10+,Safari5.1+ */
-  background: -o-linear-gradient(top,  #373c4a 0%,#3A6073 100%); /* Opera 11.10+ */
-  background: -ms-linear-gradient(top,  #373c4a 0%,#3A6073 100%); /* IE10+ */
-  background: linear-gradient(to bottom,  #373c4a 0%,#3A6073 100%); /* W3C */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#373c4a', endColorstr='#3A6073',GradientType=0 ); /* IE6-9 */
+  background: #424654;
   float: left;
   position: relative;
   &.size_none {
@@ -1363,16 +1355,16 @@ header {
       content: "";
       display: block;
       height: 30px;
-      background: -moz-linear-gradient(top,rgba(58,96,115,0.0),rgba(58,96,115,1)); /* Firefox用 */
-     	background: -o-linear-gradient(rgba(58,96,115,0.0),rgba(55,60,74,1)); /* Opera */
-     	background: -webkit-gradient(linear,left top,left bottom,from(rgba(58,96,115,0.0)),to(rgba(58,96,115,1))); /* Safari,Google Chrome用 */
-     	background: linear-gradient(top,rgba(58,96,115,0.0),rgba(58,96,115,1));
+      background: -moz-linear-gradient(top,rgba(66,70,84,0.0),rgba(66,70,84,1)); /* Firefox用 */
+     	background: -o-linear-gradient(rgba(66,70,84,0.0),rgba(66,70,84,1)); /* Opera */
+     	background: -webkit-gradient(linear,left top,left bottom,from(rgba(66,70,84,0.0)),to(rgba(66,70,84,1))); /* Safari,Google Chrome用 */
+     	background: linear-gradient(top,rgba(66,70,84,0.0),rgba(66,70,84,1));
      	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#fff', endColorstr='#ff181818', GradientType=0)"; /* IE8用 */
     }
     .sponsor_inner {
       position: relative;
       padding: 20px;
-      background: #3A6073;
+      background: #424654;
       i {
         @include fontsize(2.6);
         position: absolute;
@@ -1384,6 +1376,7 @@ header {
        max-width: 200px;
        width: 100%;
        height: auto;
+       @include border_radius(4px);
      }
      p {
        @include fontsize(1.0);
