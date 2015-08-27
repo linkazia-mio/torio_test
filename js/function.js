@@ -292,6 +292,11 @@ window.onload=function(){
     $('.info .like').click(function (event) {
       $(this).toggleClass('active');
     });
+    //Alart_popover
+    $('.alart_popover button').click(function (event) {
+      $('.alart_popover').toggle();
+    });
+
 
     //カレンダー
     $(function() {

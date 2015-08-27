@@ -1384,6 +1384,58 @@ button:focus {
     opacity: 0.96;
     filter: alpha(opacity=96); }
 
+/*Alart Popover*/
+.alart_popover {
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  border-radius: 3px;
+  opacity: 1;
+  filter: alpha(opacity=100);
+  position: fixed;
+  right: 10px;
+  top: 10px;
+  z-index: 1200;
+  background: #fff;
+  border: 1px solid #d6dadc;
+  border-bottom-color: #c4c9cc;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.15);
+  line-height: 1.42857143;
+  text-align: left;
+  white-space: normal;
+  padding: 20px 15px;
+  display: table; }
+  .alart_popover button {
+    font-size: 26px;
+    font-size: 2.6rem;
+    position: absolute;
+    right: 2px;
+    top: -6px;
+    color: #999999; }
+  .alart_popover .user {
+    display: table-cell;
+    vertical-align: middle;
+    padding-right: 10px; }
+    .alart_popover .user .user_image {
+      width: 40px; }
+      .alart_popover .user .user_image img {
+        width: 30px;
+        height: 30px; }
+    .alart_popover .user .noimage {
+      font-size: 11px;
+      font-size: 1.1rem;
+      display: block;
+      height: 30px;
+      width: 30px;
+      line-height: 30px; }
+  .alart_popover .message {
+    font-size: 12px;
+    font-size: 1.2rem; }
+    .alart_popover .message .name {
+      font-size: 14px;
+      font-size: 1.4rem;
+      font-weight: bold; }
+
 /*Header*/
 header {
   border-bottom: 1px solid #eeeeee;
