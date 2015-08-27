@@ -2321,7 +2321,7 @@ header {
           display: block; }
         .page_menu .config .favorite:hover .balloon_box_under {
           display: block;
-          bottom: 6px;
+          bottom: 10px;
           left: 50%;
           margin: -50px; }
       .page_menu .config .favorite .icon-star-outline {
@@ -2353,7 +2353,7 @@ header {
         cursor: pointer; }
         .page_menu .config .viewers:hover .balloon_box_under {
           display: block;
-          bottom: 21px;
+          bottom: 19px;
           left: 50%;
           margin: -50px; }
     .page_menu .config .option, .page_menu .config .carousel .carousel-inner .item .modal-header .download, .carousel .carousel-inner .item .modal-header .page_menu .config .download, .page_menu .config .carousel .carousel-inner .item .modal-header .like, .carousel .carousel-inner .item .modal-header .page_menu .config .like {
@@ -2367,7 +2367,7 @@ header {
         cursor: pointer; }
         .page_menu .config .option:hover .balloon_box_under, .page_menu .config .carousel .carousel-inner .item .modal-header .download:hover .balloon_box_under, .carousel .carousel-inner .item .modal-header .page_menu .config .download:hover .balloon_box_under, .page_menu .config .carousel .carousel-inner .item .modal-header .like:hover .balloon_box_under, .carousel .carousel-inner .item .modal-header .page_menu .config .like:hover .balloon_box_under {
           display: block;
-          bottom: 10px;
+          bottom: 15px;
           left: 50%;
           margin: -50px; }
     .page_menu .config .option_box, .page_menu .config .check_box {
