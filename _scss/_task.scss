@@ -460,11 +460,20 @@ input[type="checkbox"] {
           right: 0;
         }
         &.configured {
+          @include clearfix;
           line-height: 33px;
           right: 233px;
           padding: 0 10px 0 32px;
           span {
             padding: 0;
+          }
+          select {
+            @include opacity(1);
+            position: relative;
+            z-index: 100;
+            &:focus {
+              outline: none;
+            }
           }
           .noimage {
             width: 20px;

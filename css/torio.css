@@ -6326,11 +6326,25 @@ input[type="checkbox"] {
           bottom: 0;
           right: 0; }
         .task_replacement .task_people .task_list .task_member.configured {
+          *zoom: 1;
           line-height: 33px;
           right: 233px;
           padding: 0 10px 0 32px; }
+          .task_replacement .task_people .task_list .task_member.configured:after {
+            content: ".";
+            display: block;
+            clear: both;
+            height: 0;
+            visibility: hidden; }
           .task_replacement .task_people .task_list .task_member.configured span {
             padding: 0; }
+          .task_replacement .task_people .task_list .task_member.configured select {
+            opacity: 1;
+            filter: alpha(opacity=100);
+            position: relative;
+            z-index: 100; }
+            .task_replacement .task_people .task_list .task_member.configured select:focus {
+              outline: none; }
           .task_replacement .task_people .task_list .task_member.configured .noimage {
             width: 20px;
             height: 20px;
