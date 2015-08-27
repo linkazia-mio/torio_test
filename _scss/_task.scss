@@ -382,6 +382,18 @@ input[type="checkbox"] {
           display: none;
           margin-top: 70px;
         }
+        .task_button_balloon{
+          position: relative;
+          &:hover {
+            cursor: pointer;
+            .balloon_box {
+              display: block;
+              top: 10px;
+              left: 50%;
+              margin: -50px;
+            }
+          }
+        }
       }
       i {
        @include fontsize(2.0);
@@ -403,7 +415,7 @@ input[type="checkbox"] {
       }
       .time_create {
         position: absolute;
-        right: 126px;
+        right: 128px;
         bottom: 16px;
         &.configured {
           @include border_radius();
@@ -426,7 +438,7 @@ input[type="checkbox"] {
           }
         }
         .icon-access-time{
-          @include fontsize(2.4);
+          @include fontsize(2.2);
           cursor: pointer;
         }
       }
@@ -460,11 +472,11 @@ input[type="checkbox"] {
           }
         }
         .icon-person-plus{
-          @include fontsize(2.4);
+          @include fontsize(2.2);
           cursor: pointer;
         }
         .icon-person-plus-outline{
-          @include fontsize(2.4);
+          @include fontsize(2.2);
           cursor: pointer;
         }
       }

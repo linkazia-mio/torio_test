@@ -6185,6 +6185,15 @@ input[type="checkbox"] {
         .task_replacement .task_people .task_list.made .task_button {
           display: none;
           margin-top: 70px; }
+        .task_replacement .task_people .task_list.made .task_button_balloon {
+          position: relative; }
+          .task_replacement .task_people .task_list.made .task_button_balloon:hover {
+            cursor: pointer; }
+            .task_replacement .task_people .task_list.made .task_button_balloon:hover .balloon_box {
+              display: block;
+              top: 10px;
+              left: 50%;
+              margin: -50px; }
       .task_replacement .task_people .task_list i {
         font-size: 20px;
         font-size: 2rem; }
@@ -6208,7 +6217,7 @@ input[type="checkbox"] {
           filter: alpha(opacity=80); }
       .task_replacement .task_people .task_list .time_create, .task_replacement .task_people .task_list .task_member {
         position: absolute;
-        right: 126px;
+        right: 128px;
         bottom: 16px; }
         .task_replacement .task_people .task_list .time_create.configured, .task_replacement .task_people .task_list .configured.task_member {
           -webkit-border-radius: 4px;
@@ -6233,8 +6242,8 @@ input[type="checkbox"] {
             left: 5px;
             color: #bbb; }
         .task_replacement .task_people .task_list .time_create .icon-access-time, .task_replacement .task_people .task_list .task_member .icon-access-time {
-          font-size: 24px;
-          font-size: 2.4rem;
+          font-size: 22px;
+          font-size: 2.2rem;
           cursor: pointer; }
       .task_replacement .task_people .task_list .task_member {
         right: 163px;
@@ -6260,12 +6269,12 @@ input[type="checkbox"] {
               width: 20px;
               height: 20px; }
         .task_replacement .task_people .task_list .task_member .icon-person-plus {
-          font-size: 24px;
-          font-size: 2.4rem;
+          font-size: 22px;
+          font-size: 2.2rem;
           cursor: pointer; }
         .task_replacement .task_people .task_list .task_member .icon-person-plus-outline {
-          font-size: 24px;
-          font-size: 2.4rem;
+          font-size: 22px;
+          font-size: 2.2rem;
           cursor: pointer; }
       .task_replacement .task_people .task_list .task_title {
         color: #000;
