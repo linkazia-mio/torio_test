@@ -7426,8 +7426,8 @@ input[type="checkbox"] {
   height: 5px;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
-  -webkit-animation: load7 1.5s infinite ease-in-out;
-  animation: load7 1.5s infinite ease-in-out; }
+  -webkit-animation: load7 1.8s infinite ease-in-out;
+  animation: load7 1.8s infinite ease-in-out; }
 
 .loader {
   display: block;
