@@ -7981,6 +7981,15 @@ input[type="checkbox"] {
         color: #999999;
         z-index: 1;
         display: block; }
+  .option_config .configuration .delete_caption {
+    font-size: 13px;
+    font-size: 1.3rem;
+    padding: 15px 0 0 0;
+    color: #999; }
+    .option_config .configuration .delete_caption span {
+      font-weight: bold;
+      color: #333;
+      padding-right: 5px; }
 
 /*---------------------------------------------------------------------------------------
  Connect List
