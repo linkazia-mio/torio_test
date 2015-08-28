@@ -440,7 +440,8 @@ window.onload=function(){
       jQuery('.task_replacement').sortable({
         cursor : 'move',
         handle : '.handle',
-        placeholder: 'placeholder'
+        placeholder: 'placeholder',
+        tolerance: 'pointer'
       });
       jQuery('.task_lists').sortable({
         cursor : 'move',
