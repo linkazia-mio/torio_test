@@ -3287,6 +3287,71 @@ header {
             height: 45px;
             padding-bottom: 15px;
             margin: 0; }
+            .modal .modal-dialog .modal-content .modal-body .input_dot .input_dot_contents ul li input[type=radio],
+            .modal .modal-dialog .modal-content .modal-body .input_dot .input_dot_contents ul li input[type=checkbox] {
+              display: inline-block;
+              margin-right: 6px; }
+            .modal .modal-dialog .modal-content .modal-body .input_dot .input_dot_contents ul li input[type=radio] + label,
+            .modal .modal-dialog .modal-content .modal-body .input_dot .input_dot_contents ul li input[type=checkbox] + label {
+              position: relative;
+              display: inline-block;
+              font-size: 14px;
+              line-height: 30px;
+              cursor: pointer;
+              float: none;
+              width: auto;
+              margin: 0 12px 0 0; }
+            @media (min-width: 1px) {
+              .modal .modal-dialog .modal-content .modal-body .input_dot .input_dot_contents ul li input[type=radio],
+              .modal .modal-dialog .modal-content .modal-body .input_dot .input_dot_contents ul li input[type=checkbox] {
+                display: none;
+                margin: 0; }
+              .modal .modal-dialog .modal-content .modal-body .input_dot .input_dot_contents ul li input[type=radio] + label,
+              .modal .modal-dialog .modal-content .modal-body .input_dot .input_dot_contents ul li input[type=checkbox] + label {
+                padding: 0 0 0 24px; }
+              .modal .modal-dialog .modal-content .modal-body .input_dot .input_dot_contents ul li input[type=radio] + label::before,
+              .modal .modal-dialog .modal-content .modal-body .input_dot .input_dot_contents ul li input[type=checkbox] + label::before {
+                content: "";
+                position: absolute;
+                top: 50%;
+                left: 0;
+                -moz-box-sizing: border-box;
+                box-sizing: border-box;
+                display: block;
+                width: 18px;
+                height: 18px;
+                margin-top: -9px;
+                background: #FFF; }
+              .modal .modal-dialog .modal-content .modal-body .input_dot .input_dot_contents ul li input[type=radio] + label::before {
+                border: 2px solid #ccc;
+                border-radius: 30px; }
+              .modal .modal-dialog .modal-content .modal-body .input_dot .input_dot_contents ul li input[type=checkbox] + label::before {
+                border: 2px solid #ccc; }
+              .modal .modal-dialog .modal-content .modal-body .input_dot .input_dot_contents ul li input[type=radio]:checked + label::after,
+              .modal .modal-dialog .modal-content .modal-body .input_dot .input_dot_contents ul li input[type=checkbox]:checked + label::after {
+                content: "";
+                position: absolute;
+                top: 50%;
+                -moz-box-sizing: border-box;
+                box-sizing: border-box;
+                display: block; }
+              .modal .modal-dialog .modal-content .modal-body .input_dot .input_dot_contents ul li input[type=radio]:checked + label::after {
+                left: 5px;
+                width: 8px;
+                height: 8px;
+                margin-top: -4px;
+                background: #E71063;
+                border-radius: 8px; }
+              .modal .modal-dialog .modal-content .modal-body .input_dot .input_dot_contents ul li input[type=checkbox]:checked + label::after {
+                left: 3px;
+                width: 16px;
+                height: 8px;
+                margin-top: -8px;
+                border-left: 3px solid #E71063;
+                border-bottom: 3px solid #E71063;
+                -webkit-transform: rotate(-45deg);
+                -ms-transform: rotate(-45deg);
+                transform: rotate(-45deg); } }
             .modal .modal-dialog .modal-content .modal-body .input_dot .input_dot_contents ul li .user_image .noimage {
               width: 30px;
               height: 30px;
@@ -3437,7 +3502,7 @@ header {
           position: absolute;
           color: #999999;
           right: 10px;
-          top: 12px; }
+          top: 10px; }
       .modal .modal-dialog .modal-content .modal-body .input_dot .select_box {
         *zoom: 1;
         float: right;
