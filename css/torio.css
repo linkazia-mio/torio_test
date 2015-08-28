@@ -2939,6 +2939,22 @@ header {
       display: inline-block;
       line-height: 28px;
       letter-spacing: 0.05em; }
+    .detail .title #title_edit, .detail_public .title #title_edit {
+      font-size: 22px;
+      font-size: 2.2rem;
+      line-height: 26px;
+      height: 26px;
+      font-weight: bold;
+      width: auto;
+      margin: -1px 0 3px 0;
+      letter-spacing: 0.05em;
+      max-width: 555px; }
+    .detail .title #hidden_span, .detail_public .title #hidden_span {
+      opacity: 0;
+      filter: alpha(opacity=0);
+      position: absolute;
+      top: 0;
+      left: 0; }
     .detail .title .check, .detail_public .title .check {
       font-size: 26px;
       font-size: 2.6rem;
@@ -6899,15 +6915,6 @@ input[type="checkbox"] {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background: #f9f9f9; }
-  .note #title_edit {
-    font-size: 22px;
-    font-size: 2.2rem;
-    line-height: 26px;
-    height: 26px;
-    font-weight: bold;
-    width: auto;
-    margin: -1px 0 3px 0;
-    letter-spacing: 0.05em; }
   .note .note_edit {
     padding-bottom: 20px;
     padding-left: 30px;

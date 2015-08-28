@@ -399,10 +399,7 @@ window.onload=function(){
         .css( 'display', '');
       });
 
-      $('#title_edit').keypress(function () {
-        var editsize= $('#title_edit').width();
-        $('#title_edit').css('width', editsize+18);
-      });
+
 
 
       $('.editable').click(function (event) {

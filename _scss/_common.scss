@@ -2073,6 +2073,22 @@ header {
       line-height: 28px;
       letter-spacing: 0.05em;
     }
+    #title_edit {
+      @include fontsize(2.2);
+      line-height: 26px;
+      height: 26px;
+      font-weight: bold;
+      width: auto;
+      margin: -1px 0 3px 0;
+      letter-spacing: 0.05em;
+      max-width: 555px;
+    }
+    #hidden_span {
+      @include opacity(0);
+      position: absolute;
+      top:0;
+      left:0;
+    }
     .check {
       @include fontsize(2.6);
       position: absolute;
