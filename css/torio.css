@@ -3945,16 +3945,29 @@ header {
     #viewers_box .modal-body .view_group_member dd, #note_viewers_box .modal-body .view_group_member dd, #note_like_box .modal-body .view_group_member dd {
       float: left;
       line-height: 40px;
-      margin-left: 10px; }
+      margin-left: 10px;
+      -webkit-font-smoothing: subpixel-antialiased;
+      -moz-osx-font-smoothing: auto; }
       #viewers_box .modal-body .view_group_member dd .user_friends, #note_viewers_box .modal-body .view_group_member dd .user_friends, #note_like_box .modal-body .view_group_member dd .user_friends {
         position: absolute;
-        top: 15px;
+        top: 21px;
         right: 20px;
-        /*border: 1px solid $border_gray;
-        @include border_radius(4px);*/
-        font-size: 13px;
-        font-size: 1.3rem;
-        padding: 0 10px; }
+        /*border: 1px solid $border_gray;*/
+        -webkit-border-radius: 100px;
+        -moz-border-radius: 100px;
+        -ms-border-radius: 100px;
+        border-radius: 100px;
+        font-size: 12px;
+        font-size: 1.2rem;
+        -webkit-font-smoothing: subpixel-antialiased;
+        -moz-osx-font-smoothing: auto;
+        background: #3A87BC;
+        padding: 3px 15px;
+        line-height: 23px;
+        height: 27px;
+        color: #fff; }
+        #viewers_box .modal-body .view_group_member dd .user_friends a, #note_viewers_box .modal-body .view_group_member dd .user_friends a, #note_like_box .modal-body .view_group_member dd .user_friends a {
+          color: #fff; }
 
 /*---------------------------------------------------------------------------------------
  Balloon

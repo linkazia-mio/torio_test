@@ -3109,30 +3109,39 @@ header {
         float: left;
         width: 40px;
         .noimage {
-        @include font_eng;
-        @include fontsize(1.0);
-        line-height: 38px;
-        text-align: center;
-      }
-      .user_image {
-        img {
-          width: 40px;
-          height: auto;
+          @include font_eng;
+          @include fontsize(1.0);
+          line-height: 38px;
+          text-align: center;
+        }
+        .user_image {
+          img {
+            width: 40px;
+            height: auto;
+          }
         }
       }
-    }
-    dd {
-      float: left;
-      line-height: 40px;
-      margin-left: 10px;
-      .user_friends {
-        position: absolute;
-        top: 15px;
-        right: 20px;
-        /*border: 1px solid $border_gray;
-        @include border_radius(4px);*/
-        @include fontsize(1.3);
-        padding: 0 10px;
+      dd {
+        float: left;
+        line-height: 40px;
+        margin-left: 10px;
+        @include font-smoothing(off);
+        .user_friends {
+          position: absolute;
+          top: 21px;
+          right: 20px;
+          /*border: 1px solid $border_gray;*/
+          @include border_radius(100px);
+          @include fontsize(1.2);
+          @include font-smoothing(off);
+          background: $torio_green;
+          padding: 3px 15px;
+          line-height: 23px;
+          height: 27px;
+          color: #fff;
+          a{
+            color: #fff;
+          }
         }
       }
     }
