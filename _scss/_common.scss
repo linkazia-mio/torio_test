@@ -2382,7 +2382,7 @@ header {
         .option {
           position: absolute;
           right: 20px;
-          top: 22px;
+          top: 18px;
           color: $white_brack;
           i {
             @include fontsize(2.6);
@@ -2391,7 +2391,7 @@ header {
         input[type="checkbox"] {
           & + label {
           width: 0;
-          margin: 13px 30px 18px 0;
+          margin: 11px 30px 18px 0;
           }
         }
         .modal_option_box {
@@ -2752,9 +2752,9 @@ header {
           }
         }
         .task_detail {
-          padding: 5px 0;
+          padding: 12px 10px;
           .requester {
-            @include border_radius(2px 2px 0 0);
+            @include border_radius(4px 4px 0 0);
             -webkit-background-clip: padding-box;
             position: relative;
             width: 100%;
@@ -2770,7 +2770,7 @@ header {
               left: 10px;
               top: 10px;
             }
-            .icon-expand-more {
+            .icon-arrow-drop-down {
               @include fontsize(2.4);
               position: absolute;
               color: $white_brack;
@@ -2799,7 +2799,7 @@ header {
           }
           .worker {
             @extend .requester;
-            @include border_radius(0 0 2px 2px);
+            @include border_radius(0 0 4px 4px);
             margin-top: -1px;
             .icon-person {
               @include fontsize(2.4);
@@ -2811,7 +2811,7 @@ header {
           }
           .limlt {
             @extend .requester;
-            @include border_radius(2px);
+            @include border_radius(4px);
             margin-top: 20px;
             i {
               color: $dark_red;
@@ -2823,12 +2823,12 @@ header {
             }
             input {
               line-height: 21px;
-              margin-top: 10px;
+              margin-top: 9px;
             }
           }
           .information {
             @extend .limit;
-            @include border_radius(2px);
+            @include border_radius(4px);
             position: relative;
             margin-top: 20px;
             border: 1px solid #cbcbcb;
@@ -2845,8 +2845,8 @@ header {
             .btn_file {
               overflow: hidden;
               position: absolute;
-              right: 110px;
-              bottom: 7px;
+              right: 120px;
+              bottom: 9px;
               width: 30px;
               height: 30px;
               i {
@@ -2869,8 +2869,11 @@ header {
               }
             }
             .btn_add_task {
-              right: 10px;
-              bottom: 10px;
+              right: 13px;
+              bottom: 13px;
+              line-height: 32px;
+              height: 30px;
+              @include font-smoothing(off);
             }
           }
         }
@@ -2887,7 +2890,7 @@ header {
           margin-top: 30px;
           .comment_inner {
             display: table;
-            width: 100%;
+            width: 98%;
             table-layout: fixed;
             margin-bottom: 20px;
             &:last-child{
@@ -2895,7 +2898,7 @@ header {
             }
             .user_image {
               display: table-cell;
-              width: 50px;
+              width: 55px;
               img {
                 width: 40px;
                 height: 40px;
@@ -2914,20 +2917,20 @@ header {
               display: table-cell;
               vertical-align: top;
               p {
-                @include fontsize(1.3);
+                @include fontsize(1.4);
                 &.name {
                   font-weight: bold;
                   padding-bottom: 3px;
-                  @include fontsize(1.3);
+                  @include fontsize(1.4);
                   .time {
                     margin-left: 10px;
                     font-weight: normal;
                     color: $white_brack;
-                    @include fontsize(1.3);
+                    @include fontsize(1.4);
                   }
                 }
                 &.memo {
-                  @include fontsize(1.3);
+                  @include fontsize(1.4);
                   word-wrap: break-word;
                   color: #000;
                 }
@@ -2942,7 +2945,7 @@ header {
         position: relative;
         &.gray {
           background: $white_gray;
-          @include border_radius(0 0 2px 2px);
+          @include border_radius(0 0 5px 5px);
         }
         &.task_modal_footer{
           textarea{
@@ -2957,9 +2960,9 @@ header {
         textarea {
           @include border_radius();
           width: 100%;
-          height: 95px;
-          margin-bottom: 15px;
-          border: 1px solid $border_gray;
+          height: 100px;
+          margin-bottom: 10px;
+          border: 1px solid $border_dark_gray;
           background: #fff;
           resize: none;
           outline: none;
