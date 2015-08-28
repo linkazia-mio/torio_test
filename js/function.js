@@ -481,8 +481,8 @@ window.onload=function(){
 
   //トグルスイッチ
   $('.toggle_btn').click(function (event) {
-    $('.off .circle').animate({'left': '+=30px'}, 'fast');
-    $('.on .circle').animate({'left': '-=30px'}, 'fast');
+    $('.off .circle').animate({'left': '+=25px'}, 'fast');
+    $('.on .circle').animate({'left': '-=25px'}, 'fast');
     $(this).toggleClass("off");
     $(this).toggleClass("on");
     $('.input_dot_contents p .on').toggle();
