@@ -529,7 +529,9 @@
           <div class="file">
             <!--Title/-->
             <div class="title">
-              <h1>デザインサンプル</h1>
+              <h1 class="note_title">デザインサンプル</h1>
+              <input id="title_edit" onkeypress="resize()" onkeyup="resize()" onblur="resize()" style="display:none; overflow:auto;"></input>
+              <span id="hidden_span"></span>
               <div class="check">
                 <i class="icon-expand-more"></i>
                 <div class="detail_check_box popover">
@@ -1376,6 +1378,18 @@
       jQuery(function(){
           introJs().setOption('showBullets', false).start();
       });
+
+      function resize(){
+        var t = document.getElementById("title_edit"); // textarea
+        var s = document.getElementById("hidden_span"); // span
+        s.innerHTML = t.value;
+        t.style.width = s.offsetWidth+22+"px";
+        document.getElementById("info").innerHTML =	s.offsetWidth+22+"px";
+        adjust();
+        $(t).on('resize', function(){
+           adjust();
+        });
+      }
     </script>
   </body>
 </html>
