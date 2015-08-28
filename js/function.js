@@ -398,12 +398,12 @@ window.onload=function(){
         .text($('#title_edit').val())
         .css( 'display', '');
       });
-      function resize() {
-        var t = document.getElementById("title_edit");// textarea
-        var s = document.getElementById("hidden_span");// span
-        s.innerHTML = t.value;
-        t.style.width = s.offsetWidth + 40 + "px";// 40px余計に幅を取る。
-      }
+
+      $('#title_edit').keypress(function () {
+        var editsize= $('#title_edit').width();
+        $('#title_edit').css('width', editsize+18);
+      });
+
 
       $('.editable').click(function (event) {
         jQuery('.start').hide();
