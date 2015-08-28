@@ -1472,11 +1472,13 @@ header {
   header.front {
     width: 100%;
     z-index: 1000;
-    height: 70px; }
+    height: 70px;
+    border-bottom: none !important; }
     header.front .header_inner {
       height: 70px;
       position: relative;
-      background: #ffffff; }
+      background: #ffffff;
+      border-bottom: none !important; }
       header.front .header_inner .logo {
         float: left; }
         header.front .header_inner .logo img {
@@ -2925,7 +2927,8 @@ header {
     float: none !important;
     height: auto !important;
     padding-bottom: 70px;
-    overflow: visible; }
+    overflow: visible;
+    margin-top: 70px; }
   .detail.ui-widget-content, .detail_public.ui-widget-content {
     border: none; }
   .detail .title, .detail_public .title {

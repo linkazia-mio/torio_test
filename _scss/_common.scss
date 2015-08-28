@@ -440,10 +440,12 @@ header {
     width: 100%;
     z-index: 1000;
     height: 70px;
+    border-bottom: none !important;
     .header_inner{
       height: 70px;
       position: relative;
       background: #ffffff;
+      border-bottom: none !important;
       .logo{
         float: left;
         img{
@@ -2058,6 +2060,7 @@ header {
    height: auto !important;
    padding-bottom: 70px;
    overflow: visible;
+   margin-top: 70px;
   }
   &.ui-widget-content {
     border: none;
