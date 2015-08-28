@@ -2078,16 +2078,22 @@ header {
       line-height: 26px;
       height: 26px;
       font-weight: bold;
-      width: auto;
+      // width: auto;
+      text-align: left;
       margin: -1px 0 3px 0;
       letter-spacing: 0.05em;
       max-width: 555px;
     }
     #hidden_span {
       @include opacity(0);
+      @include fontsize(2.2);
       position: absolute;
       top:0;
       left:0;
+      line-height: 26px;
+      font-weight: bold;
+      letter-spacing: 0.05em;
+      visibility:hidden;
     }
     .check {
       @include fontsize(2.6);
