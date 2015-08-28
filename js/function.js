@@ -383,6 +383,14 @@ window.onload=function(){
           .val( $( '.note_title').text())
           .css( 'display', '')
           .focus();
+        function adjust(){
+             var title_space= $('.note_title').width(); //h1の幅
+             $('#title_edit').css('width', title_space); //inputの幅に適用
+        }
+       adjust();
+       $('.note_title').on('resize', function(){
+          adjust();
+       })
       });
         $('#title_edit').blur(function() {
         $('#title_edit').css( 'display', 'none');
@@ -390,6 +398,12 @@ window.onload=function(){
         .text($('#title_edit').val())
         .css( 'display', '');
       });
+      function resize() {
+        var t = document.getElementById("title_edit");// textarea
+        var s = document.getElementById("hidden_span");// span
+        s.innerHTML = t.value;
+        t.style.width = s.offsetWidth + 40 + "px";// 40px余計に幅を取る。
+      }
 
       $('.editable').click(function (event) {
         jQuery('.start').hide();
@@ -646,16 +660,6 @@ window.onload=function(){
      })
   });
 
-  $(function(){
-      function adjust(){
-           var title_space= $('.note_title').width(); //他要素の幅
-           $('#title_edit').css('width', title_space); //可変部分の幅を適用
-      }
-     adjust();
-     $(window).on('resize', function(){
-        adjust();
-     })
-  });
 
 
   var popover = $('.popover');
