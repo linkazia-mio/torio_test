@@ -356,13 +356,14 @@
   width: 100%;
   overflow: hidden;
   background: rgba(51,51,51,0.36);
+  @include font-smoothing(off);
   .file_detail_inner {
     width: 750px;
     margin: 0 auto;
     padding: 60px 0;
     /*bx-wrapper*/
     .bx-wrapper {
-      @include border_radius();
+      @include border_radius(5px);
       position: relative;
       background: #fff;
       /*border: 1px solid #c4c9cc;
@@ -377,15 +378,15 @@
           .bx-prev {
             position: absolute;
             top: 350px;
-            left: -80px;
+            left: -110px;
             height: 0;
             padding-top: 96px;
             width: 60px;
             overflow: hidden;
-            color: $brack;
+            color: #ffffff;
             text-decoration: none;
             &:before {
-              @include fontsize(6.0);
+              @include fontsize(8.0);
               position: absolute;
               top: 0;
               content: "\e62d";
@@ -394,15 +395,15 @@
           .bx-next {
             position: absolute;
             top: 350px;
-            right: -80px;
+            right: -90px;
             height: 0;
             padding-top: 96px;
             width: 60px;
             overflow: hidden;
-            color: $brack;
+            color: #ffffff;
             text-decoration: none;
             &:before {
-              @include fontsize(6.0);
+              @include fontsize(8.0);
               position: absolute;
               top: 0;
               content: "\e62e";
@@ -463,12 +464,13 @@
               border-bottom: 1px solid $border_white_gray;
               @extend .clearfix;
               h4 {
-                @include fontsize(1.4);
+                @include fontsize(1.6);
                 font-weight: bold;
+                margin-top: 12px;
               }
               .user_image {
                 float: left;
-                margin-right: 8px;
+                margin-right: 12px;
                 img {
                   height: 40px;
                   width: 40px;
@@ -676,12 +678,12 @@
               .comment_entry {
                 position: relative;
                 textarea {
-                  @include border_radius();
+                  @include border_radius(4px);
                   width: 100%;
                   height: 60px;
                   padding: 10px 15px;
-                  margin-bottom: 20px;
-                  border: 1px solid $border_gray;
+                  margin-bottom: 15px;
+                  border: 1px solid $border_dark_gray;
                   resize: none;
                   outline: none;
                 }
@@ -737,9 +739,9 @@
   .file_detail_close {
     position: absolute;
     top:0px;
-    right:15px;
-    color: $white_brack;
-    @include fontsize(3.0);
+    right:20px;
+    color: #ffffff;
+    @include fontsize(5.0);
   }
 }
 

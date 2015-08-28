@@ -3203,7 +3203,7 @@ header {
 .modal .modal_close {
   position: absolute;
   top: 0px;
-  right: 15px;
+  right: 20px;
   color: #fff;
   font-size: 50px;
   font-size: 5rem; }
@@ -3593,7 +3593,7 @@ header {
           visibility: visible;
           z-index: 1; }
     .modal .modal-dialog .modal-content .modal-body .task_detail {
-      padding: 12px 10px; }
+      padding: 10px 8px; }
       .modal .modal-dialog .modal-content .modal-body .task_detail .requester, .modal .modal-dialog .modal-content .modal-body .task_detail .worker, .modal .modal-dialog .modal-content .modal-body .task_detail .limlt {
         -webkit-border-radius: 4px 4px 0 0;
         -moz-border-radius: 4px 4px 0 0;
@@ -4543,17 +4543,19 @@ footer.front {
   height: 100%;
   width: 100%;
   overflow: hidden;
-  background: rgba(51, 51, 51, 0.36); }
+  background: rgba(51, 51, 51, 0.36);
+  -webkit-font-smoothing: subpixel-antialiased;
+  -moz-osx-font-smoothing: auto; }
   #file_detail .file_detail_inner {
     width: 750px;
     margin: 0 auto;
     padding: 60px 0;
     /*bx-wrapper*/ }
     #file_detail .file_detail_inner .bx-wrapper {
-      -webkit-border-radius: 4px;
-      -moz-border-radius: 4px;
-      -ms-border-radius: 4px;
-      border-radius: 4px;
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      -ms-border-radius: 5px;
+      border-radius: 5px;
       position: relative;
       background: #fff;
       /*border: 1px solid #c4c9cc;
@@ -4566,32 +4568,32 @@ footer.front {
         #file_detail .file_detail_inner .bx-wrapper .bx-controls .bx-controls-direction .bx-prev {
           position: absolute;
           top: 350px;
-          left: -80px;
+          left: -110px;
           height: 0;
           padding-top: 96px;
           width: 60px;
           overflow: hidden;
-          color: #555555;
+          color: #ffffff;
           text-decoration: none; }
           #file_detail .file_detail_inner .bx-wrapper .bx-controls .bx-controls-direction .bx-prev:before {
-            font-size: 60px;
-            font-size: 6rem;
+            font-size: 80px;
+            font-size: 8rem;
             position: absolute;
             top: 0;
             content: "\e62d"; }
         #file_detail .file_detail_inner .bx-wrapper .bx-controls .bx-controls-direction .bx-next {
           position: absolute;
           top: 350px;
-          right: -80px;
+          right: -90px;
           height: 0;
           padding-top: 96px;
           width: 60px;
           overflow: hidden;
-          color: #555555;
+          color: #ffffff;
           text-decoration: none; }
           #file_detail .file_detail_inner .bx-wrapper .bx-controls .bx-controls-direction .bx-next:before {
-            font-size: 60px;
-            font-size: 6rem;
+            font-size: 80px;
+            font-size: 8rem;
             position: absolute;
             top: 0;
             content: "\e62e"; }
@@ -4640,12 +4642,13 @@ footer.front {
             padding: 30px 25px 25px;
             border-bottom: 1px solid #f5f5f5; }
             #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .item .header h4 {
-              font-size: 14px;
-              font-size: 1.4rem;
-              font-weight: bold; }
+              font-size: 16px;
+              font-size: 1.6rem;
+              font-weight: bold;
+              margin-top: 12px; }
             #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .item .header .user_image {
               float: left;
-              margin-right: 8px; }
+              margin-right: 12px; }
               #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .item .header .user_image img {
                 height: 40px;
                 width: 40px; }
@@ -4838,8 +4841,8 @@ footer.front {
                 width: 100%;
                 height: 60px;
                 padding: 10px 15px;
-                margin-bottom: 20px;
-                border: 1px solid #eeeeee;
+                margin-bottom: 15px;
+                border: 1px solid #cbcbcb;
                 resize: none;
                 outline: none; }
               #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .item .footer .comment_entry button {
@@ -4884,10 +4887,10 @@ footer.front {
   #file_detail .file_detail_close {
     position: absolute;
     top: 0px;
-    right: 15px;
-    color: #999999;
-    font-size: 30px;
-    font-size: 3rem; }
+    right: 20px;
+    color: #ffffff;
+    font-size: 50px;
+    font-size: 5rem; }
 
 /*Carousel*/
 .carousel {
