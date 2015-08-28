@@ -397,6 +397,14 @@ window.onload=function(){
         $('.note_title')
         .text($('#title_edit').val())
         .css( 'display', '');
+        function adjust(){
+             var title_space= $('.note_title').width(); //h1の幅
+             $('#title_edit').css('width', title_space); //inputの幅に適用
+        }
+       adjust();
+       $('.note_title').on('resize', function(){
+          adjust();
+       })
       });
 
 

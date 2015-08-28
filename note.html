@@ -530,7 +530,7 @@
               <h1 class="note_title">Untitled</h1>
               <input id="title_edit" onkeypress="resize()" onkeyup="resize()" onblur="resize()" style="display:none; overflow:auto;"></input>
               <!-- <input id="title_edit2" onkeypress="resize()" onkeyup="resize()" onblur="resize()" style="width:40px; height:30px; overflow:auto; font-size: 13px;"></input> -->
-              <span id="hidden_span" style="visibility:hidden; font-family: Arial; font-style: normal; background-color:orange;"></span>
+              <span id="hidden_span"></span>
               <div class="check">
                 <i class="icon-expand-more"></i>
                 <div class="detail_check_box popover">
@@ -1140,17 +1140,19 @@
         $(this).toggleClass("active");
       });
     });
+
     function resize(){
       var t = document.getElementById("title_edit"); // textarea
       var s = document.getElementById("hidden_span"); // span
       s.innerHTML = t.value;
-      t.style.width = s.offsetWidth+20+"px";
-      document.getElementById("info").innerHTML =	s.offsetWidth+70+"px";
+      t.style.width = s.offsetWidth+22+"px";
+      document.getElementById("info").innerHTML =	s.offsetWidth+22+"px";
       adjust();
       $(t).on('resize', function(){
          adjust();
-      })
+      });
     }
+
 
     </script>
   </body>
