@@ -399,10 +399,7 @@ window.onload=function(){
         .css( 'display', '');
       });
 
-      $('#title_edit').keypress(function () {
-        var editsize= $('#title_edit').width();
-        $('#title_edit').css('width', editsize+18);
-      });
+
 
 
       $('.editable').click(function (event) {
@@ -443,7 +440,8 @@ window.onload=function(){
       jQuery('.task_replacement').sortable({
         cursor : 'move',
         handle : '.handle',
-        placeholder: 'placeholder'
+        placeholder: 'placeholder',
+        tolerance: 'pointer'
       });
       jQuery('.task_lists').sortable({
         cursor : 'move',

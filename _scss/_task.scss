@@ -508,6 +508,9 @@ input[type="checkbox"] {
             height: 35px;
             vertical-align: middle;
             padding: 0;
+            &:hover {
+              cursor: pointer;
+            }
           }
         }
         .icon-access-time{
@@ -527,6 +530,9 @@ input[type="checkbox"] {
           right: 0;
           font-weight: normal;
           @include fontsize(1.2);
+          &:hover {
+            cursor: pointer;
+          }
         }
         &:hover {
           cursor: pointer;
