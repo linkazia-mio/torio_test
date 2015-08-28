@@ -6424,6 +6424,8 @@ input[type="checkbox"] {
             height: 35px;
             vertical-align: middle;
             padding: 0; }
+            .task_replacement .task_people .task_list .time_create.configured input:hover, .task_replacement .task_people .task_list .configured.task_member input:hover {
+              cursor: pointer; }
         .task_replacement .task_people .task_list .time_create .icon-access-time, .task_replacement .task_people .task_list .task_member .icon-access-time {
           font-size: 22px;
           font-size: 2.2rem;
@@ -6441,6 +6443,8 @@ input[type="checkbox"] {
           font-weight: normal;
           font-size: 12px;
           font-size: 1.2rem; }
+          .task_replacement .task_people .task_list .task_member select:hover {
+            cursor: pointer; }
         .task_replacement .task_people .task_list .task_member:hover {
           cursor: pointer; }
           .task_replacement .task_people .task_list .task_member:hover .balloon_box {
