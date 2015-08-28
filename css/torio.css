@@ -1473,7 +1473,8 @@ header {
     width: 100%;
     z-index: 1000;
     height: 70px;
-    border-bottom: none !important; }
+    border-bottom: none !important;
+    position: relative !important; }
     header.front .header_inner {
       height: 70px;
       position: relative;
@@ -2928,7 +2929,7 @@ header {
     height: auto !important;
     padding-bottom: 70px;
     overflow: visible;
-    margin-top: 70px; }
+    margin-top: 0px; }
   .detail.ui-widget-content, .detail_public.ui-widget-content {
     border: none; }
   .detail .title, .detail_public .title {
@@ -5076,11 +5077,13 @@ footer.front {
     height: 70px;
     position: absolute;
     top: 0;
-    left: 0; }
+    left: 0;
+    border-bottom: none !important; }
     .kv #top_header .header_inner {
       height: 70px;
       position: relative;
-      background: none; }
+      background: none;
+      border-bottom: none !important; }
       .kv #top_header .header_inner .front_header_menu .logo {
         float: left; }
         .kv #top_header .header_inner .front_header_menu .logo img {
@@ -5228,8 +5231,10 @@ footer.front {
     padding-left: 440px; }
     .point01 .point_inner .image {
       top: 0px;
-      left: -200px;
+      left: -180px;
       position: absolute; }
+      .point01 .point_inner .image img {
+        width: 90%; }
     .point01 .point_inner .text {
       padding: 50px 0 0 0; }
       .point01 .point_inner .text h3 {
@@ -5252,9 +5257,9 @@ footer.front {
         font-size: 1.6rem;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
-        padding: 20px 0 0 0;
+        padding: 30px 0 0 5px;
         line-height: 2.0;
-        color: #606060; }
+        color: #333333; }
 
 .point02 {
   overflow: hidden;
@@ -5272,8 +5277,10 @@ footer.front {
     padding-right: 440px; }
     .point02 .point_inner .image {
       top: 0px;
-      right: -80px;
+      right: -70px;
       position: absolute; }
+      .point02 .point_inner .image img {
+        width: 90%; }
     .point02 .point_inner .text {
       padding: 15px 0 0 0;
       text-align: left; }
@@ -5297,9 +5304,9 @@ footer.front {
         font-size: 1.6rem;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
-        padding: 20px 0 0 0;
+        padding: 30px 0 0 5px;
         line-height: 2.0;
-        color: #606060; }
+        color: #333333; }
 
 .point03 {
   overflow: hidden;
@@ -5317,8 +5324,10 @@ footer.front {
     padding-left: 420px; }
     .point03 .point_inner .image {
       top: 0px;
-      left: -400px;
+      left: -350px;
       position: absolute; }
+      .point03 .point_inner .image img {
+        width: 90%; }
     .point03 .point_inner .text {
       padding: 80px 0 0 0; }
       .point03 .point_inner .text h3 {
@@ -5341,9 +5350,9 @@ footer.front {
         font-size: 1.6rem;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
-        padding: 20px 0 0 0;
+        padding: 30px 0 0 5px;
         line-height: 2.0;
-        color: #606060; }
+        color: #333333; }
 
 .top_feature {
   background: #f9f9f9;
@@ -5444,7 +5453,7 @@ footer.front {
         .top_feature .feature_inner .grid .card_text p {
           margin: 0;
           padding: 0;
-          color: #606060; }
+          color: #333333; }
 
 .top_signin {
   width: 100%;
@@ -5532,7 +5541,8 @@ footer.front {
     .top_signin .signin_inner .caption {
       font-size: 14px;
       font-size: 1.4rem;
-      padding: 30px 0 0 0; }
+      padding: 30px 0 0 0;
+      color: #ffffff; }
       .top_signin .signin_inner .caption a {
         color: #ffffff; }
 

@@ -441,6 +441,7 @@ header {
     z-index: 1000;
     height: 70px;
     border-bottom: none !important;
+    position: relative !important;
     .header_inner{
       height: 70px;
       position: relative;
@@ -2060,7 +2061,7 @@ header {
    height: auto !important;
    padding-bottom: 70px;
    overflow: visible;
-   margin-top: 70px;
+   margin-top: 0px;
   }
   &.ui-widget-content {
     border: none;
