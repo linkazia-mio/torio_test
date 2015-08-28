@@ -3194,9 +3194,9 @@ header {
   position: absolute;
   top: 0px;
   right: 15px;
-  color: #999999;
-  font-size: 30px;
-  font-size: 3rem; }
+  color: #fff;
+  font-size: 50px;
+  font-size: 5rem; }
 
 .modal .modal-dialog .modal-content {
   -webkit-border-radius: 5px;
@@ -3215,12 +3215,12 @@ header {
     -ms-border-radius: 5px 5px 0 0;
     border-radius: 5px 5px 0 0;
     border-bottom: none;
-    background: #fff;
-    padding: 25px; }
+    background: #f9f9f9;
+    padding: 20px 20px 15px 20px; }
     .modal .modal-dialog .modal-content .modal-header .modal-title {
-      font-size: 16px;
-      font-size: 1.6rem;
-      font-weight: normal; }
+      font-size: 15px;
+      font-size: 1.5rem;
+      font-weight: bold; }
     .modal .modal-dialog .modal-content .modal-header .close {
       margin-top: -8px; }
     .modal .modal-dialog .modal-content .modal-header .option, .modal .modal-dialog .modal-content .carousel .carousel-inner .item .modal-header .download, .carousel .carousel-inner .item .modal .modal-dialog .modal-content .modal-header .download, .modal .modal-dialog .modal-content .carousel .carousel-inner .item .modal-header .like, .carousel .carousel-inner .item .modal .modal-dialog .modal-content .modal-header .like {
@@ -3240,7 +3240,8 @@ header {
     .modal .modal-dialog .modal-content .modal-header.task_modal_header .modal-title {
       font-weight: bold; }
   .modal .modal-dialog .modal-content .modal-body {
-    background: #f9f9f9; }
+    background: #f9f9f9;
+    padding: 15px; }
     .modal .modal-dialog .modal-content .modal-body.white {
       border-top: 1px solid #f5f5f5;
       background: #fff; }
@@ -3248,7 +3249,7 @@ header {
       font-size: 13px;
       font-size: 1.3rem;
       *zoom: 1;
-      padding: 10px;
+      padding: 10px 8px;
       clear: both; }
       .modal .modal-dialog .modal-content .modal-body .input_dot:after {
         content: ".";
@@ -3267,12 +3268,13 @@ header {
         clear: both;
         display: block;
         content: "";
-        background-image: -webkit-linear-gradient(left, #999999, #999999 20%, transparent 20%, transparent 100%);
-        background-image: -o-linear-gradient(left, #999999, #999999 20%, transparent 20%, transparent 100%);
-        background-image: linear-gradient(to right, #999999, #999999 20%, transparent 20%, transparent 100%);
-        background-size: 5px 5px;
+        /*background-image: -webkit-linear-gradient(left, $white_brack, $white_brack 20%, rgba(0, 0, 0, 0) 20%, rgba(0, 0, 0, 0) 100%);
+            background-image: -o-linear-gradient(left, $white_brack, $white_brack 20%, rgba(0, 0, 0, 0) 20%, rgba(0, 0, 0, 0) 100%);
+            background-image: linear-gradient(to right, $white_brack, $white_brack 20%, rgba(0, 0, 0, 0) 20%, rgba(0, 0, 0, 0) 100%);
+            background-size: 5px 5px;*/
+        background: #eeeeee;
         height: 1px;
-        margin-top: 10px;
+        margin-top: 15px;
         visibility: visible; }
         .modal .modal-dialog .modal-content .modal-body .input_dot:after:after {
           content: ".";
@@ -3292,57 +3294,63 @@ header {
       .modal .modal-dialog .modal-content .modal-body .input_dot .input_dot_contents {
         width: 400px;
         float: right; }
-        .modal .modal-dialog .modal-content .modal-body .input_dot .input_dot_contents ul li {
-          position: relative;
-          clear: both;
-          height: 40px;
-          padding-bottom: 15px;
-          margin: 0; }
-          .modal .modal-dialog .modal-content .modal-body .input_dot .input_dot_contents ul li .user_image .noimage {
-            width: 30px;
-            height: 30px;
-            line-height: 30px;
-            font-size: 10px;
-            font-size: 1rem; }
-          .modal .modal-dialog .modal-content .modal-body .input_dot .input_dot_contents ul li .user_image img {
-            width: 30px;
-            height: 30px; }
-          .modal .modal-dialog .modal-content .modal-body .input_dot .input_dot_contents ul li .user_name {
-            line-height: 30px;
-            padding-left: 10px; }
-          .modal .modal-dialog .modal-content .modal-body .input_dot .input_dot_contents ul li .delete {
-            font-size: 20px;
-            font-size: 2rem;
-            position: absolute;
-            right: -2px;
-            top: 6px;
-            line-height: 30px;
-            color: #999999; }
-          .modal .modal-dialog .modal-content .modal-body .input_dot .input_dot_contents ul li .select_box {
-            position: absolute;
-            top: 2px;
-            right: 40px; }
-            .modal .modal-dialog .modal-content .modal-body .input_dot .input_dot_contents ul li .select_box select {
+        .modal .modal-dialog .modal-content .modal-body .input_dot .input_dot_contents ul {
+          -webkit-font-smoothing: subpixel-antialiased;
+          -moz-osx-font-smoothing: auto; }
+          .modal .modal-dialog .modal-content .modal-body .input_dot .input_dot_contents ul li {
+            position: relative;
+            clear: both;
+            height: 45px;
+            padding-bottom: 15px;
+            margin: 0; }
+            .modal .modal-dialog .modal-content .modal-body .input_dot .input_dot_contents ul li .user_image .noimage {
+              width: 30px;
+              height: 30px;
               line-height: 30px;
-              width: 100px;
-              border: none;
-              padding: 0; }
-              .modal .modal-dialog .modal-content .modal-body .input_dot .input_dot_contents ul li .select_box select:focus {
-                outline: none; }
-            .modal .modal-dialog .modal-content .modal-body .input_dot .input_dot_contents ul li .select_box:after {
-              font-size: 26px;
-              font-size: 2.6rem;
+              font-size: 10px;
+              font-size: 1rem; }
+            .modal .modal-dialog .modal-content .modal-body .input_dot .input_dot_contents ul li .user_image img {
+              width: 30px;
+              height: 30px; }
+            .modal .modal-dialog .modal-content .modal-body .input_dot .input_dot_contents ul li .user_name {
+              line-height: 30px;
+              padding-left: 10px; }
+            .modal .modal-dialog .modal-content .modal-body .input_dot .input_dot_contents ul li .delete {
+              font-size: 20px;
+              font-size: 2rem;
               position: absolute;
-              right: 0;
-              top: -5px;
-              height: 26px;
-              width: 26px;
-              font-family: 'torio_icon';
-              content: "\e60a";
+              right: 0px;
+              top: 7px;
+              line-height: 30px;
               color: #999999;
-              visibility: visible;
-              z-index: 1;
-              display: block; }
+              cursor: pointer; }
+            .modal .modal-dialog .modal-content .modal-body .input_dot .input_dot_contents ul li .select_box {
+              position: absolute;
+              top: 2px;
+              right: 40px;
+              cursor: pointer; }
+              .modal .modal-dialog .modal-content .modal-body .input_dot .input_dot_contents ul li .select_box select {
+                line-height: 30px;
+                width: 100px;
+                border: none;
+                padding: 0;
+                cursor: pointer; }
+                .modal .modal-dialog .modal-content .modal-body .input_dot .input_dot_contents ul li .select_box select:focus {
+                  outline: none; }
+              .modal .modal-dialog .modal-content .modal-body .input_dot .input_dot_contents ul li .select_box:after {
+                font-size: 26px;
+                font-size: 2.6rem;
+                position: absolute;
+                right: 0;
+                top: -4px;
+                height: 26px;
+                width: 26px;
+                font-family: 'torio_icon';
+                content: "\e60a";
+                color: #999999;
+                visibility: visible;
+                z-index: 1;
+                display: block; }
         .modal .modal-dialog .modal-content .modal-body .input_dot .input_dot_contents .toggle_btn {
           -webkit-border-radius: 18px;
           -moz-border-radius: 18px;
@@ -3427,14 +3435,14 @@ header {
           position: absolute;
           right: 0; }
       .modal .modal-dialog .modal-content .modal-body .input_dot input[type="text"] {
-        -webkit-border-radius: 2px;
-        -moz-border-radius: 2px;
-        -ms-border-radius: 2px;
-        border-radius: 2px;
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+        -ms-border-radius: 4px;
+        border-radius: 4px;
         float: right;
         width: 400px;
-        border: 1px solid #eeeeee;
-        padding: 10px 10px;
+        border: 1px solid #cbcbcb;
+        padding: 8px 10px;
         margin-bottom: 20px; }
       .modal .modal-dialog .modal-content .modal-body .input_dot .close_btn {
         position: relative;
@@ -3457,17 +3465,17 @@ header {
           height: 0;
           visibility: hidden; }
         .modal .modal-dialog .modal-content .modal-body .input_dot .select_box select {
-          -webkit-border-radius: 2px;
-          -moz-border-radius: 2px;
-          -ms-border-radius: 2px;
-          border-radius: 2px;
+          -webkit-border-radius: 4px;
+          -moz-border-radius: 4px;
+          -ms-border-radius: 4px;
+          border-radius: 4px;
           position: relative;
           width: 400px;
           -webkit-appearance: none;
           -moz-appearance: none;
           appearance: none;
-          border: 1px solid #eeeeee;
-          padding: 12px 10px 10px 13px;
+          border: 1px solid #cbcbcb;
+          padding: 10px 10px 8px 13px;
           margin: 0 0 0 0;
           z-index: 100; }
           .modal .modal-dialog .modal-content .modal-body .input_dot .select_box select:focus {
@@ -3692,22 +3700,89 @@ header {
       .modal .modal-dialog .modal-content .modal-footer button.btn-default {
         /*background: $white_gray;*/
         border: none;
-        margin-right: 10px;
+        margin-right: 3px;
         padding: 0;
         font-weight: normal;
-        -webkit-box-shadow: inset 0 0 0 1px #cbcbcb;
-        box-shadow: inset 0 0 0 1px #cbcbcb; }
+        -webkit-transition: all 0.3s ease-in-out;
+        -moz-transition: all 0.3s ease-in-out;
+        -ms-transition: all 0.3s ease-in-out;
+        -o-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+        cursor: pointer;
+        border: 2px solid #f2f2f2;
+        padding: 0 15px 0 15px;
+        display: inline-block;
+        font-size: 14px;
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        line-height: 40px;
+        height: 42px;
+        /*@include font_eng;*/
+        font-weight: normal;
+        font-style: normal;
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+        -ms-border-radius: 4px;
+        border-radius: 4px;
+        color: #000000;
+        background: #ffffff;
+        text-decoration: none;
+        letter-spacing: 0.05em;
+        -webkit-font-smoothing: subpixel-antialiased;
+        -moz-osx-font-smoothing: auto; }
         .modal .modal-dialog .modal-content .modal-footer button.btn-default:hover {
-          opacity: 0.7;
-          filter: alpha(opacity=70); }
+          /*-webkit-box-shadow: inset 0 0 0 1px #b2b2b2;
+              box-shadow: inset 0 0 0 1px #b2b2b2;*/
+          outline: 0;
+          background: #f2f2f2;
+          color: #000000;
+          border: 2px solid #f2f2f2; }
       .modal .modal-dialog .modal-content .modal-footer button.btn-primary {
-        background: #3A87BC;
         border: none;
         padding: 0;
-        font-weight: 700; }
+        font-weight: 700;
+        -webkit-transition: all 0.3s ease-in-out;
+        -moz-transition: all 0.3s ease-in-out;
+        -ms-transition: all 0.3s ease-in-out;
+        -o-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+        cursor: pointer;
+        border: 2px solid #3a87bc;
+        padding: 0 15px 0 15px;
+        display: inline-block;
+        font-size: 14px;
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        line-height: 40px;
+        height: 42px;
+        /*@include font_eng;*/
+        font-weight: normal;
+        font-style: normal;
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+        -ms-border-radius: 4px;
+        border-radius: 4px;
+        color: #ffffff;
+        background: #3a87bc;
+        text-decoration: none;
+        letter-spacing: 0.05em;
+        -webkit-font-smoothing: subpixel-antialiased;
+        -moz-osx-font-smoothing: auto; }
         .modal .modal-dialog .modal-content .modal-footer button.btn-primary:hover {
-          opacity: 0.7;
-          filter: alpha(opacity=70); }
+          /*-webkit-box-shadow: inset 0 0 0 1px #b2b2b2;
+              box-shadow: inset 0 0 0 1px #b2b2b2;*/
+          outline: 0;
+          background: #2b75a7;
+          color: #fff;
+          border: 2px solid #2b75a7; }
     .modal .modal-dialog .modal-content .modal-footer .link {
       position: absolute;
       left: 25px;
@@ -4063,7 +4138,10 @@ footer.front {
       padding: 0; }
       .file .file_list .panel .panel-body.type_image .file_img {
         position: relative;
-        cursor: pointer; }
+        cursor: pointer;
+        /*overflow: hidden;
+            height: 200px;*/
+        min-height: 190px; }
         .file .file_list .panel .panel-body.type_image .file_img:before {
           background: url(../images/bg_shadow.png) repeat-x left bottom;
           bottom: 0;
@@ -4120,7 +4198,9 @@ footer.front {
           color: #39865a;
           text-align: center;
           width: 100%;
-          padding: 20% 0;
+          /*height: 200px;*/
+          min-height: 190px;
+          padding: 25% 0;
           background: #24a35a; }
         .file .file_list .panel .panel-body.type_file .word {
           color: #0c4e87;
@@ -4218,9 +4298,9 @@ footer.front {
               color: #ff3366;
               display: block; }
           .file .file_list .panel .panel-body .info p.comment {
-            margin: 0 1.5% 0 0; }
+            margin: 1px 0.7% 0 0; }
           .file .file_list .panel .panel-body .info p.download, .file .file_list .panel .panel-body .info .carousel .carousel-inner .item .modal-header p.like, .carousel .carousel-inner .item .modal-header .file .file_list .panel .panel-body .info p.like {
-            margin: 0 2% 0 0; }
+            margin: 1px 2% 0 0; }
         .file .file_list .panel .panel-body .info .user_image {
           position: absolute;
           right: 7px;
@@ -6133,7 +6213,8 @@ input[type="checkbox"] {
     .task_replacement .task_people .handle {
       margin-bottom: 15px;
       color: #000;
-      position: relative; }
+      position: relative;
+      cursor: move; }
       .task_replacement .task_people .handle .option, .task_replacement .task_people .handle .carousel .carousel-inner .item .modal-header .download, .carousel .carousel-inner .item .modal-header .task_replacement .task_people .handle .download, .task_replacement .task_people .handle .carousel .carousel-inner .item .modal-header .like, .carousel .carousel-inner .item .modal-header .task_replacement .task_people .handle .like {
         right: 0;
         top: 0;
@@ -6141,7 +6222,8 @@ input[type="checkbox"] {
         color: #999999;
         font-size: 26px;
         font-size: 2.6rem;
-        cursor: pointer; }
+        cursor: pointer;
+        z-index: 10; }
         .task_replacement .task_people .handle .option:hover .balloon_box, .task_replacement .task_people .handle .carousel .carousel-inner .item .modal-header .download:hover .balloon_box, .carousel .carousel-inner .item .modal-header .task_replacement .task_people .handle .download:hover .balloon_box, .task_replacement .task_people .handle .carousel .carousel-inner .item .modal-header .like:hover .balloon_box, .carousel .carousel-inner .item .modal-header .task_replacement .task_people .handle .like:hover .balloon_box {
           display: block;
           top: 15px;
