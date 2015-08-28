@@ -3355,10 +3355,18 @@ header {
                 color: #333333;
                 font-weight: normal;
                 font-size: 13px;
-                font-size: 1.3rem; }
+                font-size: 1.3rem;
+                -webkit-border-radius: 100px;
+                -moz-border-radius: 100px;
+                -ms-border-radius: 100px;
+                border-radius: 100px; }
               .modal .modal-dialog .modal-content .modal-body .input_dot .input_dot_contents ul li input[type=checkbox]:checked + label::before {
-                background: #4ad337;
-                border: 2px solid #4ad337; }
+                background: #48ca2c;
+                border: 2px solid #48ca2c;
+                -webkit-border-radius: 100px;
+                -moz-border-radius: 100px;
+                -ms-border-radius: 100px;
+                border-radius: 100px; }
               .modal .modal-dialog .modal-content .modal-body .input_dot .input_dot_contents ul li input[type=checkbox]:checked + label::after {
                 content: "";
                 position: absolute;
