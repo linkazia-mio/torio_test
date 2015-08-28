@@ -755,10 +755,13 @@ window.onload=function(){
     }
   ];
 
+
+
   var options = {
     segmentStrokeColor: "rgba(255, 255, 255, 0.0)",
     percentageInnerCutout : 80,
-    animationSteps : 20,
+    animationSteps : 1,
+    animateRotate : false,
     animationEasing: 'easeOutQuart',
     showTooltips: false,
   //   //String - A legend template
