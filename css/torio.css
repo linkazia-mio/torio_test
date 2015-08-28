@@ -4567,7 +4567,7 @@ footer.front {
         font-family: 'torio_icon'; }
         #file_detail .file_detail_inner .bx-wrapper .bx-controls .bx-controls-direction .bx-prev {
           position: absolute;
-          top: 350px;
+          top: 310px;
           left: -110px;
           height: 0;
           padding-top: 96px;
@@ -4583,7 +4583,7 @@ footer.front {
             content: "\e62d"; }
         #file_detail .file_detail_inner .bx-wrapper .bx-controls .bx-controls-direction .bx-next {
           position: absolute;
-          top: 350px;
+          top: 330px;
           right: -90px;
           height: 0;
           padding-top: 96px;
