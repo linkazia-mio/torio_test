@@ -3260,8 +3260,25 @@ header {
       width: 0;
       margin: 11px 30px 18px 0; }
     .modal .modal-dialog .modal-content .modal-header .modal_option_box {
-      width: 250px;
-      right: -160px; }
+      width: 200px;
+      right: -116px;
+      top: 50px; }
+      .modal .modal-dialog .modal-content .modal-header .modal_option_box::before {
+        position: absolute;
+        content: '';
+        left: 25%;
+        top: -16px;
+        margin-left: -7px;
+        border: 8px solid transparent;
+        border-bottom-color: rgba(0, 0, 0, 0.3); }
+      .modal .modal-dialog .modal-content .modal-header .modal_option_box::after {
+        position: absolute;
+        content: '';
+        left: 25%;
+        top: -15px;
+        margin-left: -7px;
+        border: 8px solid transparent;
+        border-bottom-color: #fff; }
     .modal .modal-dialog .modal-content .modal-header.task_modal_header .modal-title {
       font-weight: bold; }
   .modal .modal-dialog .modal-content .modal-body {
@@ -7200,14 +7217,18 @@ input[type="checkbox"] {
           line-height: 40px;
           float: left;
           margin-right: 15px;
-          font-size: 12px;
-          font-size: 1.2rem; }
+          font-size: 13px;
+          font-size: 1.3rem; }
         .note .note_edit .note_edit_inner .edit_name .user_image {
           float: left;
           margin-right: 15px; }
           .note .note_edit .note_edit_inner .edit_name .user_image img {
             width: 40px;
             height: 40px; }
+        .note .note_edit .note_edit_inner .edit_name .writer_name {
+          font-size: 15px;
+          font-size: 1.5rem;
+          margin-top: -3px; }
         .note .note_edit .note_edit_inner .edit_name .writer_info {
           font-size: 12px;
           font-size: 1.2rem;
@@ -7448,8 +7469,8 @@ input[type="checkbox"] {
           display: table-cell;
           vertical-align: top; }
           .note .note_edit .note_comment .comment_inner .user_comment p {
-            font-size: 12px;
-            font-size: 1.2rem; }
+            font-size: 13px;
+            font-size: 1.3rem; }
             .note .note_edit .note_comment .comment_inner .user_comment p.name {
               font-weight: bold;
               padding-bottom: 1px; }
@@ -7460,13 +7481,13 @@ input[type="checkbox"] {
                 font-size: 12px;
                 font-size: 1.2rem; }
             .note .note_edit .note_comment .comment_inner .user_comment p.memo {
-              font-size: 12px;
-              font-size: 1.2rem;
+              font-size: 13px;
+              font-size: 1.3rem;
               word-wrap: break-word; }
       .note .note_edit .note_comment .comment_entry {
         margin: 0 auto;
-        padding: 20px 0;
-        border-top: 1px solid #eeeeee; }
+        padding: 0 0 25px 0;
+        /*border-top: 1px solid $border_gray;*/ }
         .note .note_edit .note_comment .comment_entry textarea {
           -webkit-border-radius: 4px;
           -moz-border-radius: 4px;
@@ -7475,13 +7496,13 @@ input[type="checkbox"] {
           width: 100%;
           height: 60px;
           padding: 10px 10px;
-          margin-bottom: 15px;
-          border: 1px solid #eeeeee;
+          margin-bottom: 10px;
+          border: 1px solid #cbcbcb;
           background: #fff;
           resize: none;
           outline: none;
-          font-size: 12px;
-          font-size: 1.2rem; }
+          font-size: 13px;
+          font-size: 1.3rem; }
         .note .note_edit .note_comment .comment_entry button {
           float: right;
           width: 100px;
@@ -7492,20 +7513,18 @@ input[type="checkbox"] {
             .note .note_edit .note_comment .comment_entry button.btn-default:hover {
               opacity: 0.7; }
           .note .note_edit .note_comment .comment_entry button.btn-primary {
-            line-height: 33px;
-            font-size: 12px;
-            font-size: 1.2rem; }
+            line-height: 35px;
+            font-size: 13px;
+            font-size: 1.3rem; }
             .note .note_edit .note_comment .comment_entry button.btn-primary.btn-primary {
               background: #3A87BC;
               border: none;
               padding: 0;
               font-weight: normal;
-              -webkit-border-radius: 3px;
-              -moz-border-radius: 3px;
-              -ms-border-radius: 3px;
-              border-radius: 3px; }
-              .note .note_edit .note_comment .comment_entry button.btn-primary.btn-primary:hover {
-                opacity: 0.7; }
+              -webkit-border-radius: 4px;
+              -moz-border-radius: 4px;
+              -ms-border-radius: 4px;
+              border-radius: 4px; }
 
 /*---------------------------------------------------------------------------------------
  Editable

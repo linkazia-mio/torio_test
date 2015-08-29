@@ -47,7 +47,7 @@
           line-height: 40px;
           float: left;
           margin-right: 15px;
-          @include fontsize(1.2);
+          @include fontsize(1.3);
         }
         .user_image {
           float: left;
@@ -56,6 +56,10 @@
             width: 40px;
             height:40px;
           }
+        }
+        .writer_name{
+          @include fontsize(1.5);
+          margin-top: -3px;
         }
         .writer_info {
           @include fontsize(1.2);
@@ -311,7 +315,7 @@
           display: table-cell;
           vertical-align: top;
           p {
-            @include fontsize(1.2);
+            @include fontsize(1.3);
             &.name {
               font-weight: bold;
               padding-bottom: 1px;
@@ -323,7 +327,7 @@
               }
             }
             &.memo {
-              @include fontsize(1.2);
+              @include fontsize(1.3);
               word-wrap: break-word;
             }
           }
@@ -331,19 +335,19 @@
       }
       .comment_entry {
         margin: 0 auto;
-        padding: 20px 0;
-        border-top: 1px solid $border_gray;
+        padding: 0 0 25px 0 ;
+        /*border-top: 1px solid $border_gray;*/
         textarea {
-          @include border_radius();
+          @include border_radius(4px);
           width: 100%;
           height: 60px;
           padding: 10px 10px;
-          margin-bottom: 15px;
-          border: 1px solid $border_gray;
+          margin-bottom: 10px;
+          border: 1px solid $border_dark_gray;
           background: #fff;
           resize: none;
           outline: none;
-          @include fontsize(1.2);
+          @include fontsize(1.3);
         }
         button {
           float: right;
@@ -357,17 +361,14 @@
             }
           }
           &.btn-primary {
-            line-height: 33px;
-            @include fontsize(1.2);
+            line-height: 35px;
+            @include fontsize(1.3);
             &.btn-primary {
               background: $torio_green;
               border: none;
               padding: 0;
               font-weight: normal;
-              @include border_radius(3px);
-              &:hover {
-                opacity: 0.7;
-              }
+              @include border_radius(4px);
             }
           }
         }
