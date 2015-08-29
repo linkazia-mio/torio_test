@@ -2347,7 +2347,7 @@ header {
   /*overflow: hidden;*/ }
   .page_menu.ui-widget-content {
     border: none;
-    border-right: 1px solid #f9f9f9 !important;
+    border-right: 1px solid #f2f2f2 !important;
     /*border-right: 1px solid rgba(0, 0, 0, 0.1) !important;*/ }
   .page_menu .config {
     position: relative;
@@ -2573,8 +2573,8 @@ header {
       font-size: 1.3rem;
       position: relative;
       padding: 16px 15px 16px 19px;
-      border-bottom: 1px solid #f9f9f9;
-      background: #FFF;
+      border-bottom: 1px solid #f2f2f2;
+      background: #F9F9F9;
       color: #000; }
       .page_menu .page_menu_inner .item:before {
         content: "";
@@ -2588,7 +2588,7 @@ header {
         min-height: 100%;
         z-index: 1; }
       .page_menu .page_menu_inner .item:hover {
-        background: #f9f9f9; }
+        background: #fff; }
         .page_menu .page_menu_inner .item:hover .check {
           border-bottom: 7px solid #f9f9f9; }
         .page_menu .page_menu_inner .item:hover .text, .page_menu .page_menu_inner .item:hover ul {
@@ -2609,6 +2609,7 @@ header {
         margin-right: 0px;
         margin-top: 0px;
         z-index: 10;
+        background: #fff;
         /*.title,.text,ul {
           color: #fff;
           &:hover{
