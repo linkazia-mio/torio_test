@@ -4379,6 +4379,7 @@ footer.front {
         font-weight: bold;
         line-height: 1.5;
         cursor: pointer;
+        min-height: 70px;
         *zoom: 1; }
         .file .file_list .panel .panel-body .file_name:after {
           content: ".";

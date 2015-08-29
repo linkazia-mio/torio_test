@@ -138,6 +138,7 @@
           font-weight: bold;
           line-height: 1.5;
           cursor: pointer;
+          min-height: 70px;
           @include clearfix;
           .unread {
             @include fontsize(1.1);
