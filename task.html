@@ -428,7 +428,9 @@
           <div class="task">
             <!--Title/-->
             <div class="title">
-              <h1>役割分担</h1>
+              <h1 class="note_title">役割分担</h1>
+              <input id="title_edit" onkeypress="resize()" onkeyup="resize()" onblur="resize()" style="display:none; overflow:auto;"></input>
+              <span id="hidden_span"></span>
               <div class="check">
                 <i class="icon-expand-more"></i>
                 <div class="detail_check_box popover">
@@ -505,7 +507,7 @@
                     <span class="unread"></span>
                   </div>
                   <!--/Task List-->
-                  <!--Task List/-->
+                  <!--Task List/--
                   <div class="task_list">
                     <input type="checkbox" id="c2"><label for="c2"></label>
                     <p class="task_title"  data-toggle="modal" data-target="#task_detail">タスク：カレンダー選択時の表示に対してinputタグ</p>
@@ -514,7 +516,7 @@
                     </div>
                   </div>
                   <!--/Task List-->
-                  <!--Task List/-->
+                  <!--Task List/--
                   <div class="task_list">
                     <input type="checkbox" id="c2"><label for="c2"></label>
                     <p class="task_title"  data-toggle="modal" data-target="#task_detail">ページ詳細：見出し文言横アイコン、テキストの文字数に合わせて矢印にポップメニューが追随するように</p>
@@ -523,7 +525,7 @@
                     </div>
                   </div>
                   <!--/Task List-->
-                  <!--Task List/-->
+                  <!--Task List/--
                   <div class="task_list">
                     <input type="checkbox" id="c2"><label for="c2"></label>
                     <p class="task_title"  data-toggle="modal" data-target="#task_detail">修正リストの対応</p>
@@ -532,7 +534,7 @@
                     </div>
                   </div>
                   <!--/Task List-->
-                  <!--Task List/-->
+                  <!--Task List/--
                   <div class="task_list">
                     <input type="checkbox" id="c2"><label for="c2"></label>
                     <p class="task_title"  data-toggle="modal" data-target="#task_detail">全体的なレイアウト調整</p>
@@ -588,7 +590,7 @@
                 <!--/Task List Made-->
                 <p class="finish"><i class="icon-done"></i><span>2件のタスクが完了しました</span></p>
               </div>
-              <!--/Task People/-->
+              <!--/Task People-->
               <!--Task People/-->
               <div class="task_people">
                 <div class="handle">原戸の担当<span class="number">5</span><p class="option"><i class="icon-more-horiz"></i><span class="balloon_box">オプション</span></p></div>
@@ -1061,6 +1063,19 @@
       </div>
       <!--/Task Detail-->
     </div>
+    <script>
+    function resize(){
+      var t = document.getElementById("title_edit"); // textarea
+      var s = document.getElementById("hidden_span"); // span
+      s.innerHTML = t.value;
+      t.style.width = s.offsetWidth+22+"px";
+      document.getElementById("info").innerHTML =	s.offsetWidth+22+"px";
+      adjust();
+      $(t).on('resize', function(){
+         adjust();
+      });
+    }
+    </script>
   </body>
 
 </html>
