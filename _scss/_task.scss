@@ -1069,18 +1069,43 @@ input[type="checkbox"] {
   top: 88px;
 }
 .btn_add_task {
-  @include border_radius(4px);
   position: absolute;
   right: 15px;
   bottom: 11px;
-  line-height: 37px;
-  height: 35px;
   width: 100px;
-  color: #fff;
-  font-weight: normal;
-  background: $torio_green;
   @include fontsize(1.3);
-  &:hover {
-    @include opacity(0.8);
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  border: 2px solid #3a87bc;
+  padding: 0 10px 0 10px;
+  display: inline-block;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  line-height: 35px;
+  height: 35px;
+  /*@include font_eng;*/
+  font-weight: normal;
+  font-style: normal;
+  @include border_radius(4px);
+  color: #ffffff;
+  background: #3a87bc;
+  text-decoration: none;
+  letter-spacing: 0.05em;
+  @include font-smoothing(off);
+  &:hover{
+    /*-webkit-box-shadow: inset 0 0 0 1px #b2b2b2;
+    box-shadow: inset 0 0 0 1px #b2b2b2;*/
+    outline:0;
+    background: #2b75a7;
+    color: #fff;
+    border: 2px solid #2b75a7;
   }
 }

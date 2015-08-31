@@ -1,0 +1,924 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <title>Torioへようこそ！ | Torio</title>
+    <meta name="referrer" content="no-referrer">
+    <meta name="author" content="Asnica">
+    <script type="text/javascript" src="js/jquery-1.11.3.js"></script>
+    <script type="text/javascript" src="js/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="js/jquery.bxslider.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/jquery.mCustomScrollbar.js"></script>
+    <script type="text/javascript" src="js/masonry.pkgd.min.js"></script>
+    <script type="text/javascript" src="js/intro.js"></script>
+    <script type="text/javascript" src="js/chart.js"></script>
+    <script type="text/javascript" src="js/function.js"></script>
+    <link rel="stylesheet" href="css/jquery.mCustomScrollbar.css">
+    <link rel="stylesheet" href="css/jquery-ui.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/introjs.css">
+    <link rel="stylesheet" href="css/torio.css">
+    <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+  </head>
+  <body>
+    <div class="wrapper">
+      <!--Alart_popover/-->
+      <div class="alart_popover">
+        <button><i class="icon-clear"></i></button>
+        <!-- <p class="user"><span class="user_image"><img src="http://placehold.it/100x100"></span></p> -->
+        <p class="user"><span class="noimage">HA</span></p>
+        <div class="message">
+          <p class="name"><span class="unread"></span>グロースハック</p>
+          <p>あなたにタスクを追加しました</p>
+        </div>
+      </div>
+      <!--/Alart_popover-->
+      <!--Header/-->
+      <header>
+        <div class="header_inner">
+          <div class="header_line">
+          </div>
+           <p class="global_menu_btn"><span class="unread"></span><i class="icon-automation-arrow"></i><span class="balloon_box_left">メニュー</span></p>
+           <div class="search">
+             <form method="post">
+               <input type="search"><input type="submit" value="送信する"><i class="icon-search"></i>
+             </form>
+           </div>
+           <div class="alart">
+             <div class="alart_task">
+               <p class="icon"><span class="unread">5</span><i class="icon-inbox-task"></i><span class="balloon_box_under">タスク</span></p>
+             </div>
+             <div class="activity">
+               <p class="icon"><span class="unread">5</span><i class="icon-notifications-outline"></i><span class="balloon_box_under">アクティビティ</span></p>
+             </div>
+             <div class="me">
+               <p class="image"><span class="noimage">KO</span></p>
+               <p class="name">小松 健太</p>
+             </div>
+           </div>
+         </div>
+         <!--Task_box/-->
+         <div class="task_box popover_big">
+           <h3>タスク</h3>
+           <ul>
+             <li class="mine_btn active">あなた</li>
+             <li class="requeste_btn">依頼したタスク</li>
+           </ul>
+           <!--Active Lists/-->
+           <div class="task_active_lists mine">
+             <!--Active List/-->
+             <div class="task_active_list">
+               <p class="task_active_list_title">私のタスク<span class="number">2</span></p>
+               <!--Task List/-->
+               <div class="task_list finished">
+                 <input type="checkbox" id="c28" checked="checked"><label for="c28"></label>
+                 <p class="task_title"  data-toggle="modal" data-target="#task_detail">プラン選択・プロモーションページ</p>
+                 <p><span class="user_image"><img src="http://placehold.it/100x100"></span></p>
+               </div>
+               <!--/Task List-->
+               <!--Task List/-->
+               <div class="task_list finished">
+                 <input type="checkbox" id="c26"><label for="c26"></label>
+                 <p class="task_title"  data-toggle="modal" data-target="#task_detail">プラン選択・プロモーションページ</p>
+                 <p><span class="noimage">KO</span></p>
+               </div>
+               <!--/Task List-->
+             </div>
+             <!--/Active List-->
+             <!--Active List/-->
+             <div class="task_active_list">
+               <p class="task_active_list_title">私のタスク<span class="number">2</span></p>
+               <!--Task List/-->
+               <div class="task_list important">
+                 <input type="checkbox" id="c25"><label for="c25"></label>
+                 <p class="task_title"  data-toggle="modal" data-target="#task_detail">プラン選択・プロモーションページ</p>
+                 <p><span class="user_image"><img src="http://placehold.it/100x100"></span></p>
+               </div>
+               <!--/Task List-->
+               <!--Task List/-->
+               <div class="task_list finished">
+                 <input type="checkbox" id="c23"><label for="c23"></label>
+                 <p class="task_title"  data-toggle="modal" data-target="#task_detail">プラン選択・プロモーションページ</p>
+                 <p><span class="user_image"><img src="http://placehold.it/100x100"></span></p>
+               </div>
+               <!--/Task List-->
+               <!--Task List/-->
+               <div class="task_list">
+                 <input type="checkbox" id="c24"><label for="c24"></label>
+                 <p class="task_title"  data-toggle="modal" data-target="#task_detail">プラン選択・プロモーションページ</p>
+                 <p><span class="noimage">KO</span></p>
+               </div>
+               <!--/Task List-->
+             </div>
+             <!--/Active List-->
+           </div>
+           <!--/Active Lists-->
+           <!--Active Lists/-->
+           <div class="task_active_lists requeste">
+             <!--Active List/-->
+             <div class="task_active_list">
+               <p class="task_active_list_title">依頼したタスク<span class="number">2</span></p>
+               <!--Task List/-->
+               <div class="task_list">
+                 <input type="checkbox" id="c20"><label for="c20"></label>
+                 <p class="task_title"  data-toggle="modal" data-target="#task_detail">プラン選択・プロモーションページ</p>
+                 <p><span class="user_image"><img src="http://placehold.it/100x100"></span></p>
+               </div>
+               <!--/Task List-->
+               <!--Task List/-->
+               <div class="task_list important">
+                 <input type="checkbox" id="c21"><label for="c21"></label>
+                 <p class="task_title"  data-toggle="modal" data-target="#task_detail">プラン選択・プロモーションページ</p>
+                 <p><span class="user_image"><img src="http://placehold.it/100x100"></span></p>
+               </div>
+               <!--/Task List-->
+               <!--Task List/-->
+               <div class="task_list">
+                 <input type="checkbox" id="c22"><label for="c22"></label>
+                 <p class="task_title"  data-toggle="modal" data-target="#task_detail">プラン選択・プロモーションページ</p>
+                 <p><span class="noimage">KO</span></p>
+               </div>
+               <!--/Task List-->
+             </div>
+             <!--/Active List-->
+             <!--Active List/-->
+             <div class="task_active_list">
+               <p class="task_active_list_title">家選びネット<span class="number">2</span></p>
+               <!--Task List/-->
+               <div class="task_list important">
+                 <input type="checkbox" id="c4"><label for="c4"></label>
+                 <p class="task_title"  data-toggle="modal" data-target="#task_detail">プラン選択・プロモーションページ</p>
+                 <p><span class="user_image"><img src="http://placehold.it/100x100"></span></p>
+               </div>
+               <!--/Task List-->
+               <!--Task List/-->
+               <div class="task_list">
+                 <input type="checkbox" id="c5"><label for="c5"></label>
+                 <p class="task_title"  data-toggle="modal" data-target="#task_detail">プラン選択・プロモーションページ</p>
+                 <p><span class="user_image"><img src="http://placehold.it/100x100"></span></p>
+               </div>
+               <!--/Task List-->
+               <!--Task List/-->
+               <div class="task_list">
+                 <input type="checkbox" id="c6"><label for="c6"></label>
+                 <p class="task_title"  data-toggle="modal" data-target="#task_detail">プラン選択・プロモーションページ</p>
+                 <p><span class="noimage">KO</span></p>
+               </div>
+               <!--/Task List-->
+             </div>
+             <!--/Active List-->
+             <!--Active List/-->
+             <div class="task_active_list">
+               <p class="task_active_list_title">家選びネット<span class="number">2</span></p>
+               <!--Task List/-->
+               <div class="task_list important">
+                 <input type="checkbox" id="c4"><label for="c4"></label>
+                 <p class="task_title"  data-toggle="modal" data-target="#task_detail">プラン選択・プロモーションページ</p>
+                 <p><span class="user_image"><img src="http://placehold.it/100x100"></span></p>
+               </div>
+               <!--/Task List-->
+               <!--Task List/-->
+               <div class="task_list">
+                 <input type="checkbox" id="c5"><label for="c5"></label>
+                 <p class="task_title"  data-toggle="modal" data-target="#task_detail">プラン選択・プロモーションページ</p>
+                 <p><span class="user_image"><img src="http://placehold.it/100x100"></span></p>
+               </div>
+               <!--/Task List-->
+               <!--Task List/-->
+               <div class="task_list">
+                 <input type="checkbox" id="c6"><label for="c6"></label>
+                 <p class="task_title"  data-toggle="modal" data-target="#task_detail">プラン選択・プロモーションページ</p>
+                 <p><span class="noimage">KO</span></p>
+               </div>
+               <!--/Task List-->
+             </div>
+             <!--/Active List-->
+           </div>
+           <!--/Active Lists-->
+         </div>
+         <!--/Task_box-->
+         <!--Activity_box/-->
+         <div class="activity_box popover_big">
+           <h3>アクティビティ</h3>
+           <ul>
+             <li class="all_btn active">すべて</li>
+             <li class="activity_mine_btn">あなた</li>
+           </ul>
+           <div class="activity_lists activity_all">
+             <div class="activity_list">
+               <p class="noimage">KO</p>
+               <p class="activity_text">全てのアクティビティ小松健太さんが、家選びネットに<a href="">ノート：議事録</a>を投稿しました。</p>
+               <p class="time">3時間前</p>
+             </div>
+             <div class="activity_list">
+               <p class="user_image"><img src="http://placehold.it/100x100"></p>
+               <p class="activity_text">全てのアクティビティ小松健太さんが、家選びネットに<a href="">ノート：議事録</a>を投稿しました。</p>
+               <p class="time">3時間前</p>
+             </div>
+             <span class="activity_loader"></span>
+           </div>
+           <div class="activity_lists activity_mine">
+             <div class="activity_list">
+               <p class="noimage">KO</p>
+               <p class="activity_text">私のアクティビティ小松健太さんが、家選びネットに<a href="">ノート：議事録</a>を投稿しました。</p>
+               <p class="time">3時間前</p>
+             </div>
+             <div class="activity_list">
+               <p class="user_image"><img src="http://placehold.it/100x100"></p>
+               <p class="activity_text">小松健太さんが、家選びネットに<a href="">ノート：議事録</a>を投稿しました。</p>
+               <p class="time">3時間前</p>
+             </div>
+             <div class="activity_list">
+               <p class="user_image"><img src="http://placehold.it/100x100"></p>
+               <p class="activity_text">小松健太さんが、家選びネットに<a href="">ノート：議事録</a>を投稿しました。</p>
+               <p class="time">3時間前</p>
+             </div>
+             <div class="activity_list">
+               <p class="user_image"><img src="http://placehold.it/100x100"></p>
+               <p class="activity_text">小松健太さんが、家選びネットに<a href="">ノート：議事録</a>を投稿しました。</p>
+               <p class="time">3時間前</p>
+             </div>
+             <div class="activity_list">
+               <p class="user_image"><img src="http://placehold.it/100x100"></p>
+               <p class="activity_text">小松健太さんが、家選びネットに<a href="">ノート：議事録</a>を投稿しました。</p>
+               <p class="time">3時間前</p>
+             </div>
+             <div class="activity_list">
+               <p class="user_image"><img src="http://placehold.it/100x100"></p>
+               <p class="activity_text">小松健太さんが、家選びネットに<a href="">ノート：議事録</a>を投稿しました。</p>
+               <p class="time">3時間前</p>
+             </div>
+             <div class="activity_list">
+               <p class="user_image"><img src="http://placehold.it/100x100"></p>
+               <p class="activity_text">小松健太さんが、家選びネットに<a href="">ノート：議事録</a>を投稿しました。</p>
+               <p class="time">3時間前</p>
+             </div>
+             <div class="activity_list">
+               <p class="user_image"><img src="http://placehold.it/100x100"></p>
+               <p class="activity_text">小松健太さんが、家選びネットに<a href="">ノート：議事録</a>を投稿しました。</p>
+               <p class="time">3時間前</p>
+             </div>
+           </div>
+         </div>
+         <!--/Activity_box-->
+         <!--Acccont_box/-->
+         <div class="account popover">
+           <div class="account_info">
+             <!-- <p class="user_image"><img src="http://placehold.it/100x100"></p> -->
+             <p class="noimage">KO</p>
+             <p class="user_name">小松 健太</p>
+             <p class="user_rank">無料アカウント</p>
+           </div>
+           <ul>
+             <li><a href="">プロフィール編集</a></li>
+             <li><a href="">アカウント設定</a></li>
+             <li><a href="">友達を探す</a></li>
+             <li><a href="">ヘルプ＆フィードバック</a></li>
+             <li><a href="">ログアウト</a></li>
+           </ul>
+         </div>
+         <!--/Acccont_box-->
+      </header>
+      <!--/Header-->
+      <!--Main/-->
+      <div class="main">
+        <!--Global_menu/-->
+        <div class="global_menu ui-widget-content">
+          <div class="global_menu_inner">
+            <div class="groups" data-intro="ようこそ！まずはグループを作成しましょう。メンバーの招待もできます。" data-step="1" data-position="right">
+              <h3>グループ</h3>
+      			     <p class="add icon" data-toggle="modal" data-target="#add_group"><i class="icon-add-circle-outline"></i><span class="balloon_box">グループを作成</span></p>
+              <ul>
+                <li><a href="" class="selected"><span class="global_list_image"><img src="http://placehold.it/100x100"></span>Torioへようこそ！</a></li>
+              </ul>
+            </div>
+            <div class="member" data-intro="あなたとつながっているメンバーが表示されます。ここからメンバーの追加・招待ができます。" data-step="2" data-position="right">
+              <h3>メンバー</h3>
+              <p class="add icon" data-toggle="modal" data-target="#add_member"><i class="icon-add-circle-outline"></i><span class="balloon_box">メンバーを追加</span></p>
+              <ul>
+                <li><a href="" class="unread"><span class="noimage">KO</span>小松 健太</a></li>
+                <li><a href="" class="unread"><span class="noimage">TO</span>Torio bot</a></li>
+              </ul>
+            </div>
+          </div>
+          <!--Sponsor/-->
+          <div class="sponsor">
+            <div class="sponsor_inner">
+              <a href=""><img src="http://placehold.it/400x300"></a>
+            </div>
+          </div>
+          <!--/Sponsor-->
+        </div>
+        <!--/Global_menu-->
+        <!--Page_menu/-->
+        <div class="page_menu ui-widget-content">
+          <div class="config">
+            <p class="title">All page<span>2</span></p>
+            <p class="check"><i class="icon-expand-more"></i></p>
+            <p class="favorite"><i class="icon-star-outline"></i><i class="icon-star"></i><span class="balloon_box_under">お気に入り</span></p>
+            <p class="viewers" data-toggle="modal" data-target="#viewers_box"><i class="icon-person-outline"></i><span class="number">2</span><span class="balloon_box_under">メンバー</span></p>
+            <p class="option"><i class="icon-more-horiz"></i><span class="balloon_box_under">オプション</span></p>
+            <!--<div class="small-button"><i class="icon-add"></i>Add images</div>-->
+            <div class="check_box popover">
+              <ul>
+                <li><a href="">すべて</a></li>
+                <li><a href="">お気に入り</a></li>
+                <li><a href="">ノート</a></li>
+                <li><a href="">タスク</a></li>
+                <li><a href="">ファイル</a></li>
+                <li><a href="">新しい順</a></li>
+                <li><a href="">古い順</a></li>
+                <li><a href="">割り当てた人順</a></li>
+              </ul>
+            </div>
+            <div class="option_box popover">
+              <ul>
+                <li><a href="">グループ設定</a></li>
+                <li><a href="">メンバーを追加</a></li>
+                <li><a href="">グループを削除</a></li>
+              </ul>
+            </div>
+          </div>
+          <!--Page_menu_inner/-->
+          <div class="page_menu_inner">
+            <!--note/-->
+            <div class="item note" data-intro="ノートです。ディスカッションした内容を記録したりできます。" data-step="3" data-position="right">
+              <span class="check"></span>
+              <a href="" class="unread">
+                <p class="title">Torioへようこそ！</p>
+                <p class="text">使い方のご案内です。Torioにはノート・タスク・ファイルという３種類のページがあります。</p>
+              </a>
+            </div>
+            <!--/note-->
+            <!--task/-->
+            <div class="item task" data-intro="タスクです。人やカテゴリーごとにリストを分けてタスク登録ができます。" data-step="4" data-position="right">
+              <a href="" class="unread">
+                <p class="title">チュートリアル</p>
+                <ul>
+                  <li><span class="name">未対応タスク</span><span class="value">：25件</span></li>
+                  <li><span class="name">期限が近いタスク</span><span class="value">：10件</span></li>
+                </ul>
+                <div class="graph red">
+                  <canvas id="task_graph_red" height="50" width="50"></canvas>
+                  <div class="number">
+                    <p>0%</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <!--/task-->
+            <!--file/-->
+            <div class="item file" data-intro="ファイルです。ローカルのデータはもちろん、ウェブサイトをクリップしておくことができます。" data-step="5" data-position="right">
+              <a href="" class="unread">
+                <p class="title">ヘルプ</p>
+                <ul>
+                  <li><span class="file_list googledrive"><i class="icon-google-drive"></i></span></li>
+                  <li><span class="file_list dropbox"><i class="icon-dropbox"></i></span></li>
+                  <li><span class="file_list list"><i class="icon-drive-form"></i></span></li>
+                  <li><span class="file_list text"><i class="icon-drive-file"></i></span></li>
+                  <li><span class="file_list word"><i class="icon-drive-ms-word"></i></span><div class="_52d9"><div class="_52da"><div class="_52db">+2</div></div></div></li>
+                </ul>
+              </a>
+            </div>
+            <!--/file-->
+          </div>
+          <!--/Page_menu_inner-->
+          <div class="page_menu_footer" data-intro="ページはここから作成ができます。それではTorioでプロジェクトを進めてみましょう！" data-step="6" data-position="top">
+            <p class="icon-add"></p>
+            <div class="add_page popover">
+              <ul>
+                <li class="add_page_note"><a href=""><i class="icon-note-outline"></i><br>ノート</a></li>
+                <li class="add_page_task"><a href=""><i class="icon-check-circle-outline"></i><br>タスク</a></li>
+                <li class="add_page_file"><a href=""><i class="icon-drive-file-outline"></i><br>ファイル</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!--/Page_menu-->
+        <!--Detail/-->
+        <div class="detail ui-widget-content">
+          <!--File/-->
+          <div class="file">
+            <!--Loading/-->
+            <div class="cssload-loading-inner">
+              <div class="cssload-loading">
+               	<i></i>
+               	<i></i>
+               	<i></i>
+              </div>
+              <p>Loading ...</p>
+            </div>
+            <!--/Loading-->
+          </div>
+          <!--/File-->
+        </div>
+        <!--/Detail-->
+      </div>
+      <!--/Main-->
+      <!--Viewers/-->
+      <div class="modal fade" id="viewers_box" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <button type="button" class="modal_close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title" id="myModalLabel">このグループのメンバー</h4>
+            </div>
+            <div class="modal-body">
+              <dl class="view_group_member">
+                <dt><p class="user_image"><img src="http://placehold.it/100x100"></p></dt>
+                <dd><p class="user_name">小松 健太</p><p class="user_friends"><a href="">友達になる</a></dd>
+              </dl>
+              <dl class="view_group_member">
+                <dt><p class="user_image"><span class="noimage">KO</span></p></dt>
+                <dd><p class="user_name">小松 健太</p><p class="user_friends"><a href="">友達になる</a></dd>
+              </dl>
+              <dl class="view_group_member">
+                <dt><p class="user_image"><img src="http://placehold.it/100x100"></p></dt>
+                <dd><p class="user_name">小松 健太</p><p class="user_friends"><a href="">友達になる</a></dd>
+              </dl>
+              <dl class="view_group_member">
+                <dt><p class="user_image"><span class="noimage">KO</span></p></dt>
+                <dd><p class="user_name">小松 健太</p><p class="user_friends"><a href="">友達になる</a></dd>
+              </dl>
+              <dl class="view_group_member">
+                <dt><p class="user_image"><span class="noimage">KO</span></p></dt>
+                <dd><p class="user_name">小松 健太</p><p class="user_friends"><a href="">友達になる</a></dd>
+              </dl>
+              <dl class="view_group_member">
+                <dt><p class="user_image"><span class="noimage">KO</span></p></dt>
+                <dd><p class="user_name">小松 健太</p><p class="user_friends"><a href="">友達になる</a></dd>
+              </dl>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--/Viewers-->
+      <!--Add group/-->
+      <div class="modal fade" id="add_group" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <button type="button" class="modal_close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title" id="myModalLabel">グループを新規作成</h4>
+            </div>
+            <div class="modal-body white">
+              <div class="input_dot">
+                <p class="item_name">アイコン</p>
+                <div class="profile_image">
+                  <div class="image_preview">
+                  </div>
+                  <div class="photo_upload">
+                    <input type="file">
+                    <p>写真を変更する</p>
+                  </div>
+                </div>
+              </div>
+              <div class="input_dot">
+                <p class="item_name">グループ名</p>
+                <input type="text">
+              </div>
+              <div class="input_dot">
+                <p class="item_name">メンバー</p>
+                <input type="text">
+                <div class="input_dot_contents">
+                  <ul>
+                    <li id="group_member_1">
+                      <input type="checkbox" name="sample-checkbox" checked="checked" id="checkbox" />
+                      <label for="checkbox"><p class="user_image"><span class="noimage">KO</span></p><p class="user_name">小松 健太</p></label>
+                      <div class="select_box">
+                        <select>
+                          <option value="">オーナー</option>
+                        		<option value="">グループA</option>
+                        		<option value="">グループB</option>
+                      	</select>
+                      </div>
+                      <p class="delete"><i class="icon-clear"></i></p>
+                    </li>
+                    <li id="group_member_2">
+                      <input type="checkbox" name="sample-checkbox" checked="checked" id="checkbox" />
+                      <label for="checkbox"><p class="user_image"><img src="http://placehold.it/100x100"></p><p class="user_name">小松 健太</p></label>
+                      <div class="select_box">
+                        <select>
+                          <option value="">オーナー</option>
+                        		<option value="">グループA</option>
+                        		<option value="">グループB</option>
+                      	</select>
+                      </div>
+                      <p class="delete"><i class="icon-clear"></i></p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="input_dot dot_less">
+                <p class="item_name">公開範囲</p>
+                <div class="input_dot_contents">
+                  <div class="toggle_btn off"><span class="circle"></span></div>
+                  <p><span class="on">公開する</span><span class="off">公開しない</span></p>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">キャンセル</button>
+              <button type="button" class="btn btn-primary">招待する</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--/Add group-->
+      <!--Add member/-->
+      <div class="modal fade" id="add_member" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <button type="button" class="modal_close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title" id="myModalLabel">人を招待する</h4>
+            </div>
+            <div class="modal-body white">
+              <div class="input_dot">
+                <p class="item_name">メールアドレス</p>
+                <input type="text">
+                <div class="close_btn">
+                  <input type="text">
+                  <p class="delete"><i class="icon-clear"></i></p>
+                </div>
+                <div class="member_add_link">
+                  <p class="single"><a href="">人を追加する</a>
+                  <p class="group"><a href="">まとめて追加したい方はこちら</a>
+                </div>
+              </div>
+              <div class="input_dot">
+                <p class="item_name">招待するグループ</p>
+                <div class="select_box">
+                  <select>
+                    <option value="">グループに属さない</option>
+                	  	<option value="">グループA</option>
+                  		<option value="">グループB</option>
+                    <option value="">グループC</option>
+                	 </select>
+                </div>
+              </div>
+              <div class="input_dot dot_less">
+                <p class="item_name">権限設定</p>
+                <div class="select_box">
+                  <select>
+                		  <option value="">設定しない</option>
+                		  <option value="">公開</option>
+                    <option value="">非公開</option>
+                	 </select>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">キャンセル</button>
+              <button type="button" class="btn btn-primary">招待する</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--/Add member-->
+      <!--Add File/-->
+      <div class="modal fade" id="add_file" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <button type="button" class="modal_close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <div class="modal-dialog" role="document">
+          <!--modal-content_1/-->
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title" id="myModalLabel">新規アップロード</h4>
+            </div>
+            <div class="modal-body">
+              <div class="local_up">
+                <a href="">
+                  <i class="icon-file-upload"></i>
+                  <p class="title">コンピュータからアップロード</p>
+                  <!--<p class="note">JPG/GIF/PNG/MOV/XLS/DOC/TXT</p>-->
+                </a>
+              </div>
+              <div class="web_up">
+                <a href="">
+                  <i class="icon-public"></i>
+                  <p class="title">ウェブサイトから追加</p>
+                </a>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <textarea class="description" placeholder="説明を入力してください"></textarea>
+              <button type="button" class="btn btn-default" data-dismiss="modal">キャンセル</button>
+              <button type="button" class="btn btn-primary">作成する</button>
+            </div>
+          </div>
+          <!--/modal-content_1-->
+        </div>
+      </div>
+      <!--/Add File-->
+      <!--Add File2/-->
+      <div class="modal fade" id="add_file2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <button type="button" class="modal_close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <div class="modal-dialog" role="document">
+          <!--modal-content_2/-->
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title" id="myModalLabel">新規アップロード</h4>
+            </div>
+            <div class="modal-body">
+              <div class="web_up">
+                <i class="icon-public"></i>
+                <div class="field">
+                  <input name="url" type="text" placeholder="http://..." autofocus="" class="">
+                  <button type="button" class="btn btn-primary" type="submit">次へ</button>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <textarea class="description" placeholder="説明を入力してください"></textarea>
+              <button type="button" class="btn btn-default" data-dismiss="modal">キャンセル</button>
+              <button type="button" class="btn btn-primary">作成する</button>
+            </div>
+          </div>
+          <!--/modal-content_2-->
+        </div>
+      </div>
+      <!--/Add File2-->
+      <!--Add File3/-->
+      <div class="modal fade" id="add_file3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <button type="button" class="modal_close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <div class="modal-dialog" role="document">
+          <!--modal-content_3/-->
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title" id="myModalLabel">新規アップロード</h4>
+            </div>
+            <div class="modal-body">
+              <div class="web_up">
+                <div class="image"><img src="https://s-media-cache-ak0.pinimg.com/736x/f8/15/68/f815689b00e25c4606fa71d27f6cf0d6.jpg"></div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <textarea class="description" placeholder="説明を入力してください">TALKIE（トーキー）新築・分譲マンションをご紹介。スマートフォンやタブレット、アプリを楽しむお役立ち情報・便利な使い方は産経アプリスタにお任せください！</textarea>
+              <button type="button" class="btn btn-default" data-dismiss="modal">キャンセル</button>
+              <button type="button" class="btn btn-primary">作成する</button>
+              <div class="link"><a href=""><i class="icon-swap-horiz"></i><span>aplista.iza.ne.jp</span></a></div>
+            </div>
+          </div>
+          <!--/modal-content_3-->
+        </div>
+      </div>
+      <!--/Add File3-->
+      <!--File detail/-->
+      <div id="file_detail">
+        <div class="file_detail_inner">
+          <button type="button" class="file_detail_close"><span aria-hidden="true">&times;</span></button>
+          <div class="file_slide">
+            <!--Item/-->
+            <div class="item">
+              <div class="header">
+                <span class="user_image"><img src="http://placehold.it/100x100"></span>
+                <h4>はじめての通帳キャンペーン</h4>
+                <p class="like"><i class="icon-favorite"></i><span class="number">2</span></p>
+                <p class="download"><a href=""><i class="icon-file-download-outline"></i>ダウンロード</a></p>
+                <p class="option"><i class="icon-more-horiz"></i></p>
+                <div class="item_option_box popover">
+                  <ul>
+                    <li><a href="">日付の新しい順</a></li>
+                    <li><a href="">日付の古い順</a></li>
+                    <li><a href="">割り当てた人順</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="image">
+                <img src="https://s-media-cache-ak0.pinimg.com/736x/b6/cb/33/b6cb330827e8898f92d9628c37f5e65d.jpg" style="width:300px;">
+              </div>
+              <div class="footer">
+                <p class="url"><a href="http://theultralinx.com"><i class="icon-swap-horiz"></i>theultralinx.com</a></p>
+                <div class="comment">
+                  <div class="comment_inner">
+                    <div class="user_image"><img src="http://placehold.it/100x100"></div>
+                    <div class="user_comment">
+                      <p class="name">小松 健太<span class="time">3時間前</span></p>
+                      <p class="memo">本題からは大きく外れますが、ドローンなどに使うキャパシタ（バッテリー）がキャパシタ（コンデンサー）であることを最近知って驚きました。</p>
+                    </div>
+                  </div>
+                  <div class="comment_inner">
+                    <div class="user_image"><img src="http://placehold.it/100x100"></div>
+                    <div class="user_comment">
+                      <p class="name">小松 健太<span class="time">3時間前</span></p>
+                      <p class="memo">キャパシタ（コンデンサー）であることを知ってました。</p>
+                    </div>
+                  </div>
+                  <div class="comment_entry">
+                    <textarea class="description" placeholder="コメントを入力してください..."></textarea>
+                    <!--<p class="add_member"><i class="icon-person-plus-outline"></i></p>
+                    <p class="add_emoji"><i class="icon-emoji-outline"></i></p>-->
+                    <button type="button" class="btn btn-primary">コメント</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--/Item-->
+            <!--Item/-->
+            <div class="item">
+              <div class="header">
+                <span class="user_image"><img src="http://placehold.it/100x100"></span>
+                <h4>ZOZO夏のセール</h4>
+                <p class="like"><i class="icon-favorite"></i><span class="number">2</span></p>
+                <p class="download"><a href=""><i class="icon-file-download-outline"></i>ダウンロード</a></p>
+                <p class="option"><i class="icon-more-horiz"></i></p>
+                <div class="item_option_box popover">
+                  <ul>
+                    <li><a href="">日付の新しい順</a></li>
+                    <li><a href="">日付の古い順</a></li>
+                    <li><a href="">割り当てた人順</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="image">
+                <img src="https://s-media-cache-ak0.pinimg.com/736x/7f/9b/04/7f9b04d06b451cd02d107ef2a2e63a44.jpg" style="width:300px;">
+              </div>
+              <div class="footer">
+                <div class="comment">
+                  <div class="comment_inner">
+                    <div class="user_image"><img src="http://placehold.it/100x100"></div>
+                    <div class="user_comment">
+                      <p class="name">小松 健太<span class="time">3時間前</span></p>
+                      <p class="memo">本題からは大きく外れますが、ドローンなどに使うキャパシタ（バッテリー）がキャパシタ（コンデンサー）であることを最近知って驚きました。</p>
+                    </div>
+                  </div>
+                  <div class="comment_inner">
+                    <div class="noimage_box"><span class="noimage">KO</span></div>
+                    <div class="user_comment">
+                      <p class="name">小松 健太<span class="time">3時間前</span></p>
+                      <p class="memo">キャパシタ（コンデンサー）であることを知ってました。</p>
+                    </div>
+                  </div>
+                  <div class="comment_entry">
+                    <textarea class="description" placeholder="コメントを入力してください..."></textarea>
+                    <!--<p class="add_member"><i class="icon-person-plus-outline"></i></p>
+                    <p class="add_emoji"><i class="icon-emoji-outline"></i></p>-->
+                    <button type="button" class="btn btn-primary">コメント</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--/Item-->
+            <!--Item/-->
+            <div class="item">
+              <div class="header">
+                <span class="user_image"><img src="http://placehold.it/100x100"></span>
+                <h4>ZOZO夏のセール</h4>
+                <p class="like"><i class="icon-favorite"></i><span class="number">2</span></p>
+                <p class="download"><a href=""><i class="icon-file-download-outline"></i>ダウンロード</a></p>
+                <p class="option"><i class="icon-more-horiz"></i></p>
+                <div class="item_option_box popover">
+                  <ul>
+                    <li><a href="">日付の新しい順</a></li>
+                    <li><a href="">日付の古い順</a></li>
+                    <li><a href="">割り当てた人順</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="image">
+                <img src="https://s-media-cache-ak0.pinimg.com/736x/7f/9b/04/7f9b04d06b451cd02d107ef2a2e63a44.jpg" style="width:300px;">
+              </div>
+              <div class="footer">
+                <div class="comment">
+                  <div class="comment_inner">
+                    <div class="user_image"><img src="http://placehold.it/100x100"></div>
+                    <div class="user_comment">
+                      <p class="name">小松 健太<span class="time">3時間前</span></p>
+                      <p class="memo">本題からは大きく外れますが、ドローンなどに使うキャパシタ（バッテリー）がキャパシタ（コンデンサー）であることを最近知って驚きました。</p>
+                    </div>
+                  </div>
+                  <div class="comment_inner">
+                    <div class="noimage_box"><span class="noimage">KO</span></div>
+                    <div class="user_comment">
+                      <p class="name">小松 健太<span class="time">3時間前</span></p>
+                      <p class="memo">キャパシタ（コンデンサー）であることを知ってました。</p>
+                    </div>
+                  </div>
+                  <div class="comment_entry">
+                    <textarea class="description" placeholder="コメントを入力してください..."></textarea>
+                    <!--<p class="add_member"><i class="icon-person-plus-outline"></i></p>
+                    <p class="add_emoji"><i class="icon-emoji-outline"></i></p>-->
+                    <button type="button" class="btn btn-primary">コメント</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--/Item-->
+            <!--Item/-->
+            <div class="item">
+              <div class="header">
+                <span class="user_image"><img src="http://placehold.it/100x100"></span>
+                <h4>ZOZO夏のセール</h4>
+                <p class="like"><i class="icon-favorite"></i><span class="number">2</span></p>
+                <p class="download"><a href=""><i class="icon-file-download-outline"></i>ダウンロード</a></p>
+                <p class="option"><i class="icon-more-horiz"></i></p>
+                <div class="item_option_box popover">
+                  <ul>
+                    <li><a href="">日付の新しい順</a></li>
+                    <li><a href="">日付の古い順</a></li>
+                    <li><a href="">割り当てた人順</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="file_icon excel">
+                <i class="icon-drive-ms-excel"></i>
+              </div>
+              <div class="footer">
+                <div class="comment">
+                  <div class="comment_inner">
+                    <div class="user_image"><img src="http://placehold.it/100x100"></div>
+                    <div class="user_comment">
+                      <p class="name">小松 健太<span class="time">3時間前</span></p>
+                      <p class="memo">本題からは大きく外れますが、ドローンなどに使うキャパシタ（バッテリー）がキャパシタ（コンデンサー）であることを最近知って驚きました。</p>
+                    </div>
+                  </div>
+                  <div class="comment_inner">
+                    <div class="noimage_box"><span class="noimage">KO</span></div>
+                    <div class="user_comment">
+                      <p class="name">小松 健太<span class="time">3時間前</span></p>
+                      <p class="memo">キャパシタ（コンデンサー）であることを知ってました。</p>
+                    </div>
+                  </div>
+                  <div class="comment_entry">
+                    <textarea class="description" placeholder="コメントを入力してください..."></textarea>
+                    <!--<p class="add_member"><i class="icon-person-plus-outline"></i></p>
+                    <p class="add_emoji"><i class="icon-emoji-outline"></i></p>-->
+                    <button type="button" class="btn btn-primary">コメント</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--/Item-->
+            <!--Item/-->
+            <div class="item">
+              <div class="header">
+                <span class="user_image"><img src="http://placehold.it/100x100"></span>
+                <h4>ZOZO夏のセール</h4>
+                <p class="like"><i class="icon-favorite"></i><span class="number">2</span></p>
+                <p class="download"><a href=""><i class="icon-file-download-outline"></i>ダウンロード</a></p>
+                <p class="option"><i class="icon-more-horiz"></i></p>
+                <div class="item_option_box popover">
+                  <ul>
+                    <li><a href="">日付の新しい順</a></li>
+                    <li><a href="">日付の古い順</a></li>
+                    <li><a href="">割り当てた人順</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="file_icon pdf">
+                <i class="icon-drive-pdf"></i>
+              </div>
+              <div class="footer">
+                <p class="url"><a href="http://theultralinx.com"><i class="icon-swap-horiz"></i>theultralinx.com</a></p>
+                <div class="comment">
+                  <div class="comment_inner">
+                    <div class="user_image"><img src="http://placehold.it/100x100"></div>
+                    <div class="user_comment">
+                      <p class="name">小松 健太<span class="time">3時間前</span></p>
+                      <p class="memo">本題からは大きく外れますが、ドローンなどに使うキャパシタ（バッテリー）がキャパシタ（コンデンサー）であることを最近知って驚きました。</p>
+                    </div>
+                  </div>
+                  <div class="comment_inner">
+                    <div class="noimage_box"><span class="noimage">KO</span></div>
+                    <div class="user_comment">
+                      <p class="name">小松 健太<span class="time">3時間前</span></p>
+                      <p class="memo">キャパシタ（コンデンサー）であることを知ってました。</p>
+                    </div>
+                  </div>
+                  <div class="comment_entry">
+                    <textarea class="description" placeholder="コメントを入力してください..."></textarea>
+                    <!--<p class="add_member"><i class="icon-person-plus-outline"></i></p>
+                    <p class="add_emoji"><i class="icon-emoji-outline"></i></p>-->
+                    <button type="button" class="btn btn-primary">コメント</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--/Item-->
+          </div>
+        </div>
+      </div>
+      <!--/File detail-->
+    </div>
+    <script>
+      jQuery(function(){
+          introJs().setOption('showBullets', false).start();
+      });
+
+      function resize(){
+        var t = document.getElementById("title_edit"); // textarea
+        var s = document.getElementById("hidden_span"); // span
+        s.innerHTML = t.value;
+        t.style.width = s.offsetWidth+22+"px";
+        document.getElementById("info").innerHTML =	s.offsetWidth+22+"px";
+        adjust();
+        $(t).on('resize', function(){
+           adjust();
+        });
+      }
+    </script>
+  </body>
+</html>

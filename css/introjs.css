@@ -216,7 +216,7 @@ tr.introjs-showElement > th {
   margin: 0;
   text-decoration: none;
   font: 12px/normal sans-serif;
-  color: #333;
+  color: #333333;
   white-space: nowrap;
   cursor: pointer;
   outline: none;
@@ -315,17 +315,17 @@ tr.introjs-showElement > th {
   display: block;
   width: 6px;
   height: 6px;
-  background: #ccc;
+  background: #cccccc;
   border-radius: 10px;
   -moz-border-radius: 10px;
   -webkit-border-radius: 10px;
   text-decoration: none;
 }
 .introjs-bullets ul li a:hover {
-  background: #999;
+  background: #999999;
 }
 .introjs-bullets ul li a.active {
-  background: #999;
+  background: #999999;
 }
 
 .introjs-progress {
@@ -333,7 +333,7 @@ tr.introjs-showElement > th {
   height: 10px;
   margin: 10px 0 5px 0;
   border-radius: 4px;
-  background-color: #ecf0f1
+  background-color: #ecf0f1;
 }
 .introjs-progressbar {
   float: left;
@@ -342,7 +342,7 @@ tr.introjs-showElement > th {
   font-size: 10px;
   line-height: 10px;
   text-align: center;
-  background-color: #08c;
+  background-color: #0088cc;
 }
 
 .introjsFloatingElement {

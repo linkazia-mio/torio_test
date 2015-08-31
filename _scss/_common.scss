@@ -2456,7 +2456,7 @@ header {
           .item_name {
             font-weight: bold;
             float: left;
-            line-height: 35px;
+            line-height: 40px;
             @include fontsize(1.3);
           }
           &:after {
@@ -3007,10 +3007,10 @@ header {
           padding: 13px 13px;
         }
         button {
-          width: 130px;
-          height: 38px;
-          line-height: 40px;
-          @include fontsize(1.4);
+          width: 100px;
+          height: 35px;
+          line-height: 35px;
+          @include fontsize(1.3);
           &.btn-default {
             /*background: $white_gray;*/
             border: none;
@@ -3024,17 +3024,16 @@ header {
             transition: all 0.3s ease-in-out;
             cursor: pointer;
             border: 2px solid #f2f2f2;
-            padding: 0 15px 0 15px;
+            padding: 0 10px 0 10px;
             display: inline-block;
-            font-size: 14px;
             -webkit-touch-callout: none;
             -webkit-user-select: none;
             -khtml-user-select: none;
             -moz-user-select: none;
             -ms-user-select: none;
             user-select: none;
-            line-height: 38px;
-            height: 40px;
+            line-height: 35px;
+            height: 35px;
             /*@include font_eng;*/
             font-weight: normal;
             font-style: normal;
@@ -3048,7 +3047,7 @@ header {
               /*-webkit-box-shadow: inset 0 0 0 1px #b2b2b2;
               box-shadow: inset 0 0 0 1px #b2b2b2;*/
               outline:0;
-              background: #f2f2f2;
+              background: #fcfcfc;
               color: #000000;
               border: 2px solid #f2f2f2;
             }
@@ -3064,17 +3063,16 @@ header {
             transition: all 0.3s ease-in-out;
             cursor: pointer;
             border: 2px solid #3a87bc;
-            padding: 0 15px 0 15px;
+            padding: 0 10px 0 10px;
             display: inline-block;
-            font-size: 14px;
             -webkit-touch-callout: none;
             -webkit-user-select: none;
             -khtml-user-select: none;
             -moz-user-select: none;
             -ms-user-select: none;
             user-select: none;
-            line-height: 38px;
-            height: 40px;
+            line-height: 35px;
+            height: 35px;
             /*@include font_eng;*/
             font-weight: normal;
             font-style: normal;
@@ -3364,4 +3362,539 @@ footer{
       }
     }
   }
+}
+
+/*---------------------------------------------------------------------------------------
+ Cssload-loading
+---------------------------------------------------------------------------------------*/
+.cssload-loading-inner{
+ position: relative;
+ margin: 70px 0 0 0;
+ p{
+   text-align: center;
+   padding: 45px 0 45px 0 ;
+   @include fontsize(1.4);
+   @include font_eng;
+ }
+}
+
+.cssload-loading {
+	position: absolute;
+	left: 50%;
+	width: 14px;
+	height: 14px;
+	margin: 0 0 0 -7px;
+}
+
+.cssload-loading i {
+	position: absolute;
+	top: 14px; left: 14px;
+	display: block;
+	width: 14px;
+	height: 14px;
+	background: rgb(57,128,176);
+	border-radius: 14px;
+	animation: cssload-spin2 1.73s ease-in-out infinite;
+		-o-animation: cssload-spin2 1.73s ease-in-out infinite;
+		-ms-animation: cssload-spin2 1.73s ease-in-out infinite;
+		-webkit-animation: cssload-spin2 1.73s ease-in-out infinite;
+		-moz-animation: cssload-spin2 1.73s ease-in-out infinite;
+}
+.cssload-loading i:first-child {
+	top: -14px; left: 0;
+	background: rgb(40,45,55);
+	animation: cssload-spin 1.73s ease-in-out infinite;
+		-o-animation: cssload-spin 1.73s ease-in-out infinite;
+		-ms-animation: cssload-spin 1.73s ease-in-out infinite;
+		-webkit-animation: cssload-spin 1.73s ease-in-out infinite;
+		-moz-animation: cssload-spin 1.73s ease-in-out infinite;
+}
+.cssload-loading i:last-child {
+	top: 14px; left: -14px;
+	background: rgb(250,51,102);
+	animation: cssload-spin3 1.73s ease-in-out infinite;
+		-o-animation: cssload-spin3 1.73s ease-in-out infinite;
+		-ms-animation: cssload-spin3 1.73s ease-in-out infinite;
+		-webkit-animation: cssload-spin3 1.73s ease-in-out infinite;
+		-moz-animation: cssload-spin3 1.73s ease-in-out infinite;
+}
+
+@keyframes cssload-spin {
+	0% {
+		top: -14px;
+		left: 0;
+		transform: scale(1);
+	}
+	17% {
+		transform: scale(.5);
+	}
+	33% {
+		top: 14px;
+		left: 14px;
+		transform: scale(1);
+	}
+	50% {
+		transform: scale(.5);
+	}
+	66% {
+		top: 14px;
+		left: -14px;
+		transform: scale(1);
+	}
+	83% {
+		transform: scale(.5);
+	}
+	100% {
+		top: -14px;
+		left: 0;
+		transform: scale(1);
+	}
+}
+
+@-o-keyframes cssload-spin {
+	0% {
+		top: -14px;
+		left: 0;
+		-o-transform: scale(1);
+	}
+	17% {
+		-o-transform: scale(.5);
+	}
+	33% {
+		top: 14px;
+		left: 14px;
+		-o-transform: scale(1);
+	}
+	50% {
+		-o-transform: scale(.5);
+	}
+	66% {
+		top: 14px;
+		left: -14px;
+		-o-transform: scale(1);
+	}
+	83% {
+		-o-transform: scale(.5);
+	}
+	100% {
+		top: -14px;
+		left: 0;
+		-o-transform: scale(1);
+	}
+}
+
+@-ms-keyframes cssload-spin {
+	0% {
+		top: -14px;
+		left: 0;
+		-ms-transform: scale(1);
+	}
+	17% {
+		-ms-transform: scale(.5);
+	}
+	33% {
+		top: 14px;
+		left: 14px;
+		-ms-transform: scale(1);
+	}
+	50% {
+		-ms-transform: scale(.5);
+	}
+	66% {
+		top: 14px;
+		left: -14px;
+		-ms-transform: scale(1);
+	}
+	83% {
+		-ms-transform: scale(.5);
+	}
+	100% {
+		top: -14px;
+		left: 0;
+		-ms-transform: scale(1);
+	}
+}
+
+@-webkit-keyframes cssload-spin {
+	0% {
+		top: -14px;
+		left: 0;
+		-webkit-transform: scale(1);
+	}
+	17% {
+		-webkit-transform: scale(.5);
+	}
+	33% {
+		top: 14px;
+		left: 14px;
+		-webkit-transform: scale(1);
+	}
+	50% {
+		-webkit-transform: scale(.5);
+	}
+	66% {
+		top: 14px;
+		left: -14px;
+		-webkit-transform: scale(1);
+	}
+	83% {
+		-webkit-transform: scale(.5);
+	}
+	100% {
+		top: -14px;
+		left: 0;
+		-webkit-transform: scale(1);
+	}
+}
+
+@-moz-keyframes cssload-spin {
+	0% {
+		top: -14px;
+		left: 0;
+		-moz-transform: scale(1);
+	}
+	17% {
+		-moz-transform: scale(.5);
+	}
+	33% {
+		top: 14px;
+		left: 14px;
+		-moz-transform: scale(1);
+	}
+	50% {
+		-moz-transform: scale(.5);
+	}
+	66% {
+		top: 14px;
+		left: -14px;
+		-moz-transform: scale(1);
+	}
+	83% {
+		-moz-transform: scale(.5);
+	}
+	100% {
+		top: -14px;
+		left: 0;
+		-moz-transform: scale(1);
+	}
+}
+
+@keyframes cssload-spin2 {
+	0% {
+		top: 14px;
+		left: 14px;
+		transform: scale(1);
+	}
+	17% {
+		transform: scale(.5);
+	}
+	33% {
+		top: 14px;
+		left: -14px;
+		transform: scale(1);
+	}
+	50% {
+		transform: scale(.5);
+	}
+	66% {
+		top: -14px;
+		left: 0;
+		transform: scale(1);
+	}
+	83% {
+		transform: scale(.5);
+	}
+	100% {
+		top: 14px;
+		left: 14px;
+		transform: scale(1);
+	}
+}
+
+@-o-keyframes cssload-spin2 {
+	0% {
+		top: 14px;
+		left: 14px;
+		-o-transform: scale(1);
+	}
+	17% {
+		-o-transform: scale(.5);
+	}
+	33% {
+		top: 14px;
+		left: -14px;
+		-o-transform: scale(1);
+	}
+	50% {
+		-o-transform: scale(.5);
+	}
+	66% {
+		top: -14px;
+		left: 0;
+		-o-transform: scale(1);
+	}
+	83% {
+		-o-transform: scale(.5);
+	}
+	100% {
+		top: 14px;
+		left: 14px;
+		-o-transform: scale(1);
+	}
+}
+
+@-ms-keyframes cssload-spin2 {
+	0% {
+		top: 14px;
+		left: 14px;
+		-ms-transform: scale(1);
+	}
+	17% {
+		-ms-transform: scale(.5);
+	}
+	33% {
+		top: 14px;
+		left: -14px;
+		-ms-transform: scale(1);
+	}
+	50% {
+		-ms-transform: scale(.5);
+	}
+	66% {
+		top: -14px;
+		left: 0;
+		-ms-transform: scale(1);
+	}
+	83% {
+		-ms-transform: scale(.5);
+	}
+	100% {
+		top: 14px;
+		left: 14px;
+		-ms-transform: scale(1);
+	}
+}
+
+@-webkit-keyframes cssload-spin2 {
+	0% {
+		top: 14px;
+		left: 14px;
+		-webkit-transform: scale(1);
+	}
+	17% {
+		-webkit-transform: scale(.5);
+	}
+	33% {
+		top: 14px;
+		left: -14px;
+		-webkit-transform: scale(1);
+	}
+	50% {
+		-webkit-transform: scale(.5);
+	}
+	66% {
+		top: -14px;
+		left: 0;
+		-webkit-transform: scale(1);
+	}
+	83% {
+		-webkit-transform: scale(.5);
+	}
+	100% {
+		top: 14px;
+		left: 14px;
+		-webkit-transform: scale(1);
+	}
+}
+
+@-moz-keyframes cssload-spin2 {
+	0% {
+		top: 14px;
+		left: 14px;
+		-moz-transform: scale(1);
+	}
+	17% {
+		-moz-transform: scale(.5);
+	}
+	33% {
+		top: 14px;
+		left: -14px;
+		-moz-transform: scale(1);
+	}
+	50% {
+		-moz-transform: scale(.5);
+	}
+	66% {
+		top: -14px;
+		left: 0;
+		-moz-transform: scale(1);
+	}
+	83% {
+		-moz-transform: scale(.5);
+	}
+	100% {
+		top: 14px;
+		left: 14px;
+		-moz-transform: scale(1);
+	}
+}
+
+@keyframes cssload-spin3 {
+	0% {
+		top: 14px;
+		left: -14px;
+		transform: scale(1);
+	}
+	17% {
+		transform: scale(.5);
+	}
+	33% {
+		top: -14px;
+		left: 0;
+		transform: scale(1);
+	}
+	50% {
+		transform: scale(.5);
+	}
+	66% {
+		top: 14px;
+		left: 14px;
+		transform: scale(1);
+	}
+	83% {
+		transform: scale(.5);
+	}
+	100% {
+		top: 14px;
+		left: -14px;
+		transform: scale(1);
+	}
+}
+
+@-o-keyframes cssload-spin3 {
+	0% {
+		top: 14px;
+		left: -14px;
+		-o-transform: scale(1);
+	}
+	17% {
+		-o-transform: scale(.5);
+	}
+	33% {
+		top: -14px;
+		left: 0;
+		-o-transform: scale(1);
+	}
+	50% {
+		-o-transform: scale(.5);
+	}
+	66% {
+		top: 14px;
+		left: 14px;
+		-o-transform: scale(1);
+	}
+	83% {
+		-o-transform: scale(.5);
+	}
+	100% {
+		top: 14px;
+		left: -14px;
+		-o-transform: scale(1);
+	}
+}
+
+@-ms-keyframes cssload-spin3 {
+	0% {
+		top: 14px;
+		left: -14px;
+		-ms-transform: scale(1);
+	}
+	17% {
+		-ms-transform: scale(.5);
+	}
+	33% {
+		top: -14px;
+		left: 0;
+		-ms-transform: scale(1);
+	}
+	50% {
+		-ms-transform: scale(.5);
+	}
+	66% {
+		top: 14px;
+		left: 14px;
+		-ms-transform: scale(1);
+	}
+	83% {
+		-ms-transform: scale(.5);
+	}
+	100% {
+		top: 14px;
+		left: -14px;
+		-ms-transform: scale(1);
+	}
+}
+
+@-webkit-keyframes cssload-spin3 {
+	0% {
+		top: 14px;
+		left: -14px;
+		-webkit-transform: scale(1);
+	}
+	17% {
+		-webkit-transform: scale(.5);
+	}
+	33% {
+		top: -14px;
+		left: 0;
+		-webkit-transform: scale(1);
+	}
+	50% {
+		-webkit-transform: scale(.5);
+	}
+	66% {
+		top: 14px;
+		left: 14px;
+		-webkit-transform: scale(1);
+	}
+	83% {
+		-webkit-transform: scale(.5);
+	}
+	100% {
+		top: 14px;
+		left: -14px;
+		-webkit-transform: scale(1);
+	}
+}
+
+@-moz-keyframes cssload-spin3 {
+	0% {
+		top: 14px;
+		left: -14px;
+		-moz-transform: scale(1);
+	}
+	17% {
+		-moz-transform: scale(.5);
+	}
+	33% {
+		top: -14px;
+		left: 0;
+		-moz-transform: scale(1);
+	}
+	50% {
+		-moz-transform: scale(.5);
+	}
+	66% {
+		top: 14px;
+		left: 14px;
+		-moz-transform: scale(1);
+	}
+	83% {
+		-moz-transform: scale(.5);
+	}
+	100% {
+		top: 14px;
+		left: -14px;
+		-moz-transform: scale(1);
+	}
 }
