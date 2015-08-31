@@ -5019,8 +5019,7 @@ footer.front {
     /*height: 200px;*/
     padding: 30px 0;
     display: table-cell;
-    text-align: center;
-    border-right: 1px solid #eeeeee; }
+    text-align: center; }
     #add_file .modal-body .local_up a, #add_file .modal-body .web_up a, #add_file2 .modal-body .local_up a, #add_file2 .modal-body .web_up a, #add_file3 .modal-body .local_up a, #add_file3 .modal-body .web_up a, #add_file4 .modal-body .local_up a, #add_file4 .modal-body .web_up a {
       color: #999999;
       display: block; }
