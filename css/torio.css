@@ -6530,10 +6530,10 @@ input[type="checkbox"] {
     .task_replacement .task_people .task_lists {
       min-height: 2px; }
     .task_replacement .task_people .task_list {
-      -webkit-border-radius: 4;
-      -moz-border-radius: 4;
-      -ms-border-radius: 4;
-      border-radius: 4;
+      -webkit-border-radius: 4px;
+      -moz-border-radius: 4px;
+      -ms-border-radius: 4px;
+      border-radius: 4px;
       margin: 0 0 6px 0;
       line-height: 55px;
       height: 53px;
