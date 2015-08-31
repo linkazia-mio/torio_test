@@ -2126,7 +2126,7 @@ header {
       display: inline-block;
       line-height: 28px;
       letter-spacing: 0.05em;
-      max-width: 400px;
+      max-width: 70%;
       overflow: hidden;
       white-space: nowrap;
       text-overflow: ellipsis;
@@ -2140,7 +2140,7 @@ header {
       text-align: left;
       margin: -1px 0 3px 0;
       letter-spacing: 0.05em;
-      max-width: 555px;
+      max-width: 70%;
     }
     #hidden_span {
       @include opacity(0);
@@ -2152,7 +2152,7 @@ header {
       font-weight: bold;
       letter-spacing: 0.05em;
       visibility:hidden;
-      max-width: 400px;
+      max-width: 70%;
     }
     .check {
       @include fontsize(2.6);
