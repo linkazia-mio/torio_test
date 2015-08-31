@@ -4943,7 +4943,7 @@ footer.front {
   .file .add_file_box {
     width: 200px;
     height: auto;
-    left: -220px;
+    left: -230px;
     top: -55px;
     z-index: 9999;
     font-size: 15px;
@@ -4970,7 +4970,7 @@ footer.front {
       -ms-border-radius: 5px;
       border-radius: 5px;
       display: none;
-      width: 200px;
+      width: 210px;
       position: absolute;
       z-index: 9999;
       background: #fff;
