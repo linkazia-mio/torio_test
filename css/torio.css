@@ -5015,8 +5015,8 @@ footer.front {
     font-size: 15px;
     font-size: 1.5rem;
     width: 50%;
-    height: 200px;
-    padding-top: 60px;
+    /*height: 200px;*/
+    padding-top: 0px;
     display: table-cell;
     text-align: center;
     border-right: 1px solid #eeeeee; }
@@ -5031,7 +5031,7 @@ footer.front {
       -ms-border-radius: 100px;
       border-radius: 100px;
       color: #999999;
-      border: 1px solid #999999;
+      border: 2px solid #d6d6d6;
       padding: 15px; }
     #add_file .modal-body .local_up .title, #add_file .modal-body .web_up .title, #add_file2 .modal-body .local_up .title, #add_file2 .modal-body .web_up .title, #add_file3 .modal-body .local_up .title, #add_file3 .modal-body .web_up .title {
       margin-top: 25px;
@@ -5050,7 +5050,7 @@ footer.front {
         border-radius: 4px;
         width: 430px;
         margin: 0 10px 30px 0;
-        border: 1px solid #eeeeee;
+        border: 1px solid #d6d6d6;
         background: #ffffff;
         resize: none;
         outline: none;
@@ -5058,8 +5058,8 @@ footer.front {
         height: 40px; }
       #add_file .modal-body .local_up .field button, #add_file .modal-body .web_up .field button, #add_file2 .modal-body .local_up .field button, #add_file2 .modal-body .web_up .field button, #add_file3 .modal-body .local_up .field button, #add_file3 .modal-body .web_up .field button {
         width: 100px;
-        height: 40px;
-        line-height: 43px;
+        height: 39px;
+        line-height: 42px;
         font-size: 13px;
         font-size: 1.3rem; }
         #add_file .modal-body .local_up .field button.btn-primary, #add_file .modal-body .web_up .field button.btn-primary, #add_file2 .modal-body .local_up .field button.btn-primary, #add_file2 .modal-body .web_up .field button.btn-primary, #add_file3 .modal-body .local_up .field button.btn-primary, #add_file3 .modal-body .web_up .field button.btn-primary {
@@ -5067,9 +5067,6 @@ footer.front {
           border: none;
           padding: 0;
           font-weight: 700; }
-          #add_file .modal-body .local_up .field button.btn-primary:hover, #add_file .modal-body .web_up .field button.btn-primary:hover, #add_file2 .modal-body .local_up .field button.btn-primary:hover, #add_file2 .modal-body .web_up .field button.btn-primary:hover, #add_file3 .modal-body .local_up .field button.btn-primary:hover, #add_file3 .modal-body .web_up .field button.btn-primary:hover {
-            opacity: 0.7;
-            filter: alpha(opacity=70); }
   #add_file .modal-body .web_up, #add_file2 .modal-body .web_up, #add_file3 .modal-body .web_up {
     border-right: none; }
     #add_file .modal-body .web_up .image, #add_file2 .modal-body .web_up .image, #add_file3 .modal-body .web_up .image {
@@ -5672,6 +5669,12 @@ footer.front {
       text-shadow: none;
       position: fixed;
       top: 300px; }
+
+#add_file2 .modal-content .modal-body {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  border-radius: 5px; }
 
 /*---------------------------------------------------------------------------------------
  Top
