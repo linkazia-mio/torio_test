@@ -1102,9 +1102,9 @@ p {
 button:focus {
   outline: none; }
 
-.clearfix, .alart .me, .front_header_menu, #viewers_box .modal-body .view_group_member, #note_viewers_box .modal-body .view_group_member, #note_like_box .modal-body .view_group_member, footer.front, .file, #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .item .header, .kv #top_header .header_inner .front_header_menu {
+.clearfix, .alart .me, .front_header_menu, #viewers_box .modal-body .view_group_member, #note_viewers_box .modal-body .view_group_member, #note_like_box .modal-body .view_group_member, footer.front, .file, #add_file .modal-body .local_up .field, #add_file .modal-body .web_up .field, #add_file2 .modal-body .local_up .field, #add_file2 .modal-body .web_up .field, #add_file3 .modal-body .local_up .field, #add_file3 .modal-body .web_up .field, #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .item .header, .kv #top_header .header_inner .front_header_menu {
   *zoom: 1; }
-  .clearfix:after, .alart .me:after, .front_header_menu:after, #viewers_box .modal-body .view_group_member:after, #note_viewers_box .modal-body .view_group_member:after, #note_like_box .modal-body .view_group_member:after, footer.front:after, .file:after, #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .item .header:after, .kv #top_header .header_inner .front_header_menu:after {
+  .clearfix:after, .alart .me:after, .front_header_menu:after, #viewers_box .modal-body .view_group_member:after, #note_viewers_box .modal-body .view_group_member:after, #note_like_box .modal-body .view_group_member:after, footer.front:after, .file:after, #add_file .modal-body .local_up .field:after, #add_file .modal-body .web_up .field:after, #add_file2 .modal-body .local_up .field:after, #add_file2 .modal-body .web_up .field:after, #add_file3 .modal-body .local_up .field:after, #add_file3 .modal-body .web_up .field:after, #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .item .header:after, .kv #top_header .header_inner .front_header_menu:after {
     content: ".";
     display: block;
     clear: both;
@@ -5024,8 +5024,8 @@ footer.front {
       color: #999999;
       display: block; }
     #add_file .modal-body .local_up i, #add_file .modal-body .web_up i, #add_file2 .modal-body .local_up i, #add_file2 .modal-body .web_up i, #add_file3 .modal-body .local_up i, #add_file3 .modal-body .web_up i {
-      font-size: 40px;
-      font-size: 4rem;
+      font-size: 45px;
+      font-size: 4.5rem;
       -webkit-border-radius: 100px;
       -moz-border-radius: 100px;
       -ms-border-radius: 100px;
@@ -5041,8 +5041,72 @@ footer.front {
       font-size: 12px;
       font-size: 1.2rem; }
     #add_file .modal-body .local_up .field, #add_file .modal-body .web_up .field, #add_file2 .modal-body .local_up .field, #add_file2 .modal-body .web_up .field, #add_file3 .modal-body .local_up .field, #add_file3 .modal-body .web_up .field {
-      /*@extend .clearfix;*/
-      margin-top: 40px; }
+      margin: 40px auto 0 auto;
+      width: 550px; }
+      #add_file .modal-body .local_up .field .local_upload_btn, #add_file .modal-body .web_up .field .local_upload_btn, #add_file2 .modal-body .local_up .field .local_upload_btn, #add_file2 .modal-body .web_up .field .local_upload_btn, #add_file3 .modal-body .local_up .field .local_upload_btn, #add_file3 .modal-body .web_up .field .local_upload_btn {
+        position: relative;
+        overflow: hidden;
+        direction: ltr;
+        float: left;
+        font-size: 13px;
+        font-size: 1.3rem;
+        margin: -1px;
+        padding: 10px 33px 3px;
+        background: #ff3366;
+        border: 1px solid #ea2656;
+        -webkit-border-radius: 5px 0 0 5px;
+        -moz-border-radius: 5px 0 0 5px;
+        -ms-border-radius: 5px 0 0 5px;
+        border-radius: 5px 0 0 5px;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        text-align: center;
+        outline: none;
+        height: 40px; }
+        #add_file .modal-body .local_up .field .local_upload_btn input, #add_file .modal-body .web_up .field .local_upload_btn input, #add_file2 .modal-body .local_up .field .local_upload_btn input, #add_file2 .modal-body .web_up .field .local_upload_btn input, #add_file3 .modal-body .local_up .field .local_upload_btn input, #add_file3 .modal-body .web_up .field .local_upload_btn input {
+          position: absolute;
+          right: 0px;
+          top: 0px;
+          font-family: Arial;
+          font-size: 118px;
+          margin: 0px;
+          padding: 0px;
+          cursor: pointer;
+          opacity: 0; }
+        #add_file .modal-body .local_up .field .local_upload_btn .button_text, #add_file .modal-body .web_up .field .local_upload_btn .button_text, #add_file2 .modal-body .local_up .field .local_upload_btn .button_text, #add_file2 .modal-body .web_up .field .local_upload_btn .button_text, #add_file3 .modal-body .local_up .field .local_upload_btn .button_text, #add_file3 .modal-body .web_up .field .local_upload_btn .button_text {
+          color: #ffffff;
+          direction: ltr;
+          font-size: 13px;
+          font-size: 1.3rem;
+          -webkit-font-smoothing: subpixel-antialiased;
+          -moz-osx-font-smoothing: auto; }
+      #add_file .modal-body .local_up .field .uploader_progress, #add_file .modal-body .web_up .field .uploader_progress, #add_file2 .modal-body .local_up .field .uploader_progress, #add_file2 .modal-body .web_up .field .uploader_progress, #add_file3 .modal-body .local_up .field .uploader_progress, #add_file3 .modal-body .web_up .field .uploader_progress {
+        float: left;
+        border: 1px solid #d6d6d6;
+        -webkit-border-radius: 0 5px 5px 0;
+        -moz-border-radius: 0 5px 5px 0;
+        -ms-border-radius: 0 5px 5px 0;
+        border-radius: 0 5px 5px 0;
+        border-left: 2px solid #ded9da;
+        height: 40px;
+        position: relative;
+        top: -1px;
+        overflow: hidden;
+        width: 430px;
+        margin-bottom: 30px;
+        background: #ffffff; }
+        #add_file .modal-body .local_up .field .uploader_progress span, #add_file .modal-body .web_up .field .uploader_progress span, #add_file2 .modal-body .local_up .field .uploader_progress span, #add_file2 .modal-body .web_up .field .uploader_progress span, #add_file3 .modal-body .local_up .field .uploader_progress span, #add_file3 .modal-body .web_up .field .uploader_progress span {
+          white-space: nowrap;
+          overflow: hidden;
+          -ms-text-overflow: ellipsis;
+          text-overflow: ellipsis;
+          color: #333333;
+          display: block;
+          float: left;
+          font-size: 14px;
+          margin-left: 9px;
+          margin-top: 6px;
+          padding: 3px; }
       #add_file .modal-body .local_up .field input, #add_file .modal-body .web_up .field input, #add_file2 .modal-body .local_up .field input, #add_file2 .modal-body .web_up .field input, #add_file3 .modal-body .local_up .field input, #add_file3 .modal-body .web_up .field input {
         -webkit-border-radius: 4px;
         -moz-border-radius: 4px;
@@ -5063,7 +5127,7 @@ footer.front {
         font-size: 13px;
         font-size: 1.3rem; }
         #add_file .modal-body .local_up .field button.btn-primary, #add_file .modal-body .web_up .field button.btn-primary, #add_file2 .modal-body .local_up .field button.btn-primary, #add_file2 .modal-body .web_up .field button.btn-primary, #add_file3 .modal-body .local_up .field button.btn-primary, #add_file3 .modal-body .web_up .field button.btn-primary {
-          background: #f36;
+          background: #ff3366;
           border: none;
           padding: 0;
           font-weight: 700; }
@@ -5076,7 +5140,7 @@ footer.front {
         width: 80%; }
 
 #add_file .modal-footer .btn-primary, #add_file2 .modal-footer .btn-primary, #add_file3 .modal-footer .btn-primary {
-  background: #f36; }
+  background: #ff3366; }
 
 /*File Detail*/
 #file_detail {
@@ -5669,6 +5733,12 @@ footer.front {
       text-shadow: none;
       position: fixed;
       top: 300px; }
+
+#add_file .modal-content .modal-body {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  border-radius: 5px; }
 
 #add_file2 .modal-content .modal-body {
   -webkit-border-radius: 5px;
