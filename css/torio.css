@@ -4265,9 +4265,10 @@ footer.front {
   .cssload-loading-inner p {
     text-align: center;
     padding: 45px 0 45px 0;
-    font-size: 14px;
-    font-size: 1.4rem;
-    font-family: 'Lato','Helvetica neue',Helvetica,Arial,sans-serif; }
+    font-size: 16px;
+    font-size: 1.6rem;
+    font-family: 'Lato','Helvetica neue',Helvetica,Arial,sans-serif;
+    color: #cccccc; }
 
 .cssload-loading {
   position: absolute;
