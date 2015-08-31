@@ -129,6 +129,14 @@ window.onload=function(){
       popoverBig.hide();
       $('.detail_option_box').toggle();
     });
+    //Detail_option_box
+    $('.file .add_file_btn').click(function (event) {
+      $('.add_file_box').toggle( 'fade', '', 100 );
+      event.stopPropagation();
+      popover.hide();
+      popoverBig.hide();
+      $('.add_file_box').toggle();
+    });
     //Task_option_box
     $('.task_people .option').click(function (event) {
       $('.task_option_box').toggle( 'fade', '', 100 );

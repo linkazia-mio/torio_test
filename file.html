@@ -44,7 +44,7 @@
            <p class="global_menu_btn"><span class="unread"></span><i class="icon-automation-arrow"></i><span class="balloon_box_left">メニュー</span></p>
            <div class="search">
              <form method="post">
-               <input type="search"><input type="submit" value="送信する"><i class="icon-search"></i>
+               <input type="search" placeholder="Search"><input type="submit" value="送信する"><i class="icon-search"></i>
              </form>
            </div>
            <div class="alart">
@@ -882,7 +882,17 @@
               </div>
              </div>
              <!--/Masonry-->
-             <p class="add_file_btn" data-toggle="modal" data-target="#add_file3" data-intro="画像の追加はこちらから行います。" data-step="4" data-position="left"><i class="icon-add"></i></p>
+             <div class="add_file_btn">
+               <div class="add_file_inner">
+                 <i class="icon-add"></i>
+                 <div class="add_file_box popover">
+                   <ul>
+                     <li><a href="" data-toggle="modal" data-target="#add_file"><span><i class="icon-file-upload"></i>アップロード</span></a></li>
+                     <li><a href="" data-toggle="modal" data-target="#add_file3"><span><i class="icon-public"></i>ウェブサイトを保存</a></span></li>
+                   </ul>
+                 </div>
+               </div>
+             </div>
           </div>
           <!--/File-->
         </div>

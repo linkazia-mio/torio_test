@@ -869,7 +869,7 @@ header {
   }
   input {
     &[type="search"] {
-      @include fontsize(1.4);
+      @include fontsize(1.3);
       width: 90%;
       height: 29px;
       padding: 0 10px;
@@ -1971,8 +1971,8 @@ header {
     left: 0;
     height: 60px;
     /*border-top: 1px solid $border_gray;*/
-    -webkit-box-shadow: 0 -1px 0px rgba(0,0,0,0.15),inset 0 1px 0 rgba(255,255,255,0.5);
-    box-shadow: 0 -1px 0px rgba(0,0,0,0.15),inset 0 1px 0 rgba(255,255,255,0.5);
+    -webkit-box-shadow: 0 -3px 0px rgba(0,0,0,0.1),inset 0 1px 0 rgba(51,102,153,0.5);
+    box-shadow: 0 -3px 0px rgba(0,0,0,0.1),inset 0 1px 0 rgba(51,102,153,0.5);
     text-align: center;
     padding-top: 7px;
     cursor: pointer;

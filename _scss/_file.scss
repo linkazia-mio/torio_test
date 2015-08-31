@@ -239,22 +239,93 @@
     }
   }
   .add_file_btn {
-    @include border_radius(100px);
-    @include fontsize(4.5);
-    color: #fff;
     position: fixed;
     z-index: 1000;
     bottom: 25px;
     right: 25px;
-    height: 45px;
-    width: 45px;
-    /*background: $torio_green;*/
-    background: #f36;
-    -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
-    -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
-    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
-    &:hover {
-      cursor: pointer;
+    .add_file_inner{
+      @include border_radius(100px);
+      @include fontsize(4.5);
+      color: #fff;
+      height: 45px;
+      width: 45px;
+      /*background: $torio_green;*/
+      background: #f36;
+      -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+      -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+      box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+      position: relative;
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+  .add_file_box{
+    width: 200px;
+    height: auto;
+    left: -220px;
+    top: -55px;
+    z-index: 9999;
+    @include fontsize(1.5);
+    @include font-smoothing(on);
+    font-weight: bold;
+    ul{
+      li{
+        position: relative;
+        span{
+          padding-left: 30px;
+          i{
+            @include fontsize(2.8);
+            position: absolute;
+            left: 13px;
+            top: 5px;
+            color: #bbb;
+          }
+        }
+        &:hover{
+          span{
+            i{
+              color: #fff;
+            }
+          }
+        }
+      }
+    }
+    &.popover {
+      @include border_radius(5px);
+      display: none;
+      width: 200px;
+      position: absolute;
+      z-index: 9999;
+      background: #fff;
+      /*box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);*/
+      border: 1px solid #c4c9cc;
+      border-bottom-color: #c4c9cc;
+      box-shadow: 0 1px 2px rgba(0,0,0,.15);
+      line-height: 1.42857143;
+      text-align: left;
+      white-space: normal;
+      @include opacity(1);
+      padding: 10px 0;
+      z-index: 110;
+      &::before {
+       	position: absolute;
+       	content: '';
+       	top: 65%;
+       	right: -10px;
+       	margin-right:-7px;
+       	border:8px solid transparent;
+       	border-left-color:rgba(0,0,0,.3);
+      }
+      &::after {
+       	position:absolute;
+       	content: '';
+       	top: 65%;
+       	right: -9px;
+       	margin-right:-7px;
+       	border:8px solid transparent;
+       	border-left-color:#fff;
+     	}
     }
   }
 }
@@ -800,7 +871,6 @@
     @include fontsize(5.0);
   }
 }
-
 
 /*Carousel*/
 .carousel {
