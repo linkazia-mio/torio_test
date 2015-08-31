@@ -2992,13 +2992,18 @@ header {
       font-weight: bold;
       display: inline-block;
       line-height: 28px;
-      letter-spacing: 0.05em; }
+      letter-spacing: 0.05em;
+      max-width: 400px;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis; }
     .detail .title #title_edit, .detail_public .title #title_edit {
       font-size: 22px;
       font-size: 2.2rem;
       line-height: 26px;
       height: 26px;
       font-weight: bold;
+      max-width: 400px;
       text-align: left;
       margin: -1px 0 3px 0;
       letter-spacing: 0.05em;
@@ -3014,7 +3019,8 @@ header {
       line-height: 26px;
       font-weight: bold;
       letter-spacing: 0.05em;
-      visibility: hidden; }
+      visibility: hidden;
+      max-width: 400px; }
     .detail .title .check, .detail_public .title .check {
       font-size: 26px;
       font-size: 2.6rem;

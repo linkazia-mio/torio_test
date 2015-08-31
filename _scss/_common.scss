@@ -2126,13 +2126,17 @@ header {
       display: inline-block;
       line-height: 28px;
       letter-spacing: 0.05em;
+      max-width: 400px;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
     }
     #title_edit {
       @include fontsize(2.2);
       line-height: 26px;
       height: 26px;
       font-weight: bold;
-      // width: auto;
+      max-width: 400px;
       text-align: left;
       margin: -1px 0 3px 0;
       letter-spacing: 0.05em;
@@ -2148,6 +2152,7 @@ header {
       font-weight: bold;
       letter-spacing: 0.05em;
       visibility:hidden;
+      max-width: 400px;
     }
     .check {
       @include fontsize(2.6);
