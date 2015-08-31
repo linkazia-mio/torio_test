@@ -320,10 +320,10 @@ input[type="checkbox"] {
       color: $white_brack;
     }
     .task_lists {
-      min-height: 50px;
+      min-height: 2px;
     }
     .task_list {
-      @include border_radius(4);
+      @include border_radius(4px);
       margin: 0 0 6px 0;
       line-height: 55px;
       height: 53px;
