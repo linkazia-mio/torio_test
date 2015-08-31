@@ -2218,6 +2218,38 @@ header {
             height: 7px;
             background: #2aaef5;
             box-shadow: 0 0 4px rgba(53, 175, 242, 0.6); }
+        .global_menu .global_menu_inner ul li a.signin {
+          color: #ffffff;
+          font-weight: bold; }
+          .global_menu .global_menu_inner ul li a.signin:before {
+            -webkit-border-radius: 70px;
+            -moz-border-radius: 70px;
+            -ms-border-radius: 70px;
+            border-radius: 70px;
+            position: absolute;
+            top: 52%;
+            left: 17px;
+            margin-top: -3px;
+            z-index: 1000;
+            content: "";
+            width: 8px;
+            height: 8px;
+            background: #48ca2c; }
+        .global_menu .global_menu_inner ul li a.signout:before {
+          -webkit-border-radius: 70px;
+          -moz-border-radius: 70px;
+          -ms-border-radius: 70px;
+          border-radius: 70px;
+          position: absolute;
+          top: 52%;
+          left: 17px;
+          margin-top: -3px;
+          z-index: 1000;
+          content: "";
+          width: 8px;
+          height: 8px;
+          background: none;
+          border: 1px solid #999999; }
         .global_menu .global_menu_inner ul li a.selected {
           background: #3A87BC;
           color: #fff;
@@ -2282,6 +2314,8 @@ header {
     padding-bottom: 3rem; }
     .global_menu .global_menu_inner .member .noimage {
       font-family: 'Lato','Helvetica neue',Helvetica,Arial,sans-serif;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
       font-size: 10px;
       font-size: 1rem;
       line-height: 30px;

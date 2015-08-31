@@ -1261,6 +1261,37 @@ header {
               box-shadow: 0 0 4px rgba(53,175,242,0.6);
             }
           }
+          &.signin {
+            color: #ffffff;
+            font-weight: bold;
+            &:before {
+              @include border_radius(70px);
+              position: absolute;
+              top: 52%;
+              left: 17px;
+              margin-top: -3px;
+              z-index: 1000;
+              content: "";
+              width: 8px;
+              height: 8px;
+              background: #48ca2c;
+            }
+          }
+          &.signout {
+            &:before {
+              @include border_radius(70px);
+              position: absolute;
+              top: 52%;
+              left: 17px;
+              margin-top: -3px;
+              z-index: 1000;
+              content: "";
+              width: 8px;
+              height: 8px;
+              background: none;
+              border: 1px solid #999999;
+            }
+          }
           &.selected {
             background: $torio_green;
             color: #fff;
@@ -1334,6 +1365,7 @@ header {
       padding-bottom: 3rem;
       .noimage {
         @include font_eng;
+        @include font-smoothing(on);
         @include fontsize(1.0);
         line-height: 30px;
         text-align: center;
