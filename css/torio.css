@@ -1102,9 +1102,9 @@ p {
 button:focus {
   outline: none; }
 
-.clearfix, .alart .me, .front_header_menu, #viewers_box .modal-body .view_group_member, #note_viewers_box .modal-body .view_group_member, #note_like_box .modal-body .view_group_member, footer.front, .file, #add_file .modal-body .local_up .field, #add_file .modal-body .web_up .field, #add_file2 .modal-body .local_up .field, #add_file2 .modal-body .web_up .field, #add_file3 .modal-body .local_up .field, #add_file3 .modal-body .web_up .field, #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .item .header, .kv #top_header .header_inner .front_header_menu {
+.clearfix, .alart .me, .front_header_menu, #viewers_box .modal-body .view_group_member, #note_viewers_box .modal-body .view_group_member, #note_like_box .modal-body .view_group_member, footer.front, .file, #add_file .modal-body .local_up .field, #add_file .modal-body .web_up .field, #add_file2 .modal-body .local_up .field, #add_file2 .modal-body .web_up .field, #add_file3 .modal-body .local_up .field, #add_file3 .modal-body .web_up .field, #add_file4 .modal-body .local_up .field, #add_file4 .modal-body .web_up .field, #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .item .header, .kv #top_header .header_inner .front_header_menu {
   *zoom: 1; }
-  .clearfix:after, .alart .me:after, .front_header_menu:after, #viewers_box .modal-body .view_group_member:after, #note_viewers_box .modal-body .view_group_member:after, #note_like_box .modal-body .view_group_member:after, footer.front:after, .file:after, #add_file .modal-body .local_up .field:after, #add_file .modal-body .web_up .field:after, #add_file2 .modal-body .local_up .field:after, #add_file2 .modal-body .web_up .field:after, #add_file3 .modal-body .local_up .field:after, #add_file3 .modal-body .web_up .field:after, #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .item .header:after, .kv #top_header .header_inner .front_header_menu:after {
+  .clearfix:after, .alart .me:after, .front_header_menu:after, #viewers_box .modal-body .view_group_member:after, #note_viewers_box .modal-body .view_group_member:after, #note_like_box .modal-body .view_group_member:after, footer.front:after, .file:after, #add_file .modal-body .local_up .field:after, #add_file .modal-body .web_up .field:after, #add_file2 .modal-body .local_up .field:after, #add_file2 .modal-body .web_up .field:after, #add_file3 .modal-body .local_up .field:after, #add_file3 .modal-body .web_up .field:after, #add_file4 .modal-body .local_up .field:after, #add_file4 .modal-body .web_up .field:after, #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .item .header:after, .kv #top_header .header_inner .front_header_menu:after {
     content: ".";
     display: block;
     clear: both;
@@ -5006,12 +5006,12 @@ footer.front {
  Modal
 ---------------------------------------------------------------------------------------*/
 /*Add File*/
-#add_file .modal-body, #add_file2 .modal-body, #add_file3 .modal-body {
+#add_file .modal-body, #add_file2 .modal-body, #add_file3 .modal-body, #add_file4 .modal-body {
   display: table;
   table-layout: fixed;
   width: 100%;
   padding: 30px 0; }
-  #add_file .modal-body .local_up, #add_file .modal-body .web_up, #add_file2 .modal-body .local_up, #add_file2 .modal-body .web_up, #add_file3 .modal-body .local_up, #add_file3 .modal-body .web_up {
+  #add_file .modal-body .local_up, #add_file .modal-body .web_up, #add_file2 .modal-body .local_up, #add_file2 .modal-body .web_up, #add_file3 .modal-body .local_up, #add_file3 .modal-body .web_up, #add_file4 .modal-body .local_up, #add_file4 .modal-body .web_up {
     font-size: 15px;
     font-size: 1.5rem;
     width: 50%;
@@ -5020,10 +5020,10 @@ footer.front {
     display: table-cell;
     text-align: center;
     border-right: 1px solid #eeeeee; }
-    #add_file .modal-body .local_up a, #add_file .modal-body .web_up a, #add_file2 .modal-body .local_up a, #add_file2 .modal-body .web_up a, #add_file3 .modal-body .local_up a, #add_file3 .modal-body .web_up a {
+    #add_file .modal-body .local_up a, #add_file .modal-body .web_up a, #add_file2 .modal-body .local_up a, #add_file2 .modal-body .web_up a, #add_file3 .modal-body .local_up a, #add_file3 .modal-body .web_up a, #add_file4 .modal-body .local_up a, #add_file4 .modal-body .web_up a {
       color: #999999;
       display: block; }
-    #add_file .modal-body .local_up i, #add_file .modal-body .web_up i, #add_file2 .modal-body .local_up i, #add_file2 .modal-body .web_up i, #add_file3 .modal-body .local_up i, #add_file3 .modal-body .web_up i {
+    #add_file .modal-body .local_up i, #add_file .modal-body .web_up i, #add_file2 .modal-body .local_up i, #add_file2 .modal-body .web_up i, #add_file3 .modal-body .local_up i, #add_file3 .modal-body .web_up i, #add_file4 .modal-body .local_up i, #add_file4 .modal-body .web_up i {
       font-size: 45px;
       font-size: 4.5rem;
       -webkit-border-radius: 100px;
@@ -5033,17 +5033,17 @@ footer.front {
       color: #999999;
       border: 2px solid #d6d6d6;
       padding: 15px; }
-    #add_file .modal-body .local_up .title, #add_file .modal-body .web_up .title, #add_file2 .modal-body .local_up .title, #add_file2 .modal-body .web_up .title, #add_file3 .modal-body .local_up .title, #add_file3 .modal-body .web_up .title {
+    #add_file .modal-body .local_up .title, #add_file .modal-body .web_up .title, #add_file2 .modal-body .local_up .title, #add_file2 .modal-body .web_up .title, #add_file3 .modal-body .local_up .title, #add_file3 .modal-body .web_up .title, #add_file4 .modal-body .local_up .title, #add_file4 .modal-body .web_up .title {
       margin-top: 25px;
       font-weight: bold;
       color: #999999; }
-    #add_file .modal-body .local_up .note, #add_file .modal-body .web_up .note, #add_file2 .modal-body .local_up .note, #add_file2 .modal-body .web_up .note, #add_file3 .modal-body .local_up .note, #add_file3 .modal-body .web_up .note {
+    #add_file .modal-body .local_up .note, #add_file .modal-body .web_up .note, #add_file2 .modal-body .local_up .note, #add_file2 .modal-body .web_up .note, #add_file3 .modal-body .local_up .note, #add_file3 .modal-body .web_up .note, #add_file4 .modal-body .local_up .note, #add_file4 .modal-body .web_up .note {
       font-size: 12px;
       font-size: 1.2rem; }
-    #add_file .modal-body .local_up .field, #add_file .modal-body .web_up .field, #add_file2 .modal-body .local_up .field, #add_file2 .modal-body .web_up .field, #add_file3 .modal-body .local_up .field, #add_file3 .modal-body .web_up .field {
+    #add_file .modal-body .local_up .field, #add_file .modal-body .web_up .field, #add_file2 .modal-body .local_up .field, #add_file2 .modal-body .web_up .field, #add_file3 .modal-body .local_up .field, #add_file3 .modal-body .web_up .field, #add_file4 .modal-body .local_up .field, #add_file4 .modal-body .web_up .field {
       margin: 40px auto 0 auto;
       width: 550px; }
-      #add_file .modal-body .local_up .field .local_upload_btn, #add_file .modal-body .web_up .field .local_upload_btn, #add_file2 .modal-body .local_up .field .local_upload_btn, #add_file2 .modal-body .web_up .field .local_upload_btn, #add_file3 .modal-body .local_up .field .local_upload_btn, #add_file3 .modal-body .web_up .field .local_upload_btn {
+      #add_file .modal-body .local_up .field .local_upload_btn, #add_file .modal-body .web_up .field .local_upload_btn, #add_file2 .modal-body .local_up .field .local_upload_btn, #add_file2 .modal-body .web_up .field .local_upload_btn, #add_file3 .modal-body .local_up .field .local_upload_btn, #add_file3 .modal-body .web_up .field .local_upload_btn, #add_file4 .modal-body .local_up .field .local_upload_btn, #add_file4 .modal-body .web_up .field .local_upload_btn {
         position: relative;
         overflow: hidden;
         direction: ltr;
@@ -5063,7 +5063,7 @@ footer.front {
         text-align: center;
         outline: none;
         height: 40px; }
-        #add_file .modal-body .local_up .field .local_upload_btn input, #add_file .modal-body .web_up .field .local_upload_btn input, #add_file2 .modal-body .local_up .field .local_upload_btn input, #add_file2 .modal-body .web_up .field .local_upload_btn input, #add_file3 .modal-body .local_up .field .local_upload_btn input, #add_file3 .modal-body .web_up .field .local_upload_btn input {
+        #add_file .modal-body .local_up .field .local_upload_btn input, #add_file .modal-body .web_up .field .local_upload_btn input, #add_file2 .modal-body .local_up .field .local_upload_btn input, #add_file2 .modal-body .web_up .field .local_upload_btn input, #add_file3 .modal-body .local_up .field .local_upload_btn input, #add_file3 .modal-body .web_up .field .local_upload_btn input, #add_file4 .modal-body .local_up .field .local_upload_btn input, #add_file4 .modal-body .web_up .field .local_upload_btn input {
           position: absolute;
           right: 0px;
           top: 0px;
@@ -5073,14 +5073,14 @@ footer.front {
           padding: 0px;
           cursor: pointer;
           opacity: 0; }
-        #add_file .modal-body .local_up .field .local_upload_btn .button_text, #add_file .modal-body .web_up .field .local_upload_btn .button_text, #add_file2 .modal-body .local_up .field .local_upload_btn .button_text, #add_file2 .modal-body .web_up .field .local_upload_btn .button_text, #add_file3 .modal-body .local_up .field .local_upload_btn .button_text, #add_file3 .modal-body .web_up .field .local_upload_btn .button_text {
+        #add_file .modal-body .local_up .field .local_upload_btn .button_text, #add_file .modal-body .web_up .field .local_upload_btn .button_text, #add_file2 .modal-body .local_up .field .local_upload_btn .button_text, #add_file2 .modal-body .web_up .field .local_upload_btn .button_text, #add_file3 .modal-body .local_up .field .local_upload_btn .button_text, #add_file3 .modal-body .web_up .field .local_upload_btn .button_text, #add_file4 .modal-body .local_up .field .local_upload_btn .button_text, #add_file4 .modal-body .web_up .field .local_upload_btn .button_text {
           color: #ffffff;
           direction: ltr;
           font-size: 13px;
           font-size: 1.3rem;
           -webkit-font-smoothing: subpixel-antialiased;
           -moz-osx-font-smoothing: auto; }
-      #add_file .modal-body .local_up .field .uploader_progress, #add_file .modal-body .web_up .field .uploader_progress, #add_file2 .modal-body .local_up .field .uploader_progress, #add_file2 .modal-body .web_up .field .uploader_progress, #add_file3 .modal-body .local_up .field .uploader_progress, #add_file3 .modal-body .web_up .field .uploader_progress {
+      #add_file .modal-body .local_up .field .uploader_progress, #add_file .modal-body .web_up .field .uploader_progress, #add_file2 .modal-body .local_up .field .uploader_progress, #add_file2 .modal-body .web_up .field .uploader_progress, #add_file3 .modal-body .local_up .field .uploader_progress, #add_file3 .modal-body .web_up .field .uploader_progress, #add_file4 .modal-body .local_up .field .uploader_progress, #add_file4 .modal-body .web_up .field .uploader_progress {
         float: left;
         border: 1px solid #d6d6d6;
         -webkit-border-radius: 0 5px 5px 0;
@@ -5095,7 +5095,7 @@ footer.front {
         width: 430px;
         margin-bottom: 30px;
         background: #ffffff; }
-        #add_file .modal-body .local_up .field .uploader_progress span, #add_file .modal-body .web_up .field .uploader_progress span, #add_file2 .modal-body .local_up .field .uploader_progress span, #add_file2 .modal-body .web_up .field .uploader_progress span, #add_file3 .modal-body .local_up .field .uploader_progress span, #add_file3 .modal-body .web_up .field .uploader_progress span {
+        #add_file .modal-body .local_up .field .uploader_progress span, #add_file .modal-body .web_up .field .uploader_progress span, #add_file2 .modal-body .local_up .field .uploader_progress span, #add_file2 .modal-body .web_up .field .uploader_progress span, #add_file3 .modal-body .local_up .field .uploader_progress span, #add_file3 .modal-body .web_up .field .uploader_progress span, #add_file4 .modal-body .local_up .field .uploader_progress span, #add_file4 .modal-body .web_up .field .uploader_progress span {
           white-space: nowrap;
           overflow: hidden;
           -ms-text-overflow: ellipsis;
@@ -5107,7 +5107,7 @@ footer.front {
           margin-left: 9px;
           margin-top: 6px;
           padding: 3px; }
-      #add_file .modal-body .local_up .field input, #add_file .modal-body .web_up .field input, #add_file2 .modal-body .local_up .field input, #add_file2 .modal-body .web_up .field input, #add_file3 .modal-body .local_up .field input, #add_file3 .modal-body .web_up .field input {
+      #add_file .modal-body .local_up .field input, #add_file .modal-body .web_up .field input, #add_file2 .modal-body .local_up .field input, #add_file2 .modal-body .web_up .field input, #add_file3 .modal-body .local_up .field input, #add_file3 .modal-body .web_up .field input, #add_file4 .modal-body .local_up .field input, #add_file4 .modal-body .web_up .field input {
         -webkit-border-radius: 4px;
         -moz-border-radius: 4px;
         -ms-border-radius: 4px;
@@ -5120,26 +5120,26 @@ footer.front {
         outline: none;
         padding: 0 13px;
         height: 40px; }
-      #add_file .modal-body .local_up .field button, #add_file .modal-body .web_up .field button, #add_file2 .modal-body .local_up .field button, #add_file2 .modal-body .web_up .field button, #add_file3 .modal-body .local_up .field button, #add_file3 .modal-body .web_up .field button {
+      #add_file .modal-body .local_up .field button, #add_file .modal-body .web_up .field button, #add_file2 .modal-body .local_up .field button, #add_file2 .modal-body .web_up .field button, #add_file3 .modal-body .local_up .field button, #add_file3 .modal-body .web_up .field button, #add_file4 .modal-body .local_up .field button, #add_file4 .modal-body .web_up .field button {
         width: 100px;
         height: 39px;
         line-height: 42px;
         font-size: 13px;
         font-size: 1.3rem; }
-        #add_file .modal-body .local_up .field button.btn-primary, #add_file .modal-body .web_up .field button.btn-primary, #add_file2 .modal-body .local_up .field button.btn-primary, #add_file2 .modal-body .web_up .field button.btn-primary, #add_file3 .modal-body .local_up .field button.btn-primary, #add_file3 .modal-body .web_up .field button.btn-primary {
+        #add_file .modal-body .local_up .field button.btn-primary, #add_file .modal-body .web_up .field button.btn-primary, #add_file2 .modal-body .local_up .field button.btn-primary, #add_file2 .modal-body .web_up .field button.btn-primary, #add_file3 .modal-body .local_up .field button.btn-primary, #add_file3 .modal-body .web_up .field button.btn-primary, #add_file4 .modal-body .local_up .field button.btn-primary, #add_file4 .modal-body .web_up .field button.btn-primary {
           background: #ff3366;
           border: none;
           padding: 0;
           font-weight: 700; }
-  #add_file .modal-body .web_up, #add_file2 .modal-body .web_up, #add_file3 .modal-body .web_up {
+  #add_file .modal-body .web_up, #add_file2 .modal-body .web_up, #add_file3 .modal-body .web_up, #add_file4 .modal-body .web_up {
     border-right: none; }
-    #add_file .modal-body .web_up .image, #add_file2 .modal-body .web_up .image, #add_file3 .modal-body .web_up .image {
+    #add_file .modal-body .web_up .image, #add_file2 .modal-body .web_up .image, #add_file3 .modal-body .web_up .image, #add_file4 .modal-body .web_up .image {
       text-align: center;
       margin: -20px 0 0 0; }
-      #add_file .modal-body .web_up .image img, #add_file2 .modal-body .web_up .image img, #add_file3 .modal-body .web_up .image img {
+      #add_file .modal-body .web_up .image img, #add_file2 .modal-body .web_up .image img, #add_file3 .modal-body .web_up .image img, #add_file4 .modal-body .web_up .image img {
         width: 65%; }
 
-#add_file .modal-footer .btn-primary, #add_file2 .modal-footer .btn-primary, #add_file3 .modal-footer .btn-primary {
+#add_file .modal-footer .btn-primary, #add_file2 .modal-footer .btn-primary, #add_file3 .modal-footer .btn-primary, #add_file4 .modal-footer .btn-primary {
   background: #ff3366;
   border: 2px solid #ff3366; }
 
