@@ -6528,7 +6528,7 @@ input[type="checkbox"] {
       font-family: 'Lato','Helvetica neue',Helvetica,Arial,sans-serif;
       color: #999999; }
     .task_replacement .task_people .task_lists {
-      min-height: 50px; }
+      min-height: 2px; }
     .task_replacement .task_people .task_list {
       -webkit-border-radius: 4;
       -moz-border-radius: 4;
