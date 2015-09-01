@@ -762,8 +762,17 @@ window.onload=function(){
       color: '#fbebea'
     }
   ];
-
-
+  //タスクドーナツグラフ 赤
+  var Dougnut_data_change = [
+    {
+      value: 10,
+      color:'#ed6d44'
+    },
+    {
+      value: 90,
+      color: '#fbebea'
+    }
+  ];
 
   var options = {
     segmentStrokeColor: "rgba(255, 255, 255, 0.0)",
@@ -772,11 +781,13 @@ window.onload=function(){
     animateRotate : false,
     animationEasing: 'easeOutQuart',
     showTooltips: false,
-  //   //String - A legend template
-  //   legendTemplate : '<% for (var i=0; i<segments.length; i++){ %><p style='color:<%=segments[i].fillColor%>'><%= Math.ceil(segments[i].value / total * 1000) / 10 %>%</p><% } %>',
-  //   onAnimationComplete: function() {
-  //     $('.number').html(this.generateLegend()).fadeIn();
-  //  }
+  }
+  var options_change = {
+    segmentStrokeColor: "rgba(255, 255, 255, 0.0)",
+    percentageInnerCutout : 80,
+    animationSteps : 50,
+    animationEasing: 'easeOutQuart',
+    showTooltips: false,
   }
 
   var myDoughnut = new Chart(document.getElementById('task_graph_green').
@@ -785,7 +796,8 @@ window.onload=function(){
   getContext('2d')).Doughnut(Dougnut_data_red,options);
   var myDoughnut = new Chart(document.getElementById('task_graph_yellow').
   getContext('2d')).Doughnut(Dougnut_data_yellow,options);
-
+  var myDoughnut = new Chart(document.getElementById('task_graph_change').
+  getContext('2d')).Doughnut(Dougnut_data_change,options_change);
 };
 
 $(function(){
