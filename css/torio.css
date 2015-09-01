@@ -7648,8 +7648,7 @@ input[type="checkbox"] {
     .calendar .ui-datepicker-inline .ui-datepicker-calendar thead {
       font-weight: normal; }
       .calendar .ui-datepicker-inline .ui-datepicker-calendar thead tr th {
-        font-weight: normal !important;
-        min-width: 28px; }
+        font-weight: normal !important; }
     .calendar .ui-datepicker-inline .ui-datepicker-calendar tbody tr:first-child span {
       padding-top: 0px; }
     .calendar .ui-datepicker-inline .ui-datepicker-calendar tbody tr th, .calendar .ui-datepicker-inline .ui-datepicker-calendar tbody tr td {
