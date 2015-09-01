@@ -532,12 +532,12 @@
   height: 100%;
   width: 100%;
   overflow: hidden;
-  background: rgba(51,51,51,0.36);
+  background: rgba(51,51,51,0.66);
   @include font-smoothing(off);
   .file_detail_inner {
-    width: 750px;
+    width: 800px;
     margin: 0 auto;
-    padding: 40px 0 60px 0;
+    padding: 20px 0 60px 0;
     /*bx-wrapper*/
     .bx-wrapper {
       @include border_radius(5px);
@@ -565,36 +565,42 @@
           font-family: 'torio_icon';
           .bx-prev {
             position: absolute;
-            top: 300px;
-            left: -110px;
+            top: 200px;
+            left: -80px;
             height: 0;
             padding-top: 96px;
             width: 60px;
             overflow: hidden;
-            color: #ffffff;
+            color: #cccccc;
             text-decoration: none;
             &:before {
-              @include fontsize(8.0);
+              @include fontsize(6.5);
               position: absolute;
               top: 0;
               content: "\e62d";
+              &:hover{
+                color: #ffffff;
+              }
             }
           }
           .bx-next {
             position: absolute;
-            top: 300px;
-            right: -90px;
+            top: 200px;
+            right: -70px;
             height: 0;
             padding-top: 96px;
             width: 60px;
             overflow: hidden;
-            color: #ffffff;
+            color: #cccccc;
             text-decoration: none;
             &:before {
-              @include fontsize(8.0);
+              @include fontsize(6.5);
               position: absolute;
               top: 0;
               content: "\e62e";
+              &:hover{
+                color: #ffffff;
+              }
             }
           }
         }
@@ -648,13 +654,14 @@
             .header {
               @include border_radius();
               position: relative;
-              padding: 25px 25px 20px;
-              border-bottom: 1px solid $border_white_gray;
+              padding: 20px 20px 20px;
+              /*border-bottom: 1px solid $border_white_gray;*/
               @extend .clearfix;
               h4 {
                 @include fontsize(1.6);
                 font-weight: bold;
                 margin-top: 12px;
+                @include font-smoothing(on);
               }
               .user_image {
                 float: left;
@@ -722,37 +729,38 @@
               }
               .download {
                 position: absolute;
-                top: 35px;
-                padding-left: 27px;
+                top: 36px;
+                padding-left: 26px;
                 right: 65px;
                 vertical-align: top;
                 a {
                   color: $white_brack;
+                  @include fontsize(1.2);
                 }
                 i {
                   position: absolute;
-                  @include fontsize(2.6);
-                  top: -2px;
+                  @include fontsize(2.5);
+                  top: -3px;
                   left: 0;
                 }
               }
               .like {
                 position: absolute;
                 top: 35px;
-                right: 195px;
+                right: 185px;
                 @include font_eng;
                 vertical-align: top;
-                padding-left: 28px;
+                padding-left: 26px;
                 i {
                   top: -2px;
                   left: 0;
                   position: absolute;
-                  @include fontsize(2.6);
+                  @include fontsize(2.4);
                   color: $dark_red;
                 }
                 span {
                   @include font_eng;
-                  @include fontsize(1.4);
+                  @include fontsize(1.2);
                   color: $white_brack;
                 }
               }
@@ -767,7 +775,7 @@
             .image {
               text-align: center;
               background: $white_gray;
-              width: 750px;
+              width: 800px;
               img {
                 width: 100%;
                 height: auto;
@@ -798,7 +806,7 @@
               }
             }
             .footer {
-              border-top: 1px solid $border_white_gray;
+              /*border-top: 1px solid $border_white_gray;*/
               padding: 35px 0 0 0;
               position: relative;
               .url {
@@ -808,19 +816,20 @@
                 font-weight: bold;
                 bottom: 0;
                 left: 0;
-                line-height: 25px;
+                line-height: 15px;
                 width: 100%;
                 display: block;
                 margin-top: -20px;
-                padding: 0 25px 15px 40px;
-                margin-bottom: 25px;
+                padding: 0 20px 12px 38px;
+                margin-bottom: 30px;
                 overflow: hidden;
                 z-index: 100;
-                border-bottom: 1px solid $border_white_gray;
+                /*border-bottom: 1px solid $border_white_gray;*/
+                @include font-smoothing(on);
                 i {
                   position: absolute;
-                  top: 0px;
-                  left: 17px;
+                  top: -5px;
+                  left: 10px;
                   @include fontsize(2.4);
                 }
                 a {
@@ -830,7 +839,9 @@
               .comment {
                 text-align: left;
                 padding: 0 25px;
-                margin-bottom: 25px;
+                width: 90%;
+                margin: 0 auto 50px auto;
+                @include font-smoothing(on);
                 .comment_inner {
                   display: table;
                   width: 100%;

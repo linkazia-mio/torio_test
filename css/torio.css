@@ -5193,13 +5193,13 @@ footer.front {
   height: 100%;
   width: 100%;
   overflow: hidden;
-  background: rgba(51, 51, 51, 0.36);
+  background: rgba(51, 51, 51, 0.66);
   -webkit-font-smoothing: subpixel-antialiased;
   -moz-osx-font-smoothing: auto; }
   #file_detail .file_detail_inner {
-    width: 750px;
+    width: 800px;
     margin: 0 auto;
-    padding: 40px 0 60px 0;
+    padding: 20px 0 60px 0;
     /*bx-wrapper*/ }
     #file_detail .file_detail_inner .bx-wrapper {
       -webkit-border-radius: 5px;
@@ -5230,36 +5230,40 @@ footer.front {
         font-family: 'torio_icon'; }
         #file_detail .file_detail_inner .bx-wrapper .bx-controls .bx-controls-direction .bx-prev {
           position: absolute;
-          top: 300px;
-          left: -110px;
+          top: 200px;
+          left: -80px;
           height: 0;
           padding-top: 96px;
           width: 60px;
           overflow: hidden;
-          color: #ffffff;
+          color: #cccccc;
           text-decoration: none; }
           #file_detail .file_detail_inner .bx-wrapper .bx-controls .bx-controls-direction .bx-prev:before {
-            font-size: 80px;
-            font-size: 8rem;
+            font-size: 65px;
+            font-size: 6.5rem;
             position: absolute;
             top: 0;
             content: "\e62d"; }
+            #file_detail .file_detail_inner .bx-wrapper .bx-controls .bx-controls-direction .bx-prev:before:hover {
+              color: #ffffff; }
         #file_detail .file_detail_inner .bx-wrapper .bx-controls .bx-controls-direction .bx-next {
           position: absolute;
-          top: 300px;
-          right: -90px;
+          top: 200px;
+          right: -70px;
           height: 0;
           padding-top: 96px;
           width: 60px;
           overflow: hidden;
-          color: #ffffff;
+          color: #cccccc;
           text-decoration: none; }
           #file_detail .file_detail_inner .bx-wrapper .bx-controls .bx-controls-direction .bx-next:before {
-            font-size: 80px;
-            font-size: 8rem;
+            font-size: 65px;
+            font-size: 6.5rem;
             position: absolute;
             top: 0;
             content: "\e62e"; }
+            #file_detail .file_detail_inner .bx-wrapper .bx-controls .bx-controls-direction .bx-next:before:hover {
+              color: #ffffff; }
       #file_detail .file_detail_inner .bx-wrapper .bx-viewport {
         min-height: 300px;
         padding-bottom: 35px; }
@@ -5302,13 +5306,15 @@ footer.front {
             -ms-border-radius: 4px;
             border-radius: 4px;
             position: relative;
-            padding: 25px 25px 20px;
-            border-bottom: 1px solid #f5f5f5; }
+            padding: 20px 20px 20px;
+            /*border-bottom: 1px solid $border_white_gray;*/ }
             #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .item .header h4 {
               font-size: 16px;
               font-size: 1.6rem;
               font-weight: bold;
-              margin-top: 12px; }
+              margin-top: 12px;
+              -webkit-font-smoothing: antialiased;
+              -moz-osx-font-smoothing: grayscale; }
             #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .item .header .user_image {
               float: left;
               margin-right: 12px; }
@@ -5368,36 +5374,38 @@ footer.front {
                 border-bottom-color: #fff; }
             #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .item .header .download, #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .carousel .carousel-inner .item .header .modal-header .like, .carousel .carousel-inner #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .item .header .modal-header .like, #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .carousel .carousel-inner .item .modal-header .header .like, .carousel .carousel-inner #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .item .modal-header .header .like {
               position: absolute;
-              top: 35px;
-              padding-left: 27px;
+              top: 36px;
+              padding-left: 26px;
               right: 65px;
               vertical-align: top; }
               #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .item .header .download a, #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .carousel .carousel-inner .item .header .modal-header .like a, .carousel .carousel-inner #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .item .header .modal-header .like a, #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .carousel .carousel-inner .item .modal-header .header .like a, .carousel .carousel-inner #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .item .modal-header .header .like a {
-                color: #999999; }
+                color: #999999;
+                font-size: 12px;
+                font-size: 1.2rem; }
               #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .item .header .download i, #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .carousel .carousel-inner .item .header .modal-header .like i, .carousel .carousel-inner #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .item .header .modal-header .like i, #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .carousel .carousel-inner .item .modal-header .header .like i, .carousel .carousel-inner #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .item .modal-header .header .like i {
                 position: absolute;
-                font-size: 26px;
-                font-size: 2.6rem;
-                top: -2px;
+                font-size: 25px;
+                font-size: 2.5rem;
+                top: -3px;
                 left: 0; }
             #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .item .header .like {
               position: absolute;
               top: 35px;
-              right: 195px;
+              right: 185px;
               font-family: 'Lato','Helvetica neue',Helvetica,Arial,sans-serif;
               vertical-align: top;
-              padding-left: 28px; }
+              padding-left: 26px; }
               #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .item .header .like i {
                 top: -2px;
                 left: 0;
                 position: absolute;
-                font-size: 26px;
-                font-size: 2.6rem;
+                font-size: 24px;
+                font-size: 2.4rem;
                 color: #ff3366; }
               #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .item .header .like span {
                 font-family: 'Lato','Helvetica neue',Helvetica,Arial,sans-serif;
-                font-size: 14px;
-                font-size: 1.4rem;
+                font-size: 12px;
+                font-size: 1.2rem;
                 color: #999999; }
           #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .item .data {
             font-size: 100px;
@@ -5409,7 +5417,7 @@ footer.front {
           #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .item .image {
             text-align: center;
             background: #f9f9f9;
-            width: 750px; }
+            width: 800px; }
             #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .item .image img {
               width: 100%;
               height: auto; }
@@ -5435,7 +5443,7 @@ footer.front {
                 #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .item .link a i.icon-swap-horiz {
                   color: #999999; }
           #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .item .footer {
-            border-top: 1px solid #f5f5f5;
+            /*border-top: 1px solid $border_white_gray;*/
             padding: 35px 0 0 0;
             position: relative; }
             #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .item .footer .url {
@@ -5446,19 +5454,21 @@ footer.front {
               font-weight: bold;
               bottom: 0;
               left: 0;
-              line-height: 25px;
+              line-height: 15px;
               width: 100%;
               display: block;
               margin-top: -20px;
-              padding: 0 25px 15px 40px;
-              margin-bottom: 25px;
+              padding: 0 20px 12px 38px;
+              margin-bottom: 30px;
               overflow: hidden;
               z-index: 100;
-              border-bottom: 1px solid #f5f5f5; }
+              /*border-bottom: 1px solid $border_white_gray;*/
+              -webkit-font-smoothing: antialiased;
+              -moz-osx-font-smoothing: grayscale; }
               #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .item .footer .url i {
                 position: absolute;
-                top: 0px;
-                left: 17px;
+                top: -5px;
+                left: 10px;
                 font-size: 24px;
                 font-size: 2.4rem; }
               #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .item .footer .url a {
@@ -5466,7 +5476,10 @@ footer.front {
             #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .item .footer .comment {
               text-align: left;
               padding: 0 25px;
-              margin-bottom: 25px; }
+              width: 90%;
+              margin: 0 auto 50px auto;
+              -webkit-font-smoothing: antialiased;
+              -moz-osx-font-smoothing: grayscale; }
               #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .item .footer .comment .comment_inner {
                 display: table;
                 width: 100%;
