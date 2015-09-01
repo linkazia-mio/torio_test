@@ -103,6 +103,14 @@ window.onload=function(){
       popoverBig.hide();
       $('.check_box').toggle();
     });
+    //Photo upload box
+    $('.profile_image .photo_upload').click(function (event) {
+      $('.photo_upload_box').toggle( 'fade', '', 100 );
+      event.stopPropagation();
+      popover.hide();
+      popoverBig.hide();
+      $('.photo_upload_box').toggle();
+    });
     //Website Box
     $('.website').click(function (event) {
       $('.detail_website_box').toggle( 'fade', '', 100 );
@@ -276,7 +284,7 @@ window.onload=function(){
       $('#note_1 .note_comment').toggle();
       $('#note_1 .note_edit_inner_comment').toggleClass('no_border');
     });
-    //comment_count
+    //item_option
     $('.item .option').click(function (event) {
       $('.item_option_box').toggle( 'fade', '', 100 );
     });
