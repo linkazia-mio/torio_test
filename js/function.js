@@ -770,7 +770,7 @@ window.onload=function(){
       color: '#fbebea'
     }
   ];
-  //タスクドーナツグラフ 赤
+  //タスクドーナツグラフ
   var Dougnut_data_change = [
     {
       value: 10,
@@ -788,14 +788,15 @@ window.onload=function(){
     animationSteps : 1,
     animateRotate : false,
     animationEasing: 'easeOutQuart',
-    showTooltips: false,
+    showTooltips: false
   }
   var options_change = {
     segmentStrokeColor: "rgba(255, 255, 255, 0.0)",
     percentageInnerCutout : 80,
     animationSteps : 50,
+    animateRotate : true,
     animationEasing: 'easeOutQuart',
-    showTooltips: false,
+    showTooltips: false
   }
 
   var myDoughnut = new Chart(document.getElementById('task_graph_green').
