@@ -3,11 +3,11 @@ $(window).on('resize', function(){});
 $('head').append(
     '<style type="text/css">.wrapper { display: none; } .fade, .main_loader { display: block; }</style>'
 );
-jQuery.event.add(window,"load",function() { // 全ての読み込み完了後に呼ばれる関数
-	var pageH = $(".wrapper").height();
-	$(".fade").css("height", pageH).delay(900).fadeOut(800);
-	$(".main_loader").delay(600).fadeOut(300);
-	$(".wrapper").css("display", "block");
+jQuery.event.add(window,'load',function() { // 全ての読み込み完了後に呼ばれる関数
+	var pageH = $('.wrapper').height();
+	$('.fade').css('height', pageH).delay(900).fadeOut('slow');
+	$('.main_loader').delay(600).fadeOut('slow');
+	$('.wrapper').css('display', 'block');
 });
 
 window.onload=function(){
@@ -17,7 +17,7 @@ window.onload=function(){
     //global_menu 非表示
     $('.global_menu_btn').click(function (event) {
       jQuery('.global_menu').toggle();
-      jQuery('.global_menu').toggleClass("size_none");
+      jQuery('.global_menu').toggleClass('size_none');
       var w = $(window).width(); //ウィンドウの幅
       var w2= $('.global_menu').width(); //他要素の幅
       $('header').css('width', w-w2); //可変部分の幅を適用
@@ -50,14 +50,14 @@ window.onload=function(){
     $('.mine_btn').click(function (event) {
       jQuery('.task_active_lists.mine').show();
       jQuery('.task_active_lists.requeste').hide();
-      $(this).addClass("active");
-      $('.requeste_btn').removeClass("active");
+      $(this).addClass('active');
+      $('.requeste_btn').removeClass('active');
     });
     $('.requeste_btn').click(function (event) {
       jQuery('.task_active_lists.requeste').show();
       jQuery('.task_active_lists.mine').hide();
-      $(this).addClass("active");
-      $('.mine_btn').removeClass("active");
+      $(this).addClass('active');
+      $('.mine_btn').removeClass('active');
     });
     //Activity
     $('.activity p').click(function (event) {
@@ -74,14 +74,14 @@ window.onload=function(){
     $('.activity_mine_btn').click(function (event) {
       jQuery('.activity_mine').show();
       jQuery('.activity_all').hide();
-      $(this).addClass("active");
-      $('.all_btn').removeClass("active");
+      $(this).addClass('active');
+      $('.all_btn').removeClass('active');
     });
     $('.all_btn').click(function (event) {
       jQuery('.activity_all').show();
       jQuery('.activity_mine').hide();
-      $(this).addClass("active");
-      $('.activity_mine_btn').removeClass("active");
+      $(this).addClass('active');
+      $('.activity_mine_btn').removeClass('active');
     });
     //Account
     $('.me').click(function (event) {
@@ -509,8 +509,8 @@ window.onload=function(){
   $('.toggle_btn').click(function (event) {
     $('.off .circle').animate({'left': '+=25px'}, 'fast');
     $('.on .circle').animate({'left': '-=25px'}, 'fast');
-    $(this).toggleClass("off");
-    $(this).toggleClass("on");
+    $(this).toggleClass('off');
+    $(this).toggleClass('on');
     $('.input_dot_contents p .on').toggle();
     $('.input_dot_contents p .off').toggle();
   });
@@ -793,7 +793,7 @@ window.onload=function(){
   ];
 
   var options = {
-    segmentStrokeColor: "rgba(255, 255, 255, 0.0)",
+    segmentStrokeColor: 'rgba(255, 255, 255, 0.0)',
     percentageInnerCutout : 80,
     animationSteps : 1,
     animateRotate : false,
@@ -801,7 +801,7 @@ window.onload=function(){
     showTooltips: false
   }
   var options_change = {
-    segmentStrokeColor: "rgba(255, 255, 255, 0.0)",
+    segmentStrokeColor: 'rgba(255, 255, 255, 0.0)',
     percentageInnerCutout : 80,
     animationSteps : 50,
     animateRotate : true,
