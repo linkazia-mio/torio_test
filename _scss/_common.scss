@@ -595,7 +595,7 @@ header {
           clear: both;
           /*border: 1px solid #ededf0;
           border-bottom: 1px solid #dcdce0;*/
-          border: 1px solid $border_gray;
+          border: 1px solid #dddddd;
           box-shadow: none;
           position: relative;
           color: $white_brack;
@@ -1476,7 +1476,7 @@ header {
       @include fontsize(2.3);
       color: $white_brack;
       position: absolute;
-      right: 93px;
+      right: 88px;
       top: 7px;
       font-weight: 700;
       &:hover {
@@ -1959,7 +1959,7 @@ header {
     }
   }
   .page_menu_footer {
-    @include fontsize(5.0);
+    @include fontsize(4.5);
     background: $torio_green;
     color: white;
     display: block;
@@ -1969,12 +1969,11 @@ header {
     right: 0;
     bottom: 50px;
     left: 0;
-    height: 60px;
+    height: 50px;
     /*border-top: 1px solid $border_gray;*/
     -webkit-box-shadow: 0 -3px 0px rgba(0,0,0,0.1),inset 0 1px 0 rgba(51,102,153,0.5);
     box-shadow: 0 -3px 0px rgba(0,0,0,0.1),inset 0 1px 0 rgba(51,102,153,0.5);
     text-align: center;
-    padding-top: 7px;
     cursor: pointer;
     -webkit-transition: all 0.3s ease-in-out;
     -moz-transition: all 0.3s ease-in-out;
@@ -1994,6 +1993,9 @@ header {
       outline:0;
       background: #2b75a7;
       color: white;
+    }
+    .icon-add{
+      padding-top: 4px;
     }
     .add_page {
       width: 280px;
