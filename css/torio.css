@@ -5193,7 +5193,7 @@ footer.front {
   height: 100%;
   width: 100%;
   overflow: hidden;
-  background: rgba(51, 51, 51, 0.66);
+  background: rgba(51, 51, 51, 0.76);
   -webkit-font-smoothing: subpixel-antialiased;
   -moz-osx-font-smoothing: auto; }
   #file_detail .file_detail_inner {
@@ -5339,7 +5339,7 @@ footer.front {
               font-size: 13px;
               font-size: 1.3rem;
               position: absolute;
-              top: 35px;
+              top: 32px;
               right: 45px;
               color: #999999; }
               #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .item .header .option i, #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .carousel .carousel-inner .item .header .modal-header .download i, .carousel .carousel-inner #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .item .header .modal-header .download i, #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .carousel .carousel-inner .item .modal-header .header .download i, .carousel .carousel-inner #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .item .modal-header .header .download i, #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .carousel .carousel-inner .item .header .modal-header .like i, .carousel .carousel-inner #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .item .header .modal-header .like i, #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .carousel .carousel-inner .item .modal-header .header .like i, .carousel .carousel-inner #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .item .modal-header .header .like i {
@@ -5374,7 +5374,7 @@ footer.front {
                 border-bottom-color: #fff; }
             #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .item .header .download, #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .carousel .carousel-inner .item .header .modal-header .like, .carousel .carousel-inner #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .item .header .modal-header .like, #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .carousel .carousel-inner .item .modal-header .header .like, .carousel .carousel-inner #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .item .modal-header .header .like {
               position: absolute;
-              top: 36px;
+              top: 33px;
               padding-left: 26px;
               right: 65px;
               vertical-align: top; }
@@ -5390,7 +5390,7 @@ footer.front {
                 left: 0; }
             #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .item .header .like {
               position: absolute;
-              top: 35px;
+              top: 32px;
               right: 185px;
               font-family: 'Lato','Helvetica neue',Helvetica,Arial,sans-serif;
               vertical-align: top;
@@ -5476,15 +5476,15 @@ footer.front {
             #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .item .footer .comment {
               text-align: left;
               padding: 0 25px;
-              width: 90%;
-              margin: 0 auto 50px auto;
+              width: 88%;
+              margin: 0 auto 60px auto;
               -webkit-font-smoothing: antialiased;
               -moz-osx-font-smoothing: grayscale; }
               #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .item .footer .comment .comment_inner {
                 display: table;
                 width: 100%;
                 table-layout: fixed;
-                margin-bottom: 25px; }
+                margin-bottom: 30px; }
                 #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .item .footer .comment .comment_inner .user_image {
                   display: table-cell;
                   width: 50px; }
@@ -5533,7 +5533,7 @@ footer.front {
                 border-radius: 4px;
                 width: 100%;
                 height: 65px;
-                padding: 12px 12px;
+                padding: 10px 10px;
                 margin-bottom: 10px;
                 border: 1px solid #d6d6d6;
                 resize: none;
