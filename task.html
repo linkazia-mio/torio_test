@@ -1083,6 +1083,16 @@
       <!--/Task Detail-->
     </div>
     <script>
+    $('head').append(
+      '<style type="text/css">.wrapper { display: none; } .main_fade,.main_loader { display: block; }</style>'
+    );
+    jQuery.event.add(window,'load',function() { // 全ての読み込み完了後に呼ばれる関数
+      var pageH = $('.wrapper').height();
+      $('.fade').css('height', pageH).delay(100).fadeOut('slow');
+      $('.main_loader').delay(50).fadeOut('slow');
+      $('.wrapper').fadeIn('slow');
+    });
+
     function resize(){
       var t = document.getElementById("title_edit"); // textarea
       var s = document.getElementById("hidden_span"); // span

@@ -1460,9 +1460,23 @@
       <!--/File detail-->
     </div>
     <script>
-      jQuery(function(){
-          introJs().setOption('showBullets', false).start();
+
+      $('head').append(
+        '<style type="text/css">.wrapper { display: none; } .main_fade,.main_loader { display: block; }</style>'
+      );
+
+      jQuery.event.add(window,'load',function() { // 全ての読み込み完了後に呼ばれる関数
+        var pageH = $('.wrapper').height();
+        $('.fade').css('height', pageH).delay(100).fadeOut('slow');
+        $('.main_loader').delay(50).fadeOut('slow');
+        $('.wrapper').fadeIn('slow');
+
+        setTimeout(function(){
+            introJs().setOption('showBullets', false).start();
+        },1000);
+
       });
+
 
       function resize(){
         var t = document.getElementById("title_edit"); // textarea
@@ -1475,6 +1489,7 @@
            adjust();
         });
       }
+
     </script>
   </body>
 </html>

@@ -68,7 +68,7 @@ button {
  Main Loader
 ---------------------------------------------------------------------------------------*/
 .main_loader {
-  display: block;
+  display: none;
   position: fixed;
   z-index: 100%;
   width: 100%;
@@ -101,13 +101,13 @@ button {
   	100% {transform: rotate(360deg);}
   }
 }
-.fade {
+.main_fade {
   display: none;
   position: absolute;
   width: 100%;
   height: 100%;
   background: #fff;
-  z-index: 50%;
+  z-index: 10000;
   top: 0;
   left: 0;
 }
