@@ -1823,7 +1823,7 @@ header {
           right: 25px;
           bottom: 10px; }
   header .account {
-    left: -80px;
+    right: -12px;
     top: 50px; }
     header .account.popover {
       -webkit-border-radius: 5px;
