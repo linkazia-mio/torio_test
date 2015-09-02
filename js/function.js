@@ -82,6 +82,13 @@ window.onload=function(){
       popoverBig.hide();
       $('.account').toggle();
     });
+    $('.me .name').click(function (event) {
+      $('.account').toggle( 'fade', '', 100 );
+      event.stopPropagation();
+      popover.hide();
+      popoverBig.hide();
+      $('.account').toggle();
+    });
     // $('.account').click(function (event) {
     //   jQuery('.account').show();
     //   event.stopPropagation();
