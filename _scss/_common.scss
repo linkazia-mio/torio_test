@@ -2213,6 +2213,7 @@ header {
       display: inline-block;
       color: $white_brack;
       top: 32px;
+      cursor: pointer;
     }
     p {
       @include fontsize(2.6);

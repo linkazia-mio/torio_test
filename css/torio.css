@@ -3089,7 +3089,8 @@ header {
       line-height: 28px;
       display: inline-block;
       color: #999999;
-      top: 32px; }
+      top: 32px;
+      cursor: pointer; }
     .detail .title p, .detail_public .title p {
       font-size: 26px;
       font-size: 2.6rem;
