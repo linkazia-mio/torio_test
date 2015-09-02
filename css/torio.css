@@ -1950,7 +1950,6 @@ header {
   position: absolute;
   top: 12px;
   right: 23px;
-  width: 190px;
   height: 30px; }
   .alart p {
     color: #555555;
@@ -1962,7 +1961,9 @@ header {
     .alart p:hover {
       cursor: pointer; }
   .alart .alart_task, .alart .activity {
-    display: inline-block; }
+    display: inline-block;
+    vertical-align: top;
+    padding-top: 5px; }
     .alart .alart_task p.icon, .alart .activity p.icon {
       font-size: 26px;
       font-size: 2.6rem;
@@ -2004,7 +2005,7 @@ header {
       min-width: 20px;
       min-height: 20px; }
   .alart .activity {
-    padding-left: 14px; }
+    padding: 5px 14px 0 14px; }
     .alart .activity:hover {
       cursor: pointer; }
       .alart .activity:hover .balloon_box_under {
@@ -2013,9 +2014,7 @@ header {
         left: 48%;
         margin: -50px; }
   .alart .me {
-    position: absolute;
-    top: -3px;
-    right: 0; }
+    display: inline-block; }
     .alart .me .image {
       display: inline-block;
       padding-right: 3px; }
@@ -2028,10 +2027,15 @@ header {
     .alart .me .name {
       font-size: 12px;
       font-size: 1.2rem;
-      display: inline-block;
-      color: #555555;
       -webkit-font-smoothing: subpixel-antialiased;
-      -moz-osx-font-smoothing: auto; }
+      -moz-osx-font-smoothing: auto;
+      display: inline-block;
+      vertical-align: middle;
+      color: #555555;
+      max-width: 150px;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis; }
 
 .front_header_menu .logo {
   float: left;
