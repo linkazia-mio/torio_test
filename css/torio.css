@@ -3002,6 +3002,12 @@ header {
           float: left;
           width: 94px;
           border-right: 1px solid #EEE; }
+          .page_menu .page_menu_footer .add_page ul li:hover {
+            background: #f9f9f9;
+            -webkit-border-radius: 9px;
+            -moz-border-radius: 9px;
+            -ms-border-radius: 9px;
+            border-radius: 9px; }
           .page_menu .page_menu_footer .add_page ul li:last-child {
             border-right: none; }
           .page_menu .page_menu_footer .add_page ul li.add_page_note a i, .page_menu .page_menu_footer .add_page ul li.add_page_task a i, .page_menu .page_menu_footer .add_page ul li.add_page_file a i {
@@ -5477,7 +5483,8 @@ footer.front {
               position: absolute;
               top: 32px;
               right: 45px;
-              color: #999999; }
+              color: #999999;
+              cursor: pointer; }
               #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .item .header .option i, #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .carousel .carousel-inner .item .header .modal-header .download i, .carousel .carousel-inner #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .item .header .modal-header .download i, #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .carousel .carousel-inner .item .modal-header .header .download i, .carousel .carousel-inner #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .item .modal-header .header .download i, #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .carousel .carousel-inner .item .header .modal-header .like i, .carousel .carousel-inner #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .item .header .modal-header .like i, #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .carousel .carousel-inner .item .modal-header .header .like i, .carousel .carousel-inner #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .item .modal-header .header .like i {
                 position: absolute;
                 font-size: 26px;
