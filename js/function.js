@@ -1,7 +1,7 @@
 $(window).on('resize', function(){});
 
 window.onload=function(){
-  
+
 
   $(document).ready(function(){
 
@@ -75,17 +75,17 @@ window.onload=function(){
       $('.activity_mine_btn').removeClass("active");
     });
     //Account
-    $('.me').click(function (event) {
+    $('.me .image').click(function (event) {
       $('.account').toggle( 'fade', '', 100 );
       event.stopPropagation();
       popover.hide();
       popoverBig.hide();
       $('.account').toggle();
     });
-    $('.account').click(function (event) {
-      jQuery('.account').show();
-      event.stopPropagation();
-    });
+    // $('.account').click(function (event) {
+    //   jQuery('.account').show();
+    //   event.stopPropagation();
+    // });
     //Check box
     $('.config .check').click(function (event) {
       $('.check_box').toggle( 'fade', '', 100 );
