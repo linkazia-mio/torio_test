@@ -1594,8 +1594,8 @@ header {
       background: #2aaef5;
       box-shadow: 0 0 4px rgba(53, 175, 242, 0.6); }
   header .task_box, header .activity_box {
-    right: 118px;
-    top: 60px;
+    left: -346px;
+    top: 50px;
     width: 450px;
     max-width: 450px; }
     header .task_box.popover_big::before, header .popover_big.activity_box::before {
@@ -1735,8 +1735,8 @@ header {
   header .activity_box {
     width: 400px;
     max-width: 400px;
-    right: 85px;
-    top: 60px; }
+    left: -257px;
+    top: 50px; }
     header .activity_box.popover_big::before {
       position: absolute;
       content: '';
@@ -1788,6 +1788,7 @@ header {
         header .activity_box .activity_lists .activity_list .noimage {
           font-size: 10px;
           font-size: 1rem;
+          color: #fff;
           float: left;
           width: 30px;
           height: 30px;
@@ -1803,8 +1804,8 @@ header {
           right: 15px;
           bottom: 10px; }
   header .account {
-    right: 15px;
-    top: 60px; }
+    left: -120px;
+    top: 50px; }
     header .account.popover {
       -webkit-border-radius: 5px;
       -moz-border-radius: 5px;
@@ -1853,6 +1854,7 @@ header {
           height: 40px; }
       header .account .account_info .noimage {
         float: left;
+        color: #fff;
         width: 40px;
         height: 40px;
         margin-right: 10px;
@@ -2011,15 +2013,16 @@ header {
       min-height: 20px; }
   .alart .activity {
     padding: 5px 14px 0 14px; }
-    .alart .activity:hover {
+    .alart .activity p:hover {
       cursor: pointer; }
-      .alart .activity:hover .balloon_box_under {
+      .alart .activity p:hover .balloon_box_under {
         display: block;
         bottom: 15px;
         left: 48%;
         margin: -50px; }
   .alart .me {
-    display: inline-block; }
+    display: inline-block;
+    position: relative; }
     .alart .me .image {
       display: inline-block;
       padding-right: 3px; }

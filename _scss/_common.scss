@@ -553,8 +553,8 @@ header {
     }
   }
   .task_box {
-    right: 118px;
-    top: 60px;
+    left: -346px;
+    top: 50px;
     width: 450px;
     max-width: 450px;
     &.popover_big {
@@ -710,8 +710,8 @@ header {
     @extend .task_box;
     width: 400px;
     max-width: 400px;
-    right: 85px;
-    top: 60px;
+    left: -257px;
+    top: 50px;
     &.popover_big {
       &::before {
        	position: absolute;
@@ -760,6 +760,7 @@ header {
         }
         .noimage {
           @include fontsize(1.0);
+          color: #fff;
           float: left;
           width: 30px;
           height: 30px;
@@ -781,8 +782,8 @@ header {
     }
   }
   .account {
-    right: 15px;
-    top: 60px;
+    left: -120px;
+    top: 50px;
     &.popover {
       @include border_radius(5px);
       display: none;
@@ -832,6 +833,7 @@ header {
       }
       .noimage {
         float: left;
+        color: #fff;
         width: 40px;
         height: 40px;
         margin-right: 10px;
@@ -1003,7 +1005,7 @@ header {
   .activity {
     @extend .alart_task;
     padding: 5px 14px 0 14px;
-    &:hover {
+    p:hover {
       cursor: pointer;
       .balloon_box_under {
         display: block;
@@ -1015,6 +1017,7 @@ header {
   }
   .me {
     display: inline-block;
+    position: relative;
     @extend .clearfix;
     .image {
       display: inline-block;
