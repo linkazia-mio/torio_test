@@ -74,14 +74,11 @@
           right: 18px;
           top: 28px;
           color: $white_brack;
+          cursor: pointer;
         }
         .note_detail_option_box {
           right: -10px;
           top: 60px;
-          cursor: pointer;
-          i{
-            cursor: pointer;
-          }
           &.popover {
             @include border_radius(5px);
             display: none;

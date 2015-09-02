@@ -8207,13 +8207,11 @@ input[type="checkbox"] {
           position: absolute;
           right: 18px;
           top: 28px;
-          color: #999999; }
+          color: #999999;
+          cursor: pointer; }
         .note .note_edit .note_edit_inner .edit_name .note_detail_option_box {
           right: -10px;
-          top: 60px;
-          cursor: pointer; }
-          .note .note_edit .note_edit_inner .edit_name .note_detail_option_box i {
-            cursor: pointer; }
+          top: 60px; }
           .note .note_edit .note_edit_inner .edit_name .note_detail_option_box.popover {
             -webkit-border-radius: 5px;
             -moz-border-radius: 5px;
