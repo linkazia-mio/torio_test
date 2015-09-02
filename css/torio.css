@@ -3357,7 +3357,7 @@ header {
             letter-spacing: 0.7; }
             .detail .title .detail_website_box.popover_big .popover_inner .comingsoon span, .detail_public .title .detail_website_box.popover_big .popover_inner .comingsoon span {
               border: 2px solid #555555;
-              padding: 3px 5px; }
+              padding: 4px 5px 3px 5px; }
           .detail .title .detail_website_box.popover_big .popover_inner .comingsoon_text, .detail_public .title .detail_website_box.popover_big .popover_inner .comingsoon_text {
             text-align: center;
             font-size: 12px;
