@@ -94,6 +94,14 @@ window.onload=function(){
       popoverBig.hide();
       $('.check_box').toggle();
     });
+    //Photo upload box
+    $('.profile_image .photo_upload').click(function (event) {
+      $('.photo_upload_box').toggle( 'fade', '', 100 );
+      event.stopPropagation();
+      popover.hide();
+      popoverBig.hide();
+      $('.photo_upload_box').toggle();
+    });
     //Website Box
     $('.website').click(function (event) {
       $('.detail_website_box').toggle( 'fade', '', 100 );
