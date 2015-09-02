@@ -554,7 +554,7 @@ header {
   }
   .task_box {
     right: 118px;
-    top: 65px;
+    top: 60px;
     &.popover_big {
       &::before {
        	position: absolute;
@@ -708,7 +708,7 @@ header {
     @extend .task_box;
     width: 400px;
     right: 85px;
-    top: 65px;
+    top: 60px;
     &.popover_big {
       &::before {
        	position: absolute;
@@ -779,7 +779,7 @@ header {
   }
   .account {
     right: 15px;
-    top: 65px;
+    top: 60px;
     &.popover {
       @include border_radius(5px);
       display: none;
