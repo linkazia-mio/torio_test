@@ -1595,7 +1595,7 @@ header {
       box-shadow: 0 0 4px rgba(53, 175, 242, 0.6); }
   header .task_box, header .activity_box {
     right: 118px;
-    top: 65px; }
+    top: 60px; }
     header .task_box.popover_big::before, header .popover_big.activity_box::before {
       position: absolute;
       content: '';
@@ -1733,7 +1733,7 @@ header {
   header .activity_box {
     width: 400px;
     right: 85px;
-    top: 65px; }
+    top: 60px; }
     header .activity_box.popover_big::before {
       position: absolute;
       content: '';
@@ -1801,7 +1801,7 @@ header {
           bottom: 10px; }
   header .account {
     right: 15px;
-    top: 65px; }
+    top: 60px; }
     header .account.popover {
       -webkit-border-radius: 5px;
       -moz-border-radius: 5px;
