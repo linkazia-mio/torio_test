@@ -185,7 +185,7 @@
             display: inline-block;
             margin: 0 2% 0 0;
             &:hover {
-              /*color: $torio_green;*/
+              /*color: $torio_blue;*/
               cursor: pointer;
             }
             &.like {
@@ -249,7 +249,7 @@
       color: #fff;
       height: 45px;
       width: 45px;
-      /*background: $torio_green;*/
+      /*background: $torio_blue;*/
       background: #f36;
       -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
       -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
@@ -347,6 +347,9 @@
       padding: 30px 0;
       display: table-cell;
       text-align: center;
+      .text{
+        margin-top: 33px;
+      }
       a {
         color: $white_brack;
         display: block;
@@ -703,7 +706,7 @@
                 a {
                   color: $white_brack;
                   &:hover {
-                    color: $torio_green;
+                    color: $torio_blue;
                   }
                 }
               }
@@ -794,7 +797,7 @@
               a {
                 color: $white_brack;
                 &:hover {
-                  color: $torio_green;
+                  color: $torio_blue;
                 }
                 i {
                   @include fontsize(2.6);
@@ -1032,7 +1035,7 @@
           a {
             color: $white_brack;
             &:hover {
-              color: $torio_green;
+              color: $torio_blue;
             }
           }
           i {
@@ -1057,7 +1060,7 @@
           a {
             color: $white_brack;
             &:hover {
-              color: $torio_green;
+              color: $torio_blue;
             }
           }
         }

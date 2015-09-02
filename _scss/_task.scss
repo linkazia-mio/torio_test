@@ -59,7 +59,7 @@
         line-height: 30px;
         color: #fff;
         font-weight: normal;
-        background: $torio_green;
+        background: $torio_blue;
         &:hover {
           @include opacity(0.8);
         }
@@ -148,7 +148,7 @@ input[type="checkbox"] {
     }
     /*hover時の見た目*/
     &:hover {
-      color: $torio_green;
+      color: $torio_blue;
       &:before {
         background-color: $white_gray;
       }
@@ -159,7 +159,7 @@ input[type="checkbox"] {
     color: $blue;
     &::before {
       @include fontsize(1.5);
-      background: $torio_green;
+      background: $torio_blue;
       border-color: $blue;
       border: 2px solid $blue;
       color: #fff;
@@ -481,7 +481,7 @@ input[type="checkbox"] {
         width: 100px;
         color: #fff;
         font-weight: normal;
-        background: $torio_green;
+        background: $torio_blue;
         @include fontsize(1.2);
         &:hover {
           @include opacity(0.8);
@@ -1002,7 +1002,7 @@ input[type="checkbox"] {
   line-height: 30px;
   color: #fff;
   font-weight: normal;
-  background: $torio_green;
+  background: $torio_blue;
   &:hover {
     @include opacity(0.8);
   }
@@ -1017,7 +1017,7 @@ input[type="checkbox"] {
     right: 130px;
     bottom: 6px;
     width: 80px;
-    color: $torio_green;
+    color: $torio_blue;
     @include fontsize(1.2);
     &:hover {
       @include opacity(0.7);

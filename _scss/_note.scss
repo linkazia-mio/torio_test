@@ -79,6 +79,9 @@
           right: -10px;
           top: 60px;
           cursor: pointer;
+          i{
+            cursor: pointer;
+          }
           &.popover {
             @include border_radius(5px);
             display: none;
