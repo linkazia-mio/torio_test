@@ -3346,17 +3346,24 @@ header {
           .detail .title .detail_website_box.popover_big .popover_inner .comingsoon, .detail_public .title .detail_website_box.popover_big .popover_inner .comingsoon {
             text-align: center;
             font-family: 'Lato','Helvetica neue',Helvetica,Arial,sans-serif;
-            font-size: 16px;
-            font-size: 1.6rem;
+            font-size: 12px;
+            font-size: 1.2rem;
             clear: both;
             position: static;
-            padding: 9px 0 0 0; }
+            padding: 9px 0 0 0;
+            color: #555555;
+            font-weight: bold;
+            letter-spacing: 0.7; }
+            .detail .title .detail_website_box.popover_big .popover_inner .comingsoon span, .detail_public .title .detail_website_box.popover_big .popover_inner .comingsoon span {
+              border: 2px solid #555555;
+              padding: 3px 5px; }
           .detail .title .detail_website_box.popover_big .popover_inner .comingsoon_text, .detail_public .title .detail_website_box.popover_big .popover_inner .comingsoon_text {
             text-align: center;
             font-size: 12px;
             font-size: 1.2rem;
             clear: both;
-            position: static; }
+            position: static;
+            margin-top: 5px; }
 
 /*---------------------------------------------------------------------------------------
  Modal
