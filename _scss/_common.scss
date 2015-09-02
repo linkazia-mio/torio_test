@@ -2879,6 +2879,7 @@ header {
                	  }
                	  &:hover{
                 	   @include opacity(0.7);
+                	   border: 2px solid #48ca2c;
                	  }
                	  &:last-child{
                 	   margin-bottom: 10px;
