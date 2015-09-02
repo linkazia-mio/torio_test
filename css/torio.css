@@ -4444,14 +4444,46 @@ footer.front {
 ---------------------------------------------------------------------------------------*/
 .cssload-loading-inner {
   position: relative;
-  margin: 70px 0 0 0; }
-  .cssload-loading-inner p {
-    text-align: center;
-    padding: 45px 0 45px 0;
-    font-size: 16px;
-    font-size: 1.6rem;
-    font-family: 'Lato','Helvetica neue',Helvetica,Arial,sans-serif;
-    color: #cccccc; }
+  height: 30%;
+  width: 100%;
+  margin: 70px 0 0 0;
+  background: url(../images/logo_icon_color.png) no-repeat center;
+  background-size: 50px auto;
+  -webkit-animation: spin 1s linear infinite;
+  -moz-animation: spin 1s linear infinite;
+  -ms-animation: spin 1s linear infinite;
+  -o-animation: spin 1s linear infinite;
+  animation: spin 1s linear infinite; }
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg); }
+  100% {
+    -webkit-transform: rotate(360deg); } }
+
+@-moz-keyframes spin {
+  0% {
+    -moz-transform: rotate(0deg); }
+  100% {
+    -moz-transform: rotate(360deg); } }
+
+@-ms-keyframes spin {
+  .cssload-loading-inner 0% {
+    -ms-transform: rotate(0deg); }
+  .cssload-loading-inner 100% {
+    -ms-transform: rotate(360deg); } }
+
+@-o-keyframes spin {
+  0% {
+    -o-transform: rotate(0deg); }
+  100% {
+    -o-transform: rotate(360deg); } }
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(360deg); } }
 
 .cssload-loading {
   position: absolute;
