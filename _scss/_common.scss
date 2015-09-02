@@ -782,7 +782,7 @@ header {
     }
   }
   .account {
-    left: -120px;
+    left: -80px;
     top: 50px;
     &.popover {
       @include border_radius(5px);
@@ -1004,7 +1004,7 @@ header {
   }
   .activity {
     @extend .alart_task;
-    padding: 5px 14px 0 14px;
+    padding: 5px 18px 0 14px;
     p:hover {
       cursor: pointer;
       .balloon_box_under {

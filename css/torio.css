@@ -1804,7 +1804,7 @@ header {
           right: 15px;
           bottom: 10px; }
   header .account {
-    left: -120px;
+    left: -80px;
     top: 50px; }
     header .account.popover {
       -webkit-border-radius: 5px;
@@ -2012,7 +2012,7 @@ header {
       min-width: 20px;
       min-height: 20px; }
   .alart .activity {
-    padding: 5px 14px 0 14px; }
+    padding: 5px 18px 0 14px; }
     .alart .activity p:hover {
       cursor: pointer; }
       .alart .activity p:hover .balloon_box_under {
