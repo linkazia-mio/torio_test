@@ -940,9 +940,8 @@ header {
 /*Alart*/
 .alart {
   position: absolute;
-  top: 12px;
+  top: 10px;
   right: 23px;
-  width: 190px;
   height: 30px;
   p {
     color: $brack;
@@ -954,6 +953,8 @@ header {
   }
   .alart_task {
     display: inline-block;
+    vertical-align: top;
+    padding-top: 5px;
     p {
       &.icon {
         @include fontsize(2.6);
@@ -997,7 +998,7 @@ header {
   }
   .activity {
     @extend .alart_task;
-    padding-left: 14px;
+    padding: 5px 14px 0 14px;
     &:hover {
       cursor: pointer;
       .balloon_box_under {
@@ -1009,9 +1010,7 @@ header {
     }
   }
   .me {
-    position: absolute;
-    top: -3px;
-    right: 0;
+    display: inline-block;
     @extend .clearfix;
     .image {
       display: inline-block;
@@ -1025,9 +1024,14 @@ header {
     }
     .name {
       @include fontsize(1.2);
-      display: inline-block;
-      color: $brack;
       @include font-smoothing(off);
+      display: inline-block;
+      vertical-align: middle;
+      color: $brack;
+      max-width: 150px;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
     }
   }
 }
