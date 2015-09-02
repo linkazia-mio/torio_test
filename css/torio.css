@@ -7015,9 +7015,14 @@ footer.front {
 ---------------------------------------------------------------------------------------*/
 .branding {
   margin: 80px auto 0 auto; }
+  .branding .logo {
+    text-align: center;
+    padding-bottom: 5px; }
+    .branding .logo img {
+      width: 90px; }
   .branding h1 {
-    font-size: 34px;
-    font-size: 3.4rem;
+    font-size: 32px;
+    font-size: 3.2rem;
     font-weight: 300;
     color: #333333;
     text-align: center; }
@@ -7026,7 +7031,8 @@ footer.front {
     font-size: 18px;
     font-size: 1.8rem;
     color: #999999;
-    margin: 15px 0 0 0; }
+    margin: 20px 0 0 0;
+    line-height: 1.9; }
 
 .card {
   max-width: 400px;
@@ -7037,12 +7043,16 @@ footer.front {
     /*height: 235px;*/
     padding-bottom: 10px;
     background-color: #fff;
-    border: 1px solid #eeeeee;
+    border: 1px solid #ededf0;
+    border-bottom: 1px solid #dcdce0;
     /*-webkit-box-shadow: 0 1px 3px rgba(50,50,50,0.08);
     box-shadow: 0 1px 3px rgba(50,50,50,0.08);*/
-    -webkit-border-radius: 4px;
-    border-radius: 4px;
-    font-size: 16px; }
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    border-radius: 6px;
+    font-size: 16px;
+    font-size: 1.6rem; }
     .card .auth-form .row {
       min-height: 60px;
       margin: 0;
@@ -7060,37 +7070,74 @@ footer.front {
         padding: 0 15px; }
         .card .auth-form .row.submit input.button {
           display: block;
-          width: 100%;
+          width: 99%;
           font-size: 16px;
-          -webkit-border-radius: 3px;
-          border-radius: 3px;
+          font-size: 1.6rem;
+          -webkit-border-radius: 5px;
+          -moz-border-radius: 5px;
+          -ms-border-radius: 5px;
+          border-radius: 5px;
           margin: 18px auto 16px auto;
           height: 50px;
           font-weight: bold;
           cursor: pointer;
-          -webkit-transition: 0.1s -webkit-transform ease-in-out;
-          -moz-transition: 0.1s -moz-transform ease-in-out;
-          -o-transition: 0.1s -o-transform ease-in-out;
-          -ms-transition: 0.1s -ms-transform ease-in-out;
-          transition: 0.1s transform ease-in-out; }
+          text-align: center;
+          cursor: pointer;
+          -webkit-transition: all 0.3s ease-in-out;
+          -moz-transition: all 0.3s ease-in-out;
+          -ms-transition: all 0.3s ease-in-out;
+          -o-transition: all 0.3s ease-in-out;
+          transition: all 0.3s ease-in-out;
+          -webkit-touch-callout: none;
+          -webkit-user-select: none;
+          -khtml-user-select: none;
+          -moz-user-select: none;
+          -ms-user-select: none;
+          user-select: none;
+          font-weight: normal;
+          font-style: normal;
+          text-decoration: none; }
+          .card .auth-form .row.submit input.button:hover {
+            outline: 0;
+            background: #2b75a7;
+            color: white; }
         .card .auth-form .row.submit input.blue {
           border: 0 none;
           background-color: #3A87BC;
           color: #fff; }
       .card .auth-form .row .icon {
-        width: 21px;
-        height: 25px;
+        width: 33px;
+        height: 33px;
         display: inline-block;
-        margin: 0 11px 0 16px;
-        font-size: 34px;
-        font-size: 3.4rem;
-        color: #3A87BC; }
+        margin: 0 5px 0 15px;
+        font-size: 29px;
+        font-size: 2.9rem;
+        color: #ffffff;
+        -webkit-border-radius: 100px;
+        -moz-border-radius: 100px;
+        -ms-border-radius: 100px;
+        border-radius: 100px;
+        background: #CCC;
+        text-align: center;
+        position: relative; }
         .card .auth-form .row .icon.email {
-          margin-top: 15px !important; }
+          margin-top: 16px !important; }
+          .card .auth-form .row .icon.email i {
+            top: 3px;
+            left: 2px;
+            position: absolute; }
         .card .auth-form .row .icon.padlock {
-          margin-top: 15px !important; }
+          margin-top: 16px !important; }
+          .card .auth-form .row .icon.padlock i {
+            top: 2px;
+            left: 2px;
+            position: absolute; }
         .card .auth-form .row .icon.person {
-          margin-top: 15px !important; }
+          margin-top: 16px !important; }
+          .card .auth-form .row .icon.person i {
+            top: 3px;
+            left: 2px;
+            position: absolute; }
       .card .auth-form .row.email input, .card .auth-form .row.password input, .card .auth-form .row.name input {
         -webkit-box-flex: 1;
         -moz-box-flex: 1;

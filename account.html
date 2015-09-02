@@ -20,7 +20,7 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/torio.css">
   </head>
-  <body>
+  <body style="background: #f9f9f9;">
     <div class="wrapper">
       <!--Header/-->
       <!--<header>
@@ -36,15 +36,15 @@
       <!--Front/-->
       <div class="front">
         <div class="branding">
-          <h1>30 日間の無料トライアルで今すぐはじめよう</h1>
-          <p>今なら、<a href="#">Proプラン</a>のすべての機能を無料でお試しいただけます。<br>
-無料トライアル終了後はFreeプランをご利用いただけます。</p>
+          <div class="logo"><img src="images/logo_icon_color.png"></div>
+          <h1>まずは無料ではじめよう</h1>
+          <p>ベータ版につき、今ならすべての機能を無料でお試しいただけます。</p>
         </div>
         <div class="card login">
           <form action="/login" method="POST" class="auth-form login">
             <div class="row name">
               <span class="icon person"><i class="icon-person-outline"></i></span>
-              <input type="text" name="name" value="" required="" autofocus="" placeholder="名前（山田 太郎）" title="姓名を入力して下さい。">
+              <input type="text" name="name" value="" required="" autofocus="" placeholder="名前（例：山田 太郎）" title="姓名を入力して下さい。">
             </div>
             <div class="row email">
               <span class="icon email"><i class="icon-mail-outline"></i></span>
@@ -57,9 +57,9 @@
             <div class="row submit">
               <input type="submit" class="button big blue" value="無料アカウントを作成">
             </div>
-            <span class="link plan">
+            <!--<span class="link plan">
               <a href="/plan">またはいますぐ購入</a>
-            </span>
+            </span>-->
           </form>
           <p class="link sign-up"><a href="#">すでにアカウントをお持ちですか？</a></p>
           <p class="link privacy">無料アカウントを作成ボタンをクリックすると、<br>

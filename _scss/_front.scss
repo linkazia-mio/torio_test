@@ -1032,8 +1032,15 @@
 ---------------------------------------------------------------------------------------*/
 .branding{
   margin: 80px auto 0 auto;
+  .logo{
+    text-align: center;
+    padding-bottom: 5px;
+    img{
+      width: 90px;
+    }
+  }
   h1{
-    @include fontsize(3.4);
+    @include fontsize(3.2);
     font-weight: 300;
     color: $dark_brack;
     text-align: center;
@@ -1042,7 +1049,8 @@
     text-align: center;
     @include fontsize(1.8);
     color: $white_brack;
-    margin: 15px 0 0 0 ;
+    margin: 20px 0 0 0 ;
+    line-height: 1.9;
   }
 }
 
@@ -1055,12 +1063,12 @@
     /*height: 235px;*/
     padding-bottom: 10px;
     background-color: #fff;
-    border: 1px solid $border_gray;
+    border: 1px solid #ededf0;
+    border-bottom: 1px solid #dcdce0;
     /*-webkit-box-shadow: 0 1px 3px rgba(50,50,50,0.08);
     box-shadow: 0 1px 3px rgba(50,50,50,0.08);*/
-    -webkit-border-radius: 4px;
-    border-radius: 4px;
-    font-size: 16px;
+    @include border_radius(6px);
+    @include fontsize(1.6);
     .row{
       min-height: 60px;
       margin: 0;
@@ -1080,19 +1088,34 @@
         input{
           &.button{
             display: block;
-            width: 100%;
-            font-size: 16px;
-            -webkit-border-radius: 3px;
-            border-radius: 3px;
+            width: 99%;
+            @include fontsize(1.6);
+            @include border_radius(5px);
             margin: 18px auto 16px auto;
             height: 50px;
             font-weight: bold;
             cursor: pointer;
-            -webkit-transition: 0.1s -webkit-transform ease-in-out;
-            -moz-transition: 0.1s -moz-transform ease-in-out;
-            -o-transition: 0.1s -o-transform ease-in-out;
-            -ms-transition: 0.1s -ms-transform ease-in-out;
-            transition: 0.1s transform ease-in-out;
+            text-align: center;
+            cursor: pointer;
+            -webkit-transition: all 0.3s ease-in-out;
+            -moz-transition: all 0.3s ease-in-out;
+            -ms-transition: all 0.3s ease-in-out;
+            -o-transition: all 0.3s ease-in-out;
+            transition: all 0.3s ease-in-out;
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            -khtml-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            font-weight: normal;
+            font-style: normal;
+            text-decoration: none;
+            &:hover{
+              outline:0;
+              background: #2b75a7;
+              color: white;
+            }
           }
           &.blue{
             border: 0 none;
@@ -1102,20 +1125,39 @@
         }
       }
       .icon{
-        width: 21px;
-        height: 25px;
+        width: 33px;
+        height: 33px;
         display: inline-block;
-        margin: 0 11px 0 16px;
-        @include fontsize(3.4);
-        color: $torio_blue;
+        margin: 0 5px 0 15px;
+        @include fontsize(2.9);
+        color: #ffffff;
+        @include border_radius(100px);
+        background: #CCC;
+        text-align: center;
+        position: relative;
         &.email{
-          margin-top: 15px !important;
+          margin-top: 16px !important;
+          i{
+            top:3px;
+            left: 2px;
+            position: absolute;
+          }
         }
         &.padlock{
-          margin-top: 15px !important;
+          margin-top: 16px !important;
+          i{
+            top:2px;
+            left: 2px;
+            position: absolute;
+          }
         }
         &.person{
-          margin-top: 15px !important;
+          margin-top: 16px !important;
+          i{
+            top:3px;
+            left: 2px;
+            position: absolute;
+          }
         }
       }
       &.email,&.password,&.name{
