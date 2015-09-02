@@ -2050,7 +2050,7 @@ header {
     .add_page {
       width: 280px;
       left: 4%;
-      top: -140px;
+      top: -123px;
       padding-top: 3px;
       z-index: 9999;
       &.popover {
@@ -2069,7 +2069,7 @@ header {
         text-align: left;
         white-space: normal;
         @include opacity(1);
-        padding: 10px 0;
+        padding: 0 0;
         z-index: 20;
         &::before {
          	position: absolute;
@@ -2100,7 +2100,11 @@ header {
           display: inline-block;
           float: left;
           width: 94px;
-          border-right: 1px solid #EEE;
+          border-right: 1px solid #f2f2f2;
+          &:hover{
+            background: #f9f9f9;
+            /*@include border_radius(9px);*/
+          }
           &:last-child{
             border-right: none;
           }
@@ -2213,6 +2217,7 @@ header {
       display: inline-block;
       color: $white_brack;
       top: 32px;
+      cursor: pointer;
     }
     p {
       @include fontsize(2.6);
