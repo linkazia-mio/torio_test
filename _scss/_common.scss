@@ -555,11 +555,13 @@ header {
   .task_box {
     right: 118px;
     top: 60px;
+    width: 450px;
+    max-width: 450px;
     &.popover_big {
       &::before {
        	position: absolute;
        	content: '';
-       	left:83.5%;
+       	left:80%;
        	top: -16px;
        	margin-left:-7px;
        	border:8px solid transparent;
@@ -568,7 +570,7 @@ header {
       &::after {
        	position:absolute;
        	content: '';
-       	left:83.5%;
+       	left:80%;
        	top:-15px;
        	margin-left:-7px;
        	border:8px solid transparent;
@@ -580,9 +582,9 @@ header {
       border: none;
     }
     ul {
-      @include border_radius(3px);
+      @include border_radius(4px);
       margin: 0 20px 15px 20px;
-      width: 455px;
+      width: 405px;
       border: 1px solid $torio_green;
       display: table;
       table-layout: fixed;
@@ -608,11 +610,11 @@ header {
     }
     .task_active_lists {
       background: $white_gray;
-      max-height: 550px;
+      max-height: 500px;
       -webkit-box-shadow: 0 0px 2px rgba(0,0,0,0.15),inset 0 0px 0 rgba(255,255,255,0.5);
       box-shadow: 0 0px 2px rgba(0,0,0,0.15),inset 0 0px 0 rgba(255,255,255,0.5);
       overflow: hidden;
-      padding-bottom: 20px;
+      padding-bottom: 10px;
       @include border_radius(5px);
       &.requeste {
         display: none;
@@ -628,7 +630,7 @@ header {
           .number {
             @include fontsize(1.1);
             color: $white_brack;
-            margin-left: 8px;
+            margin-left: 5px;
             @include font_eng;
           }
         }
@@ -707,13 +709,14 @@ header {
   .activity_box {
     @extend .task_box;
     width: 400px;
+    max-width: 400px;
     right: 85px;
     top: 60px;
     &.popover_big {
       &::before {
        	position: absolute;
        	content: '';
-       	left:83.5%;
+       	left:80%;
        	top: -16px;
        	margin-left:-7px;
        	border:8px solid transparent;
@@ -722,7 +725,7 @@ header {
       &::after {
        	position:absolute;
        	content: '';
-       	left:83.5%;
+       	left:80%;
        	top:-15px;
        	margin-left:-7px;
        	border:8px solid transparent;
