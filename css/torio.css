@@ -3343,6 +3343,20 @@ header {
             background: #3A87BC;
             font-size: 12px;
             font-size: 1.2rem; }
+          .detail .title .detail_website_box.popover_big .popover_inner .comingsoon, .detail_public .title .detail_website_box.popover_big .popover_inner .comingsoon {
+            text-align: center;
+            font-family: 'Lato','Helvetica neue',Helvetica,Arial,sans-serif;
+            font-size: 16px;
+            font-size: 1.6rem;
+            clear: both;
+            position: static;
+            padding: 9px 0 0 0; }
+          .detail .title .detail_website_box.popover_big .popover_inner .comingsoon_text, .detail_public .title .detail_website_box.popover_big .popover_inner .comingsoon_text {
+            text-align: center;
+            font-size: 12px;
+            font-size: 1.2rem;
+            clear: both;
+            position: static; }
 
 /*---------------------------------------------------------------------------------------
  Modal

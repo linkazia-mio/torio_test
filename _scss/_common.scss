@@ -2472,8 +2472,21 @@ header {
             color: #fff;
             font-weight: normal;
             background: #3A87BC;
-            font-size: 12px;
-            font-size: 1.2rem;
+            @include fontsize(1.2);
+          }
+          .comingsoon{
+            text-align: center;
+            @include font_eng;
+            @include fontsize(1.6);
+            clear: both;
+            position: static;
+            padding: 9px 0 0 0 ;
+          }
+          .comingsoon_text{
+            text-align: center;
+            @include fontsize(1.2);
+            clear: both;
+            position: static;
           }
         }
       }
