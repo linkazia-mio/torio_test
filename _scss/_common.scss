@@ -1476,6 +1476,7 @@ header {
       position: relative;
       padding: 20px;
       background: #424654;
+      cursor: pointer;
       i {
         @include fontsize(2.6);
         position: absolute;

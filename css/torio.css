@@ -2439,7 +2439,8 @@ header {
     .global_menu .sponsor .sponsor_inner {
       position: relative;
       padding: 20px;
-      background: #424654; }
+      background: #424654;
+      cursor: pointer; }
       .global_menu .sponsor .sponsor_inner i {
         font-size: 26px;
         font-size: 2.6rem;
