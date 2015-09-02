@@ -1647,14 +1647,14 @@ header {
     header .task_box .task_active_lists, header .activity_box .task_active_lists {
       background: #f9f9f9;
       max-height: 500px;
-      -webkit-box-shadow: 0 0px 2px rgba(0, 0, 0, 0.15), inset 0 0px 0 rgba(255, 255, 255, 0.5);
-      box-shadow: 0 0px 2px rgba(0, 0, 0, 0.15), inset 0 0px 0 rgba(255, 255, 255, 0.5);
+      -webkit-box-shadow: 0 0px 2px rgba(0, 0, 0, 0.25), inset 0 0px 0 white;
+      box-shadow: 0 0px 2px rgba(0, 0, 0, 0.25), inset 0 0px 0 white;
       overflow: hidden;
       padding-bottom: 20px;
-      -webkit-border-radius: 5px;
-      -moz-border-radius: 5px;
-      -ms-border-radius: 5px;
-      border-radius: 5px;
+      -webkit-border-radius: 0 0 5px 5px;
+      -moz-border-radius: 0 0 5px 5px;
+      -ms-border-radius: 0 0 5px 5px;
+      border-radius: 0 0 5px 5px;
       -webkit-font-smoothing: subpixel-antialiased;
       -moz-osx-font-smoothing: auto; }
       header .task_box .task_active_lists.requeste, header .activity_box .task_active_lists.requeste {

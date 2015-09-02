@@ -611,11 +611,11 @@ header {
     .task_active_lists {
       background: $white_gray;
       max-height: 500px;
-      -webkit-box-shadow: 0 0px 2px rgba(0,0,0,0.15),inset 0 0px 0 rgba(255,255,255,0.5);
-      box-shadow: 0 0px 2px rgba(0,0,0,0.15),inset 0 0px 0 rgba(255,255,255,0.5);
+      -webkit-box-shadow: 0 0px 2px rgba(0,0,0,0.25),inset 0 0px 0 rgba(255,255,255,1.0);
+      box-shadow: 0 0px 2px rgba(0,0,0,0.25),inset 0 0px 0 rgba(255,255,255,1.0);
       overflow: hidden;
       padding-bottom: 20px;
-      @include border_radius(5px);
+      @include border_radius(0 0 5px 5px);
       @include font-smoothing(off);
       &.requeste {
         display: none;
