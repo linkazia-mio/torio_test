@@ -1873,7 +1873,9 @@ header {
         margin-top: 2px;
         color: #999999; }
     header .account ul {
-      margin: 20px 0 10px 0; }
+      margin: 20px 0 10px 0;
+      -webkit-font-smoothing: subpixel-antialiased;
+      -moz-osx-font-smoothing: auto; }
       header .account ul li a {
         color: #555555; }
   header.fixed {
@@ -3766,6 +3768,18 @@ header {
         border: 1px solid #d6d6d6;
         padding: 8px 10px;
         margin-bottom: 20px; }
+      .modal .modal-dialog .modal-content .modal-body .input_dot textarea {
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+        -ms-border-radius: 4px;
+        border-radius: 4px;
+        float: right;
+        width: 400px;
+        height: 100px;
+        border: 1px solid #d6d6d6;
+        padding: 8px 10px;
+        margin-bottom: 20px;
+        resize: none; }
       .modal .modal-dialog .modal-content .modal-body .input_dot .close_btn {
         position: relative;
         float: right; }

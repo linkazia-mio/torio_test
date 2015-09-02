@@ -694,7 +694,7 @@ window.onload=function(){
   });
 
   $(function(){
-    $('#add_member,#add_group,#viewers_box').on('shown.bs.modal', function () {
+    $('#add_member,#add_group,#add_feedback,#viewers_box').on('shown.bs.modal', function () {
       $('#myInput').focus()
     });
   });

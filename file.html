@@ -266,7 +266,7 @@
            </div>
          </div>
          <!--/Activity_box-->
-         <!--Acccont_box/-->
+         <!--Accont_box/-->
          <div class="account popover">
            <div class="account_info">
              <!-- <p class="user_image"><img src="http://placehold.it/100x100"></p> -->
@@ -278,11 +278,11 @@
              <li><a href="">プロフィール編集</a></li>
              <li><a href="">アカウント設定</a></li>
              <li><a href="">友達を探す</a></li>
-             <li><a href="">ヘルプ＆フィードバック</a></li>
+             <li><a href="">ご意見・フィードバック</a></li>
              <li><a href="">ログアウト</a></li>
            </ul>
          </div>
-         <!--/Acccont_box-->
+         <!--/Accont_box-->
       </header>
       <!--/Header-->
       <!--Main/-->
@@ -917,6 +917,7 @@
              <p class="" data-toggle="modal" data-target="#add_file2">新規登録モーダルパターン：ステップ１：ウェブサイト</p>
              <p class="" data-toggle="modal" data-target="#add_file3">新規登録モーダルパターン：ステップ２：アップロードプレビュー</p>
              <p class="" data-toggle="modal" data-target="#add_file4">新規登録モーダルパターン：ステップ２：ウェブサイトプレビュー</p>
+             <p class="" data-toggle="modal" data-target="#add_feedback">フィードバック</p>
           </div>
           <!--/File-->
         </div>
@@ -961,6 +962,28 @@
         </div>
       </div>
       <!--/Viewers-->
+      <!--Add feedback/-->
+      <div class="modal fade" id="add_feedback" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <button type="button" class="modal_close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title" id="myModalLabel">Torioへのご意見をお聞かせください</h4>
+            </div>
+            <div class="modal-body white">
+              <div class="input_dot dot_less">
+                <p class="item_name">内容</p>
+                <textarea id="feedback" class="textarea" placeholder="ご意見を入力してください..." name=""></textarea>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">キャンセル</button>
+              <button type="button" class="btn btn-primary">意見を送る</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--/Add feedback-->
       <!--Add group/-->
       <div class="modal fade" id="add_group" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
         <button type="button" class="modal_close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>

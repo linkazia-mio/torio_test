@@ -854,6 +854,7 @@ header {
     }
     ul {
       margin: 20px 0 10px 0;
+      @include font-smoothing(off);
       li {
         a {
           color: $brack;
@@ -2924,6 +2925,16 @@ header {
             border: 1px solid $border_dark_gray;
             padding: 8px 10px;
             margin-bottom: 20px;
+          }
+          textarea {
+            @include border_radius(4px);
+            float: right;
+            width: 400px;
+            height: 100px;
+            border: 1px solid $border_dark_gray;
+            padding: 8px 10px;
+            margin-bottom: 20px;
+            resize: none;
           }
           .close_btn {
             position: relative;
