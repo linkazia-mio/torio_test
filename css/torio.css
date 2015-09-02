@@ -1628,14 +1628,14 @@ header {
       display: table;
       table-layout: fixed;
       color: #3A87BC;
-      font-size: 13px;
-      font-size: 1.3rem;
+      font-size: 12px;
+      font-size: 1.2rem;
       font-weight: bold; }
       header .task_box ul li, header .activity_box ul li {
         display: table-cell;
         text-align: center;
         border-right: 1px;
-        line-height: 28px;
+        line-height: 26px;
         padding: 2px 0 0 0; }
         header .task_box ul li.active, header .activity_box ul li.active {
           background: #3A87BC;
