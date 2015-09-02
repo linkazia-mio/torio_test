@@ -534,7 +534,7 @@
   width: 100%;
   margin: 0 auto;
   a{
-    color: $torio_green;
+    color: $torio_blue;
   }
 }
 
@@ -922,7 +922,7 @@
           }
         }
         &.upgrade {
-          background: $torio_green;
+          background: $torio_blue;
           color: #fff;
           &:hover {
             -webkit-transition: all 0.3s ease-in-out;
@@ -954,7 +954,7 @@
       }
       &.pro {
         .type_name {
-          color: $torio_green;
+          color: $torio_blue;
         }
       }
       &.team {
@@ -1096,7 +1096,7 @@
           }
           &.blue{
             border: 0 none;
-            background-color: $torio_green;
+            background-color: $torio_blue;
             color: #fff;
           }
         }
@@ -1107,7 +1107,7 @@
         display: inline-block;
         margin: 0 11px 0 16px;
         @include fontsize(3.4);
-        color: $torio_green;
+        color: $torio_blue;
         &.email{
           margin-top: 15px !important;
         }

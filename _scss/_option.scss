@@ -190,7 +190,7 @@
   position: relative;
   i {
     @include fontsize(5.0);
-    color: $torio_green;
+    color: $torio_blue;
     position: absolute;
     left: 0;
     top: 50%;
@@ -305,7 +305,7 @@
   line-height: 40px;
   text-align: center;
   color: white;
-  background: $torio_green;
+  background: $torio_blue;
   @include fontsize(1.3);
   font-weight: bold;
   &.delete {
@@ -408,7 +408,7 @@
           background: $white_gray;
         }
         &.upgrade {
-          background: $torio_green;
+          background: $torio_blue;
           color: #fff;
           &:hover {
             @include opacity(0.7);
@@ -417,7 +417,7 @@
       }
       &.pro {
         .type_name {
-          color: $torio_green;
+          color: $torio_blue;
         }
       }
       &.team {
@@ -450,7 +450,7 @@
         display: block;
         margin: 0 auto;
         color: #fff;
-        background: $torio_green;
+        background: $torio_blue;
       }
       .type_name {
         @include fontsize(1.8);
@@ -469,7 +469,7 @@
         margin-top: 40px;
         width: 150px;
         height: 40px;
-        background: $torio_green;
+        background: $torio_blue;
         color: #fff;
         &:hover {
           @include opacity(0.7);
@@ -547,7 +547,7 @@ h3.profile_title {
       position: relative;
       a {
         @include border_radius(100px);
-        background: $torio_green;
+        background: $torio_blue;
         height: 30px;
         width: 30px;
         line-height: 30px;

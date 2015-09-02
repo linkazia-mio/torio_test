@@ -1900,7 +1900,7 @@ header {
   &:after {
     content: '';
     position: absolute;
-    border-top: 2px solid $torio_green;
+    border-top: 2px solid $torio_blue;
     width: 33%;
     right: 0;
   }
@@ -2228,6 +2228,7 @@ header {
   width: 220px;
   min-width: 120px;
   background: #424654;
+  /*background: #525561;*/
   float: left;
   position: relative; }
   .global_menu.size_none {
@@ -3108,7 +3109,7 @@ header {
       color: #999999;
       top: 32px; }
       .detail .title p:hover, .detail_public .title p:hover {
-        /*color: $torio_green;*/
+        /*color: $torio_blue;*/
         cursor: pointer; }
       .detail .title p.bookmark, .detail_public .title p.bookmark {
         right: 120px; }
@@ -5080,7 +5081,7 @@ footer.front {
           display: inline-block;
           margin: 0 2% 0 0; }
           .file .file_list .panel .panel-body .info p:hover {
-            /*color: $torio_green;*/
+            /*color: $torio_blue;*/
             cursor: pointer; }
           .file .file_list .panel .panel-body .info p.like {
             margin: 0 2.2% 0 0;
@@ -5131,7 +5132,7 @@ footer.front {
       color: #fff;
       height: 45px;
       width: 45px;
-      /*background: $torio_green;*/
+      /*background: $torio_blue;*/
       background: #f36;
       -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
       -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
@@ -5218,6 +5219,8 @@ footer.front {
     padding: 30px 0;
     display: table-cell;
     text-align: center; }
+    #add_file .modal-body .local_up .text, #add_file .modal-body .web_up .text, #add_file2 .modal-body .local_up .text, #add_file2 .modal-body .web_up .text, #add_file3 .modal-body .local_up .text, #add_file3 .modal-body .web_up .text, #add_file4 .modal-body .local_up .text, #add_file4 .modal-body .web_up .text {
+      margin-top: 33px; }
     #add_file .modal-body .local_up a, #add_file .modal-body .web_up a, #add_file2 .modal-body .local_up a, #add_file2 .modal-body .web_up a, #add_file3 .modal-body .local_up a, #add_file3 .modal-body .web_up a, #add_file4 .modal-body .local_up a, #add_file4 .modal-body .web_up a {
       color: #999999;
       display: block; }
