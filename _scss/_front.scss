@@ -1053,6 +1053,12 @@
     color: $white_brack;
     margin: 20px 0 0 0 ;
     line-height: 1.9;
+    span{
+      font-weight: bold;
+      color: $torio_red;
+      padding-bottom: 4px;
+      border-bottom: 2px solid $torio_red;
+    }
   }
 }
 
