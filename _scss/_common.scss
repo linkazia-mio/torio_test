@@ -1285,7 +1285,18 @@ header {
     /*border-right: 1px solid $border_gray;*/
   }
   .global_menu_inner {
-    // overflow: hidden;
+    /*overflow: hidden;*/
+    .global_menu_header{
+      padding: 15px 0 15px 20px ;
+      border-bottom:1px solid #50535f;
+      p{
+        text-align: left;
+        img{
+          width: 80px;
+          @include opacity(0.5);
+        }
+      }
+    }
     h3 {
       margin: 0 20px 8px 20px;
       @include fontsize(1.3);
