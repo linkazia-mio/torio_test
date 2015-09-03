@@ -2535,7 +2535,8 @@ header {
         .page_menu .config .favorite:hover .icon-star-outline {
           display: none; }
         .page_menu .config .favorite:hover .icon-star {
-          display: block; }
+          display: block;
+          color: #feb22e; }
         .page_menu .config .favorite:hover .balloon_box_under {
           display: block;
           bottom: 10px;
@@ -3162,7 +3163,8 @@ header {
           .detail .title p.bookmark:hover .icon-bookmark-outline, .detail_public .title p.bookmark:hover .icon-bookmark-outline {
             display: none; }
           .detail .title p.bookmark:hover .icon-bookmark, .detail_public .title p.bookmark:hover .icon-bookmark {
-            display: block; }
+            display: block;
+            color: #ff3366; }
           .detail .title p.bookmark:hover .balloon_box_under, .detail_public .title p.bookmark:hover .balloon_box_under {
             display: block;
             bottom: 10px;
