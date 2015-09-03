@@ -2262,7 +2262,7 @@ header {
   .global_menu .global_menu_inner {
     /*overflow: hidden;*/ }
     .global_menu .global_menu_inner .global_menu_header {
-      padding: 15px 0 15px 20px;
+      padding: 12px 0 12px 12px;
       border-bottom: 1px solid #50535f; }
       .global_menu .global_menu_inner .global_menu_header p {
         text-align: left; }
