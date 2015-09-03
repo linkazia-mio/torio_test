@@ -4005,7 +4005,7 @@ header {
         .modal .modal-dialog .modal-content .modal-body .task_detail .information .btn_add_task {
           right: 13px;
           bottom: 13px;
-          line-height: 32px;
+          line-height: 28px;
           height: 30px;
           -webkit-font-smoothing: subpixel-antialiased;
           -moz-osx-font-smoothing: auto; }
@@ -7688,7 +7688,7 @@ input[type="checkbox"] {
         position: absolute;
         right: 11px;
         bottom: 11px;
-        line-height: 37px;
+        line-height: 33px;
         height: 35px;
         -webkit-font-smoothing: subpixel-antialiased;
         -moz-osx-font-smoothing: auto;
