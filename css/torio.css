@@ -6226,12 +6226,17 @@ footer.front {
       height: 572px; }
       .kv .title p img {
         width: 100%; }
-    .kv .title #slider3 {
+    .kv .title #top_slider {
       width: 963px;
       height: 572px;
       margin: 70px auto 0;
-      position: relative; }
-      .kv .title #slider3 img {
+      position: relative;
+      background: url(../images/top_kv_bg.png) no-repeat top left #ffffff;
+      -webkit-border-radius: 5px 5px 0 0;
+      -moz-border-radius: 5px 5px 0 0;
+      -ms-border-radius: 5px 5px 0 0;
+      border-radius: 5px 5px 0 0; }
+      .kv .title #top_slider img {
         position: absolute;
         left: 0;
         top: 0;

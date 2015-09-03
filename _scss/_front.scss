@@ -151,11 +151,13 @@
         width: 100%;
       }
     }
-    #slider3 {
+    #top_slider {
       width:963px;
       height:572px;
       margin:70px auto 0;
       position:relative;
+      background: url(#{$img_path}top_kv_bg.png) no-repeat top left #ffffff;
+      @include border_radius(5px 5px 0 0);
       img{
         position:absolute;
         left:0;

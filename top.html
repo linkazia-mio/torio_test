@@ -4,8 +4,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <title>Torio（トリオ）｜チームで共創する新しいプロジェクト管理ツール Torio is new project management tool.</title>
-    <meta name="description" content="torio（トリオ）はチームで共創する新しいプロジェクト管理ツールです。まずは無料ではじめよう！ Welcome! Torio is new project management tool. Get started for free!">
-    <meta name="keywords" content="project management, team management, プロジェクト管理ツール, チーム共有, 情報共有, torio, トリオ, trio">
+    <meta name="description" content="Torio（トリオ）はチームで共創する新しいプロジェクト管理ツールです。まずは無料ではじめよう！ Welcome! Torio is new project management tool. Get started for free!">
+    <meta name="keywords" content="project management, team management, プロジェクト管理ツール, チーム共有, 情報共有, Torio, トリオ, trio">
     <meta name="og:title" content="Torio（トリオ） - チームで共創する新しいプロジェクト管理ツール">
     <meta name="og:type" content="website">
     <meta name="og:url" content="https://***">
@@ -17,15 +17,13 @@
     <meta name="twitter:site" content="@***">
     <meta name="twitter:title" content="Torio（トリオ） - チームで共創する新しいプロジェクト管理ツール">
     <meta name="twitter:description" content="Torio（トリオ）はチームで共創する新しいプロジェクト管理ツールです。まずは無料ではじめよう！ Welcome! Torio is new project management tool. Get started for free!">
-    <meta name="twitter:creator" content="@">
-    <meta name="twitter:image:src" content="images/image.png">
-    <meta name="twitter:domain" content="">-->
+    <meta name="twitter:creator" content="@***">
+    <meta name="twitter:image:src" content="https://***/images/image.png">
+    <meta name="twitter:domain" content="https://***">-->
     <link rel="icon" href="images/favicon.ico">
     <script type="text/javascript" src="js/jquery-1.11.3.js"></script>
     <script type="text/javascript" src="js/jquery-ui.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="js/function.js"></script>
-    <script type="text/javascript" src="js/content.js"></script>
     <script type="text/javascript" src="js/masonry.pkgd.min.js"></script>
     <script type="text/javascript" src="js/jquery.bxslider.min.js"></script>
     <link rel="stylesheet" href="css/jquery-ui.min.css">
@@ -54,7 +52,14 @@
         <div class="title">
           <h1>チームで共創する新しいプロジェクト管理ツール</h1>
           <h2>情報をためる。つなげる。自走する強いチームをつくる。</h2>
-          <p><img src="images/top_kv.png"></p>
+          <!--<p><img src="images/top_kv.png"></p>-->
+          <div id="top_slider">
+            <ul>
+              <li><img src="images/top_kv_file.png"></li>
+              <li><img src="images/top_kv_task.png"></li>
+              <li><img src="images/top_kv_note.png"></li>
+            </ul>
+          </div>
         </div>
       </div>
              
@@ -236,6 +241,24 @@ GTD(Getting Things Done)とも相性が良いです。
         </div>
       </footer>
     </div>
+    <script>
+      $(function(){
+        // 設定
+        var $width =963; // 横幅
+        var $height =572; // 高さ
+        var $interval = 4000; // 切り替わりの間隔（ミリ秒）
+        var $fade_speed = 700; // フェード処理の早さ（ミリ秒）
+        $("#top_slider ul li").css({"position":"relative","overflow":"hidden","width":$width,"height":$height});
+        $("#top_slider ul li").hide().css({"position":"absolute","top":0,"left":0});
+        $("#top_slider ul li:first").addClass("active").show();
+        setInterval(function(){
+        var $active = $("#top_slider ul li.active");
+        var $next = $active.next("li").length?$active.next("li"):$("#top_slider ul li:first");
+        $active.fadeOut($fade_speed).removeClass("active");
+        $next.fadeIn($fade_speed).addClass("active");
+        },$interval);
+      });
+    </script>
     <script>
       //スティッキーヘッダー
       var $window = $(window), //ウィンドウを指定
