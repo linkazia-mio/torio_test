@@ -1248,8 +1248,14 @@
       });
     });
     $(function () {
-      $(".medium-insert-buttons-show").click(function () {
-        $(this).toggleClass("active");
+      $('.medium-insert-buttons-show').click(function () {
+        $(this).toggleClass('active');
+      });
+      $(document).on('click', '.popover', function(evt) {
+        evt.stopPropagation();
+      });
+      $(document).on('click', 'html', function() {
+        $('.medium-insert-buttons-show').removeClass('active');
       });
     });
 
