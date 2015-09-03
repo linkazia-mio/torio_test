@@ -144,7 +144,26 @@
       @include font-smoothing(on);
     }
     p{
-      margin: 70px 0 0 0 ;
+      margin: 70px auto 0 ;
+      width:963px;
+      height:572px;
+      img{
+        width: 100%;
+      }
+    }
+    #top_slider {
+      width:963px;
+      height:572px;
+      margin:70px auto 0;
+      position:relative;
+      background: url(#{$img_path}top_kv_bg.png) no-repeat top left #ffffff;
+      @include border_radius(5px 5px 0 0);
+      img{
+        position:absolute;
+        left:0;
+        top:0;
+        width: 100%;
+      }
     }
   }
 }
@@ -173,7 +192,7 @@
 
 .point01{
   overflow: hidden;
-  height: 535px;
+  height: 540px;
   padding: 110px 0 0 0;
   clear: both;
   .point_inner{
@@ -274,8 +293,8 @@
 
 .point03{
   overflow: hidden;
-  height: 495px;
-  padding: 10px 0 0 0;
+  height: 480px;
+  padding: 15px 0 0 0;
   clear: both;
   .point_inner{
     clear: both;

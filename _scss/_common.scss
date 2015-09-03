@@ -1574,6 +1574,7 @@ header {
         }
         .icon-star {
           display: block;
+          color: $yellow;
         }
         .balloon_box_under {
           display: block;
@@ -2291,6 +2292,7 @@ header {
           }
           .icon-bookmark {
             display: block;
+            color: $dark_red;
           }
           .balloon_box_under {
             display: block;
@@ -3155,7 +3157,7 @@ header {
             .btn_add_task {
               right: 13px;
               bottom: 13px;
-              line-height: 32px;
+              line-height: 28px;
               height: 30px;
               @include font-smoothing(off);
             }

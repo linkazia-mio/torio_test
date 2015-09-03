@@ -51,7 +51,7 @@
            </div>
            <div class="alart">
              <div class="alart_task">
-               <p class="icon"><i class="icon-inbox-task"></i><span class="balloon_box_under">タスク</span></p>
+               <p class="icon"><span class="unread">5</span><i class="icon-inbox-task"></i><span class="balloon_box_under">タスク</span></p>
                <!--Task_box/-->
                <div class="task_box popover_big">
                  <h3>タスク</h3>
@@ -261,8 +261,8 @@
                <!--/Activity_box-->
              </div>
              <div class="me">
-               <p class="image"><span class="noimage">KO</span></p>
-               <p class="name">小松 健太郎</p>
+               <p class="image"><span class="noimage">YA</span></p>
+               <p class="name">山田 太郎</p>
                <!--Acccont_box/-->
                <div class="account popover">
                  <div class="account_info">
@@ -295,32 +295,27 @@
             <div class="favorite">
               <h3>お気に入り</h3>
               <ul>
-                <li><a href="" class="unread"><span class="global_list_image"><img src="images/group_icon_01.png"></span>アスニカ</a></li>
-                <li><a href=""><span class="global_list_image"><img src="images/group_icon_02.png"></span>施策検討</a></li>
-                <li><a href="" class="unread"><span class="global_list_image"><img src="images/group_icon_13.png"></span>グロースハック</a></li>
+                <li><a href="" class="unread"><span class="global_list_image"><img src="images/member_icon_torio.png"></span>Torio</a></li>
+                <li><a href=""><span class="global_list_image"><img src="images/group_icon_12.png"></span>キャンペーン</a></li>
               </ul>
             </div>
-            <div class="groups" data-intro="ようこそ！まずはグループを作成しましょう。メンバーの招待もできます。" data-step="1" data-position="right">
+            <div class="groups" data-intro="ようこそ！まずはグループを作成しましょう！" data-step="1" data-position="right">
               <h3>グループ</h3>
       			     <p class="add icon" data-toggle="modal" data-target="#add_group"><i class="icon-add-circle-outline"></i><span class="balloon_box">グループを作成</span></p>
               <ul>
+                <li><a href="" class="selected unread"><span class="global_list_image"><img src="images/member_icon_torio.png"></span>Torio</a></li>
                 <li><a href=""><span class="global_list_image"><img src="images/group_icon_03.png"></span>情報共有</a></li>
-                <li><a href="" class="selected"><span class="global_list_image"><img src="images/group_icon_21.png"></span>アスニカ</a></li>
-                <li><a href="" class="unread"><span class="global_list_image"><img src="images/group_icon_10.png"></span>Torio</a></li>
-                <li><a href="" class="unread"><span class="global_list_image"><img src="images/group_icon_12.png"></span>カスタマーサポート</a></li>
-                <li><a href=""><span class="global_list_image"><img src="images/group_icon_23.png"></span>グロースハック</a></li>
-                <li><a href="" class="unread"><span class="global_list_image"><img src="images/group_icon_07.png"></span>日報</a></li>
-                <li><a href="" class="unread"><span class="global_list_image"><img src="images/group_icon_18.png"></span>企画部屋</a></li>
-                <li><a href="" class="unread"><span class="global_list_image"><img src="images/group_icon_21.png"></span>社内インフォメーション</a></li>
+                <li><a href="" class="unread"><span class="global_list_image"><img src="images/group_icon_18.png"></span>カスタマーサポート</a></li>
+                <li><a href=""><span class="global_list_image"><img src="images/group_icon_12.png"></span>キャンペーン</a></li>
               </ul>
             </div>
-            <div class="member" data-intro="ここからメンバーの検索や招待ができます。" data-step="2" data-position="right">
+            <div class="member" data-intro="メンバーの招待ができます！" data-step="2" data-position="right">
               <h3>メンバー</h3>
               <p class="add icon" data-toggle="modal" data-target="#add_member"><i class="icon-add-circle-outline"></i><span class="balloon_box">メンバーを追加</span></p>
               <ul>
-                <li><a href="" class="unread"><span class="noimage">KO</span>小松 健太</a></li>
-                <li><a href=""><span class="noimage">OI</span>大石 未央</a></li>
-                <li><a href="" class="signout"><span class="noimage">HA</span>原戸 陵至</a></li>
+                <li><a href="" class="signin"><span class="noimage">YA</span>山田 太郎</a></li>
+                <li><a href="" class="signin"><span class="noimage">SA</span>佐藤 一郎</a></li>
+                <li><a href="" class="signout"><span class="noimage">SU</span>鈴木 花子</a></li>
                 <li><a href="" class="signin"><span class="user_image"><img src="images/member_icon_torio.png"></span>Torio bot</a></li>
               </ul>
             </div>
@@ -365,6 +360,86 @@
           </div>
           <!--Page_menu_inner/-->
           <div class="page_menu_inner">
+            <!--note/-->
+            <div class="item note">
+              <span class="check"></span>
+              <a href="">
+                <p class="title">情報共有</p>
+                <p class="text">今日、ITツール系のサービスが新たにリリースされていましたので共有しますね。</p>
+              </a>
+            </div>
+            <!--/note-->
+            <!--note/-->
+            <div class="item note">
+              <span class="check"></span>
+              <a href="" class="unread">
+                <p class="title">議事録</p>
+                <p class="text">150901_MTG◯出席者 山田、佐藤、鈴木○議題 キャンペーンを行うにあたっての企画について</p>
+              </a>
+            </div>
+            <!--/note-->
+            <!--file/-->
+            <div class="item file">
+              <a href="" class="unread">
+                <p class="title">参考サイト</p>
+                <ul>
+                  <li><img src="images/top_bg4.jpg"></li>
+                  <li><img src="images/sample01.jpg"></li>
+                  <li><img src="images/sample07.png"></li>
+                  <li><img src="images/top_bg2.jpg"></li>
+                  <li><img src="images/sample04.jpg"><div class="_52d9"><div class="_52da"><div class="_52db">+15</div></div></div></li>
+                </ul>
+              </a>
+            </div>
+            <!--/file-->
+            <!--file/-->
+            <div class="item file">
+              <a href="" class="unread">
+                <p class="title">デザイン案</p>
+                <ul>
+                  <li><span class="file_list video"><i class="icon-video-play"></i></span></li>
+                  <li><span class="file_list image"><i class="icon-drive-drawing"></i></span></li>
+                  <li><span class="file_list image"><i class="icon-drive-drawing"></i></span></li>
+                  <li><span class="file_list text"><i class="icon-drive-file"></i></span></li>
+                  <li><img src="http://placehold.it/100x100"><div class="_52d9"><div class="_52da"><div class="_52db">+5</div></div></div></li>
+                </ul>
+              </a>
+            </div>
+            <!--/file-->
+            <!--task/-->
+            <div class="item task selected">
+              <a href="">
+                <p class="title">役割分担</p>
+                <ul>
+                  <li><span class="name">未対応タスク</span><span class="value">：10件</span></li>
+                  <li><span class="name">期限が近いタスク</span><span class="value">：2件</span></li>
+                </ul>
+                <div class="graph green">
+                  <canvas id="task_graph_green" height="50" width="50"></canvas>
+                  <div class="number">
+                    <p>60%</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <!--/task-->
+            <!--task/-->
+            <div class="item task">
+              <a href="">
+                <p class="title">キャンペーンの要件リスト</p>
+                <ul>
+                  <li><span class="name">未対応タスク</span><span class="value">：25件</span></li>
+                  <li><span class="name">期限が近いタスク</span><span class="value">：5件</span></li>
+                </ul>
+                <div class="graph yellow">
+                  <canvas id="task_graph_yellow" height="50" width="50"></canvas>
+                  <div class="number">
+                    <p>40%</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <!--/task-->
             <!--task/-->
             <div class="item task">
               <a href="">
@@ -383,7 +458,7 @@
             </div>
             <!--/task-->
             <!--task/-->
-            <div class="item task selected">
+            <div class="item task">
               <a href="">
                 <p class="title">PCリニューアル</p>
                 <ul>
@@ -514,7 +589,7 @@
             <div class="task_replacement">
               <!--Task People/-->
               <div class="task_people">
-                <div class="handle">小松の担当<span class="number">5</span><p class="option"><i class="icon-more-horiz"></i><span class="balloon_box">オプション</span></p></div>
+                <div class="handle">山田の担当<span class="number">5</span><p class="option"><i class="icon-more-horiz"></i><span class="balloon_box">オプション</span></p></div>
                 <div class="task_option_box popover">
                   <ul>
                     <li><a href="">タスクをすべて完了</a></li>
@@ -529,11 +604,47 @@
                   <!--Task List/-->
                   <div class="task_list">
                     <input type="checkbox" id="c1"><label for="c1"></label>
-                    <p class="task_title" data-toggle="modal" data-target="#task_detail">タスク：セレクトボックスパターン</p>
+                    <p class="task_title" data-toggle="modal" data-target="#task_detail">キャンペーン内容を検討</p>
                     <div class="task_icon_box">
-                      <p><span class="noimage">KO</span></p>
+                      <p><span class="noimage">YA</span></p>
                     </div>
                     <span class="unread"></span>
+                  </div>
+                  <!--/Task List-->
+                  <!--Task List/-->
+                  <div class="task_list">
+                    <input type="checkbox" id="c1"><label for="c1"></label>
+                    <p class="task_title" data-toggle="modal" data-target="#task_detail">キャンペーン内容に使える商品を選定</p>
+                    <div class="task_icon_box">
+                      <p><span class="noimage">SU</span></p>
+                    </div>
+                  </div>
+                  <!--/Task List-->
+                  <!--Task List/-->
+                  <div class="task_list">
+                    <input type="checkbox" id="c1"><label for="c1"></label>
+                    <p class="task_title" data-toggle="modal" data-target="#task_detail">キャンペーン名を決める</p>
+                    <div class="task_icon_box">
+                      <p><span class="noimage">YA</span></p>
+                    </div>
+                  </div>
+                  <!--/Task List-->
+                  <!--Task List/-->
+                  <div class="task_list">
+                    <input type="checkbox" id="c1"><label for="c1"></label>
+                    <p class="task_title" data-toggle="modal" data-target="#task_detail">原稿作成</p>
+                    <div class="task_icon_box">
+                      <p><span class="noimage">YA</span></p>
+                    </div>
+                  </div>
+                  <!--/Task List-->
+                  <!--Task List/-->
+                  <div class="task_list">
+                    <input type="checkbox" id="c1"><label for="c1"></label>
+                    <p class="task_title" data-toggle="modal" data-target="#task_detail">スケジュール検討</p>
+                    <div class="task_icon_box">
+                      <p><span class="noimage">SU</span></p>
+                    </div>
                   </div>
                   <!--/Task List-->
                   <!--Task List/--
@@ -622,7 +733,7 @@
               <!--/Task People-->
               <!--Task People/-->
               <div class="task_people">
-                <div class="handle">原戸の担当<span class="number">5</span><p class="option"><i class="icon-more-horiz"></i><span class="balloon_box">オプション</span></p></div>
+                <div class="handle">佐藤の担当<span class="number">5</span><p class="option"><i class="icon-more-horiz"></i><span class="balloon_box">オプション</span></p></div>
                 <div class="task_option_box popover">
                   <ul>
                     <li><a href="">タスクをすべて完了</a></li>
@@ -637,9 +748,9 @@
                   <!--Task List/-->
                   <div class="task_list">
                     <input type="checkbox" id="c3"><label for="c3"></label>
-                    <p class="task_title"  data-toggle="modal" data-target="#task_detail">プラン選択・プロモーションページ</p>
+                    <p class="task_title"  data-toggle="modal" data-target="#task_detail">キャンペーンページのデザイン</p>
                     <div class="task_icon_box">
-                      <p><span class="noimage">KO</span></p>
+                      <p><span class="noimage">SU</span></p>
                     </div>
                     <span class="unread"></span>
                   </div>
@@ -647,7 +758,7 @@
                   <!--Task List/-->
                   <div class="task_list">
                     <input type="checkbox" id="c4"><label for="c4"></label>
-                    <p class="task_title"  data-toggle="modal" data-target="#task_detail">プラン選択・プロモーションページ</p>
+                    <p class="task_title"  data-toggle="modal" data-target="#task_detail">キャンペーンページのコーディング</p>
                     <div class="task_icon_box">
                       <p class="time"><i class="icon-access-time"></i>あと20日</p>
                       <p class="comment"><i class="icon-comment-outline"></i>3</p>
@@ -658,7 +769,7 @@
                   <!--Task List/-->
                   <div class="task_list">
                     <input type="checkbox" id="c8"><label for="c8"></label>
-                    <p class="task_title"  data-toggle="modal" data-target="#task_detail">プラン選択・プロモーションページ（小松さん、大崎さん、大石さん確認おねがいします）</p>
+                    <p class="task_title"  data-toggle="modal" data-target="#task_detail">キャンペーンページのスマホ対応</p>
                     <div class="task_icon_box">
                       <p class="comment"><i class="icon-comment-outline"></i>3</p>
                     </div>
@@ -667,7 +778,7 @@
                   <!--Task List/-->
                   <div class="task_list">
                     <input type="checkbox" id="c9"><label for="c9"></label>
-                    <p class="task_title"  data-toggle="modal" data-target="#task_detail">RSSフィードをどの値で返すか確認</p>
+                    <p class="task_title"  data-toggle="modal" data-target="#task_detail">ブラウザチェック</p>
                     <div class="task_icon_box">
                       <p class="time"><i class="icon-access-time"></i>あと20日</p>
                       <p><span class="user_image"><img src="http://placehold.it/100x100"></span></p>
@@ -677,7 +788,7 @@
                   <!--Task List/-->
                   <div class="task_list">
                     <input type="checkbox" id="c7"><label for="c7"></label>
-                    <p class="task_title"  data-toggle="modal" data-target="#task_detail">プラン選択・プロモーションページ</p>
+                    <p class="task_title"  data-toggle="modal" data-target="#task_detail">メインビジュアルに使うイラスト作成</p>
                     <div class="task_icon_box">
                       <p class="time"><i class="icon-access-time"></i>あと20日</p>
                     </div>
@@ -733,7 +844,7 @@
               <!--/Task People/-->
               <!--Task People/-->
               <div class="task_people">
-                <div class="handle">大石の担当<span class="number">5</span><p class="option"><i class="icon-more-horiz"></i><span class="balloon_box">オプション</span></p></div>
+                <div class="handle">鈴木の担当<span class="number">5</span><p class="option"><i class="icon-more-horiz"></i><span class="balloon_box">オプション</span></p></div>
                 <div class="task_option_box popover">
                   <ul>
                     <li><a href="">タスクをすべて完了</a></li>

@@ -60,7 +60,7 @@
            </div>
            <div class="alart">
              <div class="alart_task">
-               <p class="icon"><i class="icon-inbox-task"></i><span class="balloon_box_under">タスク</span></p>
+               <p class="icon"><span class="unread">5</span><i class="icon-inbox-task"></i><span class="balloon_box_under">タスク</span></p>
                <!--Task_box/-->
                <div class="task_box popover_big">
                  <h3>タスク</h3>
@@ -270,14 +270,14 @@
                <!--/Activity_box-->
              </div>
              <div class="me">
-               <p class="image"><span class="noimage">KO</span></p>
-               <p class="name">小松崎 健太郎</p>
+               <p class="image"><span class="noimage">YA</span></p>
+               <p class="name">山田 太郎</p>
                <!--Acccont_box/-->
                <div class="account popover">
                  <div class="account_info">
                    <!-- <p class="user_image"><img src="http://placehold.it/100x100"></p> -->
-                   <p class="noimage">KO</p>
-                   <p class="user_name">小松 健太</p>
+                   <p class="noimage">YA</p>
+                   <p class="user_name">山田 太郎</p>
                    <p class="user_rank">無料アカウント</p>
                  </div>
                  <ul>
@@ -305,32 +305,27 @@
             <div class="favorite">
               <h3>お気に入り</h3>
               <ul>
-                <li><a href="" class="unread"><span class="global_list_image"><img src="images/group_icon_01.png"></span>アスニカ</a></li>
-                <li><a href=""><span class="global_list_image"><img src="images/group_icon_02.png"></span>施策検討</a></li>
-                <li><a href="" class="unread"><span class="global_list_image"><img src="images/group_icon_13.png"></span>グロースハック</a></li>
+                <li><a href="" class="unread"><span class="global_list_image"><img src="images/member_icon_torio.png"></span>Torio</a></li>
+                <li><a href=""><span class="global_list_image"><img src="images/group_icon_12.png"></span>キャンペーン</a></li>
               </ul>
             </div>
-            <div class="groups" data-intro="ようこそ！まずはグループを作成しましょう。メンバーの招待もできます。" data-step="1" data-position="right">
+            <div class="groups" data-intro="ようこそ！まずはグループを作成しましょう！" data-step="1" data-position="right">
               <h3>グループ</h3>
       			     <p class="add icon" data-toggle="modal" data-target="#add_group"><i class="icon-add-circle-outline"></i><span class="balloon_box">グループを作成</span></p>
               <ul>
+                <li><a href="" class="selected unread"><span class="global_list_image"><img src="images/member_icon_torio.png"></span>Torio</a></li>
                 <li><a href=""><span class="global_list_image"><img src="images/group_icon_03.png"></span>情報共有</a></li>
-                <li><a href="" class="selected"><span class="global_list_image"><img src="images/group_icon_21.png"></span>アスニカ</a></li>
-                <li><a href="" class="unread"><span class="global_list_image"><img src="images/group_icon_10.png"></span>Torio</a></li>
-                <li><a href="" class="unread"><span class="global_list_image"><img src="images/group_icon_12.png"></span>カスタマーサポート</a></li>
-                <li><a href=""><span class="global_list_image"><img src="images/group_icon_23.png"></span>グロースハック</a></li>
-                <li><a href="" class="unread"><span class="global_list_image"><img src="images/group_icon_07.png"></span>日報</a></li>
-                <li><a href="" class="unread"><span class="global_list_image"><img src="images/group_icon_18.png"></span>企画部屋</a></li>
-                <li><a href="" class="unread"><span class="global_list_image"><img src="images/group_icon_21.png"></span>社内インフォメーション</a></li>
+                <li><a href="" class="unread"><span class="global_list_image"><img src="images/group_icon_18.png"></span>カスタマーサポート</a></li>
+                <li><a href=""><span class="global_list_image"><img src="images/group_icon_12.png"></span>キャンペーン</a></li>
               </ul>
             </div>
-            <div class="member" data-intro="ここからメンバーの検索や招待ができます。" data-step="2" data-position="right">
+            <div class="member" data-intro="メンバーの招待ができます！" data-step="2" data-position="right">
               <h3>メンバー</h3>
               <p class="add icon" data-toggle="modal" data-target="#add_member"><i class="icon-add-circle-outline"></i><span class="balloon_box">メンバーを追加</span></p>
               <ul>
-                <li><a href="" class="unread"><span class="noimage">KO</span>小松 健太</a></li>
-                <li><a href=""><span class="noimage">OI</span>大石 未央</a></li>
-                <li><a href="" class="signout"><span class="noimage">HA</span>原戸 陵至</a></li>
+                <li><a href="" class="signin"><span class="noimage">YA</span>山田 太郎</a></li>
+                <li><a href="" class="signin"><span class="noimage">SA</span>佐藤 一郎</a></li>
+                <li><a href="" class="signout"><span class="noimage">SU</span>鈴木 花子</a></li>
                 <li><a href="" class="signin"><span class="user_image"><img src="images/member_icon_torio.png"></span>Torio bot</a></li>
               </ul>
             </div>
@@ -380,59 +375,105 @@
               <span class="check"></span>
               <a href="">
                 <p class="title">情報共有</p>
-                <p class="text">電力会社の電気はいりません！独立型の自家発電で、晴耕雨読の日々をおくる佐藤隆電で、</p>
-              </a>
-            </div>
-            <!--/note-->
-            <!--note/-->
-            <div class="item note">
-              <span class="check"></span>
-              <a href="">
-                <p class="title">議事録</p>
-                <p class="text">電力会社の電気はいりません！独立型の自家発電で、晴耕雨読の日々をおくる佐藤隆電で、</p>
+                <p class="text">今日、ITツール系のサービスが新たにリリースされていましたので共有しますね。</p>
               </a>
             </div>
             <!--/note-->
             <!--note/-->
             <div class="item note selected">
-              <a href="">
-                <p class="title">デザイン進捗＆ルールブック</p>
-                <p class="text">グローバルメニューのアイコンサイズを20px→25pxに変更グローバルメニュー、</p>
-              </a>
-            </div>
-            <!--/note-->
-            <!--note/-->
-            <div class="item note">
-              <a href="">
-                <p class="title">エネルギー関連の記事</p>
-                <p class="text">電力会社の電気はいりません！独立型の自家発電で、晴耕雨読の日々をおくる佐藤隆電で、</p>
+              <span class="check"></span>
+              <a href="" class="unread">
+                <p class="title">議事録</p>
+                <p class="text">150901_MTG◯出席者 山田、佐藤、鈴木○議題 キャンペーンを行うにあたっての企画について</p>
               </a>
             </div>
             <!--/note-->
             <!--file/-->
             <div class="item file">
-              <a href="">
-                <p class="title">デザインサンプル</p>
+              <a href="" class="unread">
+                <p class="title">参考サイト</p>
                 <ul>
-                  <li><img src="https://s-media-cache-ak0.pinimg.com/736x/f8/15/68/f815689b00e25c4606fa71d27f6cf0d6.jpg"></li>
-                  <li><img src="https://s-media-cache-ak0.pinimg.com/736x/ce/1c/12/ce1c12804736a5c6b25b98255c4a0814.jpg"></li>
-                  <li><img src="https://s-media-cache-ak0.pinimg.com/736x/5c/d1/c1/5cd1c1366764626f563678c440928afe.jpg"></li>
-                  <li><img src="https://s-media-cache-ak0.pinimg.com/736x/fc/a2/15/fca215b2fdecc31635e22f90bdd0d1dc.jpg"></li>
-                  <li><img src="https://s-media-cache-ak0.pinimg.com/736x/a6/30/8e/a6308e2bef56bf87e2af1303fa5657bf.jpg"><div class="_52d9"><div class="_52da"><div class="_52db">+2</div></div></div></li>
+                  <li><img src="images/top_bg4.jpg"></li>
+                  <li><img src="images/sample01.jpg"></li>
+                  <li><img src="images/sample07.png"></li>
+                  <li><img src="images/top_bg2.jpg"></li>
+                  <li><img src="images/sample04.jpg"><div class="_52d9"><div class="_52da"><div class="_52db">+15</div></div></div></li>
                 </ul>
               </a>
             </div>
             <!--/file-->
             <!--file/-->
             <div class="item file">
+              <a href="" class="unread">
+                <p class="title">デザイン案</p>
+                <ul>
+                  <li><span class="file_list video"><i class="icon-video-play"></i></span></li>
+                  <li><span class="file_list image"><i class="icon-drive-drawing"></i></span></li>
+                  <li><span class="file_list image"><i class="icon-drive-drawing"></i></span></li>
+                  <li><span class="file_list text"><i class="icon-drive-file"></i></span></li>
+                  <li><img src="http://placehold.it/100x100"><div class="_52d9"><div class="_52da"><div class="_52db">+5</div></div></div></li>
+                </ul>
+              </a>
+            </div>
+            <!--/file-->
+            <!--task/-->
+            <div class="item task">
               <a href="">
-                <p class="title">ロゴ案</p>
+                <p class="title">役割分担</p>
+                <ul>
+                  <li><span class="name">未対応タスク</span><span class="value">：10件</span></li>
+                  <li><span class="name">期限が近いタスク</span><span class="value">：2件</span></li>
+                </ul>
+                <div class="graph green">
+                  <canvas id="task_graph_green" height="50" width="50"></canvas>
+                  <div class="number">
+                    <p>60%</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <!--/task-->
+            <!--task/-->
+            <div class="item task">
+              <a href="">
+                <p class="title">キャンペーンの要件リスト</p>
+                <ul>
+                  <li><span class="name">未対応タスク</span><span class="value">：25件</span></li>
+                  <li><span class="name">期限が近いタスク</span><span class="value">：5件</span></li>
+                </ul>
+                <div class="graph yellow">
+                  <canvas id="task_graph_yellow" height="50" width="50"></canvas>
+                  <div class="number">
+                    <p>40%</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <!--/task-->
+            <!--file/-->
+            <div class="item file">
+              <a href="" class="unread">
+                <p class="title">キャンペーン資料</p>
                 <ul>
                   <li><span class="file_list video"><i class="icon-video-play"></i></span></li>
                   <li><span class="file_list graph"><i class="icon-drive-fusiontable"></i></span></li>
                   <li><span class="file_list image"><i class="icon-drive-drawing"></i></span></li>
                   <li><span class="file_list text"><i class="icon-drive-file"></i></span></li>
-                  <li><span class="file_list text"><i class="icon-drive-file"></i></span><div class="_52d9"><div class="_52da"><div class="_52db">+2</div></div></div></li>
+                  <li><img src="http://placehold.it/100x100"><div class="_52d9"><div class="_52da"><div class="_52db">+10</div></div></div></li>
+                </ul>
+              </a>
+            </div>
+            <!--/file-->
+            <!--file/-->
+            <div class="item file">
+              <a href="" class="unread">
+                <p class="title">業界の最新情報</p>
+                <ul>
+                  <li><span class="file_list googledrive"><i class="icon-google-drive"></i></span></li>
+                  <li><span class="file_list dropbox"><i class="icon-dropbox"></i></span></li>
+                  <li><span class="file_list list"><i class="icon-drive-form"></i></span></li>
+                  <li><span class="file_list text"><i class="icon-drive-file"></i></span></li>
+                  <li><span class="file_list word"><i class="icon-drive-ms-word"></i></span><div class="_52d9"><div class="_52da"><div class="_52db">+2</div></div></div></li>
                 </ul>
               </a>
             </div>
@@ -471,48 +512,28 @@
               </a>
             </div>
             <!--/task-->
-            <!--task/-->
-            <div class="item task">
-              <a href="">
-                <p class="title">コーディング</p>
+            <!--file/-->
+            <div class="item file">
+              <a href="" class="unread">
+                <p class="title">デザイン案</p>
                 <ul>
-                  <li><span class="name">未対応タスク</span><span class="value">：25件</span></li>
-                  <li><span class="name">期限が近いタスク</span><span class="value">：10件</span></li>
+                  <li><span class="file_list excel"><i class="icon-drive-ms-excel"></i></span></li>
+                  <li><span class="file_list word"><i class="icon-drive-ms-word"></i></span></li>
+                  <li><span class="file_list powerpoint"><i class="icon-drive-ms-powerpoint"></i></span></li>
+                  <li><span class="file_list pdf"><i class="icon-drive-pdf"></i></span></li>
+                  <li><span class="file_list pdf"><i class="icon-drive-pdf"></i></span><div class="_52d9"><div class="_52da"><div class="_52db">+15</div></div></div></li>
                 </ul>
-                <div class="graph green">
-                  <canvas id="task_graph_green" height="50" width="50"></canvas>
-                  <div class="number">
-                    <p>60%</p>
-                  </div>
-                </div>
               </a>
             </div>
-            <!--/task-->
+            <!--/file-->
             <!--note/-->
             <div class="item note">
               <a href="">
                 <p class="title">エネルギー関連の記事</p>
-                <p class="text">電力会社の電気はいりません！独立型の自家発電で、晴耕雨読の日々をおくる佐藤隆電で、</p>
+                <p class="text">電力会社の電気はいりません！独立型の自家発電で、晴耕雨読の日々をおくる佐藤隆電で</p>
               </a>
             </div>
             <!--/note-->
-            <!--task/-->
-            <div class="item task">
-              <a href="">
-                <p class="title">SPリニューアル</p>
-                <ul>
-                  <li><span class="name">未対応タスク</span><span class="value">：25件</span></li>
-                  <li><span class="name">期限が近いタスク</span><span class="value">：10件</span></li>
-                </ul>
-                <div class="graph yellow">
-                  <canvas id="task_graph_yellow" height="50" width="50"></canvas>
-                  <div class="number">
-                    <p>40%</p>
-                  </div>
-                </div>
-              </a>
-            </div>
-            <!--/task-->
           </div>
           <!--/Page_menu_inner-->
           <div class="page_menu_footer">
@@ -533,7 +554,7 @@
           <div class="note">
             <!--Title/-->
             <div class="title">
-              <h1 class="note_title">Untitled</h1>
+              <h1 class="note_title">議事録</h1>
               <input id="title_edit" onkeypress="resize()" onkeyup="resize()" onblur="resize()" style="display:none;"></input>
               <span id="hidden_span"></span>
               <div class="check">
@@ -585,9 +606,9 @@
               <div class="note_edit_inner note_edit_inner_comment">
                 <span class="unread"></span>
                 <div class="edit_name">
-                  <p class="noimage">OS</p>
-                  <p class="writer_name">大崎 太加彦</p>
-                  <p class="writer_info">3時間前に<a href="">大石 未央</a>さんに更新されました。</p>
+                  <p class="noimage">YA</p>
+                  <p class="writer_name">山田 太郎</p>
+                  <p class="writer_info">1時間前に投稿されました。</p>
                   <p class="note_option"><i class="icon-more-horiz"></i></p>
                   <div class="note_detail_option_box popover">
                     <ul>
@@ -598,7 +619,22 @@
                   </div>
                 </div>
                 <article class="editable">
-                  <p>テスト投稿です。</p>
+                  <h1>150901_MTG</h1>
+                  <p>◯出席者 山田、砂糖、鈴木<br>
+                  ◯議題 キャンペーンを行うにあたっての企画について</p>
+                  <hr>
+                  <h1>キャンペーン内容のドラフト案出し</h1>
+                  <ul>
+                    <li>全機能を無料で開放する</li>
+                    <li>一部機能を無料で開放する</li>
+                    <li>友人を招待することでプレミアムプランの機能をフリーで提供する</li>
+                    <li>季節イベントに合わせてクーポンコードを配る</li>
+                    <li>ゲーム性をもたせて、当選した人にフリー提供する</li>
+                  </ul>
+                  <hr>
+                  <h1>確認事項</h1>
+                  <p>こちらのイメージを使用することは可能か？</p>
+                  <figure><img src="images/ogp.png" width="400px"></figure>
                 </article>
                 <div class="like_comment_box">
                   <p class="like_btn active"><i class="icon-favorite-outline"></i><i class="icon-favorite"></i></p>
@@ -740,16 +776,13 @@
                     <li>他の気になったものが見れる</li>
                     <li>多様な価値観とは</li>
                   </ul>
-                  <pre>
-  <code>
-  function aFunctionName(){
-    console.log("this works");
-  }
-  setTimeout("aFunctionName()",1000); //this works in regular javascript
+                  <pre><code>function aFunctionName(){
+console.log("this works");
+}
+setTimeout("aFunctionName()",1000); //this works in regular javascript
 
-  $timeout(aFunctionName,1000); //this works
-  $timeout("aFunctionName()",1000); //this does not work error</code>
-                  </pre>
+$timeout(aFunctionName,1000); //this works
+$timeout("aFunctionName()",1000); //this does not work error</code></pre>
                 </article>
                 <div class="like_comment_box">
                   <p class="like_btn active"><i class="icon-favorite-outline"></i><i class="icon-favorite"></i></p>

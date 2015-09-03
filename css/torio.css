@@ -2535,7 +2535,8 @@ header {
         .page_menu .config .favorite:hover .icon-star-outline {
           display: none; }
         .page_menu .config .favorite:hover .icon-star {
-          display: block; }
+          display: block;
+          color: #feb22e; }
         .page_menu .config .favorite:hover .balloon_box_under {
           display: block;
           bottom: 10px;
@@ -3162,7 +3163,8 @@ header {
           .detail .title p.bookmark:hover .icon-bookmark-outline, .detail_public .title p.bookmark:hover .icon-bookmark-outline {
             display: none; }
           .detail .title p.bookmark:hover .icon-bookmark, .detail_public .title p.bookmark:hover .icon-bookmark {
-            display: block; }
+            display: block;
+            color: #ff3366; }
           .detail .title p.bookmark:hover .balloon_box_under, .detail_public .title p.bookmark:hover .balloon_box_under {
             display: block;
             bottom: 10px;
@@ -4005,7 +4007,7 @@ header {
         .modal .modal-dialog .modal-content .modal-body .task_detail .information .btn_add_task {
           right: 13px;
           bottom: 13px;
-          line-height: 32px;
+          line-height: 28px;
           height: 30px;
           -webkit-font-smoothing: subpixel-antialiased;
           -moz-osx-font-smoothing: auto; }
@@ -5726,6 +5728,20 @@ footer.front {
                 font-size: 2.4rem; }
               #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .item .footer .url a {
                 color: #999999; }
+                #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .item .footer .url a:hover {
+                  opacity: 0.7;
+                  filter: alpha(opacity=70); }
+              #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .item .footer .url span {
+                position: absolute;
+                top: 5px;
+                right: 16px;
+                font-size: 13px;
+                font-size: 1.3rem;
+                -webkit-font-smoothing: antialiased;
+                -moz-osx-font-smoothing: grayscale; }
+                #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .item .footer .url span a:hover {
+                  opacity: 0.7;
+                  filter: alpha(opacity=70); }
             #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .item .footer .comment {
               text-align: left;
               padding: 0 25px;
@@ -6205,7 +6221,26 @@ footer.front {
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale; }
     .kv .title p {
-      margin: 70px 0 0 0; }
+      margin: 70px auto 0;
+      width: 963px;
+      height: 572px; }
+      .kv .title p img {
+        width: 100%; }
+    .kv .title #top_slider {
+      width: 963px;
+      height: 572px;
+      margin: 70px auto 0;
+      position: relative;
+      background: url(../images/top_kv_bg.png) no-repeat top left #ffffff;
+      -webkit-border-radius: 5px 5px 0 0;
+      -moz-border-radius: 5px 5px 0 0;
+      -ms-border-radius: 5px 5px 0 0;
+      border-radius: 5px 5px 0 0; }
+      .kv .title #top_slider img {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%; }
 
 #top_change {
   background: #f66f6f;
@@ -6227,7 +6262,7 @@ footer.front {
 
 .point01 {
   overflow: hidden;
-  height: 535px;
+  height: 540px;
   padding: 110px 0 0 0;
   clear: both; }
   .point01 .point_inner {
@@ -6320,8 +6355,8 @@ footer.front {
 
 .point03 {
   overflow: hidden;
-  height: 495px;
-  padding: 10px 0 0 0;
+  height: 480px;
+  padding: 15px 0 0 0;
   clear: both; }
   .point03 .point_inner {
     clear: both;
@@ -7660,7 +7695,7 @@ input[type="checkbox"] {
         position: absolute;
         right: 11px;
         bottom: 11px;
-        line-height: 37px;
+        line-height: 33px;
         height: 35px;
         -webkit-font-smoothing: subpixel-antialiased;
         -moz-osx-font-smoothing: auto;
@@ -8655,14 +8690,20 @@ input[type="checkbox"] {
     -moz-border-radius: 5px;
     -ms-border-radius: 5px;
     border-radius: 5px;
-    padding: 10px 10px;
+    padding: 20px;
     display: block;
     margin: 0 0 10px;
-    color: #333;
     word-break: break-all;
     word-wrap: break-word;
-    background-color: #f9f9f9;
-    border: 2px solid #e9e9e9; }
+    /*background-color: $white_gray;
+    border: 2px solid $dark_gray;*/
+    color: #dddddd;
+    background: #333333;
+    white-space: pre-wrap;
+    font-size: 13px;
+    font-size: 1.3rem;
+    -webkit-font-smoothing: subpixel-antialiased;
+    -moz-osx-font-smoothing: auto; }
   .editable figure {
     margin: 30px 0; }
     .editable figure img {
@@ -8714,14 +8755,20 @@ input[type="checkbox"] {
     -moz-border-radius: 5px;
     -ms-border-radius: 5px;
     border-radius: 5px;
-    padding: 10px 10px;
+    padding: 20px;
     display: block;
     margin: 0 0 10px;
-    color: #333;
     word-break: break-all;
     word-wrap: break-word;
-    background-color: #f9f9f9;
-    border: 2px solid #e9e9e9; }
+    /*background-color: $white_gray;
+    border: 2px solid $dark_gray;*/
+    color: #dddddd;
+    background: #333333;
+    white-space: pre-wrap;
+    font-size: 13px;
+    font-size: 1.3rem;
+    -webkit-font-smoothing: subpixel-antialiased;
+    -moz-osx-font-smoothing: auto; }
   .editable_lock figure {
     margin: 30px 0; }
   .editable_lock small {

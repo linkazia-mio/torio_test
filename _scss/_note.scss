@@ -458,14 +458,18 @@
   }
   pre {
     @include border_radius(5px);
-    padding: 10px 10px;
+    padding: 20px;
     display: block;
     margin: 0 0 10px;
-    color: #333;
     word-break: break-all;
     word-wrap: break-word;
-    background-color: $white_gray;
-    border: 2px solid $dark_gray;
+    /*background-color: $white_gray;
+    border: 2px solid $dark_gray;*/
+    color: #dddddd;
+    background: #333333;
+    white-space: pre-wrap;
+    @include fontsize(1.3);
+    @include font-smoothing(off);
   }
   figure {
     margin: 30px 0;
@@ -523,14 +527,18 @@
   }
   pre {
     @include border_radius(5px);
-    padding: 10px 10px;
+    padding: 20px;
     display: block;
     margin: 0 0 10px;
-    color: #333;
     word-break: break-all;
     word-wrap: break-word;
-    background-color: $white_gray;
-    border: 2px solid $dark_gray;
+    /*background-color: $white_gray;
+    border: 2px solid $dark_gray;*/
+    color: #dddddd;
+    background: #333333;
+    white-space: pre-wrap;
+    @include fontsize(1.3);
+    @include font-smoothing(off);
   }
   figure {
     margin: 30px 0;
