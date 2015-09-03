@@ -8697,7 +8697,9 @@ input[type="checkbox"] {
     background: #333333;
     white-space: pre-wrap;
     font-size: 13px;
-    font-size: 1.3rem; }
+    font-size: 1.3rem;
+    -webkit-font-smoothing: subpixel-antialiased;
+    -moz-osx-font-smoothing: auto; }
   .editable figure {
     margin: 30px 0; }
     .editable figure img {
@@ -8761,7 +8763,9 @@ input[type="checkbox"] {
     background: #333333;
     white-space: pre-wrap;
     font-size: 13px;
-    font-size: 1.3rem; }
+    font-size: 1.3rem;
+    -webkit-font-smoothing: subpixel-antialiased;
+    -moz-osx-font-smoothing: auto; }
   .editable_lock figure {
     margin: 30px 0; }
   .editable_lock small {
