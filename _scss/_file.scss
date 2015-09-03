@@ -35,7 +35,7 @@
             cursor: pointer;
             /*overflow: hidden;
             height: 200px;*/
-            min-height: 190px;
+            /*min-height: 190px;*/
             &:before{
               background:url(#{$img_path}bg_shadow.png) repeat-x left bottom;
               bottom: 0;

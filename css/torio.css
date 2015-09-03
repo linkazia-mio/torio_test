@@ -2824,7 +2824,7 @@ header {
             -webkit-box-shadow: 0 1px 2px rgba(0,0,0,0.07);
             -moz-box-shadow: 0 1px 2px rgba(0,0,0,0.07);
             box-shadow: 0 1px 1px rgba(0,0,0,0.1);*/
-          margin: 0 1px 0 0;
+          margin: 0 0.5px 0 0;
           position: relative;
           vertical-align: top;
           -webkit-border-radius: 4px;
@@ -4996,7 +4996,7 @@ footer.front {
         cursor: pointer;
         /*overflow: hidden;
             height: 200px;*/
-        min-height: 190px; }
+        /*min-height: 190px;*/ }
         .file .file_list .panel .panel-body.type_image .file_img:before {
           background: url(../images/bg_shadow.png) repeat-x left bottom;
           bottom: 0;
