@@ -6205,7 +6205,7 @@ footer.front {
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale; }
     .kv .title p {
-      margin: 70px 0 0 0;
+      margin: 70px auto 0;
       width: 963px;
       height: 572px; }
       .kv .title p img {
