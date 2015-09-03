@@ -145,6 +145,23 @@
     }
     p{
       margin: 70px 0 0 0 ;
+      width:963px;
+      height:572px;
+      img{
+        width: 100%;
+      }
+    }
+    #slider3 {
+      width:963px;
+      height:572px;
+      margin:70px auto 0;
+      position:relative;
+      img{
+        position:absolute;
+        left:0;
+        top:0;
+        width: 100%;
+      }
     }
   }
 }
