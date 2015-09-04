@@ -2525,10 +2525,10 @@ header {
 
 #task_detail{
   .modal-dialog{
-    width: 700px;
+    width: 730px;
     margin: 40px auto;
     .modal-body{
-      padding: 30px 50px 40px 50px; 
+      padding: 32px 50px 45px 50px; 
     }
   }
 }
@@ -3110,7 +3110,7 @@ header {
           .limlt {
             @extend .requester;
             @include border_radius(4px);
-            margin-top: 15px;
+            margin-top: 18px;
             i {
               color: $dark_red;
               @include fontsize(2.4);
@@ -3128,7 +3128,7 @@ header {
             @extend .limit;
             @include border_radius(4px);
             position: relative;
-            margin-top: 15px;
+            margin-top: 18px;
             border: 1px solid $border_dark_gray;
             padding-bottom: 40px;
             textarea {
@@ -3143,7 +3143,7 @@ header {
             .btn_file {
               overflow: hidden;
               position: absolute;
-              right: 117px;
+              right: 120px;
               bottom: 7px;
               width: 30px;
               height: 30px;
@@ -3183,18 +3183,18 @@ header {
           }
         }
         .comment {
-          margin-top: 25px;
+          margin-top: 30px;
           .comment_inner {
             display: table;
             width: 99%;
             table-layout: fixed;
-            margin-bottom: 15px;
+            margin-bottom: 18px;
             &:last-child{
               margin-bottom: 0;
             }
             .user_image {
               display: table-cell;
-              width: 53px;
+              width: 50px;
               img {
                 width: 40px;
                 height: 40px;
@@ -3212,6 +3212,7 @@ header {
             .user_comment {
               display: table-cell;
               vertical-align: top;
+              @include font-smoothing(on);
               p {
                 @include fontsize(1.3);
                 &.name {
@@ -3219,14 +3220,14 @@ header {
                   padding-bottom: 2px;
                   @include fontsize(1.4);
                   .time {
-                    margin-left: 8px;
+                    margin-left: 10px;
                     font-weight: normal;
                     color: $white_brack;
                     @include fontsize(1.2);
                   }
                 }
                 &.memo {
-                  @include fontsize(1.3);
+                  @include fontsize(1.4);
                   word-wrap: break-word;
                   color: #333333;
                 }
@@ -3237,7 +3238,7 @@ header {
       }
       .modal-footer {
         border-top: none;
-        padding: 27px 25px 25px 25px;
+        padding: 27px 25px 35px 25px;
         position: relative;
         &.gray {
           background: $white_gray;
@@ -3245,7 +3246,7 @@ header {
         }
         &.task_modal_footer{
           textarea{
-            height: 60px;
+            height: 88px;
           }
           button{
             &.btn-default{
