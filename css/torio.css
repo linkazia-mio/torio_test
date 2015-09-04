@@ -5153,11 +5153,7 @@ footer.front {
             /*color: $torio_blue;*/
             cursor: pointer; }
           .file .file_list .panel .panel-body .info p.like {
-            margin: 0 2.2% 0 0;
-            /*&:hover {
-                color: $dark_red;
-                cursor: pointer;
-              }*/ }
+            margin: 0 2.2% 0 0; }
             .file .file_list .panel .panel-body .info p.like .icon-favorite-outline {
               display: block; }
             .file .file_list .panel .panel-body .info p.like .icon-favorite {
@@ -5165,6 +5161,11 @@ footer.front {
             .file .file_list .panel .panel-body .info p.like.active .icon-favorite-outline {
               display: none; }
             .file .file_list .panel .panel-body .info p.like.active .icon-favorite {
+              color: #ff3366;
+              display: block; }
+            .file .file_list .panel .panel-body .info p.like:hover .icon-favorite-outline {
+              display: none; }
+            .file .file_list .panel .panel-body .info p.like:hover .icon-favorite {
               color: #ff3366;
               display: block; }
           .file .file_list .panel .panel-body .info p.comment {

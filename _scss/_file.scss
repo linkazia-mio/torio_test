@@ -205,10 +205,15 @@
                   display: block;
                 }
               }
-              /*&:hover {
-                color: $dark_red;
-                cursor: pointer;
-              }*/
+              &:hover {
+                .icon-favorite-outline {
+                  display: none;
+                }
+                .icon-favorite {
+                  color: $dark_red;
+                  display: block;
+                }
+              }
             }
             &.comment{
               margin: 1px 0.7% 0 0;
