@@ -7205,7 +7205,7 @@ footer.front {
         .card .auth-form .row .icon.person {
           margin-top: 16px !important; }
           .card .auth-form .row .icon.person i {
-            top: 3px;
+            top: 2px;
             left: 2px;
             position: absolute; }
       .card .auth-form .row.email input, .card .auth-form .row.password input, .card .auth-form .row.name input {
