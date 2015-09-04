@@ -8682,6 +8682,9 @@ input[type="checkbox"] {
   .editable p {
     margin: 0 0 0 0;
     line-height: 1.6; }
+    .editable p br {
+      letter-spacing: normal;
+      /* IE6、IE7対策 */ }
   .editable hr {
     width: 100%;
     margin: 30px auto 35px auto;
@@ -8750,6 +8753,9 @@ input[type="checkbox"] {
   .editable_lock p {
     margin: 0 0 0 0;
     line-height: 1.6; }
+    .editable_lock p br {
+      letter-spacing: normal;
+      /* IE6、IE7対策 */ }
   .editable_lock hr {
     width: 100%;
     margin: 30px auto 35px auto;
@@ -8848,7 +8854,7 @@ input[type="checkbox"] {
     left: 4px;
     top: -2px; } }
   .medium-editor-insert-plugin .medium-insert-buttons .medium-insert-buttons-show *::-ms-backdrop, .medium-editor-insert-plugin .medium-insert-buttons .medium-insert-buttons-show:before {
-    left: 1px;
+    left: 3px;
     top: 0px; }
   .medium-editor-insert-plugin .medium-insert-buttons .medium-insert-buttons-show.active {
     transition: all 0.2s;

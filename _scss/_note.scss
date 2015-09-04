@@ -426,6 +426,9 @@
   p {
     margin: 0 0 0 0;
     line-height: 1.6;
+    br{
+      letter-spacing: normal; /* IE6、IE7対策 */ 
+    }
   }
   hr {
     width: 100%;
@@ -499,6 +502,9 @@
   p {
     margin: 0 0 0 0;
     line-height: 1.6;
+    br{
+      letter-spacing: normal; /* IE6、IE7対策 */ 
+    }
   }
   hr {
     width: 100%;
@@ -594,7 +600,7 @@
         @include font-smoothing(off);
       }
       @-moz-document url-prefix() { &:before { left: 4px; top: -2px; } }
-      *::-ms-backdrop, &:before { left: 1px; top: 0px; } /* IE11 */
+      *::-ms-backdrop, &:before { left: 3px; top: 0px; } /* IE11 */
       &.active {
         transition: all .2s;
        	-webkit-transform: rotate(45deg);
