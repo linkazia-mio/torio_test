@@ -2522,6 +2522,17 @@ header {
 .modal-open {
   overflow: auto;
 }
+
+#task_detail{
+  .modal-dialog{
+    width: 700px;
+    margin: 40px auto;
+    .modal-body{
+      padding: 30px 50px 40px 50px; 
+    }
+  }
+}
+
 .modal {
   .modal_close {
     position: absolute;
@@ -2568,12 +2579,12 @@ header {
         }
         .modal_option_box {
           width: 200px;
-          right: -116px;
-          top: 50px;
+          right: -26px;
+          top: 53px;
           &::before {
            	position: absolute;
            	content: '';
-           	left:25%;
+           	right:25%;
            	top: -16px;
            	margin-left:-7px;
            	border:8px solid transparent;
@@ -2582,7 +2593,7 @@ header {
           &::after {
            	position:absolute;
            	content: '';
-           	left:25%;
+           	right:25%;
            	top:-15px;
            	margin-left:-7px;
            	border:8px solid transparent;
@@ -3038,7 +3049,7 @@ header {
           }
         }
         .task_detail {
-          padding: 10px 8px;
+          padding: 0px;
           .requester {
             @include border_radius(4px 4px 0 0);
             -webkit-background-clip: padding-box;
@@ -3047,25 +3058,25 @@ header {
             /*border: 1px solid $border_gray;*/
             border: 1px solid $border_dark_gray;
             padding: 3px 5px;
-            line-height: 35px;
-            height: 45px;
+            line-height: 38px;
+            height: 46px;
             .icon-person-outline {
-              @include fontsize(2.4);
+              @include fontsize(2.5);
               position: absolute;
               color: $brack;
-              left: 10px;
-              top: 10px;
+              left: 11px;
+              top: 12px;
             }
             .icon-arrow-drop-down {
-              @include fontsize(2.4);
+              @include fontsize(2.6);
               position: absolute;
               color: $white_brack;
-              right: 10px;
-              top: 10px;
+              right: 7px;
+              top: 12px;
               z-index: 10;
             }
             input {
-              padding-left: 35px;
+              padding-left: 38px;
               width: 550px;
               line-height: 21px;
               margin-top: 10px;
@@ -3073,11 +3084,12 @@ header {
             select {
               position: relative;
               width: 100%;
-              padding-left: 35px;
-              line-height: 35px;
-              height: 36px;
+              padding-left: 38px;
+              line-height: 36px;
+              height: 41px;
               outline: none;
               z-index: 100;
+              cursor: pointer;
               &:focus {
                 outline: none;
               }
@@ -3091,24 +3103,24 @@ header {
               @include fontsize(2.4);
               position: absolute;
               color: $brack;
-              left: 10px;
-              top: 10px;
+              left: 12px;
+              top: 12px;
             }
           }
           .limlt {
             @extend .requester;
             @include border_radius(4px);
-            margin-top: 20px;
+            margin-top: 15px;
             i {
               color: $dark_red;
               @include fontsize(2.4);
               position: absolute;
               color: $brack;
-              left: 10px;
-              top: 10px;
+              left: 12px;
+              top: 11px;
             }
             input {
-              line-height: 21px;
+              line-height: 24px;
               margin-top: 9px;
             }
           }
@@ -3116,12 +3128,12 @@ header {
             @extend .limit;
             @include border_radius(4px);
             position: relative;
-            margin-top: 20px;
-            border: 1px solid #cbcbcb;
+            margin-top: 15px;
+            border: 1px solid $border_dark_gray;
             padding-bottom: 40px;
             textarea {
               @include border_radius(2px);
-              padding: 13px;
+              padding: 12px;
               width: 100%;
               resize: vertical;
               &:focus {
@@ -3131,16 +3143,14 @@ header {
             .btn_file {
               overflow: hidden;
               position: absolute;
-              right: 120px;
-              bottom: 9px;
+              right: 117px;
+              bottom: 7px;
               width: 30px;
               height: 30px;
+              cursor: pointer;
               i {
-                @include fontsize(2.6);
+                @include fontsize(2.5);
                 color: $white_brack;
-                &:hover {
-                  color: $green;
-                }
               }
               input[type="file"] {
                 @include opacity(0);
@@ -3155,8 +3165,8 @@ header {
               }
             }
             .btn_add_task {
-              right: 13px;
-              bottom: 13px;
+              right: 11px;
+              bottom: 11px;
               line-height: 28px;
               height: 30px;
               @include font-smoothing(off);
@@ -3173,18 +3183,18 @@ header {
           }
         }
         .comment {
-          margin-top: 30px;
+          margin-top: 25px;
           .comment_inner {
             display: table;
-            width: 98%;
+            width: 99%;
             table-layout: fixed;
-            margin-bottom: 20px;
+            margin-bottom: 15px;
             &:last-child{
               margin-bottom: 0;
             }
             .user_image {
               display: table-cell;
-              width: 55px;
+              width: 53px;
               img {
                 width: 40px;
                 height: 40px;
@@ -3203,22 +3213,22 @@ header {
               display: table-cell;
               vertical-align: top;
               p {
-                @include fontsize(1.4);
+                @include fontsize(1.3);
                 &.name {
                   font-weight: bold;
-                  padding-bottom: 3px;
+                  padding-bottom: 2px;
                   @include fontsize(1.4);
                   .time {
-                    margin-left: 10px;
+                    margin-left: 8px;
                     font-weight: normal;
                     color: $white_brack;
                     @include fontsize(1.2);
                   }
                 }
                 &.memo {
-                  @include fontsize(1.4);
+                  @include fontsize(1.3);
                   word-wrap: break-word;
-                  color: #000;
+                  color: #333333;
                 }
               }
             }
@@ -3227,7 +3237,7 @@ header {
       }
       .modal-footer {
         border-top: none;
-        padding: 25px;
+        padding: 27px 25px 25px 25px;
         position: relative;
         &.gray {
           background: $white_gray;
@@ -3246,13 +3256,13 @@ header {
         textarea {
           @include border_radius(4px);
           width: 100%;
-          height: 120px;
-          margin-bottom: 13px;
+          height: 135px;
+          margin-bottom: 10px;
           border: 1px solid $border_dark_gray;
           background: #fff;
           resize: none;
           outline: none;
-          padding: 13px 13px;
+          padding: 10px 10px;
         }
         button {
           width: 100px;

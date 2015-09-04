@@ -3385,6 +3385,12 @@ header {
 .modal-open {
   overflow: auto; }
 
+#task_detail .modal-dialog {
+  width: 700px;
+  margin: 40px auto; }
+  #task_detail .modal-dialog .modal-body {
+    padding: 30px 50px 40px 50px; }
+
 .modal .modal_close {
   position: absolute;
   top: 0px;
@@ -3431,12 +3437,12 @@ header {
       margin: 11px 30px 18px 0; }
     .modal .modal-dialog .modal-content .modal-header .modal_option_box {
       width: 200px;
-      right: -116px;
-      top: 50px; }
+      right: -26px;
+      top: 53px; }
       .modal .modal-dialog .modal-content .modal-header .modal_option_box::before {
         position: absolute;
         content: '';
-        left: 25%;
+        right: 25%;
         top: -16px;
         margin-left: -7px;
         border: 8px solid transparent;
@@ -3444,7 +3450,7 @@ header {
       .modal .modal-dialog .modal-content .modal-header .modal_option_box::after {
         position: absolute;
         content: '';
-        left: 25%;
+        right: 25%;
         top: -15px;
         margin-left: -7px;
         border: 8px solid transparent;
@@ -3888,7 +3894,7 @@ header {
           visibility: visible;
           z-index: 1; }
     .modal .modal-dialog .modal-content .modal-body .task_detail {
-      padding: 10px 8px; }
+      padding: 0px; }
       .modal .modal-dialog .modal-content .modal-body .task_detail .requester, .modal .modal-dialog .modal-content .modal-body .task_detail .worker, .modal .modal-dialog .modal-content .modal-body .task_detail .limlt {
         -webkit-border-radius: 4px 4px 0 0;
         -moz-border-radius: 4px 4px 0 0;
@@ -3900,36 +3906,37 @@ header {
         /*border: 1px solid $border_gray;*/
         border: 1px solid #d6d6d6;
         padding: 3px 5px;
-        line-height: 35px;
-        height: 45px; }
+        line-height: 38px;
+        height: 46px; }
         .modal .modal-dialog .modal-content .modal-body .task_detail .requester .icon-person-outline, .modal .modal-dialog .modal-content .modal-body .task_detail .worker .icon-person-outline, .modal .modal-dialog .modal-content .modal-body .task_detail .limlt .icon-person-outline {
-          font-size: 24px;
-          font-size: 2.4rem;
+          font-size: 25px;
+          font-size: 2.5rem;
           position: absolute;
           color: #555555;
-          left: 10px;
-          top: 10px; }
+          left: 11px;
+          top: 12px; }
         .modal .modal-dialog .modal-content .modal-body .task_detail .requester .icon-arrow-drop-down, .modal .modal-dialog .modal-content .modal-body .task_detail .worker .icon-arrow-drop-down, .modal .modal-dialog .modal-content .modal-body .task_detail .limlt .icon-arrow-drop-down {
-          font-size: 24px;
-          font-size: 2.4rem;
+          font-size: 26px;
+          font-size: 2.6rem;
           position: absolute;
           color: #999999;
-          right: 10px;
-          top: 10px;
+          right: 7px;
+          top: 12px;
           z-index: 10; }
         .modal .modal-dialog .modal-content .modal-body .task_detail .requester input, .modal .modal-dialog .modal-content .modal-body .task_detail .worker input, .modal .modal-dialog .modal-content .modal-body .task_detail .limlt input {
-          padding-left: 35px;
+          padding-left: 38px;
           width: 550px;
           line-height: 21px;
           margin-top: 10px; }
         .modal .modal-dialog .modal-content .modal-body .task_detail .requester select, .modal .modal-dialog .modal-content .modal-body .task_detail .worker select, .modal .modal-dialog .modal-content .modal-body .task_detail .limlt select {
           position: relative;
           width: 100%;
-          padding-left: 35px;
-          line-height: 35px;
-          height: 36px;
+          padding-left: 38px;
+          line-height: 36px;
+          height: 41px;
           outline: none;
-          z-index: 100; }
+          z-index: 100;
+          cursor: pointer; }
           .modal .modal-dialog .modal-content .modal-body .task_detail .requester select:focus, .modal .modal-dialog .modal-content .modal-body .task_detail .worker select:focus, .modal .modal-dialog .modal-content .modal-body .task_detail .limlt select:focus {
             outline: none; }
       .modal .modal-dialog .modal-content .modal-body .task_detail .worker {
@@ -3943,24 +3950,24 @@ header {
           font-size: 2.4rem;
           position: absolute;
           color: #555555;
-          left: 10px;
-          top: 10px; }
+          left: 12px;
+          top: 12px; }
       .modal .modal-dialog .modal-content .modal-body .task_detail .limlt {
         -webkit-border-radius: 4px;
         -moz-border-radius: 4px;
         -ms-border-radius: 4px;
         border-radius: 4px;
-        margin-top: 20px; }
+        margin-top: 15px; }
         .modal .modal-dialog .modal-content .modal-body .task_detail .limlt i {
           color: #ff3366;
           font-size: 24px;
           font-size: 2.4rem;
           position: absolute;
           color: #555555;
-          left: 10px;
-          top: 10px; }
+          left: 12px;
+          top: 11px; }
         .modal .modal-dialog .modal-content .modal-body .task_detail .limlt input {
-          line-height: 21px;
+          line-height: 24px;
           margin-top: 9px; }
       .modal .modal-dialog .modal-content .modal-body .task_detail .information {
         -webkit-border-radius: 4px;
@@ -3968,15 +3975,15 @@ header {
         -ms-border-radius: 4px;
         border-radius: 4px;
         position: relative;
-        margin-top: 20px;
-        border: 1px solid #cbcbcb;
+        margin-top: 15px;
+        border: 1px solid #d6d6d6;
         padding-bottom: 40px; }
         .modal .modal-dialog .modal-content .modal-body .task_detail .information textarea {
           -webkit-border-radius: 2px;
           -moz-border-radius: 2px;
           -ms-border-radius: 2px;
           border-radius: 2px;
-          padding: 13px;
+          padding: 12px;
           width: 100%;
           resize: vertical; }
           .modal .modal-dialog .modal-content .modal-body .task_detail .information textarea:focus {
@@ -3984,16 +3991,15 @@ header {
         .modal .modal-dialog .modal-content .modal-body .task_detail .information .btn_file {
           overflow: hidden;
           position: absolute;
-          right: 120px;
-          bottom: 9px;
+          right: 117px;
+          bottom: 7px;
           width: 30px;
-          height: 30px; }
+          height: 30px;
+          cursor: pointer; }
           .modal .modal-dialog .modal-content .modal-body .task_detail .information .btn_file i {
-            font-size: 26px;
-            font-size: 2.6rem;
+            font-size: 25px;
+            font-size: 2.5rem;
             color: #999999; }
-            .modal .modal-dialog .modal-content .modal-body .task_detail .information .btn_file i:hover {
-              color: #2e6b95; }
           .modal .modal-dialog .modal-content .modal-body .task_detail .information .btn_file input[type="file"] {
             opacity: 0;
             filter: alpha(opacity=0);
@@ -4005,8 +4011,8 @@ header {
             .modal .modal-dialog .modal-content .modal-body .task_detail .information .btn_file input[type="file"]:hover {
               cursor: pointer; }
         .modal .modal-dialog .modal-content .modal-body .task_detail .information .btn_add_task {
-          right: 13px;
-          bottom: 13px;
+          right: 11px;
+          bottom: 11px;
           line-height: 28px;
           height: 30px;
           -webkit-font-smoothing: subpixel-antialiased;
@@ -4017,17 +4023,17 @@ header {
       .modal .modal-dialog .modal-content .modal-body .limit_add_time .task_add_time_footer .btn_add_task {
         bottom: 0; }
     .modal .modal-dialog .modal-content .modal-body .comment {
-      margin-top: 30px; }
+      margin-top: 25px; }
       .modal .modal-dialog .modal-content .modal-body .comment .comment_inner {
         display: table;
-        width: 98%;
+        width: 99%;
         table-layout: fixed;
-        margin-bottom: 20px; }
+        margin-bottom: 15px; }
         .modal .modal-dialog .modal-content .modal-body .comment .comment_inner:last-child {
           margin-bottom: 0; }
         .modal .modal-dialog .modal-content .modal-body .comment .comment_inner .user_image {
           display: table-cell;
-          width: 55px; }
+          width: 53px; }
           .modal .modal-dialog .modal-content .modal-body .comment .comment_inner .user_image img {
             width: 40px;
             height: 40px;
@@ -4044,27 +4050,27 @@ header {
           display: table-cell;
           vertical-align: top; }
           .modal .modal-dialog .modal-content .modal-body .comment .comment_inner .user_comment p {
-            font-size: 14px;
-            font-size: 1.4rem; }
+            font-size: 13px;
+            font-size: 1.3rem; }
             .modal .modal-dialog .modal-content .modal-body .comment .comment_inner .user_comment p.name {
               font-weight: bold;
-              padding-bottom: 3px;
+              padding-bottom: 2px;
               font-size: 14px;
               font-size: 1.4rem; }
               .modal .modal-dialog .modal-content .modal-body .comment .comment_inner .user_comment p.name .time {
-                margin-left: 10px;
+                margin-left: 8px;
                 font-weight: normal;
                 color: #999999;
                 font-size: 12px;
                 font-size: 1.2rem; }
             .modal .modal-dialog .modal-content .modal-body .comment .comment_inner .user_comment p.memo {
-              font-size: 14px;
-              font-size: 1.4rem;
+              font-size: 13px;
+              font-size: 1.3rem;
               word-wrap: break-word;
-              color: #000; }
+              color: #333333; }
   .modal .modal-dialog .modal-content .modal-footer {
     border-top: none;
-    padding: 25px;
+    padding: 27px 25px 25px 25px;
     position: relative; }
     .modal .modal-dialog .modal-content .modal-footer.gray {
       background: #f9f9f9;
@@ -4082,13 +4088,13 @@ header {
       -ms-border-radius: 4px;
       border-radius: 4px;
       width: 100%;
-      height: 120px;
-      margin-bottom: 13px;
+      height: 135px;
+      margin-bottom: 10px;
       border: 1px solid #d6d6d6;
       background: #fff;
       resize: none;
       outline: none;
-      padding: 13px 13px; }
+      padding: 10px 10px; }
     .modal .modal-dialog .modal-content .modal-footer button {
       width: 100px;
       height: 35px;
