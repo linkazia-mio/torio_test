@@ -3445,7 +3445,9 @@ header {
     .modal .modal-dialog .modal-content .modal-header .modal_option_box {
       width: 200px;
       right: -26px;
-      top: 53px; }
+      top: 53px;
+      -webkit-font-smoothing: subpixel-antialiased;
+      -moz-osx-font-smoothing: auto; }
       .modal .modal-dialog .modal-content .modal-header .modal_option_box::before {
         position: absolute;
         content: '';

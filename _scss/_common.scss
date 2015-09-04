@@ -2592,6 +2592,7 @@ header {
           width: 200px;
           right: -26px;
           top: 53px;
+          @include font-smoothing(off);
           &::before {
            	position: absolute;
            	content: '';
