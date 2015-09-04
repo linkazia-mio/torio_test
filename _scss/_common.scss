@@ -1602,7 +1602,7 @@ header {
         }
       }
     }
-    *::-ms-backdrop, .favorite { top: 12px; } /* IE11 */
+    *::-ms-backdrop, .favorite { top: 9px; } /* IE11 */
     .viewers {
       color: $white_brack;
       position: absolute;
@@ -1627,6 +1627,7 @@ header {
         }
       }
     }
+    *::-ms-backdrop, .viewers { top: -2px; } /* IE11 */
     .option {
       @include fontsize(2.8);
       color: $white_brack;

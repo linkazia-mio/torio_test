@@ -2497,6 +2497,7 @@ header {
     /*-webkit-box-shadow: 0 1px 2px rgba(0,0,0,0.1);
     box-shadow: 0 1px 2px rgba(0,0,0,0.1);*/
     line-height: 38px;
+    /* IE11 */
     /* IE11 */ }
     .page_menu .config .title {
       font-size: 13px;
@@ -2556,7 +2557,7 @@ header {
         display: block;
         color: #feb22e; }
     .page_menu .config *::-ms-backdrop, .page_menu .config .favorite {
-      top: 12px; }
+      top: 9px; }
     .page_menu .config .viewers {
       color: #999999;
       position: absolute;
@@ -2578,6 +2579,8 @@ header {
           bottom: 19px;
           left: 50%;
           margin: -50px; }
+    .page_menu .config *::-ms-backdrop, .page_menu .config .viewers {
+      top: -2px; }
     .page_menu .config .option, .page_menu .config .carousel .carousel-inner .item .modal-header .download, .carousel .carousel-inner .item .modal-header .page_menu .config .download, .page_menu .config .carousel .carousel-inner .item .modal-header .like, .carousel .carousel-inner .item .modal-header .page_menu .config .like {
       font-size: 28px;
       font-size: 2.8rem;
