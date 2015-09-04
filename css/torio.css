@@ -7277,12 +7277,12 @@ footer.front {
         /*border: solid 1px rgba(62,136,186,0.7);
         box-shadow: 0 0 4px rgba(53,175,242,0.6);*/
         /*border: 1px solid #aaaaaa;*/
-        /*background: #ffffff;*/ }
+        background: #ffffff; }
       .task .task_create .task_create_inner:hover {
         /*border: solid 1px rgba(62,136,186,0.7);
         box-shadow: 0 0 4px rgba(53,175,242,0.6);*/
         /*border: 1px solid #aaaaaa;*/
-        /*background: #ffffff;*/ }
+        background: #ffffff; }
       .task .task_create .task_create_inner i {
         font-size: 29px;
         font-size: 2.9rem;
@@ -7313,10 +7313,27 @@ footer.front {
         line-height: 30px;
         color: #fff;
         font-weight: normal;
-        background: #3A87BC; }
+        background: #3A87BC;
+        text-align: center;
+        cursor: pointer;
+        -webkit-transition: all 0.3s ease-in-out;
+        -moz-transition: all 0.3s ease-in-out;
+        -ms-transition: all 0.3s ease-in-out;
+        -o-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        font-weight: normal;
+        font-style: normal;
+        text-decoration: none; }
         .task .task_create .task_create_inner .btn_add_task_create:hover {
-          opacity: 0.8;
-          filter: alpha(opacity=80); }
+          outline: 0;
+          background: #2b75a7;
+          color: white; }
       .task .task_create .task_create_inner .task_add_list_member {
         -webkit-border-radius: 4px;
         -moz-border-radius: 4px;
@@ -7722,10 +7739,27 @@ input[type="checkbox"] {
         font-weight: normal;
         background: #3A87BC;
         font-size: 12px;
-        font-size: 1.2rem; }
+        font-size: 1.2rem;
+        text-align: center;
+        cursor: pointer;
+        -webkit-transition: all 0.3s ease-in-out;
+        -moz-transition: all 0.3s ease-in-out;
+        -ms-transition: all 0.3s ease-in-out;
+        -o-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        font-weight: normal;
+        font-style: normal;
+        text-decoration: none; }
         .task_replacement .task_people .task_list .btn_add_task:hover {
-          opacity: 0.8;
-          filter: alpha(opacity=80); }
+          outline: 0;
+          background: #2b75a7;
+          color: white; }
       .task_replacement .task_people .task_list .time_create, .task_replacement .task_people .task_list .task_member {
         position: absolute;
         right: 128px;
@@ -7766,6 +7800,7 @@ input[type="checkbox"] {
           cursor: pointer; }
       .task_replacement .task_people .task_list .task_member {
         right: 163px;
+        bottom: 13.5px;
         line-height: 30px;
         cursor: pointer; }
         .task_replacement .task_people .task_list .task_member select {
@@ -7822,12 +7857,12 @@ input[type="checkbox"] {
               width: 20px;
               height: 20px; }
         .task_replacement .task_people .task_list .task_member .icon-person-plus {
-          font-size: 22px;
-          font-size: 2.2rem;
+          font-size: 26px;
+          font-size: 2.6rem;
           cursor: pointer; }
         .task_replacement .task_people .task_list .task_member .icon-person-plus-outline {
-          font-size: 22px;
-          font-size: 2.2rem;
+          font-size: 26px;
+          font-size: 2.6rem;
           cursor: pointer; }
       .task_replacement .task_people .task_list .task_title {
         color: #000;
@@ -8163,10 +8198,27 @@ input[type="checkbox"] {
   line-height: 30px;
   color: #fff;
   font-weight: normal;
-  background: #3A87BC; }
+  background: #3A87BC;
+  text-align: center;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: none; }
   .btn_add_task_create:hover {
-    opacity: 0.8;
-    filter: alpha(opacity=80); }
+    outline: 0;
+    background: #2b75a7;
+    color: white; }
 
 .task_add_time_footer {
   position: relative;
