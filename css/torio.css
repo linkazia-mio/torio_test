@@ -8678,10 +8678,10 @@ input[type="checkbox"] {
     font-size: 20px;
     font-size: 2rem;
     font-weight: bold;
-    margin: 0 0 25px 0; }
+    margin: 0 0 0 0; }
   .editable p {
-    margin: 0 0 20px 0;
-    line-height: 1.8; }
+    margin: 0 0 0 0;
+    line-height: 1.6; }
   .editable hr {
     width: 100%;
     margin: 30px auto 35px auto;
@@ -8690,19 +8690,19 @@ input[type="checkbox"] {
     font-size: 14px;
     font-size: 1.4rem;
     padding: 10px 20px 5px 20px;
-    margin: 0 0 20px;
+    margin: 0 0 0;
     border-left: 4px solid #e9e9e9;
     color: #333333;
     font-style: italic;
     line-height: 1.8; }
   .editable ol {
     padding-left: 23px;
-    margin-bottom: 20px; }
+    margin-bottom: 0; }
     .editable ol li {
       line-height: 1.8; }
   .editable ul {
     padding-left: 20px;
-    margin-bottom: 28px; }
+    margin-bottom: 0; }
     .editable ul li {
       list-style: disc;
       line-height: 1.8; }
@@ -8713,7 +8713,7 @@ input[type="checkbox"] {
     border-radius: 5px;
     padding: 20px;
     display: block;
-    margin: 0 0 10px;
+    margin: 0 0 0;
     word-break: break-all;
     word-wrap: break-word;
     /*background-color: $white_gray;
@@ -8726,7 +8726,7 @@ input[type="checkbox"] {
     -webkit-font-smoothing: subpixel-antialiased;
     -moz-osx-font-smoothing: auto; }
   .editable figure {
-    margin: 30px 0; }
+    margin: 0; }
     .editable figure img {
       max-width: 100%;
       height: auto; }
@@ -8746,10 +8746,10 @@ input[type="checkbox"] {
     font-size: 20px;
     font-size: 2rem;
     font-weight: bold;
-    margin: 0 0 25px 0; }
+    margin: 0 0 0 0; }
   .editable_lock p {
-    margin: 0 0 20px 0;
-    line-height: 1.8; }
+    margin: 0 0 0 0;
+    line-height: 1.6; }
   .editable_lock hr {
     width: 100%;
     margin: 30px auto 35px auto;
@@ -8758,19 +8758,20 @@ input[type="checkbox"] {
     font-size: 14px;
     font-size: 1.4rem;
     padding: 10px 20px 5px 20px;
-    margin: 0 0 20px;
+    margin: 0 0 0;
     border-left: 4px solid #e9e9e9;
     color: #333333;
     font-style: italic;
     line-height: 1.8; }
   .editable_lock ol {
     padding-left: 23px;
-    margin-bottom: 30px; }
+    margin-bottom: 0; }
   .editable_lock ul {
     padding-left: 20px;
-    margin-bottom: 30px; }
+    margin-bottom: 0; }
     .editable_lock ul li {
-      list-style: disc; }
+      list-style: disc;
+      line-height: 1.8; }
   .editable_lock pre {
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
@@ -8778,7 +8779,7 @@ input[type="checkbox"] {
     border-radius: 5px;
     padding: 20px;
     display: block;
-    margin: 0 0 10px;
+    margin: 0 0 0;
     word-break: break-all;
     word-wrap: break-word;
     /*background-color: $white_gray;
@@ -8791,7 +8792,7 @@ input[type="checkbox"] {
     -webkit-font-smoothing: subpixel-antialiased;
     -moz-osx-font-smoothing: auto; }
   .editable_lock figure {
-    margin: 30px 0; }
+    margin: 0; }
   .editable_lock small {
     margin: 10px 0;
     display: block; }
