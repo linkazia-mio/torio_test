@@ -8812,17 +8812,17 @@ input[type="checkbox"] {
   -moz-border-radius: 100px;
   -ms-border-radius: 100px;
   border-radius: 100px;
-  font-size: 21px;
-  font-size: 2.1rem;
+  font-size: 15px;
+  font-size: 1.5rem;
   position: relative;
   box-sizing: border-box;
   display: block;
   width: 22px;
   height: 22px;
-  margin: 0;
-  border: 2px solid;
+  margin: -2px 0 0 0;
+  border: 2px solid #999999;
   line-height: 20px;
-  margin-left: 19px;
+  margin-left: 20px;
   color: #999999;
   overflow: hidden;
   transition: all 0.2s;
@@ -8831,20 +8831,26 @@ input[type="checkbox"] {
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   overflow: hidden;
+  -webkit-font-smoothing: subpixel-antialiased;
+  -moz-osx-font-smoothing: auto;
   /* IE11 */ }
   .medium-editor-insert-plugin .medium-insert-buttons .medium-insert-buttons-show:before {
     position: absolute;
     content: "+";
     height: 20px;
-    left: 2px;
-    top: -2px; }
+    left: 4px;
+    top: -1px;
+    -webkit-font-smoothing: subpixel-antialiased;
+    -moz-osx-font-smoothing: auto; }
   .medium-editor-insert-plugin .medium-insert-buttons .medium-insert-buttons-show *::-ms-backdrop, .medium-editor-insert-plugin .medium-insert-buttons .medium-insert-buttons-show:before {
     left: 1px;
     top: 0px; }
   .medium-editor-insert-plugin .medium-insert-buttons .medium-insert-buttons-show.active {
     transition: all 0.2s;
     -webkit-transform: rotate(45deg);
-    transform: rotate(45deg); }
+    transform: rotate(45deg);
+    -webkit-font-smoothing: subpixel-antialiased;
+    -moz-osx-font-smoothing: auto; }
 
 .medium-editor-insert-plugin .medium-insert-buttons .medium-insert-buttons-addons {
   top: -24px; }

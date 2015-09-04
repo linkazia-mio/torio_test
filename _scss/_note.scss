@@ -566,16 +566,16 @@
   .medium-insert-buttons {
     .medium-insert-buttons-show {
       @include border_radius(100px);
-      @include fontsize(2.1);
+      @include fontsize(1.5);
       position: relative;
       box-sizing: border-box;
       display: block;
       width: 22px;
       height: 22px;
-      margin: 0;
-      border: 2px solid;
+      margin: -2px 0 0 0;
+      border: 2px solid $white_brack;
       line-height: 20px;
-      margin-left: 19px;
+      margin-left: 20px;
       color: $white_brack;
       overflow: hidden;
       transition: all .2s;
@@ -584,18 +584,21 @@
       -webkit-backface-visibility:hidden;
       backface-visibility:hidden;
       overflow:hidden;
+      @include font-smoothing(off);
       &:before {
         position: absolute;
         content: "+";
         height: 20px;
-        left: 2px;
-        top: -2px;
+        left: 4px;
+        top: -1px;
+        @include font-smoothing(off);
       }
       *::-ms-backdrop, &:before { left: 1px; top: 0px; } /* IE11 */
       &.active {
         transition: all .2s;
-      	-webkit-transform: rotate(45deg);
-      	transform: rotate(45deg);
+       	-webkit-transform: rotate(45deg);
+       	transform: rotate(45deg);
+       	@include font-smoothing(off);
       }
     }
     .medium-insert-buttons-addons {
