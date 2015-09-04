@@ -436,8 +436,14 @@
   p {
     margin: 0 0 0 0;
     line-height: 1.6;
-    br{
-      letter-spacing: normal; /* IE6、IE7対策 */ 
+    *,
+    ::before,
+    ::after {
+    	border-style: none !important;
+    	border-width: 0;
+    }
+    br {
+      letter-spacing: normal; /* IE6、IE7対策 */
     }
   }
   hr {
@@ -513,7 +519,7 @@
     margin: 0 0 0 0;
     line-height: 1.6;
     br{
-      letter-spacing: normal; /* IE6、IE7対策 */ 
+      letter-spacing: normal; /* IE6、IE7対策 */
     }
   }
   hr {

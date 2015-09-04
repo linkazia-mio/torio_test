@@ -8744,6 +8744,11 @@ input[type="checkbox"] {
   .editable p {
     margin: 0 0 0 0;
     line-height: 1.6; }
+    .editable p *,
+    .editable p ::before,
+    .editable p ::after {
+      border-style: none;
+      border-width: 0; }
     .editable p br {
       letter-spacing: normal;
       /* IE6、IE7対策 */ }
