@@ -2536,6 +2536,14 @@ header {
   }
 }
 
+#add_file3,#add_file4{
+  .modal-footer{
+    textarea {
+      margin-bottom: 15px;
+    }
+  } 
+}
+
 .modal {
   .modal_close {
     position: absolute;
@@ -3357,7 +3365,7 @@ header {
         .link {
           position: absolute;
           left: 25px;
-          bottom: 33px;
+          bottom: 40px;
           a {
             padding: 0 0 0 25px;
             color: $white_brack;

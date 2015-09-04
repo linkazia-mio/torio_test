@@ -3395,6 +3395,9 @@ header {
   #task_detail .modal-dialog .modal-body {
     padding: 32px 50px 45px 50px; }
 
+#add_file3 .modal-footer textarea, #add_file4 .modal-footer textarea {
+  margin-bottom: 15px; }
+
 .modal .modal_close {
   position: absolute;
   top: 0px;
@@ -4194,7 +4197,7 @@ header {
     .modal .modal-dialog .modal-content .modal-footer .link {
       position: absolute;
       left: 25px;
-      bottom: 33px; }
+      bottom: 40px; }
       .modal .modal-dialog .modal-content .modal-footer .link a {
         padding: 0 0 0 25px;
         color: #999999; }
