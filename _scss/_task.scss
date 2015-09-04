@@ -382,8 +382,8 @@ input[type="checkbox"] {
           /*checked時の見た目*/
           &:checked + label {
             &::before {
-              background: #b3312d;
-              border: 2px solid #b3312d;
+              background: #c35959;
+              border: 2px solid #c35959;
             }
           }
         }
@@ -638,29 +638,34 @@ input[type="checkbox"] {
           padding-left: 23px;
           font-weight: normal;
           @include fontsize(1.2);
-          color: #bbb;
+          color: #999999;
           @include font-smoothing(off);
           @include font_eng;
           i {
             position: absolute;
             top: 17px;
             left: 0;
+            color: #bbbbbb;
           }
           &.caution {
-            color: #b3312d;
+            color: #c35959;
+            i {
+              color: #d27d7d;
+            }
           }
         }
         .comment {
           padding-left: 20px;
           font-weight: normal;
           @include fontsize(1.2);
-          color: #bbb;
+          color: #999999;
           @include font-smoothing(off);
           @include font_eng;
           i {
             position: absolute;
             top: 17px;
             left: 0;
+            color: #bbbbbb;
           }
         }
         .user_image {

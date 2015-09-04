@@ -671,8 +671,8 @@ header {
               /*checked時の見た目*/
               &:checked + label {
                 &::before {
-                  background: #b3312d;
-                  border: 2px solid #b3312d;
+                  background: #c35959;
+                  border: 2px solid #c35959;
                 }
               }
             }
@@ -749,7 +749,7 @@ header {
         @include clearfix;
         padding: 20px 20px 0 20px;
         position: relative;
-        @include fontsize(1.2);
+        @include fontsize(1.3);
         border-bottom: 1px solid $border_white_gray;
         @include border_radius(5px);
         &:before{
@@ -766,7 +766,8 @@ header {
         }
         .user_image {
           float: left;
-          margin-right: 10px;
+          margin-right: 8px;
+          margin-top: 1px;
           img {
             width: 30px;
             height: 30px;
@@ -779,21 +780,23 @@ header {
           width: 30px;
           height: 30px;
           line-height: 30px;
-          margin-right: 10px;
+          margin-right: 8px;
+          margin-top: 1px;
           @include font-smoothing(on);
           @include font_eng;
         }
         .activity_text {
           float: left;
-          width: 310px;
+          width: 318px;
           color: #333333;
-          margin-bottom: 35px;
+          margin-bottom: 28px;
         }
         .time {
           position: absolute;
           color: $white_brack;
-          right: 25px;
+          right: 20px;
           bottom: 10px;
+          @include fontsize(1.1);
         }
       }
     }

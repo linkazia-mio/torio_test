@@ -1708,8 +1708,8 @@ header {
                   border: 2px solid #f3b9a9;
                   background: #fbeceb; }
               header .task_box .task_active_lists .task_active_list .task_list.important input[type="checkbox"]:checked + label::before, header .activity_box .task_active_lists .task_active_list .task_list.important input[type="checkbox"]:checked + label::before {
-                background: #b3312d;
-                border: 2px solid #b3312d; }
+                background: #c35959;
+                border: 2px solid #c35959; }
           header .task_box .task_active_lists .task_active_list .task_list .task_title, header .activity_box .task_active_lists .task_active_list .task_list .task_title {
             color: #000000;
             width: 70%;
@@ -1770,8 +1770,8 @@ header {
         *zoom: 1;
         padding: 20px 20px 0 20px;
         position: relative;
-        font-size: 12px;
-        font-size: 1.2rem;
+        font-size: 13px;
+        font-size: 1.3rem;
         border-bottom: 1px solid #f5f5f5;
         -webkit-border-radius: 5px;
         -moz-border-radius: 5px;
@@ -1796,7 +1796,8 @@ header {
           z-index: 1; }
         header .activity_box .activity_lists .activity_list .user_image {
           float: left;
-          margin-right: 10px; }
+          margin-right: 8px;
+          margin-top: 1px; }
           header .activity_box .activity_lists .activity_list .user_image img {
             width: 30px;
             height: 30px; }
@@ -1808,20 +1809,23 @@ header {
           width: 30px;
           height: 30px;
           line-height: 30px;
-          margin-right: 10px;
+          margin-right: 8px;
+          margin-top: 1px;
           -webkit-font-smoothing: antialiased;
           -moz-osx-font-smoothing: grayscale;
           font-family: 'Lato','Helvetica neue',Helvetica,Arial,sans-serif; }
         header .activity_box .activity_lists .activity_list .activity_text {
           float: left;
-          width: 310px;
+          width: 318px;
           color: #333333;
-          margin-bottom: 35px; }
+          margin-bottom: 28px; }
         header .activity_box .activity_lists .activity_list .time {
           position: absolute;
           color: #999999;
-          right: 25px;
-          bottom: 10px; }
+          right: 20px;
+          bottom: 10px;
+          font-size: 11px;
+          font-size: 1.1rem; }
   header .account {
     right: -12px;
     top: 50px; }
@@ -7625,8 +7629,8 @@ input[type="checkbox"] {
               border: 2px solid #f3b9a9;
               background: #fbeceb; }
           .task_replacement .task_people .task_list.important input[type="checkbox"]:checked + label::before {
-            background: #b3312d;
-            border: 2px solid #b3312d; }
+            background: #c35959;
+            border: 2px solid #c35959; }
       .task_replacement .task_people .task_list.finished {
         background: #EEE; }
       .task_replacement .task_people .task_list.made {
@@ -7861,29 +7865,33 @@ input[type="checkbox"] {
           font-weight: normal;
           font-size: 12px;
           font-size: 1.2rem;
-          color: #bbb;
+          color: #999999;
           -webkit-font-smoothing: subpixel-antialiased;
           -moz-osx-font-smoothing: auto;
           font-family: 'Lato','Helvetica neue',Helvetica,Arial,sans-serif; }
           .task_replacement .task_people .task_list .task_icon_box .time i {
             position: absolute;
             top: 17px;
-            left: 0; }
+            left: 0;
+            color: #bbbbbb; }
           .task_replacement .task_people .task_list .task_icon_box .time.caution {
-            color: #b3312d; }
+            color: #c35959; }
+            .task_replacement .task_people .task_list .task_icon_box .time.caution i {
+              color: #d27d7d; }
         .task_replacement .task_people .task_list .task_icon_box .comment {
           padding-left: 20px;
           font-weight: normal;
           font-size: 12px;
           font-size: 1.2rem;
-          color: #bbb;
+          color: #999999;
           -webkit-font-smoothing: subpixel-antialiased;
           -moz-osx-font-smoothing: auto;
           font-family: 'Lato','Helvetica neue',Helvetica,Arial,sans-serif; }
           .task_replacement .task_people .task_list .task_icon_box .comment i {
             position: absolute;
             top: 17px;
-            left: 0; }
+            left: 0;
+            color: #bbbbbb; }
         .task_replacement .task_people .task_list .task_icon_box .user_image {
           position: static;
           margin-top: 12px;
