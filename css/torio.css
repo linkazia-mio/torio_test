@@ -8842,6 +8842,11 @@ input[type="checkbox"] {
     top: -1px;
     -webkit-font-smoothing: subpixel-antialiased;
     -moz-osx-font-smoothing: auto; }
+
+@-moz-document url-prefix() {
+  .medium-editor-insert-plugin .medium-insert-buttons .medium-insert-buttons-show:before {
+    left: 4px;
+    top: -2px; } }
   .medium-editor-insert-plugin .medium-insert-buttons .medium-insert-buttons-show *::-ms-backdrop, .medium-editor-insert-plugin .medium-insert-buttons .medium-insert-buttons-show:before {
     left: 1px;
     top: 0px; }

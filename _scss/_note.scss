@@ -593,6 +593,7 @@
         top: -1px;
         @include font-smoothing(off);
       }
+      @-moz-document url-prefix() { &:before { left: 4px; top: -2px; } }
       *::-ms-backdrop, &:before { left: 1px; top: 0px; } /* IE11 */
       &.active {
         transition: all .2s;
