@@ -8410,7 +8410,8 @@ input[type="checkbox"] {
           .note .note_edit .note_edit_inner .like_comment_box .like_btn i {
             color: #999999;
             font-size: 23px;
-            font-size: 2.3rem; }
+            font-size: 2.3rem;
+            cursor: pointer; }
             .note .note_edit .note_edit_inner .like_comment_box .like_btn i.icon-favorite-outline {
               display: block; }
             .note .note_edit .note_edit_inner .like_comment_box .like_btn i.icon-favorite {
@@ -8418,6 +8419,11 @@ input[type="checkbox"] {
           .note .note_edit .note_edit_inner .like_comment_box .like_btn.active i.icon-favorite-outline {
             display: none; }
           .note .note_edit .note_edit_inner .like_comment_box .like_btn.active i.icon-favorite {
+            color: #ff3366;
+            display: block; }
+          .note .note_edit .note_edit_inner .like_comment_box .like_btn:hover .icon-favorite-outline {
+            display: none; }
+          .note .note_edit .note_edit_inner .like_comment_box .like_btn:hover .icon-favorite {
             color: #ff3366;
             display: block; }
         .note .note_edit .note_edit_inner .like_comment_box .comment_btn {
@@ -8665,12 +8671,12 @@ input[type="checkbox"] {
  Editable
 ---------------------------------------------------------------------------------------*/
 .editable {
-  padding: 25px 74px 90px 74px;
+  padding: 25px 74px 100px 74px;
   color: #111;
   font-size: 14px;
   font-size: 1.4rem; }
   .editable:first-child {
-    padding: 30px 74px 90px 74px; }
+    padding: 30px 74px 100px 74px; }
   .editable:focus {
     outline: none; }
   .editable h1 {
@@ -8740,7 +8746,7 @@ input[type="checkbox"] {
  Editable_lock
 ---------------------------------------------------------------------------------------*/
 .editable_lock {
-  padding: 20px 74px 90px 74px;
+  padding: 20px 74px 100px 74px;
   color: #111;
   font-size: 14px;
   font-size: 1.4rem; }

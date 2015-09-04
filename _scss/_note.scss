@@ -134,6 +134,7 @@
           i {
             color: $white_brack;
             @include fontsize(2.3);
+            cursor: pointer;
             &.icon-favorite-outline {
               display: block;
             }
@@ -150,6 +151,15 @@
                 color: $dark_red;
                 display: block;
               }
+            }
+          }
+          &:hover {
+            .icon-favorite-outline {
+              display: none;
+            }
+            .icon-favorite {
+              color: $dark_red;
+              display: block;
             }
           }
         }
@@ -409,11 +419,11 @@
  Editable
 ---------------------------------------------------------------------------------------*/
 .editable {
-  padding: 25px 74px 90px 74px;
+  padding: 25px 74px 100px 74px;
   color: #111;
   @include fontsize(1.4);
   &:first-child{
-   padding: 30px 74px 90px 74px;
+   padding: 30px 74px 100px 74px;
   }
   &:focus {
     outline: none;
@@ -491,7 +501,7 @@
  Editable_lock
 ---------------------------------------------------------------------------------------*/
 .editable_lock {
-  padding: 20px 74px 90px 74px;
+  padding: 20px 74px 100px 74px;
   color: #111;
   @include fontsize(1.4);
   h1 {
