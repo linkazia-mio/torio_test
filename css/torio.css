@@ -6570,7 +6570,6 @@ footer.front {
       border: 2px solid #fa3366;
       padding: 15px 15px 0 15px;
       display: inline-block;
-      font-size: 14px;
       -webkit-touch-callout: none;
       -webkit-user-select: none;
       -khtml-user-select: none;
@@ -8955,6 +8954,9 @@ input[type="checkbox"] {
 .medium-toolbar-arrow-under:after {
   top: 37px; }
 
+*::-ms-backdrop, .medium-insert-active {
+  /*padding: 15px 0 0 0;*/ }
+
 /*---------------------------------------------------------------------------------------
  Loader
 ---------------------------------------------------------------------------------------*/
@@ -9044,10 +9046,10 @@ input[type="checkbox"] {
 .option_config .configuration {
   padding: 0 30px 10px 30px; }
   .option_config .configuration .configuration_inner {
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
-    -ms-border-radius: 3px;
-    border-radius: 3px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    border-radius: 5px;
     max-width: 750px;
     min-width: 590px;
     margin: 0 auto 30px auto;
@@ -9056,6 +9058,9 @@ input[type="checkbox"] {
     position: relative;
     border: 1px solid #ededf0;
     border-bottom: 1px solid #dcdce0;
+    /*-webkit-box-shadow: 0 1px 2px rgba(0,0,0,0.07);
+      -moz-box-shadow: 0 1px 2px rgba(0,0,0,0.07);
+      box-shadow: 0 1px 2px rgba(0,0,0,0.07);*/
     box-shadow: none; }
     .option_config .configuration .configuration_inner.cancellation .configuration_title {
       margin-bottom: 0; }
@@ -9093,7 +9098,10 @@ input[type="checkbox"] {
         width: 85px;
         height: 85px;
         line-height: 85px;
-        font-weight: normal; }
+        font-weight: normal;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        font-family: 'Lato','Helvetica neue',Helvetica,Arial,sans-serif; }
       .option_config .configuration .configuration_inner .profile_image_change .change_btn {
         margin-top: 20px; }
         .option_config .configuration .configuration_inner .profile_image_change .change_btn a {
@@ -9106,15 +9114,15 @@ input[type="checkbox"] {
       margin-bottom: 10px;
       clear: both; }
     .option_config .configuration .configuration_inner .input_box, .option_config .configuration .configuration_inner .input_box_pass, .option_config .configuration .configuration_inner .select_box {
-      border: 1px solid #eeeeee;
+      border: 1px solid #d6d6d6;
       width: 490px;
       padding: 10px;
       margin-bottom: 35px;
       position: relative;
-      -webkit-border-radius: 3px;
-      -moz-border-radius: 3px;
-      -ms-border-radius: 3px;
-      border-radius: 3px; }
+      -webkit-border-radius: 4px;
+      -moz-border-radius: 4px;
+      -ms-border-radius: 4px;
+      border-radius: 4px; }
       .option_config .configuration .configuration_inner .input_box.profile_text, .option_config .configuration .configuration_inner .profile_text.input_box_pass, .option_config .configuration .configuration_inner .profile_text.select_box {
         margin-bottom: 50px; }
       .option_config .configuration .configuration_inner .input_box.profile_name, .option_config .configuration .configuration_inner .profile_name.input_box_pass, .option_config .configuration .configuration_inner .profile_name.select_box {
@@ -9128,11 +9136,11 @@ input[type="checkbox"] {
           height: 0;
           visibility: hidden; }
         .option_config .configuration .configuration_inner .input_box.profile_name input, .option_config .configuration .configuration_inner .profile_name.input_box_pass input, .option_config .configuration .configuration_inner .profile_name.select_box input {
-          -webkit-border-radius: 3px;
-          -moz-border-radius: 3px;
-          -ms-border-radius: 3px;
-          border-radius: 3px;
-          border: 1px solid #eeeeee;
+          -webkit-border-radius: 4px;
+          -moz-border-radius: 4px;
+          -ms-border-radius: 4px;
+          border-radius: 4px;
+          border: 1px solid #d6d6d6;
           padding: 10px 10px;
           width: 235px;
           float: left;
@@ -9169,10 +9177,10 @@ input[type="checkbox"] {
         bottom: -30px;
         color: #999999; }
     .option_config .configuration .configuration_inner .select_box {
-      -webkit-border-radius: 3px;
-      -moz-border-radius: 3px;
-      -ms-border-radius: 3px;
-      border-radius: 3px;
+      -webkit-border-radius: 4px;
+      -moz-border-radius: 4px;
+      -ms-border-radius: 4px;
+      border-radius: 4px;
       position: relative;
       padding: 0; }
       .option_config .configuration .configuration_inner .select_box select {
@@ -9315,25 +9323,47 @@ input[type="checkbox"] {
  Configuration_btn
 ---------------------------------------------------------------------------------------*/
 .configuration_btn {
+  text-align: center;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  border: 2px solid #fa3366;
+  padding: 0 15px 0 15px;
+  display: inline-block;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  line-height: 40px;
+  width: 130px;
+  height: 40px;
+  /*@include font_eng;*/
+  font-weight: normal;
+  font-style: normal;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   -ms-border-radius: 4px;
   border-radius: 4px;
-  width: 130px;
-  height: 40px;
-  line-height: 40px;
-  text-align: center;
-  color: white;
-  background: #3A87BC;
-  font-size: 13px;
-  font-size: 1.3rem;
-  font-weight: bold; }
+  font-size: 14px;
+  font-size: 1.4rem;
+  color: #ffffff;
+  background: #fa3366;
+  text-decoration: none;
+  letter-spacing: 0.05em; }
+  .configuration_btn:hover {
+    /*-webkit-box-shadow: inset 0 0 0 1px #b2b2b2;
+    box-shadow: inset 0 0 0 1px #b2b2b2;*/
+    outline: 0;
+    background: #e52355;
+    color: white;
+    border: 2px solid #e52355; }
   .configuration_btn.delete {
     background: #ff3366; }
-  .configuration_btn:hover {
-    opacity: 0.7;
-    filter: alpha(opacity=70);
-    cursor: pointer; }
 
 /*---------------------------------------------------------------------------------------
  Plan
@@ -9496,17 +9526,21 @@ input[type="checkbox"] {
  Profile
 ---------------------------------------------------------------------------------------*/
 h3.profile_title {
-  color: #333333;
-  height: 45px;
-  line-height: 45px;
-  padding-left: 13px;
-  margin: 0;
-  font-weight: bold;
-  background: #fff;
   position: relative;
-  z-index: 100;
-  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1); }
+  height: 38px;
+  padding: 0 20px;
+  border-bottom: 1px solid #f9f9f9;
+  /*-webkit-box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+  box-shadow: 0 1px 2px rgba(0,0,0,0.1);*/
+  line-height: 38px;
+  font-size: 13px;
+  font-size: 1.3rem;
+  font-family: 'Lato','Helvetica neue',Helvetica,Arial,sans-serif;
+  color: #333333;
+  font-weight: bold;
+  margin: 0;
+  white-space: nowrap;
+  text-overflow: ellipsis; }
 
 .profile {
   z-index: 10; }
@@ -9523,32 +9557,39 @@ h3.profile_title {
       -o-transition: opacity 0.33s cubic-bezier(0.645, 0.045, 0.355, 1) 0.25s;
       transition: opacity 0.33s cubic-bezier(0.645, 0.045, 0.355, 1) 0.25s; }
   .profile .noimage_box {
-    padding-top: 50px; }
+    padding-top: 30px; }
     .profile .noimage_box .noimage {
-      font-size: 30px;
-      font-size: 3rem;
+      font-size: 28px;
+      font-size: 2.8rem;
       font-family: 'Lato','Helvetica neue',Helvetica,Arial,sans-serif;
       font-weight: normal;
-      margin: 0 auto 18px auto;
+      margin: 0 auto 15px auto;
       text-align: center;
       width: 85px;
       height: 85px;
-      line-height: 85px; }
+      line-height: 85px;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale; }
   .profile .profile_name {
     font-size: 18px;
     font-size: 1.8rem;
-    margin-bottom: 3px;
+    margin-bottom: 1px;
     text-align: center;
     font-weight: bold; }
   .profile .profile_mail {
-    font-size: 13px;
-    font-size: 1.3rem;
+    font-size: 12px;
+    font-size: 1.2rem;
     text-align: center;
-    margin-bottom: 18px; }
+    margin-bottom: 16px;
+    color: #999999;
+    font-family: 'Lato','Helvetica neue',Helvetica,Arial,sans-serif;
+    letter-spacing: 0.8;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale; }
   .profile .profile_comment {
     font-size: 13px;
     font-size: 1.3rem;
-    padding: 0 30px 50px 30px; }
+    padding: 0 30px 45px 30px; }
   .profile .profile_link {
     text-align: center; }
     .profile .profile_link li {
@@ -9560,7 +9601,7 @@ h3.profile_title {
         -moz-border-radius: 100px;
         -ms-border-radius: 100px;
         border-radius: 100px;
-        background: #3A87BC;
+        background: #cccccc;
         height: 30px;
         width: 30px;
         line-height: 30px;
@@ -9585,9 +9626,10 @@ h3.profile_title {
           color: white; }
   .profile hr {
     width: 100%;
-    margin: 0 auto 0 auto; }
+    margin: 0 auto 0 auto;
+    /*display: none;*/ }
   .profile .profile_settings {
-    padding: 28px 0; }
+    padding: 15px 0; }
     .profile .profile_settings li {
       position: relative; }
       .profile .profile_settings li a {
@@ -9652,10 +9694,10 @@ h3.profile_title {
       font-weight: bold;
       margin-bottom: 10px; }
     #cancellation_box .modal-body.white .cancellation_contents .attention {
-      -webkit-border-radius: 3px;
-      -moz-border-radius: 3px;
-      -ms-border-radius: 3px;
-      border-radius: 3px;
+      -webkit-border-radius: 4px;
+      -moz-border-radius: 4px;
+      -ms-border-radius: 4px;
+      border-radius: 4px;
       background: #fbeceb;
       padding: 20px;
       color: #ff3366; }
