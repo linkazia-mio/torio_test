@@ -507,76 +507,75 @@
  Editable_lock
 ---------------------------------------------------------------------------------------*/
 .editable_lock {
-  @extend .editable;
-  // padding: 20px 74px 100px 74px;
-  // color: #111;
-  // @include fontsize(1.4);
-  // h1 {
-  //   @include fontsize(2.0);
-  //   font-weight: bold;
-  //   margin: 0 0 0 0;
-  // }
-  // p {
-  //   margin: 0 0 0 0;
-  //   line-height: 1.6;
-  //   *,
-  //   ::before,
-  //   ::after {
-  //   	border-style: none !important;
-  //   	border-width: 0;
-  //   }
-  //   br {
-  //     letter-spacing: normal; /* IE6、IE7対策 */
-  //   }
-  // }
-  // hr {
-  //   width: 100%;
-  //   margin: 30px auto 35px auto;
-  //   border-top: 1px solid $border_dark_gray;
-  // }
-  // blockquote {
-  //   @include fontsize(1.4);
-  //   padding: 10px 20px 5px 20px;
-  //   margin: 0 0 0;
-  //   border-left: 4px solid $dark_gray;
-  //   color: $dark_brack;
-  //   font-style: italic;
-  //   line-height: 1.8;
-  // }
-  // ol {
-  //   padding-left: 23px;
-  //   margin-bottom: 0;
-  // }
-  // ul {
-  //   padding-left: 20px;
-  //   margin-bottom: 0;
-  //   li {
-  //     list-style: disc;
-  //     line-height: 1.8;
-  //   }
-  // }
-  // pre {
-  //   @include border_radius(5px);
-  //   padding: 20px;
-  //   display: block;
-  //   margin: 0 0 0;
-  //   word-break: break-all;
-  //   word-wrap: break-word;
-  //   /*background-color: $white_gray;
-  //   border: 2px solid $dark_gray;*/
-  //   color: #dddddd;
-  //   background: #333333;
-  //   white-space: pre-wrap;
-  //   @include fontsize(1.3);
-  //   @include font-smoothing(off);
-  // }
-  // figure {
-  //   margin: 0;
-  // }
-  // small {
-  //   margin: 10px 0;
-  //   display: block;
-  // }
+  padding: 20px 74px 100px 74px;
+  color: #111;
+  @include fontsize(1.4);
+  h1 {
+    @include fontsize(2.0);
+    font-weight: bold;
+    margin: 0 0 0 0;
+  }
+  p {
+    margin: 0 0 0 0;
+    line-height: 1.6;
+    *,
+    ::before,
+    ::after {
+    	border-style: none !important;
+    	border-width: 0;
+    }
+    br {
+      letter-spacing: normal; /* IE6、IE7対策 */
+    }
+  }
+  hr {
+    width: 100%;
+    margin: 30px auto 35px auto;
+    border-top: 1px solid $border_dark_gray;
+  }
+  blockquote {
+    @include fontsize(1.4);
+    padding: 10px 20px 5px 20px;
+    margin: 0 0 0;
+    border-left: 4px solid $dark_gray;
+    color: $dark_brack;
+    font-style: italic;
+    line-height: 1.8;
+  }
+  ol {
+    padding-left: 23px;
+    margin-bottom: 0;
+  }
+  ul {
+    padding-left: 20px;
+    margin-bottom: 0;
+    li {
+      list-style: disc;
+      line-height: 1.8;
+    }
+  }
+  pre {
+    @include border_radius(5px);
+    padding: 20px;
+    display: block;
+    margin: 0 0 0;
+    word-break: break-all;
+    word-wrap: break-word;
+    /*background-color: $white_gray;
+    border: 2px solid $dark_gray;*/
+    color: #dddddd;
+    background: #333333;
+    white-space: pre-wrap;
+    @include fontsize(1.3);
+    @include font-smoothing(off);
+  }
+  figure {
+    margin: 0;
+  }
+  small {
+    margin: 10px 0;
+    display: block;
+  }
 }
 
 /*---------------------------------------------------------------------------------------

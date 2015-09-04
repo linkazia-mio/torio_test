@@ -8747,7 +8747,7 @@ input[type="checkbox"] {
     .editable p *,
     .editable p ::before,
     .editable p ::after {
-      border-style: none;
+      border-style: none !important;
       border-width: 0; }
     .editable p br {
       letter-spacing: normal;
@@ -8820,6 +8820,11 @@ input[type="checkbox"] {
   .editable_lock p {
     margin: 0 0 0 0;
     line-height: 1.6; }
+    .editable_lock p *,
+    .editable_lock p ::before,
+    .editable_lock p ::after {
+      border-style: none !important;
+      border-width: 0; }
     .editable_lock p br {
       letter-spacing: normal;
       /* IE6、IE7対策 */ }
