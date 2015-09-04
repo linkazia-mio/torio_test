@@ -1609,7 +1609,7 @@ header {
       right: 48px;
       top: 1px;
       i {
-        @include fontsize(2.1);
+        @include fontsize(2.2);
       }
       .number {
         vertical-align: super;
@@ -3072,11 +3072,11 @@ header {
             line-height: 38px;
             height: 46px;
             .icon-person-outline {
-              @include fontsize(2.5);
+              @include fontsize(2.6);
               position: absolute;
               color: $brack;
               left: 11px;
-              top: 12px;
+              top: 11px;
             }
             .icon-arrow-drop-down {
               @include fontsize(2.6);

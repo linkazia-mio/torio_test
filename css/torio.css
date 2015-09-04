@@ -2563,8 +2563,8 @@ header {
       right: 48px;
       top: 1px; }
       .page_menu .config .viewers i {
-        font-size: 21px;
-        font-size: 2.1rem; }
+        font-size: 22px;
+        font-size: 2.2rem; }
       .page_menu .config .viewers .number {
         vertical-align: super;
         font-family: 'Lato','Helvetica neue',Helvetica,Arial,sans-serif;
@@ -3916,12 +3916,12 @@ header {
         line-height: 38px;
         height: 46px; }
         .modal .modal-dialog .modal-content .modal-body .task_detail .requester .icon-person-outline, .modal .modal-dialog .modal-content .modal-body .task_detail .worker .icon-person-outline, .modal .modal-dialog .modal-content .modal-body .task_detail .limlt .icon-person-outline {
-          font-size: 25px;
-          font-size: 2.5rem;
+          font-size: 26px;
+          font-size: 2.6rem;
           position: absolute;
           color: #555555;
           left: 11px;
-          top: 12px; }
+          top: 11px; }
         .modal .modal-dialog .modal-content .modal-body .task_detail .requester .icon-arrow-drop-down, .modal .modal-dialog .modal-content .modal-body .task_detail .worker .icon-arrow-drop-down, .modal .modal-dialog .modal-content .modal-body .task_detail .limlt .icon-arrow-drop-down {
           font-size: 26px;
           font-size: 2.6rem;
