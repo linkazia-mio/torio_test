@@ -1,0 +1,153 @@
+/*---------------------------------------------------------------------------------------
+ common
+---------------------------------------------------------------------------------------*/
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+html {
+  overflow: hidden !important;
+}
+body {
+  font-family:'ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro','メイリオ',Meiryo,'ＭＳ Ｐゴシック','MS PGothic',sans-serif;
+  @include fontsize(1.4);
+  line-height: 1.6;
+  color: $dark_brack;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  /*text-rendering: optimizelegibility;*/
+}
+pre {
+  font-family: Monaco,Menlo,Consolas,"Courier New",monospace;
+}
+.wrapper {
+  height: 100%;
+  overflow: hidden;
+  &.front{
+    overflow: auto !important;
+  }
+}
+.wrapper_public {
+  height: 100%;
+  background: $white_gray;
+}
+a {
+  &:hover {
+    text-decoration: none;
+  }
+}
+ul {
+  li {
+    list-style: none;
+  }
+}
+p {
+  margin: 0;
+}
+button {
+  &:focus {
+    outline: none;
+  }
+}
+.clearfix{
+  *zoom:1;
+  &:after{
+    content: ".";
+    display: block;
+    clear: both;
+    height: 0;
+    visibility:hidden;
+  }
+}
+
+/*---------------------------------------------------------------------------------------
+ Footer
+---------------------------------------------------------------------------------------*/
+footer{
+  &.front{
+    width: 100%;
+    margin: 0 auto;
+    background: url(#{$img_path}footer_bg.png) -10% center #282d37;
+    background-size: 100%;
+    color: #ffffff;
+    min-height: 500px;
+    @extend .clearfix;
+    .footer_inner{
+      width: 100%;
+      margin: 0 auto;
+      padding: 90px 0 0 0;
+      @include clearfix;
+      .left{
+        float: left;
+        background: url(#{$img_path}logo_icon_color.png) no-repeat top left;
+        background-size: 60px 60px;
+        padding: 0 0 0 100px;
+        ul{
+          li{
+            display: inline-block;
+            padding-right: 15px;
+            @include fontsize(1.4);
+            a{
+             color: #FFFFFF;
+            }
+          }
+        }
+      }
+      .right{
+        float: right;
+        .select_box_footer {
+          position: relative;
+          background: #363b43;
+          @include border_radius(3px);
+          select {
+            line-height: 44px;
+            width: 140px;
+            height: 40px;
+            border: none;
+            padding: 0 0 0 13px;
+            &:focus {
+              outline: none;
+            }
+          }
+          &:after {
+            @include fontsize(2.6);
+            position: absolute;
+            right: 5px;
+            top: 2px;
+            height: 26px;
+            width: 26px;
+            font-family: 'torio_icon';
+            content: "\e60a";
+            color: #ffffff;
+            visibility: visible;
+            z-index: 1;
+            display: block;
+          }
+        }
+      }
+      .copyright{
+        @include fontsize(1.4);
+        color: #999999;
+        margin: 25px 0 0 0;
+        position: relative;
+        span{
+          padding-right: 30px;
+          &:after {
+            font-family: 'torio_icon';
+            content: "\e669";
+            color: #fa3366;
+            @include fontsize(2.4);
+            position: absolute;
+            top:-8px;
+            left: 74px;
+          }
+        }
+      }
+    }
+  }
+}
