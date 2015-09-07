@@ -1201,8 +1201,8 @@ footer.front {
   width: 100%;
   margin: 0 auto;
   height: 100%;
-  min-height: 465px;
-  max-height: 465px;
+  min-height: 460px;
+  max-height: 460px;
   width: 100%;
   position: relative;
   overflow: hidden; }
@@ -1237,7 +1237,7 @@ footer.front {
             -o-transition: all 0.3s ease-in-out;
             transition: all 0.3s ease-in-out;
             cursor: pointer;
-            padding: 0 15px 0 15px;
+            padding: 0 10px 0 10px;
             display: inline-block;
             font-size: 14px;
             font-size: 1.4rem;
@@ -1322,28 +1322,32 @@ footer.front {
       font-size: 23px;
       font-size: 2.3rem;
       color: #FFFFFF;
-      line-height: 42px;
-      margin: 92px auto 20px;
+      line-height: 36px;
+      margin: 105px auto 20px;
       -webkit-font-smoothing: antialiased;
-      -moz-osx-font-smoothing: grayscale; }
+      -moz-osx-font-smoothing: grayscale;
+      font-weight: normal; }
     .kv .title h2 {
-      font-size: 13px;
-      font-size: 1.3rem;
+      font-size: 11px;
+      font-size: 1.1rem;
       color: #FFFFFF;
       -webkit-font-smoothing: antialiased;
-      -moz-osx-font-smoothing: grayscale; }
+      -moz-osx-font-smoothing: grayscale;
+      font-weight: normal; }
     .kv .title #top_slider {
-      width: 320px;
-      margin: 60px auto 0;
+      width: 300px;
+      height: 180px;
+      margin: 70px auto 0;
       text-align: center;
       position: relative;
       background: url(../images/top_kv_bg.png) no-repeat top left #ffffff;
+      background-size: 300px 180px;
       -webkit-border-radius: 5px 5px 0 0;
       -moz-border-radius: 5px 5px 0 0;
       -ms-border-radius: 5px 5px 0 0;
       border-radius: 5px 5px 0 0; }
       .kv .title #top_slider img {
-        width: 320px;
+        width: 300px;
         text-align: center; }
 
 #top_change {
@@ -1376,7 +1380,7 @@ footer.front {
           -o-transition: all 0.3s ease-in-out;
           transition: all 0.3s ease-in-out;
           cursor: pointer;
-          padding: 0 15px 0 15px;
+          padding: 0 10px 0 10px;
           display: inline-block;
           font-size: 14px;
           font-size: 1.4rem;
