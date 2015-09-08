@@ -73,25 +73,23 @@ footer{
     width: 100%;
     margin: 0 auto;
     background: url(#{$img_path}footer_bg.png) -10% center #282d37;
-    background-size: 100%;
+    background-size: 200%;
     color: #ffffff;
-    min-height: 500px;
+    padding-bottom: 100px;
     @extend .clearfix;
     .footer_inner{
-      width: 100%;
+      width: 85%;
       margin: 0 auto;
-      padding: 90px 0 0 0;
+      padding: 70px 0 0 0;
       @include clearfix;
       .left{
-        float: left;
         background: url(#{$img_path}logo_icon_color.png) no-repeat top left;
-        background-size: 60px 60px;
-        padding: 0 0 0 100px;
+        background-size: 50px 50px;
+        padding: 70px 0 0 0;
         ul{
           li{
-            display: inline-block;
-            padding-right: 15px;
             @include fontsize(1.4);
+            line-height: 30px;
             a{
              color: #FFFFFF;
             }
@@ -99,7 +97,7 @@ footer{
         }
       }
       .right{
-        float: right;
+        margin-top: 35px;
         .select_box_footer {
           position: relative;
           background: #363b43;
@@ -133,7 +131,7 @@ footer{
       .copyright{
         @include fontsize(1.4);
         color: #999999;
-        margin: 25px 0 0 0;
+        margin: 40px 0 0 0;
         position: relative;
         span{
           padding-right: 30px;
