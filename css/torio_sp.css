@@ -1154,7 +1154,7 @@ footer.front {
         border-radius: 3px; }
         footer.front .footer_inner .right .select_box_footer select {
           line-height: 44px;
-          width: 140px;
+          width: 100%;
           height: 40px;
           border: none;
           padding: 0 0 0 13px; }
