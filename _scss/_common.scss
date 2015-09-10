@@ -2579,6 +2579,7 @@ header {
           right: 20px;
           top: 18px;
           color: $white_brack;
+          cursor: pointer;
           i {
             @include fontsize(2.6);
           }

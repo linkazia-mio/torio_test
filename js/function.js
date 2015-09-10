@@ -233,6 +233,14 @@ window.onload=function(){
       popoverBig.hide();
       $('.modal_option_box').toggle();
     });
+    //File Option
+    $('.modal-body .option').click(function (event) {
+      $('.item_option_box').toggle( 'fade', '', 100 );
+      event.stopPropagation();
+      popover.hide();
+      popoverBig.hide();
+      $('.item_option_box').toggle();
+    });
     //Limit_add_time
     $('.limlt').click(function (event) {
       $('.limit_add_time').toggle( 'fade', '', 100 );
@@ -281,10 +289,6 @@ window.onload=function(){
     $('#note_1 .comment_count').click(function (event) {
       $('#note_1 .note_comment').toggle();
       $('#note_1 .note_edit_inner_comment').toggleClass('no_border');
-    });
-    //comment_count
-    $('.item .option').click(function (event) {
-      $('.item_option_box').toggle( 'fade', '', 100 );
     });
     //configuration_btn_show
     $('.cancellation .configuration_btn_show .configuration_open').click(function (event) {
