@@ -5820,7 +5820,7 @@ footer.front {
           #file_detail .modal-dialog .modal-body .item .footer .comment_entry button {
             width: 100px;
             position: absolute;
-            right: 0;
+            right: 100px;
             bottom: -40px; }
             #file_detail .modal-dialog .modal-body .item .footer .comment_entry button.btn-default {
               border-color: #f5f5f5;
