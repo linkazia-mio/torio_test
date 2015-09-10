@@ -440,33 +440,33 @@ window.onload=function(){
       });
 
       //ファイルスライド
-      jQuery('#file_detail').on('show.bs.modal', function(){
-        setTimeout(function(){slider.reloadSlider();},200);
-      });
+//      jQuery('#file_detail').on('show.bs.modal', function(){
+//        setTimeout(function(){slider.reloadSlider();},200);
+//      });
 
-      $('.slide').click(function (event) {
-        jQuery('#file_detail').show();
-        var slider = jQuery('.file_slide').bxSlider({
-          mode: 'fade',
-          speed: 0,
-          adaptiveHeight : true,
-          adaptiveHeightSpeed: 0,
-          preloadImages: 'visible',
-          autoReload: true
-        });
-      });
-      $('#file_detail').click(function (event) {
-        jQuery('#file_detail').hide();
-        event.stopPropagation();
-      });
-      $('.file_detail_close').click(function (event) {
-        jQuery('#file_detail').hide();
-        event.stopPropagation();
-      });
-      $('.file_detail_inner').click(function (event) {
-        jQuery('#file_detail').show();
-        event.stopPropagation();
-      });
+//      $('.slide').click(function (event) {
+//        jQuery('#file_detail').show();
+//        var slider = jQuery('.file_slide').bxSlider({
+//          mode: 'fade',
+//          speed: 0,
+//          adaptiveHeight : true,
+//          adaptiveHeightSpeed: 0,
+//          preloadImages: 'visible',
+//          autoReload: true
+//        });
+//      });
+//      $('#file_detail').click(function (event) {
+//        jQuery('#file_detail').hide();
+//        event.stopPropagation();
+//      });
+//      $('.file_detail_close').click(function (event) {
+//        jQuery('#file_detail').hide();
+//        event.stopPropagation();
+//      });
+//      $('.file_detail_inner').click(function (event) {
+//        jQuery('#file_detail').show();
+//        event.stopPropagation();
+//      });
 
       //タスク入れ替え
       jQuery('.task_replacement').sortable({
@@ -895,14 +895,6 @@ function actCustomScrollbar(){
         }
      });
      $('#viewers_box .modal-body').mCustomScrollbar({
-       autoHideScrollbar: true,
-       scrollInertia: 0,
-       advanced:{
-          autoScrollOnFocus: true,
-          updateOnContentResize: true
-        }
-     });
-     $('#file_detail').mCustomScrollbar({
        autoHideScrollbar: true,
        scrollInertia: 0,
        advanced:{
