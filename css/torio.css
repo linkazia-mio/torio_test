@@ -1103,9 +1103,9 @@ p {
 button:focus {
   outline: none; }
 
-.clearfix, .alart .me, .front_header_menu, #viewers_box .modal-body .view_group_member, #note_viewers_box .modal-body .view_group_member, #note_like_box .modal-body .view_group_member, footer.front, .file, #add_file .modal-body .local_up .field, #add_file .modal-body .web_up .field, #add_file2 .modal-body .local_up .field, #add_file2 .modal-body .web_up .field, #add_file3 .modal-body .local_up .field, #add_file3 .modal-body .web_up .field, #add_file4 .modal-body .local_up .field, #add_file4 .modal-body .web_up .field, #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .item .header, .kv #top_header .header_inner .front_header_menu {
+.clearfix, .alart .me, .front_header_menu, #viewers_box .modal-body .view_group_member, #note_viewers_box .modal-body .view_group_member, #note_like_box .modal-body .view_group_member, footer.front, .file, #add_file .modal-body .local_up .field, #add_file .modal-body .web_up .field, #add_file2 .modal-body .local_up .field, #add_file2 .modal-body .web_up .field, #add_file3 .modal-body .local_up .field, #add_file3 .modal-body .web_up .field, #add_file4 .modal-body .local_up .field, #add_file4 .modal-body .web_up .field, #file_detail_new .modal-dialog .modal-body .item .header, .kv #top_header .header_inner .front_header_menu {
   *zoom: 1; }
-  .clearfix:after, .alart .me:after, .front_header_menu:after, #viewers_box .modal-body .view_group_member:after, #note_viewers_box .modal-body .view_group_member:after, #note_like_box .modal-body .view_group_member:after, footer.front:after, .file:after, #add_file .modal-body .local_up .field:after, #add_file .modal-body .web_up .field:after, #add_file2 .modal-body .local_up .field:after, #add_file2 .modal-body .web_up .field:after, #add_file3 .modal-body .local_up .field:after, #add_file3 .modal-body .web_up .field:after, #add_file4 .modal-body .local_up .field:after, #add_file4 .modal-body .web_up .field:after, #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .item .header:after, .kv #top_header .header_inner .front_header_menu:after {
+  .clearfix:after, .alart .me:after, .front_header_menu:after, #viewers_box .modal-body .view_group_member:after, #note_viewers_box .modal-body .view_group_member:after, #note_like_box .modal-body .view_group_member:after, footer.front:after, .file:after, #add_file .modal-body .local_up .field:after, #add_file .modal-body .web_up .field:after, #add_file2 .modal-body .local_up .field:after, #add_file2 .modal-body .web_up .field:after, #add_file3 .modal-body .local_up .field:after, #add_file3 .modal-body .web_up .field:after, #add_file4 .modal-body .local_up .field:after, #add_file4 .modal-body .web_up .field:after, #file_detail_new .modal-dialog .modal-body .item .header:after, .kv #top_header .header_inner .front_header_menu:after {
     content: ".";
     display: block;
     clear: both;
@@ -5459,451 +5459,431 @@ footer.front {
   border: 2px solid #ff3366; }
 
 /*File Detail*/
-#file_detail {
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 1050;
-  display: none;
-  height: 100%;
-  width: 100%;
-  overflow: hidden;
-  background: rgba(51, 51, 51, 0.76);
+#file_detail_new .modal-dialog {
+  width: 800px;
   -webkit-font-smoothing: subpixel-antialiased;
-  -moz-osx-font-smoothing: auto; }
-  #file_detail .file_detail_inner {
-    width: 800px;
-    margin: 0 auto;
-    padding: 30px 0 60px 0;
-    /*bx-wrapper*/ }
-    #file_detail .file_detail_inner .bx-wrapper {
-      -webkit-border-radius: 5px;
-      -moz-border-radius: 5px;
-      -ms-border-radius: 5px;
-      border-radius: 5px;
-      position: relative;
-      background: #fff;
-      /*border: 1px solid #c4c9cc;
-      border-bottom-color: #c4c9cc;*/
-      box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15), 0 1px 3px 0 rgba(0, 0, 0, 0.25); }
-      #file_detail .file_detail_inner .bx-wrapper .bx-loading {
-        -webkit-border-radius: 5px;
-        -moz-border-radius: 5px;
-        -ms-border-radius: 5px;
-        border-radius: 5px;
-        min-height: 50px;
-        background: url(../images/bx_loader.gif) center center no-repeat #fff;
-        height: 100%;
-        width: 100%;
+  -moz-osx-font-smoothing: auto;
+  background: #ffffff;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  border-radius: 5px;
+  position: relative; }
+  #file_detail_new .modal-dialog .bx-loading {
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    border-radius: 5px;
+    min-height: 50px;
+    background: url(../images/bx_loader.gif) center center no-repeat #fff;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2000; }
+  #file_detail_new .modal-dialog .bx-controls .bx-controls-direction {
+    font-family: 'torio_icon'; }
+    #file_detail_new .modal-dialog .bx-controls .bx-controls-direction .bx-prev {
+      position: absolute;
+      top: 180px;
+      left: -80px;
+      height: 0;
+      padding-top: 96px;
+      width: 60px;
+      overflow: hidden;
+      color: #f9f9f9;
+      text-decoration: none; }
+      #file_detail_new .modal-dialog .bx-controls .bx-controls-direction .bx-prev:before {
+        font-size: 65px;
+        font-size: 6.5rem;
         position: absolute;
         top: 0;
-        left: 0;
-        z-index: 2000; }
-      #file_detail .file_detail_inner .bx-wrapper .bx-controls .bx-pager {
-        display: none; }
-      #file_detail .file_detail_inner .bx-wrapper .bx-controls .bx-controls-direction {
-        font-family: 'torio_icon'; }
-        #file_detail .file_detail_inner .bx-wrapper .bx-controls .bx-controls-direction .bx-prev {
-          position: absolute;
-          top: 180px;
-          left: -80px;
-          height: 0;
-          padding-top: 96px;
-          width: 60px;
-          overflow: hidden;
-          color: #cccccc;
-          text-decoration: none; }
-          #file_detail .file_detail_inner .bx-wrapper .bx-controls .bx-controls-direction .bx-prev:before {
-            font-size: 65px;
-            font-size: 6.5rem;
-            position: absolute;
-            top: 0;
-            content: "\e62d"; }
-            #file_detail .file_detail_inner .bx-wrapper .bx-controls .bx-controls-direction .bx-prev:before:hover {
-              color: #ffffff; }
-        #file_detail .file_detail_inner .bx-wrapper .bx-controls .bx-controls-direction .bx-next {
-          position: absolute;
-          top: 180px;
-          right: -70px;
-          height: 0;
-          padding-top: 96px;
-          width: 60px;
-          overflow: hidden;
-          color: #cccccc;
-          text-decoration: none; }
-          #file_detail .file_detail_inner .bx-wrapper .bx-controls .bx-controls-direction .bx-next:before {
-            font-size: 65px;
-            font-size: 6.5rem;
-            position: absolute;
-            top: 0;
-            content: "\e62e"; }
-            #file_detail .file_detail_inner .bx-wrapper .bx-controls .bx-controls-direction .bx-next:before:hover {
-              color: #ffffff; }
-      #file_detail .file_detail_inner .bx-wrapper .bx-viewport {
-        min-height: 300px;
-        padding-bottom: 35px; }
-        #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .file_icon {
+        content: "\e62d"; }
+        #file_detail_new .modal-dialog .bx-controls .bx-controls-direction .bx-prev:before:hover {
+          color: #ffffff; }
+    #file_detail_new .modal-dialog .bx-controls .bx-controls-direction .bx-next {
+      position: absolute;
+      top: 180px;
+      right: -70px;
+      height: 0;
+      padding-top: 96px;
+      width: 60px;
+      overflow: hidden;
+      color: #f9f9f9;
+      text-decoration: none; }
+      #file_detail_new .modal-dialog .bx-controls .bx-controls-direction .bx-next:before {
+        font-size: 65px;
+        font-size: 6.5rem;
+        position: absolute;
+        top: 0;
+        content: "\e62e"; }
+        #file_detail_new .modal-dialog .bx-controls .bx-controls-direction .bx-next:before:hover {
+          color: #ffffff; }
+  #file_detail_new .modal-dialog .modal-body {
+    width: 800px;
+    margin: 0 auto;
+    padding: 0 0 35px 0;
+    background: #ffffff;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    border-radius: 5px; }
+    #file_detail_new .modal-dialog .modal-body .file_icon {
+      text-align: center;
+      height: 200px; }
+      #file_detail_new .modal-dialog .modal-body .file_icon i {
+        font-size: 100px;
+        font-size: 10rem;
+        line-height: 200px; }
+      #file_detail_new .modal-dialog .modal-body .file_icon.excel, #file_detail_new .modal-dialog .modal-body .file .file_list .panel .panel-body.type_file .file_icon.word, .file .file_list .panel .panel-body.type_file #file_detail_new .modal-dialog .modal-body .file_icon.word, #file_detail_new .modal-dialog .modal-body .file .file_list .panel .panel-body.type_file .file_icon.powerpoint, .file .file_list .panel .panel-body.type_file #file_detail_new .modal-dialog .modal-body .file_icon.powerpoint, #file_detail_new .modal-dialog .modal-body .file .file_list .panel .panel-body.type_file .file_icon.pdf, .file .file_list .panel .panel-body.type_file #file_detail_new .modal-dialog .modal-body .file_icon.pdf, #file_detail_new .modal-dialog .modal-body .file .file_list .panel .panel-body.type_file .file_icon.video, .file .file_list .panel .panel-body.type_file #file_detail_new .modal-dialog .modal-body .file_icon.video, #file_detail_new .modal-dialog .modal-body .file .file_list .panel .panel-body.type_file .file_icon.googledrive, .file .file_list .panel .panel-body.type_file #file_detail_new .modal-dialog .modal-body .file_icon.googledrive, #file_detail_new .modal-dialog .modal-body .file .file_list .panel .panel-body.type_file .file_icon.text, .file .file_list .panel .panel-body.type_file #file_detail_new .modal-dialog .modal-body .file_icon.text, #file_detail_new .modal-dialog .modal-body .file .file_list .panel .panel-body.type_file .file_icon.image, .file .file_list .panel .panel-body.type_file #file_detail_new .modal-dialog .modal-body .file_icon.image, #file_detail_new .modal-dialog .modal-body .file .file_list .panel .panel-body.type_file .file_icon.list, .file .file_list .panel .panel-body.type_file #file_detail_new .modal-dialog .modal-body .file_icon.list, #file_detail_new .modal-dialog .modal-body .file .file_list .panel .panel-body.type_file .file_icon.graph, .file .file_list .panel .panel-body.type_file #file_detail_new .modal-dialog .modal-body .file_icon.graph, #file_detail_new .modal-dialog .modal-body .file .file_list .panel .panel-body.type_file .file_icon.dropbox, .file .file_list .panel .panel-body.type_file #file_detail_new .modal-dialog .modal-body .file_icon.dropbox, #file_detail_new .modal-dialog #add_file .modal-body .type_file .file_icon.word, #add_file #file_detail_new .modal-dialog .modal-body .type_file .file_icon.word, #file_detail_new .modal-dialog #add_file2 .modal-body .type_file .file_icon.word, #add_file2 #file_detail_new .modal-dialog .modal-body .type_file .file_icon.word, #file_detail_new .modal-dialog #add_file3 .modal-body .type_file .file_icon.word, #add_file3 #file_detail_new .modal-dialog .modal-body .type_file .file_icon.word, #file_detail_new .modal-dialog #add_file4 .modal-body .type_file .file_icon.word, #add_file4 #file_detail_new .modal-dialog .modal-body .type_file .file_icon.word, #file_detail_new .modal-dialog #add_file .modal-body .type_file .file_icon.powerpoint, #add_file #file_detail_new .modal-dialog .modal-body .type_file .file_icon.powerpoint, #file_detail_new .modal-dialog #add_file2 .modal-body .type_file .file_icon.powerpoint, #add_file2 #file_detail_new .modal-dialog .modal-body .type_file .file_icon.powerpoint, #file_detail_new .modal-dialog #add_file3 .modal-body .type_file .file_icon.powerpoint, #add_file3 #file_detail_new .modal-dialog .modal-body .type_file .file_icon.powerpoint, #file_detail_new .modal-dialog #add_file4 .modal-body .type_file .file_icon.powerpoint, #add_file4 #file_detail_new .modal-dialog .modal-body .type_file .file_icon.powerpoint, #file_detail_new .modal-dialog #add_file .modal-body .type_file .file_icon.pdf, #add_file #file_detail_new .modal-dialog .modal-body .type_file .file_icon.pdf, #file_detail_new .modal-dialog #add_file2 .modal-body .type_file .file_icon.pdf, #add_file2 #file_detail_new .modal-dialog .modal-body .type_file .file_icon.pdf, #file_detail_new .modal-dialog #add_file3 .modal-body .type_file .file_icon.pdf, #add_file3 #file_detail_new .modal-dialog .modal-body .type_file .file_icon.pdf, #file_detail_new .modal-dialog #add_file4 .modal-body .type_file .file_icon.pdf, #add_file4 #file_detail_new .modal-dialog .modal-body .type_file .file_icon.pdf, #file_detail_new .modal-dialog #add_file .modal-body .type_file .file_icon.video, #add_file #file_detail_new .modal-dialog .modal-body .type_file .file_icon.video, #file_detail_new .modal-dialog #add_file .modal-body .type_file .file_icon.googledrive, #add_file #file_detail_new .modal-dialog .modal-body .type_file .file_icon.googledrive, #file_detail_new .modal-dialog #add_file2 .modal-body .type_file .file_icon.video, #add_file2 #file_detail_new .modal-dialog .modal-body .type_file .file_icon.video, #file_detail_new .modal-dialog #add_file2 .modal-body .type_file .file_icon.googledrive, #add_file2 #file_detail_new .modal-dialog .modal-body .type_file .file_icon.googledrive, #file_detail_new .modal-dialog #add_file3 .modal-body .type_file .file_icon.video, #add_file3 #file_detail_new .modal-dialog .modal-body .type_file .file_icon.video, #file_detail_new .modal-dialog #add_file3 .modal-body .type_file .file_icon.googledrive, #add_file3 #file_detail_new .modal-dialog .modal-body .type_file .file_icon.googledrive, #file_detail_new .modal-dialog #add_file4 .modal-body .type_file .file_icon.video, #add_file4 #file_detail_new .modal-dialog .modal-body .type_file .file_icon.video, #file_detail_new .modal-dialog #add_file4 .modal-body .type_file .file_icon.googledrive, #add_file4 #file_detail_new .modal-dialog .modal-body .type_file .file_icon.googledrive, #file_detail_new .modal-dialog #add_file .modal-body .type_file .file_icon.text, #add_file #file_detail_new .modal-dialog .modal-body .type_file .file_icon.text, #file_detail_new .modal-dialog #add_file .modal-body .type_file .file_icon.image, #add_file #file_detail_new .modal-dialog .modal-body .type_file .file_icon.image, #file_detail_new .modal-dialog #add_file .modal-body .type_file .file_icon.list, #add_file #file_detail_new .modal-dialog .modal-body .type_file .file_icon.list, #file_detail_new .modal-dialog #add_file .modal-body .type_file .file_icon.graph, #add_file #file_detail_new .modal-dialog .modal-body .type_file .file_icon.graph, #file_detail_new .modal-dialog #add_file2 .modal-body .type_file .file_icon.text, #add_file2 #file_detail_new .modal-dialog .modal-body .type_file .file_icon.text, #file_detail_new .modal-dialog #add_file2 .modal-body .type_file .file_icon.image, #add_file2 #file_detail_new .modal-dialog .modal-body .type_file .file_icon.image, #file_detail_new .modal-dialog #add_file2 .modal-body .type_file .file_icon.list, #add_file2 #file_detail_new .modal-dialog .modal-body .type_file .file_icon.list, #file_detail_new .modal-dialog #add_file2 .modal-body .type_file .file_icon.graph, #add_file2 #file_detail_new .modal-dialog .modal-body .type_file .file_icon.graph, #file_detail_new .modal-dialog #add_file3 .modal-body .type_file .file_icon.text, #add_file3 #file_detail_new .modal-dialog .modal-body .type_file .file_icon.text, #file_detail_new .modal-dialog #add_file3 .modal-body .type_file .file_icon.image, #add_file3 #file_detail_new .modal-dialog .modal-body .type_file .file_icon.image, #file_detail_new .modal-dialog #add_file3 .modal-body .type_file .file_icon.list, #add_file3 #file_detail_new .modal-dialog .modal-body .type_file .file_icon.list, #file_detail_new .modal-dialog #add_file3 .modal-body .type_file .file_icon.graph, #add_file3 #file_detail_new .modal-dialog .modal-body .type_file .file_icon.graph, #file_detail_new .modal-dialog #add_file4 .modal-body .type_file .file_icon.text, #add_file4 #file_detail_new .modal-dialog .modal-body .type_file .file_icon.text, #file_detail_new .modal-dialog #add_file4 .modal-body .type_file .file_icon.image, #add_file4 #file_detail_new .modal-dialog .modal-body .type_file .file_icon.image, #file_detail_new .modal-dialog #add_file4 .modal-body .type_file .file_icon.list, #add_file4 #file_detail_new .modal-dialog .modal-body .type_file .file_icon.list, #file_detail_new .modal-dialog #add_file4 .modal-body .type_file .file_icon.graph, #add_file4 #file_detail_new .modal-dialog .modal-body .type_file .file_icon.graph, #file_detail_new .modal-dialog #add_file .modal-body .type_file .file_icon.dropbox, #add_file #file_detail_new .modal-dialog .modal-body .type_file .file_icon.dropbox, #file_detail_new .modal-dialog #add_file2 .modal-body .type_file .file_icon.dropbox, #add_file2 #file_detail_new .modal-dialog .modal-body .type_file .file_icon.dropbox, #file_detail_new .modal-dialog #add_file3 .modal-body .type_file .file_icon.dropbox, #add_file3 #file_detail_new .modal-dialog .modal-body .type_file .file_icon.dropbox, #file_detail_new .modal-dialog #add_file4 .modal-body .type_file .file_icon.dropbox, #add_file4 #file_detail_new .modal-dialog .modal-body .type_file .file_icon.dropbox {
+        color: #39865a;
+        background: #33c16f; }
+      #file_detail_new .modal-dialog .modal-body .file_icon.word {
+        color: #127fad;
+        background: #279fd1; }
+      #file_detail_new .modal-dialog .modal-body .file_icon.powerpoint {
+        color: #b83711;
+        background: #e05d37; }
+      #file_detail_new .modal-dialog .modal-body .file_icon.pdf {
+        color: #cf2d3a;
+        background: #ea5d65; }
+      #file_detail_new .modal-dialog .modal-body .file_icon.pdf {
+        color: #cf2d3a;
+        background: #ea5d65; }
+      #file_detail_new .modal-dialog .modal-body .file_icon.video, #file_detail_new .modal-dialog .modal-body .file_icon.googledrive {
+        color: #7a7a7a;
+        background: #f5f5f5; }
+      #file_detail_new .modal-dialog .modal-body .file_icon.text, #file_detail_new .modal-dialog .modal-body .file_icon.image, #file_detail_new .modal-dialog .modal-body .file_icon.list, #file_detail_new .modal-dialog .modal-body .file_icon.graph {
+        color: #e3e3e3;
+        background: #f5f5f5; }
+      #file_detail_new .modal-dialog .modal-body .file_icon.dropbox {
+        color: #fff;
+        background: #007ee5; }
+    #file_detail_new .modal-dialog .modal-body .item {
+      width: 100% !important; }
+      #file_detail_new .modal-dialog .modal-body .item .header {
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+        -ms-border-radius: 4px;
+        border-radius: 4px;
+        position: relative;
+        padding: 20px 20px 20px;
+        /*border-bottom: 1px solid $border_white_gray;*/ }
+        #file_detail_new .modal-dialog .modal-body .item .header h4 {
+          font-size: 16px;
+          font-size: 1.6rem;
+          font-weight: bold;
+          margin-top: 12px;
+          -webkit-font-smoothing: antialiased;
+          -moz-osx-font-smoothing: grayscale; }
+        #file_detail_new .modal-dialog .modal-body .item .header .user_image {
+          float: left;
+          margin-right: 12px; }
+          #file_detail_new .modal-dialog .modal-body .item .header .user_image img {
+            height: 40px;
+            width: 40px; }
+        #file_detail_new .modal-dialog .modal-body .item .header .noimage {
+          font-family: 'Lato','Helvetica neue',Helvetica,Arial,sans-serif;
+          font-size: 12px;
+          font-size: 1.2rem;
+          line-height: 40px;
           text-align: center;
-          height: 200px; }
-          #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .file_icon i {
-            font-size: 100px;
-            font-size: 10rem;
-            line-height: 200px; }
-          #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .file_icon.excel, #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .file .file_list .panel .panel-body.type_file .file_icon.word, .file .file_list .panel .panel-body.type_file #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .file_icon.word, #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .file .file_list .panel .panel-body.type_file .file_icon.powerpoint, .file .file_list .panel .panel-body.type_file #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .file_icon.powerpoint, #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .file .file_list .panel .panel-body.type_file .file_icon.pdf, .file .file_list .panel .panel-body.type_file #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .file_icon.pdf, #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .file .file_list .panel .panel-body.type_file .file_icon.video, .file .file_list .panel .panel-body.type_file #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .file_icon.video, #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .file .file_list .panel .panel-body.type_file .file_icon.googledrive, .file .file_list .panel .panel-body.type_file #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .file_icon.googledrive, #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .file .file_list .panel .panel-body.type_file .file_icon.text, .file .file_list .panel .panel-body.type_file #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .file_icon.text, #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .file .file_list .panel .panel-body.type_file .file_icon.image, .file .file_list .panel .panel-body.type_file #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .file_icon.image, #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .file .file_list .panel .panel-body.type_file .file_icon.list, .file .file_list .panel .panel-body.type_file #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .file_icon.list, #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .file .file_list .panel .panel-body.type_file .file_icon.graph, .file .file_list .panel .panel-body.type_file #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .file_icon.graph, #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .file .file_list .panel .panel-body.type_file .file_icon.dropbox, .file .file_list .panel .panel-body.type_file #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .file_icon.dropbox, #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide #add_file .modal-body .type_file .file_icon.word, #add_file .modal-body .type_file #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .file_icon.word, #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide #add_file2 .modal-body .type_file .file_icon.word, #add_file2 .modal-body .type_file #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .file_icon.word, #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide #add_file3 .modal-body .type_file .file_icon.word, #add_file3 .modal-body .type_file #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .file_icon.word, #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide #add_file4 .modal-body .type_file .file_icon.word, #add_file4 .modal-body .type_file #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .file_icon.word, #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide #add_file .modal-body .type_file .file_icon.powerpoint, #add_file .modal-body .type_file #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .file_icon.powerpoint, #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide #add_file2 .modal-body .type_file .file_icon.powerpoint, #add_file2 .modal-body .type_file #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .file_icon.powerpoint, #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide #add_file3 .modal-body .type_file .file_icon.powerpoint, #add_file3 .modal-body .type_file #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .file_icon.powerpoint, #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide #add_file4 .modal-body .type_file .file_icon.powerpoint, #add_file4 .modal-body .type_file #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .file_icon.powerpoint, #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide #add_file .modal-body .type_file .file_icon.pdf, #add_file .modal-body .type_file #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .file_icon.pdf, #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide #add_file2 .modal-body .type_file .file_icon.pdf, #add_file2 .modal-body .type_file #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .file_icon.pdf, #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide #add_file3 .modal-body .type_file .file_icon.pdf, #add_file3 .modal-body .type_file #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .file_icon.pdf, #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide #add_file4 .modal-body .type_file .file_icon.pdf, #add_file4 .modal-body .type_file #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .file_icon.pdf, #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide #add_file .modal-body .type_file .file_icon.video, #add_file .modal-body .type_file #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .file_icon.video, #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide #add_file .modal-body .type_file .file_icon.googledrive, #add_file .modal-body .type_file #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .file_icon.googledrive, #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide #add_file2 .modal-body .type_file .file_icon.video, #add_file2 .modal-body .type_file #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .file_icon.video, #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide #add_file2 .modal-body .type_file .file_icon.googledrive, #add_file2 .modal-body .type_file #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .file_icon.googledrive, #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide #add_file3 .modal-body .type_file .file_icon.video, #add_file3 .modal-body .type_file #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .file_icon.video, #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide #add_file3 .modal-body .type_file .file_icon.googledrive, #add_file3 .modal-body .type_file #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .file_icon.googledrive, #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide #add_file4 .modal-body .type_file .file_icon.video, #add_file4 .modal-body .type_file #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .file_icon.video, #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide #add_file4 .modal-body .type_file .file_icon.googledrive, #add_file4 .modal-body .type_file #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .file_icon.googledrive, #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide #add_file .modal-body .type_file .file_icon.text, #add_file .modal-body .type_file #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .file_icon.text, #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide #add_file .modal-body .type_file .file_icon.image, #add_file .modal-body .type_file #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .file_icon.image, #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide #add_file .modal-body .type_file .file_icon.list, #add_file .modal-body .type_file #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .file_icon.list, #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide #add_file .modal-body .type_file .file_icon.graph, #add_file .modal-body .type_file #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .file_icon.graph, #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide #add_file2 .modal-body .type_file .file_icon.text, #add_file2 .modal-body .type_file #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .file_icon.text, #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide #add_file2 .modal-body .type_file .file_icon.image, #add_file2 .modal-body .type_file #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .file_icon.image, #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide #add_file2 .modal-body .type_file .file_icon.list, #add_file2 .modal-body .type_file #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .file_icon.list, #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide #add_file2 .modal-body .type_file .file_icon.graph, #add_file2 .modal-body .type_file #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .file_icon.graph, #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide #add_file3 .modal-body .type_file .file_icon.text, #add_file3 .modal-body .type_file #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .file_icon.text, #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide #add_file3 .modal-body .type_file .file_icon.image, #add_file3 .modal-body .type_file #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .file_icon.image, #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide #add_file3 .modal-body .type_file .file_icon.list, #add_file3 .modal-body .type_file #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .file_icon.list, #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide #add_file3 .modal-body .type_file .file_icon.graph, #add_file3 .modal-body .type_file #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .file_icon.graph, #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide #add_file4 .modal-body .type_file .file_icon.text, #add_file4 .modal-body .type_file #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .file_icon.text, #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide #add_file4 .modal-body .type_file .file_icon.image, #add_file4 .modal-body .type_file #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .file_icon.image, #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide #add_file4 .modal-body .type_file .file_icon.list, #add_file4 .modal-body .type_file #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .file_icon.list, #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide #add_file4 .modal-body .type_file .file_icon.graph, #add_file4 .modal-body .type_file #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .file_icon.graph, #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide #add_file .modal-body .type_file .file_icon.dropbox, #add_file .modal-body .type_file #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .file_icon.dropbox, #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide #add_file2 .modal-body .type_file .file_icon.dropbox, #add_file2 .modal-body .type_file #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .file_icon.dropbox, #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide #add_file3 .modal-body .type_file .file_icon.dropbox, #add_file3 .modal-body .type_file #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .file_icon.dropbox, #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide #add_file4 .modal-body .type_file .file_icon.dropbox, #add_file4 .modal-body .type_file #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .file_icon.dropbox {
-            color: #39865a;
-            background: #33c16f; }
-          #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .file_icon.word {
-            color: #127fad;
-            background: #279fd1; }
-          #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .file_icon.powerpoint {
-            color: #b83711;
-            background: #e05d37; }
-          #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .file_icon.pdf {
-            color: #cf2d3a;
-            background: #ea5d65; }
-          #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .file_icon.pdf {
-            color: #cf2d3a;
-            background: #ea5d65; }
-          #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .file_icon.video, #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .file_icon.googledrive {
-            color: #7a7a7a;
-            background: #f5f5f5; }
-          #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .file_icon.text, #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .file_icon.image, #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .file_icon.list, #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .file_icon.graph {
-            color: #e3e3e3;
-            background: #f5f5f5; }
-          #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .file_icon.dropbox {
-            color: #fff;
-            background: #007ee5; }
-        #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .item {
-          width: 100% !important; }
-          #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .item .header {
+          height: 40px;
+          width: 40px;
+          float: left; }
+        #file_detail_new .modal-dialog .modal-body .item .header .modal-title {
+          font-size: 16px;
+          font-size: 1.6rem;
+          font-weight: bold;
+          padding: 10px 0 0 0; }
+        #file_detail_new .modal-dialog .modal-body .item .header .option, #file_detail_new .modal-dialog .modal-body .carousel .carousel-inner .item .header .modal-header .download, .carousel .carousel-inner #file_detail_new .modal-dialog .modal-body .item .header .modal-header .download, #file_detail_new .modal-dialog .modal-body .carousel .carousel-inner .item .modal-header .header .download, .carousel .carousel-inner #file_detail_new .modal-dialog .modal-body .item .modal-header .header .download, #file_detail_new .modal-dialog .modal-body .carousel .carousel-inner .item .header .modal-header .like, .carousel .carousel-inner #file_detail_new .modal-dialog .modal-body .item .header .modal-header .like, #file_detail_new .modal-dialog .modal-body .carousel .carousel-inner .item .modal-header .header .like, .carousel .carousel-inner #file_detail_new .modal-dialog .modal-body .item .modal-header .header .like {
+          font-size: 13px;
+          font-size: 1.3rem;
+          position: absolute;
+          top: 32px;
+          right: 45px;
+          color: #999999;
+          cursor: pointer; }
+          #file_detail_new .modal-dialog .modal-body .item .header .option i, #file_detail_new .modal-dialog .modal-body .carousel .carousel-inner .item .header .modal-header .download i, .carousel .carousel-inner #file_detail_new .modal-dialog .modal-body .item .header .modal-header .download i, #file_detail_new .modal-dialog .modal-body .carousel .carousel-inner .item .modal-header .header .download i, .carousel .carousel-inner #file_detail_new .modal-dialog .modal-body .item .modal-header .header .download i, #file_detail_new .modal-dialog .modal-body .carousel .carousel-inner .item .header .modal-header .like i, .carousel .carousel-inner #file_detail_new .modal-dialog .modal-body .item .header .modal-header .like i, #file_detail_new .modal-dialog .modal-body .carousel .carousel-inner .item .modal-header .header .like i, .carousel .carousel-inner #file_detail_new .modal-dialog .modal-body .item .modal-header .header .like i {
+            position: absolute;
+            font-size: 28px;
+            font-size: 2.8rem;
+            top: -5px;
+            left: 0; }
+          #file_detail_new .modal-dialog .modal-body .item .header .option a, #file_detail_new .modal-dialog .modal-body .carousel .carousel-inner .item .header .modal-header .download a, .carousel .carousel-inner #file_detail_new .modal-dialog .modal-body .item .header .modal-header .download a, #file_detail_new .modal-dialog .modal-body .carousel .carousel-inner .item .modal-header .header .download a, .carousel .carousel-inner #file_detail_new .modal-dialog .modal-body .item .modal-header .header .download a, #file_detail_new .modal-dialog .modal-body .carousel .carousel-inner .item .header .modal-header .like a, .carousel .carousel-inner #file_detail_new .modal-dialog .modal-body .item .header .modal-header .like a, #file_detail_new .modal-dialog .modal-body .carousel .carousel-inner .item .modal-header .header .like a, .carousel .carousel-inner #file_detail_new .modal-dialog .modal-body .item .modal-header .header .like a {
+            color: #999999; }
+            #file_detail_new .modal-dialog .modal-body .item .header .option a:hover, #file_detail_new .modal-dialog .modal-body .carousel .carousel-inner .item .header .modal-header .download a:hover, .carousel .carousel-inner #file_detail_new .modal-dialog .modal-body .item .header .modal-header .download a:hover, #file_detail_new .modal-dialog .modal-body .carousel .carousel-inner .item .modal-header .header .download a:hover, .carousel .carousel-inner #file_detail_new .modal-dialog .modal-body .item .modal-header .header .download a:hover, #file_detail_new .modal-dialog .modal-body .carousel .carousel-inner .item .header .modal-header .like a:hover, .carousel .carousel-inner #file_detail_new .modal-dialog .modal-body .item .header .modal-header .like a:hover, #file_detail_new .modal-dialog .modal-body .carousel .carousel-inner .item .modal-header .header .like a:hover, .carousel .carousel-inner #file_detail_new .modal-dialog .modal-body .item .modal-header .header .like a:hover {
+              color: #3A87BC; }
+        #file_detail_new .modal-dialog .modal-body .item .header .item_option_box {
+          right: 15px;
+          top: 70px;
+          width: 200px; }
+          #file_detail_new .modal-dialog .modal-body .item .header .item_option_box::before {
+            position: absolute;
+            content: '';
+            right: 5%;
+            top: -16px;
+            margin-left: -7px;
+            border: 8px solid transparent;
+            border-bottom-color: rgba(0, 0, 0, 0.3); }
+          #file_detail_new .modal-dialog .modal-body .item .header .item_option_box::after {
+            position: absolute;
+            content: '';
+            right: 5%;
+            top: -15px;
+            margin-left: -7px;
+            border: 8px solid transparent;
+            border-bottom-color: #fff; }
+        #file_detail_new .modal-dialog .modal-body .item .header .download, #file_detail_new .modal-dialog .modal-body .carousel .carousel-inner .item .header .modal-header .like, .carousel .carousel-inner #file_detail_new .modal-dialog .modal-body .item .header .modal-header .like, #file_detail_new .modal-dialog .modal-body .carousel .carousel-inner .item .modal-header .header .like, .carousel .carousel-inner #file_detail_new .modal-dialog .modal-body .item .modal-header .header .like {
+          position: absolute;
+          top: 33px;
+          padding-left: 28px;
+          right: 65px;
+          vertical-align: top; }
+          #file_detail_new .modal-dialog .modal-body .item .header .download a, #file_detail_new .modal-dialog .modal-body .carousel .carousel-inner .item .header .modal-header .like a, .carousel .carousel-inner #file_detail_new .modal-dialog .modal-body .item .header .modal-header .like a, #file_detail_new .modal-dialog .modal-body .carousel .carousel-inner .item .modal-header .header .like a, .carousel .carousel-inner #file_detail_new .modal-dialog .modal-body .item .modal-header .header .like a {
+            color: #999999;
+            font-size: 12px;
+            font-size: 1.2rem; }
+          #file_detail_new .modal-dialog .modal-body .item .header .download i, #file_detail_new .modal-dialog .modal-body .carousel .carousel-inner .item .header .modal-header .like i, .carousel .carousel-inner #file_detail_new .modal-dialog .modal-body .item .header .modal-header .like i, #file_detail_new .modal-dialog .modal-body .carousel .carousel-inner .item .modal-header .header .like i, .carousel .carousel-inner #file_detail_new .modal-dialog .modal-body .item .modal-header .header .like i {
+            position: absolute;
+            font-size: 27px;
+            font-size: 2.7rem;
+            top: -5px;
+            left: 0; }
+        #file_detail_new .modal-dialog .modal-body .item .header .like {
+          position: absolute;
+          top: 32px;
+          right: 185px;
+          font-family: 'Lato','Helvetica neue',Helvetica,Arial,sans-serif;
+          vertical-align: top;
+          padding-left: 28px; }
+          #file_detail_new .modal-dialog .modal-body .item .header .like i {
+            top: -4px;
+            left: 0;
+            position: absolute;
+            font-size: 26px;
+            font-size: 2.6rem;
+            color: #ff3366; }
+          #file_detail_new .modal-dialog .modal-body .item .header .like span {
+            font-family: 'Lato','Helvetica neue',Helvetica,Arial,sans-serif;
+            font-size: 12px;
+            font-size: 1.2rem;
+            color: #999999; }
+      #file_detail_new .modal-dialog .modal-body .item .data {
+        font-size: 100px;
+        font-size: 10rem;
+        padding: 30px;
+        text-align: center;
+        background: #33c16f;
+        color: #fff; }
+      #file_detail_new .modal-dialog .modal-body .item .image {
+        text-align: center;
+        background: #f9f9f9;
+        width: 800px; }
+        #file_detail_new .modal-dialog .modal-body .item .image img {
+          width: 100%;
+          height: auto; }
+      #file_detail_new .modal-dialog .modal-body .item .link {
+        position: relative;
+        padding: 15px 0 15px 50px;
+        font-size: 13px;
+        font-size: 1.3rem;
+        line-height: 2.1;
+        display: block;
+        border-top: 1px solid #f5f5f5; }
+        #file_detail_new .modal-dialog .modal-body .item .link a {
+          color: #999999; }
+          #file_detail_new .modal-dialog .modal-body .item .link a:hover {
+            color: #3A87BC; }
+          #file_detail_new .modal-dialog .modal-body .item .link a i {
+            font-size: 26px;
+            font-size: 2.6rem;
+            position: absolute;
+            top: 15px;
+            left: 23px;
+            color: #999999; }
+            #file_detail_new .modal-dialog .modal-body .item .link a i.icon-swap-horiz {
+              color: #999999; }
+      #file_detail_new .modal-dialog .modal-body .item .footer {
+        /*border-top: 1px solid $border_white_gray;*/
+        padding: 35px 0 0 0;
+        position: relative; }
+        #file_detail_new .modal-dialog .modal-body .item .footer .url {
+          font-size: 12px;
+          font-size: 1.2rem;
+          position: relative;
+          color: #999999;
+          font-weight: bold;
+          bottom: 0;
+          left: 0;
+          line-height: 15px;
+          width: 100%;
+          display: block;
+          margin-top: -20px;
+          padding: 0 20px 12px 38px;
+          margin-bottom: 30px;
+          overflow: hidden;
+          z-index: 100;
+          /*border-bottom: 1px solid $border_white_gray;*/
+          -webkit-font-smoothing: antialiased;
+          -moz-osx-font-smoothing: grayscale; }
+          #file_detail_new .modal-dialog .modal-body .item .footer .url i {
+            position: absolute;
+            top: -5px;
+            left: 10px;
+            font-size: 24px;
+            font-size: 2.4rem; }
+          #file_detail_new .modal-dialog .modal-body .item .footer .url a {
+            color: #999999; }
+            #file_detail_new .modal-dialog .modal-body .item .footer .url a:hover {
+              opacity: 0.7;
+              filter: alpha(opacity=70); }
+          #file_detail_new .modal-dialog .modal-body .item .footer .url span {
+            position: absolute;
+            top: 5px;
+            right: 16px;
+            font-size: 13px;
+            font-size: 1.3rem;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale; }
+            #file_detail_new .modal-dialog .modal-body .item .footer .url span a:hover {
+              opacity: 0.7;
+              filter: alpha(opacity=70); }
+        #file_detail_new .modal-dialog .modal-body .item .footer .comment {
+          text-align: left;
+          padding: 0 25px;
+          width: 88%;
+          margin: 0 auto 50px auto;
+          -webkit-font-smoothing: antialiased;
+          -moz-osx-font-smoothing: grayscale; }
+          #file_detail_new .modal-dialog .modal-body .item .footer .comment .comment_inner {
+            display: table;
+            width: 100%;
+            table-layout: fixed;
+            margin-bottom: 18px; }
+            #file_detail_new .modal-dialog .modal-body .item .footer .comment .comment_inner .user_image {
+              display: table-cell;
+              width: 50px; }
+              #file_detail_new .modal-dialog .modal-body .item .footer .comment .comment_inner .user_image img {
+                width: 40px;
+                height: 40px;
+                vertical-align: top; }
+            #file_detail_new .modal-dialog .modal-body .item .footer .comment .comment_inner .noimage_box {
+              display: table-cell;
+              width: 50px; }
+              #file_detail_new .modal-dialog .modal-body .item .footer .comment .comment_inner .noimage_box .noimage {
+                font-family: 'Lato','Helvetica neue',Helvetica,Arial,sans-serif;
+                font-size: 12px;
+                font-size: 1.2rem;
+                display: block;
+                line-height: 40px;
+                text-align: center;
+                width: 40px;
+                height: 40px; }
+            #file_detail_new .modal-dialog .modal-body .item .footer .comment .comment_inner .user_comment {
+              display: table-cell;
+              vertical-align: top; }
+              #file_detail_new .modal-dialog .modal-body .item .footer .comment .comment_inner .user_comment p {
+                font-size: 14px;
+                font-size: 1.4rem; }
+                #file_detail_new .modal-dialog .modal-body .item .footer .comment .comment_inner .user_comment p.name {
+                  font-weight: bold;
+                  padding-bottom: 1px; }
+                  #file_detail_new .modal-dialog .modal-body .item .footer .comment .comment_inner .user_comment p.name .time {
+                    margin-left: 10px;
+                    font-weight: normal;
+                    color: #999999;
+                    font-size: 12px;
+                    font-size: 1.2rem; }
+                #file_detail_new .modal-dialog .modal-body .item .footer .comment .comment_inner .user_comment p.memo {
+                  font-size: 14px;
+                  font-size: 1.4rem;
+                  word-wrap: break-word;
+                  color: #333333; }
+        #file_detail_new .modal-dialog .modal-body .item .footer .comment_entry {
+          position: relative; }
+          #file_detail_new .modal-dialog .modal-body .item .footer .comment_entry textarea {
             -webkit-border-radius: 4px;
             -moz-border-radius: 4px;
             -ms-border-radius: 4px;
             border-radius: 4px;
-            position: relative;
-            padding: 20px 20px 20px;
-            /*border-bottom: 1px solid $border_white_gray;*/ }
-            #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .item .header h4 {
-              font-size: 16px;
-              font-size: 1.6rem;
-              font-weight: bold;
-              margin-top: 12px;
-              -webkit-font-smoothing: antialiased;
-              -moz-osx-font-smoothing: grayscale; }
-            #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .item .header .user_image {
-              float: left;
-              margin-right: 12px; }
-              #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .item .header .user_image img {
-                height: 40px;
-                width: 40px; }
-            #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .item .header .noimage {
-              font-family: 'Lato','Helvetica neue',Helvetica,Arial,sans-serif;
-              font-size: 12px;
-              font-size: 1.2rem;
-              line-height: 40px;
-              text-align: center;
-              height: 40px;
-              width: 40px;
-              float: left; }
-            #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .item .header .modal-title {
-              font-size: 16px;
-              font-size: 1.6rem;
-              font-weight: bold;
-              padding: 10px 0 0 0; }
-            #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .item .header .option, #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .carousel .carousel-inner .item .header .modal-header .download, .carousel .carousel-inner #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .item .header .modal-header .download, #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .carousel .carousel-inner .item .modal-header .header .download, .carousel .carousel-inner #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .item .modal-header .header .download, #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .carousel .carousel-inner .item .header .modal-header .like, .carousel .carousel-inner #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .item .header .modal-header .like, #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .carousel .carousel-inner .item .modal-header .header .like, .carousel .carousel-inner #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .item .modal-header .header .like {
+            width: 100%;
+            height: 65px;
+            padding: 10px 10px;
+            margin-bottom: 5px;
+            margin-top: 10px;
+            border: 1px solid #d6d6d6;
+            resize: none;
+            outline: none; }
+          #file_detail_new .modal-dialog .modal-body .item .footer .comment_entry button {
+            width: 100px;
+            position: absolute;
+            right: 0;
+            bottom: -40px; }
+            #file_detail_new .modal-dialog .modal-body .item .footer .comment_entry button.btn-default {
+              border-color: #f5f5f5;
+              background: #f9f9f9; }
+              #file_detail_new .modal-dialog .modal-body .item .footer .comment_entry button.btn-default:hover {
+                opacity: 0.7;
+                filter: alpha(opacity=70); }
+            #file_detail_new .modal-dialog .modal-body .item .footer .comment_entry button.btn-primary {
+              border: none;
+              padding: 0;
+              font-weight: 700;
+              -webkit-transition: all 0.3s ease-in-out;
+              -moz-transition: all 0.3s ease-in-out;
+              -ms-transition: all 0.3s ease-in-out;
+              -o-transition: all 0.3s ease-in-out;
+              transition: all 0.3s ease-in-out;
+              cursor: pointer;
+              border: 2px solid #3a87bc;
+              padding: 0 10px 0 10px;
+              display: inline-block;
+              -webkit-touch-callout: none;
+              -webkit-user-select: none;
+              -khtml-user-select: none;
+              -moz-user-select: none;
+              -ms-user-select: none;
+              user-select: none;
+              line-height: 35px;
+              height: 35px;
+              /*@include font_eng;*/
+              font-weight: normal;
+              font-style: normal;
+              -webkit-border-radius: 4px;
+              -moz-border-radius: 4px;
+              -ms-border-radius: 4px;
+              border-radius: 4px;
+              color: #ffffff;
+              background: #3a87bc;
+              text-decoration: none;
+              letter-spacing: 0.05em;
+              -webkit-font-smoothing: subpixel-antialiased;
+              -moz-osx-font-smoothing: auto;
               font-size: 13px;
-              font-size: 1.3rem;
-              position: absolute;
-              top: 32px;
-              right: 45px;
-              color: #999999;
-              cursor: pointer; }
-              #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .item .header .option i, #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .carousel .carousel-inner .item .header .modal-header .download i, .carousel .carousel-inner #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .item .header .modal-header .download i, #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .carousel .carousel-inner .item .modal-header .header .download i, .carousel .carousel-inner #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .item .modal-header .header .download i, #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .carousel .carousel-inner .item .header .modal-header .like i, .carousel .carousel-inner #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .item .header .modal-header .like i, #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .carousel .carousel-inner .item .modal-header .header .like i, .carousel .carousel-inner #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .item .modal-header .header .like i {
-                position: absolute;
-                font-size: 26px;
-                font-size: 2.6rem;
-                top: -3px;
-                left: 0; }
-              #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .item .header .option a, #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .carousel .carousel-inner .item .header .modal-header .download a, .carousel .carousel-inner #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .item .header .modal-header .download a, #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .carousel .carousel-inner .item .modal-header .header .download a, .carousel .carousel-inner #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .item .modal-header .header .download a, #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .carousel .carousel-inner .item .header .modal-header .like a, .carousel .carousel-inner #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .item .header .modal-header .like a, #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .carousel .carousel-inner .item .modal-header .header .like a, .carousel .carousel-inner #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .item .modal-header .header .like a {
-                color: #999999; }
-                #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .item .header .option a:hover, #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .carousel .carousel-inner .item .header .modal-header .download a:hover, .carousel .carousel-inner #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .item .header .modal-header .download a:hover, #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .carousel .carousel-inner .item .modal-header .header .download a:hover, .carousel .carousel-inner #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .item .modal-header .header .download a:hover, #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .carousel .carousel-inner .item .header .modal-header .like a:hover, .carousel .carousel-inner #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .item .header .modal-header .like a:hover, #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .carousel .carousel-inner .item .modal-header .header .like a:hover, .carousel .carousel-inner #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .item .modal-header .header .like a:hover {
-                  color: #3A87BC; }
-            #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .item .header .item_option_box {
-              right: 15px;
-              top: 70px;
-              width: 200px; }
-              #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .item .header .item_option_box::before {
-                position: absolute;
-                content: '';
-                right: 5%;
-                top: -16px;
-                margin-left: -7px;
-                border: 8px solid transparent;
-                border-bottom-color: rgba(0, 0, 0, 0.3); }
-              #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .item .header .item_option_box::after {
-                position: absolute;
-                content: '';
-                right: 5%;
-                top: -15px;
-                margin-left: -7px;
-                border: 8px solid transparent;
-                border-bottom-color: #fff; }
-            #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .item .header .download, #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .carousel .carousel-inner .item .header .modal-header .like, .carousel .carousel-inner #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .item .header .modal-header .like, #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .carousel .carousel-inner .item .modal-header .header .like, .carousel .carousel-inner #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .item .modal-header .header .like {
-              position: absolute;
-              top: 33px;
-              padding-left: 26px;
-              right: 65px;
-              vertical-align: top; }
-              #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .item .header .download a, #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .carousel .carousel-inner .item .header .modal-header .like a, .carousel .carousel-inner #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .item .header .modal-header .like a, #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .carousel .carousel-inner .item .modal-header .header .like a, .carousel .carousel-inner #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .item .modal-header .header .like a {
-                color: #999999;
-                font-size: 12px;
-                font-size: 1.2rem; }
-              #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .item .header .download i, #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .carousel .carousel-inner .item .header .modal-header .like i, .carousel .carousel-inner #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .item .header .modal-header .like i, #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .carousel .carousel-inner .item .modal-header .header .like i, .carousel .carousel-inner #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .item .modal-header .header .like i {
-                position: absolute;
-                font-size: 25px;
-                font-size: 2.5rem;
-                top: -3px;
-                left: 0; }
-            #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .item .header .like {
-              position: absolute;
-              top: 32px;
-              right: 185px;
-              font-family: 'Lato','Helvetica neue',Helvetica,Arial,sans-serif;
-              vertical-align: top;
-              padding-left: 26px; }
-              #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .item .header .like i {
-                top: -2px;
-                left: 0;
-                position: absolute;
-                font-size: 24px;
-                font-size: 2.4rem;
-                color: #ff3366; }
-              #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .item .header .like span {
-                font-family: 'Lato','Helvetica neue',Helvetica,Arial,sans-serif;
-                font-size: 12px;
-                font-size: 1.2rem;
-                color: #999999; }
-          #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .item .data {
-            font-size: 100px;
-            font-size: 10rem;
-            padding: 30px;
-            text-align: center;
-            background: #33c16f;
-            color: #fff; }
-          #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .item .image {
-            text-align: center;
-            background: #f9f9f9;
-            width: 800px; }
-            #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .item .image img {
-              width: 100%;
-              height: auto; }
-          #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .item .link {
-            position: relative;
-            padding: 15px 0 15px 50px;
-            font-size: 13px;
-            font-size: 1.3rem;
-            line-height: 2.1;
-            display: block;
-            border-top: 1px solid #f5f5f5; }
-            #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .item .link a {
-              color: #999999; }
-              #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .item .link a:hover {
-                color: #3A87BC; }
-              #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .item .link a i {
-                font-size: 26px;
-                font-size: 2.6rem;
-                position: absolute;
-                top: 15px;
-                left: 23px;
-                color: #999999; }
-                #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .item .link a i.icon-swap-horiz {
-                  color: #999999; }
-          #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .item .footer {
-            /*border-top: 1px solid $border_white_gray;*/
-            padding: 35px 0 0 0;
-            position: relative; }
-            #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .item .footer .url {
-              font-size: 12px;
-              font-size: 1.2rem;
-              position: relative;
-              color: #999999;
-              font-weight: bold;
-              bottom: 0;
-              left: 0;
-              line-height: 15px;
-              width: 100%;
-              display: block;
-              margin-top: -20px;
-              padding: 0 20px 12px 38px;
-              margin-bottom: 30px;
-              overflow: hidden;
-              z-index: 100;
-              /*border-bottom: 1px solid $border_white_gray;*/
-              -webkit-font-smoothing: antialiased;
-              -moz-osx-font-smoothing: grayscale; }
-              #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .item .footer .url i {
-                position: absolute;
-                top: -5px;
-                left: 10px;
-                font-size: 24px;
-                font-size: 2.4rem; }
-              #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .item .footer .url a {
-                color: #999999; }
-                #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .item .footer .url a:hover {
-                  opacity: 0.7;
-                  filter: alpha(opacity=70); }
-              #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .item .footer .url span {
-                position: absolute;
-                top: 5px;
-                right: 16px;
-                font-size: 13px;
-                font-size: 1.3rem;
-                -webkit-font-smoothing: antialiased;
-                -moz-osx-font-smoothing: grayscale; }
-                #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .item .footer .url span a:hover {
-                  opacity: 0.7;
-                  filter: alpha(opacity=70); }
-            #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .item .footer .comment {
-              text-align: left;
-              padding: 0 25px;
-              width: 88%;
-              margin: 0 auto 50px auto;
-              -webkit-font-smoothing: antialiased;
-              -moz-osx-font-smoothing: grayscale; }
-              #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .item .footer .comment .comment_inner {
-                display: table;
-                width: 100%;
-                table-layout: fixed;
-                margin-bottom: 18px; }
-                #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .item .footer .comment .comment_inner .user_image {
-                  display: table-cell;
-                  width: 50px; }
-                  #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .item .footer .comment .comment_inner .user_image img {
-                    width: 40px;
-                    height: 40px;
-                    vertical-align: top; }
-                #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .item .footer .comment .comment_inner .noimage_box {
-                  display: table-cell;
-                  width: 50px; }
-                  #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .item .footer .comment .comment_inner .noimage_box .noimage {
-                    font-family: 'Lato','Helvetica neue',Helvetica,Arial,sans-serif;
-                    font-size: 12px;
-                    font-size: 1.2rem;
-                    display: block;
-                    line-height: 40px;
-                    text-align: center;
-                    width: 40px;
-                    height: 40px; }
-                #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .item .footer .comment .comment_inner .user_comment {
-                  display: table-cell;
-                  vertical-align: top; }
-                  #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .item .footer .comment .comment_inner .user_comment p {
-                    font-size: 14px;
-                    font-size: 1.4rem; }
-                    #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .item .footer .comment .comment_inner .user_comment p.name {
-                      font-weight: bold;
-                      padding-bottom: 1px; }
-                      #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .item .footer .comment .comment_inner .user_comment p.name .time {
-                        margin-left: 10px;
-                        font-weight: normal;
-                        color: #999999;
-                        font-size: 12px;
-                        font-size: 1.2rem; }
-                    #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .item .footer .comment .comment_inner .user_comment p.memo {
-                      font-size: 14px;
-                      font-size: 1.4rem;
-                      word-wrap: break-word;
-                      color: #333333; }
-            #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .item .footer .comment_entry {
-              position: relative; }
-              #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .item .footer .comment_entry textarea {
-                -webkit-border-radius: 4px;
-                -moz-border-radius: 4px;
-                -ms-border-radius: 4px;
-                border-radius: 4px;
-                width: 100%;
-                height: 65px;
-                padding: 10px 10px;
-                margin-bottom: 5px;
-                margin-top: 10px;
-                border: 1px solid #d6d6d6;
-                resize: none;
-                outline: none; }
-              #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .item .footer .comment_entry button {
-                width: 100px;
-                position: absolute;
-                right: 0;
-                bottom: -40px; }
-                #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .item .footer .comment_entry button.btn-default {
-                  border-color: #f5f5f5;
-                  background: #f9f9f9; }
-                  #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .item .footer .comment_entry button.btn-default:hover {
-                    opacity: 0.7;
-                    filter: alpha(opacity=70); }
-                #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .item .footer .comment_entry button.btn-primary {
-                  border: none;
-                  padding: 0;
-                  font-weight: 700;
-                  -webkit-transition: all 0.3s ease-in-out;
-                  -moz-transition: all 0.3s ease-in-out;
-                  -ms-transition: all 0.3s ease-in-out;
-                  -o-transition: all 0.3s ease-in-out;
-                  transition: all 0.3s ease-in-out;
-                  cursor: pointer;
-                  border: 2px solid #3a87bc;
-                  padding: 0 10px 0 10px;
-                  display: inline-block;
-                  -webkit-touch-callout: none;
-                  -webkit-user-select: none;
-                  -khtml-user-select: none;
-                  -moz-user-select: none;
-                  -ms-user-select: none;
-                  user-select: none;
-                  line-height: 35px;
-                  height: 35px;
-                  /*@include font_eng;*/
-                  font-weight: normal;
-                  font-style: normal;
-                  -webkit-border-radius: 4px;
-                  -moz-border-radius: 4px;
-                  -ms-border-radius: 4px;
-                  border-radius: 4px;
-                  color: #ffffff;
-                  background: #3a87bc;
-                  text-decoration: none;
-                  letter-spacing: 0.05em;
-                  -webkit-font-smoothing: subpixel-antialiased;
-                  -moz-osx-font-smoothing: auto;
-                  font-size: 13px;
-                  font-size: 1.3rem; }
-                  #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .item .footer .comment_entry button.btn-primary:hover {
-                    /*-webkit-box-shadow: inset 0 0 0 1px #b2b2b2;
-                      box-shadow: inset 0 0 0 1px #b2b2b2;*/
-                    outline: 0;
-                    background: #2b75a7;
-                    color: #fff;
-                    border: 2px solid #2b75a7; }
-          #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .item .add_member {
-            font-size: 26px;
-            font-size: 2.6rem;
-            color: #999999;
-            position: absolute;
-            right: 216px;
-            bottom: 24px; }
-          #file_detail .file_detail_inner .bx-wrapper .bx-viewport .file_slide .item .add_emoji {
-            font-size: 26px;
-            font-size: 2.6rem;
-            color: #999999;
-            position: absolute;
-            right: 170px;
-            bottom: 24px; }
-  #file_detail .file_detail_close {
-    position: absolute;
-    top: -10px;
-    right: 17px;
-    color: #ffffff;
-    font-size: 50px;
-    font-size: 5rem; }
+              font-size: 1.3rem; }
+              #file_detail_new .modal-dialog .modal-body .item .footer .comment_entry button.btn-primary:hover {
+                /*-webkit-box-shadow: inset 0 0 0 1px #b2b2b2;
+                  box-shadow: inset 0 0 0 1px #b2b2b2;*/
+                outline: 0;
+                background: #2b75a7;
+                color: #fff;
+                border: 2px solid #2b75a7; }
+      #file_detail_new .modal-dialog .modal-body .item .add_member {
+        font-size: 26px;
+        font-size: 2.6rem;
+        color: #999999;
+        position: absolute;
+        right: 216px;
+        bottom: 24px; }
+      #file_detail_new .modal-dialog .modal-body .item .add_emoji {
+        font-size: 26px;
+        font-size: 2.6rem;
+        color: #999999;
+        position: absolute;
+        right: 170px;
+        bottom: 24px; }
 
 /*Carousel*/
 .carousel {
