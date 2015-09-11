@@ -4117,11 +4117,7 @@ header {
       font-size: 13px;
       font-size: 1.3rem; }
       .modal .modal-dialog .modal-content .modal-footer button.btn-default {
-        /*background: $white_gray;*/
-        border: none;
         margin-right: 3px;
-        padding: 0;
-        font-weight: normal;
         -webkit-transition: all 0.3s ease-in-out;
         -moz-transition: all 0.3s ease-in-out;
         -ms-transition: all 0.3s ease-in-out;
@@ -4139,7 +4135,6 @@ header {
         user-select: none;
         line-height: 35px;
         height: 35px;
-        /*@include font_eng;*/
         font-weight: normal;
         font-style: normal;
         -webkit-border-radius: 4px;
@@ -4153,16 +4148,11 @@ header {
         -webkit-font-smoothing: subpixel-antialiased;
         -moz-osx-font-smoothing: auto; }
         .modal .modal-dialog .modal-content .modal-footer button.btn-default:hover {
-          /*-webkit-box-shadow: inset 0 0 0 1px #b2b2b2;
-              box-shadow: inset 0 0 0 1px #b2b2b2;*/
           outline: 0;
-          background: #fcfcfc;
+          background: #f9f9f9;
           color: #000000;
-          border: 2px solid #f2f2f2; }
+          border: 2px solid #f0f0f0; }
       .modal .modal-dialog .modal-content .modal-footer button.btn-primary {
-        border: none;
-        padding: 0;
-        font-weight: 700;
         -webkit-transition: all 0.3s ease-in-out;
         -moz-transition: all 0.3s ease-in-out;
         -ms-transition: all 0.3s ease-in-out;
@@ -4180,7 +4170,6 @@ header {
         user-select: none;
         line-height: 35px;
         height: 35px;
-        /*@include font_eng;*/
         font-weight: normal;
         font-style: normal;
         -webkit-border-radius: 4px;
@@ -4194,11 +4183,9 @@ header {
         -webkit-font-smoothing: subpixel-antialiased;
         -moz-osx-font-smoothing: auto; }
         .modal .modal-dialog .modal-content .modal-footer button.btn-primary:hover {
-          /*-webkit-box-shadow: inset 0 0 0 1px #b2b2b2;
-              box-shadow: inset 0 0 0 1px #b2b2b2;*/
           outline: 0;
           background: #2b75a7;
-          color: #fff;
+          color: #ffffff;
           border: 2px solid #2b75a7; }
     .modal .modal-dialog .modal-content .modal-footer .link {
       position: absolute;
@@ -4270,9 +4257,10 @@ header {
       margin-left: 10px;
       -webkit-font-smoothing: subpixel-antialiased;
       -moz-osx-font-smoothing: auto; }
-      #viewers_box .modal-body .view_group_member dd .user_friends, #note_viewers_box .modal-body .view_group_member dd .user_friends, #note_like_box .modal-body .view_group_member dd .user_friends {
+      #viewers_box .modal-body .view_group_member dd .user_friends a, #note_viewers_box .modal-body .view_group_member dd .user_friends a, #note_like_box .modal-body .view_group_member dd .user_friends a {
+        color: #3A87BC;
         position: absolute;
-        top: 21px;
+        top: 20px;
         right: 20px;
         /*border: 1px solid $border_gray;*/
         -webkit-border-radius: 100px;
@@ -4283,13 +4271,28 @@ header {
         font-size: 1.2rem;
         -webkit-font-smoothing: subpixel-antialiased;
         -moz-osx-font-smoothing: auto;
-        background: #3A87BC;
+        background: #ffffff;
         padding: 3px 15px;
-        line-height: 23px;
-        height: 27px;
-        color: #fff; }
-        #viewers_box .modal-body .view_group_member dd .user_friends a, #note_viewers_box .modal-body .view_group_member dd .user_friends a, #note_like_box .modal-body .view_group_member dd .user_friends a {
-          color: #fff; }
+        line-height: 20px;
+        height: 28px;
+        color: #3A87BC;
+        border: 2px solid #7faac8;
+        -webkit-transition: all 0.3s ease-in-out;
+        -moz-transition: all 0.3s ease-in-out;
+        -ms-transition: all 0.3s ease-in-out;
+        -o-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none; }
+        #viewers_box .modal-body .view_group_member dd .user_friends a:hover, #note_viewers_box .modal-body .view_group_member dd .user_friends a:hover, #note_like_box .modal-body .view_group_member dd .user_friends a:hover {
+          outline: 0;
+          background: #3A87BC;
+          color: #ffffff;
+          border: 2px solid #3A87BC; }
 
 /*---------------------------------------------------------------------------------------
  Balloon
@@ -5812,7 +5815,7 @@ footer.front {
             width: 100%;
             height: 65px;
             padding: 10px 10px;
-            margin-bottom: 5px;
+            margin-bottom: 10px;
             margin-top: 10px;
             border: 1px solid #d6d6d6;
             resize: none;
@@ -5823,15 +5826,44 @@ footer.front {
             right: 0;
             bottom: -40px; }
             #file_detail .modal-dialog .modal-body .item .footer .comment_entry button.btn-default {
-              border-color: #f5f5f5;
-              background: #f9f9f9; }
+              margin-right: 112px;
+              -webkit-transition: all 0.3s ease-in-out;
+              -moz-transition: all 0.3s ease-in-out;
+              -ms-transition: all 0.3s ease-in-out;
+              -o-transition: all 0.3s ease-in-out;
+              transition: all 0.3s ease-in-out;
+              cursor: pointer;
+              border: 2px solid #f2f2f2;
+              padding: 0 10px 0 10px;
+              display: inline-block;
+              -webkit-touch-callout: none;
+              -webkit-user-select: none;
+              -khtml-user-select: none;
+              -moz-user-select: none;
+              -ms-user-select: none;
+              user-select: none;
+              line-height: 36px;
+              height: 36px;
+              font-weight: normal;
+              font-style: normal;
+              -webkit-border-radius: 4px;
+              -moz-border-radius: 4px;
+              -ms-border-radius: 4px;
+              border-radius: 4px;
+              color: #000000;
+              background: #ffffff;
+              text-decoration: none;
+              letter-spacing: 0.05em;
+              -webkit-font-smoothing: subpixel-antialiased;
+              -moz-osx-font-smoothing: auto;
+              font-size: 13px;
+              font-size: 1.3rem; }
               #file_detail .modal-dialog .modal-body .item .footer .comment_entry button.btn-default:hover {
-                opacity: 0.7;
-                filter: alpha(opacity=70); }
+                outline: 0;
+                background: #f9f9f9;
+                color: #000000;
+                border: 2px solid #f0f0f0; }
             #file_detail .modal-dialog .modal-body .item .footer .comment_entry button.btn-primary {
-              border: none;
-              padding: 0;
-              font-weight: 700;
               -webkit-transition: all 0.3s ease-in-out;
               -moz-transition: all 0.3s ease-in-out;
               -ms-transition: all 0.3s ease-in-out;
@@ -5865,8 +5897,6 @@ footer.front {
               font-size: 13px;
               font-size: 1.3rem; }
               #file_detail .modal-dialog .modal-body .item .footer .comment_entry button.btn-primary:hover {
-                /*-webkit-box-shadow: inset 0 0 0 1px #b2b2b2;
-                  box-shadow: inset 0 0 0 1px #b2b2b2;*/
                 outline: 0;
                 background: #2b75a7;
                 color: #fff;
