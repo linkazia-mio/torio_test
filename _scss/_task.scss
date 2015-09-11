@@ -151,7 +151,7 @@ input[type="checkbox"] {
       padding: 0;
       /*border: 1px solid #dddddd;*/
       border: 2px solid rgba(0,0,0,0.15);
-      background: #fff;
+      background: #ffffff;
       /*background: -webkit-linear-gradient(top, rgba(217,217,215,0), rgba(217,217,215,0.26));
       background: -moz-linear-gradient(top, rgba(217,217,215,0), rgba(217,217,215,0.26));
       background: -o-linear-gradient(top, rgba(217,217,215,0), rgba(217,217,215,0.26));
@@ -166,7 +166,7 @@ input[type="checkbox"] {
     }
     /*hover時の見た目*/
     &:hover {
-      color: $torio_blue;
+      color: #48ca2c;
       &:before {
         background-color: $white_gray;
       }
@@ -174,13 +174,13 @@ input[type="checkbox"] {
   }
   /*checked時の見た目*/
   &:checked + label {
-    color: $blue;
+    color: #48ca2c;
     &::before {
       @include fontsize(1.5);
-      background: $torio_blue;
-      border-color: $blue;
-      border: 2px solid $blue;
-      color: #fff;
+      background: #48ca2c;
+      border-color: #48ca2c;
+      border: 2px solid #48ca2c;
+      color: #ffffff;
     }
   }
 }
