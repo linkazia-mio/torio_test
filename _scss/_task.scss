@@ -499,6 +499,15 @@ input[type="checkbox"] {
       i {
        @include fontsize(2.0);
       }
+      .close_add_task{
+        position: absolute;
+        right:125px;
+        bottom:15px;
+        cursor: pointer;
+        i{
+          @include fontsize(2.3);
+        }
+      }
       .btn_add_task {
         @include border_radius(4px);
         position: absolute;
@@ -536,7 +545,7 @@ input[type="checkbox"] {
       }
       .time_create {
         position: absolute;
-        right: 128px;
+        right: 158px;
         bottom: 15px;
         &.configured {
           @include border_radius();
@@ -575,7 +584,7 @@ input[type="checkbox"] {
       }
       .task_member {
         @extend .time_create;
-        right: 160px;
+        right: 190px;
         bottom: 12.5px; 
         line-height: 30px;
         cursor: pointer;

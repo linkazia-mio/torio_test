@@ -7747,6 +7747,14 @@ input[type="checkbox"] {
       .task_replacement .task_people .task_list i {
         font-size: 20px;
         font-size: 2rem; }
+      .task_replacement .task_people .task_list .close_add_task {
+        position: absolute;
+        right: 125px;
+        bottom: 15px;
+        cursor: pointer; }
+        .task_replacement .task_people .task_list .close_add_task i {
+          font-size: 23px;
+          font-size: 2.3rem; }
       .task_replacement .task_people .task_list .btn_add_task {
         -webkit-border-radius: 4px;
         -moz-border-radius: 4px;
@@ -7787,7 +7795,7 @@ input[type="checkbox"] {
           color: white; }
       .task_replacement .task_people .task_list .time_create, .task_replacement .task_people .task_list .task_member {
         position: absolute;
-        right: 128px;
+        right: 158px;
         bottom: 15px; }
         .task_replacement .task_people .task_list .time_create.configured, .task_replacement .task_people .task_list .configured.task_member {
           -webkit-border-radius: 4px;
@@ -7824,7 +7832,7 @@ input[type="checkbox"] {
           font-size: 2.2rem;
           cursor: pointer; }
       .task_replacement .task_people .task_list .task_member {
-        right: 160px;
+        right: 190px;
         bottom: 12.5px;
         line-height: 30px;
         cursor: pointer; }
