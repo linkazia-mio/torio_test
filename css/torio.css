@@ -4072,8 +4072,8 @@ header {
             .modal .modal-dialog .modal-content .modal-body .comment .comment_inner .user_comment p.name {
               font-weight: bold;
               padding-bottom: 2px;
-              font-size: 14px;
-              font-size: 1.4rem; }
+              font-size: 12px;
+              font-size: 1.2rem; }
               .modal .modal-dialog .modal-content .modal-body .comment .comment_inner .user_comment p.name .time {
                 margin-left: 10px;
                 font-weight: normal;
@@ -4084,7 +4084,12 @@ header {
               font-size: 14px;
               font-size: 1.4rem;
               word-wrap: break-word;
-              color: #333333; }
+              color: #222222; }
+            .modal .modal-dialog .modal-content .modal-body .comment .comment_inner .user_comment p.option, .modal .modal-dialog .modal-content .modal-body .comment .comment_inner .user_comment .carousel .carousel-inner .item .modal-header p.download, .carousel .carousel-inner .item .modal-header .modal .modal-dialog .modal-content .modal-body .comment .comment_inner .user_comment p.download, .modal .modal-dialog .modal-content .modal-body .comment .comment_inner .user_comment .carousel .carousel-inner .item .modal-header p.like, .carousel .carousel-inner .item .modal-header .modal .modal-dialog .modal-content .modal-body .comment .comment_inner .user_comment p.like {
+              font-weight: normal;
+              color: #999999;
+              font-size: 12px;
+              font-size: 1.2rem; }
   .modal .modal-dialog .modal-content .modal-footer {
     border-top: none;
     padding: 27px 25px 27px 25px;
@@ -5796,7 +5801,7 @@ footer.front {
                 font-size: 1.4rem; }
                 #file_detail .modal-dialog .modal-body .item .footer .comment .comment_inner .user_comment p.name {
                   font-weight: bold;
-                  padding-bottom: 1px; }
+                  padding-bottom: 0px; }
                   #file_detail .modal-dialog .modal-body .item .footer .comment .comment_inner .user_comment p.name .time {
                     margin-left: 10px;
                     font-weight: normal;
@@ -5807,7 +5812,14 @@ footer.front {
                   font-size: 14px;
                   font-size: 1.4rem;
                   word-wrap: break-word;
-                  color: #333333; }
+                  color: #222222;
+                  line-height: 1.4; }
+                #file_detail .modal-dialog .modal-body .item .footer .comment .comment_inner .user_comment p.option, #file_detail .modal-dialog .modal-body .carousel .carousel-inner .item .footer .comment .comment_inner .user_comment .modal-header p.download, .carousel .carousel-inner #file_detail .modal-dialog .modal-body .item .footer .comment .comment_inner .user_comment .modal-header p.download, #file_detail .modal-dialog .modal-body .carousel .carousel-inner .item .modal-header .footer .comment .comment_inner .user_comment p.download, .carousel .carousel-inner #file_detail .modal-dialog .modal-body .item .modal-header .footer .comment .comment_inner .user_comment p.download, #file_detail .modal-dialog .modal-body .carousel .carousel-inner .item .footer .comment .comment_inner .user_comment .modal-header p.like, .carousel .carousel-inner #file_detail .modal-dialog .modal-body .item .footer .comment .comment_inner .user_comment .modal-header p.like, #file_detail .modal-dialog .modal-body .carousel .carousel-inner .item .modal-header .footer .comment .comment_inner .user_comment p.like, .carousel .carousel-inner #file_detail .modal-dialog .modal-body .item .modal-header .footer .comment .comment_inner .user_comment p.like {
+                  font-weight: normal;
+                  color: #999999;
+                  font-size: 12px;
+                  font-size: 1.2rem;
+                  padding-top: 1px; }
         #file_detail .modal-dialog .modal-body .item .footer .comment_entry {
           position: relative; }
           #file_detail .modal-dialog .modal-body .item .footer .comment_entry textarea {
@@ -8733,7 +8745,15 @@ input[type="checkbox"] {
             .note .note_edit .note_comment .comment_inner .user_comment p.memo {
               font-size: 13px;
               font-size: 1.3rem;
-              word-wrap: break-word; }
+              word-wrap: break-word;
+              line-height: 1.4;
+              color: #222222; }
+            .note .note_edit .note_comment .comment_inner .user_comment p.option, .note .note_edit .note_comment .comment_inner .user_comment .carousel .carousel-inner .item .modal-header p.download, .carousel .carousel-inner .item .modal-header .note .note_edit .note_comment .comment_inner .user_comment p.download, .note .note_edit .note_comment .comment_inner .user_comment .carousel .carousel-inner .item .modal-header p.like, .carousel .carousel-inner .item .modal-header .note .note_edit .note_comment .comment_inner .user_comment p.like {
+              font-weight: normal;
+              color: #999999;
+              font-size: 12px;
+              font-size: 1.2rem;
+              padding-top: 1px; }
       .note .note_edit .note_comment .comment_entry {
         margin: 0 auto;
         padding: 0 0 25px 0;
@@ -8746,7 +8766,7 @@ input[type="checkbox"] {
           width: 100%;
           height: 65px;
           padding: 12px 12px;
-          margin-bottom: 15px;
+          margin-bottom: 10px;
           border: 1px solid #d6d6d6;
           background: #fff;
           resize: none;

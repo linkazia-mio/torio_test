@@ -3234,7 +3234,7 @@ header {
                 &.name {
                   font-weight: bold;
                   padding-bottom: 2px;
-                  @include fontsize(1.4);
+                  @include fontsize(1.2);
                   .time {
                     margin-left: 10px;
                     font-weight: normal;
@@ -3245,7 +3245,12 @@ header {
                 &.memo {
                   @include fontsize(1.4);
                   word-wrap: break-word;
-                  color: #333333;
+                  color: #222222;
+                }
+                &.option {
+                  font-weight: normal;
+                  color: $white_brack;
+                  @include fontsize(1.2);
                 }
               }
             }

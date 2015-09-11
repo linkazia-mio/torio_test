@@ -885,7 +885,7 @@
                   @include fontsize(1.4);
                   &.name {
                     font-weight: bold;
-                    padding-bottom: 1px;
+                    padding-bottom: 0px;
                     .time {
                       margin-left: 10px;
                       font-weight: normal;
@@ -896,7 +896,14 @@
                   &.memo {
                     @include fontsize(1.4);
                     word-wrap: break-word;
-                    color: #333333;
+                    color: #222222;
+                    line-height: 1.4;
+                  }
+                  &.option {
+                    font-weight: normal;
+                    color: $white_brack;
+                    @include fontsize(1.2);
+                    padding-top: 1px;
                   }
                 }
               }
