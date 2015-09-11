@@ -501,7 +501,7 @@ input[type="checkbox"] {
       }
       .close_add_task{
         position: absolute;
-        right:125px;
+        right:120px;
         bottom:15px;
         cursor: pointer;
         i{
@@ -545,7 +545,7 @@ input[type="checkbox"] {
       }
       .time_create {
         position: absolute;
-        right: 158px;
+        right: 150px;
         bottom: 15px;
         &.configured {
           @include border_radius();
@@ -557,7 +557,7 @@ input[type="checkbox"] {
           height: 30px;
           line-height: 28px;
           vertical-align: top;
-          right: 120px;
+          right: 150px;
           bottom: 11px;
           padding: 0 10px 0 32px;
           i {
@@ -584,7 +584,7 @@ input[type="checkbox"] {
       }
       .task_member {
         @extend .time_create;
-        right: 190px;
+        right: 180px;
         bottom: 12.5px; 
         line-height: 30px;
         cursor: pointer;
@@ -611,7 +611,7 @@ input[type="checkbox"] {
         &.configured {
           @include clearfix;
           line-height: 28px;
-          right: 233px;
+          right: 263px;
           padding: 0 10px 0 32px;
           @include fontsize(1.1);
           span {
