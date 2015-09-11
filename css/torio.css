@@ -4072,8 +4072,8 @@ header {
             .modal .modal-dialog .modal-content .modal-body .comment .comment_inner .user_comment p.name {
               font-weight: bold;
               padding-bottom: 2px;
-              font-size: 12px;
-              font-size: 1.2rem; }
+              font-size: 14px;
+              font-size: 1.4rem; }
               .modal .modal-dialog .modal-content .modal-body .comment .comment_inner .user_comment p.name .time {
                 margin-left: 10px;
                 font-weight: normal;
@@ -4084,12 +4084,14 @@ header {
               font-size: 14px;
               font-size: 1.4rem;
               word-wrap: break-word;
-              color: #222222; }
+              color: #222222;
+              line-height: 1.4; }
             .modal .modal-dialog .modal-content .modal-body .comment .comment_inner .user_comment p.option, .modal .modal-dialog .modal-content .modal-body .comment .comment_inner .user_comment .carousel .carousel-inner .item .modal-header p.download, .carousel .carousel-inner .item .modal-header .modal .modal-dialog .modal-content .modal-body .comment .comment_inner .user_comment p.download, .modal .modal-dialog .modal-content .modal-body .comment .comment_inner .user_comment .carousel .carousel-inner .item .modal-header p.like, .carousel .carousel-inner .item .modal-header .modal .modal-dialog .modal-content .modal-body .comment .comment_inner .user_comment p.like {
               font-weight: normal;
               color: #999999;
               font-size: 12px;
-              font-size: 1.2rem; }
+              font-size: 1.2rem;
+              padding-top: 2px; }
   .modal .modal-dialog .modal-content .modal-footer {
     border-top: none;
     padding: 27px 25px 27px 25px;
@@ -7971,7 +7973,7 @@ input[type="checkbox"] {
             .task_replacement .task_people .task_list .task_icon_box .time.caution i {
               color: #d27d7d; }
         .task_replacement .task_people .task_list .task_icon_box .comment {
-          padding-left: 20px;
+          padding-left: 22px;
           font-weight: normal;
           font-size: 12px;
           font-size: 1.2rem;
