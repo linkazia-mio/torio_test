@@ -3165,6 +3165,7 @@ header {
               i {
                 @include fontsize(2.5);
                 color: $white_brack;
+                cursor: pointer;
               }
               input[type="file"] {
                 @include opacity(0);
@@ -3173,6 +3174,7 @@ header {
                 top: 0;
                 width: 100px;
                 height: 20px;
+                cursor: pointer;
                 &:hover {
                   cursor: pointer;
                 }

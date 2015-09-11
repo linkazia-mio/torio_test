@@ -4012,7 +4012,8 @@ header {
           .modal .modal-dialog .modal-content .modal-body .task_detail .information .btn_file i {
             font-size: 25px;
             font-size: 2.5rem;
-            color: #999999; }
+            color: #999999;
+            cursor: pointer; }
           .modal .modal-dialog .modal-content .modal-body .task_detail .information .btn_file input[type="file"] {
             opacity: 0;
             filter: alpha(opacity=0);
@@ -4020,7 +4021,8 @@ header {
             margin: 0;
             top: 0;
             width: 100px;
-            height: 20px; }
+            height: 20px;
+            cursor: pointer; }
             .modal .modal-dialog .modal-content .modal-body .task_detail .information .btn_file input[type="file"]:hover {
               cursor: pointer; }
         .modal .modal-dialog .modal-content .modal-body .task_detail .information .btn_add_task {
