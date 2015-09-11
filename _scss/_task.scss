@@ -493,8 +493,8 @@ input[type="checkbox"] {
         position: absolute;
         right: 11px;
         bottom: 11px;
-        line-height: 33px;
-        height: 35px;
+        line-height: 26px;
+        height: 30px;
         @include font-smoothing(off);
         width: 100px;
         color: #fff;
@@ -526,7 +526,7 @@ input[type="checkbox"] {
       .time_create {
         position: absolute;
         right: 128px;
-        bottom: 16px;
+        bottom: 15px;
         &.configured {
           @include border_radius();
           @include fontsize(1.1);
@@ -534,22 +534,22 @@ input[type="checkbox"] {
           color: $brack;
           border: 1px solid $border_gray;
           background: $white_gray;
-          height: 35px;
-          line-height: 33px;
+          height: 30px;
+          line-height: 28px;
           vertical-align: top;
           right: 120px;
           bottom: 11px;
           padding: 0 10px 0 32px;
           i {
             position: absolute;
-            top: 5px;
+            top: 2px;
             left: 5px;
             color: #bbb;
           }
           input {
             width: 60px;
-            line-height: 35px;
-            height: 35px;
+            line-height: 28px;
+            height: 28px;
             vertical-align: middle;
             padding: 0;
             &:hover {
@@ -564,8 +564,8 @@ input[type="checkbox"] {
       }
       .task_member {
         @extend .time_create;
-        right: 163px;
-        bottom: 13.5px; 
+        right: 160px;
+        bottom: 12.5px; 
         line-height: 30px;
         cursor: pointer;
         select {
@@ -590,9 +590,10 @@ input[type="checkbox"] {
         }
         &.configured {
           @include clearfix;
-          line-height: 33px;
+          line-height: 28px;
           right: 233px;
           padding: 0 10px 0 32px;
+          @include fontsize(1.1);
           span {
             padding: 0;
           }
@@ -600,7 +601,8 @@ input[type="checkbox"] {
             @include opacity(1);
             position: relative;
             z-index: 100;
-            height: 35px;
+            height: 28px;
+            @include fontsize(1.1);
             &:focus {
               outline: none;
             }
@@ -611,11 +613,12 @@ input[type="checkbox"] {
             line-height: 20px;
             padding: 0;
             display: block;
-            top: 7px;
+            top: 4px;
             left: 7px;
+            @include font_eng;
           }
           .user_image {
-            top: 7px;
+            top: 4px;
             left: 7px;
             img {
               width: 20px;
