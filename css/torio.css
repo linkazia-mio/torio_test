@@ -7955,7 +7955,7 @@ input[type="checkbox"] {
           position: relative;
           margin-left: 10px; }
         .task_replacement .task_people .task_list .task_icon_box .time {
-          padding-left: 23px;
+          padding-left: 20px;
           font-weight: normal;
           font-size: 12px;
           font-size: 1.2rem;
@@ -7973,7 +7973,7 @@ input[type="checkbox"] {
             .task_replacement .task_people .task_list .task_icon_box .time.caution i {
               color: #d27d7d; }
         .task_replacement .task_people .task_list .task_icon_box .comment {
-          padding-left: 22px;
+          padding-left: 19px;
           font-weight: normal;
           font-size: 12px;
           font-size: 1.2rem;
