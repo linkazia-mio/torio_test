@@ -7298,7 +7298,7 @@ footer.front {
         box-shadow: 0 0 4px rgba(53,175,242,0.6);*/
         /*border: 1px solid #aaaaaa;*/
         background: #ffffff; }
-      .task .task_create .task_create_inner i {
+      .task .task_create .task_create_inner .icon-list-ul {
         font-size: 29px;
         font-size: 2.9rem;
         position: absolute;
@@ -7312,6 +7312,16 @@ footer.front {
         color: #000;
         font-size: 14px;
         font-size: 1.4rem; }
+      .task .task_create .task_create_inner .close_add_task_create {
+        display: none;
+        position: absolute;
+        right: 120px;
+        top: 13px;
+        color: #9f9f9f;
+        cursor: pointer; }
+        .task .task_create .task_create_inner .close_add_task_create .icon-clear {
+          font-size: 25px;
+          font-size: 2.5rem; }
       .task .task_create .task_create_inner .btn_add_task_create {
         -webkit-border-radius: 4px;
         -moz-border-radius: 4px;

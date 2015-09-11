@@ -560,6 +560,15 @@ window.onload=function(){
   $(document).click(function() {
     $('.btn_add_task_create').hide();
   });
+  
+  //リストを作成するボタン表示
+  $('.task_create_inner input').click(function (event) {
+    jQuery('.close_add_task_create').show();
+    event.stopPropagation();
+  });
+  $(document).click(function() {
+    $('.close_add_task_create').hide();
+  });
 
   //タスク入力部分
   $('.task_add_list_member button').click(function (event) {

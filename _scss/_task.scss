@@ -33,7 +33,7 @@
         /*border: 1px solid #aaaaaa;*/
         background: #ffffff;
       }
-      i {
+      .icon-list-ul {
         @include fontsize(2.9);
         position: absolute;
         left: 13px;
@@ -46,6 +46,17 @@
         padding-top: 3px;
         color: #000;
         @include fontsize(1.4);
+      }
+      .close_add_task_create{
+        display: none;
+        position: absolute;
+        right: 120px;
+        top: 13px;
+        color: #9f9f9f;
+        cursor: pointer;
+        .icon-clear{
+          @include fontsize(2.5);
+        }
       }
       .btn_add_task_create {
         @include border_radius(4px);
